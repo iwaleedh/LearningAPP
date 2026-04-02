@@ -17,13 +17,14 @@ function levenshtein(a, b) {
     return dp[m][n];
 }
 
-export default function FillBlankExercise({ question, onNext, onMistake }) {
+export default function FillBlankExercise({ question, onNext, onMistake, onAttempt }) {
     const [answers, setAnswers] = useState(
         () => question.blanks.map(() => '')
     );
     const [submitted, setSubmitted] = useState(false);
     const [results, setResults] = useState([]);
     const [showRationale, setShowRationale] = useState(false);
+    const [startedAt] = useState(() => Date.now());
 
     const handleChange = (index, value) => {
         setAnswers(prev => {
@@ -52,6 +53,13 @@ export default function FillBlankExercise({ question, onNext, onMistake }) {
     };
 
     const handleNext = () => {
+        onAttempt?.({
+            correct: Boolean(allCorrect),
+            scorePercent: Math.round((score / (results.length || 1)) * 100),
+            durationSeconds: (Date.now() - startedAt) / 1000,
+            userAnswer: answers.join(' | '),
+            correctAnswer: question.blanks.map((blank) => blank.answer).join(' | '),
+        });
         if (submitted && !allCorrect) {
             const firstWrong = results.findIndex(r => !r.correct);
             onMistake?.({

@@ -47,7 +47,7 @@ export default function AdvancedPage() {
                 </div>
             </div>
 
-            <div className="advanced-card card avoid-break" style={{ borderColor: 'var(--color-primary)' }}>
+            <div className="advanced-card advanced-card--primary card avoid-break">
                 <div className="advanced-card-header">
                     <Database size={20} className="advanced-card-icon" />
                     <h3>Convex Test</h3>
@@ -84,7 +84,7 @@ export default function AdvancedPage() {
                 >
                     Run Database Test
                 </button>
-                <div id="convex-result" style={{ marginTop: '10px', fontWeight: 'bold' }}></div>
+                <div id="convex-result" className="advanced-note"></div>
             </div>
 
             <div className="advanced-card card avoid-break">
@@ -92,7 +92,7 @@ export default function AdvancedPage() {
                     <Wifi size={20} className="advanced-card-icon" />
                     <h3>PWA Status</h3>
                 </div>
-                <div className="advanced-card-body" style={{ display: 'flex', gap: 'var(--space-5)', fontSize: 'var(--font-size-sm)', flexWrap: 'wrap' }}>
+                <div className="advanced-card-body advanced-card-body--status">
                     <div>
                         <strong>Service Worker:</strong>{' '}
                         <StatusDot tone={swTone}>{serviceWorkerLabel}</StatusDot>
@@ -108,19 +108,19 @@ export default function AdvancedPage() {
                 </div>
 
                 {pwa.message && (
-                    <p style={{ marginTop: 'var(--space-3)', fontSize: 'var(--font-size-xs)', color: 'var(--color-text-secondary)' }}>
+                    <p className="advanced-note">
                         {pwa.message}
                     </p>
                 )}
 
                 {pwa.error && (
-                    <p style={{ marginTop: 'var(--space-2)', fontSize: 'var(--font-size-xs)', color: '#ef4444' }} role="alert">
+                    <p className="advanced-error" role="alert">
                         {pwa.error}
                     </p>
                 )}
 
                 {!pwa.online && (
-                    <div className="offline-tip" style={{ marginTop: 'var(--space-3)' }}>
+                    <div className="offline-tip advanced-note">
                         <CloudOff size={14} />
                         <span>Offline mode active. Cached pages remain available.</span>
                     </div>
@@ -133,39 +133,39 @@ export default function AdvancedPage() {
                     <h3>Print Mode</h3>
                 </div>
                 <div className="advanced-card-body">
-                    <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-3)' }}>
-                        Use <kbd style={{ background: 'var(--color-bg-tertiary)', padding: '2px 6px', borderRadius: '4px', fontSize: '12px' }}>⌘P</kbd> to print any page.
+                    <p className="advanced-qa-desc">
+                        Use <kbd className="advanced-kbd">⌘P</kbd> to print any page.
                         Navigation and interactive controls are hidden automatically in print mode.
                     </p>
                     <button className="btn btn-ghost no-print" onClick={() => window.print()}>
-                        <Printer size={16} style={{ marginRight: '8px' }} /> Print This Page
+                        <Printer size={16} className="advanced-print-btn-icon" /> Print This Page
                     </button>
                 </div>
             </div>
 
-            <div style={{ marginBottom: 'var(--space-5)' }} className="avoid-break">
+            <div className="advanced-section avoid-break">
                 <AIGrading />
             </div>
 
-            <div style={{ marginBottom: 'var(--space-5)' }} className="avoid-break">
+            <div className="advanced-section avoid-break">
                 <DraftAutoSave />
             </div>
 
-            <div style={{ marginBottom: 'var(--space-5)' }} className="avoid-break">
+            <div className="advanced-section avoid-break">
                 <PhotoUpload />
             </div>
 
-            <div className="card no-print" style={{ marginBottom: 'var(--space-4)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-                    <Download size={16} style={{ color: 'var(--color-primary)' }} />
-                    <h4 style={{ margin: 0 }}>Manual QA Checklist</h4>
+            <div className="advanced-qa-card card no-print">
+                <div className="advanced-qa-header">
+                    <Download size={16} className="advanced-card-icon" />
+                    <h4 className="advanced-qa-title">Manual QA Checklist</h4>
                 </div>
-                <p style={{ marginTop: 'var(--space-2)', fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)' }}>
+                <p className="advanced-qa-desc">
                     Verify offline navigation, print preview readability, upload keyboard access, and draft recovery after refresh.
                 </p>
             </div>
 
-            <div className="print-only" style={{ fontSize: '11pt', color: '#111827' }}>
+            <div className="advanced-print-note print-only">
                 <strong>Print Notes:</strong> PWA status reflects runtime conditions and may differ when printed offline.
             </div>
         </div>

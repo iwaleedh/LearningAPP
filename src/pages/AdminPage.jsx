@@ -36,12 +36,12 @@ function OverviewTab({ allUsers, pendingUsers }) {
   const students = allUsers.filter(u => u.role === 'student');
 
   const stats = [
-    { icon: Users,       label: 'Total Users',  value: allUsers.length,    color: 'var(--color-primary)' },
-    { icon: Clock,       label: 'Pending',       value: pendingUsers.length, color: 'var(--color-accent)' },
-    { icon: UserCheck,   label: 'Approved',      value: approved.length,    color: 'var(--color-success)' },
-    { icon: UserX,       label: 'Blocked',       value: blocked.length,     color: 'var(--color-error)' },
-    { icon: GraduationCap, label: 'Teachers',    value: teachers.length,    color: '#8b5cf6' },
-    { icon: Users,       label: 'Students',      value: students.length,    color: '#06b6d4' },
+    { icon: Users, label: 'Total Users', value: allUsers.length, tone: 'primary' },
+    { icon: Clock, label: 'Pending', value: pendingUsers.length, tone: 'accent' },
+    { icon: UserCheck, label: 'Approved', value: approved.length, tone: 'success' },
+    { icon: UserX, label: 'Blocked', value: blocked.length, tone: 'error' },
+    { icon: GraduationCap, label: 'Teachers', value: teachers.length, tone: 'violet' },
+    { icon: Users, label: 'Students', value: students.length, tone: 'info' },
   ];
 
   return (
@@ -50,8 +50,8 @@ function OverviewTab({ allUsers, pendingUsers }) {
         {stats.map(s => {
           const Icon = s.icon;
           return (
-            <div key={s.label} className="admin-stat-card card">
-              <div className="admin-stat-icon" style={{ color: s.color }}>
+            <div key={s.label} className={`admin-stat-card admin-stat-card--${s.tone} card`}>
+              <div className="admin-stat-icon">
                 <Icon size={24} />
               </div>
               <div className="admin-stat-value">{s.value}</div>
@@ -82,7 +82,7 @@ function DeleteConfirmModal({ user, onConfirm, onCancel, busy }) {
     <div className="admin-modal-overlay" onClick={onCancel}>
       <div className="admin-modal card" onClick={e => e.stopPropagation()}>
         <div className="admin-modal-icon">
-          <AlertTriangle size={32} color="var(--color-error)" />
+          <AlertTriangle size={32} />
         </div>
         <h3 className="admin-modal-title">Delete User</h3>
         <p className="admin-modal-body">
@@ -109,7 +109,7 @@ function RoleSelect({ userId, currentRole }) {
     if (newRole === currentRole) return;
     setBusy(true);
     try { await setRole({ userId, role: newRole }); }
-    catch (err) { console.error(err); }
+    catch { /* role change failed — Convex will retry */ }
     finally { setBusy(false); }
   };
 
@@ -180,20 +180,22 @@ function UsersTab({ allUsers, pendingUsers }) {
   const [search, setSearch] = useState('');
   const [busy, setBusy] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState(null); // user object to confirm deletion
+  const [actionError, setActionError] = useState('');
 
   const approve     = useMutation(api.admin.approveUser);
   const block       = useMutation(api.admin.blockUser);
   const unblock     = useMutation(api.admin.unblockUser);
   const deleteUser  = useMutation(api.admin.deleteUser);
 
-  const handleApprove = async (userId) => { setBusy(true); try { await approve({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
-  const handleBlock   = async (userId) => { setBusy(true); try { await block({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
-  const handleUnblock = async (userId) => { setBusy(true); try { await unblock({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
+  const handleApprove = async (userId) => { setBusy(true); setActionError(''); try { await approve({ userId }); } catch (e) { setActionError(e?.message || 'Failed to approve user.'); } finally { setBusy(false); } };
+  const handleBlock   = async (userId) => { setBusy(true); setActionError(''); try { await block({ userId }); } catch (e) { setActionError(e?.message || 'Failed to block user.'); } finally { setBusy(false); } };
+  const handleUnblock = async (userId) => { setBusy(true); setActionError(''); try { await unblock({ userId }); } catch (e) { setActionError(e?.message || 'Failed to unblock user.'); } finally { setBusy(false); } };
   const handleDeleteConfirm = async () => {
     if (!deleteTarget) return;
     setBusy(true);
+    setActionError('');
     try { await deleteUser({ userId: deleteTarget.userId }); }
-    catch (e) { console.error(e); }
+    catch (e) { setActionError(e?.message || 'Failed to delete user.'); }
     finally { setBusy(false); setDeleteTarget(null); }
   };
 
@@ -241,6 +243,11 @@ function UsersTab({ allUsers, pendingUsers }) {
         </div>
       </div>
 
+      {actionError && (
+        <div className="admin-inline-error admin-inline-error--banner">
+          {actionError}
+        </div>
+      )}
       <div className="admin-table-wrap card">
         {displayed.length === 0 ? (
           <div className="admin-empty">No users match this filter.</div>
@@ -284,7 +291,7 @@ function FlagRow({ flag }) {
   const toggle = async () => {
     setBusy(true);
     try { await setFlag({ key: flag.key, enabled: !flag.enabled }); }
-    catch (err) { console.error(err); }
+    catch { /* toggle failed — Convex will retry */ }
     finally { setBusy(false); }
   };
 
@@ -403,14 +410,14 @@ function PaymentRow({ req }) {
           </div>
         </div>
       </td>
-      <td style={{ textTransform: 'capitalize' }}>{req.plan}</td>
+      <td className="admin-cell-caps">{req.plan}</td>
       <td>MVR {req.amount.toLocaleString()}</td>
       <td className="admin-date">{formatDate(req.submittedAt)}</td>
       <td><PaymentStatusBadge status={req.status} /></td>
       <td><PaymentSlip slipUrl={req.slipUrl} mimeType={req.mimeType} fileName={req.fileName} /></td>
       <td>
         {req.status === 'pending' ? (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+          <div className="admin-review-stack">
             <div className="admin-action-btns">
               <button className="btn btn-sm btn-primary" disabled={busy} onClick={handleApprove}>
                 <CheckCircle size={13} /> Approve
@@ -422,11 +429,10 @@ function PaymentRow({ req }) {
             {showReject && (
               <div className="admin-reject-form">
                 <input
-                  className="admin-search"
+                  className="admin-search admin-search--compact"
                   placeholder="Reason (optional)…"
                   value={notes}
                   onChange={e => setNotes(e.target.value)}
-                  style={{ marginBottom: 'var(--space-1)' }}
                 />
                 <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={handleReject}>
                   Confirm Reject

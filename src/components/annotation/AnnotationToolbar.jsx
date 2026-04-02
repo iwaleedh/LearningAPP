@@ -2,14 +2,14 @@ import { Pen, Highlighter, Type, Square, Circle, Minus, Eraser, MousePointer2,
     Undo2, Redo2, Trash2, Save, Download, X, ChevronLeft, ChevronRight, Share2, Radio } from 'lucide-react';
 
 const PRESET_COLORS = [
-    { value: '#ef4444', label: 'Red' },
-    { value: '#3b82f6', label: 'Blue' },
-    { value: '#22c55e', label: 'Green' },
-    { value: '#f59e0b', label: 'Amber' },
-    { value: '#a855f7', label: 'Purple' },
-    { value: '#111827', label: 'Black' },
-    { value: '#f97316', label: 'Orange' },
-    { value: '#ffffff', label: 'White' },
+    { value: '#ef4444', label: 'Red', swatchClass: 'annotate-color-swatch--red' },
+    { value: '#3b82f6', label: 'Blue', swatchClass: 'annotate-color-swatch--blue' },
+    { value: '#22c55e', label: 'Green', swatchClass: 'annotate-color-swatch--green' },
+    { value: '#f59e0b', label: 'Amber', swatchClass: 'annotate-color-swatch--amber' },
+    { value: '#a855f7', label: 'Purple', swatchClass: 'annotate-color-swatch--purple' },
+    { value: '#111827', label: 'Black', swatchClass: 'annotate-color-swatch--black' },
+    { value: '#f97316', label: 'Orange', swatchClass: 'annotate-color-swatch--orange' },
+    { value: '#ffffff', label: 'White', swatchClass: 'annotate-color-swatch--white' },
 ];
 
 const WIDTHS = [
@@ -85,11 +85,10 @@ export default function AnnotationToolbar({
 
                 {/* Color swatches */}
                 <div className="annotate-color-group">
-                    {PRESET_COLORS.map(({ value, label }) => (
+                    {PRESET_COLORS.map(({ value, label, swatchClass }) => (
                         <button
                             key={value}
-                            className={`annotate-color-swatch ${toolOptions.color === value ? 'annotate-color-swatch--active' : ''}`}
-                            style={{ background: value, border: value === '#ffffff' ? '1px solid var(--color-border)' : undefined }}
+                            className={`annotate-color-swatch ${swatchClass} ${toolOptions.color === value ? 'annotate-color-swatch--active' : ''}`}
                             onClick={() => onOptionsChange({ color: value })}
                             title={label}
                         />

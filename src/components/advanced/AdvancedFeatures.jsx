@@ -13,15 +13,15 @@ import {
 } from '../../utils/uploadValidation';
 import './Advanced.css';
 
-const THEORY_QUESTION = 'Explain how metallic bonding gives metals their properties of electrical conductivity and malleability.';
-const THEORY_MARK_SCHEME = 'Metallic bonding involves a lattice of positive metal ions surrounded by a sea of delocalized electrons. Electrical conductivity: delocalized electrons are free to move and carry charge. Malleability: layers of ions can slide over each other without breaking the metallic bond.';
+const DEFAULT_QUESTION = 'Explain how metallic bonding gives metals their properties of electrical conductivity and malleability.';
+const DEFAULT_MARK_SCHEME = 'Metallic bonding involves a lattice of positive metal ions surrounded by a sea of delocalized electrons. Electrical conductivity: delocalized electrons are free to move and carry charge. Malleability: layers of ions can slide over each other without breaking the metallic bond.';
 
 function formatSavedTime(dateValue) {
     if (!dateValue) return '';
     return dateValue.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 }
 
-export function AIGrading() {
+export function AIGrading({ question = DEFAULT_QUESTION, markScheme = DEFAULT_MARK_SCHEME }) {
     const [answer, setAnswer] = useState('');
     const [result, setResult] = useState(null);
     const [requestState, setRequestState] = useState('idle');
@@ -51,9 +51,9 @@ export function AIGrading() {
         try {
             const graded = await gradeTheoryAnswer(
                 {
-                    question: THEORY_QUESTION,
+                    question: question,
                     answer,
-                    markScheme: THEORY_MARK_SCHEME,
+                    markScheme: markScheme,
                     context: { topic: 'metallic-bonding', level: 'theory' },
                 },
                 { signal: controller.signal }
@@ -89,7 +89,7 @@ export function AIGrading() {
 
             <div className="ai-question">
                 <strong>Question:</strong>
-                <p>{THEORY_QUESTION}</p>
+                <p>{question}</p>
             </div>
 
             {import.meta.env.DEV && (
@@ -103,7 +103,7 @@ export function AIGrading() {
             {import.meta.env.DEV && showMarkScheme && (
                 <div className="ai-marking-scheme">
                     <strong>Marking Scheme (dev only):</strong>
-                    <p className="scheme-text">{THEORY_MARK_SCHEME}</p>
+                    <p className="scheme-text">{markScheme}</p>
                 </div>
             )}
 
@@ -336,7 +336,7 @@ export function PhotoUpload() {
                     accept="image/jpeg,image/png,image/webp,image/gif,application/pdf"
                     multiple
                     onChange={(event) => appendFiles(event.target.files)}
-                    style={{ display: 'none' }}
+                    className="upload-hidden-input"
                 />
             </div>
 

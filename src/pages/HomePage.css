@@ -6,10 +6,10 @@
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
     border-radius: var(--radius-2xl);
     padding: var(--space-8) var(--space-8);
-    color: white;
+    color: var(--color-text-inverse);
     overflow: hidden;
     margin-bottom: var(--space-8);
-    box-shadow: 0 10px 40px -10px var(--color-primary-100);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
 }
 
 [data-theme="dark"] .welcome-banner {
@@ -40,7 +40,7 @@
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--space-4);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-sm);
 }
 
 [data-theme="dark"] .welcome-badge {
@@ -73,7 +73,7 @@
 }
 
 .welcome-actions .btn-primary {
-    background: white;
+    background: var(--color-text-inverse);
     color: var(--color-primary-dark);
     box-shadow: var(--shadow-lg);
     font-weight: 600;
@@ -92,7 +92,7 @@
 .welcome-actions .btn-secondary {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    color: var(--color-text-inverse);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
@@ -106,7 +106,7 @@
 .welcome-actions .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.25);
     border-color: rgba(255, 255, 255, 0.5);
-    color: white;
+    color: var(--color-text-inverse);
 }
 
 [data-theme="dark"] .welcome-actions .btn-secondary:hover {
@@ -163,7 +163,7 @@
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-2xl);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    box-shadow: var(--shadow-sm);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     overflow: hidden;
@@ -184,7 +184,7 @@
 
 .stat-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-lg);
     border-color: var(--color-border-light);
 }
 
@@ -203,6 +203,30 @@
     background: linear-gradient(135deg, var(--color-primary-50), var(--color-bg-secondary));
     color: var(--color-primary);
     border: 1px solid var(--color-primary-200);
+}
+
+.stat-card--primary .stat-icon {
+    background: linear-gradient(135deg, var(--color-primary-100), var(--color-primary-50));
+    color: var(--color-primary);
+    border-color: var(--color-primary-200);
+}
+
+.stat-card--success .stat-icon {
+    background: linear-gradient(135deg, var(--color-success-light), rgba(16, 185, 129, 0.04));
+    color: var(--color-success-dark);
+    border-color: rgba(16, 185, 129, 0.22);
+}
+
+.stat-card--accent .stat-icon {
+    background: linear-gradient(135deg, var(--color-warning-light), rgba(245, 158, 11, 0.05));
+    color: var(--color-accent);
+    border-color: rgba(245, 158, 11, 0.24);
+}
+
+.stat-card--error .stat-icon {
+    background: linear-gradient(135deg, var(--color-error-light), rgba(239, 68, 68, 0.05));
+    color: var(--color-error-dark);
+    border-color: rgba(239, 68, 68, 0.22);
 }
 
 .stat-info {
@@ -241,6 +265,10 @@
     letter-spacing: -0.01em;
 }
 
+.section-header--spaced {
+    margin-top: var(--space-8);
+}
+
 /* Subjects Grid - Stacked Elegant Cards */
 .subjects-grid {
     display: grid;
@@ -256,7 +284,7 @@
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-2xl);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    box-shadow: var(--shadow-sm);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     display: flex;
@@ -267,7 +295,7 @@
 
 .subject-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-lg);
     border-color: var(--color-border-light);
 }
 
@@ -286,14 +314,14 @@
 
 .subject-emoji {
     font-size: 1.5rem;
-    background: linear-gradient(135deg, var(--color-primary-50), var(--color-bg-secondary));
+    background: linear-gradient(135deg, var(--subject-accent-soft, var(--color-primary-50)), var(--color-bg-secondary));
     width: 48px;
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-xl);
-    border: 1px solid var(--color-primary-200);
+    border: 1px solid var(--subject-accent, var(--color-primary-200));
     transition: transform 0.2s;
 }
 
@@ -319,6 +347,10 @@
     gap: var(--space-2);
 }
 
+.subject-progress--spaced {
+    margin-top: var(--space-4);
+}
+
 .progress-text {
     font-size: var(--font-size-xs);
     color: var(--color-text-tertiary);
@@ -336,7 +368,7 @@
 
 .progress-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+    background: linear-gradient(90deg, var(--subject-accent, var(--color-primary)), var(--subject-accent, var(--color-primary-dark)));
     border-radius: var(--radius-full);
     transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -356,7 +388,7 @@
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-2xl);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    box-shadow: var(--shadow-sm);
     display: flex;
     align-items: center;
     gap: var(--space-4);
@@ -365,7 +397,7 @@
 
 .action-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-lg);
     border-color: var(--color-primary-200);
     background: var(--color-primary-50);
 }
@@ -416,7 +448,7 @@
     margin-bottom: var(--space-6);
     font-weight: 500;
     flex-wrap: wrap;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-md);
 }
 
 [data-theme="dark"] .lc-invite-banner {

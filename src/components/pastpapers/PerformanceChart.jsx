@@ -1,15 +1,24 @@
 import { useEffect, useRef } from 'react';
 import { BarChart3 } from 'lucide-react';
 import Chart from 'chart.js/auto';
+import { useTheme } from '../../hooks/useTheme.js';
 import './PastPapers.css';
 
 export default function PerformanceChart({ attempts }) {
+    const { theme } = useTheme();
     const barRef = useRef(null);
     const radarRef = useRef(null);
     const barChartRef = useRef(null);
     const radarChartRef = useRef(null);
 
     useEffect(() => {
+        const rootStyles = getComputedStyle(document.documentElement);
+        const gridColor = rootStyles.getPropertyValue('--chart-grid-color').trim() || 'rgba(148, 163, 184, 0.14)';
+        const tickColor = rootStyles.getPropertyValue('--chart-tick-color').trim() || 'rgba(203, 213, 225, 0.72)';
+        const primaryColor = rootStyles.getPropertyValue('--color-primary').trim() || '#6366f1';
+        const primaryFill = rootStyles.getPropertyValue('--color-primary-200').trim() || 'rgba(99, 102, 241, 0.2)';
+        const pointBorder = rootStyles.getPropertyValue('--chart-point-border').trim() || '#ffffff';
+
         // Bar chart — score over attempts
         if (barRef.current) {
             if (barChartRef.current) barChartRef.current.destroy();
@@ -39,12 +48,12 @@ export default function PerformanceChart({ attempts }) {
                         y: {
                             beginAtZero: true,
                             max: 100,
-                            grid: { color: 'rgba(255,255,255,0.05)' },
-                            ticks: { color: 'rgba(255,255,255,0.5)', callback: v => v + '%' },
+                            grid: { color: gridColor },
+                            ticks: { color: tickColor, callback: v => v + '%' },
                         },
                         x: {
                             grid: { display: false },
-                            ticks: { color: 'rgba(255,255,255,0.5)' },
+                            ticks: { color: tickColor },
                         },
                     },
                 },
@@ -79,10 +88,10 @@ export default function PerformanceChart({ attempts }) {
                             label: 'Average %',
                             data: avgScores,
                             fill: true,
-                            backgroundColor: 'rgba(99, 102, 241, 0.2)',
-                            borderColor: 'rgba(99, 102, 241, 0.8)',
-                            pointBackgroundColor: 'rgba(99, 102, 241, 1)',
-                            pointBorderColor: '#fff',
+                            backgroundColor: primaryFill,
+                            borderColor: primaryColor,
+                            pointBackgroundColor: primaryColor,
+                            pointBorderColor: pointBorder,
                         }],
                     },
                     options: {
@@ -95,9 +104,9 @@ export default function PerformanceChart({ attempts }) {
                             r: {
                                 beginAtZero: true,
                                 max: 100,
-                                grid: { color: 'rgba(255,255,255,0.08)' },
-                                angleLines: { color: 'rgba(255,255,255,0.08)' },
-                                pointLabels: { color: 'rgba(255,255,255,0.6)', font: { size: 11 } },
+                                grid: { color: gridColor },
+                                angleLines: { color: gridColor },
+                                pointLabels: { color: tickColor, font: { size: 11 } },
                                 ticks: { display: false },
                             },
                         },
@@ -110,7 +119,7 @@ export default function PerformanceChart({ attempts }) {
             if (barChartRef.current) barChartRef.current.destroy();
             if (radarChartRef.current) radarChartRef.current.destroy();
         };
-    }, [attempts]);
+    }, [attempts, theme]);
 
     if (attempts.length === 0) {
         return (

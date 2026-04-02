@@ -10,6 +10,7 @@
  */
 
 import { useState, useCallback } from 'react';
+import { getRecordedActivityByDate, subscribeToActivityUpdates } from '../services/activityStore.js';
 
 const PREFIX = 'lt_read:';
 
@@ -33,20 +34,27 @@ export function useNoteReadStatus(noteId) {
     });
 
     const markRead = useCallback(() => {
+        if (readAt) return;
         const now = new Date().toISOString();
         try {
             localStorage.setItem(key, now);
         } catch {
             // storage quota exceeded — ignore
         }
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('lt:activity-updated'));
+        }
         setReadAt(now);
-    }, [key]);
+    }, [key, readAt]);
 
     const markUnread = useCallback(() => {
         try {
             localStorage.removeItem(key);
         } catch {
             // ignore
+        }
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('lt:activity-updated'));
         }
         setReadAt(null);
     }, [key]);
@@ -121,7 +129,7 @@ export function computeStudyStreak() {
  * Returns a map of { 'YYYY-MM-DD': count } for every day a note was read.
  */
 export function getActivityByDate() {
-    const map = {};
+    const map = { ...getRecordedActivityByDate() };
     try {
         for (let i = 0; i < localStorage.length; i++) {
             const k = localStorage.key(i);
@@ -176,4 +184,8 @@ export function getReadNoteIds() {
         // ignore
     }
     return ids;
+}
+
+export function subscribeToReadProgressUpdates(callback) {
+    return subscribeToActivityUpdates(callback);
 }

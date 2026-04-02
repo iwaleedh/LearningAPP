@@ -66,7 +66,7 @@ function RecallPanel({ recall, onClose }) {
                     <span>🧠 Recall Mode</span>
                     <button className="btn btn-ghost btn-sm" onClick={onClose}>✕</button>
                 </div>
-                <p style={{ padding: 'var(--space-4)', color: 'var(--color-text-tertiary)' }}>No recall cues for this note yet.</p>
+                <p className="recall-empty">No recall cues for this note yet.</p>
             </div>
         );
     }
@@ -388,7 +388,7 @@ export default function NotePage() {
                         >
                             <button className="topic-tab">
                                 Topic {topic.id}: {topic.title}
-                                <span style={{ fontSize: '0.8em', marginLeft: '6px', opacity: 0.6 }}>▼</span>
+                                <span className="topic-tab-caret">▼</span>
                             </button>
                             <div className="topic-subtopics-dropdown">
                                 {topic.subtopics.map((sub, idx) => {

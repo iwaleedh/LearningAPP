@@ -4,6 +4,7 @@ import StreakTracker from '../components/gamification/StreakTracker';
 import Leaderboard from '../components/gamification/Leaderboard';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import { getReadNoteIds, getTotalReadCount } from '../hooks/useNoteReadStatus';
+import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
 import './Pages.css';
 
 const SUBJECTS = [
@@ -33,6 +34,7 @@ function buildChapterProgress(readIds) {
 }
 
 export default function ProgressPage() {
+    useActivityRefresh();
     const readIds = getReadNoteIds();
     const totalRead = getTotalReadCount();
     const chapterProgress = buildChapterProgress(readIds);
@@ -63,7 +65,7 @@ export default function ProgressPage() {
                 </div>
                 <div className="progress-meta-boxes">
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#e0e7ff,#c7d2fe)', color: '#6366f1' }}>
+                        <div className="meta-icon meta-icon--notes">
                             <BookOpen size={18} />
                         </div>
                         <div className="meta-text">
@@ -72,7 +74,7 @@ export default function ProgressPage() {
                         </div>
                     </div>
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#d1fae5,#a7f3d0)', color: '#059669' }}>
+                        <div className="meta-icon meta-icon--started">
                             <Target size={18} />
                         </div>
                         <div className="meta-text">
@@ -81,7 +83,7 @@ export default function ProgressPage() {
                         </div>
                     </div>
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#fef3c7,#fde68a)', color: '#d97706' }}>
+                        <div className="meta-icon meta-icon--overall">
                             <Award size={18} />
                         </div>
                         <div className="meta-text">
@@ -146,7 +148,7 @@ export default function ProgressPage() {
                                 <span className="chapter-progress-pct">{ch.progress}%</span>
                             </div>
                         ))}
-                        <p className="progress-group-label" style={{ marginTop: 'var(--space-4)' }}>IGCSE / O Level</p>
+                        <p className="progress-group-label progress-group-label--spaced">IGCSE / O Level</p>
                         {igcseProgress.map((ch, i) => (
                             <div key={i} className="chapter-progress-item">
                                 <span className="chapter-progress-name">{ch.name}</span>

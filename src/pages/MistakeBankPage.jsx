@@ -69,7 +69,7 @@ export default function MistakeBankPage() {
                 </div>
                 <div className="mistake-meta-boxes">
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#fecaca,#fca5a5)', color: '#dc2626' }}>
+                        <div className="meta-icon meta-icon--danger">
                             <XCircle size={18} />
                         </div>
                         <div className="meta-text">
@@ -78,7 +78,7 @@ export default function MistakeBankPage() {
                         </div>
                     </div>
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#d1fae5,#a7f3d0)', color: '#059669' }}>
+                        <div className="meta-icon meta-icon--success">
                             <RotateCcw size={18} />
                         </div>
                         <div className="meta-text">
@@ -89,7 +89,7 @@ export default function MistakeBankPage() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 'var(--space-4)' }}>
+            <div className="mistake-toolbar">
                 <button className="btn btn-ghost btn-sm" onClick={dismissAll}>
                     <Trash2 size={14} /> Clear All
                 </button>

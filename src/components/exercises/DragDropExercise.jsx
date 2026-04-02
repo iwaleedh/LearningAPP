@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { CheckCircle, XCircle, RotateCcw, GripVertical } from 'lucide-react';
 import './Exercises.css';
 
-export default function DragDropExercise({ question, onNext, onMistake }) {
+export default function DragDropExercise({ question, onNext, onMistake, onAttempt }) {
     const [zones, setZones] = useState(() => {
         const initial = {};
         question.categories.forEach(cat => { initial[cat] = []; });
@@ -20,6 +20,7 @@ export default function DragDropExercise({ question, onNext, onMistake }) {
     const [results, setResults] = useState(null);
     const dragItemRef = useRef(null);
     const dragSourceRef = useRef(null);
+    const [startedAt] = useState(() => Date.now());
 
     const handleDragStart = (item, source) => {
         dragItemRef.current = item;
@@ -156,6 +157,16 @@ export default function DragDropExercise({ question, onNext, onMistake }) {
                         <button className="btn btn-primary btn-lg" onClick={() => {
                             const wrong = results && Object.entries(results)
                                 .flatMap(([cat, items]) => items.filter(it => !it.correct).map(it => ({ ...it, placedIn: cat })));
+                            const totalItems = question.items.length || 1;
+                            const correctItems = totalItems - (wrong?.length || 0);
+                            onAttempt?.({
+                                correct: (wrong?.length || 0) === 0,
+                                scorePercent: Math.round((correctItems / totalItems) * 100),
+                                durationSeconds: (Date.now() - startedAt) / 1000,
+                                userAnswer: Object.entries(zones)
+                                    .flatMap(([cat, items]) => items.map((item) => `${item.text} -> ${cat}`))
+                                    .join(' | '),
+                            });
                             if (wrong && wrong.length > 0) {
                                 onMistake?.({
                                     question: question.stem,

@@ -32,9 +32,20 @@ import {
   createProcessNode, createDecisionNode, createTerminalNode,
   createEdge, updateEdgesForNode, isFlowchartNode, snapNodeToGrid,
 } from '../components/liveclass/FlowchartTool.js';
+import { useTheme } from '../hooks/useTheme.js';
 import './Pages.css';
 
 const ImportMediaDialog = lazy(() => import('../components/liveclass/ImportMediaDialog.jsx'));
+const DEFAULT_CANVAS_INK = '#1f2937';
+const DEFAULT_CANVAS_ACCENT = '#3b82f6';
+
+function readThemeColor(variableName, fallback) {
+  if (typeof window === 'undefined') return fallback;
+  const value = window.getComputedStyle(document.documentElement)
+    .getPropertyValue(variableName)
+    .trim();
+  return value || fallback;
+}
 
 // ── Canvas background CSS patterns ───────────────────────────────────────────
 const BG_STYLE = {
@@ -164,6 +175,7 @@ export default function LiveClassPage() {
   const navigate = useNavigate();
   const location = useLocation();
   const { isAccessReady, role: authRole, userId: authUserId } = useAuth();
+  const { theme } = useTheme();
 
   const classId = sessionId ?? null;
 
@@ -180,12 +192,19 @@ export default function LiveClassPage() {
   const [timerState, setTimerState] = useState(null);
   const [backgroundType, setBackgroundType] = useState('white');
   const [isCanvasReady, setIsCanvasReady] = useState(false);
+  const [themePalette, setThemePalette] = useState(() => ({
+    ink: DEFAULT_CANVAS_INK,
+    accent: DEFAULT_CANVAS_ACCENT,
+  }));
 
   // Tool state
   const [tool, setTool] = useState('pen');
-  const [color, setColor] = useState('#1f2937');
+  const [color, setColor] = useState(DEFAULT_CANVAS_INK);
   const [strokeWidth, setStrokeWidth] = useState(4);
-  const [textFont, setTextFont] = useState(DEFAULT_TEXT_FONT);
+  const [textFont, setTextFont] = useState(() => ({
+    ...DEFAULT_TEXT_FONT,
+    fill: DEFAULT_CANVAS_INK,
+  }));
   const [spotlightEnabled, setSpotlightEnabled] = useState(false);
   const [snapHint, setSnapHint] = useState(false); // shows "hold 2 s to snap" toast
   const snapHintTimerRef = useRef(null);
@@ -258,6 +277,31 @@ export default function LiveClassPage() {
   const [activeTabId, setActiveTabId] = useState(1);
   const tabSnapshotsRef = useRef({ 1: null }); // tabId → JSON string
   const [renamingTabId, setRenamingTabId] = useState(null);
+  const previousThemePaletteRef = useRef({
+    ink: DEFAULT_CANVAS_INK,
+    accent: DEFAULT_CANVAS_ACCENT,
+  });
+
+  useEffect(() => {
+    const nextPalette = {
+      ink: readThemeColor('--color-text', DEFAULT_CANVAS_INK),
+      accent: readThemeColor('--color-primary', DEFAULT_CANVAS_ACCENT),
+    };
+    const previousPalette = previousThemePaletteRef.current;
+
+    setThemePalette(nextPalette);
+    setColor((current) => (
+      !current || current === previousPalette.ink ? nextPalette.ink : current
+    ));
+    setTextFont((current) => ({
+      ...current,
+      fill: !current?.fill || current.fill === previousPalette.ink
+        ? nextPalette.ink
+        : current.fill,
+    }));
+
+    previousThemePaletteRef.current = nextPalette;
+  }, [theme]);
   const [renameValue, setRenameValue] = useState('');
   const renameInputRef = useRef(null);
 
@@ -1265,7 +1309,7 @@ export default function LiveClassPage() {
           textDecoration: textFont?.textDecoration || '',
           fontStyle: textFont?.fontStyle || 'normal',
           textAlign: textFont?.textAlign || 'left',
-          fill: textFont?.fill || color || '#1f2937',
+          fill: textFont?.fill || color || themePalette.ink,
           selectable: true,
           evented: true,
           editable: true,
@@ -1315,7 +1359,7 @@ export default function LiveClassPage() {
         fc.off('mouse:down', onDown);
       };
     }
-  }, [tool, color, strokeWidth, role, textFont, classId]);
+  }, [tool, color, strokeWidth, role, textFont, classId, themePalette]);
 
   // ── Flowchart node placement & connector tool ─────────────────────────────
   useEffect(() => {
@@ -1357,7 +1401,7 @@ export default function LiveClassPage() {
         if (!fcConnectorSourceRef.current) {
           // First click — mark source
           fcConnectorSourceRef.current = node;
-          node.set({ borderColor: '#3b82f6', borderDashArray: [4, 4] });
+          node.set({ borderColor: themePalette.accent, borderDashArray: [4, 4] });
           fc.requestRenderAll();
         } else {
           // Second click — create edge
@@ -1470,7 +1514,7 @@ export default function LiveClassPage() {
         fc.off('mouse:up',   onUp);
       };
     }
-  }, [tool, color, strokeWidth, role, classId, saveHistory]);
+  }, [tool, color, strokeWidth, role, classId, saveHistory, themePalette]);
 
   // ── Flowchart: snap-to-grid + edge redraw on node move ────────────────────
   useEffect(() => {
@@ -1511,7 +1555,7 @@ export default function LiveClassPage() {
         top: center.y,
         fontSize: textObj.fontSize || 14,
         fontFamily: textObj.fontFamily || 'Inter, sans-serif',
-        fill: textObj.fill || '#1f2937',
+        fill: textObj.fill || themePalette.ink,
         textAlign: 'center',
         originX: 'center',
         originY: 'center',
@@ -1549,7 +1593,7 @@ export default function LiveClassPage() {
 
     fc.on('mouse:dblclick', onDblClick);
     return () => fc.off('mouse:dblclick', onDblClick);
-  }, [role, classId, saveHistory]);
+  }, [role, classId, saveHistory, themePalette]);
 
   // ── Undo / Redo ─────────────────────────────────────────────────────────────
 
@@ -1733,7 +1777,7 @@ export default function LiveClassPage() {
       const { type, ...props } = spec;
       if (type === 'line') {
         const obj = new FabricLine([props.x1 || 0, props.y1 || 0, props.x2 || 100, props.y2 || 100], {
-          stroke: props.stroke || '#1f2937',
+          stroke: props.stroke || themePalette.ink,
           strokeWidth: props.strokeWidth || 2,
           strokeDashArray: props.strokeDashArray || null,
           selectable: props.selectable !== false,

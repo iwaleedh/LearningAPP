@@ -16,11 +16,6 @@ function loadStoredIds(key) {
     }
 }
 
-const sampleFlashcards = [
-    { id: 'sample-1', front: 'What is an isotope?', back: 'Atoms of the same element with different numbers of neutrons.', topic: 'Atomic Structure' },
-    { id: 'sample-2', front: 'Define electronegativity', back: 'The ability of an atom to attract bonding electrons in a covalent bond.', topic: 'Chemical Bonding' },
-    { id: 'sample-3', front: 'What is Avogadro\'s number?', back: '6.022 × 10^23 particles per mole.', topic: 'Stoichiometry' },
-];
 
 function parseNoteId(noteId) {
     const parts = String(noteId || '').split(':');
@@ -59,18 +54,14 @@ export default function FlashcardsPage() {
     }, [learning]);
 
     const cards = useMemo(() => {
-        if (userCards.length > 0) {
-            return userCards.map((card) => ({
-                id: card.cardId,
-                front: card.front,
-                back: card.back,
-                topic: card.subject || 'Generated',
-                sourceNoteId: card.sourceNoteId,
-                sourceLabel: card.sourceLabel,
-            }));
-        }
-
-        return sampleFlashcards;
+        return userCards.map((card) => ({
+            id: card.cardId,
+            front: card.front,
+            back: card.back,
+            topic: card.subject || 'Generated',
+            sourceNoteId: card.sourceNoteId,
+            sourceLabel: card.sourceLabel,
+        }));
     }, [userCards]);
 
     const totalCards = cards.length;
@@ -100,8 +91,31 @@ export default function FlashcardsPage() {
         goNext();
     };
 
-    if (!card) {
-        return <div className="card">No flashcards available yet.</div>;
+    if (totalCards === 0) {
+        return (
+            <div className="flashcard-hub animate-fade-in">
+                <div className="flashcard-page-header">
+                    <div className="flashcard-title-group">
+                        <div className="flashcard-subject-icon">
+                            <Layers size={28} />
+                        </div>
+                        <div>
+                            <h1 className="flashcard-page-title">Flashcards</h1>
+                            <p className="flashcard-page-qual">Tap to flip · Review generated cards from your notes</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="card empty-state flashcard-empty-state">
+                    <div className="empty-state-icon flashcard-empty-icon">
+                        <Layers size={40} />
+                    </div>
+                    <h3>No Flashcards Yet</h3>
+                    <p>
+                        Flashcards are generated from your saved notes. Start reading and saving notes to build your deck.
+                    </p>
+                </div>
+            </div>
+        );
     }
 
     const sourcePath = parseNoteId(card.sourceNoteId);
@@ -121,7 +135,7 @@ export default function FlashcardsPage() {
                 </div>
                 <div className="flashcard-meta-boxes">
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#d1fae5,#a7f3d0)', color: '#059669' }}>
+                        <div className="meta-icon meta-icon--success">
                             <CheckCircle size={18} />
                         </div>
                         <div className="meta-text">
@@ -130,7 +144,7 @@ export default function FlashcardsPage() {
                         </div>
                     </div>
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#fef3c7,#fde68a)', color: '#d97706' }}>
+                        <div className="meta-icon meta-icon--warning">
                             <BookOpen size={18} />
                         </div>
                         <div className="meta-text">
@@ -139,7 +153,7 @@ export default function FlashcardsPage() {
                         </div>
                     </div>
                     <div className="meta-box">
-                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#e0e7ff,#c7d2fe)', color: '#6366f1' }}>
+                        <div className="meta-icon meta-icon--info">
                             <Layers size={18} />
                         </div>
                         <div className="meta-text">

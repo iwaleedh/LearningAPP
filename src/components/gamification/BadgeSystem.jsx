@@ -1,8 +1,48 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Trophy, Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock } from 'lucide-react';
 import { getTotalReadCount, computeStudyStreak } from '../../hooks/useNoteReadStatus.js';
-import { getExercisesDone, getPapersViewed } from '../../services/activityStore.js';
+import { getExercisesDone, getPapersViewed, subscribeToActivityUpdates } from '../../services/activityStore.js';
 import './Gamification.css';
+
+const CONFETTI_COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6', '#06b6d4', '#facc15'];
+
+function Confetti({ active }) {
+    const particles = useMemo(() => {
+        if (!active) return [];
+        return Array.from({ length: 50 }, (_, i) => ({
+            id: i,
+            left: (i * 17) % 100,
+            color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+            delay: (i % 7) * 0.08,
+            duration: 1.2 + (i % 5) * 0.2,
+            width: 6 + (i % 8),
+            height: 4 + (i % 6),
+            rotation: (i * 37) % 360,
+        }));
+    }, [active]);
+
+    if (!active) return null;
+
+    return (
+        <div className="confetti-overlay" aria-hidden="true">
+            {particles.map(p => (
+                <div
+                    key={p.id}
+                    className="confetti-particle"
+                    style={{
+                        left: `${p.left}%`,
+                        backgroundColor: p.color,
+                        animationDelay: `${p.delay}s`,
+                        animationDuration: `${p.duration}s`,
+                        width: p.width,
+                        height: p.height,
+                        '--rotation': `${p.rotation}deg`,
+                    }}
+                />
+            ))}
+        </div>
+    );
+}
 
 const BADGE_DEFINITIONS = [
     {
@@ -31,6 +71,33 @@ const BADGE_DEFINITIONS = [
         color: '#4ade80',
         gradient: 'linear-gradient(135deg, #4ade80, #22c55e)',
         criteria: (stats) => stats.exercisesCompleted >= 1,
+    },
+    {
+        id: 'notes_5',
+        name: 'Studious',
+        description: 'Read 5 notes.',
+        icon: BookOpen,
+        color: '#34d399',
+        gradient: 'linear-gradient(135deg, #34d399, #059669)',
+        criteria: (stats) => stats.notesRead >= 5,
+    },
+    {
+        id: 'notes_25',
+        name: 'Bookworm',
+        description: 'Read 25 notes.',
+        icon: BookOpen,
+        color: '#a78bfa',
+        gradient: 'linear-gradient(135deg, #a78bfa, #7c3aed)',
+        criteria: (stats) => stats.notesRead >= 25,
+    },
+    {
+        id: 'exercises_10',
+        name: 'Practice Makes Perfect',
+        description: 'Completed 10 exercises.',
+        icon: Target,
+        color: '#38bdf8',
+        gradient: 'linear-gradient(135deg, #38bdf8, #0284c7)',
+        criteria: (stats) => stats.exercisesCompleted >= 10,
     },
     {
         id: 'streak_3',
@@ -100,19 +167,19 @@ function buildLiveStats(earned) {
     const notesRead = getTotalReadCount();
     return {
         logins: 1,
-        // If they've read any note they've navigated through multiple pages
         pagesVisited: notesRead > 0 ? 5 : 1,
         exercisesCompleted: getExercisesDone(),
         currentStreak: computeStudyStreak(),
-        perfectScores: 0,   // not tracked yet
+        perfectScores: 0,
         papersCompleted: getPapersViewed(),
-        fastCompletions: 0, // not tracked yet
+        fastCompletions: 0,
+        notesRead,
         badgesEarned: earned,
     };
 }
 
 function getInitialState() {
-    const earned = loadEarned();
+    const earned = [...new Set(loadEarned())];
     const stats = buildLiveStats(earned);
 
     const newBadges = BADGE_DEFINITIONS
@@ -133,6 +200,32 @@ export default function BadgeSystem() {
     const { stats, justEarned } = state;
 
     useEffect(() => {
+        return subscribeToActivityUpdates(() => {
+            setState((prev) => {
+                const earned = [...new Set(prev.stats?.badgesEarned || loadEarned())];
+                const nextStats = buildLiveStats(earned);
+                const newBadges = BADGE_DEFINITIONS
+                    .filter((badge) => !earned.includes(badge.id) && badge.criteria(nextStats))
+                    .map((badge) => badge.id);
+
+                if (newBadges.length === 0) {
+                    return {
+                        stats: nextStats,
+                        justEarned: prev.justEarned,
+                    };
+                }
+
+                const allEarned = [...earned, ...newBadges];
+                saveEarned(allEarned);
+                return {
+                    stats: { ...nextStats, badgesEarned: allEarned },
+                    justEarned: newBadges[0],
+                };
+            });
+        });
+    }, []);
+
+    useEffect(() => {
         if (!justEarned) return undefined;
         const id = setTimeout(() => {
             setState(prev => ({ ...prev, justEarned: null }));
@@ -145,6 +238,8 @@ export default function BadgeSystem() {
 
     return (
         <div className="badge-system">
+            <Confetti active={Boolean(justEarned)} />
+
             <div className="badge-header">
                 <Trophy size={20} />
                 <h3>Achievements</h3>

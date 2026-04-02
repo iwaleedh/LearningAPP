@@ -1,9 +1,17 @@
 import { useState } from 'react';
 
-export default function FlashcardExercise({ question, onNext }) {
+export default function FlashcardExercise({ question, onNext, onAttempt }) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [startedAt] = useState(() => Date.now());
 
-  function handleAnswer() {
+  function handleAnswer(correct) {
+    onAttempt?.({
+      correct,
+      scorePercent: correct ? 100 : 0,
+      durationSeconds: (Date.now() - startedAt) / 1000,
+      userAnswer: correct ? 'Got it' : 'Still learning',
+      correctAnswer: question.back,
+    });
     setIsFlipped(false);
     setTimeout(onNext, 150);
   }
@@ -20,8 +28,8 @@ export default function FlashcardExercise({ question, onNext }) {
       {!isFlipped && <p className="fc-ex__hint">Click card to reveal answer</p>}
       {isFlipped && (
         <div className="fc-ex__actions">
-          <button className="btn btn-secondary" onClick={handleAnswer}>Still Learning</button>
-          <button className="btn btn-primary" onClick={handleAnswer}>Got it!</button>
+          <button className="btn btn-secondary" onClick={() => handleAnswer(false)}>Still Learning</button>
+          <button className="btn btn-primary" onClick={() => handleAnswer(true)}>Got it!</button>
         </div>
       )}
     </div>

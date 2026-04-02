@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Moon, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck, Settings } from 'lucide-react';
+import { Moon, Sun, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck, Settings } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
+import { useTheme } from '../hooks/useTheme.js';
 import { clearGuestData, getGuestDataSummary, importGuestDataToAccount } from '../services/notes/noteStore.js';
+import { exportNotesAsPdf } from '../services/notes/noteExport.js';
 import {
     buildAccessNotice,
     getLocationPath,
@@ -25,10 +27,13 @@ export default function SettingsPage() {
         clerkUser,
         dbUser,
     } = useAuth();
+    const { theme, toggleTheme } = useTheme();
     const role = authRole ?? 'student';
     const [guestSummary, setGuestSummary] = useState(null);
     const [guestActionState, setGuestActionState] = useState('idle');
     const [guestActionMessage, setGuestActionMessage] = useState('');
+    const [exportState, setExportState] = useState('idle');
+    const [exportMessage, setExportMessage] = useState('');
     const [authOpen, setAuthOpen] = useState(false);
 
     const profileRef = useRef(null);
@@ -162,6 +167,49 @@ export default function SettingsPage() {
         }
     }
 
+    function handleClearProgress() {
+        if (!window.confirm('This will erase all your local progress — read status, exercise stats, streak data, flashcard state, and saved mistakes. This cannot be undone. Continue?')) {
+            return;
+        }
+
+        try {
+            // Clear lt_read:* keys
+            const keysToRemove = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                const k = localStorage.key(i);
+                if (k && k.startsWith('lt_read:')) keysToRemove.push(k);
+            }
+            keysToRemove.forEach((k) => localStorage.removeItem(k));
+
+            // Clear known activity/progress keys
+            localStorage.removeItem('lt_mistakes');
+            localStorage.removeItem('lt_exercises_done');
+            localStorage.removeItem('lt_papers_viewed');
+            localStorage.removeItem('lt_activity_days');
+            localStorage.removeItem('lt_flashcard_known');
+            localStorage.removeItem('lt_flashcard_learning');
+            localStorage.removeItem('lt_badge_earned');
+
+            window.dispatchEvent(new CustomEvent('lt:activity-updated'));
+        } catch {
+            // storage access failed — ignore
+        }
+    }
+
+    async function handleExportNotes() {
+        setExportState('loading');
+        setExportMessage('');
+
+        try {
+            const result = await exportNotesAsPdf();
+            setExportState('success');
+            setExportMessage(`Exported ${result.notesExported} saved note${result.notesExported === 1 ? '' : 's'} to PDF.`);
+        } catch (error) {
+            setExportState('error');
+            setExportMessage(error?.message || 'Could not export notes.');
+        }
+    }
+
     return (
         <div className="settings-hub animate-fade-in">
             {/* Bento Header */}
@@ -255,7 +303,7 @@ export default function SettingsPage() {
                             <GraduationCap size={14} />
                             Current Role
                         </span>
-                        <strong className="settings-profile-value" style={{ textTransform: 'capitalize' }}>
+                        <strong className="settings-profile-value settings-profile-value--caps">
                             {role}
                         </strong>
                     </div>
@@ -320,28 +368,48 @@ export default function SettingsPage() {
                 <div className="setting-item card">
                     <div className="setting-info">
                         <h4>
-                            <Moon size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} />
-                            Night Mode
+                            {theme === 'dark' ? (
+                                <Moon size={16} className="settings-inline-icon" />
+                            ) : (
+                                <Sun size={16} className="settings-inline-icon" />
+                            )}
+                            Theme
                         </h4>
                         <p>
-                            Night mode is now the only app theme, so reading, note blocks,
-                            and diagrams stay consistently high-contrast across every page.
+                            Switch between dark and light themes. The design tokens are already wired app-wide, so this changes the full interface.
                         </p>
                     </div>
-                    <span className="badge">Always on</span>
+                    <button
+                        type="button"
+                        className={`toggle-switch ${theme === 'light' ? 'active' : ''}`}
+                        onClick={toggleTheme}
+                        aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                        aria-pressed={theme === 'light'}
+                        title={`Currently ${theme} mode`}
+                    />
                 </div>
 
                 {/* Export */}
                 <div className="setting-item card">
                     <div className="setting-info">
                         <h4>
-                            <Download size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} />
+                            <Download size={16} className="settings-inline-icon" />
                             Export Notes
                         </h4>
                         <p>Download your highlights and notes as PDF</p>
+                        {exportMessage && (
+                            <p className={`settings-import-status settings-import-status--${exportState}`}>
+                                {exportMessage}
+                            </p>
+                        )}
                     </div>
-                    <button className="btn btn-secondary btn-sm">
-                        <Download size={14} /> Export
+                    <button
+                        type="button"
+                        className="btn btn-secondary btn-sm"
+                        onClick={handleExportNotes}
+                        disabled={exportState === 'loading'}
+                    >
+                        <Download size={14} /> {exportState === 'loading' ? 'Exporting…' : 'Export'}
                     </button>
                 </div>
 
@@ -349,12 +417,12 @@ export default function SettingsPage() {
                 <div className="setting-item card">
                     <div className="setting-info">
                         <h4>
-                            <Trash2 size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} />
+                            <Trash2 size={16} className="settings-inline-icon" />
                             Clear Progress
                         </h4>
                         <p>Reset all progress and saved data</p>
                     </div>
-                    <button className="btn btn-danger btn-sm">
+                    <button className="btn btn-danger btn-sm" onClick={handleClearProgress}>
                         <Trash2 size={14} /> Reset
                     </button>
                 </div>
@@ -363,17 +431,17 @@ export default function SettingsPage() {
                 <div className="setting-item card">
                     <div className="setting-info">
                         <h4>
-                            <ShieldCheck size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} />
+                            <ShieldCheck size={16} className="settings-inline-icon" />
                             Teacher Access
                         </h4>
                         {role === 'teacher' ? (
                             <p>
                                 This account can access teacher tools, including{' '}
-                                <Link to="/teacher" style={{ color: 'var(--color-primary)' }}>
+                                <Link to="/teacher" className="settings-inline-link">
                                     the dashboard
                                 </Link>{' '}
                                 and{' '}
-                                <Link to="/teacher/monitor" style={{ color: 'var(--color-primary)' }}>
+                                <Link to="/teacher/monitor" className="settings-inline-link">
                                     live session monitoring
                                 </Link>.
                             </p>
@@ -384,9 +452,9 @@ export default function SettingsPage() {
                             </p>
                         )}
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', flexShrink: 0 }}>
+                    <div className="settings-access-actions">
                         {role === 'teacher' && (
-                            <span className="badge teacher-badge" style={{ fontSize: 'var(--font-size-xs)' }}>
+                            <span className="badge teacher-badge teacher-badge--compact">
                                 Teacher
                             </span>
                         )}

@@ -4,7 +4,7 @@
 
 /* ---- Badge System ---- */
 .badge-system {
-    background: linear-gradient(135deg, var(--color-surface) 0%, rgba(255,255,255,0.03) 100%);
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint-soft) 100%);
     border-radius: var(--radius-2xl);
     padding: var(--space-6);
     border: 1px solid var(--color-border);
@@ -37,14 +37,14 @@
 }
 
 .badge-toast {
-    background: linear-gradient(135deg, #4ade80, #22c55e);
+    background: linear-gradient(135deg, var(--color-success), var(--color-success-dark, #16a34a));
     color: white;
     padding: var(--space-3) var(--space-4);
     border-radius: var(--radius-lg);
     margin-bottom: var(--space-4);
     font-size: var(--font-size-sm);
     text-align: center;
-    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
 }
 
 .badge-grid {
@@ -65,7 +65,7 @@
 }
 
 .badge-card.earned {
-    background: linear-gradient(135deg, var(--color-surface) 0%, rgba(255,255,255,0.05) 100%);
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint) 100%);
     border-left: 3px solid var(--color-primary);
     box-shadow: 0 4px 12px -2px rgba(0,0,0,0.03);
 }
@@ -106,7 +106,7 @@
 
 /* ---- Streak Tracker ---- */
 .streak-tracker {
-    background: linear-gradient(135deg, var(--color-surface) 0%, rgba(255,255,255,0.03) 100%);
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint-soft) 100%);
     border-radius: var(--radius-2xl);
     padding: var(--space-6);
     border: 1px solid var(--color-border);
@@ -252,6 +252,11 @@
     background: rgba(99, 102, 241, 0.8);
 }
 
+.heatmap-cell.intensity-3 {
+    background: rgba(99, 102, 241, 1);
+    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.18);
+}
+
 .heatmap-legend {
     display: flex;
     align-items: center;
@@ -269,7 +274,7 @@
 
 /* ---- Leaderboard ---- */
 .leaderboard {
-    background: linear-gradient(135deg, var(--color-surface) 0%, rgba(255,255,255,0.03) 100%);
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint-soft) 100%);
     border-radius: var(--radius-2xl);
     padding: var(--space-6);
     border: 1px solid var(--color-border);
@@ -293,6 +298,7 @@
 
 .leaderboard-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-2);
     margin-bottom: var(--space-4);
 }
@@ -465,6 +471,12 @@
     gap: var(--space-2);
 }
 
+.lb-meta {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    margin-top: 2px;
+}
+
 .lb-you {
     font-size: var(--font-size-xs);
     background: var(--color-primary);
@@ -495,6 +507,186 @@
 
 .trend-same {
     color: #94a3b8;
+}
+
+/* ---- Confetti ---- */
+.confetti-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.confetti-particle {
+    position: absolute;
+    top: -20px;
+    border-radius: 2px;
+    animation: confetti-fall linear forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(var(--rotation, 0deg));
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(calc(var(--rotation, 0deg) + 720deg));
+        opacity: 0;
+    }
+}
+
+/* ---- XP / Level System ---- */
+.xp-level-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    background: linear-gradient(135deg, var(--color-primary), #4f46e5);
+    border-radius: var(--radius-xl);
+    padding: var(--space-4) var(--space-5);
+    margin-bottom: var(--space-5);
+    color: var(--color-text-inverse);
+}
+
+.xp-level-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    min-width: 64px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+}
+
+.xp-level-badge svg {
+    color: var(--color-text-inverse);
+}
+
+.xp-level-info {
+    flex: 1;
+}
+
+.xp-level-name {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-2);
+}
+
+.xp-bar-wrap {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-bottom: var(--space-1);
+}
+
+.xp-bar-fill {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-full);
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.xp-bar-label {
+    font-size: var(--font-size-xs);
+    opacity: 0.85;
+}
+
+.xp-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+@media (max-width: 480px) {
+    .xp-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.xp-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-3);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.xp-stat-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xp-stat-icon--notes {
+    background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    color: var(--color-primary);
+}
+
+.xp-stat-icon--exercises {
+    background: var(--color-success-light);
+    color: var(--color-success);
+}
+
+.xp-stat-icon--papers {
+    background: var(--color-warning-light);
+    color: var(--color-warning);
+}
+
+.xp-stat-icon--streak {
+    background: color-mix(in srgb, var(--color-warning) 12%, color-mix(in srgb, var(--color-error) 10%, transparent));
+    color: #f97316;
+}
+
+.xp-stat-val {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+}
+
+.xp-stat-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.xp-earn {
+    color: var(--color-success);
+    font-weight: var(--font-weight-semibold);
+    font-size: 10px;
+}
+
+.xp-next-level {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    padding: var(--space-3);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
 }
 
 /* ---- Animations ---- */

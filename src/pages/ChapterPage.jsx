@@ -75,7 +75,7 @@ export default function ChapterPage() {
     if (isLoading) {
         return (
             <div className="chapter-page animate-fade-in">
-                <div className="card" style={{ padding: 'var(--space-6)' }}>
+                <div className="card content-status-card">
                     Loading syllabus...
                 </div>
             </div>
@@ -85,7 +85,7 @@ export default function ChapterPage() {
     if (error || !syllabus) {
         return (
             <div className="chapter-page animate-fade-in">
-                <div className="card" style={{ padding: 'var(--space-6)' }}>
+                <div className="card content-status-card">
                     Could not load this syllabus right now.
                 </div>
             </div>

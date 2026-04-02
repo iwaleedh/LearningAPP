@@ -46,9 +46,9 @@
   display: flex;
   align-items: center;
   gap: var(--space-1);
-  background: rgba(245, 158, 11, 0.15);
+  background: linear-gradient(135deg, var(--color-warning-light), rgba(245, 158, 11, 0.05));
   color: var(--color-accent);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.22);
   border-radius: 999px;
   padding: var(--space-1) var(--space-3);
   font-size: 0.8rem;
@@ -90,7 +90,7 @@
 
 .admin-tab-count {
   background: var(--color-error);
-  color: #fff;
+  color: var(--color-text-inverse);
   border-radius: 999px;
   font-size: 0.7rem;
   font-weight: 700;
@@ -121,7 +121,16 @@
   text-align: center;
 }
 
-.admin-stat-icon { flex-shrink: 0; }
+.admin-stat-icon {
+  flex-shrink: 0;
+}
+
+.admin-stat-card--primary .admin-stat-icon { color: var(--color-primary); }
+.admin-stat-card--accent .admin-stat-icon { color: var(--color-accent); }
+.admin-stat-card--success .admin-stat-icon { color: var(--color-success); }
+.admin-stat-card--error .admin-stat-icon { color: var(--color-error); }
+.admin-stat-card--violet .admin-stat-icon { color: #8b5cf6; }
+.admin-stat-card--info .admin-stat-icon { color: var(--color-info); }
 
 .admin-stat-value {
   font-size: 2rem;
@@ -141,8 +150,8 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-4);
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: linear-gradient(135deg, var(--color-warning-light), rgba(245, 158, 11, 0.04));
+  border: 1px solid rgba(245, 158, 11, 0.22);
   color: var(--color-accent);
   border-radius: var(--radius-lg);
   font-size: 0.9rem;
@@ -186,6 +195,13 @@
 }
 
 .admin-search:focus { border-color: var(--color-primary); }
+.admin-search:focus {
+  box-shadow: 0 0 0 3px var(--color-primary-100);
+}
+
+.admin-search--compact {
+  margin-bottom: var(--space-1);
+}
 
 .admin-filter-pills {
   display: flex;
@@ -213,7 +229,7 @@
 .admin-pill.active {
   background: var(--color-primary);
   border-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-text-inverse);
 }
 
 .admin-pill-count {
@@ -275,7 +291,7 @@
   height: 36px;
   border-radius: 50%;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-text-inverse);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,9 +354,9 @@
 }
 
 .admin-btn-block {
-  background: rgba(239, 68, 68, 0.12);
+  background: var(--color-error-light);
   color: var(--color-error);
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  border: 1px solid rgba(239, 68, 68, 0.24);
 }
 
 .admin-btn-block:hover {
@@ -437,12 +453,12 @@
 /* ── Delete button ──────────────────────────────────────────────────────── */
 
 .admin-btn-delete {
-  background: rgba(239, 68, 68, 0.1);
+  background: var(--color-error-light);
   color: var(--color-error);
-  border: 1px solid rgba(239, 68, 68, 0.25);
+  border: 1px solid rgba(239, 68, 68, 0.24);
 }
 .admin-btn-delete:hover:not(:disabled) {
-  background: rgba(239, 68, 68, 0.18);
+  background: color-mix(in srgb, var(--color-error) 18%, transparent);
   border-color: var(--color-error);
 }
 
@@ -451,7 +467,9 @@
 .admin-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: var(--overlay-backdrop);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -474,6 +492,7 @@
   gap: var(--space-4);
   text-align: center;
   animation: admin-slide-up 0.15s ease;
+  box-shadow: var(--shadow-xl);
 }
 
 @keyframes admin-slide-up {
@@ -481,7 +500,10 @@
   to   { transform: translateY(0);    opacity: 1; }
 }
 
-.admin-modal-icon { line-height: 1; }
+.admin-modal-icon {
+  line-height: 1;
+  color: var(--color-error);
+}
 
 .admin-modal-title {
   font-size: var(--font-size-lg);
@@ -537,6 +559,12 @@
   min-width: 160px;
 }
 
+.admin-review-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
 .admin-notes-text {
   font-size: 0.75rem;
   color: var(--color-text-secondary);
@@ -544,8 +572,22 @@
   margin-top: var(--space-1);
 }
 
+.admin-cell-caps {
+  text-transform: capitalize;
+}
+
 .admin-inline-error {
   font-size: 0.75rem;
   color: var(--color-error);
   line-height: 1.4;
+}
+
+.admin-inline-error--banner {
+  margin-bottom: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-error-light);
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius-md);
+  color: var(--color-error-dark);
+  font-size: var(--font-size-sm);
 }

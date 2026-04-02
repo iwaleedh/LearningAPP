@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import '../pages/Pages.css';
 
 export default class ErrorBoundary extends Component {
     constructor(props) {
@@ -19,21 +20,10 @@ export default class ErrorBoundary extends Component {
     render() {
         if (this.state.hasError) {
             return (
-                <div
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        minHeight: '60vh',
-                        textAlign: 'center',
-                        gap: 'var(--space-4)',
-                        padding: 'var(--space-8)',
-                    }}
-                >
-                    <div style={{ fontSize: '3rem' }}>⚠️</div>
-                    <h2 style={{ marginBottom: 0 }}>Something went wrong</h2>
-                    <p style={{ color: 'var(--color-text-secondary)', maxWidth: '420px' }}>
+                <div className="fallback-screen">
+                    <div className="fallback-screen-icon">⚠️</div>
+                    <h2 className="fallback-screen-title">Something went wrong</h2>
+                    <p className="fallback-screen-copy">
                         An unexpected error occurred. Please refresh the page or try again.
                     </p>
                     <button

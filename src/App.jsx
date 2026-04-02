@@ -11,8 +11,6 @@ import RequireRole from './components/auth/RequireRole';
 import RequireSignIn from './components/auth/RequireSignIn';
 import RequireApproved from './components/auth/RequireApproved';
 import { canAccessLocalLiveClassAsGuest } from './components/auth/accessControl.js';
-import './App.css';
-
 import { ToastProvider } from './components/common/Toast';
 import './components/common/Skeleton.css';
 import './components/common/StateScreens.css';
@@ -40,13 +38,13 @@ const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
 
 // Loading fallback using skeletons
 const PageLoader = () => (
-  <div style={{ padding: 'var(--space-8)' }} className="animate-fade-in">
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)', maxWidth: 'var(--max-content-width)', margin: '0 auto' }}>
-      <div className="skeleton" style={{ height: '2rem', width: '30%', borderRadius: 'var(--radius-md)' }}></div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 'var(--space-5)' }}>
-        <div className="skeleton" style={{ height: '180px', borderRadius: 'var(--radius-xl)' }}></div>
-        <div className="skeleton" style={{ height: '180px', borderRadius: 'var(--radius-xl)' }}></div>
-        <div className="skeleton" style={{ height: '180px', borderRadius: 'var(--radius-xl)' }}></div>
+  <div className="page-loader animate-fade-in">
+    <div className="page-loader-inner">
+      <div className="skeleton page-loader-title"></div>
+      <div className="page-loader-grid">
+        <div className="skeleton page-loader-card"></div>
+        <div className="skeleton page-loader-card"></div>
+        <div className="skeleton page-loader-card"></div>
       </div>
     </div>
   </div>

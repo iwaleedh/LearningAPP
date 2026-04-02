@@ -4,6 +4,11 @@
 
 .teacher-dashboard {
     max-width: 1100px;
+    --mastery-strong: var(--color-success);
+    --mastery-good: var(--color-primary);
+    --mastery-mid: var(--color-warning);
+    --mastery-low: var(--color-accent);
+    --mastery-risk: var(--color-error);
 }
 
 .teacher-subtitle {
@@ -27,13 +32,13 @@
     background: var(--color-surface);
     border-radius: var(--radius-2xl, 1rem);
     border: 1px solid var(--color-border-light);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    box-shadow: var(--shadow-sm);
     transition: transform var(--transition-bounce), box-shadow var(--transition-bounce);
 }
 
 .teacher-stat-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-lg);
 }
 
 .teacher-stat-card svg {
@@ -42,7 +47,15 @@
 }
 
 .teacher-stat-card.warning svg {
-    color: #f59e0b;
+    color: var(--color-warning);
+}
+
+.teacher-status-message {
+    margin-bottom: var(--space-5);
+}
+
+.teacher-status-message--error {
+    color: var(--color-error);
 }
 
 .stat-big {
@@ -88,7 +101,7 @@
 .teacher-tab.active {
     background: var(--color-surface);
     color: var(--color-primary);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow-sm);
 }
 
 /* ---- Content ---- */
@@ -97,11 +110,21 @@
     border-radius: var(--radius-2xl, 1rem);
     padding: var(--space-5);
     border: 1px solid var(--color-border-light);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    box-shadow: var(--shadow-sm);
 }
 
 .teacher-content h3 {
     margin-bottom: var(--space-2);
+}
+
+.teacher-empty-state {
+    padding: var(--space-5);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
 }
 
 .section-desc {
@@ -151,8 +174,8 @@
     text-align: center;
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-xs);
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: var(--color-text-inverse);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
     min-width: 45px;
 }
 
@@ -245,38 +268,38 @@
 }
 
 .success-badge.good {
-    color: #22c55e;
-    background: rgba(34, 197, 94, 0.1);
+    color: var(--color-success);
+    background: var(--color-success-light);
 }
 
 .success-badge.warn {
-    color: #f59e0b;
-    background: rgba(245, 158, 11, 0.1);
+    color: var(--color-warning);
+    background: var(--color-warning-light);
 }
 
 .success-badge.bad {
-    color: #ef4444;
-    background: rgba(239, 68, 68, 0.1);
+    color: var(--color-error);
+    background: var(--color-error-light);
 }
 
 .flag-badge {
     font-size: var(--font-size-xs);
-    color: #f59e0b;
+    color: var(--color-warning);
     font-weight: var(--font-weight-semibold);
 }
 
 .ok-badge {
     font-size: var(--font-size-xs);
-    color: #22c55e;
+    color: var(--color-success);
 }
 
 .flagged-row {
-    background: rgba(239, 68, 68, 0.05);
+    background: color-mix(in srgb, var(--color-error) 6%, transparent);
 }
 
 .question-summary {
     padding: var(--space-3);
-    background: rgba(245, 158, 11, 0.08);
+    background: color-mix(in srgb, var(--color-warning) 8%, transparent);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
@@ -330,7 +353,7 @@
 
 .time-insight {
     padding: var(--space-3) var(--space-4);
-    background: rgba(99, 102, 241, 0.08);
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
@@ -376,26 +399,26 @@
 }
 
 .confidence-chip.easy {
-    color: #22c55e;
-    background: rgba(34, 197, 94, 0.1);
+    color: var(--color-success);
+    background: var(--color-success-light);
 }
 
 .confidence-chip.medium {
-    color: #f59e0b;
-    background: rgba(245, 158, 11, 0.1);
+    color: var(--color-warning);
+    background: var(--color-warning-light);
 }
 
 .confidence-chip.hard {
-    color: #ef4444;
-    background: rgba(239, 68, 68, 0.1);
+    color: var(--color-error);
+    background: var(--color-error-light);
 }
 
 .trend-up {
-    color: #22c55e;
+    color: var(--color-success);
 }
 
 .trend-down {
-    color: #ef4444;
+    color: var(--color-error);
 }
 
 .export-btn {

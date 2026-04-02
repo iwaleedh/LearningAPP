@@ -5,10 +5,13 @@ import {
     computeStudyStreak,
     computeLongestStreak,
 } from '../../hooks/useNoteReadStatus.js';
+import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
 import './Gamification.css';
 
 export default function StreakTracker() {
+    const activityVersion = useActivityRefresh();
     const heatmapData = useMemo(() => {
+        void activityVersion;
         const activityMap = getActivityByDate();
         const days = [];
         const today = new Date();
@@ -18,19 +21,26 @@ export default function StreakTracker() {
             date.setDate(date.getDate() - i);
             const dateStr = date.toISOString().slice(0, 10);
             const count = activityMap[dateStr] || 0;
-            const intensity = count === 0 ? 0 : count <= 2 ? 1 : 2;
+            const intensity = count === 0 ? 0 : count <= 2 ? 1 : count <= 5 ? 2 : 3;
             days.push({
                 date: dateStr,
                 day: date.getDay(),
+                count,
                 intensity,
                 label: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
             });
         }
         return days;
-    }, []);
+    }, [activityVersion]);
 
-    const currentStreak = useMemo(() => computeStudyStreak(), []);
-    const longestStreak = useMemo(() => computeLongestStreak(), []);
+    const currentStreak = useMemo(() => {
+        void activityVersion;
+        return computeStudyStreak();
+    }, [activityVersion]);
+    const longestStreak = useMemo(() => {
+        void activityVersion;
+        return computeLongestStreak();
+    }, [activityVersion]);
     const totalActiveDays = heatmapData.filter(d => d.intensity > 0).length;
 
     const weeks = useMemo(() => {
@@ -101,7 +111,7 @@ export default function StreakTracker() {
                                     <div
                                         key={di}
                                         className={`heatmap-cell intensity-${day.intensity}`}
-                                        title={`${day.label}: ${day.intensity > 0 ? 'Active' : 'No activity'}`}
+                                        title={`${day.label}: ${day.count > 0 ? `${day.count} study action${day.count === 1 ? '' : 's'}` : 'No activity'}`}
                                     />
                                 ))}
                             </div>
@@ -114,6 +124,7 @@ export default function StreakTracker() {
                     <div className="heatmap-cell intensity-0" />
                     <div className="heatmap-cell intensity-1" />
                     <div className="heatmap-cell intensity-2" />
+                    <div className="heatmap-cell intensity-3" />
                     <span>More</span>
                 </div>
             </div>

@@ -207,7 +207,7 @@ function PaymentForm({ onSubmitted }) {
             ref={fileRef}
             type="file"
             accept="image/*,application/pdf"
-            style={{ display: 'none' }}
+            className="payment-hidden-input"
             onChange={handleFile}
           />
         </>
@@ -247,7 +247,7 @@ function PaymentSubmitted({ request }) {
       <div className="payment-submitted-details card">
         <div className="payment-bank-row">
           <span className="payment-bank-key">Plan</span>
-          <span className="payment-bank-val" style={{ textTransform: 'capitalize' }}>{request.plan}</span>
+          <span className="payment-bank-val payment-bank-val--caps">{request.plan}</span>
         </div>
         <div className="payment-bank-row">
           <span className="payment-bank-key">Amount</span>
@@ -322,8 +322,8 @@ export default function PendingApprovalPage() {
   if (statusResult === undefined || paymentReq === undefined) {
     return (
       <div className="pending-page pending-page--payment">
-        <div className="payment-page-card card" style={{ alignItems: 'center', justifyContent: 'center', minHeight: 200 }}>
-          <Loader size={32} className="spin" style={{ color: 'var(--color-text-secondary)' }} />
+        <div className="payment-page-card pending-loading-card card">
+          <Loader size={32} className="spin pending-loading-spinner" />
           <p className="pending-message">Loading…</p>
         </div>
       </div>

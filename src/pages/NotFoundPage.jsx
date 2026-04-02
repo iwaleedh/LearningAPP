@@ -1,26 +1,16 @@
 import { useNavigate } from 'react-router-dom';
+import './Pages.css';
 
 export default function NotFoundPage() {
     const navigate = useNavigate();
     return (
-        <div
-            className="animate-fade-in"
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: '60vh',
-                textAlign: 'center',
-                gap: 'var(--space-4)',
-            }}
-        >
-            <div style={{ fontSize: '4rem' }}>🔍</div>
-            <h1 style={{ fontSize: 'var(--font-size-3xl)', marginBottom: 0 }}>404 — Page Not Found</h1>
-            <p style={{ color: 'var(--color-text-secondary)', maxWidth: '420px' }}>
+        <div className="fallback-screen animate-fade-in">
+            <div className="fallback-screen-icon fallback-screen-icon--large">🔍</div>
+            <h1 className="fallback-screen-title fallback-screen-title--large">404 — Page Not Found</h1>
+            <p className="fallback-screen-copy">
                 The page you're looking for doesn't exist or may have been moved.
             </p>
-            <div style={{ display: 'flex', gap: 'var(--space-3)', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <div className="fallback-screen-actions">
                 <button className="btn btn-primary" onClick={() => navigate('/')}>
                     Go to Dashboard
                 </button>

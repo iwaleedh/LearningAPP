@@ -91,7 +91,7 @@
 .exam-nav-btn.active {
     background: var(--color-primary);
     border-color: var(--color-primary);
-    color: white;
+    color: var(--color-text-inverse);
 }
 
 .exam-nav-btn.answered:not(.active) {
@@ -438,7 +438,7 @@
 }
 
 .past-paper-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-md);
 }
 
 .past-paper-header {
@@ -567,7 +567,7 @@
 /* Download Button States */
 .btn-success {
     background: var(--color-success) !important;
-    color: white !important;
+    color: var(--color-text-inverse) !important;
     border-color: var(--color-success) !important;
 }
 

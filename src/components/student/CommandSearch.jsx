@@ -6,10 +6,6 @@ import { loadSyllabusesBySubjects } from '../../data/syllabusIndex.js';
 const SEARCH_SUBJECTS = ['chemistry', 'biology', 'physics', 'mathematics', 'economics', 'business', 'accounting'];
 const SUBJECT_LABELS = { chemistry: 'Chemistry', biology: 'Biology', physics: 'Physics', mathematics: 'Maths', economics: 'Economics', business: 'Business', accounting: 'Accounting' };
 
-function buildSearchIndex() {
-    return [];
-}
-
 function buildSearchIndexFromSyllabuses(syllabusesBySubject) {
     const items = [];
     SEARCH_SUBJECTS.forEach(subject => {
@@ -37,7 +33,7 @@ function buildSearchIndexFromSyllabuses(syllabusesBySubject) {
 export default function CommandSearch({ onClose }) {
     const [query, setQuery] = useState('');
     const [focusedIndex, setFocusedIndex] = useState(0);
-    const [searchableItems, setSearchableItems] = useState(() => buildSearchIndex());
+    const [searchableItems, setSearchableItems] = useState([]);
     const [searchIndexStatus, setSearchIndexStatus] = useState('loading');
     const inputRef = useRef(null);
     const navigate = useNavigate();
@@ -100,7 +96,7 @@ export default function CommandSearch({ onClose }) {
         <div className="search-modal-overlay" onClick={onClose}>
             <div className="search-modal" onClick={e => e.stopPropagation()}>
                 <div className="search-input-wrapper">
-                    <Search size={20} style={{ color: 'var(--color-text-tertiary)', flexShrink: 0 }} />
+                    <Search size={20} className="search-input-icon" />
                     <input
                         ref={inputRef}
                         type="text"
@@ -113,15 +109,15 @@ export default function CommandSearch({ onClose }) {
 
                 <div className="search-results">
                     {searchIndexStatus === 'loading' ? (
-                        <div style={{ padding: 'var(--space-8)', textAlign: 'center', color: 'var(--color-text-tertiary)' }}>
+                        <div className="search-results-state">
                             Building search index...
                         </div>
                     ) : searchIndexStatus === 'error' ? (
-                        <div style={{ padding: 'var(--space-8)', textAlign: 'center', color: 'var(--color-text-tertiary)' }}>
+                        <div className="search-results-state">
                             Search is unavailable right now.
                         </div>
                     ) : results.length === 0 ? (
-                        <div style={{ padding: 'var(--space-8)', textAlign: 'center', color: 'var(--color-text-tertiary)' }}>
+                        <div className="search-results-state">
                             No results found for &quot;{query}&quot;
                         </div>
                     ) : (
@@ -134,15 +130,15 @@ export default function CommandSearch({ onClose }) {
                                     onClick={() => handleSelect(item)}
                                     onMouseEnter={() => setFocusedIndex(i)}
                                 >
-                                    <Icon size={18} style={{ color: 'var(--color-text-tertiary)', flexShrink: 0 }} />
-                                    <div style={{ flex: 1 }}>
-                                        <div style={{ fontWeight: 'var(--font-weight-medium)', fontSize: 'var(--font-size-sm)' }}>
+                                    <Icon size={18} className="search-result-icon" />
+                                    <div className="search-result-content">
+                                        <div className="search-result-title">
                                             {item.title}
                                         </div>
                                         <div className="search-result-type">{item.type}</div>
                                     </div>
                                     {i === focusedIndex && (
-                                        <ArrowRight size={14} style={{ color: 'var(--color-text-tertiary)' }} />
+                                        <ArrowRight size={14} className="search-result-arrow" />
                                     )}
                                 </div>
                             );

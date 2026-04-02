@@ -32,6 +32,30 @@ export default defineSchema({
     .index("by_owner", ["ownerUserId"])
     .index("by_subject", ["subject"]),
 
+  studyAttempts: defineTable({
+    ownerUserId: v.string(),
+    sourceType: v.string(), // 'exercise' | 'pastpaper'
+    activityType: v.string(), // e.g. 'mcq', 'keyword', 'view_question', 'download_marking'
+    subject: v.string(),
+    unitId: v.optional(v.number()),
+    topicId: v.optional(v.number()),
+    questionKey: v.string(),
+    prompt: v.string(),
+    topic: v.optional(v.string()),
+    paperId: v.optional(v.string()),
+    paperTitle: v.optional(v.string()),
+    correct: v.optional(v.boolean()),
+    scorePercent: v.optional(v.number()),
+    confidence: v.optional(v.string()),
+    durationSeconds: v.optional(v.number()),
+    metadataJson: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_owner", ["ownerUserId"])
+    .index("by_subject", ["subject"])
+    .index("by_sourceType", ["sourceType"])
+    .index("by_questionKey", ["questionKey"]),
+
   flashcards: defineTable({
     cardId: v.string(),
     ownerUserId: v.string(),

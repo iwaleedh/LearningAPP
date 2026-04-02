@@ -4,6 +4,8 @@ import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker
 import { loadPastPaperSubject, subjectPaperCounts } from '../data/pastPapers/index.js';
 import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
 import { incrementPapersViewed } from '../services/activityStore.js';
+import { recordPastPaperActivity } from '../services/studyAttemptService.js';
+import { api, callQuery, getClient } from '../convex-client.js';
 import './Pages.css';
 
 const PerformanceChart = lazy(() => import('../components/pastpapers/PerformanceChart'));
@@ -87,8 +89,102 @@ function resolveUrl(url) {
     return import.meta.env.BASE_URL + url.slice(1);
 }
 
+function parseDurationToMinutes(durationLabel) {
+    const text = String(durationLabel || '').toLowerCase();
+    const hours = Number(text.match(/(\d+)\s*hour/)?.[1] || 0);
+    const minutes = Number(text.match(/(\d+)\s*minute/)?.[1] || 0);
+    const total = hours * 60 + minutes;
+    return total > 0 ? total : 60;
+}
+
+function buildAttemptLabel(paper) {
+    return `${paper.unit} ${paper.month} ${paper.year}`;
+}
+
+function RecordAttemptModal({ paper, onClose, onSave, saving }) {
+    const [scorePercent, setScorePercent] = useState('');
+    const [durationMinutes, setDurationMinutes] = useState(String(parseDurationToMinutes(paper.duration)));
+    const [confidence, setConfidence] = useState('Medium');
+
+    const isScoreValid = scorePercent !== '' && Number(scorePercent) >= 0 && Number(scorePercent) <= 100;
+    const isDurationValid = Number(durationMinutes) > 0;
+
+    return (
+        <div className="attempt-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="attempt-modal-title">
+            <div className="attempt-modal card">
+                <div className="attempt-modal-header">
+                    <div>
+                        <h3 id="attempt-modal-title">Record Past Paper Attempt</h3>
+                        <p>{paper.unit} • {paper.unitName}</p>
+                    </div>
+                    <button type="button" className="btn btn-ghost btn-sm" onClick={onClose} disabled={saving}>
+                        <X size={14} />
+                    </button>
+                </div>
+
+                <div className="attempt-modal-body">
+                    <label className="attempt-field">
+                        <span>Score (%)</span>
+                        <input
+                            className="input"
+                            type="number"
+                            min="0"
+                            max="100"
+                            value={scorePercent}
+                            onChange={(event) => setScorePercent(event.target.value)}
+                            placeholder="e.g. 74"
+                        />
+                    </label>
+
+                    <label className="attempt-field">
+                        <span>Time Spent (minutes)</span>
+                        <input
+                            className="input"
+                            type="number"
+                            min="1"
+                            value={durationMinutes}
+                            onChange={(event) => setDurationMinutes(event.target.value)}
+                        />
+                    </label>
+
+                    <label className="attempt-field">
+                        <span>Confidence</span>
+                        <select
+                            className="input"
+                            value={confidence}
+                            onChange={(event) => setConfidence(event.target.value)}
+                        >
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div className="attempt-modal-actions">
+                    <button type="button" className="btn btn-secondary" onClick={onClose} disabled={saving}>
+                        Cancel
+                    </button>
+                    <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={() => onSave({
+                            scorePercent: Number(scorePercent),
+                            durationMinutes: Number(durationMinutes),
+                            confidence,
+                        })}
+                        disabled={saving || !isScoreValid || !isDurationValid}
+                    >
+                        {saving ? 'Saving…' : 'Save Attempt'}
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 // Download button component
-function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { // eslint-disable-line no-unused-vars
+function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false, subjectId }) { // eslint-disable-line no-unused-vars
     const [status, setStatus] = useState(null);
 
     const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
@@ -98,11 +194,23 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
         if (!url) return;
 
         const resolved = resolveUrl(url);
+        const activityType = type === 'question' ? 'download_question' : 'download_marking';
+        const prompt = `${paper.unitName} ${label}`;
 
         // External / CDN URLs — open in new tab (cross-origin download attr is ignored by browsers)
         if (resolved.startsWith('https://')) {
             window.open(resolved, '_blank', 'noopener,noreferrer');
             incrementPapersViewed();
+            void recordPastPaperActivity({
+                subject: subjectId,
+                activityType,
+                questionKey: `${paper.id}:${activityType}`,
+                prompt,
+                topic: paper.unit,
+                paperId: paper.id,
+                paperTitle: paper.unitName,
+                metadata: { type, month: paper.month, year: paper.year },
+            });
             setStatus('success');
             setTimeout(() => setStatus(null), 2000);
             return;
@@ -112,6 +220,16 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
 
         if (result.success) {
             incrementPapersViewed();
+            void recordPastPaperActivity({
+                subject: subjectId,
+                activityType,
+                questionKey: `${paper.id}:${activityType}`,
+                prompt,
+                topic: paper.unit,
+                paperId: paper.id,
+                paperTitle: paper.unitName,
+                metadata: { type, month: paper.month, year: paper.year },
+            });
             setStatus('success');
             setTimeout(() => setStatus(null), 2000);
         } else {
@@ -134,7 +252,7 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
 }
 
 // View PDF button component — always opens in a new browser tab
-function ViewPdfButton({ paper, type, label }) {
+function ViewPdfButton({ paper, type, label, subjectId }) {
     const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
 
     const handleView = () => {
@@ -147,6 +265,16 @@ function ViewPdfButton({ paper, type, label }) {
             : resolved;
         window.open(viewUrl, '_blank', 'noopener,noreferrer');
         incrementPapersViewed();
+        void recordPastPaperActivity({
+            subject: subjectId,
+            activityType: type === 'question' ? 'view_question' : 'view_marking',
+            questionKey: `${paper.id}:${type}:view`,
+            prompt: `${paper.unitName} ${label}`,
+            topic: paper.unit,
+            paperId: paper.id,
+            paperTitle: paper.unitName,
+            metadata: { type, month: paper.month, year: paper.year },
+        });
     };
 
     return (
@@ -163,7 +291,7 @@ function ViewPdfButton({ paper, type, label }) {
 }
 
 // Past paper card component - grouped by year/month
-function ExamSessionCard({ year, month, papers, isOLevel = false }) {
+function ExamSessionCard({ year, month, papers, isOLevel = false, subjectId, onRecordAttempt }) {
     const [expanded, setExpanded] = useState(false);
     const [expandedPaperId, setExpandedPaperId] = useState(null);
     const navigate = useNavigate();
@@ -213,6 +341,7 @@ function ExamSessionCard({ year, month, papers, isOLevel = false }) {
                                         paper={paper}
                                         type="question"
                                         label="View Question Paper"
+                                        subjectId={subjectId}
                                     />
                                     <DownloadButton
                                         paper={paper}
@@ -220,11 +349,13 @@ function ExamSessionCard({ year, month, papers, isOLevel = false }) {
                                         label="Download QP"
                                         icon={Download}
                                         isOLevel={isOLevel}
+                                        subjectId={subjectId}
                                     />
                                     <ViewPdfButton
                                         paper={paper}
                                         type="marking"
                                         label="View Marking Scheme"
+                                        subjectId={subjectId}
                                     />
                                     <DownloadButton
                                         paper={paper}
@@ -232,6 +363,7 @@ function ExamSessionCard({ year, month, papers, isOLevel = false }) {
                                         label="Download MS"
                                         icon={Download}
                                         isOLevel={isOLevel}
+                                        subjectId={subjectId}
                                     />
                                     {paper.questionPaperUrl && (
                                         <button
@@ -243,6 +375,14 @@ function ExamSessionCard({ year, month, papers, isOLevel = false }) {
                                             Do it Live
                                         </button>
                                     )}
+                                    <button
+                                        className="btn btn-sm btn-secondary pastpaper-action-btn"
+                                        onClick={() => onRecordAttempt?.(paper)}
+                                        title="Record a completed paper score"
+                                    >
+                                        <TrendingUp size={14} />
+                                        Log Attempt
+                                    </button>
                                 </div>
                             )}
                         </div>
@@ -258,10 +398,13 @@ export default function PastPapersPage() {
     const [filterYear, setFilterYear] = useState('all');
     const [filterMonth, setFilterMonth] = useState('all');
     const [filterUnit, setFilterUnit] = useState('all');
-    const [attempts] = useState([]);
+    const [attempts, setAttempts] = useState([]);
+    const [attemptsState, setAttemptsState] = useState('idle');
     const [showPerformance, setShowPerformance] = useState(false);
     const [subjectDataById, setSubjectDataById] = useState({});
     const [subjectLoadError, setSubjectLoadError] = useState(null);
+    const [attemptPaper, setAttemptPaper] = useState(null);
+    const [attemptSaveState, setAttemptSaveState] = useState('idle');
 
     // Get active subject config
     const subjectConfig = subjects.find(s => s.id === activeSubject);
@@ -295,6 +438,40 @@ export default function PastPapersPage() {
             cancelled = true;
         };
     }, [activeSubject, subjectDataById]);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadAttempts() {
+            const client = getClient();
+            if (!client) {
+                if (!cancelled) {
+                    setAttempts([]);
+                    setAttemptsState('offline');
+                }
+                return;
+            }
+
+            try {
+                setAttemptsState('loading');
+                const rows = await callQuery(api.studyAttempts.listMyPastPaperSessions, { subject: activeSubject });
+                if (cancelled) return;
+                setAttempts(rows || []);
+                setAttemptsState('ready');
+            } catch {
+                if (!cancelled) {
+                    setAttempts([]);
+                    setAttemptsState('error');
+                }
+            }
+        }
+
+        void loadAttempts();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [activeSubject]);
 
     // Get available months based on selected year
     const getAvailableMonths = () => {
@@ -367,6 +544,43 @@ export default function PastPapersPage() {
 
     const groupedPapersArray = Object.values(groupedPapers);
 
+    const handleSaveAttempt = async ({ scorePercent, durationMinutes, confidence }) => {
+        if (!attemptPaper) return;
+
+        setAttemptSaveState('saving');
+        await recordPastPaperActivity({
+            subject: activeSubject,
+            activityType: 'completed_session',
+            questionKey: `${attemptPaper.id}:completed:${Date.now()}`,
+            prompt: attemptPaper.unitName,
+            topic: attemptPaper.unit,
+            paperId: attemptPaper.id,
+            paperTitle: buildAttemptLabel(attemptPaper),
+            scorePercent,
+            durationSeconds: durationMinutes * 60,
+            confidence,
+            metadata: {
+                month: attemptPaper.month,
+                year: attemptPaper.year,
+                totalMarks: attemptPaper.totalMarks,
+                duration: attemptPaper.duration,
+                type: attemptPaper.type,
+            },
+        });
+
+        try {
+            const rows = await callQuery(api.studyAttempts.listMyPastPaperSessions, { subject: activeSubject });
+            setAttempts(rows || []);
+            setAttemptsState('ready');
+        } catch {
+            setAttemptsState('error');
+        }
+
+        setAttemptSaveState('idle');
+        setAttemptPaper(null);
+        setShowPerformance(true);
+    };
+
     return (
         <div className="pastpaper-hub animate-fade-in">
             {/* Bento Header */}
@@ -399,20 +613,13 @@ export default function PastPapersPage() {
                             onMouseEnter={() => handleSubjectPrefetch(subject.id)}
                             onFocus={() => handleSubjectPrefetch(subject.id)}
                             style={{
-                                borderColor: isActive ? subject.color : undefined,
-                                background: isActive ? `${subject.color}15` : undefined,
-                                color: isActive ? subject.color : undefined,
+                                '--subject-accent': subject.color,
+                                '--subject-accent-soft': `${subject.color}15`,
                             }}
                         >
-                            <Icon size={20} style={{ color: subject.color }} />
+                            <Icon size={20} />
                             <span>{subject.name}</span>
-                            <span
-                                className="pastpaper-subject-count"
-                                style={{
-                                    background: isActive ? subject.color : undefined,
-                                    color: isActive ? '#fff' : undefined,
-                                }}
-                            >
+                            <span className="pastpaper-subject-count">
                                 {subjectDataById[subject.id]?.papers.length ?? subjectPaperCounts[subject.id] ?? '…'}
                             </span>
                         </button>
@@ -471,7 +678,11 @@ export default function PastPapersPage() {
             {/* Performance Chart */}
             {showPerformance && (
                 <Suspense fallback={<div className="card animate-fade-in">Loading analytics...</div>}>
-                    <PerformanceChart attempts={attempts} />
+                    {attemptsState === 'loading' ? (
+                        <div className="card animate-fade-in">Loading past paper analytics...</div>
+                    ) : (
+                        <PerformanceChart attempts={attempts} />
+                    )}
                 </Suspense>
             )}
 
@@ -501,6 +712,8 @@ export default function PastPapersPage() {
                             month={session.month}
                             papers={session.papers}
                             isOLevel={activeSubjectData?.isOLevel || subjectConfig?.isOLevel || false}
+                            subjectId={activeSubject}
+                            onRecordAttempt={setAttemptPaper}
                         />
                     ))
                 ) : (
@@ -514,65 +727,18 @@ export default function PastPapersPage() {
                 )}
             </div>
 
-            {/* PDF Modal Styles */}
-            <style>{`
-                .pdf-modal-overlay {
-                    position: fixed;
-                    inset: 0;
-                    background: rgba(0, 0, 0, 0.85);
-                    -webkit-backdrop-filter: blur(4px);
-                    backdrop-filter: blur(4px);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    z-index: 3000;
-                    padding: var(--space-4);
-                }
+            {attemptPaper && (
+                <RecordAttemptModal
+                    paper={attemptPaper}
+                    onClose={() => {
+                        if (attemptSaveState === 'saving') return;
+                        setAttemptPaper(null);
+                    }}
+                    onSave={handleSaveAttempt}
+                    saving={attemptSaveState === 'saving'}
+                />
+            )}
 
-                .pdf-modal-content {
-                    width: 100%;
-                    max-width: 1000px;
-                    height: 90vh;
-                    background: var(--color-surface);
-                    border-radius: var(--radius-xl);
-                    display: flex;
-                    flex-direction: column;
-                    overflow: hidden;
-                    box-shadow: var(--shadow-2xl);
-                }
-
-                .pdf-modal-header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: var(--space-4) var(--space-5);
-                    border-bottom: 1px solid var(--color-border);
-                }
-
-                .pdf-modal-header h3 {
-                    margin: 0;
-                    font-size: var(--font-size-base);
-                    font-weight: var(--font-weight-semibold);
-                }
-
-                .pdf-modal-body {
-                    flex: 1;
-                    overflow: hidden;
-                }
-
-                .pdf-iframe {
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                }
-
-                .pdf-modal-footer {
-                    display: flex;
-                    justify-content: center;
-                    padding: var(--space-3) var(--space-5);
-                    border-top: 1px solid var(--color-border);
-                }
-            `}</style>
         </div>
     );
 }

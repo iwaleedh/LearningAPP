@@ -17,10 +17,10 @@ import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import './HomePage.css';
 
 const STAT_META = [
-    { key: 'chaptersRead',  label: 'Chapters Read',    icon: BookOpen,     color: 'var(--color-primary)' },
-    { key: 'exercisesDone', label: 'Exercises Done',   icon: FlaskConical, color: 'var(--color-success)' },
-    { key: 'papersViewed',  label: 'Papers Viewed',    icon: FileQuestion, color: 'var(--color-accent)' },
-    { key: 'streak',        label: 'Study Streak',     icon: Flame,        color: 'var(--color-error)' },
+    { key: 'chaptersRead', label: 'Chapters Read', icon: BookOpen, tone: 'primary' },
+    { key: 'exercisesDone', label: 'Exercises Done', icon: FlaskConical, tone: 'success' },
+    { key: 'papersViewed', label: 'Papers Viewed', icon: FileQuestion, tone: 'accent' },
+    { key: 'streak', label: 'Study Streak', icon: Flame, tone: 'error' },
 ];
 
 const aLevelSubjects = [
@@ -154,8 +154,12 @@ export default function HomePage() {
                         ? `${stats.streak} day${stats.streak !== 1 ? 's' : ''}`
                         : String(stats[stat.key]);
                     return (
-                        <div key={i} className="stat-card card animate-slide-in-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                            <div className="stat-icon" style={{ background: `${stat.color}15`, color: stat.color }}>
+                        <div
+                            key={i}
+                            className={`stat-card stat-card--${stat.tone} card animate-slide-in-up`}
+                            style={{ animationDelay: `${i * 0.05}s` }}
+                        >
+                            <div className="stat-icon">
                                 <Icon size={24} strokeWidth={2.5} />
                             </div>
                             <div className="stat-info">
@@ -182,7 +186,11 @@ export default function HomePage() {
                             key={subject.id}
                             to={`/chapters?subject=${subject.id}`}
                             className="subject-card card card-hover animate-slide-in-up"
-                            style={{ animationDelay: `${0.1 + i * 0.05}s` }}
+                            style={{
+                                animationDelay: `${0.1 + i * 0.05}s`,
+                                '--subject-accent': subject.color,
+                                '--subject-accent-soft': `${subject.color}18`,
+                            }}
                         >
                             <div className="subject-card-header">
                                 <div className="subject-emoji">{subject.emoji}</div>
@@ -190,9 +198,9 @@ export default function HomePage() {
                             <div>
                                 <h3>{subject.name}</h3>
                                 <p>{subject.chapters} Chapters</p>
-                                <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
+                                <div className="subject-progress subject-progress--spaced">
                                     <div className="progress-bar-container">
-                                        <div className="progress-bar-fill" style={{ width: `${pct}%`, backgroundColor: subject.color }} />
+                                        <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
                                     </div>
                                     <span className="progress-text">{pct}% Complete</span>
                                 </div>
@@ -203,7 +211,7 @@ export default function HomePage() {
             </div>
 
             {/* O Level / IGCSE Subjects */}
-            <div className="section-header" style={{ marginTop: 'var(--space-8)' }}>
+            <div className="section-header section-header--spaced">
                 <h2>O Level / IGCSE</h2>
             </div>
             <div className="subjects-grid">
@@ -214,7 +222,11 @@ export default function HomePage() {
                             key={subject.id}
                             to={`/chapters?subject=${subject.id}`}
                             className="subject-card card card-hover animate-slide-in-up"
-                            style={{ animationDelay: `${0.1 + i * 0.05}s` }}
+                            style={{
+                                animationDelay: `${0.1 + i * 0.05}s`,
+                                '--subject-accent': subject.color,
+                                '--subject-accent-soft': `${subject.color}18`,
+                            }}
                         >
                             <div className="subject-card-header">
                                 <div className="subject-emoji">{subject.emoji}</div>
@@ -222,9 +234,9 @@ export default function HomePage() {
                             <div>
                                 <h3>{subject.name}</h3>
                                 <p>{subject.chapters} Chapters</p>
-                                <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
+                                <div className="subject-progress subject-progress--spaced">
                                     <div className="progress-bar-container">
-                                        <div className="progress-bar-fill" style={{ width: `${pct}%`, backgroundColor: subject.color }} />
+                                        <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
                                     </div>
                                     <span className="progress-text">{pct}% Complete</span>
                                 </div>

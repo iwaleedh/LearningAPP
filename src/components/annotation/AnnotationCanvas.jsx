@@ -315,17 +315,11 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
         },
     }), []);
 
-    const cursors = {
-        pen: 'crosshair', highlighter: 'crosshair', text: 'text',
-        rect: 'crosshair', circle: 'crosshair', line: 'crosshair',
-        eraser: 'cell', select: 'default',
-    };
-
     return (
         <div className="annotate-canvas-overlay">
             <canvas
                 ref={canvasElRef}
-                style={{ touchAction: 'none', cursor: cursors[activeTool] || 'crosshair' }}
+                className={`annotate-canvas annotate-canvas--${activeTool}`}
             />
         </div>
     );

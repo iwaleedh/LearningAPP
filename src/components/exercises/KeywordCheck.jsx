@@ -1,11 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CheckCircle, Search, ArrowRight } from 'lucide-react';
 import './Exercises.css';
 
-export default function KeywordCheck({ question, onNext, onMistake }) {
+export default function KeywordCheck({ question, onNext, onMistake, onAttempt }) {
     const [answer, setAnswer] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [showModel, setShowModel] = useState(false);
+    const startedAtRef = useRef(0);
+    const getElapsedSeconds = useRef(() => 0);
+
+    useEffect(() => {
+        const t0 = performance.now();
+        startedAtRef.current = t0;
+        getElapsedSeconds.current = () => Math.round((performance.now() - t0) / 1000);
+    }, []);
 
     const handleSubmit = () => {
         if (answer.trim() === '') return;
@@ -13,6 +21,13 @@ export default function KeywordCheck({ question, onNext, onMistake }) {
     };
 
     const handleNext = () => {
+        onAttempt?.({
+            correct: percentage >= 70,
+            scorePercent: percentage,
+            durationSeconds: getElapsedSeconds.current(),
+            userAnswer: answer.trim(),
+            correctAnswer: question.modelAnswer,
+        });
         if (submitted && score < total) {
             const missing = question.keywords.filter(kw => !foundKeywords.includes(kw));
             onMistake?.({

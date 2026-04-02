@@ -10,6 +10,7 @@ import { getExerciseSet } from "../data/exercises/index";
 import { useSyllabus } from "../hooks/useSyllabus.js";
 import { incrementExercisesDone } from "../services/activityStore.js";
 import { saveMistake } from "../services/mistakeStore.js";
+import { recordExerciseAttempt } from "../services/studyAttemptService.js";
 import "./Pages.css";
 
 const SUBJECTS = [
@@ -31,12 +32,12 @@ const SUBJECTS = [
 ];
 
 const ET = [
-  { id: "mcq", title: "Multiple Choice", desc: "Test your knowledge with randomized MCQs and instant rationale", icon: CheckCircle, color: "#3b82f6", key: "mcq" },
-  { id: "drag-drop", title: "Drag and Drop", desc: "Sort elements, events, or concepts into the right categories", icon: GripVertical, color: "#10b981", key: "dragdrop" },
-  { id: "fill-blank", title: "Fill in the Blanks", desc: "Complete sentences with fuzzy typo tolerance", icon: PenLine, color: "#f59e0b", key: "fillblank" },
-  { id: "sequence", title: "Sequence Ordering", desc: "Arrange steps, events, or processes in the correct order", icon: ArrowUpDown, color: "#ef4444", key: "sequence" },
-  { id: "keyword", title: "Theory / Keyword Check", desc: "Write your answer and get keywords scanned automatically", icon: Search, color: "#0ea5e9", key: "keyword" },
-  { id: "flashcards", title: "Flashcard Review", desc: "Quick flip cards for active recall practice", icon: Brain, color: "#8b5cf6", key: "flashcards" },
+  { id: "mcq", title: "Multiple Choice", desc: "Test your knowledge with randomized MCQs and instant rationale", icon: CheckCircle, toneClass: "exercise-type-icon--primary", key: "mcq" },
+  { id: "drag-drop", title: "Drag and Drop", desc: "Sort elements, events, or concepts into the right categories", icon: GripVertical, toneClass: "exercise-type-icon--success", key: "dragdrop" },
+  { id: "fill-blank", title: "Fill in the Blanks", desc: "Complete sentences with fuzzy typo tolerance", icon: PenLine, toneClass: "exercise-type-icon--warning", key: "fillblank" },
+  { id: "sequence", title: "Sequence Ordering", desc: "Arrange steps, events, or processes in the correct order", icon: ArrowUpDown, toneClass: "exercise-type-icon--danger", key: "sequence" },
+  { id: "keyword", title: "Theory / Keyword Check", desc: "Write your answer and get keywords scanned automatically", icon: Search, toneClass: "exercise-type-icon--info", key: "keyword" },
+  { id: "flashcards", title: "Flashcard Review", desc: "Quick flip cards for active recall practice", icon: Brain, toneClass: "exercise-type-icon--accent", key: "flashcards" },
 ];
 
 const COMPS = { "mcq": MCQExercise, "drag-drop": DragDropExercise, "fill-blank": FillBlankExercise, "sequence": SequenceExercise, "keyword": KeywordCheck, "flashcards": FlashcardExercise };
@@ -84,7 +85,7 @@ export default function ExercisePage() {
     if (exerciseSetStatus === "loading") {
       return (
         <div className="exercise-hub animate-fade-in">
-          <button className="btn btn-ghost" onClick={resetToHub} style={{ marginBottom: "var(--space-4)" }}>Back to Exercises</button>
+          <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
           <p>Loading exercises...</p>
         </div>
       );
@@ -93,24 +94,50 @@ export default function ExercisePage() {
     const questions = exerciseSet ? (exerciseSet[KEY_MAP[activeType]] || []) : [];
     if (!questions.length) return (
       <div className="exercise-hub animate-fade-in">
-        <button className="btn btn-ghost" onClick={resetToHub} style={{ marginBottom: "var(--space-4)" }}>Back to Exercises</button>
+        <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
         <p>No exercises available for this topic yet. Please select a topic with content.</p>
       </div>
     );
     const ExComp = COMPS[activeType];
+    const currentItem = questions[currentQuestion];
+    const questionPrompt = currentItem?.stem || currentItem?.front || currentItem?.template || TITLES[activeType];
+    const questionKey = `${activeSubject}:${selectedUnitId}:${selectedTopicId}:${activeType}:${currentItem?.id || currentQuestion}`;
+
+    const handleAttempt = (attempt) => {
+      void recordExerciseAttempt({
+        subject: activeSubject,
+        unitId: Number(selectedUnitId),
+        topicId: Number(selectedTopicId),
+        activityType: activeType,
+        questionKey,
+        prompt: questionPrompt,
+        topic: currentItem?.topic || '',
+        correct: attempt?.correct,
+        scorePercent: attempt?.scorePercent,
+        durationSeconds: attempt?.durationSeconds,
+        confidence: attempt?.confidence,
+        metadata: {
+          userAnswer: attempt?.userAnswer,
+          correctAnswer: attempt?.correctAnswer,
+          exerciseType: activeType,
+        },
+      });
+    };
+
     return (
       <div className="exercise-hub animate-fade-in">
-        <button className="btn btn-ghost" onClick={resetToHub} style={{ marginBottom: "var(--space-4)" }}>Back to Exercises</button>
-        <h2 style={{ marginBottom: "var(--space-6)" }}>{TITLES[activeType]}</h2>
-        <div style={{ marginBottom: "var(--space-4)" }}>
+        <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
+        <h2 className="exercise-mode-title">{TITLES[activeType]}</h2>
+        <div className="exercise-mode-meta">
           <span className="badge badge-primary">{activeType === "flashcards" ? "Card" : "Question"} {currentQuestion + 1} of {questions.length}</span>
-          {questions[currentQuestion].topic && <span className="badge badge-info" style={{ marginLeft: "var(--space-2)" }}>{questions[currentQuestion].topic}</span>}
+          {currentItem?.topic && <span className="badge badge-info exercise-mode-topic-badge">{currentItem.topic}</span>}
         </div>
         <ExComp
           key={currentQuestion}
-          question={questions[currentQuestion]}
+          question={currentItem}
           onNext={() => { incrementExercisesDone(); setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0); }}
           onMistake={(m) => saveMistake({ ...m, subject: activeSubject })}
+          onAttempt={handleAttempt}
         />
       </div>
     );
@@ -133,9 +160,9 @@ export default function ExercisePage() {
             <p className="exercise-page-qual">Build deeper understanding with interactive practice</p>
           </div>
         </div>
-        <div className="exercise-meta-boxes">
-          <div className="meta-box">
-            <div className="meta-icon" style={{ background: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}>
+          <div className="exercise-meta-boxes">
+            <div className="meta-box">
+            <div className="meta-icon meta-icon--info">
               <BookOpen size={18} />
             </div>
             <div className="meta-text">
@@ -144,7 +171,7 @@ export default function ExercisePage() {
             </div>
           </div>
           <div className="meta-box">
-            <div className="meta-icon" style={{ background: 'rgba(16, 185, 129, 0.1)', color: '#10b981' }}>
+            <div className="meta-icon meta-icon--success">
               <Activity size={18} />
             </div>
             <div className="meta-text">
@@ -170,7 +197,7 @@ export default function ExercisePage() {
           ))}
         </div>
         
-        <h3 className="section-label" style={{ marginTop: 'var(--space-5)' }}>2. Select a topic</h3>
+        <h3 className="section-label exercise-section-label">2. Select a topic</h3>
         <div className="exercise-topic-select-wrapper">
           <select className="exercise-topic-select"
             disabled={isLoadingSyllabus}
@@ -197,14 +224,14 @@ export default function ExercisePage() {
       </div>
 
       {/* Types Grid */}
-      <div className="exercise-types-section animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
+      <div className="exercise-types-section animate-fade-in exercise-types-section--delayed">
         <div className="exercise-types-header">
           <h3 className="section-label">3. Pick a practice mode</h3>
           {selectedUnitId && selectedTopicId && (
             exerciseSetStatus === "loading" ? (
                <span className="badge badge-primary">Loading content...</span>
             ) : (
-               <span className="badge" style={{ background: '#dcfce7', color: '#166534', border: '1px solid #86efac' }}>
+               <span className="badge exercise-availability-badge">
                  {totalAvailable} total questions available
                </span>
             )
@@ -223,7 +250,7 @@ export default function ExercisePage() {
                 onClick={() => hasContent && !isLoadingTopic && setActiveType(type.id)}
               >
                 <div className="exercise-type-header">
-                  <div className="exercise-type-icon" style={{ background: type.color }}><Icon size={22} /></div>
+                  <div className={`exercise-type-icon ${type.toneClass}`}><Icon size={22} /></div>
                   <div className="exercise-type-title-group">
                     <h3>{type.title}</h3>
                     <span className={`type-badge ${isLoadingTopic ? 'loading' : hasContent ? 'ready' : 'empty'}`}>

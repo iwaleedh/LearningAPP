@@ -11,10 +11,11 @@ function shuffleArray(arr) {
     return shuffled;
 }
 
-export default function MCQExercise({ question, onNext, onMistake }) {
+export default function MCQExercise({ question, onNext, onMistake, onAttempt }) {
     const [selected, setSelected] = useState(null);
     const [submitted, setSubmitted] = useState(false);
     const [showRationale, setShowRationale] = useState(false);
+    const [startedAt] = useState(() => Date.now());
     const shuffledOptions = useMemo(() => {
         const indexed = question.options.map((opt, i) => ({ text: opt, originalIndex: i }));
         return shuffleArray(indexed);
@@ -26,6 +27,13 @@ export default function MCQExercise({ question, onNext, onMistake }) {
     };
 
     const handleNext = () => {
+        onAttempt?.({
+            correct: Boolean(isCorrect),
+            scorePercent: isCorrect ? 100 : 0,
+            durationSeconds: (Date.now() - startedAt) / 1000,
+            userAnswer: shuffledOptions[selected]?.text || '',
+            correctAnswer: question.options[question.correctAnswer] || '',
+        });
         if (submitted && !isCorrect) {
             onMistake?.({
                 question: question.stem,

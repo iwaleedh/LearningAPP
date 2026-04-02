@@ -7,10 +7,80 @@
  * Keys:
  *   lt_exercises_done  — total exercise questions answered
  *   lt_papers_viewed   — total past-paper PDFs opened/downloaded
+ *   lt_activity_days   — map of YYYY-MM-DD -> total study actions for heatmap/streak UI
  */
 
 const EXERCISE_KEY = 'lt_exercises_done';
 const PAPER_KEY = 'lt_papers_viewed';
+const ACTIVITY_DAYS_KEY = 'lt_activity_days';
+const ACTIVITY_EVENT = 'lt:activity-updated';
+
+function emitActivityUpdate() {
+    if (typeof window === 'undefined') return;
+    window.dispatchEvent(new CustomEvent(ACTIVITY_EVENT));
+}
+
+function readActivityDays() {
+    try {
+        const raw = localStorage.getItem(ACTIVITY_DAYS_KEY);
+        return raw ? JSON.parse(raw) : {};
+    } catch {
+        return {};
+    }
+}
+
+function writeActivityDays(days) {
+    try {
+        localStorage.setItem(ACTIVITY_DAYS_KEY, JSON.stringify(days));
+    } catch {
+        // ignore storage failures
+    }
+}
+
+function incrementCounter(key, amount = 1) {
+    try {
+        const current = parseInt(localStorage.getItem(key) || '0', 10);
+        localStorage.setItem(key, String(current + amount));
+    } catch {
+        // ignore storage failures
+    }
+}
+
+export function recordStudyActivity(amount = 1, when = new Date()) {
+    const dateKey = new Date(when).toISOString().slice(0, 10);
+    const days = readActivityDays();
+    days[dateKey] = (Number(days[dateKey]) || 0) + amount;
+    writeActivityDays(days);
+    emitActivityUpdate();
+}
+
+export function getRecordedActivityByDate() {
+    const days = readActivityDays();
+    return Object.fromEntries(
+        Object.entries(days).map(([date, count]) => [date, Number(count) || 0]),
+    );
+}
+
+export function subscribeToActivityUpdates(callback) {
+    if (typeof window === 'undefined') {
+        return () => {};
+    }
+
+    const handleCustom = () => callback();
+    const handleStorage = (event) => {
+        if (!event.key || [EXERCISE_KEY, PAPER_KEY, ACTIVITY_DAYS_KEY].includes(event.key)) {
+            callback();
+        }
+    };
+
+    window.addEventListener(ACTIVITY_EVENT, handleCustom);
+    window.addEventListener('storage', handleStorage);
+
+    return () => {
+        window.removeEventListener(ACTIVITY_EVENT, handleCustom);
+        window.removeEventListener('storage', handleStorage);
+    };
+}
 
 export function getExercisesDone() {
     try {
@@ -21,9 +91,8 @@ export function getExercisesDone() {
 }
 
 export function incrementExercisesDone() {
-    try {
-        localStorage.setItem(EXERCISE_KEY, String(getExercisesDone() + 1));
-    } catch { /* storage full — ignore */ }
+    incrementCounter(EXERCISE_KEY, 1);
+    recordStudyActivity(1);
 }
 
 export function getPapersViewed() {
@@ -35,7 +104,6 @@ export function getPapersViewed() {
 }
 
 export function incrementPapersViewed() {
-    try {
-        localStorage.setItem(PAPER_KEY, String(getPapersViewed() + 1));
-    } catch { /* storage full — ignore */ }
+    incrementCounter(PAPER_KEY, 1);
+    recordStudyActivity(1);
 }
