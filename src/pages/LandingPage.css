@@ -452,6 +452,7 @@
   align-items: center;
   font-weight: 600;
   color: var(--color-text);
+  -webkit-user-select: none;
   user-select: none;
 }
 

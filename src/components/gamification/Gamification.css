@@ -376,6 +376,33 @@
     font-weight: var(--font-weight-bold);
 }
 
+/* Coming soon placeholder */
+.leaderboard-coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-10) var(--space-4);
+    text-align: center;
+    color: var(--color-text-tertiary);
+}
+
+.lb-coming-icon {
+    opacity: 0.25;
+    margin-bottom: var(--space-2);
+}
+
+.leaderboard-coming-soon p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.leaderboard-coming-soon span {
+    font-size: 0.85rem;
+}
+
 /* Table */
 .leaderboard-table {
     display: flex;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { CheckCircle, Search, ArrowRight } from 'lucide-react';
 import './Exercises.css';
 
-export default function KeywordCheck({ question, onNext }) {
+export default function KeywordCheck({ question, onNext, onMistake }) {
     const [answer, setAnswer] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [showModel, setShowModel] = useState(false);
@@ -13,6 +13,17 @@ export default function KeywordCheck({ question, onNext }) {
     };
 
     const handleNext = () => {
+        if (submitted && score < total) {
+            const missing = question.keywords.filter(kw => !foundKeywords.includes(kw));
+            onMistake?.({
+                question: question.stem,
+                yourAnswer: answer.trim().slice(0, 120) || '(no answer)',
+                correctAnswer: missing.length > 0
+                    ? `Missing keywords: ${missing.join(', ')}`
+                    : question.modelAnswer,
+                topic: question.topic || '',
+            });
+        }
         setAnswer('');
         setSubmitted(false);
         setShowModel(false);

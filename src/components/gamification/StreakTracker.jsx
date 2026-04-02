@@ -1,23 +1,26 @@
 import { useMemo } from 'react';
 import { Flame } from 'lucide-react';
+import {
+    getActivityByDate,
+    computeStudyStreak,
+    computeLongestStreak,
+} from '../../hooks/useNoteReadStatus.js';
 import './Gamification.css';
 
 export default function StreakTracker() {
-    // Generate heatmap data for last 12 weeks (84 days)
     const heatmapData = useMemo(() => {
+        const activityMap = getActivityByDate();
         const days = [];
         const today = new Date();
-        // Simulate activity: some days active, some not
-        const activePattern = [1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1];
 
         for (let i = 83; i >= 0; i--) {
             const date = new Date(today);
             date.setDate(date.getDate() - i);
-            const active = activePattern[83 - i] || 0;
-            const deterministicSeed = date.getDate() + date.getMonth() + i;
-            const intensity = active ? (deterministicSeed % 2 === 0 ? 2 : 1) : 0;
+            const dateStr = date.toISOString().slice(0, 10);
+            const count = activityMap[dateStr] || 0;
+            const intensity = count === 0 ? 0 : count <= 2 ? 1 : 2;
             days.push({
-                date: date.toISOString().split('T')[0],
+                date: dateStr,
                 day: date.getDay(),
                 intensity,
                 label: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
@@ -26,20 +29,10 @@ export default function StreakTracker() {
         return days;
     }, []);
 
-    // Calculate streak
-    const currentStreak = useMemo(() => {
-        let streak = 0;
-        for (let i = heatmapData.length - 1; i >= 0; i--) {
-            if (heatmapData[i].intensity > 0) streak++;
-            else break;
-        }
-        return streak;
-    }, [heatmapData]);
-
-    const longestStreak = 12; // simulated
+    const currentStreak = useMemo(() => computeStudyStreak(), []);
+    const longestStreak = useMemo(() => computeLongestStreak(), []);
     const totalActiveDays = heatmapData.filter(d => d.intensity > 0).length;
 
-    // Group by weeks
     const weeks = useMemo(() => {
         const w = [];
         for (let i = 0; i < heatmapData.length; i += 7) {
@@ -52,8 +45,7 @@ export default function StreakTracker() {
         const labels = [];
         let lastMonth = '';
         weeks.forEach((week, wi) => {
-            const firstDay = week[0];
-            const month = new Date(firstDay.date).toLocaleDateString('en-US', { month: 'short' });
+            const month = new Date(week[0].date).toLocaleDateString('en-US', { month: 'short' });
             if (month !== lastMonth) {
                 labels.push({ label: month, col: wi });
                 lastMonth = month;
@@ -85,7 +77,6 @@ export default function StreakTracker() {
             </div>
 
             <div className="heatmap-container">
-                {/* Month labels */}
                 <div className="heatmap-months">
                     {monthLabels.map((m, i) => (
                         <span key={i} style={{ gridColumn: m.col + 2 }}>{m.label}</span>
@@ -93,7 +84,6 @@ export default function StreakTracker() {
                 </div>
 
                 <div className="heatmap-body">
-                    {/* Day labels */}
                     <div className="heatmap-days">
                         <span></span>
                         <span>Mon</span>
@@ -104,7 +94,6 @@ export default function StreakTracker() {
                         <span></span>
                     </div>
 
-                    {/* Grid */}
                     <div className="heatmap-grid">
                         {weeks.map((week, wi) => (
                             <div key={wi} className="heatmap-col">
@@ -120,7 +109,6 @@ export default function StreakTracker() {
                     </div>
                 </div>
 
-                {/* Legend */}
                 <div className="heatmap-legend">
                     <span>Less</span>
                     <div className="heatmap-cell intensity-0" />

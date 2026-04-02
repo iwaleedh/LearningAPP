@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool, TrendingUp, BookOpen } from 'lucide-react';
 import { loadPastPaperSubject, subjectPaperCounts } from '../data/pastPapers/index.js';
 import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
+import { incrementPapersViewed } from '../services/activityStore.js';
 import './Pages.css';
 
 const PerformanceChart = lazy(() => import('../components/pastpapers/PerformanceChart'));
@@ -101,6 +102,7 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
         // External / CDN URLs — open in new tab (cross-origin download attr is ignored by browsers)
         if (resolved.startsWith('https://')) {
             window.open(resolved, '_blank', 'noopener,noreferrer');
+            incrementPapersViewed();
             setStatus('success');
             setTimeout(() => setStatus(null), 2000);
             return;
@@ -109,6 +111,7 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
         const result = downloadFile(resolved, filename);
 
         if (result.success) {
+            incrementPapersViewed();
             setStatus('success');
             setTimeout(() => setStatus(null), 2000);
         } else {
@@ -143,6 +146,7 @@ function ViewPdfButton({ paper, type, label }) {
             ? `https://docs.google.com/viewer?url=${encodeURIComponent(resolved)}`
             : resolved;
         window.open(viewUrl, '_blank', 'noopener,noreferrer');
+        incrementPapersViewed();
     };
 
     return (

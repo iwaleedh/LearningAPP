@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { CheckCircle, XCircle, RotateCcw, GripVertical } from 'lucide-react';
 import './Exercises.css';
 
-export default function DragDropExercise({ question, onNext }) {
+export default function DragDropExercise({ question, onNext, onMistake }) {
     const [zones, setZones] = useState(() => {
         const initial = {};
         question.categories.forEach(cat => { initial[cat] = []; });
@@ -153,7 +153,19 @@ export default function DragDropExercise({ question, onNext }) {
                         <button className="btn btn-secondary" onClick={handleReset}>
                             <RotateCcw size={16} /> Try Again
                         </button>
-                        <button className="btn btn-primary btn-lg" onClick={onNext}>
+                        <button className="btn btn-primary btn-lg" onClick={() => {
+                            const wrong = results && Object.entries(results)
+                                .flatMap(([cat, items]) => items.filter(it => !it.correct).map(it => ({ ...it, placedIn: cat })));
+                            if (wrong && wrong.length > 0) {
+                                onMistake?.({
+                                    question: question.stem,
+                                    yourAnswer: `${wrong[0].text} → ${wrong[0].placedIn}`,
+                                    correctAnswer: `${wrong[0].text} → ${wrong[0].category}`,
+                                    topic: question.topic || '',
+                                });
+                            }
+                            onNext?.();
+                        }}>
                             Next →
                         </button>
                     </>

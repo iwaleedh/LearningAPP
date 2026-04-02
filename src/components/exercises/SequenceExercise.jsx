@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { CheckCircle, XCircle, RotateCcw, GripVertical, ArrowRight } from 'lucide-react';
 import './Exercises.css';
 
-export default function SequenceExercise({ question, onNext }) {
+export default function SequenceExercise({ question, onNext, onMistake }) {
     const [items, setItems] = useState(() => {
         const shuffled = question.steps.map((text, i) => ({ text, correctIndex: i }));
         for (let i = shuffled.length - 1; i > 0; i--) {
@@ -47,6 +47,18 @@ export default function SequenceExercise({ question, onNext }) {
     };
 
     const handleNext = () => {
+        if (submitted && !allCorrect) {
+            const firstWrong = items.find((item, i) => item.correctIndex !== i);
+            if (firstWrong) {
+                const placedAt = items.indexOf(firstWrong);
+                onMistake?.({
+                    question: question.stem,
+                    yourAnswer: `Step ${placedAt + 1}: ${firstWrong.text}`,
+                    correctAnswer: `Step ${firstWrong.correctIndex + 1}: ${firstWrong.text}`,
+                    topic: question.topic || '',
+                });
+            }
+        }
         handleReset();
         onNext?.();
     };

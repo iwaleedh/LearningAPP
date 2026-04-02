@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Trophy, Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock } from 'lucide-react';
+import { getTotalReadCount, computeStudyStreak } from '../../hooks/useNoteReadStatus.js';
+import { getExercisesDone, getPapersViewed } from '../../services/activityStore.js';
 import './Gamification.css';
 
 const BADGE_DEFINITIONS = [
@@ -77,60 +79,65 @@ const BADGE_DEFINITIONS = [
     },
 ];
 
-export default function BadgeSystem() {
-    const getDefaultStats = () => ({
+const EARNED_KEY = 'lt_badge_earned';
+
+function loadEarned() {
+    try {
+        const raw = localStorage.getItem(EARNED_KEY);
+        return raw ? JSON.parse(raw) : [];
+    } catch {
+        return [];
+    }
+}
+
+function saveEarned(ids) {
+    try {
+        localStorage.setItem(EARNED_KEY, JSON.stringify(ids));
+    } catch { /* ignore */ }
+}
+
+function buildLiveStats(earned) {
+    const notesRead = getTotalReadCount();
+    return {
         logins: 1,
-        pagesVisited: 4,
-        exercisesCompleted: 2,
-        currentStreak: 1,
-        perfectScores: 0,
-        papersCompleted: 1,
-        fastCompletions: 0,
-        badgesEarned: ['first_login', 'explorer'],
-    });
-
-    const getInitialState = () => {
-        let baseStats;
-        try {
-            const saved = localStorage.getItem('gamification_stats');
-            baseStats = saved ? JSON.parse(saved) : getDefaultStats();
-        } catch {
-            baseStats = getDefaultStats();
-        }
-
-        const newBadges = [];
-        BADGE_DEFINITIONS.forEach(badge => {
-            if (!baseStats.badgesEarned.includes(badge.id) && badge.criteria(baseStats)) {
-                newBadges.push(badge.id);
-            }
-        });
-
-        if (newBadges.length > 0) {
-            const updated = {
-                ...baseStats,
-                badgesEarned: [...baseStats.badgesEarned, ...newBadges],
-            };
-            try {
-                localStorage.setItem('gamification_stats', JSON.stringify(updated));
-            } catch {
-                // Ignore storage sync failures for non-critical gamification data.
-            }
-            return { stats: updated, justEarned: newBadges[0] };
-        }
-
-        return { stats: baseStats, justEarned: null };
+        // If they've read any note they've navigated through multiple pages
+        pagesVisited: notesRead > 0 ? 5 : 1,
+        exercisesCompleted: getExercisesDone(),
+        currentStreak: computeStudyStreak(),
+        perfectScores: 0,   // not tracked yet
+        papersCompleted: getPapersViewed(),
+        fastCompletions: 0, // not tracked yet
+        badgesEarned: earned,
     };
+}
 
+function getInitialState() {
+    const earned = loadEarned();
+    const stats = buildLiveStats(earned);
+
+    const newBadges = BADGE_DEFINITIONS
+        .filter(b => !earned.includes(b.id) && b.criteria(stats))
+        .map(b => b.id);
+
+    if (newBadges.length > 0) {
+        const allEarned = [...earned, ...newBadges];
+        saveEarned(allEarned);
+        return { stats: { ...stats, badgesEarned: allEarned }, justEarned: newBadges[0] };
+    }
+
+    return { stats, justEarned: null };
+}
+
+export default function BadgeSystem() {
     const [state, setState] = useState(getInitialState);
     const { stats, justEarned } = state;
 
     useEffect(() => {
         if (!justEarned) return undefined;
-        const timeoutId = setTimeout(() => {
-            setState((prev) => ({ ...prev, justEarned: null }));
+        const id = setTimeout(() => {
+            setState(prev => ({ ...prev, justEarned: null }));
         }, 3000);
-
-        return () => clearTimeout(timeoutId);
+        return () => clearTimeout(id);
     }, [justEarned]);
 
     const earnedCount = stats.badgesEarned.length;
@@ -144,7 +151,6 @@ export default function BadgeSystem() {
                 <span className="badge-progress">{earnedCount}/{totalCount}</span>
             </div>
 
-            {/* Toast */}
             {justEarned && (
                 <div className="badge-toast animate-slide-up">
                     🎉 Badge Unlocked: <strong>{BADGE_DEFINITIONS.find(b => b.id === justEarned)?.name}</strong>

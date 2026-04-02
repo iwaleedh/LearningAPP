@@ -11,14 +11,16 @@ import {
     api,
 } from '../convex-client.js';
 import { useAuth } from '../hooks/useAuth.js';
+import { getTotalReadCount, getReadNoteIds, computeStudyStreak } from '../hooks/useNoteReadStatus.js';
+import { getExercisesDone, getPapersViewed } from '../services/activityStore.js';
+import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import './HomePage.css';
 
-// Sample data (TODO: wire to Convex progress tracking)
-const quickStats = [
-    { label: 'Chapters Read', value: '0', icon: BookOpen, color: 'var(--color-primary)' },
-    { label: 'Exercises Done', value: '0', icon: FlaskConical, color: 'var(--color-success)' },
-    { label: 'Papers Completed', value: '0', icon: FileQuestion, color: 'var(--color-accent)' },
-    { label: 'Study Streak', value: '0 days', icon: Flame, color: 'var(--color-error)' },
+const STAT_META = [
+    { key: 'chaptersRead',  label: 'Chapters Read',    icon: BookOpen,     color: 'var(--color-primary)' },
+    { key: 'exercisesDone', label: 'Exercises Done',   icon: FlaskConical, color: 'var(--color-success)' },
+    { key: 'papersViewed',  label: 'Papers Viewed',    icon: FileQuestion, color: 'var(--color-accent)' },
+    { key: 'streak',        label: 'Study Streak',     icon: Flame,        color: 'var(--color-error)' },
 ];
 
 const aLevelSubjects = [
@@ -46,10 +48,29 @@ export default function HomePage() {
     const navigate = useNavigate();
     const { debugAuthEnabled, username } = useAuth();
     const [liveInvites, setLiveInvites] = useState([]);
+    const [stats] = useState(() => ({
+        chaptersRead: getTotalReadCount(),
+        exercisesDone: getExercisesDone(),
+        papersViewed: getPapersViewed(),
+        streak: computeStudyStreak(),
+    }));
+    const [subjectProgress] = useState(() => {
+        const readIds = getReadNoteIds();
+        const counts = {};
+        readIds.forEach(noteId => {
+            const subject = noteId.split(':')[1];
+            if (subject) counts[subject] = (counts[subject] || 0) + 1;
+        });
+        const progress = {};
+        Object.entries(counts).forEach(([subject, count]) => {
+            const total = subjectNoteCounts[subject];
+            if (total) progress[subject] = Math.min(100, Math.round((count / total) * 100));
+        });
+        return progress;
+    });
 
     useEffect(() => {
         if (debugAuthEnabled) {
-            setLiveInvites([]);
             return undefined;
         }
 
@@ -90,7 +111,7 @@ export default function HomePage() {
                     <button
                         type="button"
                         className="btn btn-primary btn-sm"
-                        onClick={() => navigate(`/live/${liveInvites[0].sessionId}`)}
+                        onClick={() => navigate(`/live/${liveInvites[0]?.sessionId}`)}
                     >
                         Join Now
                     </button>
@@ -127,15 +148,18 @@ export default function HomePage() {
 
             {/* Quick Stats */}
             <div className="stats-grid">
-                {quickStats.map((stat, i) => {
+                {STAT_META.map((stat, i) => {
                     const Icon = stat.icon;
+                    const value = stat.key === 'streak'
+                        ? `${stats.streak} day${stats.streak !== 1 ? 's' : ''}`
+                        : String(stats[stat.key]);
                     return (
                         <div key={i} className="stat-card card animate-slide-in-up" style={{ animationDelay: `${i * 0.05}s` }}>
                             <div className="stat-icon" style={{ background: `${stat.color}15`, color: stat.color }}>
                                 <Icon size={24} strokeWidth={2.5} />
                             </div>
                             <div className="stat-info">
-                                <span className="stat-value">{stat.value}</span>
+                                <span className="stat-value">{value}</span>
                                 <span className="stat-label">{stat.label}</span>
                             </div>
                         </div>
@@ -151,28 +175,31 @@ export default function HomePage() {
                 </Link>
             </div>
             <div className="subjects-grid">
-                {aLevelSubjects.map((subject, i) => (
-                    <Link
-                        key={subject.id}
-                        to={`/chapters?subject=${subject.id}`}
-                        className="subject-card card card-hover animate-slide-in-up"
-                        style={{ animationDelay: `${0.1 + i * 0.05}s` }}
-                    >
-                        <div className="subject-card-header">
-                            <div className="subject-emoji">{subject.emoji}</div>
-                        </div>
-                        <div>
-                            <h3>{subject.name}</h3>
-                            <p>{subject.chapters} Chapters</p>
-                            <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
-                                <div className="progress-bar-container">
-                                    <div className="progress-bar-fill" style={{ width: '0%', backgroundColor: subject.color }} />
-                                </div>
-                                <span className="progress-text">0% Complete</span>
+                {aLevelSubjects.map((subject, i) => {
+                    const pct = subjectProgress[subject.id] || 0;
+                    return (
+                        <Link
+                            key={subject.id}
+                            to={`/chapters?subject=${subject.id}`}
+                            className="subject-card card card-hover animate-slide-in-up"
+                            style={{ animationDelay: `${0.1 + i * 0.05}s` }}
+                        >
+                            <div className="subject-card-header">
+                                <div className="subject-emoji">{subject.emoji}</div>
                             </div>
-                        </div>
-                    </Link>
-                ))}
+                            <div>
+                                <h3>{subject.name}</h3>
+                                <p>{subject.chapters} Chapters</p>
+                                <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
+                                    <div className="progress-bar-container">
+                                        <div className="progress-bar-fill" style={{ width: `${pct}%`, backgroundColor: subject.color }} />
+                                    </div>
+                                    <span className="progress-text">{pct}% Complete</span>
+                                </div>
+                            </div>
+                        </Link>
+                    );
+                })}
             </div>
 
             {/* O Level / IGCSE Subjects */}
@@ -180,28 +207,31 @@ export default function HomePage() {
                 <h2>O Level / IGCSE</h2>
             </div>
             <div className="subjects-grid">
-                {oLevelSubjects.map((subject, i) => (
-                    <Link
-                        key={subject.id}
-                        to={`/chapters?subject=${subject.id}`}
-                        className="subject-card card card-hover animate-slide-in-up"
-                        style={{ animationDelay: `${0.1 + i * 0.05}s` }}
-                    >
-                        <div className="subject-card-header">
-                            <div className="subject-emoji">{subject.emoji}</div>
-                        </div>
-                        <div>
-                            <h3>{subject.name}</h3>
-                            <p>{subject.chapters} Chapters</p>
-                            <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
-                                <div className="progress-bar-container">
-                                    <div className="progress-bar-fill" style={{ width: '0%', backgroundColor: subject.color }} />
-                                </div>
-                                <span className="progress-text">0% Complete</span>
+                {oLevelSubjects.map((subject, i) => {
+                    const pct = subjectProgress[subject.id] || 0;
+                    return (
+                        <Link
+                            key={subject.id}
+                            to={`/chapters?subject=${subject.id}`}
+                            className="subject-card card card-hover animate-slide-in-up"
+                            style={{ animationDelay: `${0.1 + i * 0.05}s` }}
+                        >
+                            <div className="subject-card-header">
+                                <div className="subject-emoji">{subject.emoji}</div>
                             </div>
-                        </div>
-                    </Link>
-                ))}
+                            <div>
+                                <h3>{subject.name}</h3>
+                                <p>{subject.chapters} Chapters</p>
+                                <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
+                                    <div className="progress-bar-container">
+                                        <div className="progress-bar-fill" style={{ width: `${pct}%`, backgroundColor: subject.color }} />
+                                    </div>
+                                    <span className="progress-text">{pct}% Complete</span>
+                                </div>
+                            </div>
+                        </Link>
+                    );
+                })}
             </div>
 
             {/* Quick Actions Grid */}

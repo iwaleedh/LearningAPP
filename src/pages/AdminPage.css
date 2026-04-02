@@ -46,9 +46,9 @@
   display: flex;
   align-items: center;
   gap: var(--space-1);
-  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  background: rgba(245, 158, 11, 0.15);
   color: var(--color-accent);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+  border: 1px solid rgba(245, 158, 11, 0.3);
   border-radius: 999px;
   padding: var(--space-1) var(--space-3);
   font-size: 0.8rem;
@@ -141,8 +141,8 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-4);
-  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
   color: var(--color-accent);
   border-radius: var(--radius-lg);
   font-size: 0.9rem;
@@ -338,9 +338,9 @@
 }
 
 .admin-btn-block {
-  background: color-mix(in srgb, var(--color-error) 12%, transparent);
+  background: rgba(239, 68, 68, 0.12);
   color: var(--color-error);
-  border: 1px solid color-mix(in srgb, var(--color-error) 30%, transparent);
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .admin-btn-block:hover {

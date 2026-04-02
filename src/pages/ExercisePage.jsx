@@ -8,6 +8,8 @@ import KeywordCheck from "../components/exercises/KeywordCheck";
 import FlashcardExercise from "../components/exercises/FlashcardExercise";
 import { getExerciseSet } from "../data/exercises/index";
 import { useSyllabus } from "../hooks/useSyllabus.js";
+import { incrementExercisesDone } from "../services/activityStore.js";
+import { saveMistake } from "../services/mistakeStore.js";
 import "./Pages.css";
 
 const SUBJECTS = [
@@ -104,7 +106,12 @@ export default function ExercisePage() {
           <span className="badge badge-primary">{activeType === "flashcards" ? "Card" : "Question"} {currentQuestion + 1} of {questions.length}</span>
           {questions[currentQuestion].topic && <span className="badge badge-info" style={{ marginLeft: "var(--space-2)" }}>{questions[currentQuestion].topic}</span>}
         </div>
-        <ExComp key={currentQuestion} question={questions[currentQuestion]} onNext={() => setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0)} />
+        <ExComp
+          key={currentQuestion}
+          question={questions[currentQuestion]}
+          onNext={() => { incrementExercisesDone(); setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0); }}
+          onMistake={(m) => saveMistake({ ...m, subject: activeSubject })}
+        />
       </div>
     );
   }

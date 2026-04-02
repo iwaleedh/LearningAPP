@@ -11,7 +11,7 @@ function shuffleArray(arr) {
     return shuffled;
 }
 
-export default function MCQExercise({ question, onNext }) {
+export default function MCQExercise({ question, onNext, onMistake }) {
     const [selected, setSelected] = useState(null);
     const [submitted, setSubmitted] = useState(false);
     const [showRationale, setShowRationale] = useState(false);
@@ -26,6 +26,14 @@ export default function MCQExercise({ question, onNext }) {
     };
 
     const handleNext = () => {
+        if (submitted && !isCorrect) {
+            onMistake?.({
+                question: question.stem,
+                yourAnswer: shuffledOptions[selected]?.text || '',
+                correctAnswer: question.options[question.correctAnswer] || '',
+                topic: question.topic || '',
+            });
+        }
         setSelected(null);
         setSubmitted(false);
         setShowRationale(false);

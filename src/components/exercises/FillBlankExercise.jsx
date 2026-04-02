@@ -17,7 +17,7 @@ function levenshtein(a, b) {
     return dp[m][n];
 }
 
-export default function FillBlankExercise({ question, onNext }) {
+export default function FillBlankExercise({ question, onNext, onMistake }) {
     const [answers, setAnswers] = useState(
         () => question.blanks.map(() => '')
     );
@@ -52,6 +52,15 @@ export default function FillBlankExercise({ question, onNext }) {
     };
 
     const handleNext = () => {
+        if (submitted && !allCorrect) {
+            const firstWrong = results.findIndex(r => !r.correct);
+            onMistake?.({
+                question: question.stem,
+                yourAnswer: answers[firstWrong] || answers[0] || '',
+                correctAnswer: question.blanks[firstWrong]?.answer || question.blanks[0]?.answer || '',
+                topic: question.topic || '',
+            });
+        }
         setAnswers(question.blanks.map(() => ''));
         setSubmitted(false);
         setResults([]);
