@@ -111,13 +111,13 @@
 .meta-icon--success {
     color: var(--color-success-dark);
     background: linear-gradient(135deg, var(--color-success-light), color-mix(in srgb, var(--color-success) 10%, transparent));
-    border-color: color-mix(in srgb, var(--color-success) 24%, transparent);
+    border-color: rgba(16, 185, 129, 0.24);
 }
 
 .meta-icon--warning {
     color: var(--color-warning);
     background: linear-gradient(135deg, var(--color-warning-light), color-mix(in srgb, var(--color-warning) 10%, transparent));
-    border-color: color-mix(in srgb, var(--color-warning) 24%, transparent);
+    border-color: rgba(245, 158, 11, 0.24);
 }
 
 .meta-icon--info {
@@ -129,7 +129,7 @@
 .meta-icon--danger {
     color: var(--color-error-dark);
     background: linear-gradient(135deg, var(--color-error-light), color-mix(in srgb, var(--color-error) 10%, transparent));
-    border-color: color-mix(in srgb, var(--color-error) 24%, transparent);
+    border-color: rgba(239, 68, 68, 0.24);
 }
 
 .meta-text {
@@ -695,7 +695,7 @@
 .type-badge.ready {
     background: var(--color-success-light);
     color: var(--color-success-dark);
-    border: 1px solid color-mix(in srgb, var(--color-success) 28%, transparent);
+    border: 1px solid rgba(16, 185, 129, 0.28);
 }
 
 .type-badge.loading {
@@ -1356,7 +1356,7 @@
 
 .flashcard-hint {
     font-size: var(--font-size-xs);
-    color: color-mix(in srgb, var(--color-text-inverse) 72%, transparent);
+    color: rgba(255, 255, 255, 0.72);
     margin-top: var(--space-4);
 }
 
@@ -1610,7 +1610,7 @@
     align-items: center;
     justify-content: center;
     color: var(--color-error-dark);
-    border: 1px solid color-mix(in srgb, var(--color-error) 22%, transparent);
+    border: 1px solid rgba(239, 68, 68, 0.22);
     box-shadow: 0 4px 20px color-mix(in srgb, var(--color-error) 12%, transparent);
     flex-shrink: 0;
     transition: transform 0.2s;
@@ -1618,7 +1618,7 @@
 
 [data-theme="dark"] .mistake-subject-icon {
     background: linear-gradient(135deg, color-mix(in srgb, var(--color-error) 20%, transparent), color-mix(in srgb, var(--color-error) 8%, transparent));
-    border-color: color-mix(in srgb, var(--color-error) 30%, transparent);
+    border-color: rgba(239, 68, 68, 0.30);
 }
 
 .mistake-page-title {
@@ -1636,7 +1636,7 @@
 .exercise-availability-badge {
     background: var(--color-success-light);
     color: var(--color-success-dark);
-    border: 1px solid color-mix(in srgb, var(--color-success) 28%, transparent);
+    border: 1px solid rgba(16, 185, 129, 0.28);
 }
 
 .mistake-page-qual {
@@ -2278,7 +2278,7 @@
     color: var(--color-warning);
     padding: var(--space-2) var(--space-3);
     border-radius: var(--radius-md);
-    border: 1px solid color-mix(in srgb, var(--color-warning) 24%, transparent);
+    border: 1px solid rgba(245, 158, 11, 0.24);
     background: var(--color-warning-light);
 }
 
@@ -2907,7 +2907,7 @@
 /* ── Pending invites banner ──────────────────────────────────── */
 .share-invites-banner {
     background: linear-gradient(135deg, var(--color-warning-light) 0%, color-mix(in srgb, var(--color-warning) 24%, white) 100%);
-    border-bottom: 1px solid color-mix(in srgb, var(--color-warning) 35%, transparent);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.35);
     padding: var(--space-2) var(--space-4);
     display: flex;
     flex-direction: column;
@@ -2919,7 +2919,7 @@
     justify-content: space-between;
     gap: var(--space-2);
     font-size: var(--font-size-sm);
-    color: color-mix(in srgb, var(--color-warning) 78%, var(--color-text));
+    color: var(--color-warning);
 }
 .share-invite-actions {
     display: flex;
@@ -3698,7 +3698,7 @@
 }
 .lc-stdb-pill--connected {
     background: var(--color-success-light);
-    border-color: color-mix(in srgb, var(--color-success) 35%, transparent);
+    border-color: rgba(16, 185, 129, 0.35);
     color: var(--color-success-dark);
 }
 .lc-stdb-pill--connected .lc-stdb-dot {
@@ -3706,7 +3706,7 @@
 }
 .lc-stdb-pill--offline {
     background: var(--color-warning-light);
-    border-color: color-mix(in srgb, var(--color-warning) 35%, transparent);
+    border-color: rgba(245, 158, 11, 0.35);
     color: var(--color-warning);
 }
 .lc-stdb-pill--offline .lc-stdb-dot {
@@ -3722,14 +3722,14 @@
     animation: lc-pulse 1.4s ease infinite;
 }
 [data-theme="dark"] .lc-stdb-pill--connected {
-    background: color-mix(in srgb, var(--color-success) 22%, transparent);
-    border-color: color-mix(in srgb, var(--color-success) 55%, transparent);
-    color: color-mix(in srgb, var(--color-success) 82%, white);
+    background: rgba(16, 185, 129, 0.22);
+    border-color: rgba(16, 185, 129, 0.55);
+    color: rgb(59, 198, 152);
 }
 [data-theme="dark"] .lc-stdb-pill--offline {
-    background: color-mix(in srgb, var(--color-warning) 20%, transparent);
-    border-color: color-mix(in srgb, var(--color-warning) 55%, transparent);
-    color: color-mix(in srgb, var(--color-warning) 82%, white);
+    background: rgba(245, 158, 11, 0.20);
+    border-color: rgba(245, 158, 11, 0.55);
+    color: rgb(247, 175, 55);
 }
 .lc-session-title {
     font-size: var(--font-size-base);
@@ -5230,7 +5230,7 @@
     justify-content: space-between;
     padding: var(--space-2) var(--space-3);
     background: linear-gradient(135deg, color-mix(in srgb, var(--color-warning) 76%, white) 0%, var(--color-warning) 100%);
-    color: color-mix(in srgb, var(--color-text) 90%, #1c1917);
+    color: var(--color-text);
     font-size: var(--font-size-sm);
     font-weight: 600;
 }
@@ -5248,8 +5248,8 @@
     align-items: center;
 }
 .lc-present-pip-end {
-    color: color-mix(in srgb, var(--color-text) 78%, var(--color-warning));
-    border-color: color-mix(in srgb, var(--color-text) 12%, transparent);
+    color: var(--color-text-secondary);
+    border-color: rgba(248, 250, 252, 0.12);
 }
 .lc-present-pip-canvas {
     height: 180px;
