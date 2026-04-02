@@ -44,7 +44,7 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
                         ) : canSignIn ? (
                             <button
                                 type="button"
-                                className="signin-btn"
+                                className="btn btn-secondary signin-btn"
                                 onClick={() => setAuthOpen(true)}
                             >
                                 <LogIn size={15} />

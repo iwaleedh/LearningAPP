@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Moon, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck } from 'lucide-react';
+import { Moon, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck, Settings } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
 import { clearGuestData, getGuestDataSummary, importGuestDataToAccount } from '../services/notes/noteStore.js';
 import {
@@ -163,11 +163,19 @@ export default function SettingsPage() {
     }
 
     return (
-        <div className="animate-fade-in" style={{ maxWidth: '600px' }}>
-            <h1 style={{ marginBottom: 'var(--space-2)' }}>Settings</h1>
-            <p style={{ marginBottom: 'var(--space-6)' }}>
-                Customize your learning experience
-            </p>
+        <div className="settings-hub animate-fade-in">
+            {/* Bento Header */}
+            <div className="settings-page-header">
+                <div className="settings-title-group">
+                    <div className="settings-subject-icon">
+                        <Settings size={28} />
+                    </div>
+                    <div>
+                        <h1 className="settings-page-title">Settings</h1>
+                        <p className="settings-page-qual">Customize your learning experience</p>
+                    </div>
+                </div>
+            </div>
 
             {showAccessNotice && (
                 <section className="card settings-access-card" aria-live="polite">
@@ -399,13 +407,13 @@ export default function SettingsPage() {
             )}
 
             {/* About */}
-            <div className="card" style={{ marginTop: 'var(--space-6)' }}>
-                <h4 style={{ marginBottom: 'var(--space-2)' }}>About Living Textbook</h4>
-                <p style={{ fontSize: 'var(--font-size-sm)' }}>
+            <div className="card settings-about-card">
+                <h4>About Living Textbook</h4>
+                <p className="settings-about-desc">
                     An interactive learning platform built for students who want to go beyond passive reading.
                     Features include smart exercises, flashcards, past paper practice, and progress tracking.
                 </p>
-                <p style={{ fontSize: 'var(--font-size-xs)', color: 'var(--color-text-tertiary)', marginTop: 'var(--space-2)' }}>
+                <p className="settings-about-version">
                     Version 1.0.0 · Built with React + Vite
                 </p>
             </div>

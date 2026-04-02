@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { GripVertical, PenLine, ArrowUpDown, Brain, CheckCircle, Search } from "lucide-react";
+import { GripVertical, PenLine, ArrowUpDown, Brain, CheckCircle, Search, Target, BookOpen, Activity } from "lucide-react";
 import MCQExercise from "../components/exercises/MCQExercise";
 import DragDropExercise from "../components/exercises/DragDropExercise";
 import FillBlankExercise from "../components/exercises/FillBlankExercise";
@@ -109,68 +109,126 @@ export default function ExercisePage() {
     );
   }
 
+  // Count available questions across all types if a topic is selected
+  let totalAvailable = 0;
+  if (exerciseSet) {
+    totalAvailable = ET.reduce((sum, type) => sum + (exerciseSet[type.key] ? exerciseSet[type.key].length : 0), 0);
+  }
+
   return (
     <div className="exercise-hub animate-fade-in">
-      <h1 style={{ marginBottom: "var(--space-2)" }}>Exercises</h1>
-      <p style={{ marginBottom: "var(--space-4)" }}>Build deeper understanding with interactive exercises</p>
-      <div className="exercise-subject-tabs">
-        {SUBJECTS.map(s => (
-          <button key={s.id}
-            className={"exercise-subject-tab" + (activeSubject === s.id ? " exercise-subject-tab--active" : "") + (!s.available ? " exercise-subject-tab--disabled" : "")}
-            onClick={() => { if (!s.available) return; setActiveSubject(s.id); setSelectedUnitId(null); setSelectedTopicId(null); setActiveType(null); setCurrentQuestion(0); }}
-            disabled={!s.available}
-          >
-            {s.label}{!s.available && <span style={{ marginLeft: "6px", fontSize: "0.7em", opacity: 0.7 }}>Coming soon</span>}
-          </button>
-        ))}
-      </div>
-      <div className="exercise-topic-select-wrapper">
-        <select className="exercise-topic-select"
-          disabled={isLoadingSyllabus}
-          value={selectedUnitId && selectedTopicId ? selectedUnitId + ":" + selectedTopicId : ""}
-          onChange={e => {
-            const v = e.target.value;
-            if (!v) { setSelectedUnitId(null); setSelectedTopicId(null); return; }
-            const [u, t] = v.split(":");
-            setSelectedUnitId(Number(u)); setSelectedTopicId(Number(t)); setActiveType(null); setCurrentQuestion(0);
-          }}
-        >
-          <option value="">{isLoadingSyllabus ? "Loading topics..." : "Select a topic to practise"}</option>
-          {syllabus && syllabus.units && syllabus.units.map(unit => (
-            <optgroup key={unit.id} label={unit.code + ": " + unit.title}>
-              {unit.topics && unit.topics.map(topic => (
-                <option key={topic.id} value={unit.id + ":" + topic.id}>
-                  {unit.code + " Topic " + topic.id + ": " + topic.title}
-                </option>
-              ))}
-            </optgroup>
-          ))}
-        </select>
-      </div>
-      <div className="exercise-types-grid">
-        {ET.map((type, i) => {
-          const Icon = type.icon;
-          const count = exerciseSet ? (exerciseSet[type.key] ? exerciseSet[type.key].length : 0) : null;
-          const isLoadingTopic = exerciseSetStatus === "loading";
-          const hasContent = count !== null && count > 0;
-          return (
-            <div key={type.id} className="exercise-type-card card card-hover animate-fade-in"
-              style={{ animationDelay: i * 0.08 + "s", cursor: hasContent ? "pointer" : "default", opacity: exerciseSet && !hasContent ? 0.5 : 1 }}
-              onClick={() => hasContent && !isLoadingTopic && setActiveType(type.id)}
-            >
-              <div className="exercise-type-header">
-                <div className="exercise-type-icon" style={{ background: type.color }}><Icon size={22} /></div>
-                <div>
-                  <h3>{type.title}</h3>
-                  <span className="badge badge-primary">
-                    {isLoadingTopic ? "Loading..." : count !== null ? count + " questions" : "Select a topic"}
-                  </span>
-                </div>
-              </div>
-              <p>{type.desc}</p>
+      {/* Bento Header */}
+      <div className="exercise-page-header">
+        <div className="exercise-title-group">
+          <div className="exercise-subject-icon"><span><Target size={28} /></span></div>
+          <div>
+            <h1 className="exercise-page-title">Exercises</h1>
+            <p className="exercise-page-qual">Build deeper understanding with interactive practice</p>
+          </div>
+        </div>
+        <div className="exercise-meta-boxes">
+          <div className="meta-box">
+            <div className="meta-icon" style={{ background: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}>
+              <BookOpen size={18} />
             </div>
-          );
-        })}
+            <div className="meta-text">
+              <strong>{SUBJECTS.filter(s => s.available).length} Subjects</strong>
+              <span>Complete coverage</span>
+            </div>
+          </div>
+          <div className="meta-box">
+            <div className="meta-icon" style={{ background: 'rgba(16, 185, 129, 0.1)', color: '#10b981' }}>
+              <Activity size={18} />
+            </div>
+            <div className="meta-text">
+              <strong>{ET.length} Modes</strong>
+              <span>Varied practice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Controls Card */}
+      <div className="exercise-controls-card">
+        <h3 className="section-label">1. Choose your subject</h3>
+        <div className="exercise-subject-tabs">
+          {SUBJECTS.map(s => (
+            <button key={s.id}
+              className={"exercise-subject-tab" + (activeSubject === s.id ? " exercise-subject-tab--active" : "") + (!s.available ? " exercise-subject-tab--disabled" : "")}
+              onClick={() => { if (!s.available) return; setActiveSubject(s.id); setSelectedUnitId(null); setSelectedTopicId(null); setActiveType(null); setCurrentQuestion(0); }}
+              disabled={!s.available}
+            >
+              {s.label}{!s.available && <span className="tab-coming-soon">Coming soon</span>}
+            </button>
+          ))}
+        </div>
+        
+        <h3 className="section-label" style={{ marginTop: 'var(--space-5)' }}>2. Select a topic</h3>
+        <div className="exercise-topic-select-wrapper">
+          <select className="exercise-topic-select"
+            disabled={isLoadingSyllabus}
+            value={selectedUnitId && selectedTopicId ? selectedUnitId + ":" + selectedTopicId : ""}
+            onChange={e => {
+              const v = e.target.value;
+              if (!v) { setSelectedUnitId(null); setSelectedTopicId(null); return; }
+              const [u, t] = v.split(":");
+              setSelectedUnitId(Number(u)); setSelectedTopicId(Number(t)); setActiveType(null); setCurrentQuestion(0);
+            }}
+          >
+            <option value="">{isLoadingSyllabus ? "Loading topics..." : "Select a topic to practise"}</option>
+            {syllabus && syllabus.units && syllabus.units.map(unit => (
+              <optgroup key={unit.id} label={unit.code + ": " + unit.title}>
+                {unit.topics && unit.topics.map(topic => (
+                  <option key={topic.id} value={unit.id + ":" + topic.id}>
+                    {unit.code + " Topic " + topic.id + ": " + topic.title}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* Types Grid */}
+      <div className="exercise-types-section animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
+        <div className="exercise-types-header">
+          <h3 className="section-label">3. Pick a practice mode</h3>
+          {selectedUnitId && selectedTopicId && (
+            exerciseSetStatus === "loading" ? (
+               <span className="badge badge-primary">Loading content...</span>
+            ) : (
+               <span className="badge" style={{ background: '#dcfce7', color: '#166534', border: '1px solid #86efac' }}>
+                 {totalAvailable} total questions available
+               </span>
+            )
+          )}
+        </div>
+
+        <div className="exercise-types-grid">
+          {ET.map((type, i) => {
+            const Icon = type.icon;
+            const count = exerciseSet ? (exerciseSet[type.key] ? exerciseSet[type.key].length : 0) : null;
+            const isLoadingTopic = exerciseSetStatus === "loading";
+            const hasContent = count !== null && count > 0;
+            return (
+              <div key={type.id} className={`exercise-type-card ${hasContent ? 'interactive' : 'empty'}`}
+                style={{ animationDelay: i * 0.05 + "s", animationFillMode: 'both' }}
+                onClick={() => hasContent && !isLoadingTopic && setActiveType(type.id)}
+              >
+                <div className="exercise-type-header">
+                  <div className="exercise-type-icon" style={{ background: type.color }}><Icon size={22} /></div>
+                  <div className="exercise-type-title-group">
+                    <h3>{type.title}</h3>
+                    <span className={`type-badge ${isLoadingTopic ? 'loading' : hasContent ? 'ready' : 'empty'}`}>
+                      {isLoadingTopic ? "..." : count !== null ? `${count} items` : "None"}
+                    </span>
+                  </div>
+                </div>
+                <p>{type.desc}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

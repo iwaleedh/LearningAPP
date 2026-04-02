@@ -482,7 +482,7 @@ pre {
   font-weight: var(--font-weight-medium);
   line-height: 1;
   border: none;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   cursor: pointer;
   transition: all var(--transition-base);
   text-decoration: none;
@@ -551,14 +551,14 @@ pre {
 
 .btn-icon {
   padding: var(--space-2);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
 }
 
 /* ---- Card ---- */
 .card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   padding: var(--space-6);
   transition: all var(--transition-base);
 }
@@ -574,8 +574,8 @@ pre {
 
 .card-hover:hover, .card-hover:focus-visible {
   border-color: var(--color-primary-200);
-  box-shadow: var(--shadow-lg), var(--shadow-glow);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+  transform: translateY(-3px);
   outline: none;
 }
 
@@ -584,7 +584,7 @@ pre {
   -webkit-backdrop-filter: blur(var(--glass-blur));
   backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   padding: var(--space-6);
   transition: all var(--transition-base);
 }
@@ -753,7 +753,7 @@ select.input {
 
 .app-sidebar {
   width: var(--sidebar-width);
-  background: var(--color-surface);
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--glass-bg) 100%);
   border-right: 1px solid var(--color-border);
   height: 100vh;
   position: fixed;
@@ -762,6 +762,7 @@ select.input {
   overflow-y: auto;
   z-index: 100;
   transition: transform var(--transition-base);
+  box-shadow: 4px 0 24px -4px rgba(0, 0, 0, 0.02);
 }
 
 .app-main {
@@ -772,16 +773,18 @@ select.input {
 
 .app-header {
   height: var(--header-height);
-  background: var(--glass-bg);
+  background: var(--color-surface);
+  background: linear-gradient(180deg, var(--color-surface) 0%, rgba(255,255,255,0.8) 100%);
   -webkit-backdrop-filter: blur(var(--glass-blur));
   backdrop-filter: blur(var(--glass-blur));
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-light);
   display: flex;
   align-items: center;
   padding: 0 var(--space-6);
   position: sticky;
   top: 0;
   z-index: 50;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.03);
 }
 
 .page-content {

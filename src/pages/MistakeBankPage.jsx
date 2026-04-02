@@ -1,4 +1,4 @@
-import { GraduationCap, RotateCcw, CheckCircle } from 'lucide-react';
+import { AlertTriangle, RotateCcw, CheckCircle, XCircle } from 'lucide-react';
 import './Pages.css';
 
 const sampleMistakes = [
@@ -25,8 +25,18 @@ const sampleMistakes = [
 export default function MistakeBankPage() {
     if (sampleMistakes.length === 0) {
         return (
-            <div className="animate-fade-in">
-                <h1 style={{ marginBottom: 'var(--space-2)' }}>Mistake Bank</h1>
+            <div className="mistake-hub animate-fade-in">
+                <div className="mistake-page-header">
+                    <div className="mistake-title-group">
+                        <div className="mistake-subject-icon">
+                            <CheckCircle size={28} />
+                        </div>
+                        <div>
+                            <h1 className="mistake-page-title">Mistake Bank</h1>
+                            <p className="mistake-page-qual">All clear — no pending mistakes</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="empty-state">
                     <div className="empty-state-icon">
                         <CheckCircle size={36} />
@@ -39,16 +49,41 @@ export default function MistakeBankPage() {
     }
 
     return (
-        <div className="animate-fade-in" style={{ maxWidth: '800px' }}>
-            <h1 style={{ marginBottom: 'var(--space-2)' }}>Mistake Bank</h1>
-            <p style={{ marginBottom: 'var(--space-6)' }}>
-                Questions you got wrong are collected here. Clear them by answering correctly twice.
-            </p>
-
-            <div style={{ display: 'flex', gap: 'var(--space-3)', marginBottom: 'var(--space-6)' }}>
-                <span className="badge badge-error">{sampleMistakes.length} mistakes to review</span>
+        <div className="mistake-hub animate-fade-in">
+            {/* Bento Header */}
+            <div className="mistake-page-header">
+                <div className="mistake-title-group">
+                    <div className="mistake-subject-icon">
+                        <AlertTriangle size={28} />
+                    </div>
+                    <div>
+                        <h1 className="mistake-page-title">Mistake Bank</h1>
+                        <p className="mistake-page-qual">Questions you got wrong — clear them by answering correctly twice</p>
+                    </div>
+                </div>
+                <div className="mistake-meta-boxes">
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#fecaca,#fca5a5)', color: '#dc2626' }}>
+                            <XCircle size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{sampleMistakes.length}</strong>
+                            <span>To Review</span>
+                        </div>
+                    </div>
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#d1fae5,#a7f3d0)', color: '#059669' }}>
+                            <RotateCcw size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{sampleMistakes.reduce((s, m) => s + m.attempts, 0)}</strong>
+                            <span>Total Attempts</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            {/* Mistake Cards */}
             <div className="mistake-list">
                 {sampleMistakes.map((mistake, i) => (
                     <div
@@ -61,12 +96,12 @@ export default function MistakeBankPage() {
                             <span className="mistake-attempts">{mistake.attempts} attempt(s) · {mistake.lastAttempt}</span>
                         </div>
                         <p className="mistake-question">{mistake.question}</p>
-                        <div style={{ display: 'flex', gap: 'var(--space-4)', fontSize: 'var(--font-size-sm)', marginBottom: 'var(--space-3)' }}>
-                            <span style={{ color: 'var(--color-error)' }}>
-                                ✗ Your answer: <strong>{mistake.yourAnswer}</strong>
+                        <div className="mistake-answers">
+                            <span className="mistake-yours">
+                                <XCircle size={13} /> Your answer: <strong>{mistake.yourAnswer}</strong>
                             </span>
-                            <span style={{ color: 'var(--color-success)' }}>
-                                ✓ Correct: <strong>{mistake.correctAnswer}</strong>
+                            <span className="mistake-correct">
+                                <CheckCircle size={13} /> Correct: <strong>{mistake.correctAnswer}</strong>
                             </span>
                         </div>
                         <button className="btn btn-primary btn-sm">

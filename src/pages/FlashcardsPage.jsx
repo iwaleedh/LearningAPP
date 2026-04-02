@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight } from 'lucide-react';
+import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight, Layers, CheckCircle, BookOpen } from 'lucide-react';
 import { listFlashcards } from '../services/notes/noteStore.js';
 import './Pages.css';
 
@@ -107,32 +107,63 @@ export default function FlashcardsPage() {
     const sourcePath = parseNoteId(card.sourceNoteId);
 
     return (
-        <div className="animate-fade-in" style={{ maxWidth: '680px', margin: '0 auto' }}>
-            <h1 style={{ textAlign: 'center', marginBottom: 'var(--space-2)' }}>Flashcards</h1>
-            <p style={{ textAlign: 'center', marginBottom: 'var(--space-2)' }}>
-                Tap to flip · Review generated cards from your notes
-            </p>
-
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-6)' }}>
-                <span className="badge badge-success">✓ {known.length} Known</span>
-                <span className="badge badge-warning">📖 {learning.length} Learning</span>
-                <span className="badge badge-info">{totalCards} Total</span>
+        <div className="flashcard-hub animate-fade-in">
+            {/* Bento Header */}
+            <div className="flashcard-page-header">
+                <div className="flashcard-title-group">
+                    <div className="flashcard-subject-icon">
+                        <Layers size={28} />
+                    </div>
+                    <div>
+                        <h1 className="flashcard-page-title">Flashcards</h1>
+                        <p className="flashcard-page-qual">Tap to flip · Review generated cards from your notes</p>
+                    </div>
+                </div>
+                <div className="flashcard-meta-boxes">
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#d1fae5,#a7f3d0)', color: '#059669' }}>
+                            <CheckCircle size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{known.length}</strong>
+                            <span>Known</span>
+                        </div>
+                    </div>
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#fef3c7,#fde68a)', color: '#d97706' }}>
+                            <BookOpen size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{learning.length}</strong>
+                            <span>Learning</span>
+                        </div>
+                    </div>
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#e0e7ff,#c7d2fe)', color: '#6366f1' }}>
+                            <Layers size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{totalCards}</strong>
+                            <span>Total</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="flashcard-container">
                 <div className="flashcard-wrapper" onClick={() => setIsFlipped(!isFlipped)}>
                     <div className={`flashcard ${isFlipped ? 'flipped' : ''}`}>
                         <div className="flashcard-face flashcard-front">
-                            <span className="badge" style={{ background: 'rgba(255,255,255,0.2)', color: 'white', marginBottom: 'var(--space-4)' }}>
+                            <span className="flashcard-topic-badge">
                                 {card.topic}
                             </span>
                             <h3>{card.front}</h3>
-                            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 'var(--font-size-sm)', marginTop: 'var(--space-4)' }}>
+                            <p className="flashcard-hint">
                                 Tap to reveal answer
                             </p>
                         </div>
                         <div className="flashcard-face flashcard-back">
-                            <span className="badge badge-primary" style={{ marginBottom: 'var(--space-4)' }}>Answer</span>
+                            <span className="badge badge-primary flashcard-answer-badge">Answer</span>
                             <p>{card.back}</p>
                         </div>
                     </div>

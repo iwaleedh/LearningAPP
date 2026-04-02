@@ -119,15 +119,10 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
 
     return (
         <button
-            className={`btn btn-sm ${status === 'success' ? 'btn-success' : status === 'error' ? 'btn-ghost' : 'btn-primary'}`}
+            className={`btn btn-sm pastpaper-action-btn ${status === 'success' ? 'btn-success' : status === 'error' ? 'btn-ghost' : 'btn-primary'}`}
             onClick={handleDownload}
             disabled={!url}
             title={!url ? 'Coming soon' : `${label} PDF`}
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-            }}
         >
             <Icon size={14} />
             {status === 'success' ? 'Downloaded!' : status === 'error' ? 'Failed' : label}
@@ -152,15 +147,10 @@ function ViewPdfButton({ paper, type, label }) {
 
     return (
         <button
-            className="btn btn-sm btn-outline"
+            className="btn btn-sm btn-outline pastpaper-action-btn"
             onClick={handleView}
             disabled={!url}
             title={!url ? 'Coming soon' : `Open ${label} in new tab`}
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-            }}
         >
             <Eye size={14} />
             {label}
@@ -241,9 +231,8 @@ function ExamSessionCard({ year, month, papers, isOLevel = false }) {
                                     />
                                     {paper.questionPaperUrl && (
                                         <button
-                                            className="btn btn-sm btn-primary"
+                                            className="btn btn-sm btn-primary pastpaper-action-btn"
                                             onClick={() => navigate(`/annotate/${paper.id}`)}
-                                            style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
                                             title="Open in annotation mode"
                                         >
                                             <PenTool size={14} />
@@ -375,50 +364,51 @@ export default function PastPapersPage() {
     const groupedPapersArray = Object.values(groupedPapers);
 
     return (
-        <div className="animate-fade-in" style={{ maxWidth: '1100px' }}>
-            <h1 style={{ marginBottom: 'var(--space-2)' }}>Past Papers</h1>
-            <p style={{ marginBottom: 'var(--space-6)' }}>
-                View and download real exam papers with marking schemes — {isLoadingSubject
-                    ? `Loading papers… (${subjectPaperCounts[activeSubject] ?? 0} available)`
-                    : `${subjectPapers.length} papers available`}
-            </p>
+        <div className="pastpaper-hub animate-fade-in">
+            {/* Bento Header */}
+            <div className="pastpaper-page-header">
+                <div className="pastpaper-title-group">
+                    <div className="pastpaper-subject-icon">
+                        <FileQuestion size={28} />
+                    </div>
+                    <div>
+                        <h1 className="pastpaper-page-title">Past Papers</h1>
+                        <p className="pastpaper-page-qual">
+                            View and download real exam papers with marking schemes — {isLoadingSubject
+                                ? `Loading papers… (${subjectPaperCounts[activeSubject] ?? 0} available)`
+                                : `${subjectPapers.length} papers available`}
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             {/* Subject Tabs */}
-            <div className="subject-buttons" style={{ display: 'flex', gap: 'var(--space-3)', marginBottom: 'var(--space-6)', flexWrap: 'wrap' }}>
+            <div className="pastpaper-subject-buttons">
                 {subjects.map(subject => {
                     const Icon = subject.icon;
                     const isActive = activeSubject === subject.id;
                     return (
                         <button
                             key={subject.id}
-                            className={`subject-btn ${isActive ? 'active' : ''}`}
+                            className={`pastpaper-subject-btn ${isActive ? 'active' : ''}`}
                             onClick={() => handleSubjectChange(subject.id)}
                             onMouseEnter={() => handleSubjectPrefetch(subject.id)}
                             onFocus={() => handleSubjectPrefetch(subject.id)}
                             style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 'var(--space-2)',
-                                padding: 'var(--space-3) var(--space-4)',
-                                borderRadius: 'var(--radius-md)',
-                                border: isActive ? `2px solid ${subject.color}` : '2px solid var(--color-border)',
-                                background: isActive ? `${subject.color}15` : 'var(--color-bg)',
-                                color: isActive ? subject.color : 'var(--color-text)',
-                                cursor: 'pointer',
-                                transition: 'all 0.2s ease',
-                                fontWeight: isActive ? 700 : 500,
+                                borderColor: isActive ? subject.color : undefined,
+                                background: isActive ? `${subject.color}15` : undefined,
+                                color: isActive ? subject.color : undefined,
                             }}
                         >
                             <Icon size={20} style={{ color: subject.color }} />
                             <span>{subject.name}</span>
-                            <span style={{
-                                fontSize: 'var(--font-size-xs)',
-                                background: isActive ? subject.color : 'var(--color-bg-secondary)',
-                                color: isActive ? '#fff' : 'var(--color-text-tertiary)',
-                                borderRadius: 'var(--radius-full)',
-                                padding: '1px 7px',
-                                fontWeight: 600,
-                            }}>
+                            <span
+                                className="pastpaper-subject-count"
+                                style={{
+                                    background: isActive ? subject.color : undefined,
+                                    color: isActive ? '#fff' : undefined,
+                                }}
+                            >
                                 {subjectDataById[subject.id]?.papers.length ?? subjectPaperCounts[subject.id] ?? '…'}
                             </span>
                         </button>
@@ -427,12 +417,11 @@ export default function PastPapersPage() {
             </div>
 
             {/* Filters */}
-            <div className="filter-bar" style={{ display: 'flex', gap: 'var(--space-3)', marginBottom: 'var(--space-5)', flexWrap: 'wrap' }}>
+            <div className="pastpaper-filter-bar">
                 <select
-                    className="input"
+                    className="input pastpaper-filter-select"
                     value={filterYear}
                     onChange={e => handleYearChange(e.target.value)}
-                    style={{ minWidth: '120px' }}
                     disabled={isLoadingSubject}
                 >
                     <option value="all">All Years</option>
@@ -442,10 +431,9 @@ export default function PastPapersPage() {
                 </select>
 
                 <select
-                    className="input"
+                    className="input pastpaper-filter-select"
                     value={filterMonth}
                     onChange={e => setFilterMonth(e.target.value)}
-                    style={{ minWidth: '140px' }}
                     disabled={filterYear === 'all' || isLoadingSubject}
                 >
                     <option value="all">All Months</option>
@@ -455,10 +443,9 @@ export default function PastPapersPage() {
                 </select>
 
                 <select
-                    className="input"
+                    className="input pastpaper-filter-select-wide"
                     value={filterUnit}
                     onChange={e => setFilterUnit(e.target.value)}
-                    style={{ minWidth: '200px' }}
                     disabled={isLoadingSubject}
                 >
                     <option value="all">All Units</option>

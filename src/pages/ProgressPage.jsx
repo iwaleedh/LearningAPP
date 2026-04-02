@@ -1,4 +1,4 @@
-import { Target, BookOpen } from 'lucide-react';
+import { Target, BookOpen, TrendingUp, Award } from 'lucide-react';
 import BadgeSystem from '../components/gamification/BadgeSystem';
 import StreakTracker from '../components/gamification/StreakTracker';
 import Leaderboard from '../components/gamification/Leaderboard';
@@ -37,11 +37,48 @@ export default function ProgressPage() {
     const strokeDashoffset = circumference - (overallProgress / 100) * circumference;
 
     return (
-        <div className="animate-fade-in" style={{ maxWidth: '960px' }}>
-            <h1 style={{ marginBottom: 'var(--space-2)' }}>Your Progress</h1>
-            <p style={{ marginBottom: 'var(--space-6)' }}>
-                Track your learning journey, study streaks, and achievements
-            </p>
+        <div className="progress-hub animate-fade-in">
+            {/* Bento Header */}
+            <div className="progress-page-header">
+                <div className="progress-title-group">
+                    <div className="progress-subject-icon">
+                        <TrendingUp size={28} />
+                    </div>
+                    <div>
+                        <h1 className="progress-page-title">Your Progress</h1>
+                        <p className="progress-page-qual">Track your learning journey, study streaks, and achievements</p>
+                    </div>
+                </div>
+                <div className="progress-meta-boxes">
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#e0e7ff,#c7d2fe)', color: '#6366f1' }}>
+                            <BookOpen size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{totalRead}</strong>
+                            <span>Notes Read</span>
+                        </div>
+                    </div>
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#d1fae5,#a7f3d0)', color: '#059669' }}>
+                            <Target size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{chapterProgress.filter(c => c.progress > 0).length}</strong>
+                            <span>Subjects Started</span>
+                        </div>
+                    </div>
+                    <div className="meta-box">
+                        <div className="meta-icon" style={{ background: 'linear-gradient(135deg,#fef3c7,#fde68a)', color: '#d97706' }}>
+                            <Award size={18} />
+                        </div>
+                        <div className="meta-text">
+                            <strong>{overallProgress}%</strong>
+                            <span>Overall</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div className="progress-overview">
                 {/* Ring Chart */}
@@ -77,7 +114,7 @@ export default function ProgressPage() {
                     </svg>
 
                     {/* Quick stats */}
-                    <div style={{ display: 'flex', gap: 'var(--space-4)', fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)' }}>
+                    <div className="progress-ring-stats">
                         <span><BookOpen size={14} /> {totalRead} notes read</span>
                         <span><Target size={14} /> {chapterProgress.filter(c => c.progress > 0).length} subjects started</span>
                     </div>
@@ -85,7 +122,7 @@ export default function ProgressPage() {
 
                 {/* Chapter Progress */}
                 <div className="card">
-                    <h3 style={{ marginBottom: 'var(--space-4)' }}>Chapter Progress</h3>
+                    <h3 className="progress-chapter-title">Chapter Progress</h3>
                     <div className="chapter-progress-list">
                         {chapterProgress.map((ch, i) => (
                             <div key={i} className="chapter-progress-item">
@@ -104,17 +141,17 @@ export default function ProgressPage() {
             </div>
 
             {/* Study Streak Heatmap */}
-            <div style={{ marginTop: 'var(--space-6)' }}>
+            <div className="progress-section">
                 <StreakTracker />
             </div>
 
             {/* Badges */}
-            <div style={{ marginTop: 'var(--space-6)' }}>
+            <div className="progress-section">
                 <BadgeSystem />
             </div>
 
             {/* Leaderboard */}
-            <div style={{ marginTop: 'var(--space-6)' }}>
+            <div className="progress-section">
                 <Leaderboard />
             </div>
         </div>

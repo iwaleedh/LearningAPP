@@ -1,4 +1,4 @@
-import { Wifi, Printer, CloudOff, Download, Database } from 'lucide-react';
+import { Wifi, Printer, CloudOff, Download, Database, Zap } from 'lucide-react';
 import { AIGrading, DraftAutoSave, PhotoUpload } from '../components/advanced/AdvancedFeatures';
 import { getClient, callMutation, callQuery, api } from '../convex-client.js';
 import usePwaStatus from '../hooks/usePwaStatus';
@@ -34,16 +34,23 @@ export default function AdvancedPage() {
                 : 'neutral';
 
     return (
-        <div className="animate-fade-in" style={{ maxWidth: '960px' }}>
-            <h1 style={{ marginBottom: 'var(--space-2)' }} className="avoid-break">Advanced Features</h1>
-            <p style={{ color: 'var(--color-text-secondary)', marginBottom: 'var(--space-5)' }}>
-                AI grading, resilient draft auto-save, validated uploads, and PWA readiness checks.
-            </p>
+        <div className="advanced-hub animate-fade-in">
+            <div className="advanced-page-header avoid-break">
+                <div className="advanced-title-group">
+                    <div className="advanced-subject-icon">
+                        <Zap size={32} />
+                    </div>
+                    <div>
+                        <h1 className="advanced-page-title">Advanced Features</h1>
+                        <p className="advanced-page-qual">AI grading, resilient draft auto-save, validated uploads, and PWA readiness checks.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)', border: '2px solid var(--color-primary)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
-                    <Database size={18} style={{ color: 'var(--color-primary)' }} />
-                    <h3 style={{ margin: 0 }}>Convex Test</h3>
+            <div className="advanced-card card avoid-break" style={{ borderColor: 'var(--color-primary)' }}>
+                <div className="advanced-card-header">
+                    <Database size={20} className="advanced-card-icon" />
+                    <h3>Convex Test</h3>
                 </div>
                 <button
                     className="btn btn-primary no-print"
@@ -80,12 +87,12 @@ export default function AdvancedPage() {
                 <div id="convex-result" style={{ marginTop: '10px', fontWeight: 'bold' }}></div>
             </div>
 
-            <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
-                    <Wifi size={18} style={{ color: 'var(--color-primary)' }} />
-                    <h3 style={{ margin: 0 }}>PWA Status</h3>
+            <div className="advanced-card card avoid-break">
+                <div className="advanced-card-header">
+                    <Wifi size={20} className="advanced-card-icon" />
+                    <h3>PWA Status</h3>
                 </div>
-                <div style={{ display: 'flex', gap: 'var(--space-5)', fontSize: 'var(--font-size-sm)', flexWrap: 'wrap' }}>
+                <div className="advanced-card-body" style={{ display: 'flex', gap: 'var(--space-5)', fontSize: 'var(--font-size-sm)', flexWrap: 'wrap' }}>
                     <div>
                         <strong>Service Worker:</strong>{' '}
                         <StatusDot tone={swTone}>{serviceWorkerLabel}</StatusDot>
@@ -120,18 +127,20 @@ export default function AdvancedPage() {
                 )}
             </div>
 
-            <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
-                    <Printer size={18} style={{ color: 'var(--color-primary)' }} />
-                    <h3 style={{ margin: 0 }}>Print Mode</h3>
+            <div className="advanced-card card avoid-break">
+                <div className="advanced-card-header">
+                    <Printer size={20} className="advanced-card-icon" />
+                    <h3>Print Mode</h3>
                 </div>
-                <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-3)' }}>
-                    Use <kbd style={{ background: 'var(--color-bg-tertiary)', padding: '2px 6px', borderRadius: '4px', fontSize: '12px' }}>⌘P</kbd> to print any page.
-                    Navigation and interactive controls are hidden automatically in print mode.
-                </p>
-                <button className="btn btn-ghost no-print" onClick={() => window.print()}>
-                    <Printer size={14} /> Print This Page
-                </button>
+                <div className="advanced-card-body">
+                    <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-3)' }}>
+                        Use <kbd style={{ background: 'var(--color-bg-tertiary)', padding: '2px 6px', borderRadius: '4px', fontSize: '12px' }}>⌘P</kbd> to print any page.
+                        Navigation and interactive controls are hidden automatically in print mode.
+                    </p>
+                    <button className="btn btn-ghost no-print" onClick={() => window.print()}>
+                        <Printer size={16} style={{ marginRight: '8px' }} /> Print This Page
+                    </button>
+                </div>
             </div>
 
             <div style={{ marginBottom: 'var(--space-5)' }} className="avoid-break">
