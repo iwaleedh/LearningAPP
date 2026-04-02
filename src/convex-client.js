@@ -156,6 +156,34 @@ export function onConvexReady(callback) {
 }
 export const onSpacetimeDBReady = onConvexReady;
 
+/**
+ * Returns a Promise that resolves with the Convex client once it is
+ * fully initialised (identity set, ready for queries / mutations / subscriptions).
+ * This is the preferred gate for liveclass subscribe / join / watch operations,
+ * because getClient() eagerly creates a client before the identity is set or any
+ * subscription can succeed.
+ */
+export function waitForConvexReady() {
+  return new Promise((resolve, reject) => {
+    if (isReady && convexClient && currentUserId) {
+      resolve(convexClient);
+    } else if (hasErrored) {
+      reject(lastError ?? new Error('Convex init failed'));
+    } else {
+      connectionCallbacks.push((client) => resolve(client));
+      errorCallbacks.push((err) => reject(err));
+    }
+  });
+}
+
+/**
+ * Synchronous check — true only after initConvex() completes with identity set.
+ * Use this as a fast-path guard before subscribing or mutating.
+ */
+export function isConvexReady() {
+  return isReady && !!convexClient && !!currentUserId;
+}
+
 /** Register a callback for Convex connection errors. */
 export function onConvexError(callback) {
   if (hasErrored && !isReady) {
@@ -225,7 +253,10 @@ export async function callQuery(queryRef, args) {
 // ── Helper: subscribe to a Convex query (imperative) ────────────────
 export function subscribe(queryRef, args, callback) {
   const client = getOrCreateClient();
-  if (!client) return () => {};
+  if (!client) {
+    console.warn('[Convex] subscribe() — client not ready, returning noop. Query:', queryRef);
+    return () => {};
+  }
 
   const watch = client.watchQuery(queryRef, args ?? {});
   const emit = () => {

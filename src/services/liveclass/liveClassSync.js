@@ -6,7 +6,7 @@
  * Follows the same pattern as sessionSync.js.
  */
 
-import { getClient, getCurrentUserId, api, callMutation, callQuery, subscribe } from '../../convex-client.js';
+import { getClient, getCurrentUserId, api, callMutation, callQuery, subscribe, waitForConvexReady, isConvexReady } from '../../convex-client.js';
 import { logger } from '../logger/logger.js';
 import {
   createLocalLiveClass,
@@ -77,10 +77,20 @@ export function createLiveClassSync({
 
   function attachListeners(classId) {
     const client = getClient();
-    if (!client) return;
+    if (!client) {
+      log.warn('attachListeners — Convex client not ready, skipping subscriptions', { classId });
+      return;
+    }
+    log.info('attachListeners — subscribing to Convex', { classId });
+
+    let strokeSubFiredOnce = false;
 
     // ── Strokes subscription ─────────────────────────────────────
         unsubs.push(subscribe(api.strokes.getStrokesBySession, { sessionId: classId }, (strokes) => {
+          if (!strokeSubFiredOnce) {
+            strokeSubFiredOnce = true;
+            log.info('Stroke subscription first callback', { classId, count: strokes.length });
+          }
           const newMap = new Map();
           for (const stroke of strokes) {
             newMap.set(stroke._id, stroke);
@@ -223,10 +233,21 @@ export function createLiveClassSync({
       activeClassId = classId;
       return [];
     }
-    const userId = myUserId();
-    if (!userId || !getClient()) return [];
-    await callMutation(api.liveclass.joinLiveClass, { classId });
     activeClassId = classId;
+    // Gate on genuine Convex readiness (identity set + client connected),
+    // not just getClient() existence — the client is created eagerly before
+    // the identity is available, so checking getClient() is not sufficient.
+    let client;
+    try {
+      client = await waitForConvexReady();
+    } catch {
+      log.warn('joinClass — Convex unavailable, falling back to local/BC sync', { classId });
+      return [];
+    }
+    if (!client || activeClassId !== classId) return [];
+    const userId = myUserId();
+    if (!userId) return [];
+    await callMutation(api.liveclass.joinLiveClass, { classId });
     attachListeners(classId);
     const strokes = await callQuery(api.strokes.getStrokesBySession, { sessionId: classId });
     return strokes || [];
@@ -242,7 +263,18 @@ export function createLiveClassSync({
       return Promise.resolve([]);
     }
     activeClassId = classId;
-    attachListeners(classId);
+    // Use isConvexReady() (identity set) instead of plain getClient() existence
+    // so we don't attach subscriptions before the identity is established.
+    if (isConvexReady() && myUserId()) {
+      attachListeners(classId);
+    } else {
+      log.info('watchClass — Convex not ready, queuing attach', { classId });
+      waitForConvexReady().then(() => {
+        if (activeClassId === classId) attachListeners(classId);
+      }).catch(() => {
+        log.warn('watchClass — Convex unavailable, BroadcastChannel fallback active', { classId });
+      });
+    }
     // Return strokes asynchronously; caller should await if needed
     return callQuery(api.strokes.getStrokesBySession, { sessionId: classId }).catch(() => []);
   }
@@ -299,6 +331,19 @@ export function createLiveClassSync({
     const strokeId = clientIdToStrokeId.get(clientId);
     if (strokeId == null) return;
     await callMutation(api.strokes.updateStroke, { strokeId, fabricObjectJson });
+  }
+
+  /**
+   * Upsert a stroke in Convex: updates if a Convex row already exists for this
+   * clientId, otherwise inserts a new row. Use this for in-place mutations
+   * (snap-replace, live text edits, flowchart relabels) so the same clientId
+   * never accumulates multiple backend rows.
+   */
+  async function sendStrokeUpsert(classId, fabricObjectJson, clientId) {
+    if (clientIdToStrokeId.has(clientId)) {
+      return sendStrokeUpdate(clientId, fabricObjectJson);
+    }
+    return sendStroke(classId, fabricObjectJson, clientId);
   }
 
   async function sendStrokeDelete(clientId) {
@@ -525,6 +570,7 @@ export function createLiveClassSync({
     broadcastLaserTrail,
     sendStroke,
     sendStrokeUpdate,
+    sendStrokeUpsert,
     sendStrokeDelete,
     sendInvite,
     raiseHand,

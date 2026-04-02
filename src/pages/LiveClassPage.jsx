@@ -170,6 +170,25 @@ function hasFullLiveClassAccess(session) {
 
 // ─────────────────────────────────────────────────────────────────────────────
 
+/**
+ * Upsert a single stroke on a Fabric canvas, deduplicating by strokeClientId.
+ * Removes ALL existing objects with the same clientId before adding the new one.
+ * Used by both the BroadcastChannel and Convex onStrokeAdded paths so that a
+ * stroke delivered twice (once via BC, once via Convex subscription) never
+ * renders as a duplicate.
+ */
+function upsertStrokeOnCanvas(fc, obj) {
+  const cid = obj.data?.strokeClientId;
+  if (cid) {
+    fc.getObjects()
+      .filter(o => o.data?.strokeClientId === cid)
+      .forEach(o => fc.remove(o));
+  }
+  obj.selectable = false;
+  obj.evented = false;
+  fc.add(obj);
+}
+
 export default function LiveClassPage() {
   const { sessionId } = useParams();
   const navigate = useNavigate();
@@ -412,6 +431,15 @@ export default function LiveClassPage() {
 
   }, []);
 
+  // Incremental stroke broadcasts for instant same-browser sync
+  const broadcastStrokeAdded = useCallback((fabricObjJson) => {
+    broadcastRef.current?.postMessage({ type: 'stroke-added', data: fabricObjJson });
+  }, []);
+
+  const broadcastStrokeDeleted = useCallback((strokeClientId) => {
+    broadcastRef.current?.postMessage({ type: 'stroke-deleted', data: { strokeClientId } });
+  }, []);
+
   const saveHistory = useCallback(() => {
     if (skipHistory.current) return;
     // Debounce via rAF so multi-object adds (templates, connector line+arrow) merge
@@ -427,8 +455,29 @@ export default function LiveClassPage() {
       historyIndex.current = historyStack.current.length - 1;
       setCanUndo(historyIndex.current > 0);
       setCanRedo(false);
-      // Broadcast to student tabs via BroadcastChannel
-      broadcastCanvasState();
+      // Leading + trailing throttle: fire immediately if the last broadcast was
+      // >=3 s ago (leading edge), and always schedule a trailing flush so any
+      // change made inside the throttle window is still delivered. This prevents
+      // the previous leading-only pattern from silently dropping the last edit
+      // in a burst (the window that caused the "full reconciliation fallback is
+      // not actually guaranteed" bug).
+      const now = Date.now();
+      const timeSinceLast = now - lastFullBroadcastRef.current;
+      if (timeSinceLast >= 3000) {
+        // Leading edge — fire immediately and cancel any pending trailing call
+        lastFullBroadcastRef.current = now;
+        clearTimeout(fullBroadcastTrailingRef.current);
+        fullBroadcastTrailingRef.current = null;
+        broadcastCanvasState();
+      } else {
+        // Inside throttle window — (re)schedule trailing flush after the window expires
+        clearTimeout(fullBroadcastTrailingRef.current);
+        fullBroadcastTrailingRef.current = setTimeout(() => {
+          fullBroadcastTrailingRef.current = null;
+          lastFullBroadcastRef.current = Date.now();
+          broadcastCanvasState();
+        }, 3000 - timeSinceLast);
+      }
     });
   }, [broadcastCanvasState]);
 
@@ -462,6 +511,8 @@ export default function LiveClassPage() {
   const myFabricRef = useRef(null);
   const syncRef = useRef(null);
   const broadcastRef = useRef(null);
+  const lastFullBroadcastRef = useRef(0); // throttle full canvas-state broadcasts
+  const fullBroadcastTrailingRef = useRef(null); // trailing timer for full canvas-state broadcasts
 
   const [canvasSize, setCanvasSize] = useState({ w: 1, h: 1 });
 
@@ -669,6 +720,7 @@ export default function LiveClassPage() {
   // ── Set up sync once role is known ─────────────────────────────────────────
   useEffect(() => {
     if (!role || !classId || !isCanvasReady) return;
+    console.log('[LiveClass] sync effect running', { role, classId, isCanvasReady, stdbStatus });
 
     let cancelled = false;
 
@@ -702,11 +754,9 @@ export default function LiveClassPage() {
           const parsed = JSON.parse(json);
           fabricUtil.enlivenObjects([parsed]).then((objs) => {
             skipHistory.current = true;
-            objs.forEach(obj => {
-              obj.selectable = false;
-              obj.evented = false;
-              targetFabric.add(obj);
-            });
+            // Use upsert so that a stroke already rendered via BroadcastChannel
+            // is not duplicated when the same data arrives through Convex.
+            objs.forEach(obj => upsertStrokeOnCanvas(targetFabric, obj));
             skipHistory.current = false;
             targetFabric.requestRenderAll();
           });
@@ -718,8 +768,13 @@ export default function LiveClassPage() {
       onStrokeDeleted: (_id, clientId) => {
         const targetFabric = fabricRef.current;
         if (!targetFabric || !clientId) return;
-        const obj = targetFabric.getObjects().find(o => o.data?.strokeClientId === clientId);
-        if (obj) { targetFabric.remove(obj); targetFabric.requestRenderAll(); }
+        // Remove ALL matches — stale duplicates can accumulate if prior dedup
+        // failed; deleting only the first match would leave ghost objects.
+        const toRemove = targetFabric.getObjects().filter(o => o.data?.strokeClientId === clientId);
+        if (toRemove.length) {
+          toRemove.forEach(o => targetFabric.remove(o));
+          targetFabric.requestRenderAll();
+        }
       },
       onParticipantsChanged: setParticipants,
       onCursorMoved: (cursor) => {
@@ -828,7 +883,27 @@ export default function LiveClassPage() {
         const fc = fabricRef.current;
         if (!fc) return;
 
-        if (type === 'canvas-state') {
+        if (type === 'stroke-added') {
+          // Incremental: upsert a single stroke object (dedup by strokeClientId)
+          try {
+            const parsed = typeof data === 'string' ? JSON.parse(data) : data;
+            fabricUtil.enlivenObjects([parsed]).then((objs) => {
+              objs.forEach(obj => upsertStrokeOnCanvas(fc, obj));
+              fc.requestRenderAll();
+            });
+          } catch { /* ignore malformed */ }
+        } else if (type === 'stroke-deleted') {
+          // Incremental: remove ALL matching strokes by clientId
+          const cid = data?.strokeClientId;
+          if (cid) {
+            const toRemove = fc.getObjects().filter(o => o.data?.strokeClientId === cid);
+            if (toRemove.length) {
+              toRemove.forEach(o => fc.remove(o));
+              fc.requestRenderAll();
+            }
+          }
+        } else if (type === 'canvas-state') {
+          // Full reconciliation fallback
           skipHistory.current = true;
           fc.loadFromJSON(data, () => {
             fc.getObjects().forEach(o => { o.selectable = false; o.evented = false; });
@@ -905,7 +980,9 @@ export default function LiveClassPage() {
         const clientId = 'stroke_' + Date.now() + '_' + Math.random().toString(36).slice(2);
         if (!path.data) path.data = {};
         path.data.strokeClientId = clientId;
-        syncRef.current?.sendStroke(classId, JSON.stringify(path.toJSON(['data'])), clientId);
+        const json = path.toJSON(['data']);
+        syncRef.current?.sendStroke(classId, JSON.stringify(json), clientId);
+        broadcastStrokeAdded(json);
       });
     }
 
@@ -1138,7 +1215,10 @@ export default function LiveClassPage() {
         fc.remove(obj);
         fc.requestRenderAll();
         const cid = obj.data?.strokeClientId;
-        if (cid) syncRef.current?.sendStrokeDelete(cid);
+        if (cid) {
+          syncRef.current?.sendStrokeDelete(cid);
+          broadcastStrokeDeleted(cid);
+        }
       };
       fc.on('mouse:down', onDown);
       return () => fc.off('mouse:down', onDown);
@@ -1173,7 +1253,11 @@ export default function LiveClassPage() {
             fc.remove(p);
             fc.add(snapped);
             fc.requestRenderAll();
-            syncRef.current?.sendStroke(classId, JSON.stringify(snapped.toJSON(['data'])), cid);
+            const snappedJson = snapped.toJSON(['data']);
+            // Snap replaces the original path object — route through upsert so
+            // Convex updates the existing row instead of inserting a second one.
+            syncRef.current?.sendStrokeUpsert(classId, JSON.stringify(snappedJson), cid);
+            broadcastStrokeAdded(snappedJson);
             setSnapHint(false);
           }
           state.path = null;
@@ -1280,7 +1364,9 @@ export default function LiveClassPage() {
         const cid = 'stroke_' + Date.now() + '_' + Math.random().toString(36).slice(2);
         if (!shape.data) shape.data = {};
         shape.data.strokeClientId = cid;
-        syncRef.current?.sendStroke(classId, JSON.stringify(shape.toJSON(['data'])), cid);
+        const shapeJson = shape.toJSON(['data']);
+        syncRef.current?.sendStroke(classId, JSON.stringify(shapeJson), cid);
+        broadcastStrokeAdded(shapeJson);
       };
 
       fc.on('mouse:down', onDown);
@@ -1337,7 +1423,10 @@ export default function LiveClassPage() {
         text.data.strokeClientId = cid;
 
         const sendText = () => {
-          syncRef.current?.sendStroke(classId, JSON.stringify(text.toJSON(['data'])), cid);
+          const textJson = text.toJSON(['data']);
+          // Use upsert: first call inserts, subsequent live-edit calls update.
+          syncRef.current?.sendStrokeUpsert(classId, JSON.stringify(textJson), cid);
+          broadcastStrokeAdded(textJson);
         };
 
         const onTextChange = () => {
@@ -1359,7 +1448,7 @@ export default function LiveClassPage() {
         fc.off('mouse:down', onDown);
       };
     }
-  }, [tool, color, strokeWidth, role, textFont, classId, themePalette]);
+  }, [tool, color, strokeWidth, role, textFont, classId, themePalette, broadcastStrokeAdded, broadcastStrokeDeleted]);
 
   // ── Flowchart node placement & connector tool ─────────────────────────────
   useEffect(() => {
@@ -1381,7 +1470,9 @@ export default function LiveClassPage() {
         fc.requestRenderAll();
         // Sync node as JSON
         const cid = node.data.strokeClientId;
-        syncRef.current?.sendStroke(classId, JSON.stringify(node.toJSON(['data'])), cid);
+        const nodeJson = node.toJSON(['data']);
+        syncRef.current?.sendStroke(classId, JSON.stringify(nodeJson), cid);
+        broadcastStrokeAdded(nodeJson);
       };
       fc.on('mouse:down', onDown);
       return () => fc.off('mouse:down', onDown);
@@ -1419,12 +1510,16 @@ export default function LiveClassPage() {
             fc.add(result.arrow);
             fc.requestRenderAll();
             // Sync edge line
-            syncRef.current?.sendStroke(classId, JSON.stringify(result.line.toJSON(['data'])), result.line.data.strokeClientId);
+            const lineJson = result.line.toJSON(['data']);
+            syncRef.current?.sendStroke(classId, JSON.stringify(lineJson), result.line.data.strokeClientId);
+            broadcastStrokeAdded(lineJson);
             // Bug fix 2: also sync the arrowhead so remote users see it
             const arrowCid = 'fc_arrow_' + Date.now() + '_' + Math.random().toString(36).slice(2);
             if (!result.arrow.data) result.arrow.data = {};
             result.arrow.data.strokeClientId = arrowCid;
-            syncRef.current?.sendStroke(classId, JSON.stringify(result.arrow.toJSON(['data'])), arrowCid);
+            const arrowJson = result.arrow.toJSON(['data']);
+            syncRef.current?.sendStroke(classId, JSON.stringify(arrowJson), arrowCid);
+            broadcastStrokeAdded(arrowJson);
           }
           // Reset source styling
           src.set({ borderColor: '', borderDashArray: null });
@@ -1501,7 +1596,9 @@ export default function LiveClassPage() {
         const cid = 'stroke_' + Date.now() + '_' + Math.random().toString(36).slice(2);
         if (!line.data) line.data = {};
         line.data.strokeClientId = cid;
-        syncRef.current?.sendStroke(classId, JSON.stringify(line.toJSON(['data'])), cid);
+        const lineJson = line.toJSON(['data']);
+        syncRef.current?.sendStroke(classId, JSON.stringify(lineJson), cid);
+        broadcastStrokeAdded(lineJson);
         saveHistory();
       };
 
@@ -1514,7 +1611,7 @@ export default function LiveClassPage() {
         fc.off('mouse:up',   onUp);
       };
     }
-  }, [tool, color, strokeWidth, role, classId, saveHistory, themePalette]);
+  }, [tool, color, strokeWidth, role, classId, saveHistory, themePalette, broadcastStrokeAdded]);
 
   // ── Flowchart: snap-to-grid + edge redraw on node move ────────────────────
   useEffect(() => {
@@ -1582,8 +1679,10 @@ export default function LiveClassPage() {
         fc.remove(tempText);
         skipHistory.current = false;
         fc.setActiveObject(node);
-        // Re-sync the node with updated label
-        syncRef.current?.sendStroke(classId, JSON.stringify(node.toJSON(['data'])), node.data.strokeClientId);
+        // Re-sync the node with updated label — always an update (node already exists)
+        const updatedNodeJson = node.toJSON(['data']);
+        syncRef.current?.sendStrokeUpsert(classId, JSON.stringify(updatedNodeJson), node.data.strokeClientId);
+        broadcastStrokeAdded(updatedNodeJson);
         fc.requestRenderAll();
         // Save history after the label edit is complete
         saveHistory();
@@ -1593,7 +1692,7 @@ export default function LiveClassPage() {
 
     fc.on('mouse:dblclick', onDblClick);
     return () => fc.off('mouse:dblclick', onDblClick);
-  }, [role, classId, saveHistory, themePalette]);
+  }, [role, classId, saveHistory, themePalette, broadcastStrokeAdded]);
 
   // ── Undo / Redo ─────────────────────────────────────────────────────────────
 
@@ -1639,7 +1738,10 @@ export default function LiveClassPage() {
     objs.forEach(o => {
       fc.remove(o);
       const cid = o.data?.strokeClientId;
-      if (cid) syncRef.current?.sendStrokeDelete(cid);
+      if (cid) {
+        syncRef.current?.sendStrokeDelete(cid);
+        broadcastStrokeDeleted(cid);
+      }
     });
     skipHistory.current = false;
     fc.requestRenderAll();
