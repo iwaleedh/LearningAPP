@@ -127,10 +127,19 @@ http.route({
       );
     }
 
+    // S10 fix: Limit payload size to prevent abuse via oversized webhook bodies.
+    const payloadStr = JSON.stringify(body.payload ?? {});
+    if (payloadStr.length > 8192) {
+      return new Response(
+        JSON.stringify({ error: "Payload too large (max 8 KB)." }),
+        { status: 413, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
     // Publish to the event bus
     await ctx.runMutation(internal.eventBus.internalPublish, {
       topic: body.topic,
-      payload: JSON.stringify(body.payload ?? {}),
+      payload: payloadStr,
     });
 
     return new Response(

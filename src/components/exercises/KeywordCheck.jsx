@@ -1,11 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { CheckCircle, Search, ArrowRight } from 'lucide-react';
+import { escapeRegExp } from '../../utils/sanitize';
 import './Exercises.css';
-
-/** Escape all regex metacharacters in a string before using it in new RegExp(). */
-function escapeRegExp(str) {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
 
 export default function KeywordCheck({ question, onNext, onMistake, onAttempt }) {
     const [answer, setAnswer] = useState('');

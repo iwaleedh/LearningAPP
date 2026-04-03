@@ -24,6 +24,27 @@ const ALLOWED_PUBLIC_TOPICS = new Set([
   "debug:ping",
 ]);
 
+// S10/S11 fix: Maximum payload size (bytes) for client-published events.
+// Prevents abuse via oversized payloads that could degrade DB performance.
+const MAX_PAYLOAD_BYTES = 8192;
+
+/**
+ * Validate that a payload string is well-formed JSON within size limits.
+ * Returns the (possibly trimmed) payload or throws.
+ */
+function validatePayload(payload: string): string {
+  if (payload.length > MAX_PAYLOAD_BYTES) {
+    throw new Error(`Payload too large (${payload.length} bytes, max ${MAX_PAYLOAD_BYTES}).`);
+  }
+  // Ensure it's valid JSON — prevents storage of garbage strings
+  try {
+    JSON.parse(payload);
+  } catch {
+    throw new Error("Payload must be valid JSON.");
+  }
+  return payload;
+}
+
 // ── Teacher/admin: Publish an event ─────────────────────────────────
 export const publish = mutation({
   args: {
@@ -39,9 +60,11 @@ export const publish = mutation({
       throw new Error(`Topic "${topic}" is not allowed for client publishing.`);
     }
 
+    const validatedPayload = validatePayload(payload);
+
     return await ctx.db.insert("events", {
       topic,
-      payload,
+      payload: validatedPayload,
       status: "pending",
       publishedAt: Date.now(),
       processedAt: 0,

@@ -3,6 +3,13 @@ import { CheckCircle, XCircle, RotateCcw, GripVertical } from 'lucide-react';
 import './Exercises.css';
 
 /**
+ * Monotonic counter ensures globally unique _idx values across component
+ * re-mounts and question changes, preventing collisions that positional
+ * indexes would cause if initItems were called more than once.
+ */
+let _dragIdCounter = 0;
+
+/**
  * Assign each item a stable numeric _idx at initialisation time.
  * This prevents the duplicate-text bug where two items sharing the same text
  * were both removed/keyed as one because identity was based on item.text.
@@ -13,7 +20,7 @@ function initItems(rawItems) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return shuffled.map((item, idx) => ({ ...item, _idx: idx }));
+    return shuffled.map((item) => ({ ...item, _idx: ++_dragIdCounter }));
 }
 
 export default function DragDropExercise({ question, onNext, onMistake, onAttempt }) {
@@ -299,11 +306,11 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                         <button className="btn btn-primary btn-lg" onClick={() => {
                             const wrong = results && Object.entries(results)
                                 .flatMap(([cat, items]) => items.filter(it => !it.correct).map(it => ({ ...it, placedIn: cat })));
-                            const totalItems = question.items.length || 1;
+                            const totalItems = question.items.length;
                             const correctItems = totalItems - (wrong?.length || 0);
                             onAttempt?.({
                                 correct: (wrong?.length || 0) === 0,
-                                scorePercent: Math.round((correctItems / totalItems) * 100),
+                                scorePercent: totalItems > 0 ? Math.round((correctItems / totalItems) * 100) : 100,
                                 durationSeconds: (Date.now() - startedAt) / 1000,
                                 userAnswer: Object.entries(zones)
                                     .flatMap(([cat, items]) => items.map((item) => `${item.text} -> ${cat}`))

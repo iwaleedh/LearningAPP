@@ -73,7 +73,7 @@ export function subscribeToActivityUpdates(callback) {
 
     const handleCustom = () => callback();
     const handleStorage = (event) => {
-        if (!event.key || [EXERCISE_KEY, PAPER_KEY, ACTIVITY_DAYS_KEY].includes(event.key)) {
+        if (!event.key || [EXERCISE_KEY, PAPER_KEY, ACTIVITY_DAYS_KEY, PERFECT_SCORES_KEY, FAST_COMPLETIONS_KEY].includes(event.key)) {
             callback();
         }
     };

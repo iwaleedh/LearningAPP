@@ -23,17 +23,25 @@ const processEnv = (globalThis as typeof globalThis & {
   process?: { env?: Record<string, string | undefined> };
 }).process?.env;
 
-function parseEnvList(key: string, fallback: string[]): string[] {
+function parseEnvList(key: string, devFallback: string[]): string[] {
   const raw = processEnv?.[key];
   if (raw && raw.trim()) {
     return raw.split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
   }
-  if (typeof process !== "undefined" && process.env?.NODE_ENV !== "production") {
-    console.warn(`[authHelpers] ${key} env var not set — using hardcoded fallback. Set it in Convex dashboard for production.`);
+  // S4 fix: In production, admin lists MUST come from environment variables.
+  // Hardcoded fallbacks are only acceptable during local development.
+  const isProduction = processEnv?.CONVEX_CLOUD_URL || processEnv?.NODE_ENV === "production";
+  if (isProduction) {
+    console.error(`[authHelpers] FATAL: ${key} env var is not set in production. Admin features are disabled until configured in the Convex dashboard.`);
+    return [];
   }
-  return fallback;
+  console.warn(`[authHelpers] ${key} env var not set — using dev-only fallback. Set it in Convex dashboard for production.`);
+  return devFallback;
 }
 
+// S4 fix: Dev-only defaults are used ONLY when env vars are absent AND
+// the runtime is not production.  In production the list will be empty
+// (effectively disabling admin access) until properly configured.
 const ADMIN_EMAILS: string[] = parseEnvList("ADMIN_EMAILS", ["iwaleedh@gmail.com"]);
 const ADMIN_USERNAMES: string[] = parseEnvList("ADMIN_USERNAMES", ["admin"]);
 
@@ -182,26 +190,27 @@ export async function getCurrentUsername(ctx: PublicCtx) {
   return user?.username || deriveUsernameFromIdentity(identity);
 }
 
+/**
+ * S3 fix: Determine teacher status from the **database only**.
+ * JWT claims are untrusted for authorization — a crafted token with
+ * role:"teacher" must not grant access.  The DB record is set exclusively
+ * by admin.setUserRole(), so it is the single source of truth.
+ */
 export async function isTeacherUserId(ctx: PublicCtx, userId: string) {
-  const identity = await getAuthenticatedIdentity(ctx);
-  if (identity?.subject === userId) {
-    return getRoleFromIdentity(identity) === "teacher" || (await getUserRecordById(ctx, userId))?.role === "teacher";
-  }
   const user = await getUserRecordById(ctx, userId);
   return user?.role === "teacher";
 }
 
+/**
+ * S3 fix: Resolve role from the **database only** — never trust JWT claims
+ * for authorization decisions.  This closes the privilege-escalation path
+ * where a crafted JWT with role:"teacher" bypassed the DB lookup entirely.
+ */
 export async function getCurrentUserRole(ctx: PublicCtx): Promise<UserRole> {
   const identity = await getAuthenticatedIdentity(ctx);
-  const claimedRole = getRoleFromIdentity(identity);
-  if (claimedRole) {
-    return claimedRole;
-  }
-
   if (!identity?.subject) {
     return "student";
   }
-
   const user = await getUserRecordById(ctx, identity.subject);
   return user?.role === "teacher" ? "teacher" : "student";
 }

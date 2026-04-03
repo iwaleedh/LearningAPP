@@ -36,6 +36,26 @@ export default function TimedExam({ paper, questions, onFinish }) {
         return () => clearInterval(interval);
     }, [submitted, paper.durationSeconds]);
 
+    // D3: Immediately recalculate on tab re-focus so background-throttled
+    // tabs don't miss the deadline by up to 60 seconds.
+    useEffect(() => {
+        if (submitted) return;
+        const onVisibilityChange = () => {
+            if (document.visibilityState === 'visible' && endTimeRef.current !== null) {
+                const remaining = Math.round((endTimeRef.current - Date.now()) / 1000);
+                if (remaining <= 0) {
+                    setTimeLeft(0);
+                    setTimedOut(true);
+                    setSubmitted(true);
+                } else {
+                    setTimeLeft(remaining);
+                }
+            }
+        };
+        document.addEventListener('visibilitychange', onVisibilityChange);
+        return () => document.removeEventListener('visibilitychange', onVisibilityChange);
+    }, [submitted]);
+
     const formatTime = (secs) => {
         const m = Math.floor(secs / 60);
         const s = secs % 60;
@@ -67,8 +87,9 @@ export default function TimedExam({ paper, questions, onFinish }) {
         const scoreNow = questions.reduce(
             (acc, q, i) => acc + (answers[i] === q.correctAnswer ? 1 : 0), 0
         );
-        const pct = questions.length > 0 ? (scoreNow / questions.length) * 100 : 0;
-        if (pct === 100) incrementPerfectScores();
+        // D5: Compare integer counts instead of floating-point percentage to
+        // avoid precision edge cases (e.g. 3/3 is fine, but this is defensive).
+        if (scoreNow === questions.length && questions.length > 0) incrementPerfectScores();
         // Fast completion: >50% of total time still on the clock.
         const remaining = endTimeRef.current ? (endTimeRef.current - Date.now()) / 1000 : 0;
         if (remaining > paper.durationSeconds * 0.5) incrementFastCompletions();
@@ -88,7 +109,7 @@ export default function TimedExam({ paper, questions, onFinish }) {
 
     // Results view
     if (submitted) {
-        const percentage = Math.round((score / questions.length) * 100);
+        const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
         const mistakes = questions
             .map((q, i) => ({ ...q, userAnswer: answers[i], index: i }))
             .filter(item => item.userAnswer !== item.correctAnswer);

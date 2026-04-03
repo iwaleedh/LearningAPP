@@ -4,15 +4,35 @@ import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight, Layers, CheckCi
 import { listFlashcards } from '../services/notes/noteStore.js';
 import './Pages.css';
 
-const KNOWN_KEY = 'lt_flashcard_known';
-const LEARNING_KEY = 'lt_flashcard_learning';
+const STATUS_KEY = 'lt_flashcard_status';
+const OLD_KNOWN_KEY = 'lt_flashcard_known';
+const OLD_LEARNING_KEY = 'lt_flashcard_learning';
 
-function loadStoredIds(key) {
+/**
+ * D11: Single status map eliminates the non-atomic dual-write problem where
+ * a browser crash between two localStorage writes could leave a card in both
+ * the known and learning lists. One key = one atomic write.
+ *
+ * Returns { [cardId]: "known" | "learning" }
+ */
+function loadStatus() {
     try {
-        const raw = localStorage.getItem(key);
-        return raw ? JSON.parse(raw) : [];
+        const raw = localStorage.getItem(STATUS_KEY);
+        if (raw) return JSON.parse(raw);
+
+        // Migrate from old dual-key format
+        const oldKnown = JSON.parse(localStorage.getItem(OLD_KNOWN_KEY) || '[]');
+        const oldLearning = JSON.parse(localStorage.getItem(OLD_LEARNING_KEY) || '[]');
+        if (oldKnown.length === 0 && oldLearning.length === 0) return {};
+        const migrated = {};
+        for (const id of oldKnown) migrated[id] = 'known';
+        for (const id of oldLearning) migrated[id] = 'learning'; // learning wins on overlap
+        localStorage.setItem(STATUS_KEY, JSON.stringify(migrated));
+        localStorage.removeItem(OLD_KNOWN_KEY);
+        localStorage.removeItem(OLD_LEARNING_KEY);
+        return migrated;
     } catch {
-        return [];
+        return {};
     }
 }
 
@@ -27,9 +47,17 @@ export default function FlashcardsPage() {
     const [userCards, setUserCards] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const [known, setKnown] = useState(() => loadStoredIds(KNOWN_KEY));
-    const [learning, setLearning] = useState(() => loadStoredIds(LEARNING_KEY));
+    const [status, setStatus] = useState(loadStatus);
     const flipTimerRef = useRef(null); // track flip-transition timer to prevent unmount leaks
+
+    const known = useMemo(() =>
+        Object.entries(status).filter(([, v]) => v === 'known').map(([k]) => k),
+        [status]
+    );
+    const learning = useMemo(() =>
+        Object.entries(status).filter(([, v]) => v === 'learning').map(([k]) => k),
+        [status]
+    );
 
     useEffect(() => {
         let cancelled = false;
@@ -52,12 +80,10 @@ export default function FlashcardsPage() {
     }, []);
 
     useEffect(() => {
-        localStorage.setItem(KNOWN_KEY, JSON.stringify(known));
-    }, [known]);
-
-    useEffect(() => {
-        localStorage.setItem(LEARNING_KEY, JSON.stringify(learning));
-    }, [learning]);
+        try {
+            localStorage.setItem(STATUS_KEY, JSON.stringify(status));
+        } catch { /* quota exceeded — ignore */ }
+    }, [status]);
 
     const cards = useMemo(() => {
         return userCards.map((card) => ({
@@ -92,16 +118,12 @@ export default function FlashcardsPage() {
     };
 
     const markKnown = () => {
-        if (!known.includes(card.id)) setKnown((prev) => [...prev, card.id]);
-        // Remove from learning to enforce mutual exclusivity
-        setLearning((prev) => prev.filter((id) => id !== card.id));
+        setStatus((prev) => ({ ...prev, [card.id]: 'known' }));
         goNext();
     };
 
     const markLearning = () => {
-        if (!learning.includes(card.id)) setLearning((prev) => [...prev, card.id]);
-        // Remove from known to enforce mutual exclusivity
-        setKnown((prev) => prev.filter((id) => id !== card.id));
+        setStatus((prev) => ({ ...prev, [card.id]: 'learning' }));
         goNext();
     };
 
@@ -244,10 +266,8 @@ export default function FlashcardsPage() {
                 <button
                     className="btn btn-ghost"
                     onClick={() => {
-                        setKnown([]);
-                        setLearning([]);
-                        localStorage.removeItem(KNOWN_KEY);
-                        localStorage.removeItem(LEARNING_KEY);
+                        setStatus({});
+                        localStorage.removeItem(STATUS_KEY);
                         setCurrentIndex(0);
                         setIsFlipped(false);
                     }}

@@ -24,10 +24,16 @@ export const recordAttempt = mutation({
     const ownerUserId = await requireAuthenticatedUserId(ctx);
     const now = Date.now();
 
-    // S2: Clamp client-supplied numeric fields to sane bounds.
+    // S2: Reject non-finite numbers (NaN, Infinity) then clamp to sane bounds.
     // scorePercent must be 0–100; durationSeconds must be non-negative.
     // Full server-side answer verification is not feasible for frontend-graded
     // exercises, but this prevents leaderboard inflation via manipulated payloads.
+    if (args.scorePercent !== undefined && !Number.isFinite(args.scorePercent)) {
+      throw new Error("scorePercent must be a finite number.");
+    }
+    if (args.durationSeconds !== undefined && !Number.isFinite(args.durationSeconds)) {
+      throw new Error("durationSeconds must be a finite number.");
+    }
     const scorePercent = args.scorePercent !== undefined
       ? Math.max(0, Math.min(100, args.scorePercent))
       : undefined;
@@ -40,6 +46,16 @@ export const recordAttempt = mutation({
     type SourceType = typeof VALID_SOURCE[number];
     if (!VALID_SOURCE.includes(args.sourceType as SourceType)) {
       throw new Error(`Invalid sourceType '${args.sourceType}'. Must be 'exercise' or 'pastpaper'.`);
+    }
+
+    // S2: Validate activityType against known enum to prevent junk data.
+    const VALID_ACTIVITY = [
+      'mcq', 'drag-drop', 'fill-blank', 'sequence', 'keyword', 'flashcards',
+      'completed_session', 'view_question', 'view_marking',
+      'download_question', 'download_marking',
+    ] as const;
+    if (!VALID_ACTIVITY.includes(args.activityType as typeof VALID_ACTIVITY[number])) {
+      throw new Error(`Invalid activityType '${args.activityType}'.`);
     }
 
     return await ctx.db.insert("studyAttempts", {

@@ -5,7 +5,6 @@ import {
   getAuthenticatedIdentity,
   getCurrentUserRole,
   getUserRecordById,
-  getRoleFromIdentity,
   isAdminEmail,
   isAdminUsername,
   isTeacherUserId,
@@ -71,23 +70,25 @@ export const registerUser = mutation({
   handler: async (ctx, { userId, username, email, avatarUrl }) => {
     const authenticatedUserId = await requireMatchingUserId(ctx, userId);
     const identity = await getAuthenticatedIdentity(ctx);
-    const claimedRole = getRoleFromIdentity(identity);
     const canonicalUsername = await resolveCanonicalUsername(ctx, username, authenticatedUserId);
     const existing = await getUserRecordById(ctx, authenticatedUserId);
     if (existing) {
+      // S3 fix: Never write JWT-claimed role on re-registration / profile sync.
       await ctx.db.patch(existing._id, {
         username: canonicalUsername,
         email,
         avatarUrl,
-        ...(claimedRole ? { role: claimedRole } : {}),
       });
       return existing._id;
     }
 
+    // S3 fix: New users always start as "student". Only admins may promote
+    // via admin.setUserRole(). Previously, a crafted JWT with role:"teacher"
+    // would be persisted here, granting permanent privilege escalation.
     const id = await ctx.db.insert("users", {
       userId: authenticatedUserId,
       username: canonicalUsername,
-      role: claimedRole ?? "student",
+      role: "student",
       email,
       avatarUrl,
         accountStatus: (isAdminEmail(email) || isAdminUsername(username)) ? "approved" : "pending",
