@@ -5,6 +5,7 @@ import Leaderboard from '../components/gamification/Leaderboard';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import { getReadNoteIds, getTotalReadCount } from '../hooks/useNoteReadStatus';
 import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
 const SUBJECTS = [
@@ -169,17 +170,17 @@ export default function ProgressPage() {
 
             {/* Study Streak Heatmap */}
             <div className="progress-section">
-                <StreakTracker />
+                <ErrorBoundary name="StreakTracker" inline><StreakTracker /></ErrorBoundary>
             </div>
 
             {/* Badges */}
             <div className="progress-section">
-                <BadgeSystem />
+                <ErrorBoundary name="BadgeSystem" inline><BadgeSystem /></ErrorBoundary>
             </div>
 
             {/* Leaderboard */}
             <div className="progress-section">
-                <Leaderboard />
+                <ErrorBoundary name="Leaderboard" inline><Leaderboard /></ErrorBoundary>
             </div>
         </div>
     );

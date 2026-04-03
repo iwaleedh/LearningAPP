@@ -11,6 +11,7 @@ import { useSyllabus } from "../hooks/useSyllabus.js";
 import { incrementExercisesDone } from "../services/activityStore.js";
 import { saveMistake } from "../services/mistakeStore.js";
 import { recordExerciseAttempt } from "../services/studyAttemptService.js";
+import ErrorBoundary from "../components/ErrorBoundary.jsx";
 import "./Pages.css";
 
 const SUBJECTS = [
@@ -132,13 +133,14 @@ export default function ExercisePage() {
           <span className="badge badge-primary">{activeType === "flashcards" ? "Card" : "Question"} {currentQuestion + 1} of {questions.length}</span>
           {currentItem?.topic && <span className="badge badge-info exercise-mode-topic-badge">{currentItem.topic}</span>}
         </div>
-        <ExComp
-          key={currentQuestion}
-          question={currentItem}
-          onNext={() => { incrementExercisesDone(); setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0); }}
-          onMistake={(m) => saveMistake({ ...m, subject: activeSubject })}
-          onAttempt={handleAttempt}
-        />
+        <ErrorBoundary key={questionKey} name={`exercise:${activeType}`} inline resetKeys={[questionKey]}>
+          <ExComp
+            question={currentItem}
+            onNext={() => { incrementExercisesDone(); setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0); }}
+            onMistake={(m) => saveMistake({ ...m, subject: activeSubject })}
+            onAttempt={handleAttempt}
+          />
+        </ErrorBoundary>
       </div>
     );
   }

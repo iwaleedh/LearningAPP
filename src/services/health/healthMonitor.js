@@ -18,6 +18,9 @@ const log = logger.child({ component: 'healthMonitor' });
 
 const POLL_INTERVAL_MS = 30_000; // 30 seconds
 
+/** Hard cap on simultaneous subscribers — fires a warn log if exceeded to surface leaks. */
+const MAX_LISTENERS = 20;
+
 /** @type {'healthy'|'degraded'|'disconnected'} */
 let currentStatus = 'healthy';
 let pollTimer = null;
@@ -81,6 +84,12 @@ export const healthMonitor = {
 
   /** Subscribe to status changes. Returns unsubscribe function. */
   subscribe(callback) {
+    if (listeners.length >= MAX_LISTENERS) {
+      log.warn('healthMonitor.subscribe — listener cap reached; possible subscription leak', {
+        listenerCount: listeners.length,
+        cap: MAX_LISTENERS,
+      });
+    }
     listeners.push(callback);
     // Immediately emit current state
     callback(getSnapshot());
@@ -95,5 +104,10 @@ export const healthMonitor = {
   /** Get current status string. */
   getStatus() {
     return currentStatus;
+  },
+
+  /** Current subscriber count — for monitoring and tests. */
+  listenerCount() {
+    return listeners.length;
   },
 };

@@ -1712,7 +1712,7 @@
     color: var(--color-error-dark);
     padding: var(--space-2) var(--space-3);
     background: var(--color-error-light);
-    border: 1px solid color-mix(in srgb, var(--color-error) 30%, transparent);
+    border: 1px solid rgba(239, 68, 68, 0.3);
     border-radius: var(--radius-lg);
 }
 
@@ -1721,7 +1721,7 @@
     color: var(--color-success-dark);
     padding: var(--space-2) var(--space-3);
     background: var(--color-success-light);
-    border: 1px solid color-mix(in srgb, var(--color-success) 30%, transparent);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     border-radius: var(--radius-lg);
 }
 
@@ -7482,4 +7482,32 @@
     gap: var(--space-3);
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* ── R4: Inline error boundary fallback ──────────────────────────────────── */
+.eb-inline {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-error-light);
+    border: 1px solid var(--color-error);
+    border-radius: var(--radius-md, 6px);
+    font-size: var(--font-size-sm);
+    color: var(--color-error);
+    margin: var(--space-2) 0;
+}
+.eb-inline-icon { flex-shrink: 0; }
+.eb-inline-msg  { flex: 1; }
+.eb-inline-retry { margin-left: auto; }
+.eb-inline-details {
+    font-size: var(--font-size-xs);
+    margin-top: var(--space-1);
+    color: var(--color-text-secondary);
+    width: 100%;
+}
+.eb-inline-details pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 0;
 }

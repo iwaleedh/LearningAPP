@@ -33,6 +33,14 @@ export default function ShareDialog({
     const [searchResults, setSearchResults] = useState([]);
     const [copied, setCopied] = useState(false);
     const inputRef = useRef(null);
+    const copyTimerRef = useRef(null);
+
+    // M1: cancel pending "reset copied" timer on unmount
+    useEffect(() => {
+        return () => {
+            if (copyTimerRef.current) clearTimeout(copyTimerRef.current);
+        };
+    }, []);
 
     const isHost = activeSession?.hostUserId === myIdentityHex;
     const amParticipant = participants.some(p => p.userId === myIdentityHex);
@@ -72,7 +80,11 @@ export default function ShareDialog({
         url.searchParams.set('session', String(activeSession.sessionId));
         navigator.clipboard.writeText(url.toString()).then(() => {
             setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
+            if (copyTimerRef.current) clearTimeout(copyTimerRef.current);
+            copyTimerRef.current = setTimeout(() => {
+                copyTimerRef.current = null;
+                setCopied(false);
+            }, 2000);
         });
     }
 

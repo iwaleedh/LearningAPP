@@ -34,6 +34,7 @@ import {
   createEdge, updateEdgesForNode, isFlowchartNode, snapNodeToGrid,
 } from '../components/liveclass/FlowchartTool.js';
 import { useTheme } from '../hooks/useTheme.js';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
 const ImportMediaDialog = lazy(() => import('../components/liveclass/ImportMediaDialog.jsx'));
@@ -941,6 +942,15 @@ export default function LiveClassPage() {
         bc.postMessage({ type: 'student-leave', data: { bcId } });
         bc.close();
         broadcastRef.current = null;
+        // M3: close module-level channel (parity with teacher path)
+        closeSyncChannel();
+        // M3: set unmounted guard so trailing timer callbacks become no-ops
+        unmountedRef.current = true;
+        // M3: clear any pending trailing canvas-state broadcast timer
+        if (fullBroadcastTrailingRef.current) {
+          clearTimeout(fullBroadcastTrailingRef.current);
+          fullBroadcastTrailingRef.current = null;
+        }
       };
     }
 
@@ -2266,9 +2276,11 @@ export default function LiveClassPage() {
           <div className="lc-student-panel">
             <div className="lc-panel-label">Teacher's Board</div>
             <div ref={teacherBoardWrapRef} className="lc-canvas-wrap lc-canvas-wrap--readonly" style={bgStyle}>
-              <canvas ref={teacherCanvasRef} />
-              <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />
-              <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={false} />
+              <ErrorBoundary name="LiveCanvas" inline resetKeys={[classId]}>
+                <canvas ref={teacherCanvasRef} />
+                <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />
+                <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={false} />
+              </ErrorBoundary>
             </div>
           </div>
         )}
@@ -2294,22 +2306,24 @@ export default function LiveClassPage() {
             onDrop={handleCanvasDrop}
             onDragOver={handleCanvasDragOver}
           >
-            <canvas ref={isTeacher ? teacherCanvasRef : myCanvasRef} />
-            {isTeacher && <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />}
-            {isTeacher && <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={spotlightEnabled} />}
-            {isTeacher && tool === 'ruler' && (
-              <RulerWidget
-                containerRef={canvasWrapRef}
-                canvasW={canvasSize.w}
-                canvasH={canvasSize.h}
-                onChange={handleRulerStateChange}
-              />
-            )}
-            {isTeacher && snapHint && (tool === 'pen' || tool === 'highlight') && (
-              <div className="lc-snap-hint">
-                Hold <strong>2 s</strong> to snap to shape
-              </div>
-            )}
+            <ErrorBoundary name="LiveCanvas" inline resetKeys={[classId]}>
+              <canvas ref={isTeacher ? teacherCanvasRef : myCanvasRef} />
+              {isTeacher && <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />}
+              {isTeacher && <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={spotlightEnabled} />}
+              {isTeacher && tool === 'ruler' && (
+                <RulerWidget
+                  containerRef={canvasWrapRef}
+                  canvasW={canvasSize.w}
+                  canvasH={canvasSize.h}
+                  onChange={handleRulerStateChange}
+                />
+              )}
+              {isTeacher && snapHint && (tool === 'pen' || tool === 'highlight') && (
+                <div className="lc-snap-hint">
+                  Hold <strong>2 s</strong> to snap to shape
+                </div>
+              )}
+            </ErrorBoundary>
           </div>
         </div>
 

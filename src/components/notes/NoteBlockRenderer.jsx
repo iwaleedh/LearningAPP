@@ -6,6 +6,7 @@
 
 import { useState, useMemo } from 'react';
 import DOMPurify from 'dompurify';
+import ErrorBoundary from '../ErrorBoundary';
 import './NoteBlockRenderer.css';
 
 // Sanitize HTML strings before rendering — defence-in-depth against XSS
@@ -319,23 +320,28 @@ export default function NoteBlockRenderer({ blocks = [] }) {
         <div className="nb-root">
             {blocks.map((block, i) => {
                 const key = block.id || `block-${i}`;
-                switch (block.type) {
-                    case 'objective': return <ObjectiveBlock key={key} data={block.data || {}} />;
-                    case 'heading': return <HeadingBlock key={key} data={block.data || {}} blockId={key} />;
-                    case 'paragraph': return <ParagraphBlock key={key} data={block.data || {}} />;
-                    case 'list': return <ListBlock key={key} data={block.data || {}} />;
-                    case 'checklist': return <ChecklistBlock key={key} data={block.data || {}} />;
-                    case 'equation': return <EquationBlock key={key} data={block.data || {}} />;
-                    case 'comparisonTable': return <ComparisonTableBlock key={key} data={block.data || {}} />;
-                    case 'summary': return <SummaryBlock key={key} data={block.data || {}} />;
-                    case 'callout': return <CalloutBlock key={key} data={block.data || {}} />;
-                    case 'svg': return <SvgBlock key={key} data={block.data || {}} />;
-                    case 'quote': return <QuoteBlock key={key} data={block.data || {}} />;
-                    case 'code': return <CodeBlock key={key} data={block.data || {}} />;
-                    case 'deeper': return <DeeperBlock key={key} data={block.data || {}} />;
-                    default:
-                        return null;
-                }
+                return (
+                    <ErrorBoundary key={key} name={`block:${block.type}:${key}`} inline resetKeys={[key]}>
+                        {(() => {
+                            switch (block.type) {
+                                case 'objective': return <ObjectiveBlock data={block.data || {}} />;
+                                case 'heading': return <HeadingBlock data={block.data || {}} blockId={key} />;
+                                case 'paragraph': return <ParagraphBlock data={block.data || {}} />;
+                                case 'list': return <ListBlock data={block.data || {}} />;
+                                case 'checklist': return <ChecklistBlock data={block.data || {}} />;
+                                case 'equation': return <EquationBlock data={block.data || {}} />;
+                                case 'comparisonTable': return <ComparisonTableBlock data={block.data || {}} />;
+                                case 'summary': return <SummaryBlock data={block.data || {}} />;
+                                case 'callout': return <CalloutBlock data={block.data || {}} />;
+                                case 'svg': return <SvgBlock data={block.data || {}} />;
+                                case 'quote': return <QuoteBlock data={block.data || {}} />;
+                                case 'code': return <CodeBlock data={block.data || {}} />;
+                                case 'deeper': return <DeeperBlock data={block.data || {}} />;
+                                default: return null;
+                            }
+                        })()}
+                    </ErrorBoundary>
+                );
             })}
         </div>
     );

@@ -1,8 +1,16 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function FlashcardExercise({ question, onNext, onAttempt }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [startedAt] = useState(() => Date.now());
+  const nextTimerRef = useRef(null);
+
+  // M1: cancel pending onNext timer on unmount
+  useEffect(() => {
+    return () => {
+      if (nextTimerRef.current) clearTimeout(nextTimerRef.current);
+    };
+  }, []);
 
   function handleAnswer(correct) {
     onAttempt?.({
@@ -13,7 +21,11 @@ export default function FlashcardExercise({ question, onNext, onAttempt }) {
       correctAnswer: question.back,
     });
     setIsFlipped(false);
-    setTimeout(onNext, 150);
+    if (nextTimerRef.current) clearTimeout(nextTimerRef.current);
+    nextTimerRef.current = setTimeout(() => {
+      nextTimerRef.current = null;
+      onNext();
+    }, 150);
   }
 
   return (

@@ -4,6 +4,7 @@ import { getSubjectLabel } from '../data/syllabusIndex.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote, hasSeedNote } from '../data/seedNotes/index.js';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
 import { useSyllabus } from '../hooks/useSyllabus.js';
 import './Pages.css';
@@ -441,7 +442,9 @@ export default function NotePage() {
 
                 {/* Recall panel (right column) */}
                 {hasNote && recallOpen && (
-                    <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} />
+                    <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
+                        <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} />
+                    </ErrorBoundary>
                 )}
 
                 {/* No note fallback */}

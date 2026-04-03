@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { getSyllabusBySubject, normalizeSubjectKey } from '../data/syllabusIndex.js';
 
 export function useSyllabus(subject) {
@@ -6,16 +6,16 @@ export function useSyllabus(subject) {
     const [syllabusesBySubject, setSyllabusesBySubject] = useState({});
     const [errorsBySubject, setErrorsBySubject] = useState({});
 
+    // R1: track fetched keys via ref — immune to stale closures, no feedback loop,
+    // no eslint-disable needed on the dependency array.
+    const fetchedKeysRef = useRef(new Set());
+
     const syllabus = syllabusesBySubject[subjectKey] || null;
     const error = errorsBySubject[subjectKey] || null;
 
     useEffect(() => {
-        // Only fetch if we don't already have data (or an error) for this subject.
-        // Do NOT include syllabus/error in the dep array — they are derived from
-        // setS state updated inside this effect, which would create a feedback loop.
-        if (syllabusesBySubject[subjectKey] || errorsBySubject[subjectKey]) {
-            return;
-        }
+        if (fetchedKeysRef.current.has(subjectKey)) return;
+        fetchedKeysRef.current.add(subjectKey);
 
         let cancelled = false;
 
@@ -28,6 +28,9 @@ export function useSyllabus(subject) {
             })
             .catch((nextError) => {
                 if (cancelled) return;
+                // Remove from fetchedKeys so a retry is possible if the user
+                // navigates away and back to the same subject after an error.
+                fetchedKeysRef.current.delete(subjectKey);
                 setErrorsBySubject((prev) => (
                     prev[subjectKey] ? prev : { ...prev, [subjectKey]: nextError }
                 ));
@@ -36,7 +39,6 @@ export function useSyllabus(subject) {
         return () => {
             cancelled = true;
         };
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentionally omit derived syllabus/error
     }, [subjectKey]);
 
     return {
