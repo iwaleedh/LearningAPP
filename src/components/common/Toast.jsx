@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback, useRef } from 'react';
+import React, { createContext, useContext, useState, useCallback, useRef, useEffect } from 'react';
 import { X, CheckCircle, AlertTriangle, Info, AlertOctagon } from 'lucide-react';
 import './Toast.css';
 
@@ -7,22 +7,47 @@ const ToastContext = createContext(null);
 export function ToastProvider({ children }) {
   const [toasts, setToasts] = useState([]);
   const idCounter = useRef(0);
+  const timersRef = useRef(new Map()); // Map<id, timeoutId> — cleared on remove/unmount
 
   const addToast = useCallback((toast) => {
     const id = ++idCounter.current;
     setToasts((prev) => [...prev, { ...toast, id }]);
 
     if (toast.duration !== Infinity) {
-      setTimeout(() => {
-        removeToast(id);
+      const timerId = setTimeout(() => {
+        timersRef.current.delete(id);
+        setToasts((prev) => prev.filter((t) => t.id !== id));
       }, toast.duration || 4000);
+      timersRef.current.set(id, timerId);
     }
     return id;
   }, []);
 
   const removeToast = useCallback((id) => {
+    // Cancel the auto-dismiss timer if still pending
+    const timerId = timersRef.current.get(id);
+    if (timerId !== undefined) {
+      clearTimeout(timerId);
+      timersRef.current.delete(id);
+    }
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
+
+  // Clear all pending timers on unmount to prevent setState on unmounted component
+  useEffect(() => {
+    const timers = timersRef.current;
+    
+    const handleAppToast = (e) => {
+      if (e.detail) addToast(e.detail);
+    };
+    window.addEventListener('app:toast', handleAppToast);
+    
+    return () => {
+      timers.forEach((timerId) => clearTimeout(timerId));
+      timers.clear();
+      window.removeEventListener('app:toast', handleAppToast);
+    };
+  }, [addToast]);
 
   return (
     <ToastContext.Provider value={{ addToast, removeToast }}>
@@ -67,6 +92,7 @@ function ToastItem({ toast, onRemove }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useToast() {
   const context = useContext(ToastContext);
   if (!context) {

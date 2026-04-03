@@ -65,7 +65,9 @@ class Parser {
       if (this.consume('*')) result *= this.parsePower();
       else if (this.consume('/')) {
         const d = this.parsePower();
-        result = d === 0 ? NaN : result / d;
+        // Division by zero: return Infinity (IEEE 754) rather than NaN.
+        // plotFunction already filters !isFinite(y) so Infinity is silently dropped.
+        result = d === 0 ? Infinity : result / d;
       }
       // Implicit multiplication: digit/variable followed by letter or '('
       else if (this.pos < this.expr.length) {

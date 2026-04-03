@@ -1,4 +1,4 @@
-import { useEffect, useState, lazy, Suspense } from 'react';
+import { useEffect, useState, lazy, Suspense, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool, TrendingUp, BookOpen } from 'lucide-react';
 import { loadPastPaperSubject, subjectPaperCounts } from '../data/pastPapers/index.js';
@@ -519,30 +519,32 @@ export default function PastPapersPage() {
     };
 
     // Filter papers
-    const filteredPapers = filterPapers(subjectPapers, {
-        year: filterYear !== 'all' ? parseInt(filterYear) : null,
-        month: filterMonth !== 'all' ? filterMonth : null,
-        unit: filterUnit !== 'all' ? filterUnit : null,
-    });
+    const groupedPapersArray = useMemo(() => {
+        const filteredPapers = filterPapers(subjectPapers, {
+            year: filterYear !== 'all' ? parseInt(filterYear) : null,
+            month: filterMonth !== 'all' ? filterMonth : null,
+            unit: filterUnit !== 'all' ? filterUnit : null,
+        });
 
-    // Sort by date (newest first)
-    const sortedPapers = sortPapersByDate(filteredPapers, false);
+        // Sort by date (newest first)
+        const sortedPapers = sortPapersByDate(filteredPapers, false);
 
-    // Group papers by year and month (exam session)
-    const groupedPapers = sortedPapers.reduce((groups, paper) => {
-        const key = `${paper.year}-${paper.month}`;
-        if (!groups[key]) {
-            groups[key] = {
-                year: paper.year,
-                month: paper.month,
-                papers: []
-            };
-        }
-        groups[key].papers.push(paper);
-        return groups;
-    }, {});
+        // Group papers by year and month (exam session)
+        const groupedPapers = sortedPapers.reduce((groups, paper) => {
+            const key = `${paper.year}-${paper.month}`;
+            if (!groups[key]) {
+                groups[key] = {
+                    year: paper.year,
+                    month: paper.month,
+                    papers: []
+                };
+            }
+            groups[key].papers.push(paper);
+            return groups;
+        }, {});
 
-    const groupedPapersArray = Object.values(groupedPapers);
+        return Object.values(groupedPapers);
+    }, [subjectPapers, filterYear, filterMonth, filterUnit]);
 
     const handleSaveAttempt = async ({ scorePercent, durationMinutes, confidence }) => {
         if (!attemptPaper) return;

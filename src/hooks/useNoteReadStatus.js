@@ -14,6 +14,39 @@ import { getRecordedActivityByDate, subscribeToActivityUpdates } from '../servic
 
 const PREFIX = 'lt_read:';
 
+// Module-level cache to avoid O(n) localStorage scans on every render.
+let _readCache = null; // Map<noteId, isoTimestamp> | null
+
+function getReadCache() {
+    if (_readCache) return _readCache;
+    const cache = new Map();
+    try {
+        const indexStr = localStorage.getItem('lt_read_index');
+        if (indexStr) {
+            const index = JSON.parse(indexStr);
+            for (const key of index) {
+                const val = localStorage.getItem(PREFIX + key);
+                if (val) cache.set(key, val);
+            }
+        } else {
+            const index = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                const k = localStorage.key(i);
+                if (k && k.startsWith(PREFIX)) {
+                    const noteId = k.slice(PREFIX.length);
+                    cache.set(noteId, localStorage.getItem(k));
+                    index.push(noteId);
+                }
+            }
+            localStorage.setItem('lt_read_index', JSON.stringify(index));
+        }
+    } catch { /* ignore */ }
+    _readCache = cache;
+    return cache;
+}
+
+// Do not invalidate cache on activity update; instead cache is mutated directly.
+
 function storageKey(noteId) {
     return `${PREFIX}${noteId}`;
 }
@@ -38,6 +71,9 @@ export function useNoteReadStatus(noteId) {
         const now = new Date().toISOString();
         try {
             localStorage.setItem(key, now);
+            const cache = getReadCache();
+            cache.set(noteId, now);
+            localStorage.setItem('lt_read_index', JSON.stringify(Array.from(cache.keys())));
         } catch {
             // storage quota exceeded — ignore
         }
@@ -45,11 +81,14 @@ export function useNoteReadStatus(noteId) {
             window.dispatchEvent(new CustomEvent('lt:activity-updated'));
         }
         setReadAt(now);
-    }, [key, readAt]);
+    }, [key, readAt, noteId]);
 
     const markUnread = useCallback(() => {
         try {
             localStorage.removeItem(key);
+            const cache = getReadCache();
+            cache.delete(noteId);
+            localStorage.setItem('lt_read_index', JSON.stringify(Array.from(cache.keys())));
         } catch {
             // ignore
         }
@@ -57,7 +96,7 @@ export function useNoteReadStatus(noteId) {
             window.dispatchEvent(new CustomEvent('lt:activity-updated'));
         }
         setReadAt(null);
-    }, [key]);
+    }, [key, noteId]);
 
     return {
         isRead: Boolean(readAt),
@@ -69,19 +108,10 @@ export function useNoteReadStatus(noteId) {
 
 /**
  * Returns the count of all notes that have been marked as read.
- * Scans localStorage for keys with the lt_read: prefix.
+ * Uses the module-level cache to avoid O(n) localStorage scans.
  */
 export function getTotalReadCount() {
-    try {
-        let count = 0;
-        for (let i = 0; i < localStorage.length; i++) {
-            const k = localStorage.key(i);
-            if (k && k.startsWith(PREFIX)) count++;
-        }
-        return count;
-    } catch {
-        return 0;
-    }
+    return getReadCache().size;
 }
 
 /**
@@ -91,11 +121,11 @@ export function getTotalReadCount() {
 export function computeStudyStreak() {
     const dates = new Set();
     try {
-        for (let i = 0; i < localStorage.length; i++) {
-            const k = localStorage.key(i);
-            if (k && k.startsWith(PREFIX)) {
-                const ts = localStorage.getItem(k);
-                if (ts) dates.add(ts.slice(0, 10)); // "YYYY-MM-DD" (UTC)
+        for (const ts of getReadCache().values()) {
+            if (ts) {
+                // Use local date (en-CA produces YYYY-MM-DD in browser locale timezone)
+                // to avoid off-by-one day errors for users outside UTC.
+                dates.add(new Date(ts).toLocaleDateString('en-CA'));
             }
         }
     } catch {
@@ -104,10 +134,10 @@ export function computeStudyStreak() {
     if (dates.size === 0) return 0;
 
     const today = new Date();
-    const todayStr = today.toISOString().slice(0, 10);
+    const todayStr = today.toLocaleDateString('en-CA');
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayStr = yesterday.toISOString().slice(0, 10);
+    const yesterdayStr = yesterday.toLocaleDateString('en-CA');
 
     if (!dates.has(todayStr) && !dates.has(yesterdayStr)) return 0;
 
@@ -116,7 +146,7 @@ export function computeStudyStreak() {
     for (let d = startOffset; ; d++) {
         const date = new Date(today);
         date.setDate(date.getDate() - d);
-        if (dates.has(date.toISOString().slice(0, 10))) {
+        if (dates.has(date.toLocaleDateString('en-CA'))) {
             streak++;
         } else {
             break;
@@ -131,14 +161,11 @@ export function computeStudyStreak() {
 export function getActivityByDate() {
     const map = { ...getRecordedActivityByDate() };
     try {
-        for (let i = 0; i < localStorage.length; i++) {
-            const k = localStorage.key(i);
-            if (k && k.startsWith(PREFIX)) {
-                const ts = localStorage.getItem(k);
-                if (ts) {
-                    const date = ts.slice(0, 10);
-                    map[date] = (map[date] || 0) + 1;
-                }
+        for (const ts of getReadCache().values()) {
+            if (ts) {
+                // Use local date for heatmap accuracy in non-UTC timezones.
+                const date = new Date(ts).toLocaleDateString('en-CA');
+                map[date] = (map[date] || 0) + 1;
             }
         }
     } catch { /* ignore */ }
@@ -170,20 +197,10 @@ export function computeLongestStreak() {
 
 /**
  * Returns a Set of all noteIds that have been marked read.
+ * Uses the module-level cache to avoid O(n) localStorage scans.
  */
 export function getReadNoteIds() {
-    const ids = new Set();
-    try {
-        for (let i = 0; i < localStorage.length; i++) {
-            const k = localStorage.key(i);
-            if (k && k.startsWith(PREFIX)) {
-                ids.add(k.slice(PREFIX.length));
-            }
-        }
-    } catch {
-        // ignore
-    }
-    return ids;
+    return new Set(getReadCache().keys());
 }
 
 export function subscribeToReadProgressUpdates(callback) {

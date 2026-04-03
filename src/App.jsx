@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, Outlet } from 'react-router-dom';
 import ThemeProvider from './context/ThemeProvider';
 import AuthProvider from './context/AuthProvider';
 import { useAuth } from './hooks/useAuth.js';
@@ -50,6 +50,17 @@ const PageLoader = () => (
   </div>
 );
 
+const RouteWrapper = () => {
+  const location = useLocation();
+  return (
+    <ErrorBoundary key={`eb-${location.pathname}`}>
+      <Suspense fallback={<PageLoader />}>
+        <Outlet />
+      </Suspense>
+    </ErrorBoundary>
+  );
+};
+
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -59,6 +70,11 @@ function AppContent() {
   // Global keyboard shortcut for search
   useEffect(() => {
     const handleKeyDown = (e) => {
+      const activeElement = document.activeElement;
+      const tag = activeElement?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || activeElement?.isContentEditable) {
+        return;
+      }
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         setSearchOpen(true);
@@ -90,14 +106,14 @@ function AppContent() {
         <div className="app-main">
           <Header
             onMenuToggle={() => setSidebarOpen(!sidebarOpen)}
+            sidebarOpen={sidebarOpen}
             onSearchOpen={() => setSearchOpen(true)}
           />
           <main className="page-content">
-            <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
               <Routes>
-                {/* Ungated routes — accessible before approval */}
-                <Route path="/pending" element={<PendingApprovalPage />} />
+                <Route element={<RouteWrapper />}>
+                  {/* Ungated routes — accessible before approval */}
+                  <Route path="/pending" element={<PendingApprovalPage />} />
 
               {/* Admin route — requires admin flag */}
               <Route
@@ -116,7 +132,11 @@ function AppContent() {
               <Route path="/notes" element={<RequireApproved><ChapterPage /></RequireApproved>} />
               <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<RequireApproved><NotePage /></RequireApproved>} />
               <Route path="/exercises" element={<RequireApproved><ExercisePage /></RequireApproved>} />
-              <Route path="/past-papers" element={<RequireApproved><PastPapersPage /></RequireApproved>} />
+              <Route path="/past-papers" element={
+                <RequireApproved>
+                  <PastPapersPage />
+                </RequireApproved>
+              } />
               <Route path="/flashcards" element={<RequireApproved><FlashcardsPage /></RequireApproved>} />
               <Route path="/progress" element={<RequireApproved><ProgressPage /></RequireApproved>} />
               <Route path="/mistakes" element={<RequireApproved><MistakeBankPage /></RequireApproved>} />
@@ -168,9 +188,8 @@ function AppContent() {
                 )}
               />
               <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </Suspense>
-          </ErrorBoundary>
+                </Route>
+              </Routes>
         </main>
       </div>
 

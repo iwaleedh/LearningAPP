@@ -59,8 +59,8 @@ export default function StickyNotes({ chapterId = 'default' }) {
         const offsetX = parseInt(e.dataTransfer.getData('offsetX'));
         const offsetY = parseInt(e.dataTransfer.getData('offsetY'));
         const container = e.currentTarget.getBoundingClientRect();
-        const x = e.clientX - container.left - offsetX;
-        const y = e.clientY - container.top - offsetY;
+        const x = e.clientX - container.left - offsetX + e.currentTarget.scrollLeft;
+        const y = e.clientY - container.top - offsetY + e.currentTarget.scrollTop;
         setNotes(prev => prev.map(n => n.id === id ? { ...n, x, y } : n));
     };
 

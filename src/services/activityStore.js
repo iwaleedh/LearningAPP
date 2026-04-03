@@ -12,6 +12,8 @@
 
 const EXERCISE_KEY = 'lt_exercises_done';
 const PAPER_KEY = 'lt_papers_viewed';
+const PERFECT_SCORES_KEY = 'lt_perfect_scores';  // D5
+const FAST_COMPLETIONS_KEY = 'lt_fast_completions'; // D5
 const ACTIVITY_DAYS_KEY = 'lt_activity_days';
 const ACTIVITY_EVENT = 'lt:activity-updated';
 
@@ -32,8 +34,9 @@ function readActivityDays() {
 function writeActivityDays(days) {
     try {
         localStorage.setItem(ACTIVITY_DAYS_KEY, JSON.stringify(days));
-    } catch {
-        // ignore storage failures
+    } catch (error) {
+        console.error('[activityStore] writeActivityDays failed:', error);
+        window.dispatchEvent(new CustomEvent('app:toast', { detail: { type: 'error', message: 'Local storage quota exceeded. Activity discarded.' } }));
     }
 }
 
@@ -41,13 +44,15 @@ function incrementCounter(key, amount = 1) {
     try {
         const current = parseInt(localStorage.getItem(key) || '0', 10);
         localStorage.setItem(key, String(current + amount));
-    } catch {
-        // ignore storage failures
+    } catch (error) {
+        console.error(`[activityStore] incrementCounter failed for ${key}:`, error);
+        window.dispatchEvent(new CustomEvent('app:toast', { detail: { type: 'error', message: 'Local storage quota exceeded. Count not saved.' } }));
     }
 }
 
 export function recordStudyActivity(amount = 1, when = new Date()) {
-    const dateKey = new Date(when).toISOString().slice(0, 10);
+    // D14: Use local date (en-CA = YYYY-MM-DD) to avoid UTC off-by-one.
+    const dateKey = new Date(when).toLocaleDateString('en-CA');
     const days = readActivityDays();
     days[dateKey] = (Number(days[dateKey]) || 0) + amount;
     writeActivityDays(days);
@@ -106,4 +111,33 @@ export function getPapersViewed() {
 export function incrementPapersViewed() {
     incrementCounter(PAPER_KEY, 1);
     recordStudyActivity(1);
+}
+
+// D5: Perfect score and fast-completion counters for BadgeSystem.
+export function getPerfectScores() {
+    try {
+        return parseInt(localStorage.getItem(PERFECT_SCORES_KEY) || '0', 10);
+    } catch {
+        return 0;
+    }
+}
+
+/** Call this when a timed exam is submitted with 100% score. */
+export function incrementPerfectScores() {
+    incrementCounter(PERFECT_SCORES_KEY, 1);
+    emitActivityUpdate();
+}
+
+export function getFastCompletions() {
+    try {
+        return parseInt(localStorage.getItem(FAST_COMPLETIONS_KEY) || '0', 10);
+    } catch {
+        return 0;
+    }
+}
+
+/** Call this when a timed exam is submitted with >50% time remaining. */
+export function incrementFastCompletions() {
+    incrementCounter(FAST_COMPLETIONS_KEY, 1);
+    emitActivityUpdate();
 }

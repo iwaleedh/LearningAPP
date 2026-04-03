@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Clock, AlertTriangle, CheckCircle, XCircle, ArrowRight, Lightbulb, Lock } from 'lucide-react';
+import { incrementPerfectScores, incrementFastCompletions } from '../../services/activityStore.js';
 import './PastPapers.css';
 
 export default function TimedExam({ paper, questions, onFinish }) {
@@ -9,23 +10,31 @@ export default function TimedExam({ paper, questions, onFinish }) {
     const [submitted, setSubmitted] = useState(false);
     const [timeLeft, setTimeLeft] = useState(paper.durationSeconds);
     const [timedOut, setTimedOut] = useState(false);
+    // endTimeRef holds the absolute wall-clock target so ticks stay accurate
+    // even when the main thread is busy (setInterval(1000) can fire late).
+    // null until the first effect run to avoid calling Date.now() during render.
+    const endTimeRef = useRef(null);
 
-    // Timer
+    // Timer — drift-free: remaining = endTime - Date.now()
     useEffect(() => {
         if (submitted) return;
+        // Lazily initialise the end-time once so re-renders don't reset it.
+        if (endTimeRef.current === null) {
+            endTimeRef.current = Date.now() + paper.durationSeconds * 1000;
+        }
         const interval = setInterval(() => {
-            setTimeLeft(prev => {
-                if (prev <= 1) {
-                    clearInterval(interval);
-                    setTimedOut(true);
-                    setSubmitted(true);
-                    return 0;
-                }
-                return prev - 1;
-            });
-        }, 1000);
+            const remaining = Math.round((endTimeRef.current - Date.now()) / 1000);
+            if (remaining <= 0) {
+                clearInterval(interval);
+                setTimeLeft(0);
+                setTimedOut(true);
+                setSubmitted(true);
+            } else {
+                setTimeLeft(remaining);
+            }
+        }, 500); // poll at 500ms so display updates promptly
         return () => clearInterval(interval);
-    }, [submitted]);
+    }, [submitted, paper.durationSeconds]);
 
     const formatTime = (secs) => {
         const m = Math.floor(secs / 60);
@@ -52,8 +61,19 @@ export default function TimedExam({ paper, questions, onFinish }) {
     };
 
     const handleSubmit = useCallback(() => {
+        if (submitted) return;
         setSubmitted(true);
-    }, []);
+        // D5: Record badge-relevant stats for manual (non-timeout) submissions.
+        const scoreNow = questions.reduce(
+            (acc, q, i) => acc + (answers[i] === q.correctAnswer ? 1 : 0), 0
+        );
+        const pct = questions.length > 0 ? (scoreNow / questions.length) * 100 : 0;
+        if (pct === 100) incrementPerfectScores();
+        // Fast completion: >50% of total time still on the clock.
+        const remaining = endTimeRef.current ? (endTimeRef.current - Date.now()) / 1000 : 0;
+        if (remaining > paper.durationSeconds * 0.5) incrementFastCompletions();
+    }, [submitted, questions, answers, paper.durationSeconds]);
+
 
     const score = submitted
         ? questions.reduce((acc, q, i) => acc + (answers[i] === q.correctAnswer ? 1 : 0), 0)

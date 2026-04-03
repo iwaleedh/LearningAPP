@@ -92,10 +92,17 @@ export const createLiveClass = mutation({
       if (!existing) break;
     }
 
+    const VALID_BG = ['white', 'lined', 'grid', 'dotted', 'yellow'] as const;
+    type BgType = typeof VALID_BG[number];
+    const bg = args.backgroundType as BgType;
+    if (!VALID_BG.includes(bg)) {
+      throw new Error(`Invalid backgroundType '${args.backgroundType}'. Must be one of: ${VALID_BG.join(', ')}.`);
+    }
+
     const classId = await ctx.db.insert("liveClassSessions", {
       hostUserId: teacherUserId,
       title: args.title,
-      backgroundType: args.backgroundType,
+      backgroundType: bg,
       status: "active",
       joinCode,
       autoAccept: false,
@@ -156,7 +163,13 @@ export const setBackground = mutation({
   },
   handler: async (ctx, { classId, backgroundType }) => {
     await requireHostedSessionHostOrTeacher(ctx, String(classId));
-    await ctx.db.patch(classId, { backgroundType });
+    const VALID_BG = ['white', 'lined', 'grid', 'dotted', 'yellow'] as const;
+    type BgType = typeof VALID_BG[number];
+    const bg = backgroundType as BgType;
+    if (!VALID_BG.includes(bg)) {
+      throw new Error(`Invalid backgroundType '${backgroundType}'.`);
+    }
+    await ctx.db.patch(classId, { backgroundType: bg });
   },
 });
 

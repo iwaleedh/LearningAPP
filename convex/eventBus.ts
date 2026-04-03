@@ -15,6 +15,15 @@ import { mutation, query, internalMutation, internalQuery } from "./_generated/s
 import { v } from "convex/values";
 import { requireTeacher } from "./authHelpers";
 
+// Topics that authenticated teachers/admins are allowed to publish via the client-callable mutation.
+// Internal server-side topics (e.g. "session:ended", "user:registered") must NEVER appear here —
+// use internalPublish (not callable from the client) for those.
+const ALLOWED_PUBLIC_TOPICS = new Set([
+  "admin:broadcast",
+  "admin:announcement",
+  "debug:ping",
+]);
+
 // ── Teacher/admin: Publish an event ─────────────────────────────────
 export const publish = mutation({
   args: {
@@ -23,6 +32,13 @@ export const publish = mutation({
   },
   handler: async (ctx, { topic, payload }) => {
     await requireTeacher(ctx);
+
+    // S11 fix: Validate topic against allowlist so teachers cannot inject
+    // events into internal topics (e.g. "payment:confirmed", "session:ended").
+    if (!ALLOWED_PUBLIC_TOPICS.has(topic)) {
+      throw new Error(`Topic "${topic}" is not allowed for client publishing.`);
+    }
+
     return await ctx.db.insert("events", {
       topic,
       payload,

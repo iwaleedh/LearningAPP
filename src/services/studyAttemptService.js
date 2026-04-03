@@ -20,10 +20,10 @@ function stringifyMetadata(value) {
 }
 
 export async function recordStudyAttempt(payload) {
-    if (!getClient()) return null;
+    if (!getClient()) return { success: false, error: 'Not authenticated or client missing' };
 
     try {
-        return await callMutation(api.studyAttempts.recordAttempt, {
+        const result = await callMutation(api.studyAttempts.recordAttempt, {
             sourceType: String(payload.sourceType || ''),
             activityType: String(payload.activityType || ''),
             subject: String(payload.subject || ''),
@@ -40,8 +40,10 @@ export async function recordStudyAttempt(payload) {
             durationSeconds: normalizeDuration(payload.durationSeconds),
             metadataJson: stringifyMetadata(payload.metadata),
         });
-    } catch {
-        return null;
+        return { success: true, data: result };
+    } catch (error) {
+        console.error('[StudyAttemptService] recordAttempt failed:', error);
+        return { success: false, error: error.message };
     }
 }
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Trophy, Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock } from 'lucide-react';
 import { getTotalReadCount, computeStudyStreak } from '../../hooks/useNoteReadStatus.js';
-import { getExercisesDone, getPapersViewed, subscribeToActivityUpdates } from '../../services/activityStore.js';
+import { getExercisesDone, getPapersViewed, getPerfectScores, getFastCompletions, subscribeToActivityUpdates } from '../../services/activityStore.js';
 import './Gamification.css';
 
 const CONFETTI_COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6', '#06b6d4', '#facc15'];
@@ -124,6 +124,8 @@ const BADGE_DEFINITIONS = [
         icon: Crown,
         color: '#93c5fd',
         gradient: 'linear-gradient(135deg, #93c5fd, #8b5cf6)',
+        // perfectScores not yet tracked in activityStore — badge is achievable
+        // once the timed-exam perfect-score tracking is implemented.
         criteria: (stats) => stats.perfectScores >= 1,
     },
     {
@@ -142,84 +144,99 @@ const BADGE_DEFINITIONS = [
         icon: Zap,
         color: '#fbbf24',
         gradient: 'linear-gradient(135deg, #fbbf24, #eab308)',
+        // fastCompletions not yet tracked in activityStore — badge is achievable
+        // once the timed-exam fast-finish tracking is implemented.
         criteria: (stats) => stats.fastCompletions >= 1,
     },
 ];
 
-const EARNED_KEY = 'lt_badge_earned';
+/**
+ * SECURITY NOTE — Badge spoofing defence:
+ * We deliberately do NOT load the earned badge list from localStorage and trust it.
+ * Instead, we re-evaluate every badge's criteria against live stats on every render.
+ * localStorage is only used to track which badges have already triggered confetti,
+ * preventing the confetti from firing again on every reload.
+ *
+ * This means a user who edits `lt_badge_celebrated` in DevTools only sees confetti
+ * suppressed/re-fired — badge display is always determined by real activity data.
+ */
+const CELEBRATED_KEY = 'lt_badge_celebrated'; // only stores badge IDs already celebrated
 
-function loadEarned() {
+function loadCelebrated() {
     try {
-        const raw = localStorage.getItem(EARNED_KEY);
-        return raw ? JSON.parse(raw) : [];
+        const raw = localStorage.getItem(CELEBRATED_KEY);
+        if (!raw) return new Set();
+        const parsed = JSON.parse(raw);
+        // Only accept known badge IDs to prevent injection of garbage
+        const knownIds = new Set(BADGE_DEFINITIONS.map(b => b.id));
+        return new Set(Array.isArray(parsed) ? parsed.filter(id => knownIds.has(id)) : []);
     } catch {
-        return [];
+        return new Set();
     }
 }
 
-function saveEarned(ids) {
+function saveCelebrated(set) {
     try {
-        localStorage.setItem(EARNED_KEY, JSON.stringify(ids));
+        localStorage.setItem(CELEBRATED_KEY, JSON.stringify([...set]));
     } catch { /* ignore */ }
 }
 
-function buildLiveStats(earned) {
+function buildLiveStats() {
     const notesRead = getTotalReadCount();
     return {
-        logins: 1,
-        pagesVisited: notesRead > 0 ? 5 : 1,
+        logins: 1,                          // Always ≥1 since they're viewing this page
+        pagesVisited: notesRead > 0 ? 5 : 1, // Approximation until page tracking is added
         exercisesCompleted: getExercisesDone(),
         currentStreak: computeStudyStreak(),
-        perfectScores: 0,
+        perfectScores: getPerfectScores(),     // D5: now live from activityStore
+        fastCompletions: getFastCompletions(), // D5: now live from activityStore
         papersCompleted: getPapersViewed(),
-        fastCompletions: 0,
         notesRead,
-        badgesEarned: earned,
     };
 }
 
-function getInitialState() {
-    const earned = [...new Set(loadEarned())];
-    const stats = buildLiveStats(earned);
-
-    const newBadges = BADGE_DEFINITIONS
-        .filter(b => !earned.includes(b.id) && b.criteria(stats))
+/** Evaluate which badges are earned from live stats. Never reads from localStorage for this. */
+function getEarnedBadgeIds(stats) {
+    return BADGE_DEFINITIONS
+        .filter(b => b.criteria(stats))
         .map(b => b.id);
+}
 
-    if (newBadges.length > 0) {
-        const allEarned = [...earned, ...newBadges];
-        saveEarned(allEarned);
-        return { stats: { ...stats, badgesEarned: allEarned }, justEarned: newBadges[0] };
+function getInitialState() {
+    const stats = buildLiveStats();
+    const earned = getEarnedBadgeIds(stats); // from criteria, NOT localStorage
+    const celebrated = loadCelebrated();
+
+    const newlyCelebrated = earned.filter(id => !celebrated.has(id));
+    if (newlyCelebrated.length > 0) {
+        const updatedCelebrated = new Set([...celebrated, ...newlyCelebrated]);
+        saveCelebrated(updatedCelebrated);
     }
 
-    return { stats, justEarned: null };
+    return { stats, earned, justEarned: newlyCelebrated[0] || null };
 }
 
 export default function BadgeSystem() {
     const [state, setState] = useState(getInitialState);
-    const { stats, justEarned } = state;
+    const { earned, justEarned } = state;
 
     useEffect(() => {
         return subscribeToActivityUpdates(() => {
             setState((prev) => {
-                const earned = [...new Set(prev.stats?.badgesEarned || loadEarned())];
-                const nextStats = buildLiveStats(earned);
-                const newBadges = BADGE_DEFINITIONS
-                    .filter((badge) => !earned.includes(badge.id) && badge.criteria(nextStats))
-                    .map((badge) => badge.id);
+                const nextStats = buildLiveStats();
+                const nextEarned = getEarnedBadgeIds(nextStats); // always from criteria
+                const celebrated = loadCelebrated();
 
-                if (newBadges.length === 0) {
-                    return {
-                        stats: nextStats,
-                        justEarned: prev.justEarned,
-                    };
+                const newlyCelebrated = nextEarned.filter(id => !celebrated.has(id));
+                if (newlyCelebrated.length > 0) {
+                    const updatedCelebrated = new Set([...celebrated, ...newlyCelebrated]);
+                    saveCelebrated(updatedCelebrated);
                 }
 
-                const allEarned = [...earned, ...newBadges];
-                saveEarned(allEarned);
                 return {
-                    stats: { ...nextStats, badgesEarned: allEarned },
-                    justEarned: newBadges[0],
+                    stats: nextStats,
+                    earned: nextEarned,
+                    justEarned: newlyCelebrated[0] || prev.justEarned,
                 };
             });
         });
@@ -233,7 +250,7 @@ export default function BadgeSystem() {
         return () => clearTimeout(id);
     }, [justEarned]);
 
-    const earnedCount = stats.badgesEarned.length;
+    const earnedCount = earned.length;
     const totalCount = BADGE_DEFINITIONS.length;
 
     return (
@@ -254,21 +271,21 @@ export default function BadgeSystem() {
 
             <div className="badge-grid">
                 {BADGE_DEFINITIONS.map(badge => {
-                    const earned = stats.badgesEarned.includes(badge.id);
+                    const isEarned = earned.includes(badge.id);
                     const Icon = badge.icon;
 
                     return (
                         <div
                             key={badge.id}
-                            className={`badge-card ${earned ? 'earned' : 'locked'}`}
+                            className={`badge-card ${isEarned ? 'earned' : 'locked'}`}
                         >
                             <div
                                 className="badge-icon"
                                 style={{
-                                    background: earned ? badge.gradient : 'var(--color-bg-tertiary)',
+                                    background: isEarned ? badge.gradient : 'var(--color-bg-tertiary)',
                                 }}
                             >
-                                {earned ? <Icon size={24} color="white" /> : <Lock size={18} />}
+                                {isEarned ? <Icon size={24} color="white" /> : <Lock size={18} />}
                             </div>
                             <div className="badge-info">
                                 <div className="badge-name">{badge.name}</div>

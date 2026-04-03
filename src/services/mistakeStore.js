@@ -36,7 +36,7 @@ export function saveMistake({ question, yourAnswer, correctAnswer, topic, subjec
     const mistakes = load();
     const now = new Date().toISOString();
 
-    const existing = mistakes.find(m => m.question === question);
+    const existing = mistakes.find(m => m.question.toLowerCase() === question.toLowerCase());
     if (existing) {
         existing.attempts += 1;
         existing.yourAnswer = yourAnswer;

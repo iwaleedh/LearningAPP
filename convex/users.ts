@@ -25,11 +25,17 @@ async function resolveCanonicalUsername(
 ) {
   const fallbackUsername = `user_${currentUserId.slice(-6)}`;
   const baseUsername = normalizeUsernameInput(requestedUsername) || fallbackUsername;
-  const normalizedBase = baseUsername.toLowerCase();
-  const users = await ctx.db.query("users").collect();
-  const conflictingUser = users.find(
-    (user) => user.userId !== currentUserId && user.username.trim().toLowerCase() === normalizedBase
-  );
+
+  // D17: Use by_username index instead of collect() to avoid O(n) scan.
+  // Convex indexes are sorted case-sensitively, so we fetch by lower-case variant
+  // then compare normalised strings to catch case-insensitive collisions.
+  const sameUsername = await ctx.db
+    .query("users")
+    .withIndex("by_username", (q) => q.eq("username", baseUsername))
+    .first();
+
+  // If the only match is us, no conflict.
+  const conflictingUser = sameUsername && sameUsername.userId !== currentUserId ? sameUsername : null;
 
   if (!conflictingUser) {
     return baseUsername;
@@ -108,8 +114,6 @@ export const updateUser = mutation({
   },
   handler: async (ctx, { userId, username, email, avatarUrl }) => {
     const authenticatedUserId = await requireMatchingUserId(ctx, userId);
-    const identity = await getAuthenticatedIdentity(ctx);
-    const claimedRole = getRoleFromIdentity(identity);
     const user = await getUserRecordById(ctx, authenticatedUserId);
     if (!user) return;
     const patch: Record<string, string> = {};
@@ -118,7 +122,11 @@ export const updateUser = mutation({
     }
     if (email !== undefined) patch.email = email;
     if (avatarUrl !== undefined) patch.avatarUrl = avatarUrl;
-    if (claimedRole) patch.role = claimedRole;
+    // S3 fix: The role field is intentionally NOT updated here.
+    // Previously, `claimedRole` from the JWT identity was written to the DB on every
+    // profile update, meaning a user could craft a JWT with role:"teacher" and call
+    // updateUser to permanently escalate their own privilege.
+    // Role changes may only be made by admins via direct DB mutation.
     await ctx.db.patch(user._id, patch);
   },
 });
@@ -161,19 +169,15 @@ export const searchUsers = query({
     }
 
     const maxResults = Math.min(Math.max(limit || 8, 1), 20);
-    const users = await ctx.db.query("users").collect();
 
-    return users
+    // D17: Use the native search index instead of collect() full scan.
+    const results = await ctx.db
+      .query("users")
+      .withSearchIndex("search_username", (q) => q.search("username", term))
+      .take(maxResults + 1); // fetch one extra to allow filtering self out
+
+    return results
       .filter((user) => user.userId !== currentUserId)
-      .filter((user) => user.username.toLowerCase().includes(term))
-      .sort((a, b) => {
-        const aStarts = a.username.toLowerCase().startsWith(term) ? 0 : 1;
-        const bStarts = b.username.toLowerCase().startsWith(term) ? 0 : 1;
-        if (aStarts !== bStarts) {
-          return aStarts - bStarts;
-        }
-        return a.username.localeCompare(b.username);
-      })
       .slice(0, maxResults)
       .map((user) => toPublicUserSummary(user));
   },

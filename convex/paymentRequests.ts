@@ -68,7 +68,7 @@ export const submitPaymentRequest = mutation({
 
     await ctx.db.insert("paymentRequests", {
       userId,
-      plan: normalised,
+      plan: normalised as 'monthly' | 'annual',  // validated above: PLAN_AMOUNTS[normalised]
       amount: expectedAmount,
       storageId,
       fileName,
@@ -134,7 +134,7 @@ export const listPaymentRequests = query({
     const requests = status
       ? await ctx.db
           .query("paymentRequests")
-          .withIndex("by_status", (q) => q.eq("status", status))
+          .withIndex("by_status", (q) => q.eq("status", status as 'pending' | 'approved' | 'rejected'))
           .collect()
       : await ctx.db.query("paymentRequests").collect();
 
@@ -216,7 +216,7 @@ export const reviewPaymentRequest = mutation({
     }
 
     await ctx.db.patch(requestId, {
-      status:     norm,
+      status:     norm as 'approved' | 'rejected',  // validated above
       reviewedAt: Date.now(),
       reviewedBy: adminUserId,
       adminNotes: adminNotes ?? undefined,

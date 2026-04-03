@@ -56,6 +56,12 @@ export default function TextToSpeech({ text }) {
             if (intervalRef.current) clearInterval(intervalRef.current);
         };
 
+        utterance.onboundary = (e) => {
+            if (e.name === 'word') {
+                setProgress(Math.min((e.charIndex / Math.max(cleanText.length, 1)) * 100, 100));
+            }
+        };
+
         utteranceRef.current = utterance;
         window.speechSynthesis.speak(utterance);
         setIsPlaying(true);
@@ -67,10 +73,11 @@ export default function TextToSpeech({ text }) {
         const estimatedDuration = (cleanText.length / 15) / rate;
         const startTime = Date.now();
         intervalRef.current = setInterval(() => {
-            const elapsed = (Date.now() - startTime) / 1000;
-            const pct = Math.min((elapsed / estimatedDuration) * 100, 100);
-            setProgress(pct);
-            if (pct >= 100) clearInterval(intervalRef.current);
+            setProgress((prev) => {
+                const elapsed = (Date.now() - startTime) / 1000;
+                const pct = Math.min((elapsed / estimatedDuration) * 100, 100);
+                return Math.max(prev, pct);
+            });
         }, 200);
     };
 

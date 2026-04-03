@@ -76,7 +76,7 @@ export default function Sidebar({ isOpen, onToggle }) {
                 <div className="sidebar-overlay" onClick={onToggle} />
             )}
 
-            <aside className={`app-sidebar ${isOpen ? 'open' : ''}`}>
+            <aside id="app-sidebar" className={`app-sidebar ${isOpen ? 'open' : ''}`} aria-label="Main navigation">
                 {/* Logo */}
                 <div className="sidebar-header">
                     <Link to="/" className="sidebar-logo">
@@ -88,8 +88,8 @@ export default function Sidebar({ isOpen, onToggle }) {
                             <span className="logo-subtitle">Interactive Learning</span>
                         </div>
                     </Link>
-                    <button className="btn btn-icon sidebar-close" onClick={onToggle}>
-                        <X size={20} />
+                    <button className="btn btn-icon sidebar-close" onClick={onToggle} aria-label="Close sidebar">
+                        <X size={20} aria-hidden="true" />
                     </button>
                 </div>
 

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight, Layers, CheckCircle, BookOpen } from 'lucide-react';
 import { listFlashcards } from '../services/notes/noteStore.js';
@@ -29,6 +29,7 @@ export default function FlashcardsPage() {
     const [isFlipped, setIsFlipped] = useState(false);
     const [known, setKnown] = useState(() => loadStoredIds(KNOWN_KEY));
     const [learning, setLearning] = useState(() => loadStoredIds(LEARNING_KEY));
+    const flipTimerRef = useRef(null); // track flip-transition timer to prevent unmount leaks
 
     useEffect(() => {
         let cancelled = false;
@@ -42,6 +43,11 @@ export default function FlashcardsPage() {
 
         return () => {
             cancelled = true;
+            // Clear any pending flip-transition timer to prevent setState after unmount
+            if (flipTimerRef.current !== null) {
+                clearTimeout(flipTimerRef.current);
+                flipTimerRef.current = null;
+            }
         };
     }, []);
 
@@ -69,25 +75,33 @@ export default function FlashcardsPage() {
 
     const goNext = () => {
         setIsFlipped(false);
-        setTimeout(() => {
+        if (flipTimerRef.current !== null) clearTimeout(flipTimerRef.current);
+        flipTimerRef.current = setTimeout(() => {
+            flipTimerRef.current = null;
             setCurrentIndex((prev) => (prev + 1) % totalCards);
         }, 120);
     };
 
     const goPrev = () => {
         setIsFlipped(false);
-        setTimeout(() => {
+        if (flipTimerRef.current !== null) clearTimeout(flipTimerRef.current);
+        flipTimerRef.current = setTimeout(() => {
+            flipTimerRef.current = null;
             setCurrentIndex((prev) => (prev - 1 + totalCards) % totalCards);
         }, 120);
     };
 
     const markKnown = () => {
         if (!known.includes(card.id)) setKnown((prev) => [...prev, card.id]);
+        // Remove from learning to enforce mutual exclusivity
+        setLearning((prev) => prev.filter((id) => id !== card.id));
         goNext();
     };
 
     const markLearning = () => {
         if (!learning.includes(card.id)) setLearning((prev) => [...prev, card.id]);
+        // Remove from known to enforce mutual exclusivity
+        setKnown((prev) => prev.filter((id) => id !== card.id));
         goNext();
     };
 
@@ -165,8 +179,13 @@ export default function FlashcardsPage() {
             </div>
 
             <div className="flashcard-container">
-                <div className="flashcard-wrapper" onClick={() => setIsFlipped(!isFlipped)}>
-                    <div className={`flashcard ${isFlipped ? 'flipped' : ''}`}>
+                <button
+                    className="flashcard-wrapper"
+                    onClick={() => setIsFlipped(!isFlipped)}
+                    aria-label={isFlipped ? `Hide answer. Card ${currentIndex + 1} of ${totalCards}: ${card.front}` : `Reveal answer for card ${currentIndex + 1} of ${totalCards}: ${card.front}`}
+                    aria-pressed={isFlipped}
+                >
+                    <div className={`flashcard ${isFlipped ? 'flipped' : ''}`} aria-hidden="true">
                         <div className="flashcard-face flashcard-front">
                             <span className="flashcard-topic-badge">
                                 {card.topic}
@@ -181,7 +200,7 @@ export default function FlashcardsPage() {
                             <p>{card.back}</p>
                         </div>
                     </div>
-                </div>
+                </button>
 
                 <span className="flashcard-counter">{currentIndex + 1} / {totalCards}</span>
 
@@ -192,17 +211,33 @@ export default function FlashcardsPage() {
                 )}
 
                 <div className="flashcard-controls">
-                    <button className="btn btn-secondary" onClick={goPrev}>
-                        <ArrowLeft size={18} />
+                    <button
+                        className="btn btn-secondary"
+                        onClick={goPrev}
+                        aria-label="Previous flashcard"
+                    >
+                        <ArrowLeft size={18} aria-hidden="true" />
                     </button>
-                    <button className="btn btn-danger btn-lg" onClick={markLearning} title="Still learning">
-                        <ThumbsDown size={18} /> Learning
+                    <button
+                        className="btn btn-danger btn-lg"
+                        onClick={markLearning}
+                        aria-label="Mark as still learning and go to next card"
+                    >
+                        <ThumbsDown size={18} aria-hidden="true" /> Learning
                     </button>
-                    <button className="btn btn-success btn-lg" onClick={markKnown} title="I know this">
-                        <ThumbsUp size={18} /> Got it!
+                    <button
+                        className="btn btn-success btn-lg"
+                        onClick={markKnown}
+                        aria-label="Mark as known and go to next card"
+                    >
+                        <ThumbsUp size={18} aria-hidden="true" /> Got it!
                     </button>
-                    <button className="btn btn-secondary" onClick={goNext}>
-                        <ArrowRight size={18} />
+                    <button
+                        className="btn btn-secondary"
+                        onClick={goNext}
+                        aria-label="Next flashcard"
+                    >
+                        <ArrowRight size={18} aria-hidden="true" />
                     </button>
                 </div>
 
@@ -216,8 +251,9 @@ export default function FlashcardsPage() {
                         setCurrentIndex(0);
                         setIsFlipped(false);
                     }}
+                    aria-label="Reset all flashcard progress"
                 >
-                    <RotateCcw size={16} /> Reset Progress
+                    <RotateCcw size={16} aria-hidden="true" /> Reset Progress
                 </button>
             </div>
         </div>

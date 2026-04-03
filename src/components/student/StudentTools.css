@@ -143,12 +143,17 @@ mark.user-highlight:hover {
     line-height: 1;
     -webkit-user-select: none;
     user-select: none;
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--color-text-tertiary);
 }
 
 .sticky-delete {
+    /* A6: meet 44×44px minimum touch target */
+    min-width: 44px;
+    min-height: 44px;
     width: 20px;
     height: 20px;
+    padding: 12px;
+    box-sizing: content-box;
     border: none;
     background: none;
     cursor: pointer;
@@ -156,13 +161,13 @@ mark.user-highlight:hover {
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-sm);
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--color-text-secondary);
     transition: all var(--transition-fast);
 }
 
 .sticky-delete:hover {
-    background: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.7);
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
 }
 
 .sticky-textarea {
@@ -173,13 +178,13 @@ mark.user-highlight:hover {
     padding: 0 var(--space-2) var(--space-2);
     font-family: var(--font-sans);
     font-size: var(--font-size-sm);
-    color: rgba(0, 0, 0, 0.75);
+    color: var(--color-text);
     outline: none;
     line-height: var(--line-height-normal);
 }
 
 .sticky-textarea::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--color-text-tertiary);
 }
 
 /* ---- Export PDF Button ---- */
@@ -206,3 +211,8 @@ mark.user-highlight:hover {
     height: 24px;
     background: var(--color-border);
 }
+::highlight(user-highlight-yellow) { background-color: rgba(250, 204, 21, 0.4); }
+::highlight(user-highlight-green) { background-color: rgba(74, 222, 128, 0.4); }
+::highlight(user-highlight-blue) { background-color: rgba(96, 165, 250, 0.4); }
+::highlight(user-highlight-pink) { background-color: rgba(244, 114, 182, 0.4); }
+::highlight(user-highlight-orange) { background-color: rgba(251, 146, 60, 0.4); }

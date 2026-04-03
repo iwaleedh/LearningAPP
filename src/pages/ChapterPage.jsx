@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { memo, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { BookOpen, ListTree, ChevronDown, ChevronUp } from 'lucide-react';
 import { getSubjectLabel, normalizeSubjectKey } from '../data/syllabusIndex';
@@ -7,7 +7,8 @@ import './Pages.css';
 
 // ── Subtopic dropdown (accordion) ─────────────────────────────────────────────
 
-function TopicAccordion({ topic, unitId, subject, defaultOpen }) {
+// Memoized to prevent all 200+ subtopic rows re-rendering on any ChapterPage state change
+const TopicAccordion = memo(function TopicAccordion({ topic, unitId, subject, defaultOpen }) {
     const [open, setOpen] = useState(defaultOpen);
 
     return (
@@ -19,7 +20,7 @@ function TopicAccordion({ topic, unitId, subject, defaultOpen }) {
             >
                 <div className="chapter-topic-header-left">
                     <span className="chapter-topic-badge">Topic {topic.id}</span>
-                    <span className="chapter-topic-title">{topic.title}</span>
+                    <span className="chapter-topic-title" title={topic.title}>{topic.title}</span>
                     <span className="chapter-topic-count">{topic.subtopics.length} subtopics</span>
                 </div>
                 <span className="chapter-topic-chevron">
@@ -50,7 +51,7 @@ function TopicAccordion({ topic, unitId, subject, defaultOpen }) {
             )}
         </div>
     );
-}
+});
 
 // ── Main ChapterPage ───────────────────────────────────────────────────────────
 
@@ -108,14 +109,14 @@ export default function ChapterPage() {
                 </div>
                 <div className="chapter-meta-boxes">
                     <div className="meta-box">
-                        <div className="meta-icon"><BookOpen size={18} /></div> 
+                        <div className="meta-icon"><BookOpen size={18} /></div>
                         <div className="meta-text">
                             <strong>{totalTopics}</strong>
                             <span>Topics</span>
                         </div>
                     </div>
                     <div className="meta-box">
-                        <div className="meta-icon"><ListTree size={18} /></div> 
+                        <div className="meta-icon"><ListTree size={18} /></div>
                         <div className="meta-text">
                             <strong>{totalSubtopics}</strong>
                             <span>Subtopics</span>
@@ -126,36 +127,36 @@ export default function ChapterPage() {
 
             {/* ── All units stacked ── */}
             <div className="chapter-units-container">
-            {syllabus.units.map((unit, unitIndex) => {
-                const unitSubtopics = unit.topics.reduce((s, t) => s + t.subtopics.length, 0);
-                return (
-                    <div key={unit.id} className="chapter-unit-section animate-slide-in-up" style={{ animationDelay: `${0.1 + unitIndex * 0.05}s` }}>
-                        <div className="chapter-unit-meta">
-                            <h2 className="chapter-unit-heading">
-                                <span className="unit-number">Unit {unit.id}</span>
-                                <span className="unit-name">{unit.title}</span>
-                            </h2>
-                            <div className="chapter-meta">
-                                <span className="meta-pill"><BookOpen size={14} /> {unit.topics.length} topic{unit.topics.length !== 1 ? 's' : ''}</span>
-                                <span className="meta-pill"><ListTree size={14} /> {unitSubtopics} subtopics</span>
-                                <span className="meta-source">Source: {syllabus.source}</span>
+                {syllabus.units.map((unit, unitIndex) => {
+                    const unitSubtopics = unit.topics.reduce((s, t) => s + t.subtopics.length, 0);
+                    return (
+                        <div key={unit.id} className="chapter-unit-section animate-slide-in-up" style={{ animationDelay: `${0.1 + unitIndex * 0.05}s` }}>
+                            <div className="chapter-unit-meta">
+                                <h2 className="chapter-unit-heading">
+                                    <span className="unit-number">Unit {unit.id}</span>
+                                    <span className="unit-name">{unit.title}</span>
+                                </h2>
+                                <div className="chapter-meta">
+                                    <span className="meta-pill"><BookOpen size={14} /> {unit.topics.length} topic{unit.topics.length !== 1 ? 's' : ''}</span>
+                                    <span className="meta-pill"><ListTree size={14} /> {unitSubtopics} subtopics</span>
+                                    <span className="meta-source">Source: {syllabus.source}</span>
+                                </div>
+                            </div>
+
+                            <div className="chapter-topics-list">
+                                {unit.topics.map((topic) => (
+                                    <TopicAccordion
+                                        key={`${unit.id}-${topic.id}`}
+                                        topic={topic}
+                                        unitId={unit.id}
+                                        subject={subject}
+                                        defaultOpen={false}
+                                    />
+                                ))}
                             </div>
                         </div>
-
-                        <div className="chapter-topics-list">
-                            {unit.topics.map((topic) => (
-                                <TopicAccordion
-                                    key={`${unit.id}-${topic.id}`}
-                                    topic={topic}
-                                    unitId={unit.id}
-                                    subject={subject}
-                                    defaultOpen={true}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                );
-            })}
+                    );
+                })}
             </div>
         </div>
     );

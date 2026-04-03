@@ -40,24 +40,30 @@ export async function openGuestDataDb() {
   if (dbPromise) return dbPromise;
 
   dbPromise = new Promise((resolve, reject) => {
-    const req = indexedDB.open(DB_NAME, DB_VERSION);
-    req.onupgradeneeded = (event) => {
-      const db = event.target.result;
-      if (!db.objectStoreNames.contains(STORE_NOTES)) {
-        db.createObjectStore(STORE_NOTES, { keyPath: 'noteId' });
-      }
-      if (!db.objectStoreNames.contains(STORE_FLASHCARDS)) {
-        db.createObjectStore(STORE_FLASHCARDS, { keyPath: 'cardId' });
-      }
-      if (!db.objectStoreNames.contains(STORE_ASSETS)) {
-        db.createObjectStore(STORE_ASSETS, { keyPath: 'assetId' });
-      }
-    };
-    req.onsuccess = (event) => resolve(event.target.result);
-    req.onerror = () => {
-      dbPromise = null;
-      reject(req.error);
-    };
+    try {
+      const req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = (event) => {
+        const db = event.target.result;
+        if (!db.objectStoreNames.contains(STORE_NOTES)) {
+          db.createObjectStore(STORE_NOTES, { keyPath: 'noteId' });
+        }
+        if (!db.objectStoreNames.contains(STORE_FLASHCARDS)) {
+          db.createObjectStore(STORE_FLASHCARDS, { keyPath: 'cardId' });
+        }
+        if (!db.objectStoreNames.contains(STORE_ASSETS)) {
+          db.createObjectStore(STORE_ASSETS, { keyPath: 'assetId' });
+        }
+      };
+      req.onsuccess = (event) => resolve(event.target.result);
+      req.onerror = () => {
+        reject(req.error);
+      };
+    } catch (err) {
+      reject(err);
+    }
+  }).catch(err => {
+    dbPromise = null;
+    throw err;
   });
 
   return dbPromise;

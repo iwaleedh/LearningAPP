@@ -231,6 +231,9 @@ export async function getNote(noteId) {
         return mapConvexNoteRow(row);
     } catch (error) {
         log.error('getNote failed', { error: error.message });
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('app:toast', { detail: { type: 'warning', message: 'Offline or server error. Returning local version.' } }));
+        }
         return await getGuestNote(noteId);
     }
 }
@@ -284,6 +287,9 @@ export async function listNotesBySubject(subject) {
         return notes.map((item) => toHeader(item));
     } catch (error) {
         log.error('listNotesBySubject failed', { error: error.message });
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('app:toast', { detail: { type: 'warning', message: 'Offline or server error. Returning local lists.' } }));
+        }
         return await localResults();
     }
 }
@@ -404,11 +410,29 @@ export async function clearGuestData() {
     await clearPersistedGuestData();
 }
 
+// D13: Module-level import lock — prevents double-click races and concurrent
+// imports from duplicating data when upsert succeeds but deleteGuestNote fails.
+let importInProgress = false;
+
+/**
+ * Returns true if a guest-data import is currently in progress.
+ * UI should use this to disable the import button during the operation.
+ */
+export function isImportInProgress() {
+    return importInProgress;
+}
+
 export async function importGuestDataToAccount() {
     const client = getClient();
     if (!client) {
         throw new Error('Sign in is required before importing guest data.');
     }
+
+    // D13: Prevent double-click and concurrent import races.
+    if (importInProgress) {
+        throw new Error('Import already in progress. Please wait.');
+    }
+    importInProgress = true;
 
     const [notes, flashcards, assets] = await Promise.all([
         getAllGuestNotes(),
@@ -423,37 +447,41 @@ export async function importGuestDataToAccount() {
         errors: [],
     };
 
-    for (const note of notes) {
-        try {
-            const normalizedNote = normalizeNoteDocument(note);
-            await callMutation(api.notes.upsertNote, buildNoteMutationArgs(normalizedNote));
-            await deleteGuestNote(normalizedNote.noteId);
-            result.notesImported += 1;
-        } catch (error) {
-            result.errors.push(`Note ${note.noteId}: ${error?.message || error}`);
+    try {
+        for (const note of notes) {
+            try {
+                const normalizedNote = normalizeNoteDocument(note);
+                await callMutation(api.notes.upsertNote, buildNoteMutationArgs(normalizedNote));
+                await deleteGuestNote(normalizedNote.noteId);
+                result.notesImported += 1;
+            } catch (error) {
+                result.errors.push(`Note ${note.noteId}: ${error?.message || error}`);
+            }
         }
-    }
 
-    for (const card of flashcards) {
-        try {
-            const normalizedCard = buildFlashcardRecord(card);
-            await callMutation(api.flashcards.saveFlashcard, buildFlashcardMutationArgs(normalizedCard));
-            await deleteGuestFlashcard(normalizedCard.cardId);
-            result.flashcardsImported += 1;
-        } catch (error) {
-            result.errors.push(`Flashcard ${card.cardId}: ${error?.message || error}`);
+        for (const card of flashcards) {
+            try {
+                const normalizedCard = buildFlashcardRecord(card);
+                await callMutation(api.flashcards.saveFlashcard, buildFlashcardMutationArgs(normalizedCard));
+                await deleteGuestFlashcard(normalizedCard.cardId);
+                result.flashcardsImported += 1;
+            } catch (error) {
+                result.errors.push(`Flashcard ${card.cardId}: ${error?.message || error}`);
+            }
         }
-    }
 
-    for (const asset of assets) {
-        try {
-            const normalizedAsset = buildAssetRecord(asset);
-            await callMutation(api.assets.saveNoteAsset, buildAssetMutationArgs(normalizedAsset));
-            await deleteGuestNoteAsset(normalizedAsset.assetId);
-            result.assetsImported += 1;
-        } catch (error) {
-            result.errors.push(`Asset ${asset.assetId}: ${error?.message || error}`);
+        for (const asset of assets) {
+            try {
+                const normalizedAsset = buildAssetRecord(asset);
+                await callMutation(api.assets.saveNoteAsset, buildAssetMutationArgs(normalizedAsset));
+                await deleteGuestNoteAsset(normalizedAsset.assetId);
+                result.assetsImported += 1;
+            } catch (error) {
+                result.errors.push(`Asset ${asset.assetId}: ${error?.message || error}`);
+            }
         }
+    } finally {
+        importInProgress = false;
     }
 
     return result;

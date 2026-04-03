@@ -15,6 +15,7 @@ export default function StudentAdmissionPanel({
 }) {
   const [tab, setTab] = useState('waiting'); // 'waiting' | 'inclass'
   const [requests, setRequests] = useState([]);
+  const [loading, setLoading] = useState(false);
   const panelRef = useRef(null);
 
   // Subscribe to join requests in real-time
@@ -49,11 +50,21 @@ export default function StudentAdmissionPanel({
   const accepted = requests.filter(r => r.status === 'accepted');
 
   const handleApprove = async (id) => {
-    await approveJoin(id);
+    setLoading(true);
+    try {
+      await approveJoin(id);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleReject = async (id) => {
-    await rejectJoin(id);
+    setLoading(true);
+    try {
+      await rejectJoin(id);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleToggleAutoAccept = async () => {
@@ -106,11 +117,13 @@ export default function StudentAdmissionPanel({
                     <button
                       className="btn btn-sm btn-primary sap-admit-btn"
                       onClick={() => handleApprove(req._id)}
+                      disabled={loading}
                       title="Admit"
                     ><Check size={12} /> Admit</button>
                     <button
                       className="btn btn-sm btn-ghost sap-reject-btn"
                       onClick={() => handleReject(req._id)}
+                      disabled={loading}
                       title="Decline"
                     ><X size={12} /></button>
                   </div>

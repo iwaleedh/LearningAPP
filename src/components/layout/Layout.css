@@ -7,9 +7,9 @@
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    z-index: 99;
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    backdrop-filter: blur(var(--glass-blur));
+    z-index: calc(var(--z-sidebar) - 1);
     animation: fadeIn 0.2s ease-out;
     display: none;
 }
@@ -182,7 +182,7 @@
 .theme-toggle:hover {
     background: var(--color-surface);
     border-color: var(--color-border);
-    box-shadow: 0 4px 12px -2px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
     color: var(--color-text);
 }
 
@@ -221,12 +221,12 @@
     cursor: pointer;
     transition: all 0.2s ease;
     min-width: 240px;
-    box-shadow: 0 2px 10px -2px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.03);
 }
 
 .header-search-btn:hover {
     border-color: var(--color-primary-50);
-    box-shadow: 0 4px 12px -2px rgba(99,102,241,0.1);
+    box-shadow: 0 4px 12px -2px rgba(99, 102, 241, 0.1);
     color: var(--color-text);
 }
 
@@ -244,7 +244,9 @@
     border: 1px solid var(--color-border-light);
     border-radius: var(--radius-md);
     padding: 2px 6px;
-    color: var(--color-text-tertiary);
+    /* A7: --color-text-tertiary (#7d8da3 in light mode) gives ~3.4:1 on #eef2f8.
+       Use --color-text-secondary (#516176 in light mode) for ≥ 4.5:1 compliance. */
+    color: var(--color-text-secondary);
     transition: all 0.2s;
 }
 
@@ -309,7 +311,7 @@
     width: 320px;
     max-height: 420px;
     overflow-y: auto;
-    z-index: 200;
+    z-index: var(--z-popover);
     padding: 0;
     box-shadow: var(--shadow-xl);
     animation: fadeIn 0.15s ease-out;

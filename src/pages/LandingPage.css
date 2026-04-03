@@ -30,8 +30,8 @@
   padding: var(--space-4) var(--space-8);
   border-bottom: 1px solid var(--color-border);
   background-color: rgba(11, 15, 26, 0.85); /* fallback for dark mode */
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
   position: sticky;
   top: 0;
   z-index: 100;

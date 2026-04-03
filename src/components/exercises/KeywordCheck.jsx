@@ -2,6 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { CheckCircle, Search, ArrowRight } from 'lucide-react';
 import './Exercises.css';
 
+/** Escape all regex metacharacters in a string before using it in new RegExp(). */
+function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 export default function KeywordCheck({ question, onNext, onMistake, onAttempt }) {
     const [answer, setAnswer] = useState('');
     const [submitted, setSubmitted] = useState(false);
@@ -53,7 +58,8 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
         if (!submitted) return answer;
         let highlighted = answer;
         question.keywords.forEach(kw => {
-            const regex = new RegExp(`(${kw})`, 'gi');
+            // Escape metacharacters to prevent regex injection crash
+            const regex = new RegExp(`(${escapeRegExp(kw)})`, 'gi');
             highlighted = highlighted.replace(regex, '⟨$1⟩');
         });
         return highlighted;
@@ -61,7 +67,8 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
 
     const score = foundKeywords.length;
     const total = question.keywords.length;
-    const percentage = Math.round((score / total) * 100);
+    // Guard against division by zero: 0 keywords means trivially correct (100%)
+    const percentage = total > 0 ? Math.round((score / total) * 100) : 100;
 
     return (
         <div className="keyword-exercise card animate-fade-in">
@@ -84,7 +91,7 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
                     <div className="kw-score-bar">
                         <div className="kw-score-info">
                             <Search size={16} />
-                            <span>Keywords found: {score}/{total} ({percentage}%)</span>
+                            <span>Keywords found: {score}/{total}{total > 0 ? ` (${percentage}%)` : ''}</span>
                         </div>
                         <div className="kw-progress">
                             <div

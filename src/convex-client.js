@@ -42,8 +42,24 @@ function getStoredUsername() {
   return localStorage.getItem(USERNAME_KEY);
 }
 
+/**
+ * S17 fix: Sanitise username before storage.
+ * localStorage values are read back and may be rendered in non-React contexts
+ * (e.g. via textContent or innerHTML in canvas overlays, chat systems, etc.).
+ * Strip HTML tags, control characters, and limit length to prevent XSS if a
+ * value is ever rendered unsafely.
+ */
+function sanitizeUsername(username) {
+  if (typeof username !== 'string') return '';
+  return username
+    .replace(/<[^>]*>/g, '')        // strip HTML tags
+    .replace(/[\u0000-\u001F\u007F]/g, '') // strip control characters
+    .trim()
+    .slice(0, 50);                  // enforce max length
+}
+
 function storeUsername(username) {
-  localStorage.setItem(USERNAME_KEY, username);
+  localStorage.setItem(USERNAME_KEY, sanitizeUsername(username));
 }
 
 // ── Singleton ConvexClient (imperative, for services + pages) ───────
@@ -58,6 +74,9 @@ let currentUserId = null;
 let currentUsername = null;
 let anonymousUserId = null;
 let anonymousUsername = null;
+// D7: Promise-based singleton guard — concurrent initConvex() calls share
+// one promise so registerCurrentUser() is never called twice in parallel.
+let initPromise = null;
 
 function getOrCreateClient() {
   if (!convexClient && CONVEX_URL) {
@@ -69,7 +88,8 @@ function getOrCreateClient() {
 function ensureAnonymousIdentity() {
   const userId = ensureUserId();
   const existingUsername = getStoredUsername();
-  const username = existingUsername || `user_${userId.slice(0, 6)}_${Date.now()}`;
+  // Generate a stable username from the userId (no Date.now() — must be the same on every reload)
+  const username = existingUsername || `user_${userId.slice(0, 6)}`;
   if (!existingUsername) storeUsername(username);
 
   anonymousUserId = userId;
@@ -106,9 +126,17 @@ async function registerCurrentUser(extra = {}) {
 /**
  * Initialise the Convex client. Resolves with the client when ready,
  * or null if there's no URL configured (offline mode).
+ *
+ * D7: Uses a Promise singleton (initPromise) so that concurrent calls
+ * (e.g. from multiple service modules loading simultaneously) share one
+ * in-flight initialisation instead of racing to call registerCurrentUser()
+ * multiple times with half-updated identity state.
  */
 export async function initConvex() {
   if (convexClient && isReady) return convexClient;
+
+  // Return the in-flight promise if init is already underway.
+  if (initPromise) return initPromise;
 
   if (!CONVEX_URL) {
     console.warn('Convex URL not configured — running in offline mode');
@@ -119,40 +147,50 @@ export async function initConvex() {
     return null;
   }
 
-  try {
-    convexClient = getOrCreateClient();
-    const anonymousIdentity = anonymousUserId && anonymousUsername
-      ? { userId: anonymousUserId, username: anonymousUsername }
-      : ensureAnonymousIdentity();
+  initPromise = (async () => {
+    try {
+      convexClient = getOrCreateClient();
+      const anonymousIdentity = anonymousUserId && anonymousUsername
+        ? { userId: anonymousUserId, username: anonymousUsername }
+        : ensureAnonymousIdentity();
 
-    if (!currentUserId || !currentUsername) {
-      applyIdentity(anonymousIdentity.userId, anonymousIdentity.username);
+      if (!currentUserId || !currentUsername) {
+        applyIdentity(anonymousIdentity.userId, anonymousIdentity.username);
+      }
+
+      isReady = true;
+      connectionCallbacks.forEach(cb => cb(convexClient, currentUserId));
+      connectionCallbacks = [];
+      return convexClient;
+    } catch (err) {
+      console.error('Convex init failed:', err);
+      hasErrored = true;
+      lastError = err;
+      errorCallbacks.forEach(cb => cb(err));
+      errorCallbacks = [];
+      initPromise = null; // allow retry on next call
+      return null;
     }
+  })();
 
-    isReady = true;
-    connectionCallbacks.forEach(cb => cb(convexClient, currentUserId));
-    connectionCallbacks = [];
-    return convexClient;
-  } catch (err) {
-    console.error('Convex init failed:', err);
-    hasErrored = true;
-    lastError = err;
-    errorCallbacks.forEach(cb => cb(err));
-    errorCallbacks = [];
-    return null;
-  }
+  return initPromise;
 }
 
 // Keep backward-compatible names
 export const initSpacetimeDB = initConvex;
 
-/** Register a callback for when Convex is fully ready. */
+/** Register a callback for when Convex is fully ready. Returns an unsubscribe function. */
 export function onConvexReady(callback) {
   if (isReady && convexClient && currentUserId) {
     callback(convexClient, currentUserId);
-  } else {
-    connectionCallbacks.push(callback);
+    return () => {}; // already fired, nothing to remove
   }
+  connectionCallbacks.push(callback);
+  // M4: allow caller to remove the callback before it fires (e.g. on unmount)
+  return () => {
+    const idx = connectionCallbacks.indexOf(callback);
+    if (idx !== -1) connectionCallbacks.splice(idx, 1);
+  };
 }
 export const onSpacetimeDBReady = onConvexReady;
 
@@ -184,19 +222,27 @@ export function isConvexReady() {
   return isReady && !!convexClient && !!currentUserId;
 }
 
-/** Register a callback for Convex connection errors. */
+/** Register a callback for Convex connection errors. Returns an unsubscribe function. */
 export function onConvexError(callback) {
   if (hasErrored && !isReady) {
     callback(lastError);
-  } else {
-    errorCallbacks.push(callback);
+    return () => {};
   }
+  errorCallbacks.push(callback);
+  return () => {
+    const idx = errorCallbacks.indexOf(callback);
+    if (idx !== -1) errorCallbacks.splice(idx, 1);
+  };
 }
 export const onSpacetimeDBError = onConvexError;
 
-/** Register a disconnect callback (fires if client closes). */
+/** Register a disconnect callback (fires if client closes). Returns an unsubscribe function. */
 export function onConvexDisconnect(callback) {
   disconnectCallbacks.push(callback);
+  return () => {
+    const idx = disconnectCallbacks.indexOf(callback);
+    if (idx !== -1) disconnectCallbacks.splice(idx, 1);
+  };
 }
 export const onSpacetimeDBDisconnect = onConvexDisconnect;
 
@@ -251,11 +297,34 @@ export async function callQuery(queryRef, args) {
 }
 
 // ── Helper: subscribe to a Convex query (imperative) ────────────────
+/**
+ * Subscribe to a Convex reactive query. Returns an unsubscribe function.
+ *
+ * M8: If the client isn't ready yet, the subscription is deferred — it will
+ * automatically start once Convex is initialised. The returned unsubscribe
+ * function cancels the deferred subscription if called before it starts.
+ */
 export function subscribe(queryRef, args, callback) {
   const client = getOrCreateClient();
   if (!client) {
-    console.warn('[Convex] subscribe() — client not ready, returning noop. Query:', queryRef);
-    return () => {};
+    console.warn('[Convex] subscribe() — client not ready, deferring until ready. Query:', queryRef);
+    let innerUnsub = null;
+    let cancelled = false;
+    const unsubReady = onConvexReady((readyClient) => {
+      if (cancelled) return;
+      const watch = readyClient.watchQuery(queryRef, args ?? {});
+      const emit = () => {
+        const result = watch.localQueryResult();
+        if (result !== undefined) callback(result);
+      };
+      innerUnsub = watch.onUpdate(() => emit());
+      emit();
+    });
+    return () => {
+      cancelled = true;
+      unsubReady();
+      innerUnsub?.();
+    };
   }
 
   const watch = client.watchQuery(queryRef, args ?? {});

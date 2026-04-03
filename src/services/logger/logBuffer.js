@@ -12,6 +12,7 @@ import { shipLogs } from './logShipper.js';
 
 const FLUSH_INTERVAL_MS = 10_000;   // 10 seconds
 const MAX_BATCH_SIZE = 50;
+const MAX_BUFFER_SIZE = 500; // M5: hard cap — drop oldest entries if shipLogs() stalls
 
 let buffer = [];
 let flushTimer = null;
@@ -19,6 +20,10 @@ let flushTimer = null;
 /** Add a log entry to the buffer. Auto-flushes when batch limit is reached. */
 export function addToBuffer(entry) {
   buffer.push(entry);
+  // M5: if buffer exceeds hard cap (e.g. shipping keeps failing), drop oldest entries
+  if (buffer.length > MAX_BUFFER_SIZE) {
+    buffer = buffer.slice(buffer.length - MAX_BUFFER_SIZE);
+  }
   if (buffer.length >= MAX_BATCH_SIZE) {
     flush();
   }

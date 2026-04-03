@@ -67,16 +67,21 @@ export const getStudentLeaderboard = query({
   handler: async (ctx) => {
     const identity = await getAuthenticatedIdentity(ctx);
     const users = await ctx.db.query("users").collect();
-    const notes = await ctx.db.query("notes").collect();
-    const attempts = await ctx.db.query("studyAttempts").collect();
 
     const students = users
       .filter((user) => user.role !== "teacher")
       .filter((user) => effectiveAccountStatus(user) === "approved");
 
-    const rows = students.map((student) => {
-      const studentNotes = notes.filter((note) => note.ownerUserId === student.userId);
-      const studentAttempts = attempts.filter((attempt) => attempt.ownerUserId === student.userId);
+    const rowsUnsorted = await Promise.all(students.map(async (student) => {
+      const studentNotes = await ctx.db
+        .query("notes")
+        .withIndex("by_owner", (q) => q.eq("ownerUserId", student.userId))
+        .collect();
+      const studentAttempts = await ctx.db
+        .query("studyAttempts")
+        .withIndex("by_owner", (q) => q.eq("ownerUserId", student.userId))
+        .collect();
+
       const totalNotes = studentNotes.length;
       const averageConfidence = totalNotes > 0
         ? studentNotes.reduce((sum, note) => sum + note.confidenceScore, 0) / totalNotes
@@ -131,7 +136,9 @@ export const getStudentLeaderboard = query({
         completedPastPaperCount,
         avgPastPaperScore,
       };
-    })
+    }));
+
+    const rows = rowsUnsorted
       .sort((a, b) => {
         if (b.score !== a.score) return b.score - a.score;
         if (b.mastery !== a.mastery) return b.mastery - a.mastery;

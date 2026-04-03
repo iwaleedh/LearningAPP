@@ -90,12 +90,15 @@ export const listAllUsersAdmin = query({
 export const approveUser = mutation({
   args: { userId: v.string() },
   handler: async (ctx, { userId }) => {
-    await requireAdmin(ctx);
+    const adminId = await requireAdmin(ctx);
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
     await ctx.db.patch(user._id, {
       accountStatus: "approved",
       statusUpdatedAt: Date.now(),
+    });
+    await ctx.db.insert("auditLogs", {
+      actorId: adminId, action: "APPROVE_USER", targetId: userId, timestamp: Date.now()
     });
   },
 });
@@ -116,6 +119,9 @@ export const blockUser = mutation({
       accountStatus: "blocked",
       statusUpdatedAt: Date.now(),
     });
+    await ctx.db.insert("auditLogs", {
+      actorId: adminUserId, action: "BLOCK_USER", targetId: userId, timestamp: Date.now()
+    });
   },
 });
 
@@ -125,12 +131,15 @@ export const blockUser = mutation({
 export const unblockUser = mutation({
   args: { userId: v.string() },
   handler: async (ctx, { userId }) => {
-    await requireAdmin(ctx);
+    const adminId = await requireAdmin(ctx);
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
     await ctx.db.patch(user._id, {
       accountStatus: "approved",
       statusUpdatedAt: Date.now(),
+    });
+    await ctx.db.insert("auditLogs", {
+      actorId: adminId, action: "UNBLOCK_USER", targetId: userId, timestamp: Date.now()
     });
   },
 });
@@ -142,7 +151,7 @@ export const unblockUser = mutation({
 export const setUserRole = mutation({
   args: { userId: v.string(), role: v.string() },
   handler: async (ctx, { userId, role }) => {
-    await requireAdmin(ctx);
+    const adminId = await requireAdmin(ctx);
     const normalised = role.trim().toLowerCase();
     if (normalised !== "teacher" && normalised !== "student") {
       throw new Error("Role must be 'teacher' or 'student'.");
@@ -150,6 +159,9 @@ export const setUserRole = mutation({
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
     await ctx.db.patch(user._id, { role: normalised });
+    await ctx.db.insert("auditLogs", {
+      actorId: adminId, action: "SET_ROLE", targetId: userId, details: JSON.stringify({ role: normalised }), timestamp: Date.now()
+    });
   },
 });
 
@@ -185,5 +197,8 @@ export const deleteUser = mutation({
     }
 
     await ctx.db.delete(user._id);
+    await ctx.db.insert("auditLogs", {
+      actorId: adminUserId, action: "DELETE_USER", targetId: userId, timestamp: Date.now()
+    });
   },
 });

@@ -6,6 +6,9 @@ import { loadSyllabusesBySubjects } from '../../data/syllabusIndex.js';
 const SEARCH_SUBJECTS = ['chemistry', 'biology', 'physics', 'mathematics', 'economics', 'business', 'accounting'];
 const SUBJECT_LABELS = { chemistry: 'Chemistry', biology: 'Biology', physics: 'Physics', mathematics: 'Maths', economics: 'Economics', business: 'Business', accounting: 'Accounting' };
 
+let _cachedSearchIndex = null;
+let _cachedSearchPromise = null;
+
 function buildSearchIndexFromSyllabuses(syllabusesBySubject) {
     const items = [];
     SEARCH_SUBJECTS.forEach(subject => {
@@ -33,8 +36,8 @@ function buildSearchIndexFromSyllabuses(syllabusesBySubject) {
 export default function CommandSearch({ onClose }) {
     const [query, setQuery] = useState('');
     const [focusedIndex, setFocusedIndex] = useState(0);
-    const [searchableItems, setSearchableItems] = useState([]);
-    const [searchIndexStatus, setSearchIndexStatus] = useState('loading');
+    const [searchableItems, setSearchableItems] = useState(() => _cachedSearchIndex || []);
+    const [searchIndexStatus, setSearchIndexStatus] = useState(() => _cachedSearchIndex ? 'ready' : 'loading');
     const inputRef = useRef(null);
     const navigate = useNavigate();
 
@@ -53,9 +56,25 @@ export default function CommandSearch({ onClose }) {
     useEffect(() => {
         let cancelled = false;
 
-        void loadSyllabusesBySubjects(SEARCH_SUBJECTS).then((syllabuses) => {
+        if (_cachedSearchIndex) {
+            return;
+        }
+
+        if (!_cachedSearchPromise) {
+            _cachedSearchPromise = loadSyllabusesBySubjects(SEARCH_SUBJECTS)
+                .then((syllabuses) => {
+                    _cachedSearchIndex = buildSearchIndexFromSyllabuses(syllabuses);
+                    return _cachedSearchIndex;
+                })
+                .catch((err) => {
+                    _cachedSearchPromise = null; // allow retry
+                    throw err;
+                });
+        }
+
+        _cachedSearchPromise.then((index) => {
             if (cancelled) return;
-            setSearchableItems(buildSearchIndexFromSyllabuses(syllabuses));
+            setSearchableItems(index);
             setSearchIndexStatus('ready');
         }).catch(() => {
             if (cancelled) return;

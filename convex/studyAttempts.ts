@@ -24,9 +24,27 @@ export const recordAttempt = mutation({
     const ownerUserId = await requireAuthenticatedUserId(ctx);
     const now = Date.now();
 
+    // S2: Clamp client-supplied numeric fields to sane bounds.
+    // scorePercent must be 0–100; durationSeconds must be non-negative.
+    // Full server-side answer verification is not feasible for frontend-graded
+    // exercises, but this prevents leaderboard inflation via manipulated payloads.
+    const scorePercent = args.scorePercent !== undefined
+      ? Math.max(0, Math.min(100, args.scorePercent))
+      : undefined;
+    const durationSeconds = args.durationSeconds !== undefined
+      ? Math.max(0, args.durationSeconds)
+      : undefined;
+
+    // Validate sourceType at runtime then cast to the schema union.
+    const VALID_SOURCE = ['exercise', 'pastpaper'] as const;
+    type SourceType = typeof VALID_SOURCE[number];
+    if (!VALID_SOURCE.includes(args.sourceType as SourceType)) {
+      throw new Error(`Invalid sourceType '${args.sourceType}'. Must be 'exercise' or 'pastpaper'.`);
+    }
+
     return await ctx.db.insert("studyAttempts", {
       ownerUserId,
-      sourceType: args.sourceType,
+      sourceType: args.sourceType as SourceType,
       activityType: args.activityType,
       subject: args.subject,
       unitId: args.unitId,
@@ -37,9 +55,9 @@ export const recordAttempt = mutation({
       paperId: args.paperId,
       paperTitle: args.paperTitle,
       correct: args.correct,
-      scorePercent: args.scorePercent,
+      scorePercent,
       confidence: args.confidence,
-      durationSeconds: args.durationSeconds,
+      durationSeconds,
       metadataJson: args.metadataJson,
       createdAt: now,
     });

@@ -15,11 +15,27 @@ type IdentityWithRoleClaims = {
   public_metadata?: { role?: unknown };
 };
 
-// ── Admin email list ──────────────────────────────────────────────────
-// Users whose Clerk email matches an entry are treated as admins.
-// Add additional emails to support multiple admins in the future.
-const ADMIN_EMAILS: string[] = ["iwaleedh@gmail.com"];
-const ADMIN_USERNAMES: string[] = ["admin"];
+// ── Admin config — read from environment variables (S4 fix) ──────────
+// Set ADMIN_EMAILS and ADMIN_USERNAMES in the Convex dashboard → Settings → Environment Variables.
+// Comma-separated lists: e.g. ADMIN_EMAILS="alice@example.com,bob@example.com"
+// Falls back to compile-time defaults ONLY if env vars are absent (dev convenience).
+const processEnv = (globalThis as typeof globalThis & {
+  process?: { env?: Record<string, string | undefined> };
+}).process?.env;
+
+function parseEnvList(key: string, fallback: string[]): string[] {
+  const raw = processEnv?.[key];
+  if (raw && raw.trim()) {
+    return raw.split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
+  }
+  if (typeof process !== "undefined" && process.env?.NODE_ENV !== "production") {
+    console.warn(`[authHelpers] ${key} env var not set — using hardcoded fallback. Set it in Convex dashboard for production.`);
+  }
+  return fallback;
+}
+
+const ADMIN_EMAILS: string[] = parseEnvList("ADMIN_EMAILS", ["iwaleedh@gmail.com"]);
+const ADMIN_USERNAMES: string[] = parseEnvList("ADMIN_USERNAMES", ["admin"]);
 
 export function isAdminEmail(email: string | undefined | null): boolean {
   if (!email) return false;
@@ -225,11 +241,19 @@ export async function requireHostedSessionHostOrTeacher(ctx: PublicCtx, sessionI
     throw new Error("Session not found.");
   }
 
-  if (session.hostUserId !== currentUserId && !(await isTeacherUserId(ctx, currentUserId))) {
-    throw new Error("Teacher or host access required.");
+  // S7 fix: A teacher must be the HOST of THIS specific session, not merely any teacher.
+  // The previous check `isTeacherUserId(ctx, currentUserId)` allowed any teacher to
+  // access, modify, or drop into any active session system-wide (privilege escalation).
+  if (session.hostUserId === currentUserId) {
+    return { currentUserId, session };
   }
 
-  return { currentUserId, session };
+  // Admins retain override access (for support/moderation purposes only).
+  if (await isAdmin(ctx)) {
+    return { currentUserId, session };
+  }
+
+  throw new Error("Only the session host or an admin can perform this action.");
 }
 
 export async function requireHostedSessionAccess(ctx: PublicCtx, sessionId: string) {

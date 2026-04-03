@@ -406,14 +406,27 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    /* A7: default (dark theme) amber — contrast ≥ 4.5:1 against dark surface (#111827) */
     color: #fbbf24;
     margin-bottom: var(--space-2);
 }
 
 .nb-summary p {
     margin: 0;
-    color: #fef3c7;
+    /* A7: use theme-aware text variable; #fef3c7 was near-white on light-mode backgrounds */
+    color: var(--color-text);
     font-size: var(--font-size-sm);
+}
+
+/* A7: Light-mode overrides — amber #fbbf24 fails contrast on the pale-amber summary bg.
+   #92400e (#8B6914 or darker) gives ≥ 4.5:1 against rgba(245,158,11,0.18) over #fff. */
+[data-theme="light"] .nb-summary-label {
+    color: #92400e;
+}
+
+[data-theme="light"] .nb-summary p {
+    color: #132033;
+    /* same as --color-text in light mode */
 }
 
 /* ── Callout ──────────────────────────────────────────────────────────────── */
@@ -536,14 +549,15 @@
     --note-svg-grid: rgba(148, 163, 184, 0.35);
 }
 
-/* SVG scales down proportionally on wide screens */
 .nb-svg-container svg {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    max-height: 400px;
-    width: auto;
+    width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
+    /* C7: Fix SVG layout shift */
+    max-height: 60vh;
 }
 
 .nb-svg-container svg text,
@@ -689,8 +703,8 @@
 
 /* ── Code ─────────────────────────────────────────────────────────────────── */
 .nb-code {
-    background: #1e293b;
-    color: #e2e8f0;
+    background: var(--color-bg-tertiary);
+    color: var(--color-text);
     padding: var(--space-4) var(--space-5);
     border-radius: 10px;
     font-size: var(--font-size-sm);
@@ -774,40 +788,67 @@
 .nb-deeper-understand {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.16), rgba(59, 130, 246, 0.08));
 }
-.nb-deeper-understand .nb-deeper-card-label { color: #93c5fd; }
-.nb-deeper-understand .nb-deeper-card-text  { color: #dbeafe; }
+
+.nb-deeper-understand .nb-deeper-card-label {
+    color: #93c5fd;
+}
+
+.nb-deeper-understand .nb-deeper-card-text {
+    color: #dbeafe;
+}
 
 /* Apply — green */
 .nb-deeper-apply {
     background: linear-gradient(135deg, rgba(22, 163, 74, 0.16), rgba(34, 197, 94, 0.08));
 }
-.nb-deeper-apply .nb-deeper-card-label { color: #86efac; }
-.nb-deeper-apply .nb-deeper-card-text  { color: #dcfce7; }
+
+.nb-deeper-apply .nb-deeper-card-label {
+    color: #86efac;
+}
+
+.nb-deeper-apply .nb-deeper-card-text {
+    color: #dcfce7;
+}
 
 /* Analyse — cyan */
 .nb-deeper-analyze {
     background: linear-gradient(135deg, rgba(6, 182, 212, 0.16), rgba(34, 211, 238, 0.08));
 }
-.nb-deeper-analyze .nb-deeper-card-label { color: #67e8f9; }
-.nb-deeper-analyze .nb-deeper-card-text  { color: #cffafe; }
+
+.nb-deeper-analyze .nb-deeper-card-label {
+    color: #67e8f9;
+}
+
+.nb-deeper-analyze .nb-deeper-card-text {
+    color: #cffafe;
+}
 
 /* Evaluate — amber */
 .nb-deeper-evaluate {
     background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(251, 191, 36, 0.08));
 }
-.nb-deeper-evaluate .nb-deeper-card-label { color: #fbbf24; }
-.nb-deeper-evaluate .nb-deeper-card-text  { color: #fef3c7; }
+
+.nb-deeper-evaluate .nb-deeper-card-label {
+    color: #fbbf24;
+}
+
+.nb-deeper-evaluate .nb-deeper-card-text {
+    color: #fef3c7;
+}
 
 @media (max-width: 600px) {
     .nb-deeper-grid {
         grid-template-columns: 1fr;
     }
+
     .nb-deeper-card {
         border-right: none;
     }
+
     .nb-deeper-card:nth-last-child(-n+2) {
         border-bottom: 1px solid var(--color-border-light);
     }
+
     .nb-deeper-card:last-child {
         border-bottom: none;
     }
@@ -831,4 +872,20 @@
 
 .nb-svg-figure {
     background: var(--color-bg-secondary);
+}
+
+/* ── Tablet Responsive Breakpoint (C6) ────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .nb-equation {
+        overflow-x: auto;
+        padding: var(--space-2);
+    }
+
+    .nb-svg-container {
+        padding: 0 var(--space-2);
+    }
+
+    .nb-table-container {
+        overflow-x: auto;
+    }
 }

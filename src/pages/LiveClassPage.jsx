@@ -10,6 +10,7 @@ import {
   isTeacher as convexIsTeacher,
   subscribeToJoinStatus, subscribeToJoinRequests,
 } from '../convex-client.js';
+import { closeSyncChannel } from '../services/liveclass/localLiveClassStore.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
 import { useAuth } from '../hooks/useAuth.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
@@ -242,6 +243,7 @@ export default function LiveClassPage() {
   const [endedMsg, setEndedMsg] = useState('');
   const [_linkCopied, setLinkCopied] = useState(false);  // reserved for share-link UX
   const [codeCopied, setCodeCopied] = useState(false);
+  const copyTimersRef = useRef(new Set()); // M1: track copy-handler timers to clear on unmount
 
   // Join-request state (student side)
   const [joinRequestId, setJoinRequestId] = useState(null); // Convex _id string
@@ -474,6 +476,7 @@ export default function LiveClassPage() {
         clearTimeout(fullBroadcastTrailingRef.current);
         fullBroadcastTrailingRef.current = setTimeout(() => {
           fullBroadcastTrailingRef.current = null;
+          if (unmountedRef.current) return; // M2: skip if component already unmounted
           lastFullBroadcastRef.current = Date.now();
           broadcastCanvasState();
         }, 3000 - timeSinceLast);
@@ -489,7 +492,8 @@ export default function LiveClassPage() {
     const url = new URL(`live/${sessionId}`, window.location.origin + import.meta.env.BASE_URL).href;
     navigator.clipboard.writeText(url).then(() => {
       setLinkCopied(true);
-      setTimeout(() => setLinkCopied(false), 2000);
+      const t = setTimeout(() => { copyTimersRef.current.delete(t); setLinkCopied(false); }, 2000);
+      copyTimersRef.current.add(t);
     });
   }, [sessionId]);
 
@@ -498,7 +502,8 @@ export default function LiveClassPage() {
     if (!code) return;
     navigator.clipboard.writeText(code).then(() => {
       setCodeCopied(true);
-      setTimeout(() => setCodeCopied(false), 2000);
+      const t = setTimeout(() => { copyTimersRef.current.delete(t); setCodeCopied(false); }, 2000);
+      copyTimersRef.current.add(t);
     });
   }, [sessionData]);
 
@@ -513,6 +518,7 @@ export default function LiveClassPage() {
   const broadcastRef = useRef(null);
   const lastFullBroadcastRef = useRef(0); // throttle full canvas-state broadcasts
   const fullBroadcastTrailingRef = useRef(null); // trailing timer for full canvas-state broadcasts
+  const unmountedRef = useRef(false); // M2: guard flag to prevent timer callbacks after unmount
 
   const [canvasSize, setCanvasSize] = useState({ w: 1, h: 1 });
 
@@ -520,6 +526,15 @@ export default function LiveClassPage() {
   const rulerStateRef = useRef({ x: 200, y: 200, angle: 0 });
   const handleRulerStateChange = useCallback(({ x, y, angle }) => {
     rulerStateRef.current = { x, y, angle };
+  }, []);
+
+  // M1: Clear copy-handler timers on unmount
+  useEffect(() => {
+    const timers = copyTimersRef.current;
+    return () => {
+      timers.forEach((t) => clearTimeout(t));
+      timers.clear();
+    };
   }, []);
 
   useEffect(() => {
@@ -642,19 +657,20 @@ export default function LiveClassPage() {
   useEffect(() => {
     if (!classId) return;
 
-    onConvexError(() => {
+    const unsubError = onConvexError(() => {
       // Only update to offline if we haven't already connected
       setStdbStatus(prev => prev === 'connected' ? 'connected' : 'offline');
     });
 
-    onConvexDisconnect(() => {
+    const unsubDisconnect = onConvexDisconnect(() => {
       // WebSocket dropped — mark as offline so UI updates
       setStdbStatus('offline');
     });
 
     let cancelled = false;
 
-    onConvexReady(() => {
+    const unsubReady = onConvexReady(() => {
+      if (cancelled) return;
       void (async () => {
         setStdbStatus('connected');
         const userId = getCurrentUserId();
@@ -700,6 +716,9 @@ export default function LiveClassPage() {
 
     return () => {
       cancelled = true;
+      unsubReady();
+      unsubError();
+      unsubDisconnect();
     };
   }, [authRole, classId, joinRequestId, location.state]);
 
@@ -928,6 +947,16 @@ export default function LiveClassPage() {
     return () => {
       bc.close();
       broadcastRef.current = null;
+      // Close the module-level BroadcastChannel from localLiveClassStore so it
+      // doesn't leak an event listener after the LiveClass page unmounts.
+      closeSyncChannel();
+      // M2: set unmounted guard so any trailing timer callbacks become no-ops
+      unmountedRef.current = true;
+      // Clear any pending trailing canvas-state broadcast timer
+      if (fullBroadcastTrailingRef.current) {
+        clearTimeout(fullBroadcastTrailingRef.current);
+        fullBroadcastTrailingRef.current = null;
+      }
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role, classId]);

@@ -101,9 +101,15 @@ function AuthContextProvider({ children }) {
   const [accountStatus, setAccountStatus] = useState(null);
   const [isAdminUser, setIsAdminUser] = useState(false);
   const [syncedAccessKey, setSyncedAccessKey] = useState(null);
-  const expectedAccessKey = isLoaded
-    ? (isSignedIn && clerkUser ? `signed-in:${clerkUser.id}` : 'signed-out')
-    : null;
+  // Stabilised via useMemo — clerkUser is an object that changes reference on
+  // every render, so computing this inline would cause the sync effect to see
+  // a new string dep on every render → spurious re-runs and auth race conditions.
+  const expectedAccessKey = useMemo(
+    () => isLoaded
+      ? (isSignedIn && clerkUser ? `signed-in:${clerkUser.id}` : 'signed-out')
+      : null,
+    [isLoaded, isSignedIn, clerkUser?.id], // eslint-disable-line react-hooks/exhaustive-deps
+  );
 
   useEffect(() => {
     let cancelled = false;

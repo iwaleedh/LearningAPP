@@ -92,7 +92,7 @@
     border-radius: var(--radius-lg);
     background: var(--color-bg-secondary);
     color: var(--color-text);
-    font-family: var(--font-family-base);
+    font-family: var(--font-sans);
     font-size: var(--font-size-sm);
     resize: vertical;
     margin-bottom: var(--space-3);
@@ -258,7 +258,7 @@
     border-radius: var(--radius-lg);
     background: var(--color-bg-secondary);
     color: var(--color-text);
-    font-family: var(--font-family-base);
+    font-family: var(--font-sans);
     font-size: var(--font-size-sm);
     resize: vertical;
     line-height: var(--line-height-relaxed);

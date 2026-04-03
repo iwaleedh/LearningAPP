@@ -10,7 +10,10 @@ export function useSyllabus(subject) {
     const error = errorsBySubject[subjectKey] || null;
 
     useEffect(() => {
-        if (syllabus || error) {
+        // Only fetch if we don't already have data (or an error) for this subject.
+        // Do NOT include syllabus/error in the dep array — they are derived from
+        // setS state updated inside this effect, which would create a feedback loop.
+        if (syllabusesBySubject[subjectKey] || errorsBySubject[subjectKey]) {
             return;
         }
 
@@ -33,7 +36,8 @@ export function useSyllabus(subject) {
         return () => {
             cancelled = true;
         };
-    }, [error, subjectKey, syllabus]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentionally omit derived syllabus/error
+    }, [subjectKey]);
 
     return {
         subjectKey,

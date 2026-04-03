@@ -56,8 +56,17 @@ export function buildSubjectGraph(currentNoteId, subjectNotes) {
         ? current.mentions
         : extractMentionsFromDoc({ blocks: current.blocks || [] });
 
+    // D18: Use a visited set to guard against circular mention chains.
+    // The graph is intentionally 1-hop only (current note → its direct mentions)
+    // to keep it simple and avoid cycle risk. The visited guard ensures
+    // correctness if this is ever extended to multi-hop traversal.
+    const visited = new Set([currentNoteId]);
+
     const uniqueTargets = [...new Set(outgoing.map((item) => item.targetNoteId))]
-        .filter((id) => byId.has(id));
+        .filter((id) => byId.has(id) && !visited.has(id));
+
+    // Mark all direct targets as visited (prevents duplicate nodes on re-entry).
+    uniqueTargets.forEach((id) => visited.add(id));
 
     const nodes = [
         {

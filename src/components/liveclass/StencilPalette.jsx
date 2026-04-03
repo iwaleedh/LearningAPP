@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { X, ChevronDown, ChevronRight } from 'lucide-react';
 import { stencilsBySubject, getStencilCategories } from '../../data/liveClassStencils/index.js';
+import DOMPurify from 'dompurify';
 
 const SUBJECT_LABELS = {
   chemistry: 'Chemistry',
@@ -89,7 +90,11 @@ export default function StencilPalette({ onDropStencil, onClose }) {
                     >
                       <div
                         className="lc-stencil-preview"
-                        dangerouslySetInnerHTML={{ __html: st.svg }}
+                        dangerouslySetInnerHTML={{
+                          __html: DOMPurify.sanitize(st.svg, {
+                            USE_PROFILES: { svg: true, svgFilters: true },
+                          }),
+                        }}
                       />
                       <span className="lc-stencil-label">{st.label}</span>
                     </div>

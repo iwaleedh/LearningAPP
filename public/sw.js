@@ -2,7 +2,10 @@
 
 const BASE_PATH = new URL('./', self.location.href).pathname; // e.g. '/LearningAPP/'
 const OFFLINE_PAGE = BASE_PATH + 'offline.html';
-const OFFLINE_CACHE = 'offline-shell-v9';
+const CURRENT_VERSION = 'v10';
+const OFFLINE_CACHE = `offline-shell-${CURRENT_VERSION}`;
+const CODE_CACHE = `code-cache-${CURRENT_VERSION}`;
+const CACHE_PREFIXES = [OFFLINE_CACHE, CODE_CACHE];
 
 // ── On install: pre-cache offline fallback page and skip waiting ──
 self.addEventListener('install', (event) => {
@@ -15,11 +18,13 @@ self.addEventListener('install', (event) => {
 // ── On activate: delete OLD caches, then claim all clients ──
 self.addEventListener('activate', (event) => {
     event.waitUntil(
-        caches.keys()
-            .then((keys) => Promise.all(
-                keys.filter(k => k !== OFFLINE_CACHE).map(k => caches.delete(k))
-            ))
-            .then(() => self.clients.claim())
+        caches.keys().then((keys) => Promise.all(
+            keys.map(k => {
+                if (!CACHE_PREFIXES.includes(k) && (k.startsWith('offline-') || k.startsWith('code-'))) {
+                    return caches.delete(k);
+                }
+            })
+        )).then(() => self.clients.claim())
     );
 });
 
@@ -34,8 +39,9 @@ self.addEventListener('fetch', (event) => {
                 .then((response) => {
                     // Cache the fresh version
                     const clone = response.clone();
-                    caches.open('code-cache-v9').then((cache) => {
+                    caches.open(CODE_CACHE).then((cache) => {
                         cache.put(event.request, clone);
+                        // Optional size trim (e.g., limit LRU) could be placed here
                     });
                     return response;
                 })

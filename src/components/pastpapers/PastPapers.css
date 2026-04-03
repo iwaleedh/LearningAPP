@@ -29,7 +29,7 @@
 
 .exam-timer.low-time .exam-timer-fill {
     background: var(--color-error);
-    animation: pulse-timer 1s ease-in-out infinite;
+    animation: pulse-timer 1s ease-in-out 3;
 }
 
 @keyframes pulse-timer {
@@ -565,10 +565,10 @@
 }
 
 /* Download Button States */
-.btn-success {
-    background: var(--color-success) !important;
-    color: var(--color-text-inverse) !important;
-    border-color: var(--color-success) !important;
+.past-paper-downloads .btn-success {
+    background: var(--color-success);
+    color: var(--color-text-inverse);
+    border-color: var(--color-success);
 }
 
 /* Subject Buttons */

@@ -527,7 +527,9 @@ const TABS = [
 
 export default function AdminPage() {
   const navigate = useNavigate();
-  const { isAdmin } = useAuth();
+  // isLoaded: Clerk has finished resolving the session (true once auth state is known)
+  // isAdmin:  undefined while loading, true for admins, false for everyone else
+  const { isLoaded, isAdmin } = useAuth();
   const [tab, setTab] = useState('overview');
 
   const pendingUsers    = useQuery(api.admin.listPendingUsers) ?? [];
@@ -535,7 +537,15 @@ export default function AdminPage() {
   const paymentCounts      = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
   const pendingPaymentCount = paymentCounts.pending ?? 0;
 
-  if (isAdmin === false) {
+  // Show a neutral loading state while auth is resolving to prevent the
+  // ~100ms flash-of-admin-content race window (S5).
+  // Previously: `if (isAdmin === false)` — when isAdmin is undefined (loading),
+  // this condition is falsy so the full dashboard rendered momentarily.
+  if (!isLoaded) {
+    return <div className="card animate-fade-in" style={{ margin: '2rem auto', maxWidth: 400, textAlign: 'center', padding: '2rem' }}>Checking access…</div>;
+  }
+
+  if (isAdmin !== true) {
     navigate('/', { replace: true });
     return null;
   }

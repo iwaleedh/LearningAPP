@@ -40,7 +40,10 @@ export default function FillBlankExercise({ question, onNext, onMistake, onAttem
             const correctAnswer = blank.answer.toLowerCase();
             const distance = levenshtein(userAnswer, correctAnswer);
             const isExact = userAnswer === correctAnswer;
-            const isFuzzy = distance <= 2 && distance > 0;
+            // Scale tolerance to 15% of the correct answer length (min 1).
+            // Prevents short words like "ion" (3 chars) from allowing distance ≤ 2.
+            const fuzzyThreshold = Math.max(1, Math.ceil(correctAnswer.length * 0.15));
+            const isFuzzy = distance <= fuzzyThreshold && distance > 0;
             return {
                 correct: isExact || isFuzzy,
                 isExact,

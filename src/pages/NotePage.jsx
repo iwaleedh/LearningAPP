@@ -61,10 +61,10 @@ function RecallPanel({ recall, onClose }) {
 
     if (!cues.length) {
         return (
-            <div className="recall-panel">
+            <div className="recall-panel" role="complementary" aria-label="Recall mode">
                 <div className="recall-panel-header">
                     <span>🧠 Recall Mode</span>
-                    <button className="btn btn-ghost btn-sm" onClick={onClose}>✕</button>
+                    <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close recall mode">✕</button>
                 </div>
                 <p className="recall-empty">No recall cues for this note yet.</p>
             </div>
@@ -72,10 +72,10 @@ function RecallPanel({ recall, onClose }) {
     }
 
     return (
-        <div className="recall-panel">
+        <div className="recall-panel" role="complementary" aria-label="Recall mode">
             <div className="recall-panel-header">
-                <span>🧠 Recall Mode <span className="recall-count">{currentIdx + 1} / {cues.length}</span></span>
-                <button className="btn btn-ghost btn-sm" onClick={onClose} title="Close recall mode">✕</button>
+                <span id="recall-panel-title">🧠 Recall Mode <span className="recall-count">{currentIdx + 1} / {cues.length}</span></span>
+                <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close recall mode">✕</button>
             </div>
 
             <div className="recall-progress-track">
@@ -107,13 +107,14 @@ function RecallPanel({ recall, onClose }) {
                     onClick={() => { setCurrentIdx((i) => Math.max(0, i - 1)); }}
                     disabled={currentIdx === 0}
                 >← Prev</button>
-                <div className="recall-dots">
+                <div className="recall-dots" role="tablist" aria-label="Recall cue navigation">
                     {cues.map((c, i) => (
                         <button
                             key={c.id}
                             className={`recall-dot ${i === currentIdx ? 'active' : ''} ${revealedSet.has(c.id) ? 'done' : ''}`}
                             onClick={() => setCurrentIdx(i)}
-                            title={`Cue ${i + 1}`}
+                            aria-label={`Cue ${i + 1}${revealedSet.has(c.id) ? ', answered' : ''}`}
+                            aria-pressed={i === currentIdx}
                         />
                     ))}
                 </div>
@@ -369,6 +370,7 @@ export default function NotePage() {
                     <button
                         className="btn btn-secondary btn-sm"
                         onClick={() => navigate(`/chapters?subject=${context.subject}`)}
+                        aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
                     >← Chapters</button>
                 </div>
             </div>

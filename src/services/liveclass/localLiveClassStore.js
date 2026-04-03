@@ -50,6 +50,18 @@ function getSyncChannel() {
   return syncChannel;
 }
 
+/**
+ * Close the shared sync BroadcastChannel.
+ * Call this from component cleanup (e.g. LiveClassPage useEffect return) to
+ * prevent the module-level channel from leaking an event listener indefinitely.
+ */
+export function closeSyncChannel() {
+  if (syncChannel) {
+    try { syncChannel.close(); } catch { /* ignore */ }
+    syncChannel = null;
+  }
+}
+
 function broadcast(payload) {
   try {
     getSyncChannel()?.postMessage(payload);
@@ -173,6 +185,14 @@ function emitAllSubscriptions() {
     if (sessionId && tempId) {
       emitStudentNote(sessionId, tempId);
     }
+  });
+}
+
+// M3: Close the module-level BroadcastChannel when the page unloads to prevent
+// the channel from leaking an event listener indefinitely across navigations.
+if (hasWindow()) {
+  window.addEventListener('beforeunload', () => {
+    closeSyncChannel();
   });
 }
 

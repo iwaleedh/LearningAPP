@@ -84,7 +84,10 @@ export default function HomePage() {
             }
         }
 
-        onConvexReady(() => {
+        // M7: capture unsubscribe so we can remove the callback if effect cleans up
+        // before Convex is ready, and check `cancelled` inside the callback.
+        const unsubReady = onConvexReady(() => {
+            if (cancelled) return;
             void refreshLiveInvites();
 
             if (!username) return;
@@ -97,6 +100,7 @@ export default function HomePage() {
 
         return () => {
             cancelled = true;
+            unsubReady();
             unsubInvites?.();
         };
     }, [debugAuthEnabled, username]);
@@ -155,7 +159,7 @@ export default function HomePage() {
                         : String(stats[stat.key]);
                     return (
                         <div
-                            key={i}
+                            key={stat.key}
                             className={`stat-card stat-card--${stat.tone} card animate-slide-in-up`}
                             style={{ animationDelay: `${i * 0.05}s` }}
                         >

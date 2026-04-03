@@ -3,17 +3,26 @@ import { v } from "convex/values";
 
 export default defineSchema({
   users: defineTable({
-    userId: v.string(),       // Clerk user_xxx ID (or anon UUID for legacy)
+    userId: v.string(),
     username: v.string(),
-    role: v.string(),         // 'student' | 'teacher'
+    role: v.union(v.literal('student'), v.literal('teacher'), v.literal('admin')),
     email: v.optional(v.string()),
     avatarUrl: v.optional(v.string()),
-    accountStatus: v.optional(v.string()), // 'pending' | 'approved' | 'blocked' (undefined = approved for legacy)
+    // D15: enum-validated accountStatus — rejects any value not in this union.
+    accountStatus: v.optional(v.union(
+      v.literal('pending'),
+      v.literal('approved'),
+      v.literal('blocked'),
+    )),
     statusUpdatedAt: v.optional(v.number()),
     createdAt: v.number(),
   })
     .index("by_userId", ["userId"])
-    .index("by_accountStatus", ["accountStatus"]),
+    // D17: btree index for O(log n) exact-match username lookup (used by resolveCanonicalUsername).
+    .index("by_username", ["username"])
+    .index("by_accountStatus", ["accountStatus"])
+    // D17: full-text search index for the searchUsers query.
+    .searchIndex("search_username", { searchField: "username" }),
 
   notes: defineTable({
     noteId: v.string(),
@@ -34,8 +43,9 @@ export default defineSchema({
 
   studyAttempts: defineTable({
     ownerUserId: v.string(),
-    sourceType: v.string(), // 'exercise' | 'pastpaper'
-    activityType: v.string(), // e.g. 'mcq', 'keyword', 'view_question', 'download_marking'
+    // D15: enum-validated source and activity types.
+    sourceType: v.union(v.literal('exercise'), v.literal('pastpaper')),
+    activityType: v.string(), // open-ended: 'mcq', 'keyword', 'view_question', etc.
     subject: v.string(),
     unitId: v.optional(v.number()),
     topicId: v.optional(v.number()),
@@ -85,27 +95,27 @@ export default defineSchema({
     hostUserId: v.string(),
     paperId: v.string(),
     title: v.string(),
-    status: v.string(), // 'active' | 'ended'
+    status: v.union(v.literal('active'), v.literal('ended')), // D15
     createdAt: v.number(),
   })
     .index("by_status", ["status"])
     .index("by_host", ["hostUserId"]),
 
   sessionParticipants: defineTable({
-    sessionId: v.string(), // string ID — references liveSessions or liveClassSessions
+    sessionId: v.string(),
     userId: v.string(),
-    role: v.string(), // 'host' | 'editor' | 'viewer'
+    role: v.union(v.literal('host'), v.literal('editor'), v.literal('viewer')), // D15
     joinedAt: v.number(),
   })
     .index("by_session", ["sessionId"])
     .index("by_user", ["userId"]),
 
   sessionInvites: defineTable({
-    sessionId: v.string(), // string ID — references liveSessions or liveClassSessions
+    sessionId: v.string(),
     fromUserId: v.string(),
     toUserId: v.optional(v.string()),
     toUsername: v.string(),
-    status: v.string(), // 'pending' | 'accepted' | 'declined'
+    status: v.union(v.literal('pending'), v.literal('accepted'), v.literal('declined')), // D15
     createdAt: v.number(),
   })
     .index("by_session", ["sessionId"])
@@ -127,10 +137,13 @@ export default defineSchema({
   liveClassSessions: defineTable({
     hostUserId: v.string(),
     title: v.string(),
-    backgroundType: v.string(), // 'white' | 'lined' | 'grid' | 'dotted' | 'yellow'
-    status: v.string(), // 'active' | 'ended'
-    joinCode: v.optional(v.string()), // 6-char uppercase alphanumeric (optional for legacy docs)
-    autoAccept: v.optional(v.boolean()), // if true, admit students automatically (optional for legacy docs)
+    backgroundType: v.union( // D15
+      v.literal('white'), v.literal('lined'), v.literal('grid'),
+      v.literal('dotted'), v.literal('yellow'),
+    ),
+    status: v.union(v.literal('active'), v.literal('ended')), // D15
+    joinCode: v.optional(v.string()),
+    autoAccept: v.optional(v.boolean()),
     createdAt: v.number(),
   })
     .index("by_status", ["status"])
@@ -139,9 +152,9 @@ export default defineSchema({
   classJoinRequests: defineTable({
     sessionId: v.string(),
     studentName: v.string(),
-    tempId: v.string(), // client-generated UUID, unique per student tab
+    tempId: v.string(),
     requesterUserId: v.optional(v.string()),
-    status: v.string(), // 'pending' | 'accepted' | 'rejected'
+    status: v.union(v.literal('pending'), v.literal('accepted'), v.literal('rejected')), // D15
     requestedAt: v.number(),
   })
     .index("by_session", ["sessionId"])
@@ -187,11 +200,11 @@ export default defineSchema({
 
   // ── Pub/Sub Event Bus ───────────────────────────────────────────
   events: defineTable({
-    topic: v.string(),       // e.g. "note:updated", "session:ended", "user:registered"
-    payload: v.string(),     // JSON-serialised event data
-    status: v.string(),      // "pending" | "processed" | "failed"
+    topic: v.string(),
+    payload: v.string(),
+    status: v.union(v.literal('pending'), v.literal('processed'), v.literal('failed')), // D15
     publishedAt: v.number(),
-    processedAt: v.number(), // 0 until processed
+    processedAt: v.number(),
   })
     .index("by_topic", ["topic"])
     .index("by_status", ["status"]),
@@ -199,12 +212,12 @@ export default defineSchema({
   // ── Payment Requests ────────────────────────────────────────────
   paymentRequests: defineTable({
     userId:      v.string(),
-    plan:        v.string(),            // 'monthly' | 'annual'
-    amount:      v.number(),            // 100 | 1000
-    storageId:   v.id("_storage"),      // Convex file storage reference
+    plan:        v.union(v.literal('monthly'), v.literal('annual')), // D15
+    amount:      v.number(),
+    storageId:   v.id("_storage"),
     fileName:    v.string(),
     mimeType:    v.string(),
-    status:      v.string(),            // 'pending' | 'approved' | 'rejected'
+    status:      v.union(v.literal('pending'), v.literal('approved'), v.literal('rejected')), // D15
     submittedAt: v.number(),
     reviewedAt:  v.optional(v.number()),
     reviewedBy:  v.optional(v.string()),
@@ -236,4 +249,16 @@ export default defineSchema({
     .index("by_level", ["level"])
     .index("by_component", ["component"])
     .index("by_timestamp", ["timestamp"]),
+
+  // ── Audit Logs ──────────────────────────────────────────────────
+  auditLogs: defineTable({
+    actorId: v.string(),
+    action: v.string(),
+    targetId: v.optional(v.string()),
+    details: v.optional(v.string()),
+    timestamp: v.number(),
+  })
+    .index("by_actor", ["actorId"])
+    .index("by_action", ["action"])
+    .index("by_target", ["targetId"]),
 });

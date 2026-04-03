@@ -30,14 +30,56 @@ export function getLogContext() {
   return { ...globalContext };
 }
 
+/**
+ * S14 fix: Field names that should never appear in shipped log metadata.
+ * If any of these keys are present in the data object, their values are
+ * replaced with "[REDACTED]" before serialisation.
+ *
+ * This prevents passwords, tokens, or PII from being shipped to the
+ * Convex logs table if a caller accidentally passes a raw error/response
+ * object that contains sensitive fields.
+ */
+const SENSITIVE_FIELDS = new Set([
+  'password', 'passwd', 'secret', 'token', 'accessToken', 'access_token',
+  'refreshToken', 'refresh_token', 'apiKey', 'api_key', 'authorization',
+  'cookie', 'sessionToken', 'session_token', 'privateKey', 'private_key',
+  'creditCard', 'credit_card', 'cvv', 'ssn', 'passphrase',
+]);
+
+/**
+ * Recursively redact sensitive fields from an object before it reaches the log buffer.
+ * Only processes plain objects — functions, Dates, and class instances are left as-is
+ * (they will stringify to "{}" which is safe).
+ */
+function redactSensitiveFields(obj, depth = 0) {
+  // Guard: limit recursion depth to prevent DoS on deeply nested objects
+  if (depth > 5 || obj === null || typeof obj !== 'object' || Array.isArray(obj)) {
+    return obj;
+  }
+  const result = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (SENSITIVE_FIELDS.has(key) || SENSITIVE_FIELDS.has(key.toLowerCase())) {
+      result[key] = '[REDACTED]';
+    } else if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
+      result[key] = redactSensitiveFields(value, depth + 1);
+    } else {
+      result[key] = value;
+    }
+  }
+  return result;
+}
+
 function createEntry(level, message, data, component) {
+  // S14: Redact sensitive fields before serialising to the log buffer/backend
+  const safeData = data && typeof data === 'object' ? redactSensitiveFields(data) : data;
+
   return {
     level,
     message: String(message),
-    component: component || data?.component || '',
+    component: component || safeData?.component || '',
     userId: globalContext.userId || '',
     sessionId: globalContext.sessionId || '',
-    metadata: JSON.stringify({ ...data, component: undefined }),
+    metadata: JSON.stringify({ ...safeData, component: undefined }),
     timestamp: Date.now(),
   };
 }

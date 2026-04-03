@@ -73,12 +73,17 @@ export default function AdvancedPage() {
                             });
                             const note = await callQuery(api.notes.getNote, { noteId: 'test:123' });
                             if (import.meta.env.DEV) console.log('Note in DB:', note);
-                            document.getElementById('convex-result').innerText = note
-                                ? `Success! Found note: ${note.title}`
-                                : 'Upsert succeeded but note not found on query.';
+                            
+                            const resultEl = document.getElementById('convex-result');
+                            if (resultEl) {
+                                resultEl.innerText = note
+                                    ? `Success! Found note: ${note.title}`
+                                    : 'Upsert succeeded but note not found on query.';
+                            }
                         } catch (e) {
                             if (import.meta.env.DEV) console.error(e);
-                            document.getElementById('convex-result').innerText = 'Error: ' + e.message;
+                            const resultEl = document.getElementById('convex-result');
+                            if (resultEl) resultEl.innerText = 'Error: ' + e.message;
                         }
                     }}
                 >

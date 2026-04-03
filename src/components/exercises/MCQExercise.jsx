@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { CheckCircle, XCircle, ArrowRight, Lightbulb } from 'lucide-react';
 import './Exercises.css';
 
@@ -16,6 +16,8 @@ export default function MCQExercise({ question, onNext, onMistake, onAttempt }) 
     const [submitted, setSubmitted] = useState(false);
     const [showRationale, setShowRationale] = useState(false);
     const [startedAt] = useState(() => Date.now());
+    const optionRefs = useRef([]);
+
     const shuffledOptions = useMemo(() => {
         const indexed = question.options.map((opt, i) => ({ text: opt, originalIndex: i }));
         return shuffleArray(indexed);
@@ -50,45 +52,91 @@ export default function MCQExercise({ question, onNext, onMistake, onAttempt }) 
 
     const isCorrect = submitted && shuffledOptions[selected]?.originalIndex === question.correctAnswer;
 
+    // ── Keyboard navigation: radiogroup pattern (arrow keys cycle options) ─────
+    const handleGroupKeyDown = (e) => {
+        if (submitted) return;
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            const next = selected === null ? 0 : (selected + 1) % shuffledOptions.length;
+            setSelected(next);
+            optionRefs.current[next]?.focus();
+        }
+        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            const prev = selected === null
+                ? shuffledOptions.length - 1
+                : (selected - 1 + shuffledOptions.length) % shuffledOptions.length;
+            setSelected(prev);
+            optionRefs.current[prev]?.focus();
+        }
+        // Home/End: jump to first or last option (ARIA Authoring Practices requirement)
+        if (e.key === 'Home') {
+            e.preventDefault();
+            setSelected(0);
+            optionRefs.current[0]?.focus();
+        }
+        if (e.key === 'End') {
+            e.preventDefault();
+            const last = shuffledOptions.length - 1;
+            setSelected(last);
+            optionRefs.current[last]?.focus();
+        }
+        if ((e.key === ' ' || e.key === 'Enter') && selected !== null) {
+            e.preventDefault();
+            handleSubmit();
+        }
+    };
+
     if (shuffledOptions.length === 0) return null;
 
     return (
         <div className="mcq-exercise card animate-fade-in">
             <div className="mcq-stem">
-                <h3>{question.stem}</h3>
+                <h3 id={`mcq-stem-${question.id || 'q'}`}>{question.stem}</h3>
             </div>
 
-            <div className="mcq-options">
+            {/* radiogroup: arrow keys (↑ ↓ ← →), Home, End navigate; Space/Enter submits */}
+            <div
+                className="mcq-options"
+                role="radiogroup"
+                aria-labelledby={`mcq-stem-${question.id || 'q'}`}
+                aria-required="true"
+                onKeyDown={handleGroupKeyDown}
+            >
                 {shuffledOptions.map((opt, i) => {
                     const letter = String.fromCharCode(65 + i);
-                    let optionClass = 'mcq-option';
+                    const isSelected = i === selected;
+                    const isThisCorrect = opt.originalIndex === question.correctAnswer;
 
+                    let optionClass = 'mcq-option';
                     if (submitted) {
-                        if (opt.originalIndex === question.correctAnswer) {
-                            optionClass += ' correct';
-                        } else if (i === selected) {
-                            optionClass += ' incorrect';
-                        } else {
-                            optionClass += ' disabled';
-                        }
-                    } else if (i === selected) {
+                        if (isThisCorrect) optionClass += ' correct';
+                        else if (isSelected) optionClass += ' incorrect';
+                        else optionClass += ' disabled';
+                    } else if (isSelected) {
                         optionClass += ' selected';
                     }
 
                     return (
                         <button
                             key={i}
+                            ref={el => { optionRefs.current[i] = el; }}
                             className={optionClass}
                             onClick={() => !submitted && setSelected(i)}
+                            // tabIndex: only the selected or first option is in tab order (roving tabindex)
+                            tabIndex={!submitted ? (isSelected || (selected === null && i === 0) ? 0 : -1) : -1}
+                            role="radio"
+                            aria-checked={isSelected}
+                            aria-disabled={submitted}
                             disabled={submitted}
                         >
-                            <span className="mcq-option-letter">{letter}</span>
+                            <span className="mcq-option-letter" aria-hidden="true">{letter}</span>
                             <span className="mcq-option-text">{opt.text}</span>
-                            {submitted && opt.originalIndex === question.correctAnswer && (
-                                <CheckCircle size={18} className="mcq-option-icon correct-icon" />
+                            {submitted && isThisCorrect && (
+                                <CheckCircle size={18} className="mcq-option-icon correct-icon" aria-label="Correct answer" />
                             )}
-                            {submitted && i === selected && opt.originalIndex !== question.correctAnswer && (
-                                <XCircle size={18} className="mcq-option-icon incorrect-icon" />
+                            {submitted && isSelected && !isThisCorrect && (
+                                <XCircle size={18} className="mcq-option-icon incorrect-icon" aria-label="Your incorrect answer" />
                             )}
                         </button>
                     );

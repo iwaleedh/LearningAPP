@@ -114,6 +114,17 @@ export default defineConfig(({ command }) => ({
     headers: {
       // Prevent the browser from HTTP-caching sw.js — always fetch fresh from disk
       'Service-Worker-Allowed': '/',
+      // Basic CSP to catch injection issues in development
+      'Content-Security-Policy': [
+        "default-src 'self'",
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval'",  // unsafe-eval needed by Vite HMR
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+        "font-src 'self' https://fonts.gstatic.com",
+        "img-src 'self' data: blob: https:",
+        "connect-src 'self' wss: https:",
+        "frame-src 'self' https:",
+        "worker-src 'self' blob:",
+      ].join('; '),
     },
   },
 }))

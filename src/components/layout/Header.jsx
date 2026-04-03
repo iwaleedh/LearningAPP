@@ -9,7 +9,7 @@ import './Layout.css';
 
 const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
 
-export default function Header({ onMenuToggle, onSearchOpen }) {
+export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
     const { canSignIn, debugAuthEnabled, isSignedIn, isLoaded } = useAuth();
     const [authOpen, setAuthOpen] = useState(false);
     const location = useLocation();
@@ -18,8 +18,14 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
     return (
         <>
             <header className="app-header">
-                <button className="btn btn-icon header-menu-btn" onClick={onMenuToggle}>
-                    <Menu size={22} />
+                <button
+                    className="btn btn-icon header-menu-btn"
+                    onClick={onMenuToggle}
+                    aria-label={sidebarOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                    aria-expanded={Boolean(sidebarOpen)}
+                    aria-controls="app-sidebar"
+                >
+                    <Menu size={22} aria-hidden="true" />
                 </button>
 
                 <div className="header-spacer" />
@@ -28,11 +34,12 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
                     <button
                         className="header-search-btn"
                         onClick={onSearchOpen}
-                        title="Search (⌘K)"
+                        aria-label="Search (Command K)"
+                        aria-keyshortcuts="Meta+k"
                     >
-                        <Search size={18} />
-                        <span className="search-hint">Search...</span>
-                        <kbd className="search-kbd">⌘K</kbd>
+                        <Search size={18} aria-hidden="true" />
+                        <span className="search-hint" aria-hidden="true">Search...</span>
+                        <kbd className="search-kbd" aria-hidden="true">⌘K</kbd>
                     </button>
 
                     {isLoaded && isSignedIn && !debugAuthEnabled && <NotificationBell />}

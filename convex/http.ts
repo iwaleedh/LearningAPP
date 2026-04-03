@@ -111,6 +111,22 @@ http.route({
       );
     }
 
+    // S6 fix: Topic allowlist — only accept known external webhook topics.
+    // Without this, any authenticated caller can publish to internal topics
+    // (e.g. "session:ended", "payment:confirmed") and trigger unintended handlers.
+    const ALLOWED_WEBHOOK_TOPICS = new Set([
+      "external:notification",
+      "external:status_update",
+      "external:data_sync",
+    ]);
+
+    if (!ALLOWED_WEBHOOK_TOPICS.has(body.topic)) {
+      return new Response(
+        JSON.stringify({ error: "Unknown or disallowed topic." }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
     // Publish to the event bus
     await ctx.runMutation(internal.eventBus.internalPublish, {
       topic: body.topic,

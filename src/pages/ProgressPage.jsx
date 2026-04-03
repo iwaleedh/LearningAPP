@@ -40,8 +40,13 @@ export default function ProgressPage() {
     const chapterProgress = buildChapterProgress(readIds);
 
     const startedSubjects = chapterProgress.filter(c => c.read > 0);
-    const overallProgress = startedSubjects.length > 0
-        ? Math.round(startedSubjects.reduce((sum, c) => sum + c.progress, 0) / startedSubjects.length)
+    // Average over ALL subjects that have notes — not just started ones.
+    // The old approach (averaging only startedSubjects) inflated the % because
+    // a subject with 1/1 notes read would count as 100% even if 14 other subjects
+    // had 0% completion.
+    const subjectsWithContent = chapterProgress.filter(c => (subjectNoteCounts[SUBJECTS.find(s => s.label === c.name)?.key] || 0) > 0);
+    const overallProgress = subjectsWithContent.length > 0
+        ? Math.round(subjectsWithContent.reduce((sum, c) => sum + c.progress, 0) / subjectsWithContent.length)
         : 0;
 
     const aLevelProgress = chapterProgress.filter(c => c.group === 'alevel');

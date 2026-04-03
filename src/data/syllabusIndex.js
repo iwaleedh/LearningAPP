@@ -97,10 +97,13 @@ export async function getSyllabusBySubject(subject) {
     const subjectKey = normalizeSubjectKey(subject);
 
     if (!subjectSyllabusCache.has(subjectKey)) {
-        subjectSyllabusCache.set(
-            subjectKey,
-            subjectModuleLoaders[subjectKey]().then((module) => subjectModuleResolvers[subjectKey](module)),
-        );
+        const promise = subjectModuleLoaders[subjectKey]()
+            .then((module) => subjectModuleResolvers[subjectKey](module))
+            .catch((err) => {
+                subjectSyllabusCache.delete(subjectKey);
+                throw err;
+            });
+        subjectSyllabusCache.set(subjectKey, promise);
     }
 
     return subjectSyllabusCache.get(subjectKey);

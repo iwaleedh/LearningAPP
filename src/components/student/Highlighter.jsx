@@ -29,11 +29,41 @@ export default function Highlighter({ chapterId = 'default' }) {
 
     // Apply existing highlights to DOM
     useEffect(() => {
-        // Clear all existing highlights first
+        if ('highlights' in CSS) {
+            CSS.highlights.clear();
+            const colorMap = {};
+            highlights.forEach(h => {
+                const walker = document.createTreeWalker(
+                    document.querySelector('.chapter-body') || document.body,
+                    NodeFilter.SHOW_TEXT, null, false
+                );
+                let node;
+                while ((node = walker.nextNode())) {
+                    const idx = node.textContent.indexOf(h.text);
+                    if (idx !== -1) {
+                        const range = document.createRange();
+                        range.setStart(node, idx);
+                        range.setEnd(node, idx + h.text.length);
+                        if (!colorMap[h.colorName]) colorMap[h.colorName] = [];
+                        colorMap[h.colorName].push(range);
+                        break;
+                    }
+                }
+            });
+            Object.entries(colorMap).forEach(([colorName, ranges]) => {
+                const highlight = new Highlight(...ranges);
+                CSS.highlights.set(`user-highlight-${colorName.toLowerCase()}`, highlight);
+            });
+            return;
+        }
+
+        // Clear all existing highlights first (fallback)
         document.querySelectorAll('.user-highlight').forEach(el => {
             const parent = el.parentNode;
-            parent.replaceChild(document.createTextNode(el.textContent), el);
-            parent.normalize();
+            if (parent) {
+                parent.replaceChild(document.createTextNode(el.textContent), el);
+                parent.normalize();
+            }
         });
 
         // Re-apply saved highlights
