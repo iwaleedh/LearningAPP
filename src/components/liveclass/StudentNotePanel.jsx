@@ -9,6 +9,7 @@ import { updateStudentNote, getStudentNote } from '../../convex-client.js';
 export default function StudentNotePanel({ sessionId, tempId, onClose }) {
   const [content, setContent] = useState('');
   const [saving, setSaving] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const debounceRef = useRef(null);
   const loadedRef = useRef(false);
 
@@ -18,8 +19,15 @@ export default function StudentNotePanel({ sessionId, tempId, onClose }) {
     loadedRef.current = true;
     getStudentNote(sessionId, tempId).then(note => {
       if (note?.noteContent) setContent(note.noteContent);
-    });
+    }).catch(err => {
+      console.error('[StudentNotePanel] load failed:', err);
+    }).finally(() => setLoaded(true));
   }, [sessionId, tempId]);
+
+  // H-9: Clear debounce timer on unmount to prevent zombie writes
+  useEffect(() => {
+    return () => clearTimeout(debounceRef.current);
+  }, []);
 
   const handleChange = (e) => {
     const val = e.target.value;
@@ -36,7 +44,7 @@ export default function StudentNotePanel({ sessionId, tempId, onClose }) {
     <div className="snp-panel card animate-fade-in">
       <div className="snp-header">
         <span className="snp-title">My Notes</span>
-        <span className="snp-save-status">{saving ? 'Saving…' : 'Saved'}</span>
+        <span className="snp-save-status">{!loaded ? 'Loading…' : saving ? 'Saving…' : 'Saved'}</span>
         <button className="btn btn-icon btn-ghost btn-sm" onClick={onClose} title="Close notes">
           <X size={14} />
         </button>
@@ -47,6 +55,7 @@ export default function StudentNotePanel({ sessionId, tempId, onClose }) {
         value={content}
         onChange={handleChange}
         spellCheck={true}
+        aria-label="Personal notes"
       />
     </div>
   );

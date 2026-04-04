@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { getLiveClassByCode, requestJoin } from '../../convex-client.js';
@@ -17,6 +17,15 @@ export default function JoinClassModal({ onClose }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const authBlocked = isLoaded && canSignIn && !isSignedIn;
+
+  // L-4 + M-2: Escape key handler
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -86,12 +95,12 @@ export default function JoinClassModal({ onClose }) {
 
   return (
     <div className="jcm-backdrop" onClick={onClose}>
-      <div className="jcm-dialog card" onClick={(e) => e.stopPropagation()}>
+      <div className="jcm-dialog card" role="dialog" aria-modal="true" aria-labelledby="jcm-title" onClick={(e) => e.stopPropagation()}>
         <button className="jcm-close btn btn-icon btn-ghost btn-sm" onClick={onClose} title="Close">
           <X size={16} />
         </button>
         <div className="lc-join-icon">🎓</div>
-        <h2 className="lc-join-title">Join Live Class</h2>
+        <h2 id="jcm-title" className="lc-join-title">Join Live Class</h2>
         <p className="lc-join-subtitle">
           {authBlocked
             ? canSignIn

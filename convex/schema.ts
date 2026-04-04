@@ -280,6 +280,31 @@ export default defineSchema({
     updatedBy: v.optional(v.string()),
   }).index("by_class", ["classId"]),
 
+  // H-11: Persistent poll storage for Live Classroom
+  liveClassPolls: defineTable({
+    classId: v.id("liveClassSessions"),
+    creatorUserId: v.string(),
+    question: v.string(),
+    type: v.union(v.literal('mcq'), v.literal('truefalse'), v.literal('freetext')),
+    options: v.array(v.string()),
+    correctIndex: v.number(), // -1 if no correct answer
+    status: v.union(v.literal('active'), v.literal('closed')),
+    createdAt: v.number(),
+  })
+    .index("by_class", ["classId"])
+    .index("by_class_status", ["classId", "status"]),
+
+  liveClassPollResponses: defineTable({
+    pollId: v.id("liveClassPolls"),
+    classId: v.id("liveClassSessions"),
+    respondentUserId: v.string(),
+    selectedIndex: v.optional(v.number()),
+    text: v.optional(v.string()),
+    submittedAt: v.number(),
+  })
+    .index("by_poll", ["pollId"])
+    .index("by_poll_respondent", ["pollId", "respondentUserId"]),
+
   // ── Pub/Sub Event Bus ───────────────────────────────────────────
   events: defineTable({
     topic: v.string(),

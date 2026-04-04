@@ -52,10 +52,23 @@ const COLORS = [
   // Blue / Cyan
   '#1e3a8a', '#1d4ed8', '#3b82f6', '#60a5fa', '#0891b2', '#06b6d4', '#22d3ee', '#93c5fd',
   // Purple / Pink
-  '#581c87', '#1d4ed8', '#8b5cf6', '#3b82f6', '#be185d', '#ec4899', '#f472b6', '#e879f9',
+  '#581c87', '#7c3aed', '#8b5cf6', '#a78bfa', '#be185d', '#ec4899', '#f472b6', '#e879f9',
 ];
 
 const STROKE_WIDTHS = [1, 2, 3, 4, 5, 10, 16];
+
+const COLOR_NAMES = {
+  '#000000': 'Black', '#1f2937': 'Dark Grey', '#4b5563': 'Grey', '#9ca3af': 'Cool Grey',
+  '#d1d5db': 'Light Grey', '#f9fafb': 'Off White', '#ffffff': 'White', '#78350f': 'Brown',
+  '#991b1b': 'Dark Red', '#ef4444': 'Red', '#f97316': 'Orange', '#f59e0b': 'Amber',
+  '#fbbf24': 'Yellow', '#fef3c7': 'Cream', '#fca5a5': 'Light Red', '#fde68a': 'Light Yellow',
+  '#14532d': 'Dark Green', '#15803d': 'Green', '#22c55e': 'Lime', '#4ade80': 'Light Green',
+  '#10b981': 'Emerald', '#34d399': 'Teal', '#6ee7b7': 'Mint', '#a7f3d0': 'Pale Green',
+  '#1e3a8a': 'Navy', '#1d4ed8': 'Blue', '#3b82f6': 'Sky Blue', '#60a5fa': 'Light Blue',
+  '#0891b2': 'Cyan', '#06b6d4': 'Turquoise', '#22d3ee': 'Aqua', '#93c5fd': 'Pale Blue',
+  '#581c87': 'Dark Purple', '#7c3aed': 'Violet', '#8b5cf6': 'Purple', '#a78bfa': 'Lavender',
+  '#be185d': 'Dark Pink', '#ec4899': 'Pink', '#f472b6': 'Light Pink', '#e879f9': 'Magenta',
+};
 
 /**
  * LiveClassToolbar — main toolbar for the Live Class canvas.
@@ -139,89 +152,86 @@ export default function LiveClassToolbar({
   const colorBtnRef = useRef(null);
   const widthBtnRef = useRef(null);
 
-  // Close laser mode picker when clicking outside
+  // M-8: Consolidated outside-click listener for all dropdowns
   useEffect(() => {
-    if (!showLaserMode) return;
+    const anyOpen = showLaserMode || showShapes || showDiagram || showColors || showWidths;
+    if (!anyOpen) return;
     const handleClickOutside = (e) => {
-      if (laserBtnRef.current && !laserBtnRef.current.contains(e.target)) {
-        // Check if click is inside the portal dropdown
+      if (showLaserMode && laserBtnRef.current && !laserBtnRef.current.contains(e.target)) {
         const dropdown = document.getElementById('laser-mode-dropdown');
-        if (dropdown && dropdown.contains(e.target)) return;
-        setShowLaserMode(false);
+        if (!(dropdown && dropdown.contains(e.target))) setShowLaserMode(false);
       }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showLaserMode]);
-
-  // Close shape dropdown when clicking outside
-  useEffect(() => {
-    if (!showShapes) return;
-    const handleClickOutside = (e) => {
-      if (shapeBtnRef.current && !shapeBtnRef.current.contains(e.target)) {
+      if (showShapes && shapeBtnRef.current && !shapeBtnRef.current.contains(e.target)) {
         setShowShapes(false);
       }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showShapes]);
-
-  // Close diagram dropdown when clicking outside
-  useEffect(() => {
-    if (!showDiagram) return;
-    const handleClickOutside = (e) => {
-      if (diagramBtnRef.current && !diagramBtnRef.current.contains(e.target)) {
+      if (showDiagram && diagramBtnRef.current && !diagramBtnRef.current.contains(e.target)) {
         setShowDiagram(false);
       }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showDiagram]);
-
-  // Close color dropdown when clicking outside
-  useEffect(() => {
-    if (!showColors) return;
-    const handleClickOutside = (e) => {
-      const dropdown = document.getElementById('lc-color-grid-dropdown');
-      if (
-        colorBtnRef.current && !colorBtnRef.current.contains(e.target) &&
-        !(dropdown && dropdown.contains(e.target))
-      ) {
-        setShowColors(false);
+      if (showColors && colorBtnRef.current && !colorBtnRef.current.contains(e.target)) {
+        const dropdown = document.getElementById('lc-color-grid-dropdown');
+        if (!(dropdown && dropdown.contains(e.target))) setShowColors(false);
+      }
+      if (showWidths && widthBtnRef.current && !widthBtnRef.current.contains(e.target)) {
+        const dropdown = document.getElementById('lc-width-dropdown');
+        if (!(dropdown && dropdown.contains(e.target))) setShowWidths(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showColors]);
+  }, [showLaserMode, showShapes, showDiagram, showColors, showWidths]);
+
+  // M-13: close all dropdowns on window resize or scroll so portals don't float off
+  useEffect(() => {
+    const anyOpen = showLaserMode || showShapes || showDiagram || showColors || showWidths;
+    if (!anyOpen) return;
+    const closeAll = () => {
+      setShowLaserMode(false);
+      setShowShapes(false);
+      setShowDiagram(false);
+      setShowColors(false);
+      setShowWidths(false);
+    };
+    window.addEventListener('resize', closeAll);
+    window.addEventListener('scroll', closeAll, true);
+    return () => {
+      window.removeEventListener('resize', closeAll);
+      window.removeEventListener('scroll', closeAll, true);
+    };
+  }, [showLaserMode, showShapes, showDiagram, showColors, showWidths]);
+
+  // M-5: Clamp a dropdown position so it stays within the viewport
+  function clampDropdownPos(rect, dropdownWidth = 200, dropdownHeight = 260) {
+    const gap = 6;
+    let top = rect.bottom + gap;
+    let left = rect.left;
+    // Clamp right edge
+    if (left + dropdownWidth > window.innerWidth - 8) {
+      left = window.innerWidth - dropdownWidth - 8;
+    }
+    // Clamp left edge
+    if (left < 8) left = 8;
+    // Clamp bottom edge: flip above if it would overflow
+    if (top + dropdownHeight > window.innerHeight - 8) {
+      top = rect.top - dropdownHeight - gap;
+    }
+    // Clamp top edge
+    if (top < 8) top = 8;
+    return { top, left };
+  }
 
   const handleColorBtnClick = () => {
     if (!showColors && colorBtnRef.current) {
       const rect = colorBtnRef.current.getBoundingClientRect();
-      setColorDropdownPos({ top: rect.bottom + 6, left: rect.left });
+      setColorDropdownPos(clampDropdownPos(rect, 220, 200));
     }
     setShowColors(v => !v);
   };
 
-  // Close width dropdown when clicking outside
-  useEffect(() => {
-    if (!showWidths) return;
-    const handleClickOutside = (e) => {
-      const dropdown = document.getElementById('lc-width-dropdown');
-      if (
-        widthBtnRef.current && !widthBtnRef.current.contains(e.target) &&
-        !(dropdown && dropdown.contains(e.target))
-      ) {
-        setShowWidths(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showWidths]);
 
   const handleWidthBtnClick = () => {
     if (!showWidths && widthBtnRef.current) {
       const rect = widthBtnRef.current.getBoundingClientRect();
-      setWidthDropdownPos({ top: rect.bottom + 6, left: rect.left });
+      setWidthDropdownPos(clampDropdownPos(rect, 180, 160));
     }
     setShowWidths(v => !v);
   };
@@ -229,7 +239,7 @@ export default function LiveClassToolbar({
   const handleShapesBtnClick = () => {
     if (!showShapes && shapeBtnRef.current) {
       const rect = shapeBtnRef.current.getBoundingClientRect();
-      setShapeDropdownPos({ top: rect.bottom + 6, left: rect.left });
+      setShapeDropdownPos(clampDropdownPos(rect, 200, 260));
     }
     setShowShapes(v => !v);
   };
@@ -237,7 +247,7 @@ export default function LiveClassToolbar({
   const handleDiagramBtnClick = () => {
     if (!showDiagram && diagramBtnRef.current) {
       const rect = diagramBtnRef.current.getBoundingClientRect();
-      setDiagramDropdownPos({ top: rect.bottom + 6, left: rect.left });
+      setDiagramDropdownPos(clampDropdownPos(rect, 200, 260));
     }
     setShowDiagram(v => !v);
   };
@@ -261,6 +271,7 @@ export default function LiveClassToolbar({
         key={t.id}
         className={`lc-tool-btn ${active ? 'lc-tool-btn--active' : ''}`}
         title={t.label}
+        aria-pressed={active}
         onClick={() => {
           if (t.id === 'stamp') { setShowStamps(v => !v); return; }
           onToolChange?.(t.id);
@@ -272,7 +283,7 @@ export default function LiveClassToolbar({
   }
 
   return (
-    <div className="lc-toolbar card">
+    <div className="lc-toolbar card" role="toolbar" aria-label="Whiteboard tools">
       {/* Drawing tools */}
       <div className="lc-toolbar-group">
         {drawTools.map(renderToolBtn)}
@@ -303,7 +314,7 @@ export default function LiveClassToolbar({
                           // Second click (already active): toggle mode picker
                           if (!showLaserMode && laserBtnRef.current) {
                             const rect = laserBtnRef.current.getBoundingClientRect();
-                            setLaserModePos({ top: rect.bottom + 6, left: rect.left });
+                            setLaserModePos(clampDropdownPos(rect, 160, 100));
                           }
                           setShowLaserMode(prev => !prev);
                         }
@@ -649,7 +660,7 @@ export default function LiveClassToolbar({
               className={`lc-color-swatch ${color === c ? 'lc-color-swatch--active' : ''}`}
               style={{ background: c }}
               onClick={() => { onColorChange?.(c); setShowColors(false); }}
-              title={c}
+              title={COLOR_NAMES[c] || c}
             />
           ))}
         </div>,

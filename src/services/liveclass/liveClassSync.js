@@ -67,9 +67,12 @@ export function createLiveClassSync({
 
   let unsubs = [];
 
-  // ── Poll state (local-only until Convex tables exist) ──
+  // ── Poll state — backed by Convex subscription (H-11) ──
+  // Local cache is kept in sync via the subscription in attachListeners.
+  // Falls back to local-only for offline/local class IDs.
   const localPolls = new Map();
   const localResponses = new Map();
+  let pollCache = []; // populated by Convex subscription
 
   function myUserId() {
     return getCurrentUserId();
@@ -155,6 +158,25 @@ export function createLiveClassSync({
     // ── Timer subscription ────────────────────────────────────────
     unsubs.push(subscribe(api.timers.getClassTimer, { classId }, (timer) => {
       if (timer) onTimerUpdated?.(timer);
+    }));
+
+    // ── H-11: Poll subscription ────────────────────────────────────
+    unsubs.push(subscribe(api.polls.getPollsByClass, { classId }, (polls) => {
+      if (!Array.isArray(polls)) return;
+      const prevIds = new Set(pollCache.map(p => p.id));
+      const prevStatuses = new Map(pollCache.map(p => [p.id, p.status]));
+      pollCache = polls;
+
+      for (const poll of polls) {
+        if (!prevIds.has(poll.id)) {
+          onPollCreated?.(poll);
+        } else if (prevStatuses.get(poll.id) === 'active' && poll.status === 'closed') {
+          onPollClosed?.(poll);
+        } else {
+          // Response count or other fields changed
+          onPollResponseReceived?.(poll, null);
+        }
+      }
     }));
 
     // ── Class session subscription (background + end) ─────────────
@@ -421,55 +443,118 @@ export function createLiveClassSync({
     return activeClassId;
   }
 
-  /* ── Poll methods (local-only — no dedicated Convex table yet) ── */
+  /* ── Poll methods — Convex-backed when online, local fallback for offline ── */
 
-  function createPoll(classId, question, type, options, correctIndex) {
-    const pollId = 'poll_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
-    const poll = {
-      id: pollId,
-      classId,
-      question,
-      type,
-      options,
-      correctIndex,
-      status: 'active',
-      responses: [],
-      createdAt: Date.now(),
-    };
-    localPolls.set(pollId, poll);
-    localResponses.set(pollId, []);
-    onPollCreated?.(poll);
-    return poll;
+  async function createPoll(classId, question, type, options, correctIndex) {
+    if (isLocalLiveClassId(classId)) {
+      // Offline fallback: local-only poll
+      const pollId = 'poll_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+      const poll = {
+        id: pollId,
+        classId,
+        question,
+        type,
+        options,
+        correctIndex,
+        status: 'active',
+        responses: [],
+        createdAt: Date.now(),
+      };
+      localPolls.set(pollId, poll);
+      localResponses.set(pollId, []);
+      onPollCreated?.(poll);
+      return poll;
+    }
+
+    try {
+      const pollId = await callMutation(api.polls.createPoll, {
+        classId,
+        question,
+        type,
+        options,
+        correctIndex: correctIndex ?? -1,
+      });
+      // Subscription will fire onPollCreated
+      return { id: String(pollId), classId, question, type, options, correctIndex, status: 'active', responses: [], createdAt: Date.now() };
+    } catch (err) {
+      log.warn('createPoll mutation failed, falling back to local', { classId, error: err.message });
+      // Fallback: create locally
+      const pollId = 'poll_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+      const poll = { id: pollId, classId, question, type, options, correctIndex, status: 'active', responses: [], createdAt: Date.now() };
+      localPolls.set(pollId, poll);
+      localResponses.set(pollId, []);
+      onPollCreated?.(poll);
+      return poll;
+    }
   }
 
-  function submitPollResponse(pollId, response) {
-    const poll = localPolls.get(pollId);
-    if (!poll || poll.status !== 'active') return null;
-    const resp = {
-      id: 'resp_' + Date.now(),
-      pollId,
-      identity: myUserId() ?? 'anonymous',
-      ...response,
-      submittedAt: Date.now(),
-    };
-    const responses = localResponses.get(pollId) || [];
-    responses.push(resp);
-    localResponses.set(pollId, responses);
-    poll.responses = responses;
-    onPollResponseReceived?.(poll, resp);
-    return poll;
+  async function submitPollResponse(pollId, response) {
+    // Check if this is a local poll
+    const localPoll = localPolls.get(pollId);
+    if (localPoll) {
+      if (localPoll.status !== 'active') return null;
+      const resp = {
+        id: 'resp_' + Date.now(),
+        pollId,
+        identity: myUserId() ?? 'anonymous',
+        ...response,
+        submittedAt: Date.now(),
+      };
+      const responses = localResponses.get(pollId) || [];
+      responses.push(resp);
+      localResponses.set(pollId, responses);
+      localPoll.responses = responses;
+      onPollResponseReceived?.(localPoll, resp);
+      return localPoll;
+    }
+
+    // Convex poll
+    if (!activeClassId) return null;
+    try {
+      await callMutation(api.polls.submitResponse, {
+        classId: activeClassId,
+        pollId,
+        selectedIndex: response.selectedIndex,
+        text: response.text,
+      });
+      // Subscription will update poll cache
+      return pollCache.find(p => p.id === String(pollId) || String(p._id) === String(pollId)) ?? null;
+    } catch (err) {
+      log.warn('submitPollResponse mutation failed', { pollId, error: err.message });
+      return null;
+    }
   }
 
-  function closePoll(pollId) {
-    const poll = localPolls.get(pollId);
-    if (!poll) return null;
-    poll.status = 'closed';
-    onPollClosed?.(poll);
-    return poll;
+  async function closePoll(pollId) {
+    // Check if this is a local poll
+    const localPoll = localPolls.get(pollId);
+    if (localPoll) {
+      localPoll.status = 'closed';
+      onPollClosed?.(localPoll);
+      return localPoll;
+    }
+
+    // Convex poll
+    if (!activeClassId) return null;
+    try {
+      await callMutation(api.polls.closePoll, {
+        classId: activeClassId,
+        pollId,
+      });
+      // Subscription will fire onPollClosed
+      const poll = pollCache.find(p => p.id === String(pollId) || String(p._id) === String(pollId));
+      return poll ? { ...poll, status: 'closed' } : null;
+    } catch (err) {
+      log.warn('closePoll mutation failed', { pollId, error: err.message });
+      return null;
+    }
   }
 
   function getPolls() {
-    return Array.from(localPolls.values()).filter(p => p.classId === activeClassId);
+    // Merge Convex polls and local polls
+    const convexPolls = pollCache.filter(p => String(p.classId) === String(activeClassId));
+    const localOnly = Array.from(localPolls.values()).filter(p => p.classId === activeClassId);
+    return [...convexPolls, ...localOnly];
   }
 
   /* ── Present mode (local-only — no dedicated Convex table yet) ── */

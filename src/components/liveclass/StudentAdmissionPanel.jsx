@@ -15,7 +15,7 @@ export default function StudentAdmissionPanel({
 }) {
   const [tab, setTab] = useState('waiting'); // 'waiting' | 'inclass'
   const [requests, setRequests] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingIds, setLoadingIds] = useState(new Set()); // M-9: per-request loading
   const panelRef = useRef(null);
 
   // Subscribe to join requests in real-time
@@ -50,20 +50,20 @@ export default function StudentAdmissionPanel({
   const accepted = requests.filter(r => r.status === 'accepted');
 
   const handleApprove = async (id) => {
-    setLoading(true);
+    setLoadingIds(prev => new Set(prev).add(id));
     try {
       await approveJoin(id);
     } finally {
-      setLoading(false);
+      setLoadingIds(prev => { const next = new Set(prev); next.delete(id); return next; });
     }
   };
 
   const handleReject = async (id) => {
-    setLoading(true);
+    setLoadingIds(prev => new Set(prev).add(id));
     try {
       await rejectJoin(id);
     } finally {
-      setLoading(false);
+      setLoadingIds(prev => { const next = new Set(prev); next.delete(id); return next; });
     }
   };
 
@@ -78,12 +78,12 @@ export default function StudentAdmissionPanel({
       {/* Header */}
       <div className="sap-header">
         <span className="sap-title">Students</span>
-        <div className="sap-auto-toggle" onClick={handleToggleAutoAccept} title="Auto-admit students">
+        <button className="sap-auto-toggle" onClick={handleToggleAutoAccept} title="Auto-admit students" type="button">
           {autoAccept
             ? <ToggleRight size={20} className="sap-toggle-icon sap-toggle-icon--on" />
             : <ToggleLeft size={20} className="sap-toggle-icon" />}
           <span className="sap-toggle-label">Auto-admit</span>
-        </div>
+        </button>
         <button className="btn btn-icon btn-ghost btn-sm" onClick={onClose}><X size={14} /></button>
       </div>
 
@@ -117,13 +117,13 @@ export default function StudentAdmissionPanel({
                     <button
                       className="btn btn-sm btn-primary sap-admit-btn"
                       onClick={() => handleApprove(req._id)}
-                      disabled={loading}
+                      disabled={loadingIds.has(req._id)}
                       title="Admit"
                     ><Check size={12} /> Admit</button>
                     <button
                       className="btn btn-sm btn-ghost sap-reject-btn"
                       onClick={() => handleReject(req._id)}
-                      disabled={loading}
+                      disabled={loadingIds.has(req._id)}
                       title="Decline"
                     ><X size={12} /></button>
                   </div>

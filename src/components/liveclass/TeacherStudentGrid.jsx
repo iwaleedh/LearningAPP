@@ -18,7 +18,7 @@ export default function TeacherStudentGrid({
 
   function initials(username) {
     return username
-      ? username.split('_').map(w => w[0]).join('').toUpperCase().substring(0, 2)
+      ? username.split(/[\s_]+/).map(w => w[0]).join('').toUpperCase().substring(0, 2)
       : '??';
   }
 

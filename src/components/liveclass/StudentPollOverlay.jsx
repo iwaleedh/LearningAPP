@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Check, X, Clock } from 'lucide-react';
 
 /**
@@ -14,6 +14,15 @@ import { Check, X, Clock } from 'lucide-react';
 export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit, onDismiss }) {
   const [selected, setSelected] = useState(-1);
   const [freeText, setFreeText] = useState('');
+
+  // C-3: Reset local state when a new poll arrives (setState during render is
+  // the React-recommended pattern for derived state — avoids effect lint error)
+  const prevPollIdRef = useRef(poll?.id);
+  if (poll?.id !== prevPollIdRef.current) {
+    prevPollIdRef.current = poll?.id;
+    setSelected(-1);
+    setFreeText('');
+  }
 
   if (!poll) return null;
 
@@ -33,7 +42,7 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
   if (isClosed && result) {
     const wasCorrect = result.correctIndex >= 0 && result.selectedIndex === result.correctIndex;
     return (
-      <div className="lc-spoll-overlay animate-fade-in">
+      <div className="lc-spoll-overlay animate-fade-in" role="dialog" aria-modal="true" aria-label="Poll results">
         <div className="lc-spoll-card lc-spoll-card--result">
           <div className="lc-spoll-result-header">
             {result.correctIndex >= 0 ? (
@@ -71,7 +80,7 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
   // Waiting view (already answered)
   if (hasAnswered) {
     return (
-      <div className="lc-spoll-overlay animate-fade-in">
+      <div className="lc-spoll-overlay animate-fade-in" role="dialog" aria-modal="true" aria-label="Waiting for poll results">
         <div className="lc-spoll-card lc-spoll-card--waiting">
           <Clock size={24} />
           <p className="lc-spoll-question">{poll.question}</p>
@@ -83,11 +92,11 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
 
   // Answer view
   return (
-    <div className="lc-spoll-overlay animate-fade-in">
+    <div className="lc-spoll-overlay animate-fade-in" role="dialog" aria-modal="true" aria-label="Active poll">
       <div className="lc-spoll-card">
         <p className="lc-spoll-question">{poll.question}</p>
 
-        {(poll.type === 'mcq' || poll.type === 'truefalse') && (
+        {(poll.type === 'mcq' || poll.type === 'truefalse') && poll.options?.length > 0 && (
           <div className="lc-spoll-options">
             {poll.options.map((opt, i) => (
               <button

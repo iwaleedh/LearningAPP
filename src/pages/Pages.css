@@ -5787,6 +5787,13 @@
     .lc-width-btn { width: 24px; height: 24px; }
 }
 
+/* M-6: Ensure 44×44px minimum touch targets on coarse pointer (touch) devices */
+@media (pointer: coarse) {
+    .lc-tool-btn { min-width: 44px; min-height: 44px; }
+    .lc-color-swatch { min-width: 28px; min-height: 28px; }
+    .lc-width-btn { min-width: 44px; min-height: 44px; }
+}
+
 /* ── Import Media Dialog ─────────────────────────────────────── */
 .lc-import-overlay {
     position: fixed;

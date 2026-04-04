@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 
 /**
  * LaserPointerOverlay — renders laser pointers in two modes:
@@ -19,6 +19,14 @@ export default function LaserPointerOverlay({ cursors, trails, width, height }) 
   const canvasRef = useRef(null);
   // trail: Map<identity, Array<{x,y,alpha}>>
   const trailsRef = useRef(new Map());
+  // M-7: Use refs for frequently-changing data to avoid rAF loop restarts
+  const cursorsDataRef = useRef(cursors);
+  const trailsDataRef = useRef(trails);
+  // Update refs before paint so rAF loop always reads fresh props
+  useLayoutEffect(() => {
+    cursorsDataRef.current = cursors;
+    trailsDataRef.current = trails;
+  });
 
   // Trail fade duration in ms
   const TRAIL_FADE_DURATION = 3000;
@@ -30,13 +38,26 @@ export default function LaserPointerOverlay({ cursors, trails, width, height }) 
     let animId;
 
     function draw() {
+      const currentCursors = cursorsDataRef.current;
+      const currentTrails = trailsDataRef.current;
+
+      // L-6: Early return when nothing to draw
+      const hasTrails = currentTrails && currentTrails.length > 0;
+      const hasCursors = currentCursors && currentCursors.length > 0;
+      const hasDotTrails = trailsRef.current.size > 0;
+      if (!hasTrails && !hasCursors && !hasDotTrails) {
+        ctx.clearRect(0, 0, c.width, c.height);
+        animId = requestAnimationFrame(draw);
+        return;
+      }
+
       ctx.clearRect(0, 0, c.width, c.height);
 
       const now = Date.now();
 
       // ── Draw laser trails (freehand strokes that fade out) ──
-      if (trails && trails.length > 0) {
-        trails.forEach(trail => {
+      if (hasTrails) {
+        currentTrails.forEach(trail => {
           if (trail.points.length < 2) return;
 
           const age = now - trail.createdAt;
@@ -72,17 +93,18 @@ export default function LaserPointerOverlay({ cursors, trails, width, height }) 
       }
 
       // ── Draw dot mode cursors ──
-      cursors?.forEach(({ x, y, tool, mode }) => {
+      currentCursors?.forEach(({ x, y, tool, mode, identity }) => {
         // Only draw dot visualization for dot mode (or unspecified mode for backward compat)
         if (tool === 'laser' && mode !== 'trail') {
           const px = x * c.width;
           const py = y * c.height;
 
-          // Update trail for this cursor
-          let trail = trailsRef.current.get('dot_cursor') ?? [];
+          // M-18: Use per-user key for dot trails
+          const trailKey = `dot_${identity || 'unknown'}`;
+          let trail = trailsRef.current.get(trailKey) ?? [];
           trail.push({ x: px, y: py, alpha: 1.0 });
           if (trail.length > 20) trail = trail.slice(-20);
-          trailsRef.current.set('dot_cursor', trail);
+          trailsRef.current.set(trailKey, trail);
 
           // Draw fading trail
           trail.forEach((pt, i) => {
@@ -128,7 +150,7 @@ export default function LaserPointerOverlay({ cursors, trails, width, height }) 
 
     animId = requestAnimationFrame(draw);
     return () => cancelAnimationFrame(animId);
-  }, [cursors, trails]);
+  }, [width, height]); // M-7: Only restart rAF when canvas dimensions change
 
   return (
     <canvas

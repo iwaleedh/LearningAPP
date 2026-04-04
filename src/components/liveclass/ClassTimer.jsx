@@ -49,6 +49,8 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
   const [inputMin, setInputMin] = useState('');
   const [inputSec, setInputSec] = useState('');
   const rafRef = useRef(null);
+  // M-16: guard against rapid-fire mutations while one is in-flight
+  const pendingUpdateRef = useRef(false);
 
   const state  = timerState?.state ?? 'stopped';
   const mode   = timerState?.mode  ?? 'stopwatch';
@@ -58,9 +60,14 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
   const isStopped = state === 'stopped';
   const isOverdue = mode === 'countdown' && target > 0 && localElapsed >= target;
 
+  // Sync local elapsed from server state when it changes (legitimate derived-state sync)
+  const serverElapsed = computeElapsedMs(timerState);
   useEffect(() => {
-    setLocalElapsed(computeElapsedMs(timerState));
-  }, [timerState]);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- derived state sync from server
+    setLocalElapsed(serverElapsed);
+    // M-16: server pushed new state → clear in-flight guard
+    pendingUpdateRef.current = false;
+  }, [serverElapsed]);
 
   // Auto-stop when countdown hits zero
   useEffect(() => {
@@ -94,6 +101,8 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
     : localElapsed;
 
   function handlePlayPause() {
+    if (pendingUpdateRef.current) return; // M-16: debounce rapid clicks
+    pendingUpdateRef.current = true;
     const newState = state === 'running' ? 'paused' : 'running';
     onUpdate?.({
       state: newState,
@@ -105,6 +114,8 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
   }
 
   function handleReset() {
+    if (pendingUpdateRef.current) return;
+    pendingUpdateRef.current = true;
     setLocalElapsed(0);
     onUpdate?.({
       state: 'stopped',
@@ -155,7 +166,7 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
         <span className="lc-timer-mode-badge">countdown</span>
       )}
 
-      <span className="lc-timer-display">{fmt(displayMs)}</span>
+      <span className="lc-timer-display" aria-live="polite" aria-atomic="true">{fmt(displayMs)}</span>
 
       {isTeacher && (
         <>

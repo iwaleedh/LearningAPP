@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { X, Play, BookOpen } from 'lucide-react';
 
 const BG_OPTIONS = [
@@ -19,6 +19,16 @@ export default function SessionStartModal({ onStart, onClose, canStart = true, e
   const [bg, setBg] = useState('white');
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState(errorMessage || blockedReason);
+  const dialogRef = useRef(null);
+
+  // M-2: Escape key handler
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
 
   useEffect(() => {
     setSubmitError(errorMessage || blockedReason || '');
@@ -46,14 +56,14 @@ export default function SessionStartModal({ onStart, onClose, canStart = true, e
 
   return (
     <div className="lc-modal-overlay" onClick={onClose}>
-      <div className="lc-modal card" onClick={e => e.stopPropagation()}>
+      <div className="lc-modal card" role="dialog" aria-modal="true" aria-labelledby="ssm-title" ref={dialogRef} onClick={e => e.stopPropagation()}>
         <button className="lc-modal-close btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">
           <X size={18} />
         </button>
 
         <div className="lc-modal-header">
           <BookOpen size={22} />
-          <h2>Start Live Class</h2>
+          <h2 id="ssm-title">Start Live Class</h2>
         </div>
 
         <label className="lc-modal-label">
@@ -61,7 +71,7 @@ export default function SessionStartModal({ onStart, onClose, canStart = true, e
           <input
             className="lc-modal-input"
             type="text"
-            placeholder="e.g. WCH11 — Moles &amp; Equations"
+            placeholder="e.g. WCH11 — Moles & Equations"
             value={title}
             onChange={e => setTitle(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleStart()}

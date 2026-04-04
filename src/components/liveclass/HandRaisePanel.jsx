@@ -26,7 +26,7 @@ export default function HandRaisePanel({ raises, participants, onAcknowledge }) 
         <Hand size={16} />
         <span>Hands Raised ({raises.length})</span>
       </div>
-      <ul className="lc-hand-list">
+      <ul className="lc-hand-list" aria-live="polite">
         {raises.map(r => (
           <li key={String(r.raiseId)} className="lc-hand-item">
             <span className="lc-hand-avatar">✋</span>

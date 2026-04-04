@@ -161,11 +161,9 @@ function hasFullLiveClassAccess(session) {
   if (!session) return false;
 
   return Boolean(
-    session.hostUserId ||
-    session.backgroundType ||
-    session.joinCode ||
-    session.createdAt ||
-    session.autoAccept !== undefined
+    session.hostUserId &&
+    session.joinCode &&
+    session.createdAt
   );
 }
 
@@ -204,6 +202,25 @@ export default function LiveClassPage() {
 
   // Role
   const [role, setRole] = useState(null); // 'teacher' | 'student'
+  // H-6: priority-aware role setter prevents race between offline/cache/Convex effects
+  // Priorities: nav/cache (1) < convex/join (2). Higher priority always overrides.
+  // Equal priority only sets if role is still null (first-writer-wins).
+  const roleSourceRef = useRef('none'); // 'none' | 'nav' | 'cache' | 'convex' | 'join'
+  const ROLE_PRIORITIES = useRef({ none: 0, nav: 1, cache: 1, convex: 2, join: 2 }).current;
+  const setRoleWithPriority = useCallback((newRole, source) => {
+    const cur = ROLE_PRIORITIES[roleSourceRef.current] ?? 0;
+    const next = ROLE_PRIORITIES[source] ?? 0;
+    if (next > cur) {
+      roleSourceRef.current = source;
+      setRole(newRole);
+    } else if (next === cur) {
+      // Equal priority: only set if role hasn't been set yet (first-writer-wins)
+      setRole(prev => prev ?? newRole);
+      if (!roleSourceRef.current || roleSourceRef.current === 'none') {
+        roleSourceRef.current = source;
+      }
+    }
+  }, [ROLE_PRIORITIES]);
   const [sessionData, setSessionData] = useState(null);
   const [studentName, setStudentName] = useState('');
   const [participants, setParticipants] = useState([]);
@@ -258,6 +275,7 @@ export default function LiveClassPage() {
   const [polls, setPolls] = useState([]);
   const [showPollPanel, setShowPollPanel] = useState(false);
   const [myPollAnswers, setMyPollAnswers] = useState({}); // { pollId: true }
+  const myPollAnswersRef = useRef({}); // C-1: ref mirror for sync callbacks
   const [pollResult, setPollResult] = useState(null); // result to show student after close
 
   // Stencil state
@@ -290,10 +308,31 @@ export default function LiveClassPage() {
   const [canUndo, setCanUndo] = useState(false);
   const [canRedo, setCanRedo] = useState(false);
 
-  // ── Multi-page tabs ────────────────────────────────────────────────────────
-  const [tabs, setTabs] = useState([{ id: 1, label: 'Page 1' }]);
-  const [activeTabId, setActiveTabId] = useState(1);
-  const tabSnapshotsRef = useRef({ 1: null }); // tabId → JSON string
+  // ── Multi-page tabs (M-14: restored from sessionStorage on mount) ─────────
+  const [tabs, setTabs] = useState(() => {
+    if (!classId) return [{ id: 1, label: 'Page 1' }];
+    try {
+      const stored = sessionStorage.getItem(`lc_tabs_${classId}`);
+      if (stored) { const p = JSON.parse(stored); if (Array.isArray(p.tabs) && p.tabs.length) return p.tabs; }
+    } catch { /* ignore */ }
+    return [{ id: 1, label: 'Page 1' }];
+  });
+  const [activeTabId, setActiveTabId] = useState(() => {
+    if (!classId) return 1;
+    try {
+      const stored = sessionStorage.getItem(`lc_tabs_${classId}`);
+      if (stored) { const p = JSON.parse(stored); if (p.activeTabId) return p.activeTabId; }
+    } catch { /* ignore */ }
+    return 1;
+  });
+  const tabSnapshotsRef = useRef((() => {
+    if (!classId) return { 1: null };
+    try {
+      const stored = sessionStorage.getItem(`lc_tabs_${classId}`);
+      if (stored) { const p = JSON.parse(stored); if (p.snapshots && typeof p.snapshots === 'object') return p.snapshots; }
+    } catch { /* ignore */ }
+    return { 1: null };
+  })());
   const [renamingTabId, setRenamingTabId] = useState(null);
   const previousThemePaletteRef = useRef({
     ink: DEFAULT_CANVAS_INK,
@@ -328,6 +367,15 @@ export default function LiveClassPage() {
     if (!fc) return;
     tabSnapshotsRef.current[activeTabId] = JSON.stringify(fc.toJSON(['data']));
   }
+
+  // M-14: auto-persist tab metadata + snapshots whenever tabs or activeTab change
+  useEffect(() => {
+    if (!classId) return;
+    try {
+      const payload = { tabs, activeTabId, snapshots: tabSnapshotsRef.current };
+      sessionStorage.setItem(`lc_tabs_${classId}`, JSON.stringify(payload));
+    } catch { /* quota exceeded — non-critical */ }
+  }, [tabs, activeTabId, classId]);
 
   const handleAddTab = useCallback(() => {
     const fc = fabricRef.current;
@@ -451,7 +499,15 @@ export default function LiveClassPage() {
       // Truncate any forward (redo) history then push current state
       historyStack.current = historyStack.current.slice(0, historyIndex.current + 1);
       historyStack.current.push(JSON.stringify(fc.toJSON(['data'])));
-      historyIndex.current = historyStack.current.length - 1;
+      // C-2: Cap history at 50 entries to prevent memory exhaustion
+      const MAX_HISTORY = 50;
+      if (historyStack.current.length > MAX_HISTORY) {
+        const excess = historyStack.current.length - MAX_HISTORY;
+        historyStack.current = historyStack.current.slice(excess);
+        historyIndex.current = Math.max(0, historyIndex.current - excess);
+      } else {
+        historyIndex.current = historyStack.current.length - 1;
+      }
       setCanUndo(historyIndex.current > 0);
       setCanRedo(false);
       // Leading + trailing throttle: fire immediately if the last broadcast was
@@ -491,7 +547,7 @@ export default function LiveClassPage() {
       setLinkCopied(true);
       const t = setTimeout(() => { copyTimersRef.current.delete(t); setLinkCopied(false); }, 2000);
       copyTimersRef.current.add(t);
-    });
+    }).catch(err => console.warn('[LiveClass] clipboard copy failed:', err));
   }, [sessionId]);
 
   const handleCopyCode = useCallback(() => {
@@ -501,13 +557,19 @@ export default function LiveClassPage() {
       setCodeCopied(true);
       const t = setTimeout(() => { copyTimersRef.current.delete(t); setCodeCopied(false); }, 2000);
       copyTimersRef.current.add(t);
-    });
+    }).catch(err => console.warn('[LiveClass] clipboard copy failed:', err));
   }, [sessionData]);
 
   // Canvas
   const canvasWrapRef = useRef(null);
   const teacherBoardWrapRef = useRef(null); // student's teacher-board container
   const teacherCanvasRef = useRef(null); // teacher's fabric canvas (full edit)
+  // H-5: ref callback that triggers canvas init when DOM element mounts
+  const [canvasElReady, setCanvasElReady] = useState(false);
+  const teacherCanvasRefCallback = useCallback((el) => {
+    teacherCanvasRef.current = el;
+    setCanvasElReady(Boolean(el));
+  }, []);
   const myCanvasRef = useRef(null);       // student's own canvas
   const fabricRef = useRef(null);
   const myFabricRef = useRef(null);
@@ -553,10 +615,10 @@ export default function LiveClassPage() {
     setBackgroundType(navSession.backgroundType ?? 'white');
 
     if (isAccessReady) {
-      setRole((prev) => prev ?? (authRole === 'teacher' ? 'teacher' : 'student'));
+      setRoleWithPriority(authRole === 'teacher' ? 'teacher' : 'student', 'nav');
       setStdbStatus((prev) => (prev === 'connected' ? prev : 'offline'));
     }
-  }, [authRole, classId, isAccessReady, location.state]);
+  }, [authRole, classId, isAccessReady, location.state, setRoleWithPriority]);
 
   // ── Refresh recovery for already-authorized sessions (local or cached) ─────
   useEffect(() => {
@@ -571,7 +633,7 @@ export default function LiveClassPage() {
       setBackgroundType(session.backgroundType ?? 'white');
 
       const isHost = Boolean(authUserId && session.hostUserId === authUserId);
-      setRole((prev) => prev ?? (isHost && authRole === 'teacher' ? 'teacher' : 'student'));
+      setRoleWithPriority(isHost && authRole === 'teacher' ? 'teacher' : 'student', 'cache');
       setStdbStatus((prev) => (prev === 'connected' ? prev : 'offline'));
     }).catch(() => {
       // Keep the dedicated online bootstrap path below as the source of truth.
@@ -580,7 +642,7 @@ export default function LiveClassPage() {
     return () => {
       cancelled = true;
     };
-  }, [authRole, authUserId, classId, isAccessReady, location.state]);
+  }, [authRole, authUserId, classId, isAccessReady, location.state, setRoleWithPriority]);
 
   // ── Handle join-request flow (student arriving from JoinClassModal) ───────
   useEffect(() => {
@@ -629,7 +691,7 @@ export default function LiveClassPage() {
             setSessionData(session);
             setBackgroundType(session.backgroundType ?? 'white');
           }
-          setRole('student');
+          setRoleWithPriority('student', 'join');
         });
       }
     });
@@ -640,7 +702,7 @@ export default function LiveClassPage() {
       setJoinStatus('accepted');
       setSessionData(session);
       setBackgroundType(session.backgroundType ?? 'white');
-      setRole('student');
+      setRoleWithPriority('student', 'join');
     }).catch(() => {
       // Wait for subscription updates when the session is not yet available.
     });
@@ -648,7 +710,7 @@ export default function LiveClassPage() {
     setJoinStatus('pending');
 
     return () => unsub?.();
-  }, [classId, location.state]);
+  }, [classId, location.state, setRoleWithPriority]);
 
   // ── Init Convex & detect role (online mode) ──────────────────────────
   useEffect(() => {
@@ -696,17 +758,17 @@ export default function LiveClassPage() {
         if (cancelled) return;
 
         if (isHost && hasTeacherRole) {
-          setRole('teacher');
+          setRoleWithPriority('teacher', 'convex');
           return;
         }
 
         if (hasTeacherRole && !joinRequestId) {
-          setRole('teacher');
+          setRoleWithPriority('teacher', 'convex');
           return;
         }
 
         if (hasFullLiveClassAccess(session)) {
-          setRole('student');
+          setRoleWithPriority('student', 'convex');
         }
       })();
     });
@@ -717,7 +779,7 @@ export default function LiveClassPage() {
       unsubError();
       unsubDisconnect();
     };
-  }, [authRole, classId, joinRequestId, location.state]);
+  }, [authRole, classId, joinRequestId, location.state, setRoleWithPriority]);
 
   // ── Teacher: subscribe to join requests ──────────────────────────────────
   useEffect(() => {
@@ -813,8 +875,8 @@ export default function LiveClassPage() {
       },
       onPollClosed: (poll) => {
         setPolls(prev => prev.map(p => p.id === poll.id ? { ...poll } : p));
-        // Show result to student
-        const myAnswer = myPollAnswers[poll.id];
+        // Show result to student (C-1: use ref to avoid stale closure)
+        const myAnswer = myPollAnswersRef.current[poll.id];
         if (myAnswer !== undefined) {
           setPollResult({
             correctIndex: poll.correctIndex,
@@ -858,7 +920,6 @@ export default function LiveClassPage() {
   // stdbStatus is included so the sync re-runs once Convex connects — this
   // handles the race where offline-init sets role before client is available,
   // causing watchClass/joinClass to no-op on a null client.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role, classId, isCanvasReady, stdbStatus]);
 
   // ── BroadcastChannel sync (same-origin real-time sync) ─────────────────────
@@ -872,17 +933,24 @@ export default function LiveClassPage() {
       // Track students joining via BroadcastChannel (same-browser fallback)
       bc.onmessage = (e) => {
         const { type, data } = e.data;
-        if (type === 'student-join') {
-          setParticipants(prev => {
-            if (prev.some(p => p._bcId === data.bcId)) return prev;
-            return [...prev, {
-              _bcId: data.bcId,
-              sessionId: classId,
-              userId: data.bcId,
-              username: data.name,
-              joinedAt: data.joinedAt,
-            }];
-          });
+        if (type === 'student-join' || type === 'request-canvas-state') {
+          // H-12: send current canvas state to late-joiners
+          const fc = fabricRef.current;
+          if (fc) {
+            bc.postMessage({ type: 'canvas-state', data: fc.toJSON(['data']) });
+          }
+          if (type === 'student-join') {
+            setParticipants(prev => {
+              if (prev.some(p => p._bcId === data.bcId)) return prev;
+              return [...prev, {
+                _bcId: data.bcId,
+                sessionId: classId,
+                userId: data.bcId,
+                username: data.name,
+                joinedAt: data.joinedAt,
+              }];
+            });
+          }
         } else if (type === 'student-leave') {
           setParticipants(prev => prev.filter(p => p._bcId !== data.bcId));
         }
@@ -893,6 +961,8 @@ export default function LiveClassPage() {
       // Announce presence to teacher tab
       const bcId = 'bc_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
       bc.postMessage({ type: 'student-join', data: { bcId, name: studentName || 'Student', joinedAt: Date.now() } });
+      // H-12: also request current canvas state in case student-join was missed
+      bc.postMessage({ type: 'request-canvas-state' });
 
       bc.onmessage = (e) => {
         const { type, data } = e.data;
@@ -967,9 +1037,9 @@ export default function LiveClassPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role, classId]);
 
-  // ── Init Fabric canvases ───────────────────────────────────────────────────
+  // ── Init Fabric canvases (H-5: depends on canvasElReady to avoid race) ──
   useEffect(() => {
-    if (!role || !teacherCanvasRef.current) return;
+    if (!role || !canvasElReady || !teacherCanvasRef.current) return;
 
     const isTeacherRole = role === 'teacher';
 
@@ -1028,9 +1098,7 @@ export default function LiveClassPage() {
       ro.disconnect();
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [role]);
-
-  // Student also has their own canvas
+  }, [role, canvasElReady]);
   useEffect(() => {
     if (role !== 'student' || !myCanvasRef.current) return;
     const fc = new FabricCanvas(myCanvasRef.current, {
@@ -1040,7 +1108,7 @@ export default function LiveClassPage() {
     });
     myFabricRef.current = fc;
     applyTool(fc, tool, color, strokeWidth);
-    return () => fc.dispose();
+    return () => { myFabricRef.current = null; fc.dispose(); };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role]);
 
@@ -1086,6 +1154,7 @@ export default function LiveClassPage() {
 
     if (laserMode === 'dot') {
       // Dot mode: follow cursor with glowing dot
+      let cursorRafId = null;
       const handler = (e) => {
         const rect = wrap.getBoundingClientRect();
         const x = (e.clientX - rect.left) / rect.width;
@@ -1094,17 +1163,22 @@ export default function LiveClassPage() {
         // Broadcast to other users
         syncRef.current?.broadcastCursor(classId, x, y, tool, laserMode);
 
-        // Update local cursor state
-        setCursors(prev => {
-          const idx = prev.findIndex(c => c.identity === myIdentityHex);
-          const newCursor = { x, y, tool, mode: laserMode, identity: myIdentityHex };
-          if (idx >= 0) { const next = [...prev]; next[idx] = newCursor; return next; }
-          return [...prev, newCursor];
+        // M-11: throttle local cursor state updates via rAF
+        if (cursorRafId) return;
+        cursorRafId = requestAnimationFrame(() => {
+          cursorRafId = null;
+          setCursors(prev => {
+            const idx = prev.findIndex(c => c.identity === myIdentityHex);
+            const newCursor = { x, y, tool, mode: laserMode, identity: myIdentityHex };
+            if (idx >= 0) { const next = [...prev]; next[idx] = newCursor; return next; }
+            return [...prev, newCursor];
+          });
         });
       };
       wrap.addEventListener('mousemove', handler);
       return () => {
         wrap.removeEventListener('mousemove', handler);
+        if (cursorRafId) cancelAnimationFrame(cursorRafId);
         clearInterval(cleanupInterval);
       };
     } else {
@@ -1123,6 +1197,7 @@ export default function LiveClassPage() {
         currentLaserTrailRef.current = [coords];
       };
 
+      let trailRafId = null;
       const onMove = (e) => {
         if (!laserDrawingRef.current) return;
         const coords = getCoords(e);
@@ -1131,22 +1206,26 @@ export default function LiveClassPage() {
         // Broadcast current trail point
         syncRef.current?.broadcastCursor(classId, coords.x, coords.y, tool, laserMode);
 
-        // Update local trails in real-time
-        setLaserTrails(prev => {
-          // Update or add the current drawing trail
-          const existing = prev.find(t => t.id === 'current_drawing');
-          if (existing) {
-            return prev.map(t => t.id === 'current_drawing'
-              ? { ...t, points: [...currentLaserTrailRef.current] }
-              : t
-            );
-          }
-          return [...prev, {
-            id: 'current_drawing',
-            points: [...currentLaserTrailRef.current],
-            identity: myIdentityHex,
-            createdAt: Date.now()
-          }];
+        // M-11: throttle local trail state updates via rAF
+        if (trailRafId) return;
+        trailRafId = requestAnimationFrame(() => {
+          trailRafId = null;
+          // Update local trails in real-time
+          setLaserTrails(prev => {
+            const existing = prev.find(t => t.id === 'current_drawing');
+            if (existing) {
+              return prev.map(t => t.id === 'current_drawing'
+                ? { ...t, points: [...currentLaserTrailRef.current] }
+                : t
+              );
+            }
+            return [...prev, {
+              id: 'current_drawing',
+              points: [...currentLaserTrailRef.current],
+              identity: myIdentityHex,
+              createdAt: Date.now()
+            }];
+          });
         });
       };
 
@@ -1184,6 +1263,7 @@ export default function LiveClassPage() {
         wrap.removeEventListener('mousemove', onMove);
         wrap.removeEventListener('mouseup', onUp);
         wrap.removeEventListener('mouseleave', onUp);
+        if (trailRafId) cancelAnimationFrame(trailRafId);
         clearInterval(cleanupInterval);
       };
     }
@@ -1362,30 +1442,28 @@ export default function LiveClassPage() {
           shapeObj = new FabricPath(makeArrowPath(startPt.x, startPt.y, p.x, p.y, headSize), { stroke: color, fill: 'transparent', strokeWidth, selectable: false, evented: false });
           fc.add(shapeObj);
         } else if (tool === 'diamond') {
+          // M-12: update polygon points in-place instead of remove/add
           const w = Math.abs(p.x - startPt.x);
           const h = Math.abs(p.y - startPt.y);
           const x = Math.min(p.x, startPt.x);
           const y = Math.min(p.y, startPt.y);
-          fc.remove(shapeObj);
-          shapeObj = new FabricPolygon(diamondPoints(x, y, w, h), { fill: 'transparent', stroke: color, strokeWidth, selectable: false, evented: false });
-          fc.add(shapeObj);
+          shapeObj.set({ points: diamondPoints(x, y, w, h) });
+          shapeObj._setPositionDimensions({});
         } else if (tool === 'star') {
           const w = Math.abs(p.x - startPt.x);
           const h = Math.abs(p.y - startPt.y);
           const cx = (p.x + startPt.x) / 2;
           const cy = (p.y + startPt.y) / 2;
           const outerR = Math.min(w, h) / 2;
-          fc.remove(shapeObj);
-          shapeObj = new FabricPolygon(starPoints(cx, cy, outerR, outerR * 0.4), { fill: 'transparent', stroke: color, strokeWidth, selectable: false, evented: false });
-          fc.add(shapeObj);
+          shapeObj.set({ points: starPoints(cx, cy, outerR, outerR * 0.4) });
+          shapeObj._setPositionDimensions({});
         } else if (tool === 'hexagon') {
           const w = Math.abs(p.x - startPt.x);
           const h = Math.abs(p.y - startPt.y);
           const cx = (p.x + startPt.x) / 2;
           const cy = (p.y + startPt.y) / 2;
-          fc.remove(shapeObj);
-          shapeObj = new FabricPolygon(hexagonPoints(cx, cy, Math.min(w, h) / 2), { fill: 'transparent', stroke: color, strokeWidth, selectable: false, evented: false });
-          fc.add(shapeObj);
+          shapeObj.set({ points: hexagonPoints(cx, cy, Math.min(w, h) / 2) });
+          shapeObj._setPositionDimensions({});
         }
         fc.requestRenderAll();
       };
@@ -1459,16 +1537,19 @@ export default function LiveClassPage() {
 
         const sendText = () => {
           const textJson = text.toJSON(['data']);
-          // Use upsert: first call inserts, subsequent live-edit calls update.
           syncRef.current?.sendStrokeUpsert(classId, JSON.stringify(textJson), cid);
           broadcastStrokeAdded(textJson);
         };
 
+        // H-4: Debounce text sync to prevent mutation flooding
+        let textDebounceTimer = null;
         const onTextChange = () => {
-          sendText();
+          clearTimeout(textDebounceTimer);
+          textDebounceTimer = setTimeout(sendText, 300);
         };
 
         const onTextExit = () => {
+          clearTimeout(textDebounceTimer);
           text.off('changed', onTextChange);
           text.off('editing:exited', onTextExit);
           sendText();
@@ -1737,15 +1818,19 @@ export default function LiveClassPage() {
     historyIndex.current -= 1;
     const snap = historyStack.current[historyIndex.current];
     skipHistory.current = true;
-    fc.loadFromJSON(JSON.parse(snap)).then(() => {
+    try {
+      fc.loadFromJSON(JSON.parse(snap)).then(() => {
+        skipHistory.current = false;
+        fc.requestRenderAll();
+        setCanUndo(historyIndex.current > 0);
+        setCanRedo(true);
+        broadcastCanvasState();
+        syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
+      });
+    } catch (err) {
+      console.error('[LiveClass] undo loadFromJSON failed:', err);
       skipHistory.current = false;
-      fc.requestRenderAll();
-      setCanUndo(historyIndex.current > 0);
-      setCanRedo(true);
-      broadcastCanvasState();
-      // Reconcile Convex strokes with current canvas state (cross-device sync)
-      syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
-    });
+    }
   }, [classId, broadcastCanvasState]);
 
   const handleRedo = useCallback(() => {
@@ -1754,15 +1839,19 @@ export default function LiveClassPage() {
     historyIndex.current += 1;
     const snap = historyStack.current[historyIndex.current];
     skipHistory.current = true;
-    fc.loadFromJSON(JSON.parse(snap)).then(() => {
+    try {
+      fc.loadFromJSON(JSON.parse(snap)).then(() => {
+        skipHistory.current = false;
+        fc.requestRenderAll();
+        setCanUndo(historyIndex.current > 0);
+        setCanRedo(historyIndex.current < historyStack.current.length - 1);
+        broadcastCanvasState();
+        syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
+      });
+    } catch (err) {
+      console.error('[LiveClass] redo loadFromJSON failed:', err);
       skipHistory.current = false;
-      fc.requestRenderAll();
-      setCanUndo(historyIndex.current > 0);
-      setCanRedo(historyIndex.current < historyStack.current.length - 1);
-      broadcastCanvasState();
-      // Reconcile Convex strokes with current canvas state (cross-device sync)
-      syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
-    });
+    }
   }, [classId, broadcastCanvasState]);
 
   function handleClear() {
@@ -1834,7 +1923,9 @@ export default function LiveClassPage() {
           fc.requestRenderAll();
         })
       );
-    }, Promise.resolve());
+    }, Promise.resolve()).catch((err) => {
+      console.error('[LiveClass] Image import failed:', err);
+    });
   }
 
   // ── Stamp ────────────────────────────────────────────────────────────────────
@@ -1881,19 +1972,23 @@ export default function LiveClassPage() {
   }
 
   // ── Poll handlers ─────────────────────────────────────────────────────────
-  function handleCreatePoll(question, type, options, correctIndex) {
-    const poll = syncRef.current?.createPoll(classId, question, type, options, correctIndex);
-    if (poll) setPolls(prev => [...prev, poll]);
+  async function handleCreatePoll(question, type, options, correctIndex) {
+    const poll = await syncRef.current?.createPoll(classId, question, type, options, correctIndex);
+    if (poll) setPolls(prev => [...prev.filter(p => p.id !== poll.id), poll]);
   }
 
-  function handleClosePoll(pollId) {
-    const poll = syncRef.current?.closePoll(pollId);
+  async function handleClosePoll(pollId) {
+    const poll = await syncRef.current?.closePoll(pollId);
     if (poll) setPolls(prev => prev.map(p => p.id === pollId ? { ...poll } : p));
   }
 
-  function handleSubmitPollResponse(pollId, response) {
-    syncRef.current?.submitPollResponse(pollId, response);
-    setMyPollAnswers(prev => ({ ...prev, [pollId]: response }));
+  async function handleSubmitPollResponse(pollId, response) {
+    void syncRef.current?.submitPollResponse(pollId, response);
+    setMyPollAnswers(prev => {
+      const next = { ...prev, [pollId]: response };
+      myPollAnswersRef.current = next;
+      return next;
+    });
   }
 
   function handleDismissPollResult() {
@@ -1934,21 +2029,24 @@ export default function LiveClassPage() {
     };
     objs.forEach((spec) => {
       const { type, ...props } = spec;
+      // H-2: Assign strokeClientId so template objects sync to remote participants
+      const data = { ...(props.data || {}), strokeClientId: crypto.randomUUID() };
       if (type === 'line') {
         const obj = new FabricLine([props.x1 || 0, props.y1 || 0, props.x2 || 100, props.y2 || 100], {
           stroke: props.stroke || themePalette.ink,
           strokeWidth: props.strokeWidth || 2,
           strokeDashArray: props.strokeDashArray || null,
           selectable: props.selectable !== false,
+          data,
         });
         fc.add(obj);
       } else if (type === 'text') {
-        const obj = new FabricText(props.text || '', props);
+        const obj = new FabricText(props.text || '', { ...props, data });
         fc.add(obj);
       } else {
         const Ctor = TYPE_MAP[type];
         if (!Ctor) return;
-        const obj = new Ctor(props);
+        const obj = new Ctor({ ...props, data });
         fc.add(obj);
       }
     });
@@ -2082,9 +2180,9 @@ export default function LiveClassPage() {
           {isTeacher ? (
             <button
               className="badge lc-live-badge lc-live-badge--end"
-              onClick={() => {
+              onClick={async () => {
                 broadcastRef.current?.postMessage({ type: 'class-ended' });
-                syncRef.current?.endClass(classId);
+                await syncRef.current?.endClass(classId);
                 navigate('/teacher');
               }}
               title="End class"
@@ -2170,7 +2268,7 @@ export default function LiveClassPage() {
             </button>
           )}
           {/* My Notes button — student only: opens in a new tab */}
-          {!isTeacher && (
+          {!isTeacher && joinTempId && (
             <button
               className="btn btn-sm lc-share-btn"
               onClick={() => window.open(`/my-notes/${classId}/${joinTempId}`, '_blank', 'noopener,noreferrer')}
@@ -2295,7 +2393,7 @@ export default function LiveClassPage() {
             <div className="lc-panel-label">Teacher's Board</div>
             <div ref={teacherBoardWrapRef} className="lc-canvas-wrap lc-canvas-wrap--readonly" style={bgStyle}>
               <ErrorBoundary name="LiveCanvas" inline resetKeys={[classId]}>
-                <canvas ref={teacherCanvasRef} />
+                <canvas ref={teacherCanvasRefCallback} />
                 <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />
                 <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={false} />
               </ErrorBoundary>
@@ -2326,7 +2424,7 @@ export default function LiveClassPage() {
             onDragOver={handleCanvasDragOver}
           >
             <ErrorBoundary name="LiveCanvas" inline resetKeys={[classId]}>
-              <canvas ref={isTeacher ? teacherCanvasRef : myCanvasRef} />
+              <canvas ref={isTeacher ? teacherCanvasRefCallback : myCanvasRef} />
               {isTeacher && <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />}
               {isTeacher && <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={spotlightEnabled} />}
               {isTeacher && tool === 'ruler' && (
@@ -2374,7 +2472,7 @@ export default function LiveClassPage() {
           if (!activePoll && !pollResult) return null;
           return (
             <StudentPollOverlay
-              poll={activePoll || polls.find(p => p.status === 'closed')}
+              poll={activePoll || [...polls].reverse().find(p => p.status === 'closed')}
               hasAnswered={activePoll ? !!myPollAnswers[activePoll.id] : false}
               result={pollResult}
               onSubmit={handleSubmitPollResponse}
