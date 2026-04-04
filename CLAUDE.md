@@ -18,7 +18,7 @@ Reference document for AI agents and developers working on this codebase.
 | Build | Vite 7.3 |
 | Routing | React Router DOM 7.13 |
 | Backend/Sync | SpacetimeDB 2.0 |
-| Alternative backend | Convex 1.32 |
+| Alternative backend | Convex 1.34 |
 | Math rendering | KaTeX 0.16 |
 | Charts | Chart.js 4 + react-chartjs-2 |
 | Icons | Lucide React |
