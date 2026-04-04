@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useMutation, useQuery } from 'convex/react';
 import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight, Layers, CheckCircle, BookOpen } from 'lucide-react';
 import { listFlashcards } from '../services/notes/noteStore.js';
+import { api } from '../convex-client.js';
 import './Pages.css';
 
 const STATUS_KEY = 'lt_flashcard_status';
@@ -36,6 +38,31 @@ function loadStatus() {
     }
 }
 
+function clearLegacyStatus() {
+    try {
+        localStorage.removeItem(STATUS_KEY);
+        localStorage.removeItem(OLD_KNOWN_KEY);
+        localStorage.removeItem(OLD_LEARNING_KEY);
+    } catch {
+        // ignore local cleanup failures
+    }
+}
+
+function mapServerProgressRows(rows) {
+    if (!Array.isArray(rows)) return {};
+    // D11: If duplicate rows exist for the same cardId, pick the one with the
+    // highest updatedAt so the client always reflects the most recent write.
+    const best = {};
+    for (const row of rows) {
+        if (!row?.cardId || (row.status !== 'known' && row.status !== 'learning')) continue;
+        const current = best[row.cardId];
+        if (!current || (Number(row.updatedAt) || 0) > (Number(current.updatedAt) || 0)) {
+            best[row.cardId] = row;
+        }
+    }
+    return Object.fromEntries(Object.entries(best).map(([id, row]) => [id, row.status]));
+}
+
 
 function parseNoteId(noteId) {
     const parts = String(noteId || '').split(':');
@@ -47,8 +74,14 @@ export default function FlashcardsPage() {
     const [userCards, setUserCards] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const [status, setStatus] = useState(loadStatus);
+    const [status, setStatus] = useState({});
     const flipTimerRef = useRef(null); // track flip-transition timer to prevent unmount leaks
+    const legacyStatusRef = useRef(loadStatus());
+    const migratedLegacyRef = useRef(false);
+    const serverProgressRows = useQuery(api.flashcards.listFlashcardProgress);
+    const setFlashcardProgress = useMutation(api.flashcards.setFlashcardProgress);
+    const bulkUpsertFlashcardProgress = useMutation(api.flashcards.bulkUpsertFlashcardProgress);
+    const resetFlashcardProgress = useMutation(api.flashcards.resetFlashcardProgress);
 
     const known = useMemo(() =>
         Object.entries(status).filter(([, v]) => v === 'known').map(([k]) => k),
@@ -80,10 +113,32 @@ export default function FlashcardsPage() {
     }, []);
 
     useEffect(() => {
-        try {
-            localStorage.setItem(STATUS_KEY, JSON.stringify(status));
-        } catch { /* quota exceeded — ignore */ }
-    }, [status]);
+        if (serverProgressRows === undefined) return;
+
+        const serverStatus = mapServerProgressRows(serverProgressRows);
+        const legacyStatus = legacyStatusRef.current;
+
+        if (!migratedLegacyRef.current && Object.keys(serverStatus).length === 0 && Object.keys(legacyStatus).length > 0) {
+            migratedLegacyRef.current = true;
+            setStatus(legacyStatus);
+            void bulkUpsertFlashcardProgress({ statusesJson: JSON.stringify(legacyStatus) })
+                .then(() => {
+                    legacyStatusRef.current = {};
+                    clearLegacyStatus();
+                })
+                .catch(() => {
+                    migratedLegacyRef.current = false;
+                });
+            return;
+        }
+
+        if (Object.keys(serverStatus).length > 0) {
+            legacyStatusRef.current = {};
+            clearLegacyStatus();
+        }
+
+        setStatus(serverStatus);
+    }, [bulkUpsertFlashcardProgress, serverProgressRows]);
 
     const cards = useMemo(() => {
         return userCards.map((card) => ({
@@ -117,13 +172,19 @@ export default function FlashcardsPage() {
         }, 120);
     };
 
+    const persistStatus = (nextStatus) => {
+        if (!card?.id) return;
+        setStatus((prev) => ({ ...prev, [card.id]: nextStatus }));
+        void setFlashcardProgress({ cardId: card.id, status: nextStatus });
+    };
+
     const markKnown = () => {
-        setStatus((prev) => ({ ...prev, [card.id]: 'known' }));
+        persistStatus('known');
         goNext();
     };
 
     const markLearning = () => {
-        setStatus((prev) => ({ ...prev, [card.id]: 'learning' }));
+        persistStatus('learning');
         goNext();
     };
 
@@ -267,9 +328,10 @@ export default function FlashcardsPage() {
                     className="btn btn-ghost"
                     onClick={() => {
                         setStatus({});
-                        localStorage.removeItem(STATUS_KEY);
+                        clearLegacyStatus();
                         setCurrentIndex(0);
                         setIsFlipped(false);
+                        void resetFlashcardProgress();
                     }}
                     aria-label="Reset all flashcard progress"
                 >

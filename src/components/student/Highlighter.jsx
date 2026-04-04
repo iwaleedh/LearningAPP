@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Highlighter as HighlighterIcon, X } from 'lucide-react';
+import { loadStudentHighlights, saveStudentHighlights } from '../../services/notes/studentToolAssets.js';
 import './StudentTools.css';
 
 const HIGHLIGHT_COLORS = [
@@ -10,31 +11,45 @@ const HIGHLIGHT_COLORS = [
     { name: 'Orange', color: 'rgba(251, 146, 60, 0.4)', solid: '#fb923c' },
 ];
 
-export default function Highlighter({ chapterId = 'default' }) {
-    const storageKey = `highlights_${chapterId}`;
-    const [highlights, setHighlights] = useState(() => {
-        try {
-            const saved = localStorage.getItem(`highlights_${chapterId}`);
-            return saved ? JSON.parse(saved) : [];
-        } catch { return []; }
-    });
+function getHighlightRoot(contentSelector) {
+    return document.querySelector(contentSelector) || document.querySelector('.chapter-body') || document.body;
+}
+
+export default function Highlighter({ chapterId = 'default', contentSelector = '.chapter-body' }) {
+    const [highlights, setHighlights] = useState([]);
     const [activeColor, setActiveColor] = useState(HIGHLIGHT_COLORS[0]);
     const [isActive, setIsActive] = useState(false);
+    const hydratedChapterRef = useRef(null);
 
-
-    // Save to localStorage
     useEffect(() => {
-        localStorage.setItem(storageKey, JSON.stringify(highlights));
-    }, [highlights, storageKey]);
+        let cancelled = false;
+        hydratedChapterRef.current = null;
+
+        loadStudentHighlights(chapterId).then((items) => {
+            if (cancelled) return;
+            hydratedChapterRef.current = chapterId;
+            setHighlights(items);
+        });
+
+        return () => {
+            cancelled = true;
+        };
+    }, [chapterId]);
+
+    useEffect(() => {
+        if (hydratedChapterRef.current !== chapterId) return;
+        void saveStudentHighlights(chapterId, highlights);
+    }, [chapterId, highlights]);
 
     // Apply existing highlights to DOM
     useEffect(() => {
+        const root = getHighlightRoot(contentSelector);
         if ('highlights' in CSS) {
             CSS.highlights.clear();
             const colorMap = {};
             highlights.forEach(h => {
                 const walker = document.createTreeWalker(
-                    document.querySelector('.chapter-body') || document.body,
+                    root,
                     NodeFilter.SHOW_TEXT, null, false
                 );
                 let node;
@@ -58,7 +73,7 @@ export default function Highlighter({ chapterId = 'default' }) {
         }
 
         // Clear all existing highlights first (fallback)
-        document.querySelectorAll('.user-highlight').forEach(el => {
+        root.querySelectorAll('.user-highlight').forEach(el => {
             const parent = el.parentNode;
             if (parent) {
                 parent.replaceChild(document.createTextNode(el.textContent), el);
@@ -69,7 +84,7 @@ export default function Highlighter({ chapterId = 'default' }) {
         // Re-apply saved highlights
         highlights.forEach(h => {
             const walker = document.createTreeWalker(
-                document.querySelector('.chapter-body') || document.body,
+                root,
                 NodeFilter.SHOW_TEXT,
                 null,
                 false
@@ -91,14 +106,20 @@ export default function Highlighter({ chapterId = 'default' }) {
                 }
             }
         });
-    }, [highlights]);
+    }, [contentSelector, highlights]);
 
     // Listen for text selection
     const handleHighlight = useCallback(() => {
         if (!isActive) return;
+        const root = getHighlightRoot(contentSelector);
         const selection = window.getSelection();
+        const range = selection?.rangeCount ? selection.getRangeAt(0) : null;
+        const commonAncestor = range?.commonAncestorContainer || null;
         const text = selection?.toString().trim();
         if (!text || text.length < 2) return;
+        if (!commonAncestor || !root.contains(commonAncestor.nodeType === Node.TEXT_NODE ? commonAncestor.parentNode : commonAncestor)) {
+            return;
+        }
 
         const newHighlight = {
             id: Date.now().toString(),
@@ -110,7 +131,7 @@ export default function Highlighter({ chapterId = 'default' }) {
 
         setHighlights(prev => [...prev, newHighlight]);
         selection.removeAllRanges();
-    }, [isActive, activeColor]);
+    }, [isActive, activeColor, contentSelector]);
 
     useEffect(() => {
         document.addEventListener('mouseup', handleHighlight);

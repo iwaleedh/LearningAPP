@@ -53,7 +53,12 @@ function sanitizeUsername(username) {
   if (typeof username !== 'string') return '';
   return username
     .replace(/<[^>]*>/g, '')        // strip HTML tags
-    .replace(/[\u0000-\u001F\u007F]/g, '') // strip control characters
+    .split('')
+    .filter((char) => {
+      const code = char.charCodeAt(0);
+      return code >= 0x20 && code !== 0x7f;
+    })
+    .join('')
     .trim()
     .slice(0, 50);                  // enforce max length
 }
@@ -72,6 +77,8 @@ let errorCallbacks = [];
 let disconnectCallbacks = [];
 let currentUserId = null;
 let currentUsername = null;
+let currentIdentityMode = 'anonymous';
+let expectedIdentityMode = 'anonymous';
 let anonymousUserId = null;
 let anonymousUsername = null;
 // D7: Promise-based singleton guard — concurrent initConvex() calls share
@@ -97,9 +104,11 @@ function ensureAnonymousIdentity() {
   return { userId, username };
 }
 
-function applyIdentity(userId, username) {
+function applyIdentity(userId, username, mode = currentIdentityMode) {
   currentUserId = userId;
   currentUsername = username;
+  currentIdentityMode = mode;
+  expectedIdentityMode = mode;
 }
 
 export function setCurrentUsernameOverride(username) {
@@ -107,10 +116,21 @@ export function setCurrentUsernameOverride(username) {
   applyIdentity(currentUserId, username);
 }
 
+export function setExpectedIdentityMode(mode) {
+  if (mode !== 'anonymous' && mode !== 'authenticated' && mode !== 'debug') {
+    return;
+  }
+  expectedIdentityMode = mode;
+}
+
+export function getCurrentIdentityMode() {
+  return expectedIdentityMode || currentIdentityMode;
+}
+
 export function setLocalDebugIdentity({ userId, username }) {
   if (!userId || !username) return;
   getOrCreateClient()?.clearAuth();
-  applyIdentity(userId, username);
+  applyIdentity(userId, username, 'debug');
 }
 
 async function registerCurrentUser(extra = {}) {
@@ -121,6 +141,22 @@ async function registerCurrentUser(extra = {}) {
     username: currentUsername,
     ...extra,
   });
+}
+
+// D5: Record one login-day per calendar day. The localStorage key prevents
+// multiple tabs / page-reloads from firing the mutation more than once per day.
+const LOGIN_DATE_KEY = 'lt_login_date';
+async function recordLoginDay() {
+  const client = getOrCreateClient();
+  if (!client || !currentUserId) return;
+  try {
+    const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD
+    if (localStorage.getItem(LOGIN_DATE_KEY) === today) return;
+    await client.mutation(api.users.recordLogin, { dateKey: today });
+    localStorage.setItem(LOGIN_DATE_KEY, today);
+  } catch {
+    // Non-fatal — badge metrics degrade gracefully to loginCount = 0.
+  }
 }
 
 /**
@@ -155,7 +191,7 @@ export async function initConvex() {
         : ensureAnonymousIdentity();
 
       if (!currentUserId || !currentUsername) {
-        applyIdentity(anonymousIdentity.userId, anonymousIdentity.username);
+        applyIdentity(anonymousIdentity.userId, anonymousIdentity.username, 'anonymous');
       }
 
       isReady = true;
@@ -358,8 +394,10 @@ export async function setAuthenticatedIdentity({
   }
 
   const resolvedUsername = username || `user_${userId.slice(-6)}`;
-  applyIdentity(userId, resolvedUsername);
+  applyIdentity(userId, resolvedUsername, 'authenticated');
   await registerCurrentUser({ email, avatarUrl });
+  // D5: Record the login day after registration so the user row definitely exists.
+  await recordLoginDay();
   return client;
 }
 
@@ -368,7 +406,7 @@ export async function restoreAnonymousIdentity() {
   const client = getOrCreateClient();
 
   client?.clearAuth();
-  applyIdentity(anonymousIdentity.userId, anonymousIdentity.username);
+  applyIdentity(anonymousIdentity.userId, anonymousIdentity.username, 'anonymous');
 
   if (!client) {
     return null;

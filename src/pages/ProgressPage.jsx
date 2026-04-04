@@ -3,7 +3,7 @@ import BadgeSystem from '../components/gamification/BadgeSystem';
 import StreakTracker from '../components/gamification/StreakTracker';
 import Leaderboard from '../components/gamification/Leaderboard';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
-import { getReadNoteIds, getTotalReadCount } from '../hooks/useNoteReadStatus';
+import { useReadProgressSummary } from '../hooks/useNoteReadStatus';
 import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
@@ -36,8 +36,9 @@ function buildChapterProgress(readIds) {
 
 export default function ProgressPage() {
     useActivityRefresh();
-    const readIds = getReadNoteIds();
-    const totalRead = getTotalReadCount();
+    const readProgress = useReadProgressSummary();
+    const readIds = new Set(readProgress.readNoteIds);
+    const totalRead = readProgress.totalRead;
     const chapterProgress = buildChapterProgress(readIds);
 
     const startedSubjects = chapterProgress.filter(c => c.read > 0);

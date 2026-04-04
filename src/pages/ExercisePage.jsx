@@ -121,6 +121,7 @@ export default function ExercisePage() {
           userAnswer: attempt?.userAnswer,
           correctAnswer: attempt?.correctAnswer,
           exerciseType: activeType,
+          ...(attempt?.metadata || {}),
         },
       });
     };
@@ -137,7 +138,7 @@ export default function ExercisePage() {
           <ExComp
             question={currentItem}
             onNext={() => { incrementExercisesDone(); setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0); }}
-            onMistake={(m) => saveMistake({ ...m, subject: activeSubject })}
+            onMistake={(m) => void saveMistake({ ...m, subject: activeSubject, questionKey })}
             onAttempt={handleAttempt}
           />
         </ErrorBoundary>

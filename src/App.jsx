@@ -102,6 +102,8 @@ function AppContent() {
   return (
     <ToastProvider>
       <div className="app-layout">
+        {/* A2: Skip to main content — first focusable element in the page */}
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
         <div className="app-main">
           <Header
@@ -109,7 +111,7 @@ function AppContent() {
             sidebarOpen={sidebarOpen}
             onSearchOpen={() => setSearchOpen(true)}
           />
-          <main className="page-content">
+          <main className="page-content" id="main-content" tabIndex={-1}>
               <Routes>
                 <Route element={<RouteWrapper />}>
                   {/* Ungated routes — accessible before approval */}
@@ -120,7 +122,9 @@ function AppContent() {
                 path="/admin"
                 element={(
                   <RequireApproved>
-                    <AdminPage />
+                    <RequireRole allowedRoles={['admin']} reason="open the admin dashboard">
+                      <AdminPage />
+                    </RequireRole>
                   </RequireApproved>
                 )}
               />

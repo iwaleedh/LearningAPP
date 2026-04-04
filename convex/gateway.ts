@@ -15,7 +15,7 @@ import { query } from "./_generated/server";
 import { v } from "convex/values";
 import {
   isTeacherUserId,
-  requireAuthenticatedUserId,
+  requireApprovedAuthenticatedUserId,
   requireHostedSessionAccess,
   requireTeacher,
 } from "./authHelpers";
@@ -24,7 +24,7 @@ import {
 export const getNotesWithAuthors = query({
   args: { subject: v.string() },
   handler: async (ctx, { subject }) => {
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     const isTeacher = await isTeacherUserId(ctx, currentUserId);
     const notes = await ctx.db
       .query("notes")

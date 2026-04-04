@@ -98,12 +98,29 @@ function readStore() {
 }
 
 function writeStore(store) {
-  memoryStore = store;
   if (!hasWindow()) {
+    memoryStore = store;
     return;
   }
 
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  // D9: Merge-on-write: read the latest localStorage value first so that
+  // concurrent writes from other tabs are not silently overwritten.
+  // Our in-flight changes (keys in `store`) win, but any keys only present
+  // in the latest persisted state are preserved.
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const latest = raw ? normalizeStore(JSON.parse(raw)) : createEmptyStore();
+    const merged = {
+      sessions:     { ...latest.sessions,     ...store.sessions },
+      joinRequests: { ...latest.joinRequests, ...store.joinRequests },
+      studentNotes: { ...latest.studentNotes, ...store.studentNotes },
+    };
+    memoryStore = merged;
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+  } catch {
+    memoryStore = store;
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  }
 }
 
 function createId(prefix) {

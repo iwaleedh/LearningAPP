@@ -9,13 +9,28 @@ import './Exercises.css';
  */
 let _dragIdCounter = 0;
 
+function resolveDurableItemId(item, originalIndex) {
+    const providedId = typeof item?.itemId === 'string'
+        ? item.itemId.trim()
+        : typeof item?.id === 'string'
+            ? item.id.trim()
+            : '';
+    const suffix = providedId || 'item';
+    return `drag:${originalIndex}:${suffix}`;
+}
+
 /**
  * Assign each item a stable numeric _idx at initialisation time.
  * This prevents the duplicate-text bug where two items sharing the same text
  * were both removed/keyed as one because identity was based on item.text.
  */
 function initItems(rawItems) {
-    const shuffled = [...rawItems];
+    const seeded = rawItems.map((item, originalIndex) => ({
+        ...item,
+        itemId: resolveDurableItemId(item, originalIndex),
+        originalIndex,
+    }));
+    const shuffled = [...seeded];
     for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
@@ -93,11 +108,24 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
             if (keyboardSelected && keyboardSelected.item._idx === item._idx) {
                 // Second press on same item = cancel selection
                 setKeyboardSelected(null);
+                setLastAction(`Released "${item.text}" — drag cancelled.`);
             } else {
                 setKeyboardSelected({ item, source });
+                // Announce grab with position for screen readers (A1)
+                const sourceArr = source === 'bank' ? bank : zones[source];
+                const pos = sourceArr.findIndex(i => i._idx === item._idx) + 1;
+                const total = sourceArr.length;
+                setLastAction(
+                    `Grabbed "${item.text}", item ${pos} of ${total} in ${
+                        source === 'bank' ? 'item bank' : source
+                    }. Press Space on a category to drop, or Escape to cancel.`
+                );
             }
         }
         if (e.key === 'Escape') {
+            if (keyboardSelected) {
+                setLastAction(`Cancelled. "${keyboardSelected.item.text}" not moved.`);
+            }
             setKeyboardSelected(null);
         }
     };
@@ -176,14 +204,32 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
         setLastAction(`Returned "${item.text}" to the item bank`);
     };
 
+    const buildPlacementTelemetry = () => {
+        return Object.entries(zones)
+            .flatMap(([placedCategory, items]) => items.map((item) => ({
+                itemId: item.itemId,
+                text: item.text,
+                expectedCategory: item.category,
+                placedCategory,
+                correct: item.category === placedCategory,
+            })))
+            .sort((left, right) => left.itemId.localeCompare(right.itemId));
+    };
+
     return (
         <div className="dragdrop-exercise card animate-fade-in">
             <div className="mcq-stem">
                 <h3>{question.stem}</h3>
             </div>
 
+            {/* A1: Persistent keyboard instructions — referenced by aria-describedby on all draggable items */}
+            <p id="dd-kb-help" className="sr-only">
+                Press Space or Enter to grab an item. Then press Space or Enter on a category to drop it.
+                Press Escape to cancel without dropping.
+            </p>
+
             {/* Screen-reader live region for action announcements */}
-            <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
+            <div role="status" aria-live="assertive" aria-atomic="true" className="sr-only">
                 {lastAction}
             </div>
 
@@ -215,7 +261,9 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                                 tabIndex={submitted ? -1 : 0}
                                 role="option"
                                 aria-selected={isKbSelected(item)}
-                                aria-label={`${item.text}. Press Space to select, then Space on a category to drop.`}
+                                aria-grabbed={isKbSelected(item) ? 'true' : 'false'}
+                                aria-label={item.text}
+                                aria-describedby="dd-kb-help"
                             >
                                 <GripVertical size={14} className="dd-grip" aria-hidden="true" />
                                 {item.text}
@@ -268,7 +316,9 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                                         tabIndex={submitted ? -1 : 0}
                                         role="option"
                                         aria-selected={isKbSelected(item)}
-                                        aria-label={`${item.text}${submitted ? (item.correct ? ', correct' : ', incorrect') : ''}. Press Space to select.`}
+                                        aria-grabbed={isKbSelected(item) ? 'true' : 'false'}
+                                        aria-label={`${item.text}${submitted ? (item.correct ? ', correct' : ', incorrect') : ''}`}
+                                        aria-describedby={submitted ? undefined : 'dd-kb-help'}
                                     >
                                         <GripVertical size={14} className="dd-grip" aria-hidden="true" />
                                         {item.text}
@@ -308,6 +358,7 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                                 .flatMap(([cat, items]) => items.filter(it => !it.correct).map(it => ({ ...it, placedIn: cat })));
                             const totalItems = question.items.length;
                             const correctItems = totalItems - (wrong?.length || 0);
+                            const placements = buildPlacementTelemetry();
                             onAttempt?.({
                                 correct: (wrong?.length || 0) === 0,
                                 scorePercent: totalItems > 0 ? Math.round((correctItems / totalItems) * 100) : 100,
@@ -315,6 +366,11 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                                 userAnswer: Object.entries(zones)
                                     .flatMap(([cat, items]) => items.map((item) => `${item.text} -> ${cat}`))
                                     .join(' | '),
+                                metadata: {
+                                    placements,
+                                    totalItems,
+                                    correctItems,
+                                },
                             });
                             if (wrong && wrong.length > 0) {
                                 onMistake?.({

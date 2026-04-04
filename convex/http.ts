@@ -11,6 +11,8 @@
 import { httpRouter } from "convex/server";
 import { httpAction } from "./_generated/server";
 import { internal } from "./_generated/api";
+import { validateEventPayload } from "./eventSchemas";
+import { WEBHOOK_EVENT_TOPICS } from "./eventTopics";
 
 const http = httpRouter();
 const processEnv = (globalThis as typeof globalThis & {
@@ -78,6 +80,12 @@ http.route({
     const providedSecret = bearerSecret || headerSecret;
 
     if (!providedSecret || providedSecret !== WEBHOOK_SECRET) {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with invalid secret.",
+        metadata: JSON.stringify({ reason: "invalid_secret" }),
+      });
       return new Response(
         JSON.stringify({ error: "Unauthorized webhook request." }),
         { status: 401, headers: { "Content-Type": "application/json" } }
@@ -87,6 +95,12 @@ http.route({
     // Validate content type
     const contentType = request.headers.get("content-type") || "";
     if (!contentType.includes("application/json")) {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with invalid content type.",
+        metadata: JSON.stringify({ reason: "invalid_content_type", contentType }),
+      });
       return new Response(
         JSON.stringify({ error: "Content-Type must be application/json" }),
         { status: 415, headers: { "Content-Type": "application/json" } }
@@ -97,6 +111,12 @@ http.route({
     try {
       body = await request.json();
     } catch {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with invalid JSON body.",
+        metadata: JSON.stringify({ reason: "invalid_json" }),
+      });
       return new Response(
         JSON.stringify({ error: "Invalid JSON body" }),
         { status: 400, headers: { "Content-Type": "application/json" } }
@@ -105,22 +125,25 @@ http.route({
 
     // Validate required fields
     if (!body.topic || typeof body.topic !== "string") {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with missing topic.",
+        metadata: JSON.stringify({ reason: "missing_topic" }),
+      });
       return new Response(
         JSON.stringify({ error: "Missing or invalid 'topic' field" }),
         { status: 400, headers: { "Content-Type": "application/json" } }
       );
     }
 
-    // S6 fix: Topic allowlist — only accept known external webhook topics.
-    // Without this, any authenticated caller can publish to internal topics
-    // (e.g. "session:ended", "payment:confirmed") and trigger unintended handlers.
-    const ALLOWED_WEBHOOK_TOPICS = new Set([
-      "external:notification",
-      "external:status_update",
-      "external:data_sync",
-    ]);
-
-    if (!ALLOWED_WEBHOOK_TOPICS.has(body.topic)) {
+    if (!WEBHOOK_EVENT_TOPICS.has(body.topic)) {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with disallowed topic.",
+        metadata: JSON.stringify({ reason: "disallowed_topic", topic: body.topic }),
+      });
       return new Response(
         JSON.stringify({ error: "Unknown or disallowed topic." }),
         { status: 400, headers: { "Content-Type": "application/json" } }
@@ -130,16 +153,42 @@ http.route({
     // S10 fix: Limit payload size to prevent abuse via oversized webhook bodies.
     const payloadStr = JSON.stringify(body.payload ?? {});
     if (payloadStr.length > 8192) {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with oversized payload.",
+        metadata: JSON.stringify({ reason: "payload_too_large", topic: body.topic, payloadBytes: payloadStr.length }),
+      });
       return new Response(
         JSON.stringify({ error: "Payload too large (max 8 KB)." }),
         { status: 413, headers: { "Content-Type": "application/json" } }
       );
     }
 
+    let validatedPayload;
+    try {
+      validatedPayload = validateEventPayload(body.topic, body.payload ?? {});
+    } catch (error) {
+      await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+        level: "warn",
+        component: "http:webhook",
+        message: "Rejected webhook request with invalid payload schema.",
+        metadata: JSON.stringify({
+          reason: "invalid_payload",
+          topic: body.topic,
+          error: String(error),
+        }),
+      });
+      return new Response(
+        JSON.stringify({ error: String(error) }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
     // Publish to the event bus
     await ctx.runMutation(internal.eventBus.internalPublish, {
       topic: body.topic,
-      payload: payloadStr,
+      payload: JSON.stringify(validatedPayload),
     });
 
     return new Response(

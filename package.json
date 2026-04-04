@@ -11,6 +11,8 @@
     "pastpapers:manifest": "node scripts/generatePastPaperManifest.mjs",
     "preview": "vite preview",
     "test": "tsx --test \"src/**/*.test.js\" \"convex/**/*.test.ts\"",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "convex:deploy": "npx convex deploy"
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.59.1",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",

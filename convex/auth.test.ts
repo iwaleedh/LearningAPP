@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { getUser, registerUser, getAllUsers } from "./users";
+import { getUser, registerUser, getAllUsers, searchUsers } from "./users";
 import { getNote } from "./notes";
 import { listFlashcards, deleteFlashcard } from "./flashcards";
 import { getAssetsByNote, deleteNoteAsset } from "./assets";
@@ -31,6 +31,7 @@ import { createMockConvexCtx } from "./testUtils";
 const getUserHandler = (getUser as any)._handler as (ctx: any, args: any) => Promise<any>;
 const registerUserHandler = (registerUser as any)._handler as (ctx: any, args: any) => Promise<any>;
 const getAllUsersHandler = (getAllUsers as any)._handler as (ctx: any, args: any) => Promise<any>;
+const searchUsersHandler = (searchUsers as any)._handler as (ctx: any, args: any) => Promise<any>;
 const getNoteHandler = (getNote as any)._handler as (ctx: any, args: any) => Promise<any>;
 const listFlashcardsHandler = (listFlashcards as any)._handler as (ctx: any, args: any) => Promise<any>;
 const deleteFlashcardHandler = (deleteFlashcard as any)._handler as (ctx: any, args: any) => Promise<any>;
@@ -130,6 +131,72 @@ test("student getUser cannot read another user's private record", async () => {
   assert.equal(result, null);
 });
 
+test("pending student getUser cannot inspect another user's summary", async () => {
+  const { ctx } = createMockConvexCtx({
+    identity: {
+      subject: "student_pending",
+      role: "student",
+    },
+    tables: {
+      users: [
+        {
+          _id: "users:pending",
+          userId: "student_pending",
+          username: "Pending Student",
+          role: "student",
+          accountStatus: "pending",
+          createdAt: 1,
+        },
+        {
+          _id: "users:teacher",
+          userId: "teacher_aaaaaa",
+          username: "Teacher",
+          role: "teacher",
+          createdAt: 2,
+        },
+      ],
+    },
+  });
+
+  await assert.rejects(
+    () => getUserHandler(ctx, { userId: "teacher_aaaaaa" }),
+    /Account pending approval\./
+  );
+});
+
+test("searchUsers rejects a pending caller before exposing directory results", async () => {
+  const { ctx } = createMockConvexCtx({
+    identity: {
+      subject: "student_pending",
+      role: "student",
+    },
+    tables: {
+      users: [
+        {
+          _id: "users:pending",
+          userId: "student_pending",
+          username: "Pending Student",
+          role: "student",
+          accountStatus: "pending",
+          createdAt: 1,
+        },
+        {
+          _id: "users:teacher",
+          userId: "teacher_aaaaaa",
+          username: "Teacher Alpha",
+          role: "teacher",
+          createdAt: 2,
+        },
+      ],
+    },
+  });
+
+  await assert.rejects(
+    () => searchUsersHandler(ctx, { search: "teach", limit: 5 }),
+    /Account pending approval\./
+  );
+});
+
 test("getAllUsers rejects a student caller", async () => {
   const { ctx } = createMockConvexCtx({
     identity: {
@@ -198,6 +265,7 @@ test("getNote returns only the current user's row for a shared note id", async (
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
       notes: [
         {
           _id: "notes:mine",
@@ -243,6 +311,9 @@ test("listFlashcards rejects requests for another owner user id", async () => {
       subject: "student_aaaaaa",
       role: "student",
     },
+    tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
+    },
   });
 
   await assert.rejects(
@@ -258,6 +329,7 @@ test("deleteFlashcard leaves another user's card with the same card id untouched
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
       flashcards: [
         {
           _id: "flashcards:mine",
@@ -298,6 +370,7 @@ test("getAssetsByNote returns only the current user's assets for the note", asyn
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
       noteAssets: [
         {
           _id: "noteAssets:mine",
@@ -334,6 +407,7 @@ test("deleteNoteAsset leaves another user's asset with the same asset id untouch
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
       noteAssets: [
         {
           _id: "noteAssets:mine",
@@ -370,6 +444,7 @@ test("updateStroke rejects a non-owner participant who is not host or teacher", 
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:participant_bbb", userId: "participant_bbb", username: "Participant", role: "student", createdAt: 1 }],
       liveSessions: [
         {
           _id: "session:1",
@@ -416,7 +491,7 @@ test("updateStroke rejects a non-owner participant who is not host or teacher", 
         strokeId: "stroke:1",
         fabricObjectJson: "{\"kind\":\"new\"}",
       }),
-    /Teacher or host access required\./
+    /Only the session host or an admin can perform this action\./
   );
 
   assert.equal(tables.annotationStrokes[0]?.fabricObjectJson, "{\"kind\":\"old\"}");
@@ -429,6 +504,7 @@ test("deleteStroke allows the host to remove another participant's stroke", asyn
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:host_aaaaaa", userId: "host_aaaaaa", username: "Host", role: "student", createdAt: 1 }],
       liveSessions: [
         {
           _id: "session:1",
@@ -702,6 +778,7 @@ test("getLiveClassById returns only the preview for a user without admission", a
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_bbbbbb", userId: "student_bbbbbb", username: "Student", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -733,6 +810,7 @@ test("joinLiveClass allows a student with an accepted join request", async () =>
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_bbbbbb", userId: "student_bbbbbb", username: "Student", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -776,6 +854,9 @@ test("createLiveClass rejects a student caller", async () => {
       subject: "student_bbbbbb",
       role: "student",
     },
+    tables: {
+      users: [{ _id: "users:student_bbbbbb", userId: "student_bbbbbb", username: "Student", role: "student", createdAt: 1 }],
+    },
   });
 
   await assert.rejects(
@@ -795,6 +876,17 @@ test("createLiveClass rejects creating a class for another host", async () => {
       subject: "teacher_aaaaaa",
       role: "teacher",
     },
+    tables: {
+      users: [
+        {
+          _id: "users:teacher",
+          userId: "teacher_aaaaaa",
+          username: "Teacher",
+          role: "teacher",
+          createdAt: 1,
+        },
+      ],
+    },
   });
 
   await assert.rejects(
@@ -808,13 +900,22 @@ test("createLiveClass rejects creating a class for another host", async () => {
   );
 });
 
-test("endLiveClass allows a teacher to end another host's class", async () => {
+test("endLiveClass rejects an unrelated teacher from ending another host's class", async () => {
   const { ctx, tables } = createMockConvexCtx({
     identity: {
       subject: "teacher_admin",
       role: "teacher",
     },
     tables: {
+      users: [
+        {
+          _id: "users:teacher_admin",
+          userId: "teacher_admin",
+          username: "Teacher Admin",
+          role: "teacher",
+          createdAt: 1,
+        },
+      ],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -830,9 +931,12 @@ test("endLiveClass allows a teacher to end another host's class", async () => {
     },
   });
 
-  await endLiveClassHandler(ctx, { classId: "liveClassSessions:1" });
+  await assert.rejects(
+    () => endLiveClassHandler(ctx, { classId: "liveClassSessions:1" }),
+    /Only the session host or an admin can perform this action\./
+  );
 
-  assert.equal(tables.liveClassSessions[0]?.status, "ended");
+  assert.equal(tables.liveClassSessions[0]?.status, "active");
 });
 
 test("setAutoAccept rejects a non-host participant", async () => {
@@ -842,6 +946,7 @@ test("setAutoAccept rejects a non-host participant", async () => {
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_viewer", userId: "student_viewer", username: "Viewer", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -868,7 +973,7 @@ test("setAutoAccept rejects a non-host participant", async () => {
 
   await assert.rejects(
     () => setAutoAcceptHandler(ctx, { classId: "liveClassSessions:1", autoAccept: true }),
-    /Teacher or host access required\./
+    /Only the session host or an admin can perform this action\./
   );
 
   assert.equal(tables.liveClassSessions[0]?.autoAccept, false);
@@ -881,6 +986,7 @@ test("raiseHand rejects a student who is not admitted to the class", async () =>
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_intruder", userId: "student_intruder", username: "Intruder", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -911,6 +1017,7 @@ test("getHandRaisesByClass rejects a viewer participant", async () => {
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_viewer", userId: "student_viewer", username: "Viewer", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -946,7 +1053,7 @@ test("getHandRaisesByClass rejects a viewer participant", async () => {
 
   await assert.rejects(
     () => getHandRaisesByClassHandler(ctx, { classId: "liveClassSessions:1" }),
-    /Teacher or host access required\./
+    /Only the session host or an admin can perform this action\./
   );
 });
 
@@ -955,6 +1062,9 @@ test("queryLogs rejects a student caller", async () => {
     identity: {
       subject: "student_aaaaaa",
       role: "student",
+    },
+    tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
     },
   });
 
@@ -1033,6 +1143,9 @@ test("getPlatformOverview rejects a student caller", async () => {
       subject: "student_aaaaaa",
       role: "student",
     },
+    tables: {
+      users: [{ _id: "users:student_aaaaaa", userId: "student_aaaaaa", username: "Student", role: "student", createdAt: 1 }],
+    },
   });
 
   await assert.rejects(() => getPlatformOverviewHandler(ctx, {}), /Teacher access required\./);
@@ -1045,6 +1158,7 @@ test("getActiveSessions rejects a student caller", async () => {
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_bbbbbb", userId: "student_bbbbbb", username: "Student", role: "student", createdAt: 1 }],
       liveSessions: [
         {
           _id: "liveSessions:1",
@@ -1068,6 +1182,7 @@ test("getJoinRequests allows the host to inspect requests for their class", asyn
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:teacher_aaaaaa", userId: "teacher_aaaaaa", username: "Teacher", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -1117,6 +1232,7 @@ test("updateStudentNote rejects an unrelated student for another learner's reque
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_intruder", userId: "student_intruder", username: "Intruder", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -1150,7 +1266,7 @@ test("updateStudentNote rejects an unrelated student for another learner's reque
         tempId: "temp-1",
         noteContent: "stolen note",
       }),
-    /Teacher or host access required\./
+    /Only the session host or an admin can perform this action\./
   );
 
   assert.equal(tables.studentNotes?.length ?? 0, 0);
@@ -1163,6 +1279,7 @@ test("getStudentNote lets the host read a legacy request note without requester 
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:teacher_aaaaaa", userId: "teacher_aaaaaa", username: "Teacher", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -1212,6 +1329,7 @@ test("getStudentName rejects an unrelated student for a legacy request without r
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_intruder_name", userId: "student_intruder", username: "Intruder", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -1239,7 +1357,7 @@ test("getStudentName rejects an unrelated student for a legacy request without r
 
   await assert.rejects(
     () => getStudentNameHandler(ctx, { sessionId: "liveClassSessions:1", tempId: "temp-1" }),
-    /Teacher or host access required\./
+    /Only the session host or an admin can perform this action\./
   );
 });
 
@@ -1250,6 +1368,7 @@ test("getStudentJoinStatus rejects an unrelated student for a legacy request wit
       role: "student",
     },
     tables: {
+      users: [{ _id: "users:student_intruder_status", userId: "student_intruder", username: "Intruder", role: "student", createdAt: 1 }],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",
@@ -1277,7 +1396,7 @@ test("getStudentJoinStatus rejects an unrelated student for a legacy request wit
 
   await assert.rejects(
     () => getStudentJoinStatusHandler(ctx, { requestId: "join:1" }),
-    /Teacher or host access required\./
+    /Only the session host or an admin can perform this action\./
   );
 });
 
@@ -1288,6 +1407,16 @@ test("requestJoin auto-accepts when the class is configured for automatic admiss
       role: "student",
     },
     tables: {
+      users: [
+        {
+          _id: "users:student_bbbbbb",
+          userId: "student_bbbbbb",
+          username: "Student",
+          role: "student",
+          accountStatus: "approved",
+          createdAt: 1,
+        },
+      ],
       liveClassSessions: [
         {
           _id: "liveClassSessions:1",

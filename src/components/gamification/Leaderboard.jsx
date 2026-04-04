@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
+import { useQuery } from 'convex/react';
 import { Trophy, Star, TrendingUp, BookOpen, Target, FileText, Flame, Medal } from 'lucide-react';
-import { getTotalReadCount, computeStudyStreak } from '../../hooks/useNoteReadStatus.js';
-import { getExercisesDone, getPapersViewed } from '../../services/activityStore.js';
+import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
 import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
 import { api, callQuery, getClient } from '../../convex-client.js';
 import './Gamification.css';
@@ -26,18 +26,20 @@ function getLevel(xp) {
 
 export default function Leaderboard() {
     const activityVersion = useActivityRefresh();
+    const badgeMetrics = useQuery(api.badgeMetrics.getMyBadgeMetrics);
+    const readProgress = useReadProgressSummary();
     const [leaderboard, setLeaderboard] = useState({ rows: [], currentUserId: null, currentRow: null });
     const [leaderboardState, setLeaderboardState] = useState('idle');
 
     const stats = useMemo(() => {
         void activityVersion;
-        const notesRead = getTotalReadCount();
-        const exercisesDone = getExercisesDone();
-        const papersViewed = getPapersViewed();
-        const streak = computeStudyStreak();
+        const notesRead = readProgress.totalRead;
+        const exercisesDone = badgeMetrics?.exercisesCompleted || 0;
+        const papersViewed = badgeMetrics?.papersCompleted || 0;
+        const streak = readProgress.currentStreak;
         const xp = notesRead * 10 + exercisesDone * 5 + papersViewed * 3 + streak * 20;
         return { notesRead, exercisesDone, papersViewed, streak, xp };
-    }, [activityVersion]);
+    }, [activityVersion, badgeMetrics, readProgress]);
 
     useEffect(() => {
         let cancelled = false;

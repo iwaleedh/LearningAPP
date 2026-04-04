@@ -12,8 +12,13 @@ const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
 export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
     const { canSignIn, debugAuthEnabled, isSignedIn, isLoaded } = useAuth();
     const [authOpen, setAuthOpen] = useState(false);
+    const [authReturnFocusEl, setAuthReturnFocusEl] = useState(null);
     const location = useLocation();
     const redirectTo = getLocationPath(location);
+    const openAuth = (event) => {
+        setAuthReturnFocusEl(event.currentTarget);
+        setAuthOpen(true);
+    };
 
     return (
         <>
@@ -52,7 +57,7 @@ export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
                             <button
                                 type="button"
                                 className="btn btn-secondary signin-btn"
-                                onClick={() => setAuthOpen(true)}
+                                onClick={openAuth}
                             >
                                 <LogIn size={15} />
                                 Sign In
@@ -64,7 +69,11 @@ export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
 
             {authOpen && (
         <Suspense fallback={null}>
-          <AuthModal onClose={() => setAuthOpen(false)} redirectTo={redirectTo} />
+                    <AuthModal
+                        onClose={() => setAuthOpen(false)}
+                        redirectTo={redirectTo}
+                        returnFocusEl={authReturnFocusEl}
+                    />
         </Suspense>
       )}
         </>

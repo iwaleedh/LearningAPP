@@ -1,7 +1,7 @@
 import { mutation, query, type MutationCtx, type QueryCtx } from "./_generated/server";
 import { v } from "convex/values";
 import {
-  requireAuthenticatedUserId,
+  requireApprovedAuthenticatedUserId,
   requireHostedSessionHostOrTeacher,
 } from "./authHelpers";
 
@@ -18,7 +18,7 @@ function isActiveLiveClassSession(
 }
 
 async function getJoinRequestAccess(ctx: PublicCtx, sessionId: string, tempId: string) {
-  const currentUserId = await requireAuthenticatedUserId(ctx);
+  const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
   const request = await ctx.db
     .query("classJoinRequests")
     .withIndex("by_tempId", (q) => q.eq("tempId", tempId))
@@ -45,7 +45,7 @@ export const requestJoin = mutation({
     tempId: v.string(),
   },
   handler: async (ctx, { sessionId, studentName, tempId }) => {
-    const requesterUserId = await requireAuthenticatedUserId(ctx);
+    const requesterUserId = await requireApprovedAuthenticatedUserId(ctx);
     // Prevent duplicate requests from same tempId
     const existing = await ctx.db
       .query("classJoinRequests")
@@ -109,7 +109,7 @@ export const getJoinRequests = query({
 export const getStudentJoinStatus = query({
   args: { requestId: v.id("classJoinRequests") },
   handler: async (ctx, { requestId }) => {
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     const req = await ctx.db.get(requestId);
     if (!req) return null;
     if (req.requesterUserId === currentUserId) {

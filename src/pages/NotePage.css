@@ -350,6 +350,26 @@
     min-width: 0;
 }
 
+.note-study-tools {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: var(--space-5) var(--space-6) 0;
+}
+
+.note-study-tools .student-tools-bar {
+    margin-bottom: 0;
+}
+
+.note-study-content {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .note-study-tools {
+        padding: var(--space-3) var(--space-3) 0;
+    }
+}
+
 /* Every combination gets the same standalone radius */
 .note-toc + .note-scroll-area,
 .note-scroll-area:has(+ .recall-panel),

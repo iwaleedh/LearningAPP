@@ -1,6 +1,6 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
-import { requireAuthenticatedUserId, requireMatchingUserId } from "./authHelpers";
+import { requireApprovedAuthenticatedUserId, requireApprovedMatchingUserId } from "./authHelpers";
 
 export const saveNoteAsset = mutation({
   args: {
@@ -11,7 +11,7 @@ export const saveNoteAsset = mutation({
     data: v.string(),
   },
   handler: async (ctx, args) => {
-    const ownerUserId = await requireMatchingUserId(ctx, args.ownerUserId);
+    const ownerUserId = await requireApprovedMatchingUserId(ctx, args.ownerUserId);
     const existing = await ctx.db
       .query("noteAssets")
       .withIndex("by_assetId", (q) => q.eq("assetId", args.assetId))
@@ -38,7 +38,7 @@ export const saveNoteAsset = mutation({
 export const deleteNoteAsset = mutation({
   args: { assetId: v.string() },
   handler: async (ctx, { assetId }) => {
-    const ownerUserId = await requireAuthenticatedUserId(ctx);
+    const ownerUserId = await requireApprovedAuthenticatedUserId(ctx);
     const asset = await ctx.db
       .query("noteAssets")
       .withIndex("by_assetId", (q) => q.eq("assetId", assetId))
@@ -51,7 +51,7 @@ export const deleteNoteAsset = mutation({
 export const getAssetsByNote = query({
   args: { noteId: v.string() },
   handler: async (ctx, { noteId }) => {
-    const ownerUserId = await requireAuthenticatedUserId(ctx);
+    const ownerUserId = await requireApprovedAuthenticatedUserId(ctx);
     return await ctx.db
       .query("noteAssets")
       .withIndex("by_noteId", (q) => q.eq("noteId", noteId))

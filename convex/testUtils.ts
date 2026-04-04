@@ -12,6 +12,12 @@ type MockIdentity = {
 } | null;
 
 type MockTables = Record<string, Array<Record<string, any>>>;
+type MockStorageFiles = Record<string, {
+  contentType?: string | null;
+  size?: number;
+  sha256?: string;
+  url?: string | null;
+}>;
 
 type SchedulerCall = {
   delayMs: number;
@@ -116,11 +122,15 @@ class MockQuery {
 export function createMockConvexCtx({
   identity,
   tables = {},
+  storageFiles = {},
 }: {
   identity: MockIdentity;
   tables?: MockTables;
+  storageFiles?: MockStorageFiles;
 }) {
   const data = cloneTables(tables);
+  const storedFiles = structuredClone(storageFiles);
+  const deletedStorageIds = new Set<string>();
   const schedulerCalls: SchedulerCall[] = [];
   let nextId = 1;
 
@@ -180,11 +190,44 @@ export function createMockConvexCtx({
         schedulerCalls.push({ delayMs, args });
       },
     },
+    storage: {
+      async generateUploadUrl() {
+        return "https://storage.local/upload";
+      },
+      async getUrl(storageId: string) {
+        const key = String(storageId);
+        if (deletedStorageIds.has(key)) {
+          return null;
+        }
+        const file = storedFiles[key];
+        return file?.url ?? null;
+      },
+      async getMetadata(storageId: string) {
+        const key = String(storageId);
+        if (deletedStorageIds.has(key)) {
+          return null;
+        }
+        const file = storedFiles[key];
+        if (!file) {
+          return null;
+        }
+        return {
+          storageId: key,
+          sha256: file.sha256 ?? "sha256",
+          size: file.size ?? 0,
+          contentType: file.contentType ?? null,
+        };
+      },
+      async delete(storageId: string) {
+        deletedStorageIds.add(String(storageId));
+      },
+    },
   };
 
   return {
     ctx,
     tables: data,
+    deletedStorageIds,
     schedulerCalls,
   };
 }

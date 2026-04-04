@@ -8,13 +8,18 @@
  * @module
  */
 
+import type * as activityMetrics from "../activityMetrics.js";
 import type * as admin from "../admin.js";
 import type * as assets from "../assets.js";
 import type * as authHelpers from "../authHelpers.js";
+import type * as badgeMetrics from "../badgeMetrics.js";
 import type * as crons from "../crons.js";
 import type * as cursors from "../cursors.js";
+import type * as dataQuality from "../dataQuality.js";
 import type * as eventBus from "../eventBus.js";
 import type * as eventHandlers from "../eventHandlers.js";
+import type * as eventSchemas from "../eventSchemas.js";
+import type * as eventTopics from "../eventTopics.js";
 import type * as featureFlags from "../featureFlags.js";
 import type * as flashcards from "../flashcards.js";
 import type * as gateway from "../gateway.js";
@@ -25,8 +30,10 @@ import type * as joinRequests from "../joinRequests.js";
 import type * as leaderboard from "../leaderboard.js";
 import type * as liveclass from "../liveclass.js";
 import type * as logs from "../logs.js";
+import type * as mistakes from "../mistakes.js";
 import type * as notes from "../notes.js";
 import type * as paymentRequests from "../paymentRequests.js";
+import type * as readProgress from "../readProgress.js";
 import type * as sessions from "../sessions.js";
 import type * as strokes from "../strokes.js";
 import type * as studyAttempts from "../studyAttempts.js";
@@ -42,13 +49,18 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  activityMetrics: typeof activityMetrics;
   admin: typeof admin;
   assets: typeof assets;
   authHelpers: typeof authHelpers;
+  badgeMetrics: typeof badgeMetrics;
   crons: typeof crons;
   cursors: typeof cursors;
+  dataQuality: typeof dataQuality;
   eventBus: typeof eventBus;
   eventHandlers: typeof eventHandlers;
+  eventSchemas: typeof eventSchemas;
+  eventTopics: typeof eventTopics;
   featureFlags: typeof featureFlags;
   flashcards: typeof flashcards;
   gateway: typeof gateway;
@@ -59,8 +71,10 @@ declare const fullApi: ApiFromModules<{
   leaderboard: typeof leaderboard;
   liveclass: typeof liveclass;
   logs: typeof logs;
+  mistakes: typeof mistakes;
   notes: typeof notes;
   paymentRequests: typeof paymentRequests;
+  readProgress: typeof readProgress;
   sessions: typeof sessions;
   strokes: typeof strokes;
   studyAttempts: typeof studyAttempts;

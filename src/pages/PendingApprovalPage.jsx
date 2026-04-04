@@ -45,6 +45,7 @@ function PaymentForm({ onSubmitted }) {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState('');
   const fileRef = useRef(null);
+  const submissionKeyRef = useRef(crypto.randomUUID());
 
   const generateUploadUrl  = useMutation(api.paymentRequests.generateUploadUrl);
   const submitPaymentRequest = useMutation(api.paymentRequests.submitPaymentRequest);
@@ -99,7 +100,10 @@ function PaymentForm({ onSubmitted }) {
     setError('');
     try {
       // 1. Get upload URL from Convex
-      const uploadUrl = await generateUploadUrl();
+      const uploadUrl = await generateUploadUrl({
+        submissionKey: submissionKeyRef.current,
+        mimeType: file.type,
+      });
 
       // 2. POST file to Convex storage
       const res = await fetch(uploadUrl, {
@@ -112,6 +116,7 @@ function PaymentForm({ onSubmitted }) {
 
       // 3. Save metadata
       await submitPaymentRequest({
+        submissionKey: submissionKeyRef.current,
         plan:      selectedPlan,
         amount:    AMOUNT[selectedPlan],
         storageId,
@@ -119,6 +124,7 @@ function PaymentForm({ onSubmitted }) {
         mimeType:  file.type,
       });
 
+      submissionKeyRef.current = crypto.randomUUID();
       onSubmitted?.();
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again.');

@@ -1,7 +1,7 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { internal } from "./_generated/api";
-import { requireAuthenticatedUserId, requireMatchingUserId } from "./authHelpers";
+import { requireApprovedAuthenticatedUserId, requireApprovedMatchingUserId } from "./authHelpers";
 
 export const upsertNote = mutation({
   args: {
@@ -16,7 +16,7 @@ export const upsertNote = mutation({
     estimatedReadMinutes: v.number(),
   },
   handler: async (ctx, args) => {
-    const ownerUserId = await requireMatchingUserId(ctx, args.ownerUserId);
+    const ownerUserId = await requireApprovedMatchingUserId(ctx, args.ownerUserId);
     const existing = await ctx.db
       .query("notes")
       .withIndex("by_noteId", (q) => q.eq("noteId", args.noteId))
@@ -63,7 +63,7 @@ export const upsertNote = mutation({
 export const deleteNote = mutation({
   args: { noteId: v.string() },
   handler: async (ctx, { noteId }) => {
-    const ownerUserId = await requireAuthenticatedUserId(ctx);
+    const ownerUserId = await requireApprovedAuthenticatedUserId(ctx);
     const note = await ctx.db
       .query("notes")
       .withIndex("by_noteId", (q) => q.eq("noteId", noteId))
@@ -84,7 +84,7 @@ export const deleteNote = mutation({
 export const getNote = query({
   args: { noteId: v.string() },
   handler: async (ctx, { noteId }) => {
-    const ownerUserId = await requireAuthenticatedUserId(ctx);
+    const ownerUserId = await requireApprovedAuthenticatedUserId(ctx);
     return await ctx.db
       .query("notes")
       .withIndex("by_noteId", (q) => q.eq("noteId", noteId))
@@ -96,7 +96,7 @@ export const getNote = query({
 export const listNotesBySubject = query({
   args: { subject: v.string() },
   handler: async (ctx, { subject }) => {
-    const ownerUserId = await requireAuthenticatedUserId(ctx);
+    const ownerUserId = await requireApprovedAuthenticatedUserId(ctx);
     return await ctx.db
       .query("notes")
       .withIndex("by_subject", (q) => q.eq("subject", subject.toLowerCase()))

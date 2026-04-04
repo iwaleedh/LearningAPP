@@ -4,9 +4,9 @@ import {
   getUserRecordById,
   getCurrentUsername,
   getHostedSessionByStringId,
-  requireAuthenticatedUserId,
+  requireApprovedAuthenticatedUserId,
   requireHostedSessionHostOrTeacher,
-  requireMatchingUserId,
+  requireApprovedMatchingUserId,
 } from "./authHelpers";
 
 async function enrichInvites(
@@ -43,7 +43,7 @@ export const inviteToSession = mutation({
     toUsername: v.string(),
   },
   handler: async (ctx, args) => {
-    const fromUserId = await requireMatchingUserId(ctx, args.fromUserId);
+    const fromUserId = await requireApprovedMatchingUserId(ctx, args.fromUserId);
     await requireHostedSessionHostOrTeacher(ctx, args.sessionId);
     let resolvedToUserId = args.toUserId;
     if (!resolvedToUserId) {
@@ -71,7 +71,7 @@ export const respondToInvite = mutation({
     userId: v.optional(v.string()),
   },
   handler: async (ctx, { inviteId, accept, userId }) => {
-    const currentUserId = await requireMatchingUserId(ctx, userId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, userId);
     const invite = await ctx.db.get(inviteId);
     if (!invite || invite.status !== "pending") return;
     const currentUsername = await getCurrentUsername(ctx);
@@ -112,7 +112,7 @@ export const respondToInvite = mutation({
 export const getMyPendingInvites = query({
   args: { toUsername: v.optional(v.string()) },
   handler: async (ctx, { toUsername }) => {
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     const currentUsername = await getCurrentUsername(ctx);
     if (toUsername && toUsername !== currentUsername) {
       throw new Error("You can only view your own invites.");

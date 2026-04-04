@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { escapeHtml, escapeRegExp } from './sanitize.js';
+import { escapeHtml, escapeRegExp, isSafeCssColor } from './sanitize.js';
 
 // ── escapeHtml ──────────────────────────────────────────────────────
 
@@ -82,5 +82,21 @@ describe('escapeRegExp', () => {
     it('passes through safe strings unchanged', () => {
         assert.equal(escapeRegExp('hello'), 'hello');
         assert.equal(escapeRegExp('indices'), 'indices');
+    });
+});
+
+describe('isSafeCssColor', () => {
+    it('accepts safe hex and rgb formats', () => {
+        assert.equal(isSafeCssColor('#fff'), true);
+        assert.equal(isSafeCssColor('#12abef'), true);
+        assert.equal(isSafeCssColor('rgb(255, 0, 12)'), true);
+        assert.equal(isSafeCssColor('rgba(255, 0, 12, 0.5)'), true);
+    });
+
+    it('rejects unsafe or malformed CSS values', () => {
+        assert.equal(isSafeCssColor('#fff;position:absolute'), false);
+        assert.equal(isSafeCssColor('javascript:alert(1)'), false);
+        assert.equal(isSafeCssColor('var(--color-primary)'), false);
+        assert.equal(isSafeCssColor(null), false);
     });
 });

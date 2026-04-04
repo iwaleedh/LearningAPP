@@ -1,6 +1,6 @@
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import { getSubjectLabel, subjectNoteCounts } from '../../data/syllabusIndex.js';
-import { getReadNoteIds, getTotalReadCount } from '../../hooks/useNoteReadStatus.js';
+import { getReadProgressSnapshot } from '../../hooks/useNoteReadStatus.js';
 import { getNote, listNotesBySubject } from './noteStore.js';
 
 const PAGE_MARGIN = 48;
@@ -189,8 +189,9 @@ export async function exportNotesAsPdf() {
         throw new Error('No saved notes are available to export yet.');
     }
 
-    const readIds = getReadNoteIds();
-    const totalRead = getTotalReadCount();
+    const readProgress = await getReadProgressSnapshot();
+    const readIds = new Set(readProgress.readNoteIds);
+    const totalRead = readProgress.totalRead;
     const pdfDoc = await PDFDocument.create();
     const regularFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
     const boldFont = await pdfDoc.embedFont(StandardFonts.HelveticaBold);

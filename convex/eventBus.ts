@@ -14,15 +14,12 @@
 import { mutation, query, internalMutation, internalQuery } from "./_generated/server";
 import { v } from "convex/values";
 import { requireTeacher } from "./authHelpers";
-
-// Topics that authenticated teachers/admins are allowed to publish via the client-callable mutation.
-// Internal server-side topics (e.g. "session:ended", "user:registered") must NEVER appear here —
-// use internalPublish (not callable from the client) for those.
-const ALLOWED_PUBLIC_TOPICS = new Set([
-  "admin:broadcast",
-  "admin:announcement",
-  "debug:ping",
-]);
+import { validateEventPayload } from "./eventSchemas";
+import {
+  INTERNAL_EVENT_TOPICS,
+  PUBLIC_EVENT_TOPICS,
+  WEBHOOK_EVENT_TOPICS,
+} from "./eventTopics";
 
 // S10/S11 fix: Maximum payload size (bytes) for client-published events.
 // Prevents abuse via oversized payloads that could degrade DB performance.
@@ -45,6 +42,11 @@ function validatePayload(payload: string): string {
   return payload;
 }
 
+function validateTopicAndPayload(topic: string, payload: string) {
+  const validatedPayload = JSON.parse(validatePayload(payload));
+  return JSON.stringify(validateEventPayload(topic, validatedPayload));
+}
+
 // ── Teacher/admin: Publish an event ─────────────────────────────────
 export const publish = mutation({
   args: {
@@ -56,11 +58,11 @@ export const publish = mutation({
 
     // S11 fix: Validate topic against allowlist so teachers cannot inject
     // events into internal topics (e.g. "payment:confirmed", "session:ended").
-    if (!ALLOWED_PUBLIC_TOPICS.has(topic)) {
+    if (!PUBLIC_EVENT_TOPICS.has(topic)) {
       throw new Error(`Topic "${topic}" is not allowed for client publishing.`);
     }
 
-    const validatedPayload = validatePayload(payload);
+    const validatedPayload = validateTopicAndPayload(topic, payload);
 
     return await ctx.db.insert("events", {
       topic,
@@ -79,9 +81,24 @@ export const internalPublish = internalMutation({
     payload: v.string(),
   },
   handler: async (ctx, { topic, payload }) => {
+    if (!INTERNAL_EVENT_TOPICS.has(topic) && !WEBHOOK_EVENT_TOPICS.has(topic)) {
+      await ctx.db.insert("logs", {
+        level: "warn",
+        message: `Rejected internal publish for disallowed topic ${topic}.`,
+        component: "eventBus:internalPublish",
+        userId: "",
+        sessionId: "",
+        metadata: JSON.stringify({ reason: "disallowed_topic", topic }),
+        timestamp: Date.now(),
+      });
+      throw new Error(`Topic "${topic}" is not allowed for internal publishing.`);
+    }
+
+    const validatedPayload = validateTopicAndPayload(topic, payload);
+
     return await ctx.db.insert("events", {
       topic,
-      payload,
+      payload: validatedPayload,
       status: "pending",
       publishedAt: Date.now(),
       processedAt: 0,
@@ -186,5 +203,25 @@ export const cleanupOldEvents = internalMutation({
       }
     }
     return { deleted };
+  },
+});
+
+export const logSecurityEvent = internalMutation({
+  args: {
+    level: v.string(),
+    component: v.string(),
+    message: v.string(),
+    metadata: v.optional(v.string()),
+  },
+  handler: async (ctx, { level, component, message, metadata }) => {
+    await ctx.db.insert("logs", {
+      level,
+      message,
+      component,
+      userId: "",
+      sessionId: "",
+      metadata: metadata || "{}",
+      timestamp: Date.now(),
+    });
   },
 });

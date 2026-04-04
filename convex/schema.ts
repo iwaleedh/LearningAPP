@@ -58,13 +58,51 @@ export default defineSchema({
     scorePercent: v.optional(v.number()),
     confidence: v.optional(v.string()),
     durationSeconds: v.optional(v.number()),
+    activityDateKey: v.optional(v.string()),
     metadataJson: v.optional(v.string()),
+    // D1: Client-generated idempotency key — prevents double-submit on retry/re-click.
+    clientAttemptId: v.optional(v.string()),
     createdAt: v.number(),
   })
     .index("by_owner", ["ownerUserId"])
     .index("by_subject", ["subject"])
     .index("by_sourceType", ["sourceType"])
-    .index("by_questionKey", ["questionKey"]),
+    .index("by_questionKey", ["questionKey"])
+    // D1: Composite index for O(log n) dedup check on (ownerUserId, clientAttemptId).
+    .index("by_owner_client_attempt", ["ownerUserId", "clientAttemptId"]),
+
+  badgeMetricEvents: defineTable({
+    ownerUserId: v.string(),
+    studyAttemptId: v.id("studyAttempts"),
+    sourceType: v.union(v.literal('exercise'), v.literal('pastpaper')),
+    activityType: v.string(),
+    questionKey: v.string(),
+    subject: v.string(),
+    deltaJson: v.string(),
+    metadataJson: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_owner", ["ownerUserId"])
+    .index("by_attempt", ["studyAttemptId"]),
+
+  badgeMetricProjections: defineTable({
+    ownerUserId: v.string(),
+    exercisesCompleted: v.number(),
+    papersCompleted: v.number(),
+    perfectScores: v.number(),
+    fastCompletions: v.number(),
+    updatedAt: v.number(),
+  }).index("by_owner", ["ownerUserId"]),
+
+  // D5: One row per (userId, dateKey) — tracks unique study days for real
+  // login/activity-day counts used by badge criteria. Deduped at insert time.
+  userSessions: defineTable({
+    userId: v.string(),
+    dateKey: v.string(), // YYYY-MM-DD (local date in user's timezone)
+    createdAt: v.number(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_user_date", ["userId", "dateKey"]),
 
   flashcards: defineTable({
     cardId: v.string(),
@@ -79,6 +117,45 @@ export default defineSchema({
     .index("by_cardId", ["cardId"])
     .index("by_owner", ["ownerUserId"])
     .index("by_subject", ["subject"]),
+
+  flashcardProgress: defineTable({
+    ownerUserId: v.string(),
+    cardId: v.string(),
+    status: v.union(v.literal('known'), v.literal('learning')),
+    firstReviewedAt: v.number(),
+    lastReviewedAt: v.number(),
+    updatedAt: v.number(),
+    reviewCount: v.number(),
+  })
+    .index("by_owner", ["ownerUserId"])
+    .index("by_owner_card", ["ownerUserId", "cardId"]),
+
+  noteReadProgress: defineTable({
+    ownerUserId: v.string(),
+    noteId: v.string(),
+    readAt: v.string(),
+    localDateKey: v.string(),
+    updatedAt: v.number(),
+  })
+    .index("by_owner", ["ownerUserId"])
+    .index("by_owner_note", ["ownerUserId", "noteId"]),
+
+  mistakes: defineTable({
+    ownerUserId: v.string(),
+    mistakeKey: v.string(),
+    questionKey: v.optional(v.string()),
+    question: v.string(),
+    yourAnswer: v.string(),
+    correctAnswer: v.string(),
+    topic: v.string(),
+    subject: v.string(),
+    attempts: v.number(),
+    firstAttemptAt: v.string(),
+    lastAttemptAt: v.string(),
+    updatedAt: v.number(),
+  })
+    .index("by_owner", ["ownerUserId"])
+    .index("by_owner_key", ["ownerUserId", "mistakeKey"]),
 
   noteAssets: defineTable({
     assetId: v.string(),
@@ -196,6 +273,11 @@ export default defineSchema({
     elapsedMs: v.number(),
     targetMs: v.number(),
     startedAt: v.number(),
+    accumulatedElapsedMs: v.optional(v.number()),
+    anchorStartedAt: v.optional(v.number()),
+    version: v.optional(v.number()),
+    updatedAt: v.optional(v.number()),
+    updatedBy: v.optional(v.string()),
   }).index("by_class", ["classId"]),
 
   // ── Pub/Sub Event Bus ───────────────────────────────────────────
@@ -212,6 +294,7 @@ export default defineSchema({
   // ── Payment Requests ────────────────────────────────────────────
   paymentRequests: defineTable({
     userId:      v.string(),
+    submissionKey: v.optional(v.string()),
     plan:        v.union(v.literal('monthly'), v.literal('annual')), // D15
     amount:      v.number(),
     storageId:   v.id("_storage"),
@@ -222,8 +305,40 @@ export default defineSchema({
     reviewedAt:  v.optional(v.number()),
     reviewedBy:  v.optional(v.string()),
     adminNotes:  v.optional(v.string()),
+    // D10: Populated on approval so consistency checks can detect orphaned approvals.
+    entitlementId: v.optional(v.id("paymentEntitlements")),
   })
     .index("by_userId", ["userId"])
+    .index("by_user_submission", ["userId", "submissionKey"])
+    .index("by_status", ["status"]),
+
+  paymentUploadIntents: defineTable({
+    userId: v.string(),
+    submissionKey: v.string(),
+    mimeType: v.string(),
+    status: v.union(v.literal('pending'), v.literal('consumed')),
+    issuedAt: v.number(),
+    expiresAt: v.number(),
+    consumedAt: v.optional(v.number()),
+    storageId: v.optional(v.id("_storage")),
+  })
+    .index("by_user_submission", ["userId", "submissionKey"])
+    .index("by_expiresAt", ["expiresAt"])
+    .index("by_status", ["status"]),
+
+  paymentEntitlements: defineTable({
+    requestId: v.id("paymentRequests"),
+    userId: v.string(),
+    plan: v.union(v.literal('monthly'), v.literal('annual')),
+    amount: v.number(),
+    status: v.union(v.literal('active'), v.literal('revoked')),
+    grantedAt: v.number(),
+    grantedBy: v.string(),
+    revokedAt: v.optional(v.number()),
+    revokedBy: v.optional(v.string()),
+  })
+    .index("by_request", ["requestId"])
+    .index("by_user", ["userId"])
     .index("by_status", ["status"]),
 
   // ── Feature Flags ───────────────────────────────────────────────

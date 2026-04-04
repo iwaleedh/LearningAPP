@@ -19,6 +19,7 @@ import {
   getCurrentUserId,
   getCurrentUsername,
   restoreAnonymousIdentity,
+  setExpectedIdentityMode,
   setLocalDebugIdentity,
   setCurrentUsernameOverride,
   setAuthenticatedIdentity,
@@ -84,13 +85,6 @@ function resolveClerkProfile(clerkUser) {
   };
 }
 
-function resolveClerkRole(clerkUser) {
-  const rawRole = clerkUser?.publicMetadata?.role;
-  if (typeof rawRole !== 'string') return null;
-  const normalized = rawRole.trim().toLowerCase();
-  return normalized === 'teacher' || normalized === 'student' ? normalized : null;
-}
-
 /* ── Inner provider: runs inside ClerkProvider so it can call useUser ── */
 function AuthContextProvider({ children }) {
   const { user: clerkUser, isLoaded, isSignedIn } = useUser();
@@ -101,6 +95,9 @@ function AuthContextProvider({ children }) {
   const [accountStatus, setAccountStatus] = useState(null);
   const [isAdminUser, setIsAdminUser] = useState(false);
   const [syncedAccessKey, setSyncedAccessKey] = useState(null);
+  // D7: Tracks when the auth sync is retrying after a "registration completing"
+  // error so the UI can show a graceful spinner instead of a hard failure.
+  const [isRegistrationPending, setIsRegistrationPending] = useState(false);
   // Stabilised via useMemo — clerkUser is an object that changes reference on
   // every render, so computing this inline would cause the sync effect to see
   // a new string dep on every render → spurious re-runs and auth race conditions.
@@ -114,17 +111,28 @@ function AuthContextProvider({ children }) {
   useEffect(() => {
     let cancelled = false;
 
+    if (isLoaded) {
+      setExpectedIdentityMode(isSignedIn && clerkUser ? 'authenticated' : 'anonymous');
+    }
+
     if (!isLoaded) {
       return () => {
         cancelled = true;
       };
     }
 
-    async function syncUser() {
+    // D7: Retry up to MAX_REGISTRATION_RETRIES times when the user JWT exists but
+    // the DB row is not yet created (post-signup race window). Each retry waits
+    // progressively longer: 800ms, 1600ms, 2400ms.
+    const MAX_REGISTRATION_RETRIES = 3;
+
+    async function syncUser(retryCount = 0) {
+      // Local flag — set to true when we schedule a retry so that
+      // setSyncedAccessKey is not committed during the waiting window.
+      let pendingRetry = false;
       try {
         if (isSignedIn && clerkUser) {
           const profile = resolveClerkProfile(clerkUser);
-          const claimedRole = resolveClerkRole(clerkUser);
           const client = await setAuthenticatedIdentity({
             userId: clerkUser.id,
             username: profile.username,
@@ -143,6 +151,7 @@ function AuthContextProvider({ children }) {
           if (!client) {
             setDbUser(null);
             setRole('student');
+            setIsRegistrationPending(false);
             return;
           }
           const [user, serverRole, statusResult] = await Promise.all([
@@ -152,9 +161,10 @@ function AuthContextProvider({ children }) {
           ]);
           if (cancelled) return;
 
+          setIsRegistrationPending(false);
           setAccountStatus(statusResult?.accountStatus ?? null);
           setIsAdminUser(statusResult?.isAdmin ?? false);
-          const resolvedRole = claimedRole || serverRole || user?.role || 'student';
+          const resolvedRole = statusResult?.isAdmin ? 'admin' : (serverRole || user?.role || 'student');
           if (user?.username) {
             setCurrentUsernameOverride(user.username);
           }
@@ -172,15 +182,36 @@ function AuthContextProvider({ children }) {
         setRole('student');
         setAccountStatus(null);
         setIsAdminUser(false);
+        setIsRegistrationPending(false);
       } catch (error) {
         if (cancelled) return;
+
+        // D7: The server throws "Account registration is completing" during the
+        // brief post-signup window before the registerUser mutation has committed
+        // the users DB row. Retry with back-off so the app self-heals.
+        const isRegistrationError = typeof error?.message === 'string' &&
+          error.message.includes('Account registration is completing');
+
+        if (isRegistrationError && retryCount < MAX_REGISTRATION_RETRIES) {
+          pendingRetry = true;
+          setIsRegistrationPending(true);
+          const delay = 800 * (retryCount + 1);
+          setTimeout(() => {
+            if (!cancelled) void syncUser(retryCount + 1);
+          }, delay);
+          return;
+        }
+
+        setIsRegistrationPending(false);
         console.error('Auth sync failed:', error);
         setDbUser(null);
         setRole('student');
         setAccountStatus(null);
         setIsAdminUser(false);
       } finally {
-        if (!cancelled) {
+        // Don't commit the access key while we're waiting to retry —
+        // isAccessReady would flip to true before auth is actually settled.
+        if (!cancelled && !pendingRetry) {
           setSyncedAccessKey(expectedAccessKey);
         }
       }
@@ -204,8 +235,7 @@ function AuthContextProvider({ children }) {
 
   const value = useMemo(() => {
     const profile = isSignedIn && clerkUser ? resolveClerkProfile(clerkUser) : null;
-    const claimedRole = isSignedIn && clerkUser ? resolveClerkRole(clerkUser) : null;
-    const resolvedRole = claimedRole || role;
+    const resolvedRole = isAdminUser ? 'admin' : role;
     const userId = isSignedIn && clerkUser ? clerkUser.id : getCurrentUserId();
     const username = dbUser?.username || profile?.username || getCurrentUsername() || 'Anonymous';
     const avatarUrl = isSignedIn && clerkUser ? clerkUser.imageUrl : null;
@@ -213,13 +243,16 @@ function AuthContextProvider({ children }) {
       ? false
       : !isSignedIn
         ? syncedAccessKey === 'signed-out'
-        : Boolean(claimedRole || syncedAccessKey === expectedAccessKey);
+        : syncedAccessKey === expectedAccessKey;
 
     return {
       clerkUser: clerkUser ?? null,
       dbUser,
       canSignIn: HAS_CLERK,
       isAccessReady,
+      // D7: True while the auth sync is retrying after a post-signup race.
+      // UI components can use this to show a "Completing sign-in…" spinner.
+      isRegistrationPending,
       isLoaded,
       isSignedIn: !!isSignedIn,
       role: resolvedRole,
@@ -230,7 +263,7 @@ function AuthContextProvider({ children }) {
       avatarUrl,
       signOut,
     };
-  }, [accountStatus, clerkUser, dbUser, expectedAccessKey, isAdminUser, isLoaded, isSignedIn, role, signOut, syncedAccessKey]);
+  }, [accountStatus, clerkUser, dbUser, expectedAccessKey, isAdminUser, isLoaded, isRegistrationPending, isSignedIn, role, signOut, syncedAccessKey]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
@@ -242,6 +275,8 @@ function AnonymousAuthContextProvider({ children }) {
     if (!DEV_AUTH_ENABLED) {
       return undefined;
     }
+
+    setExpectedIdentityMode(devSession ? 'debug' : 'anonymous');
 
     if (devSession) {
       setLocalDebugIdentity(devSession);
@@ -276,6 +311,7 @@ function AnonymousAuthContextProvider({ children }) {
     };
 
     persistDevAuthSession(session);
+    setExpectedIdentityMode('debug');
     setLocalDebugIdentity(session);
     setLogContext({ userId: session.userId });
     setDevSession(session);
@@ -284,6 +320,7 @@ function AnonymousAuthContextProvider({ children }) {
   const signOut = useCallback(async () => {
     clearStoredDevAuthSession();
     setDevSession(null);
+    setExpectedIdentityMode('anonymous');
     await restoreAnonymousIdentity();
     setLogContext({ userId: getCurrentUserId() || '' });
   }, []);

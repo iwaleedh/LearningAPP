@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AlertTriangle, RotateCcw, CheckCircle, XCircle, Trash2 } from 'lucide-react';
 import { listMistakes, removeMistake, clearMistakes } from '../services/mistakeStore.js';
 import './Pages.css';
@@ -15,16 +15,55 @@ function timeAgo(isoString) {
 }
 
 export default function MistakeBankPage() {
-    const [mistakes, setMistakes] = useState(() => listMistakes());
+    const [mistakes, setMistakes] = useState([]);
+    const [status, setStatus] = useState('loading');
 
-    function dismiss(id) {
-        removeMistake(id);
-        setMistakes(prev => prev.filter(m => m.id !== id));
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadMistakes() {
+            setStatus('loading');
+            const rows = await listMistakes();
+            if (cancelled) return;
+            setMistakes(rows);
+            setStatus('ready');
+        }
+
+        void loadMistakes();
+
+        return () => {
+            cancelled = true;
+        };
+    }, []);
+
+    async function dismiss(id) {
+        const removed = await removeMistake(id);
+        if (!removed) return;
+        setMistakes((prev) => prev.filter((mistake) => mistake.id !== id));
     }
 
-    function dismissAll() {
-        clearMistakes();
+    async function dismissAll() {
+        const cleared = await clearMistakes();
+        if (!cleared) return;
         setMistakes([]);
+    }
+
+    if (status === 'loading') {
+        return (
+            <div className="mistake-hub animate-fade-in">
+                <div className="mistake-page-header">
+                    <div className="mistake-title-group">
+                        <div className="mistake-subject-icon">
+                            <AlertTriangle size={28} />
+                        </div>
+                        <div>
+                            <h1 className="mistake-page-title">Mistake Bank</h1>
+                            <p className="mistake-page-qual">Loading your saved mistakes...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
     }
 
     if (mistakes.length === 0) {
@@ -90,7 +129,7 @@ export default function MistakeBankPage() {
             </div>
 
             <div className="mistake-toolbar">
-                <button className="btn btn-ghost btn-sm" onClick={dismissAll}>
+                <button className="btn btn-ghost btn-sm" onClick={() => void dismissAll()}>
                     <Trash2 size={14} /> Clear All
                 </button>
             </div>
@@ -118,7 +157,7 @@ export default function MistakeBankPage() {
                                 <CheckCircle size={13} /> Correct: <strong>{mistake.correctAnswer}</strong>
                             </span>
                         </div>
-                        <button className="btn btn-ghost btn-sm" onClick={() => dismiss(mistake.id)}>
+                        <button className="btn btn-ghost btn-sm" onClick={() => void dismiss(mistake.id)}>
                             <CheckCircle size={14} /> Mark as Mastered
                         </button>
                     </div>

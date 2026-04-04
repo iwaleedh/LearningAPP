@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { StickyNote as StickyNoteIcon, Plus, X, Trash2 } from 'lucide-react';
+import { StickyNote as StickyNoteIcon, Plus, X } from 'lucide-react';
+import { loadStudentStickyNotes, saveStudentStickyNotes } from '../../services/notes/studentToolAssets.js';
 import './StudentTools.css';
 
 const NOTE_COLORS = [
@@ -11,20 +12,35 @@ const NOTE_COLORS = [
 ];
 
 export default function StickyNotes({ chapterId = 'default' }) {
-    const storageKey = `stickynotes_${chapterId}`;
-    const [notes, setNotes] = useState(() => {
-        try {
-            const saved = localStorage.getItem(`stickynotes_${chapterId}`);
-            return saved ? JSON.parse(saved) : [];
-        } catch { return []; }
-    });
+    const [notes, setNotes] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const colorIndex = useRef(0);
+    const hydratedChapterRef = useRef(null);
 
-    // Save
     useEffect(() => {
-        localStorage.setItem(storageKey, JSON.stringify(notes));
-    }, [notes, storageKey]);
+        let cancelled = false;
+        hydratedChapterRef.current = null;
+
+        loadStudentStickyNotes(chapterId).then((items) => {
+            if (cancelled) return;
+            hydratedChapterRef.current = chapterId;
+            setNotes(items);
+            colorIndex.current = items.length;
+        });
+
+        return () => {
+            cancelled = true;
+        };
+    }, [chapterId]);
+
+    useEffect(() => {
+        if (hydratedChapterRef.current !== chapterId) return;
+        const timeoutId = setTimeout(() => {
+            void saveStudentStickyNotes(chapterId, notes);
+        }, 200);
+
+        return () => clearTimeout(timeoutId);
+    }, [chapterId, notes]);
 
     const addNote = () => {
         const color = NOTE_COLORS[colorIndex.current % NOTE_COLORS.length];

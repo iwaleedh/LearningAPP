@@ -8,6 +8,8 @@ import {
   isAdminEmail,
   isAdminUsername,
   isTeacherUserId,
+  requireApprovedAccount,
+  requireApprovedAuthenticatedUserId,
   requireAuthenticatedUserId,
   requireMatchingUserId,
   requireTeacher,
@@ -136,8 +138,11 @@ export const getUser = query({
   args: { userId: v.string() },
   handler: async (ctx, { userId }) => {
     const currentUserId = await requireAuthenticatedUserId(ctx);
-    if (currentUserId !== userId && !(await isTeacherUserId(ctx, currentUserId))) {
-      return null;
+    if (currentUserId !== userId) {
+      await requireApprovedAccount(ctx);
+      if (!(await isTeacherUserId(ctx, currentUserId))) {
+        return null;
+      }
     }
     const user = await getUserRecordById(ctx, userId);
     if (!user) return null;
@@ -152,7 +157,9 @@ export const getAllUsers = query({
   args: {},
   handler: async (ctx) => {
     await requireTeacher(ctx);
-    const users = await ctx.db.query("users").collect();
+    // D17: Use take() instead of collect() to avoid loading the entire users table.
+    // 500 is a generous cap for any realistic class/cohort size.
+    const users = await ctx.db.query("users").order("desc").take(500);
     return users.map((user) => toPublicUserSummary(user));
   },
 });
@@ -163,7 +170,7 @@ export const searchUsers = query({
     limit: v.optional(v.number()),
   },
   handler: async (ctx, { search, limit }) => {
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     const term = search.trim().toLowerCase();
     if (term.length < 2) {
       return [];
@@ -181,6 +188,31 @@ export const searchUsers = query({
       .filter((user) => user.userId !== currentUserId)
       .slice(0, maxResults)
       .map((user) => toPublicUserSummary(user));
+  },
+});
+
+// D5: Record one login-day row per (userId, dateKey). Called from the client
+// once per local calendar day after successful sign-in. The server-side
+// by_user_date uniqueness check prevents duplicate rows even if the client
+// retries or multiple tabs open simultaneously.
+export const recordLogin = mutation({
+  args: {
+    dateKey: v.string(), // YYYY-MM-DD in user's local timezone
+  },
+  handler: async (ctx, { dateKey }) => {
+    const userId = await requireAuthenticatedUserId(ctx);
+    const DATE_KEY_RE = /^\d{4}-\d{2}-\d{2}$/;
+    const normalized = String(dateKey || "").trim();
+    if (!DATE_KEY_RE.test(normalized)) {
+      throw new Error("dateKey must match YYYY-MM-DD.");
+    }
+    const existing = await ctx.db
+      .query("userSessions")
+      .withIndex("by_user_date", (q) => q.eq("userId", userId).eq("dateKey", normalized))
+      .first();
+    if (!existing) {
+      await ctx.db.insert("userSessions", { userId, dateKey: normalized, createdAt: Date.now() });
+    }
   },
 });
 

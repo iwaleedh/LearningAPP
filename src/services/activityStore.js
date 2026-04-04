@@ -10,6 +10,8 @@
  *   lt_activity_days   — map of YYYY-MM-DD -> total study actions for heatmap/streak UI
  */
 
+import { getCurrentIdentityMode } from '../convex-client.js';
+
 const EXERCISE_KEY = 'lt_exercises_done';
 const PAPER_KEY = 'lt_papers_viewed';
 const PERFECT_SCORES_KEY = 'lt_perfect_scores';  // D5
@@ -20,6 +22,10 @@ const ACTIVITY_EVENT = 'lt:activity-updated';
 function emitActivityUpdate() {
     if (typeof window === 'undefined') return;
     window.dispatchEvent(new CustomEvent(ACTIVITY_EVENT));
+}
+
+function isAuthenticatedIntent() {
+    return getCurrentIdentityMode() === 'authenticated';
 }
 
 function readActivityDays() {
@@ -41,6 +47,9 @@ function writeActivityDays(days) {
 }
 
 function incrementCounter(key, amount = 1) {
+    if (isAuthenticatedIntent()) {
+        return;
+    }
     try {
         const current = parseInt(localStorage.getItem(key) || '0', 10);
         localStorage.setItem(key, String(current + amount));
@@ -88,6 +97,9 @@ export function subscribeToActivityUpdates(callback) {
 }
 
 export function getExercisesDone() {
+    if (isAuthenticatedIntent()) {
+        return 0;
+    }
     try {
         return parseInt(localStorage.getItem(EXERCISE_KEY) || '0', 10);
     } catch {
@@ -101,6 +113,9 @@ export function incrementExercisesDone() {
 }
 
 export function getPapersViewed() {
+    if (isAuthenticatedIntent()) {
+        return 0;
+    }
     try {
         return parseInt(localStorage.getItem(PAPER_KEY) || '0', 10);
     } catch {
@@ -115,6 +130,9 @@ export function incrementPapersViewed() {
 
 // D5: Perfect score and fast-completion counters for BadgeSystem.
 export function getPerfectScores() {
+    if (isAuthenticatedIntent()) {
+        return 0;
+    }
     try {
         return parseInt(localStorage.getItem(PERFECT_SCORES_KEY) || '0', 10);
     } catch {
@@ -129,6 +147,9 @@ export function incrementPerfectScores() {
 }
 
 export function getFastCompletions() {
+    if (isAuthenticatedIntent()) {
+        return 0;
+    }
     try {
         return parseInt(localStorage.getItem(FAST_COMPLETIONS_KEY) || '0', 10);
     } catch {

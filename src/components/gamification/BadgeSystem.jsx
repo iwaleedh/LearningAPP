@@ -1,7 +1,8 @@
 import { useState, useEffect, useMemo } from 'react';
+import { useQuery } from 'convex/react';
 import { Trophy, Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock } from 'lucide-react';
-import { getTotalReadCount, computeStudyStreak } from '../../hooks/useNoteReadStatus.js';
-import { getExercisesDone, getPapersViewed, getPerfectScores, getFastCompletions, subscribeToActivityUpdates } from '../../services/activityStore.js';
+import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
+import { api } from '../../convex-client.js';
 import './Gamification.css';
 
 const CONFETTI_COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6', '#06b6d4', '#facc15'];
@@ -57,11 +58,12 @@ const BADGE_DEFINITIONS = [
     {
         id: 'explorer',
         name: 'Explorer',
-        description: 'Visited 3 different pages.',
+        description: 'Read 3 different notes.',
         icon: BookOpen,
         color: '#60a5fa',
         gradient: 'linear-gradient(135deg, #60a5fa, #3b82f6)',
-        criteria: (stats) => stats.pagesVisited >= 3,
+        // D5: Use real notesRead count — pagesVisited was a hardcoded approximation.
+        criteria: (stats) => stats.notesRead >= 3,
     },
     {
         id: 'first_exercise',
@@ -181,16 +183,20 @@ function saveCelebrated(set) {
     } catch { /* ignore */ }
 }
 
-function buildLiveStats() {
-    const notesRead = getTotalReadCount();
+function buildLiveStats(serverMetrics, readProgress) {
+    const notesRead = readProgress.totalRead;
     return {
-        logins: 1,                          // Always ≥1 since they're viewing this page
-        pagesVisited: notesRead > 0 ? 5 : 1, // Approximation until page tracking is added
-        exercisesCompleted: getExercisesDone(),
-        currentStreak: computeStudyStreak(),
-        perfectScores: getPerfectScores(),     // D5: now live from activityStore
-        fastCompletions: getFastCompletions(), // D5: now live from activityStore
-        papersCompleted: getPapersViewed(),
+        // D5: Use real login-day count from userSessions. Falls back to 1 so the
+        // first_login badge is always earned when the component renders (user is
+        // authenticated and this component only mounts for authenticated users).
+        logins: serverMetrics?.loginCount ?? 1,
+        exercisesCompleted: serverMetrics?.exercisesCompleted ?? 0,
+        currentStreak: readProgress.currentStreak,
+        perfectScores: serverMetrics?.perfectScores ?? 0,
+        fastCompletions: serverMetrics?.fastCompletions ?? 0,
+        papersCompleted: serverMetrics?.papersCompleted ?? 0,
+        // D5: notesRead is real data from noteReadProgress via useReadProgressSummary.
+        // The explorer badge criterion was updated to use notesRead directly.
         notesRead,
     };
 }
@@ -202,50 +208,33 @@ function getEarnedBadgeIds(stats) {
         .map(b => b.id);
 }
 
-function getInitialState() {
-    const stats = buildLiveStats();
-    const earned = getEarnedBadgeIds(stats); // from criteria, NOT localStorage
-    const celebrated = loadCelebrated();
-
-    const newlyCelebrated = earned.filter(id => !celebrated.has(id));
-    if (newlyCelebrated.length > 0) {
-        const updatedCelebrated = new Set([...celebrated, ...newlyCelebrated]);
-        saveCelebrated(updatedCelebrated);
-    }
-
-    return { stats, earned, justEarned: newlyCelebrated[0] || null };
-}
-
 export default function BadgeSystem() {
-    const [state, setState] = useState(getInitialState);
-    const { earned, justEarned } = state;
+    const serverMetrics = useQuery(api.badgeMetrics.getMyBadgeMetrics);
+    const readProgress = useReadProgressSummary();
+    const [justEarned, setJustEarned] = useState(null);
+
+    const stats = useMemo(() => buildLiveStats(serverMetrics, readProgress), [readProgress, serverMetrics]);
+
+    const earned = useMemo(() => getEarnedBadgeIds(stats), [stats]);
 
     useEffect(() => {
-        return subscribeToActivityUpdates(() => {
-            setState((prev) => {
-                const nextStats = buildLiveStats();
-                const nextEarned = getEarnedBadgeIds(nextStats); // always from criteria
-                const celebrated = loadCelebrated();
+        const celebrated = loadCelebrated();
+        const newlyCelebrated = earned.filter(id => !celebrated.has(id));
+        if (newlyCelebrated.length === 0) return undefined;
 
-                const newlyCelebrated = nextEarned.filter(id => !celebrated.has(id));
-                if (newlyCelebrated.length > 0) {
-                    const updatedCelebrated = new Set([...celebrated, ...newlyCelebrated]);
-                    saveCelebrated(updatedCelebrated);
-                }
+        const updatedCelebrated = new Set([...celebrated, ...newlyCelebrated]);
+        saveCelebrated(updatedCelebrated);
+        const timerId = setTimeout(() => {
+            setJustEarned(newlyCelebrated[0]);
+        }, 0);
 
-                return {
-                    stats: nextStats,
-                    earned: nextEarned,
-                    justEarned: newlyCelebrated[0] || prev.justEarned,
-                };
-            });
-        });
-    }, []);
+        return () => clearTimeout(timerId);
+    }, [earned]);
 
     useEffect(() => {
         if (!justEarned) return undefined;
         const id = setTimeout(() => {
-            setState(prev => ({ ...prev, justEarned: null }));
+            setJustEarned(null);
         }, 3000);
         return () => clearTimeout(id);
     }, [justEarned]);

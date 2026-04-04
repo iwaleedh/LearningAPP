@@ -1,10 +1,14 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
+import { useMutation } from 'convex/react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck, Settings } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
 import { useTheme } from '../hooks/useTheme.js';
 import { clearGuestData, getGuestDataSummary, importGuestDataToAccount } from '../services/notes/noteStore.js';
 import { exportNotesAsPdf } from '../services/notes/noteExport.js';
+import { clearMistakes } from '../services/mistakeStore.js';
+import { api } from '../convex-client.js';
+import { clearLocalReadProgress } from '../hooks/useNoteReadStatus.js';
 import {
     buildAccessNotice,
     getLocationPath,
@@ -35,6 +39,8 @@ export default function SettingsPage() {
     const [exportState, setExportState] = useState('idle');
     const [exportMessage, setExportMessage] = useState('');
     const [authOpen, setAuthOpen] = useState(false);
+    const resetMyReadProgress = useMutation(api.readProgress.resetMyReadProgress);
+    const resetFlashcardProgress = useMutation(api.flashcards.resetFlashcardProgress);
 
     const profileRef = useRef(null);
     const shouldFocusProfile =
@@ -167,25 +173,26 @@ export default function SettingsPage() {
         }
     }
 
-    function handleClearProgress() {
+    async function handleClearProgress() {
         if (!window.confirm('This will erase all your local progress — read status, exercise stats, streak data, flashcard state, and saved mistakes. This cannot be undone. Continue?')) {
             return;
         }
 
         try {
-            // Clear lt_read:* keys
-            const keysToRemove = [];
-            for (let i = 0; i < localStorage.length; i++) {
-                const k = localStorage.key(i);
-                if (k && k.startsWith('lt_read:')) keysToRemove.push(k);
+            clearLocalReadProgress();
+            await clearMistakes();
+            if (isSignedIn) {
+                await Promise.allSettled([
+                    resetMyReadProgress({}),
+                    resetFlashcardProgress({}),
+                ]);
             }
-            keysToRemove.forEach((k) => localStorage.removeItem(k));
 
             // Clear known activity/progress keys
-            localStorage.removeItem('lt_mistakes');
             localStorage.removeItem('lt_exercises_done');
             localStorage.removeItem('lt_papers_viewed');
             localStorage.removeItem('lt_activity_days');
+            localStorage.removeItem('lt_flashcard_status');
             localStorage.removeItem('lt_flashcard_known');
             localStorage.removeItem('lt_flashcard_learning');
             localStorage.removeItem('lt_badge_earned');

@@ -7,6 +7,16 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+function readSource(relativePath) {
+    return fs.readFileSync(path.resolve(__dirname, relativePath), 'utf8');
+}
 
 // ─── Helpers replicated from components for pure-logic testing ────────────────
 
@@ -20,6 +30,20 @@ function buildToc(blocks) {
         .filter((b) => b.type === 'heading' && b.data?.text && (b.data?.level || 2) <= 3)
         .map((b) => ({ id: b.id, text: b.data.text, level: b.data.level || 2 }));
 }
+
+test('A2 – buildToc includes only heading blocks up to level 3', () => {
+    const toc = buildToc([
+        { id: 'p-1', type: 'paragraph', data: { text: 'Intro' } },
+        { id: 'h-1', type: 'heading', data: { text: 'Overview', level: 2 } },
+        { id: 'h-2', type: 'heading', data: { text: 'Deep section', level: 4 } },
+        { id: 'h-3', type: 'heading', data: { text: 'Key facts', level: 3 } },
+    ]);
+
+    assert.deepEqual(toc, [
+        { id: 'h-1', text: 'Overview', level: 2 },
+        { id: 'h-3', text: 'Key facts', level: 3 },
+    ]);
+});
 
 // ─── A1: DragDropExercise — move-to logic ─────────────────────────────────────
 
@@ -74,6 +98,52 @@ test('A1 – DragDropExercise: moveItemToCategory moves item and announces actio
     assert.equal(bankState.length, 0, 'Item removed from bank');
     assert.equal(zones.Element.length, 1, 'Item placed in zone');
     assert.equal(actionAnnounced, 'Moved "Oxygen" to Element');
+});
+
+test('A1 – DragDropExercise: keyboard grab announces position and Escape clears selection', () => {
+    const bank = [
+        { text: 'Atom', _idx: 1 },
+        { text: 'Ion', _idx: 2 },
+    ];
+    const zones = { Elements: [] };
+    let keyboardSelected = null;
+    let lastAction = '';
+
+    function handleItemKeyDown(key, item, source) {
+        if (key === ' ' || key === 'Enter') {
+            if (keyboardSelected && keyboardSelected.item._idx === item._idx) {
+                keyboardSelected = null;
+                lastAction = `Released "${item.text}" — drag cancelled.`;
+            } else {
+                keyboardSelected = { item, source };
+                const sourceArr = source === 'bank' ? bank : zones[source];
+                const pos = sourceArr.findIndex((i) => i._idx === item._idx) + 1;
+                lastAction = `Grabbed "${item.text}", item ${pos} of ${sourceArr.length} in item bank. Press Space on a category to drop, or Escape to cancel.`;
+            }
+        }
+        if (key === 'Escape') {
+            if (keyboardSelected) {
+                lastAction = `Cancelled. "${keyboardSelected.item.text}" not moved.`;
+            }
+            keyboardSelected = null;
+        }
+    }
+
+    handleItemKeyDown(' ', bank[1], 'bank');
+    assert.equal(keyboardSelected?.item._idx, 2);
+    assert.match(lastAction, /Grabbed "Ion", item 2 of 2 in item bank/);
+
+    handleItemKeyDown('Escape', bank[1], 'bank');
+    assert.equal(keyboardSelected, null);
+    assert.equal(lastAction, 'Cancelled. "Ion" not moved.');
+});
+
+test('A1 – DragDropExercise: source includes aria-grabbed and shared keyboard help text', () => {
+    const source = readSource('./DragDropExercise.jsx');
+
+    assert.match(source, /id="dd-kb-help"/);
+    assert.match(source, /aria-describedby="dd-kb-help"/);
+    assert.match(source, /aria-grabbed=\{isKbSelected\(item\) \? 'true' : 'false'\}/);
 });
 
 // ─── A1: SequenceExercise — moveItem logic ────────────────────────────────────
@@ -243,6 +313,34 @@ test('A8 – useFocusTrap: FOCUSABLE_SELECTOR contains expected element types', 
     assert.ok(FOCUSABLE_SELECTOR.includes(':not([disabled])'), 'Disabled elements excluded');
     // tabindex="-1" elements must NOT be trapped
     assert.ok(FOCUSABLE_SELECTOR.includes(':not([tabindex="-1"])'), 'tabindex=-1 excluded');
+});
+
+test('A8 – CommandSearch: dialog and combobox semantics are present in source', () => {
+    const source = readSource('../student/CommandSearch.jsx');
+
+    assert.match(source, /role="dialog"/);
+    assert.match(source, /aria-modal="true"/);
+    assert.match(source, /role="combobox"/);
+    assert.match(source, /aria-controls="cmd-search-results"/);
+    assert.match(source, /role="listbox"/);
+    assert.match(source, /id="cmd-search-results"/);
+});
+
+test('A8 – CommandSearch: background is made inert while dialog is mounted', () => {
+    const source = readSource('../student/CommandSearch.jsx');
+
+    assert.match(source, /setAttribute\('inert', ''\)/);
+    assert.match(source, /setAttribute\('aria-hidden', 'true'\)/);
+    assert.match(source, /removeAttribute\('inert'\)/);
+    assert.match(source, /removeAttribute\('aria-hidden'\)/);
+});
+
+test('A2 – App: skip link targets main content id with programmatic focus target', () => {
+    const source = readSource('../../App.jsx');
+
+    assert.match(source, /href="#main-content"/);
+    assert.match(source, />Skip to main content</);
+    assert.match(source, /<main className="page-content" id="main-content" tabIndex=\{-1\}>/);
 });
 
 // ─── A9: Truncated text — title attribute presence ───────────────────────────

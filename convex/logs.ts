@@ -9,6 +9,13 @@ import { mutation, query, internalMutation } from "./_generated/server";
 import { v } from "convex/values";
 import { requireAuthenticatedUserId, requireTeacher } from "./authHelpers";
 
+const ALLOWED_LOG_LEVELS = new Set(["debug", "info", "warn", "error"]);
+const MAX_LOG_BATCH_SIZE = 50;
+const MAX_LOG_MESSAGE_LENGTH = 1000;
+const MAX_LOG_COMPONENT_LENGTH = 160;
+const MAX_LOG_SESSION_ID_LENGTH = 160;
+const MAX_LOG_METADATA_BYTES = 4096;
+
 const logEntryValidator = v.object({
   level: v.string(),
   message: v.string(),
@@ -19,6 +26,59 @@ const logEntryValidator = v.object({
   timestamp: v.number(),
 });
 
+function requireTrimmedString(value: string, fieldName: string, maxLength: number, { allowEmpty = false } = {}) {
+  const normalized = String(value || "").trim();
+  if (!allowEmpty && !normalized) {
+    throw new Error(`${fieldName} is required.`);
+  }
+  if (normalized.length > maxLength) {
+    throw new Error(`${fieldName} exceeds ${maxLength} characters.`);
+  }
+  return normalized;
+}
+
+function normalizeLogMetadata(rawMetadata: string) {
+  const normalized = String(rawMetadata || "{}").trim() || "{}";
+  if (normalized.length > MAX_LOG_METADATA_BYTES) {
+    throw new Error(`metadata exceeds ${MAX_LOG_METADATA_BYTES} bytes.`);
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(normalized);
+  } catch {
+    throw new Error("metadata must be valid JSON.");
+  }
+
+  const reserialized = JSON.stringify(parsed);
+  if (reserialized.length > MAX_LOG_METADATA_BYTES) {
+    throw new Error(`metadata exceeds ${MAX_LOG_METADATA_BYTES} bytes.`);
+  }
+
+  return reserialized;
+}
+
+function normalizeLogEntry(entry: {
+  level: string;
+  message: string;
+  component: string;
+  sessionId: string;
+  metadata: string;
+}) {
+  const level = String(entry.level || "").trim().toLowerCase();
+  if (!ALLOWED_LOG_LEVELS.has(level)) {
+    throw new Error(`level '${entry.level}' is not allowed.`);
+  }
+
+  return {
+    level,
+    message: requireTrimmedString(entry.message, "message", MAX_LOG_MESSAGE_LENGTH),
+    component: requireTrimmedString(entry.component, "component", MAX_LOG_COMPONENT_LENGTH, { allowEmpty: true }),
+    sessionId: requireTrimmedString(entry.sessionId, "sessionId", MAX_LOG_SESSION_ID_LENGTH, { allowEmpty: true }),
+    metadata: normalizeLogMetadata(entry.metadata),
+  };
+}
+
 // ── Ingest a batch of log entries from the client ───────────────────
 export const ingestLogBatch = mutation({
   args: {
@@ -26,7 +86,19 @@ export const ingestLogBatch = mutation({
   },
   handler: async (ctx, { entries }) => {
     const currentUserId = await requireAuthenticatedUserId(ctx);
-    for (const entry of entries) {
+    if (entries.length === 0) {
+      return { inserted: 0 };
+    }
+    if (entries.length > MAX_LOG_BATCH_SIZE) {
+      throw new Error(`Log batch exceeds ${MAX_LOG_BATCH_SIZE} entries.`);
+    }
+
+    // Validate the whole batch before writing anything so malformed entries
+    // cannot cause partial inserts.
+    const sanitizedEntries = entries.map((entry) => normalizeLogEntry(entry));
+    const serverTimestamp = Date.now();
+
+    for (const entry of sanitizedEntries) {
       await ctx.db.insert("logs", {
         level: entry.level,
         message: entry.message,
@@ -34,9 +106,11 @@ export const ingestLogBatch = mutation({
         userId: currentUserId,
         sessionId: entry.sessionId,
         metadata: entry.metadata,
-        timestamp: entry.timestamp,
+        timestamp: serverTimestamp,
       });
     }
+
+    return { inserted: sanitizedEntries.length };
   },
 });
 

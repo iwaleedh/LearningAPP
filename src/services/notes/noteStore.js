@@ -1,6 +1,6 @@
 import { deriveConfidenceBand, estimateReadMinutes } from './noteContext.js';
 import { extractMentionsFromDoc } from './mentionGraph.js';
-import { getClient, getCurrentUserId, api, callMutation, callQuery } from '../../convex-client.js';
+import { getClient, getCurrentIdentityMode, getCurrentUserId, api, callMutation, callQuery } from '../../convex-client.js';
 import { logger } from '../logger/logger.js';
 import {
     __resetGuestDataStoreForTests,
@@ -35,6 +35,15 @@ function isAuthError(error) {
 
 function isLocalOnlyUserId(userId) {
     return typeof userId === 'string' && userId.startsWith('debug_');
+}
+
+function isAuthenticatedIntent() {
+    return getCurrentIdentityMode() === 'authenticated';
+}
+
+function buildAuthUnavailableError(action, error) {
+    const reason = error?.message ? ` ${error.message}` : '';
+    return new Error(`Authenticated ${action} is unavailable until account access is ready.${reason}`);
 }
 
 export function getStorageCapabilities() {
@@ -180,6 +189,17 @@ function buildAssetMutationArgs(asset) {
     };
 }
 
+function mapConvexAssetRow(row) {
+    return {
+        assetId: row.assetId,
+        noteId: row.noteId,
+        type: row.assetType,
+        data: row.data,
+        createdAt: new Date(row.createdAt).toISOString(),
+        ownerUserId: row.ownerUserId,
+    };
+}
+
 // Map Convex note row back to local app format
 function mapConvexNoteRow(row) {
     try {
@@ -234,6 +254,9 @@ export async function getNote(noteId) {
         if (typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('app:toast', { detail: { type: 'warning', message: 'Offline or server error. Returning local version.' } }));
         }
+        if (isAuthenticatedIntent()) {
+            return null;
+        }
         return await getGuestNote(noteId);
     }
 }
@@ -256,6 +279,9 @@ export async function upsertNote(noteDoc) {
         await callMutation(api.notes.upsertNote, mutationArgs);
     } catch (error) {
         if (isAuthError(error)) {
+            if (isAuthenticatedIntent()) {
+                throw buildAuthUnavailableError('note save', error);
+            }
             await saveGuestNote(normalized);
             return;
         }
@@ -290,6 +316,9 @@ export async function listNotesBySubject(subject) {
         if (typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('app:toast', { detail: { type: 'warning', message: 'Offline or server error. Returning local lists.' } }));
         }
+        if (isAuthenticatedIntent()) {
+            return [];
+        }
         return await localResults();
     }
 }
@@ -308,6 +337,9 @@ export async function saveFlashcard(card) {
         await callMutation(api.flashcards.saveFlashcard, buildFlashcardMutationArgs(normalizedCard));
     } catch (error) {
         if (isAuthError(error)) {
+            if (isAuthenticatedIntent()) {
+                throw buildAuthUnavailableError('flashcard save', error);
+            }
             await saveGuestFlashcard(normalizedCard);
             return;
         }
@@ -339,6 +371,9 @@ export async function listFlashcards(filters = {}) {
         return cards.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
     } catch (error) {
         log.error('listFlashcards failed', { error: error.message });
+        if (isAuthenticatedIntent()) {
+            return [];
+        }
         return await localCards();
     }
 }
@@ -357,6 +392,9 @@ export async function saveNoteAsset(asset) {
         await callMutation(api.assets.saveNoteAsset, buildAssetMutationArgs(normalizedAsset));
     } catch (error) {
         if (isAuthError(error)) {
+            if (isAuthenticatedIntent()) {
+                throw buildAuthUnavailableError('note asset save', error);
+            }
             await saveGuestNoteAsset(normalizedAsset);
             return normalizedAsset.assetId;
         }
@@ -364,6 +402,67 @@ export async function saveNoteAsset(asset) {
     }
 
     return normalizedAsset.assetId;
+}
+
+export async function listNoteAssets(noteId, filters = {}) {
+    const normalizedNoteId = String(noteId || '');
+    const typeFilter = filters.type ? String(filters.type) : null;
+    const client = getClient();
+    const localAssets = async () => {
+        const assets = await getAllGuestNoteAssets();
+        return assets
+            .filter((asset) => {
+                if (String(asset?.noteId || '') !== normalizedNoteId) return false;
+                if (typeFilter && String(asset?.type || '') !== typeFilter) return false;
+                return true;
+            })
+            .sort((a, b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')));
+    };
+
+    if (!client) {
+        return await localAssets();
+    }
+
+    try {
+        const rows = await callQuery(api.assets.getAssetsByNote, { noteId: normalizedNoteId });
+        if (!rows) return [];
+
+        return rows
+            .map((row) => mapConvexAssetRow(row))
+            .filter((asset) => {
+                if (typeFilter && String(asset?.type || '') !== typeFilter) return false;
+                return true;
+            })
+            .sort((a, b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')));
+    } catch (error) {
+        log.error('listNoteAssets failed', { noteId: normalizedNoteId, error: error.message });
+        if (isAuthenticatedIntent()) {
+            return [];
+        }
+        return await localAssets();
+    }
+}
+
+export async function deleteNoteAsset(assetId) {
+    const normalizedAssetId = String(assetId || '');
+    const client = getClient();
+    if (!client) {
+        await deleteGuestNoteAsset(normalizedAssetId);
+        return;
+    }
+
+    try {
+        await callMutation(api.assets.deleteNoteAsset, { assetId: normalizedAssetId });
+    } catch (error) {
+        if (isAuthError(error)) {
+            if (isAuthenticatedIntent()) {
+                throw buildAuthUnavailableError('note asset delete', error);
+            }
+            await deleteGuestNoteAsset(normalizedAssetId);
+            return;
+        }
+        throw error;
+    }
 }
 
 export async function deleteNote(noteId) {
@@ -377,6 +476,9 @@ export async function deleteNote(noteId) {
         await callMutation(api.notes.deleteNote, { noteId: String(noteId) });
     } catch (error) {
         if (isAuthError(error)) {
+            if (isAuthenticatedIntent()) {
+                throw buildAuthUnavailableError('note delete', error);
+            }
             await deleteGuestNote(String(noteId));
             return;
         }
@@ -395,6 +497,9 @@ export async function deleteFlashcard(cardId) {
         await callMutation(api.flashcards.deleteFlashcard, { cardId: String(cardId) });
     } catch (error) {
         if (isAuthError(error)) {
+            if (isAuthenticatedIntent()) {
+                throw buildAuthUnavailableError('flashcard delete', error);
+            }
             await deleteGuestFlashcard(String(cardId));
             return;
         }

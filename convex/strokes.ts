@@ -1,11 +1,46 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import {
-  requireAuthenticatedUserId,
+  requireApprovedAuthenticatedUserId,
   requireHostedSessionAccess,
   requireHostedSessionHostOrTeacher,
-  requireMatchingUserId,
+  requireApprovedMatchingUserId,
 } from "./authHelpers";
+
+const MAX_STROKE_JSON_BYTES = 128 * 1024;
+const MAX_PAGE_NUMBER = 10000;
+
+function validatePageNumber(pageNumber: number) {
+  if (!Number.isInteger(pageNumber) || pageNumber < 1 || pageNumber > MAX_PAGE_NUMBER) {
+    throw new Error(`pageNumber must be an integer between 1 and ${MAX_PAGE_NUMBER}.`);
+  }
+  return pageNumber;
+}
+
+function normalizeFabricObjectJson(fabricObjectJson: string) {
+  const normalized = String(fabricObjectJson || "").trim();
+  if (!normalized) {
+    throw new Error("fabricObjectJson is required.");
+  }
+
+  const byteLength = new TextEncoder().encode(normalized).length;
+  if (byteLength > MAX_STROKE_JSON_BYTES) {
+    throw new Error(`fabricObjectJson exceeds ${MAX_STROKE_JSON_BYTES} bytes.`);
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(normalized);
+  } catch {
+    throw new Error("fabricObjectJson must be valid JSON.");
+  }
+
+  if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+    throw new Error("fabricObjectJson must serialize an object.");
+  }
+
+  return JSON.stringify(parsed);
+}
 
 export const addStroke = mutation({
   args: {
@@ -15,14 +50,16 @@ export const addStroke = mutation({
     fabricObjectJson: v.string(),
   },
   handler: async (ctx, args) => {
-    const currentUserId = await requireMatchingUserId(ctx, args.userId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, args.userId);
     await requireHostedSessionAccess(ctx, args.sessionId);
     const now = Date.now();
+    const pageNumber = validatePageNumber(args.pageNumber);
+    const normalizedFabricObjectJson = normalizeFabricObjectJson(args.fabricObjectJson);
     return await ctx.db.insert("annotationStrokes", {
       sessionId: args.sessionId,
-      pageNumber: args.pageNumber,
+      pageNumber,
       userId: currentUserId,
-      fabricObjectJson: args.fabricObjectJson,
+      fabricObjectJson: normalizedFabricObjectJson,
       createdAt: now,
       updatedAt: now,
     });
@@ -37,13 +74,14 @@ export const updateStroke = mutation({
   handler: async (ctx, { strokeId, fabricObjectJson }) => {
     const stroke = await ctx.db.get(strokeId);
     if (!stroke) return;
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     await requireHostedSessionAccess(ctx, stroke.sessionId);
     if (stroke.userId !== currentUserId) {
       await requireHostedSessionHostOrTeacher(ctx, stroke.sessionId);
     }
+    const normalizedFabricObjectJson = normalizeFabricObjectJson(fabricObjectJson);
     await ctx.db.patch(strokeId, {
-      fabricObjectJson,
+      fabricObjectJson: normalizedFabricObjectJson,
       updatedAt: Date.now(),
     });
   },
@@ -54,7 +92,7 @@ export const deleteStroke = mutation({
   handler: async (ctx, { strokeId }) => {
     const stroke = await ctx.db.get(strokeId);
     if (!stroke) return;
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     await requireHostedSessionAccess(ctx, stroke.sessionId);
     if (stroke.userId !== currentUserId) {
       await requireHostedSessionHostOrTeacher(ctx, stroke.sessionId);

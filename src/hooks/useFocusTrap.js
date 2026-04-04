@@ -27,18 +27,25 @@ const FOCUSABLE_SELECTOR = [
 /**
  * @param {React.RefObject<HTMLElement>} containerRef - ref to the modal / dialog container
  * @param {boolean} [active=true] - whether the trap is currently active
+ * @param {HTMLElement | null} [returnFocusEl=null] - explicit element to return focus to on close
  */
-export default function useFocusTrap(containerRef, active = true) {
+export default function useFocusTrap(containerRef, active = true, returnFocusEl = null) {
     // Remember what had focus before the trap was activated
     const previousFocusRef = useRef(null);
+    const activationSeqRef = useRef(0);
 
     useEffect(() => {
         if (!active) return;
         const container = containerRef.current;
         if (!container) return;
+        activationSeqRef.current += 1;
+        const activationSeq = activationSeqRef.current;
 
         // Capture the previously focused element before we steal focus
-        previousFocusRef.current = document.activeElement;
+        const activeElement = document.activeElement;
+        if (!container.contains(activeElement)) {
+            previousFocusRef.current = activeElement;
+        }
 
         // Focus the first focusable element inside the container, or the container itself
         const focusable = Array.from(container.querySelectorAll(FOCUSABLE_SELECTOR));
@@ -83,11 +90,20 @@ export default function useFocusTrap(containerRef, active = true) {
             document.removeEventListener('keydown', handleKeyDown);
             // Restore focus to the element that was focused before the trap opened
             const prev = previousFocusRef.current;
-            if (prev && typeof prev.focus === 'function') {
+            const restoreTarget = returnFocusEl && typeof returnFocusEl.focus === 'function'
+                ? returnFocusEl
+                : prev;
+            if (restoreTarget && typeof restoreTarget.focus === 'function') {
                 // requestAnimationFrame defers until the modal has unmounted,
                 // preventing a race where focus is stolen back immediately
-                requestAnimationFrame(() => prev.focus());
+                requestAnimationFrame(() => {
+                    // In React StrictMode, effects mount-cleanup-remount in dev.
+                    // Skip restoring focus if a newer activation already occurred.
+                    if (activationSeqRef.current !== activationSeq) return;
+                    restoreTarget.focus();
+                    previousFocusRef.current = null;
+                });
             }
         };
-    }, [containerRef, active]);
+    }, [containerRef, active, returnFocusEl]);
 }

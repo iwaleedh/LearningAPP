@@ -1,25 +1,19 @@
 import { useMemo } from 'react';
 import { Flame } from 'lucide-react';
-import {
-    getActivityByDate,
-    computeStudyStreak,
-    computeLongestStreak,
-} from '../../hooks/useNoteReadStatus.js';
-import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
+import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
 import './Gamification.css';
 
 export default function StreakTracker() {
-    const activityVersion = useActivityRefresh();
+    const readProgress = useReadProgressSummary();
     const heatmapData = useMemo(() => {
-        void activityVersion;
-        const activityMap = getActivityByDate();
+        const activityMap = readProgress.activityByDate;
         const days = [];
         const today = new Date();
 
         for (let i = 83; i >= 0; i--) {
             const date = new Date(today);
             date.setDate(date.getDate() - i);
-            const dateStr = date.toISOString().slice(0, 10);
+            const dateStr = date.toLocaleDateString('en-CA'); // local YYYY-MM-DD (D14: toISOString is UTC, causing off-by-one for non-UTC users)
             const count = activityMap[dateStr] || 0;
             const intensity = count === 0 ? 0 : count <= 2 ? 1 : count <= 5 ? 2 : 3;
             days.push({
@@ -31,16 +25,10 @@ export default function StreakTracker() {
             });
         }
         return days;
-    }, [activityVersion]);
+    }, [readProgress]);
 
-    const currentStreak = useMemo(() => {
-        void activityVersion;
-        return computeStudyStreak();
-    }, [activityVersion]);
-    const longestStreak = useMemo(() => {
-        void activityVersion;
-        return computeLongestStreak();
-    }, [activityVersion]);
+    const currentStreak = readProgress.currentStreak;
+    const longestStreak = readProgress.longestStreak;
     const totalActiveDays = heatmapData.filter(d => d.intensity > 0).length;
 
     const weeks = useMemo(() => {

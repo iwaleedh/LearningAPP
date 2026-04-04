@@ -10,45 +10,76 @@ function fmt(ms) {
 }
 
 /**
+ * Derive the timer's accumulated baseline elapsed time from the authoritative
+ * state snapshot. Falls back to legacy elapsedMs-only rows for compatibility.
+ */
+function getBaseElapsedMs(timerState) {
+  const raw = Number(timerState?.accumulatedElapsedMs ?? timerState?.elapsedMs ?? 0);
+  return Number.isFinite(raw) ? Math.max(0, raw) : 0;
+}
+
+function getAnchorStartedAt(timerState) {
+  const raw = Number(timerState?.anchorStartedAt ?? timerState?.startedAt ?? 0);
+  return Number.isFinite(raw) && raw > 0 ? raw : null;
+}
+
+function computeElapsedMs(timerState, now = Date.now()) {
+  const baseElapsedMs = getBaseElapsedMs(timerState);
+  const state = timerState?.state ?? 'stopped';
+  if (state !== 'running') {
+    return baseElapsedMs;
+  }
+
+  const anchorStartedAt = getAnchorStartedAt(timerState);
+  if (!anchorStartedAt) {
+    return baseElapsedMs;
+  }
+
+  return baseElapsedMs + Math.max(0, now - anchorStartedAt);
+}
+
+/**
  * ClassTimer — shown to all participants.
  * Teachers can set a countdown target (minutes) or use as a stopwatch.
  *
- * @param {{ timerState: object|null, isTeacher: boolean, onUpdate: (state,elapsed,target,mode) => void }} props
+ * @param {{ timerState: object|null, isTeacher: boolean, onUpdate: (update: { state: string, elapsedMs: number, targetMs: number, mode: string, expectedVersion?: number|null }) => void }} props
  */
 export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
   const [localElapsed, setLocalElapsed] = useState(0);
   const [inputMin, setInputMin] = useState('');
   const [inputSec, setInputSec] = useState('');
   const rafRef = useRef(null);
-  const lastTickRef = useRef(null);
 
   const state  = timerState?.state ?? 'stopped';
   const mode   = timerState?.mode  ?? 'stopwatch';
   const target = timerState ? Number(timerState.targetMs) : 0;
+  const version = Number.isFinite(Number(timerState?.version)) ? Number(timerState.version) : null;
 
   const isStopped = state === 'stopped';
   const isOverdue = mode === 'countdown' && target > 0 && localElapsed >= target;
 
   useEffect(() => {
-    if (timerState) setLocalElapsed(Number(timerState.elapsedMs)); // eslint-disable-line react-hooks/set-state-in-effect -- sync prop to local state for RAF animation
+    setLocalElapsed(computeElapsedMs(timerState));
   }, [timerState]);
 
   // Auto-stop when countdown hits zero
   useEffect(() => {
     if (mode === 'countdown' && target > 0 && localElapsed >= target && state === 'running') {
       cancelAnimationFrame(rafRef.current);
-      onUpdate?.('stopped', BigInt(target), BigInt(target), mode);
+      onUpdate?.({
+        state: 'stopped',
+        elapsedMs: target,
+        targetMs: target,
+        mode,
+        expectedVersion: version,
+      });
     }
-  }, [localElapsed, mode, target, state, onUpdate]);
+  }, [localElapsed, mode, onUpdate, state, target, version]);
 
   useEffect(() => {
     if (state === 'running') {
-      lastTickRef.current = Date.now();
       function tick() {
-        const now = Date.now();
-        const delta = now - lastTickRef.current;
-        lastTickRef.current = now;
-        setLocalElapsed(prev => prev + delta);
+        setLocalElapsed(computeElapsedMs(timerState));
         rafRef.current = requestAnimationFrame(tick);
       }
       rafRef.current = requestAnimationFrame(tick);
@@ -56,7 +87,7 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
       cancelAnimationFrame(rafRef.current);
     }
     return () => cancelAnimationFrame(rafRef.current);
-  }, [state]);
+  }, [state, timerState]);
 
   const displayMs = mode === 'countdown' && target > 0
     ? Math.max(0, target - localElapsed)
@@ -64,12 +95,24 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
 
   function handlePlayPause() {
     const newState = state === 'running' ? 'paused' : 'running';
-    onUpdate?.(newState, BigInt(Math.round(localElapsed)), BigInt(target), mode);
+    onUpdate?.({
+      state: newState,
+      elapsedMs: Math.round(localElapsed),
+      targetMs: target,
+      mode,
+      expectedVersion: version,
+    });
   }
 
   function handleReset() {
     setLocalElapsed(0);
-    onUpdate?.('stopped', BigInt(0), BigInt(target), mode);
+    onUpdate?.({
+      state: 'stopped',
+      elapsedMs: 0,
+      targetMs: target,
+      mode,
+      expectedVersion: version,
+    });
   }
 
   function handleSetCountdown(e) {
@@ -81,14 +124,26 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
     setLocalElapsed(0);
     setInputMin('');
     setInputSec('');
-    onUpdate?.('stopped', BigInt(0), BigInt(totalMs), 'countdown');
+    onUpdate?.({
+      state: 'stopped',
+      elapsedMs: 0,
+      targetMs: totalMs,
+      mode: 'countdown',
+      expectedVersion: version,
+    });
   }
 
   function handleSwitchStopwatch() {
     setLocalElapsed(0);
     setInputMin('');
     setInputSec('');
-    onUpdate?.('stopped', BigInt(0), BigInt(0), 'stopwatch');
+    onUpdate?.({
+      state: 'stopped',
+      elapsedMs: 0,
+      targetMs: 0,
+      mode: 'stopwatch',
+      expectedVersion: version,
+    });
   }
 
   return (

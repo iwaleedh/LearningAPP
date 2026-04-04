@@ -19,8 +19,25 @@ function stringifyMetadata(value) {
     }
 }
 
+// D1: Generate a UUID for idempotency. Falls back to a timestamp-based key
+// if the Web Crypto API is unavailable (older environments).
+function generateClientAttemptId() {
+    try {
+        return crypto.randomUUID();
+    } catch {
+        return `fallback-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    }
+}
+
 export async function recordStudyAttempt(payload) {
     if (!getClient()) return { success: false, error: 'Not authenticated or client missing' };
+
+    const activityDateKey = typeof payload.activityDateKey === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(payload.activityDateKey)
+        ? payload.activityDateKey
+        : new Date().toLocaleDateString('en-CA');
+
+    // D1: Use caller-supplied key (set at button-click time) or generate one now.
+    const clientAttemptId = payload.clientAttemptId || generateClientAttemptId();
 
     try {
         const result = await callMutation(api.studyAttempts.recordAttempt, {
@@ -38,7 +55,9 @@ export async function recordStudyAttempt(payload) {
             scorePercent: clampPercent(payload.scorePercent),
             confidence: payload.confidence ? String(payload.confidence) : undefined,
             durationSeconds: normalizeDuration(payload.durationSeconds),
+            activityDateKey,
             metadataJson: stringifyMetadata(payload.metadata),
+            clientAttemptId,
         });
         return { success: true, data: result };
     } catch (error) {

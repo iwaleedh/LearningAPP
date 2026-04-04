@@ -10,7 +10,7 @@ import { sanitizeRedirectPath } from './accessControl.js';
 import useFocusTrap from '../../hooks/useFocusTrap.js';
 import './AuthModal.css';
 
-export default function AuthModal({ onClose, redirectTo = '/' }) {
+export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = null }) {
   const { canSignIn, debugAuthEnabled, signInDebug } = useAuth();
   const [tab, setTab] = useState('signin');
   const [debugName, setDebugName] = useState('');
@@ -18,7 +18,7 @@ export default function AuthModal({ onClose, redirectTo = '/' }) {
   const modalRef = useRef(null);
 
   // A8: trap focus inside the modal while it is open
-  useFocusTrap(modalRef);
+  useFocusTrap(modalRef, true, returnFocusEl);
 
   async function handleDebugSignIn(role) {
     await signInDebug?.({ role, username: debugName });

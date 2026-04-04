@@ -9,8 +9,10 @@
  * (used by ProgressPage / stats).
  */
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
+import { useMutation, useQuery } from 'convex/react';
 import { getRecordedActivityByDate, subscribeToActivityUpdates } from '../services/activityStore.js';
+import { api, callQuery, getClient } from '../convex-client.js';
 
 const PREFIX = 'lt_read:';
 
@@ -51,52 +53,215 @@ function storageKey(noteId) {
     return `${PREFIX}${noteId}`;
 }
 
+function toLocalDateKey(value) {
+    return new Date(value).toLocaleDateString('en-CA');
+}
+
+function markReadLocally(noteId, readAt) {
+    const key = storageKey(noteId);
+    try {
+        localStorage.setItem(key, readAt);
+        const cache = getReadCache();
+        cache.set(noteId, readAt);
+        localStorage.setItem('lt_read_index', JSON.stringify(Array.from(cache.keys())));
+    } catch {
+        // storage quota exceeded — ignore
+    }
+}
+
+function markUnreadLocally(noteId) {
+    const key = storageKey(noteId);
+    try {
+        localStorage.removeItem(key);
+        const cache = getReadCache();
+        cache.delete(noteId);
+        localStorage.setItem('lt_read_index', JSON.stringify(Array.from(cache.keys())));
+    } catch {
+        // ignore
+    }
+}
+
+function emitReadProgressUpdate() {
+    if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('lt:activity-updated'));
+    }
+}
+
+function computeCurrentStreakFromDates(dateKeys) {
+    if (dateKeys.size === 0) return 0;
+
+    const today = new Date();
+    const todayStr = today.toLocaleDateString('en-CA');
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toLocaleDateString('en-CA');
+
+    if (!dateKeys.has(todayStr) && !dateKeys.has(yesterdayStr)) return 0;
+
+    const startOffset = dateKeys.has(todayStr) ? 0 : 1;
+    let streak = 0;
+    for (let offset = startOffset; ; offset += 1) {
+        const date = new Date(today);
+        date.setDate(date.getDate() - offset);
+        if (dateKeys.has(date.toLocaleDateString('en-CA'))) {
+            streak += 1;
+        } else {
+            break;
+        }
+    }
+    return streak;
+}
+
+function computeLongestStreakFromDates(sortedDateKeys) {
+    if (sortedDateKeys.length === 0) return 0;
+    let longest = 1;
+    let current = 1;
+    for (let i = 1; i < sortedDateKeys.length; i += 1) {
+        const diff = Math.round(
+            (new Date(sortedDateKeys[i]) - new Date(sortedDateKeys[i - 1])) / 86400000,
+        );
+        if (diff === 1) {
+            current += 1;
+            if (current > longest) longest = current;
+        } else {
+            current = 1;
+        }
+    }
+    return longest;
+}
+
+function buildSummary(readAtByNoteId, extraActivityByDate = {}) {
+    const normalizedReadAtByNoteId = { ...readAtByNoteId };
+    const readNoteIds = Object.keys(normalizedReadAtByNoteId).sort();
+    const activityByDate = { ...extraActivityByDate };
+
+    for (const readAt of Object.values(normalizedReadAtByNoteId)) {
+        if (!readAt) continue;
+        const dateKey = toLocalDateKey(readAt);
+        activityByDate[dateKey] = (activityByDate[dateKey] || 0) + 1;
+    }
+
+    const activeDates = Object.keys(activityByDate)
+        .filter((dateKey) => Number(activityByDate[dateKey]) > 0)
+        .sort();
+    const activeDateSet = new Set(activeDates);
+
+    return {
+        readNoteIds,
+        readAtByNoteId: normalizedReadAtByNoteId,
+        totalRead: readNoteIds.length,
+        activityByDate,
+        currentStreak: computeCurrentStreakFromDates(activeDateSet),
+        longestStreak: computeLongestStreakFromDates(activeDates),
+    };
+}
+
+function buildLocalReadSummary() {
+    const readAtByNoteId = Object.fromEntries(getReadCache().entries());
+    return buildSummary(readAtByNoteId, getRecordedActivityByDate());
+}
+
+function toBulkSyncPayload(localSummary) {
+    return localSummary.readNoteIds.map((noteId) => ({
+        noteId,
+        readAt: localSummary.readAtByNoteId[noteId],
+        localDateKey: toLocalDateKey(localSummary.readAtByNoteId[noteId]),
+    }));
+}
+
+export function clearLocalReadProgress() {
+    try {
+        localStorage.removeItem('lt_read_index');
+        const cache = getReadCache();
+        for (const noteId of Array.from(cache.keys())) {
+            localStorage.removeItem(storageKey(noteId));
+        }
+        cache.clear();
+    } catch {
+        // ignore
+    }
+}
+
+export async function getReadProgressSnapshot() {
+    const client = getClient();
+    if (!client) {
+        return buildLocalReadSummary();
+    }
+
+    try {
+        const serverSummary = await callQuery(api.readProgress.getMyReadProgressSummary, {});
+        if (!serverSummary) {
+            return buildLocalReadSummary();
+        }
+        return buildSummary(serverSummary.readAtByNoteId || {}, serverSummary.activityByDate || {});
+    } catch {
+        return buildLocalReadSummary();
+    }
+}
+
+export function useReadProgressSummary() {
+    const serverSummary = useQuery(api.readProgress.getMyReadProgressSummary);
+    const bulkSyncReadProgress = useMutation(api.readProgress.bulkSyncReadProgress);
+    const [localVersion, setLocalVersion] = useState(0);
+    const migrationAttemptedRef = useRef(false);
+
+    useEffect(() => {
+        return subscribeToActivityUpdates(() => {
+            setLocalVersion((current) => current + 1);
+        });
+    }, []);
+
+    const localSummary = useMemo(() => {
+        void localVersion;
+        return buildLocalReadSummary();
+    }, [localVersion]);
+
+    useEffect(() => {
+        if (serverSummary === undefined || migrationAttemptedRef.current) return;
+        if (serverSummary.totalRead > 0 || localSummary.totalRead === 0) return;
+
+        migrationAttemptedRef.current = true;
+        void bulkSyncReadProgress({
+            readStatesJson: JSON.stringify(toBulkSyncPayload(localSummary)),
+        }).catch(() => {
+            migrationAttemptedRef.current = false;
+        });
+    }, [bulkSyncReadProgress, localSummary, serverSummary]);
+
+    if (serverSummary === undefined) {
+        return localSummary;
+    }
+
+    if (serverSummary.totalRead === 0 && localSummary.totalRead > 0) {
+        return localSummary;
+    }
+
+    return buildSummary(serverSummary.readAtByNoteId || {}, serverSummary.activityByDate || {});
+}
+
 /**
  * Returns { isRead, readAt, markRead, markUnread }
  * @param {string} noteId  e.g. "note:chemistry:1:1:0"
  */
 export function useNoteReadStatus(noteId) {
-    const key = storageKey(noteId);
-
-    const [readAt, setReadAt] = useState(() => {
-        try {
-            return localStorage.getItem(key) || null;
-        } catch {
-            return null;
-        }
-    });
+    const summary = useReadProgressSummary();
+    const markNoteRead = useMutation(api.readProgress.markNoteRead);
+    const markNoteUnread = useMutation(api.readProgress.markNoteUnread);
+    const readAt = summary.readAtByNoteId[noteId] || null;
 
     const markRead = useCallback(() => {
         if (readAt) return;
         const now = new Date().toISOString();
-        try {
-            localStorage.setItem(key, now);
-            const cache = getReadCache();
-            cache.set(noteId, now);
-            localStorage.setItem('lt_read_index', JSON.stringify(Array.from(cache.keys())));
-        } catch {
-            // storage quota exceeded — ignore
-        }
-        if (typeof window !== 'undefined') {
-            window.dispatchEvent(new CustomEvent('lt:activity-updated'));
-        }
-        setReadAt(now);
-    }, [key, readAt, noteId]);
+        markReadLocally(noteId, now);
+        emitReadProgressUpdate();
+        void markNoteRead({ noteId, readAt: now, localDateKey: toLocalDateKey(now) });
+    }, [markNoteRead, noteId, readAt]);
 
     const markUnread = useCallback(() => {
-        try {
-            localStorage.removeItem(key);
-            const cache = getReadCache();
-            cache.delete(noteId);
-            localStorage.setItem('lt_read_index', JSON.stringify(Array.from(cache.keys())));
-        } catch {
-            // ignore
-        }
-        if (typeof window !== 'undefined') {
-            window.dispatchEvent(new CustomEvent('lt:activity-updated'));
-        }
-        setReadAt(null);
-    }, [key, noteId]);
+        markUnreadLocally(noteId);
+        emitReadProgressUpdate();
+        void markNoteUnread({ noteId });
+    }, [markNoteUnread, noteId]);
 
     return {
         isRead: Boolean(readAt),
@@ -111,7 +276,7 @@ export function useNoteReadStatus(noteId) {
  * Uses the module-level cache to avoid O(n) localStorage scans.
  */
 export function getTotalReadCount() {
-    return getReadCache().size;
+    return buildLocalReadSummary().totalRead;
 }
 
 /**
@@ -119,80 +284,21 @@ export function getTotalReadCount() {
  * Counts back from today; if today has no reads, checks from yesterday.
  */
 export function computeStudyStreak() {
-    const dates = new Set();
-    try {
-        for (const ts of getReadCache().values()) {
-            if (ts) {
-                // Use local date (en-CA produces YYYY-MM-DD in browser locale timezone)
-                // to avoid off-by-one day errors for users outside UTC.
-                dates.add(new Date(ts).toLocaleDateString('en-CA'));
-            }
-        }
-    } catch {
-        return 0;
-    }
-    if (dates.size === 0) return 0;
-
-    const today = new Date();
-    const todayStr = today.toLocaleDateString('en-CA');
-    const yesterday = new Date(today);
-    yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayStr = yesterday.toLocaleDateString('en-CA');
-
-    if (!dates.has(todayStr) && !dates.has(yesterdayStr)) return 0;
-
-    const startOffset = dates.has(todayStr) ? 0 : 1;
-    let streak = 0;
-    for (let d = startOffset; ; d++) {
-        const date = new Date(today);
-        date.setDate(date.getDate() - d);
-        if (dates.has(date.toLocaleDateString('en-CA'))) {
-            streak++;
-        } else {
-            break;
-        }
-    }
-    return streak;
+    return buildLocalReadSummary().currentStreak;
 }
 
 /**
  * Returns a map of { 'YYYY-MM-DD': count } for every day a note was read.
  */
 export function getActivityByDate() {
-    const map = { ...getRecordedActivityByDate() };
-    try {
-        for (const ts of getReadCache().values()) {
-            if (ts) {
-                // Use local date for heatmap accuracy in non-UTC timezones.
-                const date = new Date(ts).toLocaleDateString('en-CA');
-                map[date] = (map[date] || 0) + 1;
-            }
-        }
-    } catch { /* ignore */ }
-    return map;
+    return buildLocalReadSummary().activityByDate;
 }
 
 /**
  * Returns the longest ever consecutive-day study streak.
  */
 export function computeLongestStreak() {
-    const map = getActivityByDate();
-    const sorted = Object.keys(map).sort();
-    if (sorted.length === 0) return 0;
-    let longest = 1;
-    let current = 1;
-    for (let i = 1; i < sorted.length; i++) {
-        const diff = Math.round(
-            (new Date(sorted[i]) - new Date(sorted[i - 1])) / 86400000
-        );
-        if (diff === 1) {
-            current++;
-            if (current > longest) longest = current;
-        } else {
-            current = 1;
-        }
-    }
-    return longest;
+    return buildLocalReadSummary().longestStreak;
 }
 
 /**
@@ -200,7 +306,7 @@ export function computeLongestStreak() {
  * Uses the module-level cache to avoid O(n) localStorage scans.
  */
 export function getReadNoteIds() {
-    return new Set(getReadCache().keys());
+    return new Set(buildLocalReadSummary().readNoteIds);
 }
 
 export function subscribeToReadProgressUpdates(callback) {

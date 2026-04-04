@@ -1,6 +1,6 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
-import { requireHostedSessionAccess, requireMatchingUserId } from "./authHelpers";
+import { requireApprovedMatchingUserId, requireHostedSessionAccess } from "./authHelpers";
 
 export const updateCursor = mutation({
   args: {
@@ -12,7 +12,7 @@ export const updateCursor = mutation({
     mode: v.string(),
   },
   handler: async (ctx, args) => {
-    const currentUserId = await requireMatchingUserId(ctx, args.userId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, args.userId);
     await requireHostedSessionAccess(ctx, String(args.classId));
     const existing = await ctx.db
       .query("liveClassCursors")

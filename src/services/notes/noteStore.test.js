@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import {
     clearGuestData,
     __resetMemoryStoreForTests,
+    deleteNoteAsset,
     getGuestDataSummary,
     getNote,
     listFlashcards,
+    listNoteAssets,
     listNotesBySubject,
     saveNoteAsset,
     saveFlashcard,
@@ -106,4 +108,23 @@ test('guest data summary counts persisted local guest content and can be cleared
     await clearGuestData();
     const cleared = await getGuestDataSummary();
     assert.equal(cleared.totalItems, 0);
+});
+
+test('note asset list and delete round-trip via guest fallback', async () => {
+    await __resetMemoryStoreForTests();
+
+    const assetId = await saveNoteAsset({
+        noteId: 'note:chemistry:1:2:0',
+        type: 'student_highlights',
+        data: JSON.stringify([{ text: 'Moles link amounts of substance.' }]),
+    });
+
+    const assets = await listNoteAssets('note:chemistry:1:2:0');
+    assert.equal(assets.length, 1);
+    assert.equal(assets[0].assetId, assetId);
+    assert.equal(assets[0].type, 'student_highlights');
+
+    await deleteNoteAsset(assetId);
+    const afterDelete = await listNoteAssets('note:chemistry:1:2:0');
+    assert.equal(afterDelete.length, 0);
 });

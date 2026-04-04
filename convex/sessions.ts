@@ -6,7 +6,7 @@ import {
   getHostedSessionByStringId,
   requireHostedSessionAccess,
   requireHostedSessionHostOrTeacher,
-  requireMatchingUserId,
+  requireApprovedMatchingUserId,
   requireTeacher,
 } from "./authHelpers";
 
@@ -45,7 +45,7 @@ export const createLiveSession = mutation({
     title: v.string(),
   },
   handler: async (ctx, args) => {
-    const hostUserId = await requireMatchingUserId(ctx, args.hostUserId);
+    const hostUserId = await requireApprovedMatchingUserId(ctx, args.hostUserId);
     const sessionId = await ctx.db.insert("liveSessions", {
       hostUserId,
       paperId: args.paperId,
@@ -70,7 +70,7 @@ export const joinSession = mutation({
     userId: v.optional(v.string()),
   },
   handler: async (ctx, { sessionId, userId }) => {
-    const currentUserId = await requireMatchingUserId(ctx, userId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, userId);
     const session = await getHostedSessionByStringId(ctx, sessionId);
     if (!isActiveSession(session) || session.status !== "active") {
       throw new Error("Session not found or no longer active.");
@@ -161,7 +161,7 @@ export const getParticipants = query({
 export const getMyParticipantSessions = query({
   args: { userId: v.optional(v.string()) },
   handler: async (ctx, { userId }) => {
-    const currentUserId = await requireMatchingUserId(ctx, userId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, userId);
     return await ctx.db
       .query("sessionParticipants")
       .withIndex("by_user", (q) => q.eq("userId", currentUserId))

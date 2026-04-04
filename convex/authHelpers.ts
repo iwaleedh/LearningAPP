@@ -95,7 +95,12 @@ export async function requireApprovedAccount(ctx: PublicCtx): Promise<void> {
   if (!identity?.subject) return; // anonymous — no account to check
   if (isAdminEmail(identity.email)) return;
   const user = await getUserRecordById(ctx, identity.subject);
-  if (!user) return; // not yet registered — will be gated at first query
+  if (!user) {
+    // D7: A valid JWT with no DB record means the user is in the brief post-signup
+    // window before registerUser completes. Treat as pending rather than approved so
+    // unpaid users cannot access gated content during this window.
+    throw new Error("Account registration is completing. Please wait a moment and try again.");
+  }
   const status = effectiveAccountStatus(user);
   if (status === "pending") {
     throw new Error("Account pending approval.");
@@ -171,6 +176,20 @@ export async function requireAuthenticatedUserId(ctx: PublicCtx) {
   return identity.subject;
 }
 
+export async function requireApprovedAuthenticatedUserId(ctx: PublicCtx) {
+  const userId = await requireAuthenticatedUserId(ctx);
+  await requireApprovedAccount(ctx);
+  return userId;
+}
+
+export async function requireApprovedMatchingUserId(ctx: PublicCtx, claimedUserId?: string) {
+  const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
+  if (claimedUserId && claimedUserId !== currentUserId) {
+    throw new Error("Not authorized to act as another user.");
+  }
+  return currentUserId;
+}
+
 export async function getUserRecordById(ctx: PublicCtx, userId: string) {
   return await ctx.db
     .query("users")
@@ -216,7 +235,7 @@ export async function getCurrentUserRole(ctx: PublicCtx): Promise<UserRole> {
 }
 
 export async function requireTeacher(ctx: PublicCtx) {
-  const userId = await requireAuthenticatedUserId(ctx);
+  const userId = await requireApprovedAuthenticatedUserId(ctx);
   if (!(await isTeacherUserId(ctx, userId))) {
     throw new Error("Teacher access required.");
   }
@@ -244,7 +263,7 @@ export async function getSessionParticipant(ctx: PublicCtx, sessionId: string, u
 }
 
 export async function requireHostedSessionHostOrTeacher(ctx: PublicCtx, sessionId: string) {
-  const currentUserId = await requireAuthenticatedUserId(ctx);
+  const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
   const session = await getHostedSessionByStringId(ctx, sessionId);
   if (!session || !hasHostUserId(session)) {
     throw new Error("Session not found.");
@@ -266,7 +285,7 @@ export async function requireHostedSessionHostOrTeacher(ctx: PublicCtx, sessionI
 }
 
 export async function requireHostedSessionAccess(ctx: PublicCtx, sessionId: string) {
-  const currentUserId = await requireAuthenticatedUserId(ctx);
+  const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
   const session = await getHostedSessionByStringId(ctx, sessionId);
   if (!session || !hasHostUserId(session)) {
     throw new Error("Session not found.");
@@ -279,10 +298,6 @@ export async function requireHostedSessionAccess(ctx: PublicCtx, sessionId: stri
   const participant = await getSessionParticipant(ctx, sessionId, currentUserId);
   if (participant) {
     return { currentUserId, session, participant };
-  }
-
-  if (await isTeacherUserId(ctx, currentUserId)) {
-    return { currentUserId, session, participant: null };
   }
 
   throw new Error("You do not have access to this session.");

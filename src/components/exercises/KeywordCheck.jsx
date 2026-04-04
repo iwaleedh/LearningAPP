@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { CheckCircle, Search, ArrowRight } from 'lucide-react';
-import { escapeRegExp } from '../../utils/sanitize';
+import { findKeywords, highlightKeywords, normalizeKeywords } from './keywordCheckUtils.js';
 import './Exercises.css';
 
 export default function KeywordCheck({ question, onNext, onMistake, onAttempt }) {
@@ -30,7 +30,7 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
             correctAnswer: question.modelAnswer,
         });
         if (submitted && score < total) {
-            const missing = question.keywords.filter(kw => !foundKeywords.includes(kw));
+            const missing = safeKeywords.filter(kw => !foundKeywords.includes(kw));
             onMistake?.({
                 question: question.stem,
                 yourAnswer: answer.trim().slice(0, 120) || '(no answer)',
@@ -46,23 +46,13 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
         onNext?.();
     };
 
+    const safeKeywords = normalizeKeywords(question.keywords);
     const foundKeywords = submitted
-        ? question.keywords.filter(kw => answer.toLowerCase().includes(kw.toLowerCase()))
+        ? findKeywords(answer, safeKeywords)
         : [];
 
-    const highlightKeywords = () => {
-        if (!submitted) return answer;
-        let highlighted = answer;
-        question.keywords.forEach(kw => {
-            // Escape metacharacters to prevent regex injection crash
-            const regex = new RegExp(`(${escapeRegExp(kw)})`, 'gi');
-            highlighted = highlighted.replace(regex, '⟨$1⟩');
-        });
-        return highlighted;
-    };
-
     const score = foundKeywords.length;
-    const total = question.keywords.length;
+    const total = safeKeywords.length;
     // Guard against division by zero: 0 keywords means trivially correct (100%)
     const percentage = total > 0 ? Math.round((score / total) * 100) : 100;
 
@@ -98,7 +88,7 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
                     </div>
 
                     <div className="kw-keyword-chips">
-                        {question.keywords.map(kw => {
+                        {safeKeywords.map(kw => {
                             const found = foundKeywords.includes(kw);
                             return (
                                 <span key={kw} className={`kw-chip ${found ? 'found' : 'missing'}`}>
@@ -111,7 +101,7 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
 
                     <div className="kw-highlighted-answer">
                         <strong>Your answer (keywords highlighted):</strong>
-                        <p>{highlightKeywords()}</p>
+                        <p>{submitted ? highlightKeywords(answer, safeKeywords) : answer}</p>
                     </div>
 
                     <button

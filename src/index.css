@@ -224,9 +224,14 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* C5: Firefox native scrollbar support */
-  scrollbar-color: var(--color-border) var(--color-bg-secondary);
-  scrollbar-width: thin;
+}
+
+@supports (scrollbar-width: thin) {
+  html {
+    /* C5: Firefox native scrollbar support */
+    scrollbar-color: var(--color-border) var(--color-bg-secondary);
+    scrollbar-width: thin;
+  }
 }
 
 html[data-theme="dark"] {
@@ -383,6 +388,45 @@ pre {
   border: 0;
 }
 
+/* ── Skip navigation (A2) ───────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -56px;
+  left: var(--space-4);
+  z-index: 99999;
+  padding: var(--space-2) var(--space-5);
+  background: var(--color-primary);
+  color: var(--color-text-inverse, #fff);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  text-decoration: none;
+  transition: top 0.2s ease;
+  white-space: nowrap;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--color-text-inverse, #fff);
+  outline-offset: 2px;
+}
+
+.app-layout--modal-blocked {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* ── Global focus-visible (A4) ──────────────────────────────────────────── */
+/* Show outline for keyboard users; hide for pointer-triggered focus */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .print-only {
   display: none !important;
 }
@@ -523,6 +567,7 @@ pre {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-4);
   font-family: var(--font-sans);
@@ -537,10 +582,17 @@ pre {
   white-space: nowrap;
   -webkit-user-select: none;
   user-select: none;
+  min-height: 44px;          /* A6: minimum touch target */
+  touch-action: manipulation; /* removes 300 ms iOS tap delay */
 }
 
 .btn:active {
   transform: scale(0.97);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .btn-primary {
@@ -656,6 +708,7 @@ pre {
   border-radius: var(--radius-lg);
   outline: none;
   transition: all var(--transition-fast);
+  min-height: 44px; /* A6: touch target */
 }
 
 .input:hover {

@@ -24,8 +24,13 @@ export default function LandingPage() {
   const [authOpen, setAuthOpen] = useState(
     location.state?.accessRequired === 'auth' || false
   );
+  const [authReturnFocusEl, setAuthReturnFocusEl] = useState(null);
   
   const redirectTarget = location.state?.from || '/';
+  const openAuth = (event) => {
+    setAuthReturnFocusEl(event.currentTarget);
+    setAuthOpen(true);
+  };
 
   return (
     <div className="landing-page">
@@ -34,7 +39,7 @@ export default function LandingPage() {
         {canSignIn && (
           <button 
             className="btn btn-primary"
-            onClick={() => setAuthOpen(true)}
+            onClick={openAuth}
           >
             <LogIn size={18} style={{ marginRight: 8 }} />
             Sign In
@@ -50,7 +55,7 @@ export default function LandingPage() {
           </p>
           <button 
             className="btn btn-primary btn-lg hero-cta"
-            onClick={() => setAuthOpen(true)}
+            onClick={openAuth}
           >
             Get Started Now
             <ArrowRight size={20} style={{ marginLeft: 8 }} />
@@ -189,7 +194,7 @@ export default function LandingPage() {
           <p>Join thousands of students achieving top marks with interactive learning.</p>
           <button 
             className="btn btn-primary btn-lg hero-cta shadow-pulse"
-            onClick={() => setAuthOpen(true)}
+            onClick={openAuth}
           >
             Create Your Free Account
           </button>
@@ -202,7 +207,11 @@ export default function LandingPage() {
       </footer>
 
       {authOpen && (
-        <AuthModal onClose={() => setAuthOpen(false)} redirectTo={redirectTarget} />
+        <AuthModal
+          onClose={() => setAuthOpen(false)}
+          redirectTo={redirectTarget}
+          returnFocusEl={authReturnFocusEl}
+        />
       )}
     </div>
   );

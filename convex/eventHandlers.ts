@@ -16,16 +16,18 @@
 import { internalAction, internalMutation } from "./_generated/server";
 import { internal } from "./_generated/api";
 import { v } from "convex/values";
+import { validateEventPayload } from "./eventSchemas";
+import { EVENT_TOPICS } from "./eventTopics";
 
 // ── Topic → Handler dispatch map ────────────────────────────────────
 type HandlerFn = (ctx: any, payload: Record<string, any>) => Promise<void>;
 
 const TOPIC_HANDLERS: Record<string, HandlerFn[]> = {
-  "note:updated": [handleNoteUpdated],
-  "note:deleted": [handleNoteDeleted],
-  "session:ended": [handleSessionEnded],
-  "user:registered": [handleUserRegistered],
-  "class:ended": [handleClassEnded],
+  [EVENT_TOPICS.NOTE_UPDATED]: [handleNoteUpdated],
+  [EVENT_TOPICS.NOTE_DELETED]: [handleNoteDeleted],
+  [EVENT_TOPICS.SESSION_ENDED]: [handleSessionEnded],
+  [EVENT_TOPICS.USER_REGISTERED]: [handleUserRegistered],
+  [EVENT_TOPICS.CLASS_ENDED]: [handleClassEnded],
 };
 
 // ── Main processor: picks up pending events and dispatches ──────────
@@ -52,7 +54,7 @@ export const processEventQueue = internalAction({
       }
 
       try {
-        const payload = JSON.parse(event.payload);
+        const payload = validateEventPayload(event.topic, JSON.parse(event.payload));
         // Fan-out: run ALL handlers for this topic
         for (const handler of handlers) {
           await handler(ctx, payload);
@@ -62,6 +64,12 @@ export const processEventQueue = internalAction({
         });
         processed++;
       } catch (err) {
+        await ctx.runMutation(internal.eventBus.logSecurityEvent, {
+          level: "error",
+          component: `eventHandler:${event.topic}`,
+          message: "Event processing failed.",
+          metadata: JSON.stringify({ eventId: String(event._id), reason: String(err) }),
+        });
         await ctx.runMutation(internal.eventBus.markFailed, {
           eventId: event._id,
           error: String(err),

@@ -41,3 +41,5 @@ International-A-Level-Biology-Spec.pdf
 public/pastpapers/olevel/
 .vercel
 .env*.local
+playwright-report/
+test-results/

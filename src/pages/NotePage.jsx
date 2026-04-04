@@ -4,6 +4,9 @@ import { getSubjectLabel } from '../data/syllabusIndex.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote, hasSeedNote } from '../data/seedNotes/index.js';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
+import Highlighter from '../components/student/Highlighter.jsx';
+import StickyNotes from '../components/student/StickyNotes.jsx';
+import ExportPDF from '../components/student/ExportPDF.jsx';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
 import { useSyllabus } from '../hooks/useSyllabus.js';
@@ -423,7 +426,18 @@ export default function NotePage() {
                 {/* Notes scrollable area */}
                 {hasNote && (
                     <div className="note-scroll-area" ref={scrollRef}>
-                        <NoteBlockRenderer blocks={seedNote.blocks} />
+                        <div className="note-study-tools">
+                            <div className="student-tools-bar">
+                                <Highlighter chapterId={noteId} contentSelector=".note-study-content" />
+                                <div className="divider" aria-hidden="true" />
+                                <ExportPDF chapterId={noteId} chapterTitle={context.subtopicTitle || context.topicTitle || 'Chapter'} />
+                            </div>
+                            <StickyNotes chapterId={noteId} />
+                        </div>
+
+                        <div className="note-study-content chapter-body">
+                            <NoteBlockRenderer blocks={seedNote.blocks} />
+                        </div>
 
                         {nextSubtopicParams && (
                             <div className="note-footer-nav">

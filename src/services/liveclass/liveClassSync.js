@@ -381,15 +381,20 @@ export function createLiveClassSync({
   }
 
   /** Teacher updates timer state. */
-  async function updateTimer(classId, mode, state, elapsedMs, targetMs = 0) {
+  async function updateTimer(classId, update) {
     if (isLocalLiveClassId(classId)) return;
-    await callMutation(api.timers.updateClassTimer, {
-      classId,
-      mode,
-      state,
-      elapsedMs: Number(elapsedMs),
-      targetMs: Number(targetMs),
-    });
+    try {
+      await callMutation(api.timers.updateClassTimer, {
+        classId,
+        mode: update.mode,
+        state: update.state,
+        elapsedMs: Number(update.elapsedMs),
+        targetMs: Number(update.targetMs ?? 0),
+        expectedVersion: Number.isFinite(update.expectedVersion) ? Number(update.expectedVersion) : undefined,
+      });
+    } catch (error) {
+      log.warn('updateTimer failed', { classId, error: error.message });
+    }
   }
 
   /** Teacher changes the paper background. */

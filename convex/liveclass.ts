@@ -2,11 +2,11 @@ import { mutation, query, type MutationCtx, type QueryCtx } from "./_generated/s
 import { v } from "convex/values";
 import {
   getHostedSessionByStringId,
-  requireAuthenticatedUserId,
+  requireApprovedAuthenticatedUserId,
   requireHostedSessionHostOrTeacher,
   getSessionParticipant,
   isTeacherUserId,
-  requireMatchingUserId,
+  requireApprovedMatchingUserId,
   requireTeacher,
 } from "./authHelpers";
 
@@ -118,7 +118,7 @@ export const joinLiveClass = mutation({
     userId: v.optional(v.string()),
   },
   handler: async (ctx, { classId, userId }) => {
-    const currentUserId = await requireMatchingUserId(ctx, userId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, userId);
     const classIdStr = String(classId);
     const session = await ctx.db.get(classId);
     if (!session || session.status !== "active") {
@@ -176,7 +176,7 @@ export const setBackground = mutation({
 export const getActiveLiveClasses = query({
   args: {},
   handler: async (ctx) => {
-    await requireAuthenticatedUserId(ctx);
+    await requireApprovedAuthenticatedUserId(ctx);
     const sessions = await ctx.db
       .query("liveClassSessions")
       .withIndex("by_status", (q) => q.eq("status", "active"))
@@ -191,7 +191,7 @@ export const getLiveClassById = query({
     const classIdStr = String(classId);
     const session = await getHostedSessionByStringId(ctx, classIdStr);
     if (!session || !isLiveClassSessionRecord(session)) return null;
-    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
     if (!(await canReadLiveClassDetails(ctx, classIdStr, session.hostUserId, currentUserId))) {
       return toLiveClassPreview(session);
     }
@@ -202,7 +202,7 @@ export const getLiveClassById = query({
 export const getLiveClassByCode = query({
   args: { code: v.string() },
   handler: async (ctx, { code }) => {
-    await requireAuthenticatedUserId(ctx);
+    await requireApprovedAuthenticatedUserId(ctx);
     const upper = code.toUpperCase();
     const session = await ctx.db
       .query("liveClassSessions")

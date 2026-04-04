@@ -3,7 +3,7 @@ import { v } from "convex/values";
 import {
   requireHostedSessionAccess,
   requireHostedSessionHostOrTeacher,
-  requireMatchingUserId,
+  requireApprovedMatchingUserId,
 } from "./authHelpers";
 
 export const raiseHand = mutation({
@@ -12,7 +12,7 @@ export const raiseHand = mutation({
     studentUserId: v.optional(v.string()),
   },
   handler: async (ctx, { classId, studentUserId }) => {
-    const currentUserId = await requireMatchingUserId(ctx, studentUserId);
+    const currentUserId = await requireApprovedMatchingUserId(ctx, studentUserId);
     await requireHostedSessionAccess(ctx, String(classId));
     // Check if already raised
     const existing = await ctx.db

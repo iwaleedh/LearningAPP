@@ -1850,16 +1850,38 @@ export default function LiveClassPage() {
   }
 
   // ── Timer ────────────────────────────────────────────────────────────────────
-  function handleTimerUpdate(newState, elapsedMs, targetMs, mode) {
+  function handleTimerUpdate(update) {
+    const now = Date.now();
+    const normalizedElapsedMs = Math.max(0, Number(update?.elapsedMs || 0));
+    const normalizedTargetMs = Math.max(0, Number(update?.targetMs || 0));
+    const nextMode = update?.mode || 'stopwatch';
+    const nextState = update?.state || 'stopped';
+    const expectedVersion = Number(update?.expectedVersion);
+    const safeExpectedVersion = Number.isFinite(expectedVersion)
+      ? expectedVersion
+      : Number(timerState?.version ?? 0);
+
     // Update UI immediately (offline-safe — no Convex round trip needed)
-    setTimerState({
-      state: newState,
-      mode,
-      elapsedMs: Number(elapsedMs),
-      targetMs: Number(targetMs),
-    });
+    setTimerState((prev) => ({
+      ...(prev || {}),
+      state: nextState,
+      mode: nextMode,
+      elapsedMs: normalizedElapsedMs,
+      accumulatedElapsedMs: normalizedElapsedMs,
+      targetMs: normalizedTargetMs,
+      anchorStartedAt: nextState === 'running' ? now : null,
+      startedAt: now,
+      updatedAt: now,
+      version: Math.max(0, Number(prev?.version ?? safeExpectedVersion)) + 1,
+    }));
     // Attempt to broadcast to students via Convex (no-op if offline)
-    syncRef.current?.updateTimer(classId, mode, newState, elapsedMs, targetMs);
+    syncRef.current?.updateTimer(classId, {
+      state: nextState,
+      mode: nextMode,
+      elapsedMs: normalizedElapsedMs,
+      targetMs: normalizedTargetMs,
+      expectedVersion: safeExpectedVersion,
+    });
   }
 
   // ── Poll handlers ─────────────────────────────────────────────────────────

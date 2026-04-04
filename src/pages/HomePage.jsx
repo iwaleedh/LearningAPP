@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
+import { useQuery } from 'convex/react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, Brain,
@@ -11,8 +12,7 @@ import {
     api,
 } from '../convex-client.js';
 import { useAuth } from '../hooks/useAuth.js';
-import { getTotalReadCount, getReadNoteIds, computeStudyStreak } from '../hooks/useNoteReadStatus.js';
-import { getExercisesDone, getPapersViewed } from '../services/activityStore.js';
+import { useReadProgressSummary } from '../hooks/useNoteReadStatus.js';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import './HomePage.css';
 
@@ -47,15 +47,18 @@ const oLevelSubjects = [
 export default function HomePage() {
     const navigate = useNavigate();
     const { debugAuthEnabled, username } = useAuth();
+    const badgeMetrics = useQuery(api.badgeMetrics.getMyBadgeMetrics);
+    const activityMetrics = useQuery(api.activityMetrics.getMyActivityMetrics);
+    const readProgress = useReadProgressSummary();
     const [liveInvites, setLiveInvites] = useState([]);
-    const [stats] = useState(() => ({
-        chaptersRead: getTotalReadCount(),
-        exercisesDone: getExercisesDone(),
-        papersViewed: getPapersViewed(),
-        streak: computeStudyStreak(),
-    }));
-    const [subjectProgress] = useState(() => {
-        const readIds = getReadNoteIds();
+    const stats = useMemo(() => ({
+        chaptersRead: readProgress.totalRead,
+        exercisesDone: badgeMetrics?.exercisesCompleted ?? activityMetrics?.exercisesDone ?? 0,
+        papersViewed: activityMetrics?.papersViewed ?? 0,
+        streak: readProgress.currentStreak,
+    }), [activityMetrics, badgeMetrics, readProgress]);
+    const subjectProgress = useMemo(() => {
+        const readIds = readProgress.readNoteIds;
         const counts = {};
         readIds.forEach(noteId => {
             const subject = noteId.split(':')[1];
@@ -67,7 +70,7 @@ export default function HomePage() {
             if (total) progress[subject] = Math.min(100, Math.round((count / total) * 100));
         });
         return progress;
-    });
+    }, [readProgress]);
 
     useEffect(() => {
         if (debugAuthEnabled) {
