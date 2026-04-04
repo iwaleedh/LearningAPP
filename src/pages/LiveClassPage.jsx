@@ -1448,7 +1448,8 @@ export default function LiveClassPage() {
           const x = Math.min(p.x, startPt.x);
           const y = Math.min(p.y, startPt.y);
           shapeObj.set({ points: diamondPoints(x, y, w, h) });
-          shapeObj._setPositionDimensions({});
+          shapeObj.setDimensions();
+          shapeObj.setCoords();
         } else if (tool === 'star') {
           const w = Math.abs(p.x - startPt.x);
           const h = Math.abs(p.y - startPt.y);
@@ -1456,14 +1457,16 @@ export default function LiveClassPage() {
           const cy = (p.y + startPt.y) / 2;
           const outerR = Math.min(w, h) / 2;
           shapeObj.set({ points: starPoints(cx, cy, outerR, outerR * 0.4) });
-          shapeObj._setPositionDimensions({});
+          shapeObj.setDimensions();
+          shapeObj.setCoords();
         } else if (tool === 'hexagon') {
           const w = Math.abs(p.x - startPt.x);
           const h = Math.abs(p.y - startPt.y);
           const cx = (p.x + startPt.x) / 2;
           const cy = (p.y + startPt.y) / 2;
           shapeObj.set({ points: hexagonPoints(cx, cy, Math.min(w, h) / 2) });
-          shapeObj._setPositionDimensions({});
+          shapeObj.setDimensions();
+          shapeObj.setCoords();
         }
         fc.requestRenderAll();
       };
