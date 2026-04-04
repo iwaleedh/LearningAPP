@@ -4190,6 +4190,13 @@
     overflow: hidden;
     min-width: 0;
 }
+/* Student mode: teacher board fills full canvas; own canvas hidden but stays in DOM */
+.lc-page--student .lc-main-canvas-wrap {
+    display: none;
+}
+.lc-page--student .lc-student-panel {
+    flex: 1;
+}
 .lc-panel-label {
     background: var(--color-bg-secondary);
     color: var(--color-text-secondary);
@@ -5685,9 +5692,9 @@
     .lc-body {
         flex-direction: column;
     }
-    /* Student view: teacher board gets 40% height, own canvas fills rest */
-    .lc-student-panel {
-        flex: 0 0 40%;
+    /* Student view: teacher board fills full height */
+    .lc-page--student .lc-student-panel {
+        flex: 1;
         min-height: 0;
     }
     .lc-my-panel {
@@ -5762,8 +5769,8 @@
     .lc-tool-btn { width: 34px; height: 34px; }
     .lc-color-swatch { width: 18px; height: 18px; }
     .lc-width-btn { width: 28px; height: 28px; }
-    /* Canvas panels: teacher board smaller so own canvas gets more room */
-    .lc-student-panel { flex: 0 0 33%; }
+    /* Canvas panels: student mode fills full width */
+    .lc-page--student .lc-student-panel { flex: 1; }
     .lc-panel-label { font-size: 10px; padding: 1px 0; }
     /* Side panels slightly shorter */
     .lc-side-panels { max-height: 160px; }
@@ -5781,7 +5788,7 @@
     .lc-timer-display { font-size: 13px; }
     .lc-timer-mode-badge { display: none; }
     .lc-hand-panel, .lc-student-grid { min-width: 200px; }
-    .lc-student-panel { flex: 0 0 30%; }
+    .lc-page--student .lc-student-panel { flex: 1; }
     .lc-tool-btn { width: 28px; height: 28px; }
     .lc-toolbar-divider { height: 20px; margin: 0 1px; }
     .lc-width-btn { width: 24px; height: 24px; }
