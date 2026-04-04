@@ -1,0 +1,36 @@
+/* StudentMyNotesPage — full-page student notes tab */
+
+.smn-root {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  background: var(--color-bg-secondary);
+}
+
+/* Make StudentNotePanel fill the full page when fullPage prop is set */
+.smn-root .snp-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+}
+
+.smn-root .snp-textarea {
+  flex: 1;
+  resize: none;
+  min-height: 0;
+}
+
+.smn-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  padding: var(--space-6);
+  text-align: center;
+  color: var(--color-text-secondary);
+}

@@ -32,6 +32,7 @@ const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
 const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const StudentNotesViewPage = lazy(() => import('./pages/StudentNotesViewPage'));
+const StudentMyNotesPage = lazy(() => import('./pages/StudentMyNotesPage'));
 const PendingApprovalPage = lazy(() => import('./pages/PendingApprovalPage'));
 const AdminPage = lazy(() => import('./pages/AdminPage'));
 const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
@@ -190,6 +191,10 @@ function AppContent() {
                     </RequireRole>
                   </RequireApproved>
                 )}
+              />
+              <Route
+                path="/my-notes/:sessionId/:tempId"
+                element={<StudentMyNotesPage />}
               />
               <Route path="*" element={<NotFoundPage />} />
                 </Route>

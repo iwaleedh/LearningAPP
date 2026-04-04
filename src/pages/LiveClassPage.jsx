@@ -22,7 +22,6 @@ import RulerWidget from '../components/liveclass/RulerWidget.jsx';
 import TeacherStudentGrid from '../components/liveclass/TeacherStudentGrid.jsx';
 import HandRaisePanel from '../components/liveclass/HandRaisePanel.jsx';
 import StudentAdmissionPanel from '../components/liveclass/StudentAdmissionPanel.jsx';
-import StudentNotePanel from '../components/liveclass/StudentNotePanel.jsx';
 import ClassTimer from '../components/liveclass/ClassTimer.jsx';
 import LivePollPanel from '../components/liveclass/LivePollPanel.jsx';
 import StudentPollOverlay from '../components/liveclass/StudentPollOverlay.jsx';
@@ -254,9 +253,6 @@ export default function LiveClassPage() {
   // Admission panel (teacher side)
   const [joinRequests, setJoinRequests] = useState([]);
   const [autoAccept, setAutoAccept] = useState(false);
-
-  // Student notes panel
-  const [showMyNotes, setShowMyNotes] = useState(false);
 
   // Poll state
   const [polls, setPolls] = useState([]);
@@ -2173,12 +2169,12 @@ export default function LiveClassPage() {
               <span className="lc-join-code-badge-text">{sessionData.joinCode}</span>
             </button>
           )}
-          {/* My Notes button — student only */}
+          {/* My Notes button — student only: opens in a new tab */}
           {!isTeacher && (
             <button
-              className={`btn btn-sm lc-share-btn ${showMyNotes ? 'lc-share-btn--active' : ''}`}
-              onClick={() => setShowMyNotes(v => !v)}
-              title="My notes"
+              className="btn btn-sm lc-share-btn"
+              onClick={() => window.open(`/my-notes/${classId}/${joinTempId}`, '_blank', 'noopener,noreferrer')}
+              title="Open my notes in a new tab"
             >
               <NoteIcon size={14} />
               <span className="lc-share-btn-label">My Notes</span>
@@ -2308,16 +2304,17 @@ export default function LiveClassPage() {
         )}
 
         {/* Teacher / student own canvas */}
-        <div className={`lc-main-canvas-wrap ${!isTeacher ? 'lc-my-panel' : ''}${isMyPresentation ? ' lc-canvas-presenting' : ''}`}>
-          {!isTeacher && (
+        <div className={`lc-main-canvas-wrap${isMyPresentation ? ' lc-canvas-presenting' : ''}`}>
+          {!isTeacher && isMyPresentation && (
             <div className="lc-panel-label">
-              My Notes
-              {isMyPresentation && <span className="lc-present-live-badge">● Presenting</span>}
-              {!isMyPresentation && !isPresenting && (
-                <button className="lc-present-request-btn btn btn-ghost btn-sm" onClick={handleRequestPresent}>
-                  Request to Present
-                </button>
-              )}
+              <span className="lc-present-live-badge">● Presenting</span>
+            </div>
+          )}
+          {!isTeacher && !isMyPresentation && !isPresenting && (
+            <div className="lc-panel-label">
+              <button className="lc-present-request-btn btn btn-ghost btn-sm" onClick={handleRequestPresent}>
+                Request to Present
+              </button>
             </div>
           )}
           <div
@@ -2465,14 +2462,7 @@ export default function LiveClassPage() {
         document.body
       )}
 
-      {/* ── Student notes panel ───────────────────────────────────── */}
-      {!isTeacher && showMyNotes && (
-        <StudentNotePanel
-          sessionId={classId}
-          tempId={joinTempId}
-          onClose={() => setShowMyNotes(false)}
-        />
-      )}
+
     </div>
   );
 }
