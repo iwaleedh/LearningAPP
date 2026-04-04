@@ -213,16 +213,32 @@ if (hasWindow()) {
   });
 }
 
-if (hasWindow()) {
-  window.addEventListener('storage', (event) => {
-    if (event.key !== STORAGE_KEY) return;
-    try {
-      memoryStore = event.newValue ? normalizeStore(JSON.parse(event.newValue)) : createEmptyStore();
-    } catch {
-      memoryStore = createEmptyStore();
-    }
-    emitAllSubscriptions();
-  });
+// M3: Storage listener is lazy — only active while subscriptions exist.
+// This avoids running JSON parsing and emitAllSubscriptions when no live
+// class components are mounted.
+let storageListenerActive = false;
+
+function handleStorageEvent(event) {
+  if (event.key !== STORAGE_KEY) return;
+  try {
+    memoryStore = event.newValue ? normalizeStore(JSON.parse(event.newValue)) : createEmptyStore();
+  } catch {
+    memoryStore = createEmptyStore();
+  }
+  emitAllSubscriptions();
+}
+
+function activateStorageListener() {
+  if (storageListenerActive || !hasWindow()) return;
+  window.addEventListener('storage', handleStorageEvent);
+  storageListenerActive = true;
+}
+
+function deactivateStorageListenerIfIdle() {
+  if (!storageListenerActive) return;
+  if (joinRequestListeners.size > 0 || joinStatusListeners.size > 0 || studentNoteListeners.size > 0) return;
+  window.removeEventListener('storage', handleStorageEvent);
+  storageListenerActive = false;
 }
 
 export function isLocalLiveClassId(classId) {
@@ -425,6 +441,7 @@ export function subscribeLocalJoinRequests(sessionId, callback) {
   const listeners = joinRequestListeners.get(sessionId) ?? new Set();
   listeners.add(callback);
   joinRequestListeners.set(sessionId, listeners);
+  activateStorageListener();
   callback(listLocalJoinRequests(sessionId));
 
   return () => {
@@ -433,6 +450,7 @@ export function subscribeLocalJoinRequests(sessionId, callback) {
     if (current && current.size === 0) {
       joinRequestListeners.delete(sessionId);
     }
+    deactivateStorageListenerIfIdle();
   };
 }
 
@@ -440,6 +458,7 @@ export function subscribeLocalJoinStatus(requestId, callback) {
   const listeners = joinStatusListeners.get(requestId) ?? new Set();
   listeners.add(callback);
   joinStatusListeners.set(requestId, listeners);
+  activateStorageListener();
   emitJoinStatus(requestId);
 
   return () => {
@@ -448,6 +467,7 @@ export function subscribeLocalJoinStatus(requestId, callback) {
     if (current && current.size === 0) {
       joinStatusListeners.delete(requestId);
     }
+    deactivateStorageListenerIfIdle();
   };
 }
 
@@ -456,6 +476,7 @@ export function subscribeLocalStudentNote(sessionId, tempId, callback) {
   const listeners = studentNoteListeners.get(key) ?? new Set();
   listeners.add(callback);
   studentNoteListeners.set(key, listeners);
+  activateStorageListener();
   callback(getLocalStudentNote(sessionId, tempId));
 
   return () => {
@@ -464,5 +485,6 @@ export function subscribeLocalStudentNote(sessionId, tempId, callback) {
     if (current && current.size === 0) {
       studentNoteListeners.delete(key);
     }
+    deactivateStorageListenerIfIdle();
   };
 }

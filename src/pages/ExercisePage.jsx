@@ -186,6 +186,7 @@ export default function ExercisePage() {
       </div>
 
       {/* Controls Card */}
+      <ErrorBoundary name="ExerciseControls" inline resetKeys={[activeSubject]}>
       <div className="exercise-controls-card">
         <h3 className="section-label">1. Choose your subject</h3>
         <div className="exercise-subject-tabs">
@@ -225,6 +226,7 @@ export default function ExercisePage() {
           </select>
         </div>
       </div>
+      </ErrorBoundary>
 
       {/* Types Grid */}
       <div className="exercise-types-section animate-fade-in exercise-types-section--delayed">
@@ -241,6 +243,7 @@ export default function ExercisePage() {
           )}
         </div>
 
+        <ErrorBoundary name="ExerciseTypesGrid" inline>
         <div className="exercise-types-grid">
           {ET.map((type, i) => {
             const Icon = type.icon;
@@ -266,6 +269,7 @@ export default function ExercisePage() {
             );
           })}
         </div>
+        </ErrorBoundary>
       </div>
     </div>
   );

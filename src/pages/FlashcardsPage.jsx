@@ -4,6 +4,7 @@ import { useMutation, useQuery } from 'convex/react';
 import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight, Layers, CheckCircle, BookOpen } from 'lucide-react';
 import { listFlashcards } from '../services/notes/noteStore.js';
 import { api } from '../convex-client.js';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
 const STATUS_KEY = 'lt_flashcard_status';
@@ -262,6 +263,7 @@ export default function FlashcardsPage() {
             </div>
 
             <div className="flashcard-container">
+                <ErrorBoundary name="FlashcardDisplay" inline resetKeys={[card?.id]}>
                 <button
                     className="flashcard-wrapper"
                     onClick={() => setIsFlipped(!isFlipped)}
@@ -337,6 +339,7 @@ export default function FlashcardsPage() {
                 >
                     <RotateCcw size={16} aria-hidden="true" /> Reset Progress
                 </button>
+                </ErrorBoundary>
             </div>
         </div>
     );

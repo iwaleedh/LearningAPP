@@ -6,6 +6,7 @@ import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, s
 import { incrementPapersViewed } from '../services/activityStore.js';
 import { recordPastPaperActivity } from '../services/studyAttemptService.js';
 import { api, callQuery, getClient } from '../convex-client.js';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
 const PerformanceChart = lazy(() => import('../components/pastpapers/PerformanceChart'));
@@ -680,11 +681,13 @@ export default function PastPapersPage() {
             {/* Performance Chart */}
             {showPerformance && (
                 <Suspense fallback={<div className="card animate-fade-in">Loading analytics...</div>}>
+                    <ErrorBoundary name="PerformanceChart" inline>
                     {attemptsState === 'loading' ? (
                         <div className="card animate-fade-in">Loading past paper analytics...</div>
                     ) : (
                         <PerformanceChart attempts={attempts} />
                     )}
+                    </ErrorBoundary>
                 </Suspense>
             )}
 
@@ -708,6 +711,7 @@ export default function PastPapersPage() {
                     </div>
                 ) : groupedPapersArray.length > 0 ? (
                     groupedPapersArray.map((session) => (
+                        <ErrorBoundary key={`eb-${session.year}-${session.month}`} name={`ExamSession:${session.year}-${session.month}`} inline>
                         <ExamSessionCard
                             key={`${session.year}-${session.month}`}
                             year={session.year}
@@ -717,6 +721,7 @@ export default function PastPapersPage() {
                             subjectId={activeSubject}
                             onRecordAttempt={setAttemptPaper}
                         />
+                        </ErrorBoundary>
                     ))
                 ) : (
                     <div className="empty-state">

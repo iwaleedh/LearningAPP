@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { BookOpen, ListTree, ChevronDown, ChevronUp } from 'lucide-react';
 import { getSubjectLabel, normalizeSubjectKey } from '../data/syllabusIndex';
 import { useSyllabus } from '../hooks/useSyllabus.js';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
 // ── Subtopic dropdown (accordion) ─────────────────────────────────────────────
@@ -130,6 +131,7 @@ export default function ChapterPage() {
                 {syllabus.units.map((unit, unitIndex) => {
                     const unitSubtopics = unit.topics.reduce((s, t) => s + t.subtopics.length, 0);
                     return (
+                        <ErrorBoundary key={`eb-unit-${unit.id}`} name={`ChapterUnit:${unit.id}`} inline resetKeys={[unit.id]}>
                         <div key={unit.id} className="chapter-unit-section animate-slide-in-up" style={{ animationDelay: `${0.1 + unitIndex * 0.05}s` }}>
                             <div className="chapter-unit-meta">
                                 <h2 className="chapter-unit-heading">
@@ -155,6 +157,7 @@ export default function ChapterPage() {
                                 ))}
                             </div>
                         </div>
+                        </ErrorBoundary>
                     );
                 })}
             </div>

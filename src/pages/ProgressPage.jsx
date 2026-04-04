@@ -103,6 +103,7 @@ export default function ProgressPage() {
 
             <div className="progress-overview">
                 {/* Ring Chart */}
+                <ErrorBoundary name="ProgressRing" inline>
                 <div className="card progress-ring-card">
                     <svg className="progress-ring" viewBox="0 0 140 140">
                         <circle
@@ -140,8 +141,10 @@ export default function ProgressPage() {
                         <span><Target size={14} /> {startedSubjects.length} subjects started</span>
                     </div>
                 </div>
+                </ErrorBoundary>
 
                 {/* Chapter Progress */}
+                <ErrorBoundary name="ChapterProgress" inline>
                 <div className="card">
                     <h3 className="progress-chapter-title">Chapter Progress</h3>
                     <div className="chapter-progress-list">
@@ -167,6 +170,7 @@ export default function ProgressPage() {
                         ))}
                     </div>
                 </div>
+                </ErrorBoundary>
             </div>
 
             {/* Study Streak Heatmap */}

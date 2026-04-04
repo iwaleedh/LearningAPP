@@ -426,6 +426,7 @@ export default function NotePage() {
                 {/* Notes scrollable area */}
                 {hasNote && (
                     <div className="note-scroll-area" ref={scrollRef}>
+                        <ErrorBoundary name="StudyTools" inline>
                         <div className="note-study-tools">
                             <div className="student-tools-bar">
                                 <Highlighter chapterId={noteId} contentSelector=".note-study-content" />
@@ -434,10 +435,13 @@ export default function NotePage() {
                             </div>
                             <StickyNotes chapterId={noteId} />
                         </div>
+                        </ErrorBoundary>
 
+                        <ErrorBoundary name="NoteContent" inline resetKeys={[noteId]}>
                         <div className="note-study-content chapter-body">
                             <NoteBlockRenderer blocks={seedNote.blocks} />
                         </div>
+                        </ErrorBoundary>
 
                         {nextSubtopicParams && (
                             <div className="note-footer-nav">
