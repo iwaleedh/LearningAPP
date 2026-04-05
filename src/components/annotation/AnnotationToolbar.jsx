@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { Pen, Highlighter, Type, Square, Circle, Minus, Eraser, MousePointer2,
     Undo2, Redo2, Trash2, Save, Download, X, ChevronLeft, ChevronRight, Share2, Radio } from 'lucide-react';
+import FontPicker from '../liveclass/FontPicker.jsx';
+import { DEFAULT_TEXT_FONT, getLiveClassFontLabel } from '../liveclass/fontDefaults.js';
 
 const PRESET_COLORS = [
     { value: '#ef4444', label: 'Red', swatchClass: 'annotate-color-swatch--red' },
@@ -39,10 +42,12 @@ export default function AnnotationToolbar({
     onPrevPage, onNextPage,
     activeSession, participantCount, pendingInviteCount, onShareOpen,
 }) {
+    const [showFontPicker, setShowFontPicker] = useState(false);
     const saveLabel = saveStatus === 'saving' ? 'Saving…'
         : saveStatus === 'saved' ? 'Saved ✓'
         : dirty ? 'Save*'
         : 'Save';
+    const selectedFontLabel = getLiveClassFontLabel(toolOptions.fontFamily || DEFAULT_TEXT_FONT.fontFamily);
 
     return (
         <div className="annotate-toolbar">
@@ -116,6 +121,34 @@ export default function AnnotationToolbar({
                             {label}
                         </button>
                     ))}
+                </div>
+
+                <div className="annotate-toolbar-divider" />
+
+                <div className="lc-toolbar-popover-wrap">
+                    <button
+                        className={`btn btn-sm annotate-font-trigger ${showFontPicker ? 'annotate-font-trigger--active' : ''}`}
+                        onClick={() => setShowFontPicker((value) => !value)}
+                        title={`Font settings: ${selectedFontLabel}`}
+                        style={{ fontFamily: toolOptions.fontFamily || DEFAULT_TEXT_FONT.fontFamily }}
+                    >
+                        <Type size={14} />
+                        <span className="annotate-font-trigger-preview">Aa</span>
+                        <span className="annotate-font-trigger-label">{selectedFontLabel}</span>
+                    </button>
+                    {showFontPicker && (
+                        <FontPicker
+                            currentFont={toolOptions.fontFamily}
+                            currentSize={toolOptions.fontSize}
+                            currentWeight={toolOptions.fontWeight}
+                            currentColor={toolOptions.color}
+                            currentAlign={toolOptions.textAlign}
+                            isUnderline={toolOptions.textDecoration === 'underline'}
+                            isItalic={toolOptions.fontStyle === 'italic'}
+                            onChange={(settings) => onOptionsChange(settings)}
+                            onClose={() => setShowFontPicker(false)}
+                        />
+                    )}
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Check, X, Clock } from 'lucide-react';
+import MobileSheetPortal from './MobileSheetPortal.jsx';
 
 /**
  * StudentPollOverlay — Overlay shown to students when a poll is active.
@@ -42,8 +43,12 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
   if (isClosed && result) {
     const wasCorrect = result.correctIndex >= 0 && result.selectedIndex === result.correctIndex;
     return (
-      <div className="lc-spoll-overlay animate-fade-in" role="dialog" aria-modal="true" aria-label="Poll results">
-        <div className="lc-spoll-card lc-spoll-card--result">
+      <MobileSheetPortal
+        backdropClassName="lc-spoll-overlay animate-fade-in"
+        sheetClassName="lc-spoll-card lc-spoll-card--result"
+        ariaLabel="Poll results"
+        onClose={onDismiss}
+      >
           <div className="lc-spoll-result-header">
             {result.correctIndex >= 0 ? (
               wasCorrect
@@ -71,29 +76,40 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
               ))}
             </div>
           )}
-          <button className="btn btn-primary btn-sm lc-spoll-dismiss" onClick={onDismiss}>OK</button>
-        </div>
-      </div>
+          <button
+            className="btn btn-primary btn-sm lc-spoll-dismiss"
+            type="button"
+            onClick={onDismiss}
+            aria-label="Dismiss poll results"
+          >OK</button>
+      </MobileSheetPortal>
     );
   }
 
   // Waiting view (already answered)
   if (hasAnswered) {
     return (
-      <div className="lc-spoll-overlay animate-fade-in" role="dialog" aria-modal="true" aria-label="Waiting for poll results">
-        <div className="lc-spoll-card lc-spoll-card--waiting">
+      <MobileSheetPortal
+        backdropClassName="lc-spoll-overlay animate-fade-in"
+        sheetClassName="lc-spoll-card lc-spoll-card--waiting"
+        ariaLabel="Waiting for poll results"
+        showHandle={false}
+      >
           <Clock size={24} />
           <p className="lc-spoll-question">{poll.question}</p>
           <p className="lc-spoll-waiting-text">Answer submitted — waiting for results…</p>
-        </div>
-      </div>
+      </MobileSheetPortal>
     );
   }
 
   // Answer view
   return (
-    <div className="lc-spoll-overlay animate-fade-in" role="dialog" aria-modal="true" aria-label="Active poll">
-      <div className="lc-spoll-card">
+    <MobileSheetPortal
+      backdropClassName="lc-spoll-overlay animate-fade-in"
+      sheetClassName="lc-spoll-card"
+      ariaLabel="Active poll"
+      showHandle={false}
+    >
         <p className="lc-spoll-question">{poll.question}</p>
 
         {(poll.type === 'mcq' || poll.type === 'truefalse') && poll.options?.length > 0 && (
@@ -101,8 +117,11 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
             {poll.options.map((opt, i) => (
               <button
                 key={i}
+                type="button"
                 className={`lc-spoll-option ${selected === i ? 'lc-spoll-option--selected' : ''}`}
                 onClick={() => setSelected(i)}
+                aria-pressed={selected === i}
+                aria-label={`Select option ${String.fromCharCode(65 + i)}: ${opt}`}
               >
                 <span className="lc-spoll-option-letter">{String.fromCharCode(65 + i)}</span>
                 <span>{opt}</span>
@@ -118,17 +137,20 @@ export default function StudentPollOverlay({ poll, hasAnswered, result, onSubmit
             onChange={e => setFreeText(e.target.value)}
             placeholder="Type your answer…"
             rows={3}
+            aria-label="Free text poll response"
+            enterKeyHint="done"
           />
         )}
 
         <button
           className="btn btn-primary lc-spoll-submit"
+          type="button"
           onClick={handleSubmit}
           disabled={poll.type === 'freetext' ? !freeText.trim() : selected < 0}
+          aria-label="Submit poll answer"
         >
           Submit Answer
         </button>
-      </div>
-    </div>
+    </MobileSheetPortal>
   );
 }

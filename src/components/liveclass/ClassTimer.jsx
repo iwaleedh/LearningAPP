@@ -38,6 +38,16 @@ function computeElapsedMs(timerState, now = Date.now()) {
   return baseElapsedMs + Math.max(0, now - anchorStartedAt);
 }
 
+function sanitizeTimerSegment(value, max) {
+  const digits = value.replace(/\D/g, '').slice(0, 2);
+  if (!digits) return '';
+
+  const parsed = Number.parseInt(digits, 10);
+  if (!Number.isFinite(parsed)) return '';
+
+  return String(Math.min(parsed, max));
+}
+
 /**
  * ClassTimer — shown to all participants.
  * Teachers can set a countdown target (minutes) or use as a stopwatch.
@@ -172,13 +182,21 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
         <>
           <button
             className="btn btn-ghost btn-icon btn-sm"
+            type="button"
             onClick={handlePlayPause}
             title={state === 'running' ? 'Pause' : 'Start'}
+            aria-label={state === 'running' ? 'Pause timer' : 'Start timer'}
             disabled={mode === 'countdown' && target === 0}
           >
             {state === 'running' ? <Pause size={14} /> : <Play size={14} />}
           </button>
-          <button className="btn btn-ghost btn-icon btn-sm" onClick={handleReset} title="Reset">
+          <button
+            className="btn btn-ghost btn-icon btn-sm"
+            type="button"
+            onClick={handleReset}
+            title="Reset"
+            aria-label="Reset timer"
+          >
             <RotateCcw size={14} />
           </button>
 
@@ -191,9 +209,14 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
                 min="0"
                 max="99"
                 value={inputMin}
-                onChange={e => setInputMin(e.target.value)}
+                onChange={e => setInputMin(sanitizeTimerSegment(e.target.value, 99))}
                 placeholder="mm"
                 title="Minutes"
+                aria-label="Countdown minutes"
+                autoComplete="off"
+                enterKeyHint="next"
+                inputMode="numeric"
+                pattern="[0-9]*"
               />
               <span className="lc-timer-sep">:</span>
               <input
@@ -202,14 +225,20 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
                 min="0"
                 max="59"
                 value={inputSec}
-                onChange={e => setInputSec(e.target.value)}
+                onChange={e => setInputSec(sanitizeTimerSegment(e.target.value, 59))}
                 placeholder="ss"
                 title="Seconds"
+                aria-label="Countdown seconds"
+                autoComplete="off"
+                enterKeyHint="done"
+                inputMode="numeric"
+                pattern="[0-9]*"
               />
               <button
                 className="btn btn-ghost btn-icon btn-sm"
                 type="submit"
                 title="Set countdown"
+                aria-label="Set countdown"
               >
                 <Check size={13} />
               </button>
@@ -219,6 +248,7 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
                   type="button"
                   onClick={handleSwitchStopwatch}
                   title="Switch to stopwatch"
+                  aria-label="Switch to stopwatch"
                 >
                   Stopwatch
                 </button>

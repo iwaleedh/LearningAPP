@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { getLiveClassByCode, requestJoin } from '../../convex-client.js';
 import { useAuth } from '../../hooks/useAuth.js';
 import { isLocalLiveClassId } from '../../services/liveclass/localLiveClassStore.js';
+import MobileSheetPortal from './MobileSheetPortal.jsx';
 
 /**
  * JoinClassModal — students enter their name + 6-char class code to request
@@ -12,6 +13,7 @@ import { isLocalLiveClassId } from '../../services/liveclass/localLiveClassStore
 export default function JoinClassModal({ onClose }) {
   const navigate = useNavigate();
   const { canSignIn, isLoaded, isSignedIn } = useAuth();
+  const dialogRef = useRef(null);
   const [name, setName] = useState('');
   const [code, setCode] = useState('');
   const [loading, setLoading] = useState(false);
@@ -21,7 +23,29 @@ export default function JoinClassModal({ onClose }) {
   // L-4 + M-2: Escape key handler
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') {
+        onClose();
+        return;
+      }
+
+      if (e.key !== 'Tab' || !dialogRef.current) return;
+
+      const focusableElements = dialogRef.current.querySelectorAll(
+        'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [href], [tabindex]:not([tabindex="-1"])'
+      );
+
+      if (!focusableElements.length) return;
+
+      const first = focusableElements[0];
+      const last = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
@@ -94,14 +118,23 @@ export default function JoinClassModal({ onClose }) {
   };
 
   return (
-    <div className="jcm-backdrop" onClick={onClose}>
-      <div className="jcm-dialog card" role="dialog" aria-modal="true" aria-labelledby="jcm-title" onClick={(e) => e.stopPropagation()}>
-        <button className="jcm-close btn btn-icon btn-ghost btn-sm" onClick={onClose} title="Close">
+    <MobileSheetPortal
+      backdropClassName="jcm-backdrop"
+      sheetClassName="jcm-dialog card"
+      ariaLabel="Join live class"
+      onClose={onClose}
+    >
+      <div
+        ref={dialogRef}
+        aria-labelledby="jcm-title"
+        aria-describedby="jcm-help"
+      >
+        <button className="jcm-close btn btn-icon btn-ghost btn-sm" onClick={onClose} title="Close" aria-label="Close join live class dialog">
           <X size={16} />
         </button>
         <div className="lc-join-icon">🎓</div>
         <h2 id="jcm-title" className="lc-join-title">Join Live Class</h2>
-        <p className="lc-join-subtitle">
+        <p id="jcm-help" className="lc-join-subtitle">
           {authBlocked
             ? canSignIn
               ? 'Sign in first, then enter the class code from your teacher'
@@ -120,6 +153,9 @@ export default function JoinClassModal({ onClose }) {
             maxLength={50}
             autoFocus
             disabled={loading}
+            autoComplete="name"
+            enterKeyHint="next"
+            aria-label="Your name"
           />
           <input
             className="lc-join-input lc-join-code-input"
@@ -131,6 +167,10 @@ export default function JoinClassModal({ onClose }) {
             disabled={loading}
             spellCheck={false}
             autoCapitalize="characters"
+            autoCorrect="off"
+            enterKeyHint="go"
+            inputMode="text"
+            aria-label="Class code"
           />
           {error && <p className="jcm-error">{error}</p>}
           <button
@@ -142,6 +182,6 @@ export default function JoinClassModal({ onClose }) {
           </button>
         </form>
       </div>
-    </div>
+    </MobileSheetPortal>
   );
 }

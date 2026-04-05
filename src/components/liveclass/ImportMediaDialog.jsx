@@ -15,6 +15,7 @@
 import { useState, useRef, useCallback } from 'react';
 import { X, Image as ImageIcon, FileText, Upload, Check } from 'lucide-react';
 import { loadPdfJs } from '../../services/pdf/loadPdfJs.js';
+import MobileSheetPortal from './MobileSheetPortal.jsx';
 
 const RENDER_SCALE = 1.5; // resolution multiplier for PDF pages
 
@@ -106,8 +107,13 @@ export default function ImportMediaDialog({ onClose, onPlaceImage, onPlaceImages
   const stopPropagation = useCallback((e) => e.stopPropagation(), []);
 
   return (
-    <div className="lc-import-overlay" onClick={onClose}>
-      <div className="lc-import-dialog card animate-fade-in" onClick={stopPropagation}>
+    <MobileSheetPortal
+      backdropClassName="lc-import-overlay"
+      sheetClassName="lc-import-dialog card animate-fade-in"
+      ariaLabel="Import media"
+      onClose={onClose}
+    >
+      <div onClick={stopPropagation}>
         {/* Header */}
         <div className="lc-import-header">
           <div className="lc-import-tabs">
@@ -273,6 +279,6 @@ export default function ImportMediaDialog({ onClose, onPlaceImage, onPlaceImages
           </div>
         )}
       </div>
-    </div>
+    </MobileSheetPortal>
   );
 }

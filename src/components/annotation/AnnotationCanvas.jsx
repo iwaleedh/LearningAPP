@@ -1,5 +1,6 @@
 import { useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import { Canvas as FabricCanvas, PencilBrush, IText, Rect, Ellipse, Line, util } from 'fabric';
+import { DEFAULT_TEXT_FONT } from '../liveclass/fontDefaults.js';
 
 function hexToRgba(hex, alpha) {
     if (!hex || !hex.startsWith('#') || hex.length < 7) return hex;
@@ -104,9 +105,13 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                 const text = new IText('', {
                     left: pointer.x,
                     top: pointer.y,
-                    fontSize: 18,
+                    fontSize: opts.fontSize || DEFAULT_TEXT_FONT.fontSize,
                     fill: opts.color,
-                    fontFamily: 'Inter, system-ui, sans-serif',
+                    fontFamily: opts.fontFamily || DEFAULT_TEXT_FONT.fontFamily,
+                    fontWeight: opts.fontWeight || DEFAULT_TEXT_FONT.fontWeight,
+                    fontStyle: opts.fontStyle || DEFAULT_TEXT_FONT.fontStyle,
+                    textDecoration: opts.textDecoration || DEFAULT_TEXT_FONT.textDecoration,
+                    textAlign: opts.textAlign || DEFAULT_TEXT_FONT.textAlign,
                     selectable: true,
                     data: { strokeClientId },
                 });

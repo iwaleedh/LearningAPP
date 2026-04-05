@@ -24,7 +24,9 @@ import HandRaisePanel from '../components/liveclass/HandRaisePanel.jsx';
 import StudentAdmissionPanel from '../components/liveclass/StudentAdmissionPanel.jsx';
 import ClassTimer from '../components/liveclass/ClassTimer.jsx';
 import LivePollPanel from '../components/liveclass/LivePollPanel.jsx';
+import MobileSheetPortal from '../components/liveclass/MobileSheetPortal.jsx';
 import StudentPollOverlay from '../components/liveclass/StudentPollOverlay.jsx';
+import StudentNotePanel from '../components/liveclass/StudentNotePanel.jsx';
 import StencilPalette from '../components/liveclass/StencilPalette.jsx';
 import TemplatePicker from '../components/liveclass/TemplatePicker.jsx';
 import GraphWidget from '../components/liveclass/GraphWidget.jsx';
@@ -39,6 +41,41 @@ import './Pages.css';
 const ImportMediaDialog = lazy(() => import('../components/liveclass/ImportMediaDialog.jsx'));
 const DEFAULT_CANVAS_INK = '#1f2937';
 const DEFAULT_CANVAS_ACCENT = '#3b82f6';
+const DEFAULT_ERASER_MODE = 'precision';
+const DEFAULT_HIGHLIGHTER_MODE = 'freehand';
+const TOOL_SHORTCUT_KEY_MAP = {
+  p: 'pen',
+  h: 'highlight',
+  e: 'eraser',
+  l: 'lasso',
+  v: 'pointer',
+  k: 'laser',
+  o: 'spotlight',
+  r: 'ruler',
+  t: 'text',
+  1: 'rect',
+  2: 'circle',
+  3: 'triangle',
+  4: 'line',
+  5: 'arrow',
+  6: 'diamond',
+  7: 'star',
+  8: 'hexagon',
+  q: 'fc-process',
+  w: 'fc-decision',
+  a: 'fc-terminal',
+  s: 'fc-connector',
+};
+const TEACHER_ONLY_SHORTCUT_TOOLS = new Set([
+  'pointer',
+  'laser',
+  'spotlight',
+  'ruler',
+  'fc-process',
+  'fc-decision',
+  'fc-terminal',
+  'fc-connector',
+]);
 
 function readThemeColor(variableName, fallback) {
   if (typeof window === 'undefined') return fallback;
@@ -146,6 +183,340 @@ function hexagonPoints(cx, cy, r) {
   });
 }
 
+const SHAPE_TOOLS = ['rect', 'circle', 'triangle', 'line', 'arrow', 'diamond', 'star', 'hexagon'];
+
+function createEmptyShapeDrawState() {
+  return {
+    isDown: false,
+    shape: null,
+    startPt: null,
+    lastPt: null,
+    tool: null,
+    canvas: null,
+  };
+}
+
+function getArrowHeadSize(strokeWidth) {
+  return Math.max(12, strokeWidth * 4);
+}
+
+function getShapeDragMetrics(startPt, endPt) {
+  const dx = endPt.x - startPt.x;
+  const dy = endPt.y - startPt.y;
+  const width = Math.abs(dx);
+  const height = Math.abs(dy);
+
+  return {
+    dx,
+    dy,
+    width,
+    height,
+    left: dx < 0 ? endPt.x : startPt.x,
+    top: dy < 0 ? endPt.y : startPt.y,
+    centerX: (startPt.x + endPt.x) / 2,
+    centerY: (startPt.y + endPt.y) / 2,
+    length: Math.hypot(dx, dy),
+  };
+}
+
+function isShapeDragTooSmall(toolId, startPt, endPt) {
+  if (!startPt || !endPt) return true;
+
+  const metrics = getShapeDragMetrics(startPt, endPt);
+
+  if (toolId === 'rect' || toolId === 'triangle') {
+    return metrics.width < 8 || metrics.height < 8;
+  }
+
+  if (toolId === 'circle') {
+    return Math.max(metrics.width, metrics.height) < 8;
+  }
+
+  if (toolId === 'line') {
+    return metrics.length < 8;
+  }
+
+  if (toolId === 'arrow') {
+    return metrics.length < 12;
+  }
+
+  if (toolId === 'diamond') {
+    return metrics.width < 10 || metrics.height < 10;
+  }
+
+  if (toolId === 'star' || toolId === 'hexagon') {
+    return Math.min(metrics.width, metrics.height) < 12;
+  }
+
+  return metrics.length < 8;
+}
+
+function refreshPathBounds(shape) {
+  if (!shape) return;
+
+  if (typeof shape.setBoundingBox === 'function') {
+    shape.setBoundingBox(true);
+  } else if (typeof shape.setDimensions === 'function') {
+    shape.setDimensions();
+  }
+
+  shape.setCoords();
+}
+
+function updateShapeFromDrag(shape, toolId, startPt, endPt, color, strokeWidth) {
+  if (!shape || !startPt || !endPt) return;
+
+  const metrics = getShapeDragMetrics(startPt, endPt);
+
+  if (toolId === 'rect' || toolId === 'triangle') {
+    shape.set({
+      left: metrics.left,
+      top: metrics.top,
+      width: metrics.width,
+      height: metrics.height,
+    });
+    return;
+  }
+
+  if (toolId === 'circle') {
+    const diameter = Math.max(metrics.width, metrics.height);
+    const radius = diameter / 2;
+    shape.set({
+      radius,
+      left: metrics.dx < 0 ? startPt.x - diameter : startPt.x,
+      top: metrics.dy < 0 ? startPt.y - diameter : startPt.y,
+    });
+    return;
+  }
+
+  if (toolId === 'line') {
+    shape.set({ x2: endPt.x, y2: endPt.y });
+    return;
+  }
+
+  if (toolId === 'arrow') {
+    shape.set({
+      path: fabricUtil.parsePath(makeArrowPath(startPt.x, startPt.y, endPt.x, endPt.y, getArrowHeadSize(strokeWidth))),
+      stroke: color,
+      strokeWidth,
+    });
+    refreshPathBounds(shape);
+    return;
+  }
+
+  if (toolId === 'diamond') {
+    shape.set({ points: diamondPoints(metrics.left, metrics.top, metrics.width, metrics.height) });
+    shape.setDimensions();
+    shape.setCoords();
+    return;
+  }
+
+  if (toolId === 'star') {
+    const outerR = Math.min(metrics.width, metrics.height) / 2;
+    shape.set({ points: starPoints(metrics.centerX, metrics.centerY, outerR, outerR * 0.4) });
+    shape.setDimensions();
+    shape.setCoords();
+    return;
+  }
+
+  if (toolId === 'hexagon') {
+    shape.set({ points: hexagonPoints(metrics.centerX, metrics.centerY, Math.min(metrics.width, metrics.height) / 2) });
+    shape.setDimensions();
+    shape.setCoords();
+  }
+}
+
+function createShapeObject(toolId, point, color, strokeWidth) {
+  const base = { fill: 'transparent', stroke: color, strokeWidth, selectable: false, evented: false };
+
+  if (toolId === 'rect') return new FabricRect({ ...base, left: point.x, top: point.y, width: 0, height: 0 });
+  if (toolId === 'circle') return new FabricCircle({ ...base, left: point.x, top: point.y, radius: 0 });
+  if (toolId === 'triangle') return new FabricTriangle({ ...base, left: point.x, top: point.y, width: 0, height: 0 });
+  if (toolId === 'line') return new FabricLine([point.x, point.y, point.x, point.y], { stroke: color, strokeWidth, selectable: false, evented: false });
+  if (toolId === 'arrow') {
+    return new FabricPath(makeArrowPath(point.x, point.y, point.x + 1, point.y, getArrowHeadSize(strokeWidth)), {
+      stroke: color,
+      fill: 'transparent',
+      strokeWidth,
+      selectable: false,
+      evented: false,
+    });
+  }
+  if (toolId === 'diamond') return new FabricPolygon(diamondPoints(point.x, point.y, 1, 1), { ...base });
+  if (toolId === 'star') return new FabricPolygon(starPoints(point.x, point.y, 1, 0.4), { ...base });
+  if (toolId === 'hexagon') return new FabricPolygon(hexagonPoints(point.x, point.y, 1), { ...base });
+
+  return null;
+}
+
+function isShapeToolObject(obj) {
+  return Boolean(obj?.data?.shapeToolId && SHAPE_TOOLS.includes(obj.data.shapeToolId));
+}
+
+function inferShapeToolId(obj) {
+  if (obj instanceof FabricRect) return 'rect';
+  if (obj instanceof FabricCircle) return 'circle';
+  if (obj instanceof FabricTriangle) return 'triangle';
+  if (obj instanceof FabricPolygon) return 'polygon';
+  return null;
+}
+
+function isEditableShapeObject(obj) {
+  if (!obj || obj?.data?.objectRole === 'shape-label') return false;
+  return isShapeToolObject(obj) || Boolean(inferShapeToolId(obj));
+}
+
+function getLinkedShapeLabel(canvas, shape) {
+  const shapeId = shape?.data?.strokeClientId;
+  if (!canvas || !shapeId) return null;
+  return canvas.getObjects().find((candidate) => candidate?.data?.parentShapeId === shapeId) ?? null;
+}
+
+function getShapeLabelMetrics(shape) {
+  const center = shape.getCenterPoint();
+  const bounds = shape.getBoundingRect();
+  return {
+    center,
+    width: Math.max(64, bounds.width * 0.85),
+  };
+}
+
+function positionShapeLabel(shape, label) {
+  if (!shape || !label) return;
+  const { center, width } = getShapeLabelMetrics(shape);
+  label.set({
+    left: center.x,
+    top: center.y,
+    width,
+    originX: 'center',
+    originY: 'center',
+    textAlign: 'center',
+  });
+  label.setCoords();
+}
+
+function createShapeLabel(shape, textValue, options = {}) {
+  const label = new FabricIText(textValue, {
+    fontSize: options.fontSize ?? 18,
+    fontFamily: options.fontFamily || DEFAULT_TEXT_FONT.fontFamily,
+    fill: options.fill || '#111827',
+    fontWeight: options.fontWeight || 'normal',
+    fontStyle: options.fontStyle || 'normal',
+    textDecoration: options.textDecoration || '',
+    editable: false,
+    selectable: false,
+    evented: false,
+    hoverCursor: 'default',
+    lockMovementX: true,
+    lockMovementY: true,
+    hasControls: false,
+    hasBorders: false,
+    data: options.data || {},
+  });
+  positionShapeLabel(shape, label);
+  return label;
+}
+
+function getCanvasPoint(canvas, event) {
+  if (!canvas || !event) return { x: 0, y: 0 };
+  if (typeof canvas.getScenePoint === 'function') {
+    return canvas.getScenePoint(event);
+  }
+  if (typeof canvas.getPointer === 'function') {
+    return canvas.getPointer(event);
+  }
+  return { x: 0, y: 0 };
+}
+
+function getCanvasTarget(canvas, fabricEvent, { allowFindTarget = false } = {}) {
+  if (fabricEvent?.e && fabricEvent?.target) return fabricEvent.target;
+  if (!allowFindTarget) return null;
+  const nativeEvent = fabricEvent?.e ?? fabricEvent;
+  if (canvas && nativeEvent && typeof canvas.findTarget === 'function') {
+    const resolved = canvas.findTarget(nativeEvent);
+    return resolved?.target ?? resolved?.currentTarget ?? resolved ?? null;
+  }
+  return null;
+}
+
+function getCanvasTargetFromPointer(canvas, fabricEvent) {
+  const target = getCanvasTarget(canvas, fabricEvent, { allowFindTarget: true });
+  if (target) return target;
+  if (!canvas) return null;
+
+  const nativeEvent = fabricEvent?.e ?? fabricEvent;
+  const point = nativeEvent ? getCanvasPoint(canvas, nativeEvent) : null;
+  if (!point) return null;
+
+  const objects = canvas.getObjects?.() ?? [];
+  for (let index = objects.length - 1; index >= 0; index -= 1) {
+    const obj = objects[index];
+    if (!obj || obj.visible === false || obj.excludeFromExport) continue;
+
+    const bounds = typeof obj.getBoundingRect === 'function'
+      ? obj.getBoundingRect()
+      : null;
+    if (!bounds) continue;
+
+    const padding = Math.max(10, (obj.strokeWidth ?? 0) * 2);
+    const withinBounds = (
+      point.x >= bounds.left - padding &&
+      point.x <= bounds.left + bounds.width + padding &&
+      point.y >= bounds.top - padding &&
+      point.y <= bounds.top + bounds.height + padding
+    );
+    if (!withinBounds) continue;
+
+    if (typeof obj.containsPoint === 'function') {
+      try {
+        if (obj.containsPoint(point)) return obj;
+      } catch {
+        // Fall back to padded bounds below.
+      }
+    }
+
+    return obj;
+  }
+
+  return null;
+}
+
+function getColorAlpha(colorValue) {
+  if (typeof colorValue !== 'string') return 1;
+  const color = colorValue.trim();
+
+  if (/^#[0-9a-fA-F]{8}$/.test(color)) {
+    return parseInt(color.slice(7, 9), 16) / 255;
+  }
+
+  const rgbaMatch = color.match(/^rgba\([^,]+,[^,]+,[^,]+,\s*([0-9]*\.?[0-9]+)\)$/i);
+  if (rgbaMatch) {
+    const alpha = Number(rgbaMatch[1]);
+    return Number.isFinite(alpha) ? alpha : 1;
+  }
+
+  return 1;
+}
+
+function isHighlighterStrokeObject(obj) {
+  if (!obj) return false;
+  if (obj?.data?.drawingToolId === 'highlight') return true;
+  if (obj?.type !== 'path') return false;
+  return getColorAlpha(obj.stroke) < 0.95;
+}
+
+function createStraightHighlighterLine(startPoint, endPoint, colorValue, strokeWidthValue) {
+  return new FabricLine([startPoint.x, startPoint.y, endPoint.x, endPoint.y], {
+    stroke: colorValue,
+    opacity: 0.4,
+    strokeWidth: strokeWidthValue * 4,
+    strokeLineCap: 'round',
+    strokeLineJoin: 'round',
+    selectable: false,
+    evented: false,
+  });
+}
+
 // ── Stamp helper ─────────────────────────────────────────────────────────────
 function addStamp(canvas, emoji, color, x, y) {
   const text = new FabricText(emoji, {
@@ -202,6 +573,7 @@ export default function LiveClassPage() {
 
   // Role
   const [role, setRole] = useState(null); // 'teacher' | 'student'
+  const isTeacher = role === 'teacher';
   // H-6: priority-aware role setter prevents race between offline/cache/Convex effects
   // Priorities: nav/cache (1) < convex/join (2). Higher priority always overrides.
   // Equal priority only sets if role is still null (first-writer-wins).
@@ -238,6 +610,8 @@ export default function LiveClassPage() {
   const [tool, setTool] = useState('pen');
   const [color, setColor] = useState(DEFAULT_CANVAS_INK);
   const [strokeWidth, setStrokeWidth] = useState(4);
+  const [eraserMode, setEraserMode] = useState(DEFAULT_ERASER_MODE);
+  const [highlighterMode, setHighlighterMode] = useState(DEFAULT_HIGHLIGHTER_MODE);
   const [textFont, setTextFont] = useState(() => ({
     ...DEFAULT_TEXT_FONT,
     fill: DEFAULT_CANVAS_INK,
@@ -252,11 +626,13 @@ export default function LiveClassPage() {
   const [laserTrails, setLaserTrails] = useState([]); // Array of {id, points, identity, createdAt}
   const laserDrawingRef = useRef(false); // whether currently drawing a trail
   const currentLaserTrailRef = useRef([]); // current trail being drawn
+  const activeDrawToolRef = useRef(tool);
 
   // UI panels
   const [showStudentGrid, setShowStudentGrid] = useState(false);
   const [showHandPanel, setShowHandPanel] = useState(false);
   const [showImportDialog, setShowImportDialog] = useState(false);
+  const [showStudentNotes, setShowStudentNotes] = useState(false);
   const [endedMsg, setEndedMsg] = useState('');
   const [_linkCopied, setLinkCopied] = useState(false);  // reserved for share-link UX
   const [codeCopied, setCodeCopied] = useState(false);
@@ -266,6 +642,13 @@ export default function LiveClassPage() {
   const [joinRequestId, setJoinRequestId] = useState(null); // Convex _id string
   const [joinStatus, setJoinStatus] = useState(null); // 'pending' | 'accepted' | 'rejected'
   const [joinTempId, setJoinTempId] = useState(null);
+  const [isStudentCompactLayout, setIsStudentCompactLayout] = useState(() => (
+    typeof window !== 'undefined' ? window.innerWidth <= 900 : false
+  ));
+  const [isCompactToolbarPanelLayout, setIsCompactToolbarPanelLayout] = useState(() => (
+    typeof window !== 'undefined' ? window.innerWidth <= 768 : false
+  ));
+  const [studentMobileView, setStudentMobileView] = useState('board');
 
   // Admission panel (teacher side)
   const [joinRequests, setJoinRequests] = useState([]);
@@ -359,6 +742,41 @@ export default function LiveClassPage() {
 
     previousThemePaletteRef.current = nextPalette;
   }, [theme]);
+  useEffect(() => {
+    activeDrawToolRef.current = tool;
+  }, [tool]);
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined;
+
+    const updateLayoutMode = () => {
+      setIsStudentCompactLayout(window.innerWidth <= 900);
+      setIsCompactToolbarPanelLayout(window.innerWidth <= 768);
+    };
+
+    updateLayoutMode();
+    window.addEventListener('resize', updateLayoutMode);
+    return () => window.removeEventListener('resize', updateLayoutMode);
+  }, []);
+  useEffect(() => {
+    if (isTeacher) {
+      setShowStudentNotes(false);
+      return;
+    }
+    if (!isStudentCompactLayout) {
+      setStudentMobileView('board');
+    }
+  }, [isTeacher, isStudentCompactLayout]);
+
+  const closeTeacherToolbarPanels = useCallback(() => {
+    setShowPollPanel(false);
+    setPollAnchor(null);
+    setShowStencilPanel(false);
+    setStencilAnchor(null);
+    setShowTemplatePicker(false);
+    setTemplateAnchor(null);
+    setShowGraphWidget(false);
+    setGraphAnchor(null);
+  }, []);
   const [renameValue, setRenameValue] = useState('');
   const renameInputRef = useRef(null);
 
@@ -571,6 +989,11 @@ export default function LiveClassPage() {
     setCanvasElReady(Boolean(el));
   }, []);
   const myCanvasRef = useRef(null);       // student's own canvas
+  const [studentCanvasElReady, setStudentCanvasElReady] = useState(false);
+  const studentCanvasRefCallback = useCallback((el) => {
+    myCanvasRef.current = el;
+    setStudentCanvasElReady(Boolean(el));
+  }, []);
   const fabricRef = useRef(null);
   const myFabricRef = useRef(null);
   const syncRef = useRef(null);
@@ -583,6 +1006,7 @@ export default function LiveClassPage() {
 
   // ── Ruler tool state ──────────────────────────────────────────────────────
   const rulerStateRef = useRef({ x: 200, y: 200, angle: 0 });
+  const shapeDrawRef = useRef(createEmptyShapeDrawState());
   const handleRulerStateChange = useCallback(({ x, y, angle }) => {
     rulerStateRef.current = { x, y, angle };
   }, []);
@@ -1065,7 +1489,7 @@ export default function LiveClassPage() {
 
     // Teacher gets full tool + stroke sync; students only view
     if (isTeacherRole) {
-      applyTool(fc, tool, color, strokeWidth);
+      applyTool(fc, tool, color, strokeWidth, highlighterMode);
 
       // Seed initial empty history snapshot
       historyStack.current = [];
@@ -1083,8 +1507,10 @@ export default function LiveClassPage() {
       fc.on('path:created', (e) => {
         const path = e.path;
         const clientId = 'stroke_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+        const drawingToolId = activeDrawToolRef.current === 'highlight' ? 'highlight' : 'pen';
         if (!path.data) path.data = {};
         path.data.strokeClientId = clientId;
+        path.data.drawingToolId = drawingToolId;
         const json = path.toJSON(['data']);
         syncRef.current?.sendStroke(classId, JSON.stringify(json), clientId);
         broadcastStrokeAdded(json);
@@ -1100,27 +1526,57 @@ export default function LiveClassPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role, canvasElReady]);
   useEffect(() => {
-    if (role !== 'student' || !myCanvasRef.current) return;
+    if (role !== 'student' || !studentCanvasElReady || !myCanvasRef.current) return;
     const fc = new FabricCanvas(myCanvasRef.current, {
       isDrawingMode: true,
       backgroundColor: 'transparent',
       selection: false,
     });
     myFabricRef.current = fc;
-    applyTool(fc, tool, color, strokeWidth);
-    return () => { myFabricRef.current = null; fc.dispose(); };
+
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const { width, height } = entry.contentRect;
+        fc.setDimensions({ width, height });
+        fc.requestRenderAll();
+      }
+    });
+
+    if (canvasWrapRef.current) {
+      ro.observe(canvasWrapRef.current);
+    }
+
+    applyTool(fc, tool, color, strokeWidth, highlighterMode);
+    return () => {
+      ro.disconnect();
+      myFabricRef.current = null;
+      fc.dispose();
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [role]);
+  }, [role, studentCanvasElReady]);
+  useEffect(() => {
+    const studentMobileMode = !isTeacher && isStudentCompactLayout;
+    if (!studentMobileMode || studentMobileView !== 'canvas') return;
+    const fc = myFabricRef.current;
+    const wrap = canvasWrapRef.current;
+    if (!fc || !wrap) return;
+
+    const rect = wrap.getBoundingClientRect();
+    if (rect.width > 0 && rect.height > 0) {
+      fc.setDimensions({ width: rect.width, height: rect.height });
+      fc.requestRenderAll();
+    }
+  }, [isTeacher, isStudentCompactLayout, studentMobileView]);
 
   // Re-apply tool whenever selection changes
   useEffect(() => {
     if (role === 'teacher') {
-      applyTool(fabricRef.current, tool, color, strokeWidth);
+      applyTool(fabricRef.current, tool, color, strokeWidth, highlighterMode);
     }
-    applyTool(myFabricRef.current, tool, color, strokeWidth);
+    applyTool(myFabricRef.current, tool, color, strokeWidth, highlighterMode);
     if (tool === 'spotlight') setSpotlightEnabled(true);
     else setSpotlightEnabled(false);
-  }, [tool, color, strokeWidth, role]);
+  }, [tool, color, strokeWidth, role, highlighterMode]);
 
   // ── Close all dropdown panels on outside click ────────────────────────────
   useEffect(() => {
@@ -1128,14 +1584,11 @@ export default function LiveClassPage() {
       if (e.target.closest('.lc-dropdown-panel') || e.target.closest('.lc-dropdown-trigger')) return;
       setShowHandPanel(false); setHandsAnchor(null);
       setShowStudentGrid(false); setStudentsAnchor(null);
-      setShowPollPanel(false); setPollAnchor(null);
-      setShowStencilPanel(false); setStencilAnchor(null);
-      setShowTemplatePicker(false); setTemplateAnchor(null);
-      setShowGraphWidget(false); setGraphAnchor(null);
+      closeTeacherToolbarPanels();
     };
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, []);
+  }, [closeTeacherToolbarPanels]);
 
   // ── Laser tool: dot mode (cursor following) and trail mode (freehand drawing) ──
   useEffect(() => {
@@ -1144,6 +1597,51 @@ export default function LiveClassPage() {
     const wrap = canvasWrapRef.current;
     if (!wrap) return;
     const myIdentityHex = getCurrentUserId() ?? 'local';
+    const previousTouchAction = wrap.style.touchAction;
+    let activePointerId = null;
+    let cursorRafId = null;
+    let trailRafId = null;
+
+    wrap.style.touchAction = 'none';
+
+    const removeLocalCursor = () => {
+      setCursors((prev) => prev.filter((cursor) => cursor.identity !== myIdentityHex));
+    };
+
+    const getCoords = (event) => {
+      const rect = wrap.getBoundingClientRect();
+      return {
+        x: (event.clientX - rect.left) / rect.width,
+        y: (event.clientY - rect.top) / rect.height,
+      };
+    };
+
+    const queueCursorUpdate = (coords) => {
+      if (cursorRafId) return;
+      cursorRafId = requestAnimationFrame(() => {
+        cursorRafId = null;
+        setCursors((prev) => {
+          const idx = prev.findIndex((cursor) => cursor.identity === myIdentityHex);
+          const nextCursor = { x: coords.x, y: coords.y, tool, mode: laserMode, identity: myIdentityHex };
+          if (idx >= 0) {
+            const next = [...prev];
+            next[idx] = nextCursor;
+            return next;
+          }
+          return [...prev, nextCursor];
+        });
+      });
+    };
+
+    const broadcastCursorPoint = (coords) => {
+      syncRef.current?.broadcastCursor(classId, coords.x, coords.y, tool, laserMode);
+    };
+
+    const canUsePointer = (event) => {
+      if (event.pointerType === 'mouse') return true;
+      if (event.pointerType === 'pen') return true;
+      return event.pointerId === activePointerId;
+    };
 
     // Cleanup old trails periodically
     const cleanupTrails = () => {
@@ -1153,58 +1651,78 @@ export default function LiveClassPage() {
     const cleanupInterval = setInterval(cleanupTrails, 500);
 
     if (laserMode === 'dot') {
-      // Dot mode: follow cursor with glowing dot
-      let cursorRafId = null;
-      const handler = (e) => {
-        const rect = wrap.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width;
-        const y = (e.clientY - rect.top) / rect.height;
+      // Dot mode: mouse hover or touch/pen drag moves the laser point.
+      const onPointerDown = (event) => {
+        if (event.pointerType !== 'mouse') {
+          activePointerId = event.pointerId;
+          wrap.setPointerCapture?.(event.pointerId);
+          event.preventDefault();
+        }
 
-        // Broadcast to other users
-        syncRef.current?.broadcastCursor(classId, x, y, tool, laserMode);
-
-        // M-11: throttle local cursor state updates via rAF
-        if (cursorRafId) return;
-        cursorRafId = requestAnimationFrame(() => {
-          cursorRafId = null;
-          setCursors(prev => {
-            const idx = prev.findIndex(c => c.identity === myIdentityHex);
-            const newCursor = { x, y, tool, mode: laserMode, identity: myIdentityHex };
-            if (idx >= 0) { const next = [...prev]; next[idx] = newCursor; return next; }
-            return [...prev, newCursor];
-          });
-        });
+        const coords = getCoords(event);
+        broadcastCursorPoint(coords);
+        queueCursorUpdate(coords);
       };
-      wrap.addEventListener('mousemove', handler);
+
+      const onPointerMove = (event) => {
+        if (!canUsePointer(event)) return;
+        if (event.pointerType !== 'mouse' && activePointerId === null) return;
+        const coords = getCoords(event);
+        if (event.pointerType !== 'mouse') event.preventDefault();
+        broadcastCursorPoint(coords);
+        queueCursorUpdate(coords);
+      };
+
+      const onPointerEnd = (event) => {
+        if (event.pointerType !== 'mouse' && event.pointerId !== activePointerId) return;
+        if (event.pointerType !== 'mouse') {
+          activePointerId = null;
+          removeLocalCursor();
+        }
+      };
+
+      const onMouseLeave = () => {
+        removeLocalCursor();
+      };
+
+      wrap.addEventListener('pointerdown', onPointerDown);
+      wrap.addEventListener('pointermove', onPointerMove);
+      wrap.addEventListener('pointerup', onPointerEnd);
+      wrap.addEventListener('pointercancel', onPointerEnd);
+      wrap.addEventListener('mouseleave', onMouseLeave);
       return () => {
-        wrap.removeEventListener('mousemove', handler);
+        wrap.removeEventListener('pointerdown', onPointerDown);
+        wrap.removeEventListener('pointermove', onPointerMove);
+        wrap.removeEventListener('pointerup', onPointerEnd);
+        wrap.removeEventListener('pointercancel', onPointerEnd);
+        wrap.removeEventListener('mouseleave', onMouseLeave);
         if (cursorRafId) cancelAnimationFrame(cursorRafId);
+        activePointerId = null;
+        removeLocalCursor();
+        wrap.style.touchAction = previousTouchAction;
         clearInterval(cleanupInterval);
       };
     } else {
-      // Trail mode: draw freehand strokes that fade out (GoodNotes style)
-      const getCoords = (e) => {
-        const rect = wrap.getBoundingClientRect();
-        return {
-          x: (e.clientX - rect.left) / rect.width,
-          y: (e.clientY - rect.top) / rect.height
-        };
-      };
-
-      const onDown = (e) => {
+      // Trail mode: draw freehand strokes that fade out (GoodNotes style).
+      const onPointerDown = (event) => {
+        activePointerId = event.pointerId;
+        wrap.setPointerCapture?.(event.pointerId);
+        event.preventDefault();
         laserDrawingRef.current = true;
-        const coords = getCoords(e);
+        const coords = getCoords(event);
         currentLaserTrailRef.current = [coords];
+        broadcastCursorPoint(coords);
       };
 
-      let trailRafId = null;
-      const onMove = (e) => {
+      const onPointerMove = (event) => {
+        if (!canUsePointer(event)) return;
         if (!laserDrawingRef.current) return;
-        const coords = getCoords(e);
+        const coords = getCoords(event);
+        event.preventDefault();
         currentLaserTrailRef.current.push(coords);
 
         // Broadcast current trail point
-        syncRef.current?.broadcastCursor(classId, coords.x, coords.y, tool, laserMode);
+        broadcastCursorPoint(coords);
 
         // M-11: throttle local trail state updates via rAF
         if (trailRafId) return;
@@ -1229,9 +1747,10 @@ export default function LiveClassPage() {
         });
       };
 
-      const onUp = () => {
+      const finalizeTrail = () => {
         if (!laserDrawingRef.current) return;
         laserDrawingRef.current = false;
+        activePointerId = null;
 
         // Finalize the trail with a unique ID and timestamp
         const finalPoints = [...currentLaserTrailRef.current];
@@ -1251,25 +1770,37 @@ export default function LiveClassPage() {
           syncRef.current?.broadcastLaserTrail?.(classId, trailId, finalPoints);
         }
         currentLaserTrailRef.current = [];
+        removeLocalCursor();
       };
 
-      wrap.addEventListener('mousedown', onDown);
-      wrap.addEventListener('mousemove', onMove);
-      wrap.addEventListener('mouseup', onUp);
-      wrap.addEventListener('mouseleave', onUp);
+      const onPointerEnd = (event) => {
+        if (event.pointerId !== activePointerId) return;
+        finalizeTrail();
+      };
+
+      wrap.addEventListener('pointerdown', onPointerDown);
+      wrap.addEventListener('pointermove', onPointerMove);
+      wrap.addEventListener('pointerup', onPointerEnd);
+      wrap.addEventListener('pointercancel', onPointerEnd);
+      wrap.addEventListener('mouseleave', finalizeTrail);
 
       return () => {
-        wrap.removeEventListener('mousedown', onDown);
-        wrap.removeEventListener('mousemove', onMove);
-        wrap.removeEventListener('mouseup', onUp);
-        wrap.removeEventListener('mouseleave', onUp);
+        wrap.removeEventListener('pointerdown', onPointerDown);
+        wrap.removeEventListener('pointermove', onPointerMove);
+        wrap.removeEventListener('pointerup', onPointerEnd);
+        wrap.removeEventListener('pointercancel', onPointerEnd);
+        wrap.removeEventListener('mouseleave', finalizeTrail);
         if (trailRafId) cancelAnimationFrame(trailRafId);
+        activePointerId = null;
+        currentLaserTrailRef.current = [];
+        removeLocalCursor();
+        wrap.style.touchAction = previousTouchAction;
         clearInterval(cleanupInterval);
       };
     }
   }, [tool, laserMode, classId]);
 
-  function applyTool(fc, toolId, col, sw) {
+  function applyTool(fc, toolId, col, sw, highlighterModeId = DEFAULT_HIGHLIGHTER_MODE) {
     if (!fc) return;
     switch (toolId) {
       case 'pen':
@@ -1280,11 +1811,13 @@ export default function LiveClassPage() {
         fc.freeDrawingBrush.width = sw;
         break;
       case 'highlight':
-        fc.isDrawingMode = true;
+        fc.isDrawingMode = highlighterModeId !== 'straight-line';
         fc.selection = false;
-        fc.freeDrawingBrush = new PencilBrush(fc);
-        fc.freeDrawingBrush.color = col + '66'; // 40% opacity
-        fc.freeDrawingBrush.width = sw * 4;
+        if (highlighterModeId !== 'straight-line') {
+          fc.freeDrawingBrush = new PencilBrush(fc);
+          fc.freeDrawingBrush.color = col + '66'; // 40% opacity
+          fc.freeDrawingBrush.width = sw * 4;
+        }
         break;
       case 'eraser':
         fc.isDrawingMode = false;
@@ -1297,6 +1830,17 @@ export default function LiveClassPage() {
       case 'text':
         fc.isDrawingMode = false;
         fc.selection = true; // Allow selection for text editing
+        break;
+      case 'rect':
+      case 'circle':
+      case 'triangle':
+      case 'line':
+      case 'arrow':
+      case 'diamond':
+      case 'star':
+      case 'hexagon':
+        fc.isDrawingMode = false;
+        fc.selection = false;
         break;
       case 'fc-process':
       case 'fc-decision':
@@ -1320,26 +1864,109 @@ export default function LiveClassPage() {
 
   // ── Mouse handlers for eraser & shape tools ───────────────────────────────
   useEffect(() => {
-    const fc = fabricRef.current;
-    if (!fc || role !== 'teacher') return;
+    const fc = role === 'teacher' ? fabricRef.current : myFabricRef.current;
+    if (!fc) return;
+    const shouldSync = role === 'teacher';
+    const mutateProvisionalShape = (fn) => {
+      if (shouldSync) skipHistory.current = true;
+      try {
+        fn();
+      } finally {
+        if (shouldSync) skipHistory.current = false;
+      }
+    };
+    const resetShapeDraw = () => {
+      shapeDrawRef.current = createEmptyShapeDrawState();
+    };
 
     if (tool === 'eraser') {
-      const onDown = (e) => {
-        if (!e.target) return;
-        const obj = e.target;
-        fc.remove(obj);
-        fc.requestRenderAll();
+      if (!shouldSync) return;
+      const eraseState = {
+        isErasing: false,
+        removedAny: false,
+        removedIds: new Set(),
+      };
+
+      const removeObject = (obj) => {
+        if (!obj) return false;
+        if (eraserMode === 'highlighter' && !isHighlighterStrokeObject(obj)) return false;
+
         const cid = obj.data?.strokeClientId;
+        if (cid && eraseState.removedIds.has(cid)) return false;
+
+        const linkedLabel = isEditableShapeObject(obj) ? getLinkedShapeLabel(fc, obj) : null;
+        const linkedCid = linkedLabel?.data?.strokeClientId;
+
+        if (cid) eraseState.removedIds.add(cid);
+        if (linkedCid) eraseState.removedIds.add(linkedCid);
+
+        fc.remove(obj);
+        if (linkedLabel) fc.remove(linkedLabel);
+        fc.requestRenderAll();
+
         if (cid) {
           syncRef.current?.sendStrokeDelete(cid);
           broadcastStrokeDeleted(cid);
         }
+        if (linkedCid) {
+          syncRef.current?.sendStrokeDelete(linkedCid);
+          broadcastStrokeDeleted(linkedCid);
+        }
+
+        eraseState.removedAny = true;
+        return true;
       };
+
+      const resolveTarget = (event) => {
+        if (eraserMode === 'precision') {
+          return getCanvasTarget(fc, event);
+        }
+        return getCanvasTargetFromPointer(fc, event);
+      };
+
+      const flushHistory = () => {
+        if (!eraseState.removedAny) return;
+        saveHistory();
+        eraseState.removedAny = false;
+        eraseState.removedIds.clear();
+      };
+
+      const onDown = (e) => {
+        if (eraserMode === 'precision') {
+          removeObject(resolveTarget(e));
+          flushHistory();
+          return;
+        }
+
+        eraseState.isErasing = true;
+        removeObject(resolveTarget(e));
+      };
+
+      const onMove = (e) => {
+        if (!eraseState.isErasing) return;
+        removeObject(resolveTarget(e));
+      };
+
+      const onUp = () => {
+        if (!eraseState.isErasing && !eraseState.removedAny) return;
+        eraseState.isErasing = false;
+        flushHistory();
+      };
+
       fc.on('mouse:down', onDown);
-      return () => fc.off('mouse:down', onDown);
+      fc.on('mouse:move', onMove);
+      fc.on('mouse:up', onUp);
+      return () => {
+        eraseState.isErasing = false;
+        eraseState.removedIds.clear();
+        fc.off('mouse:down', onDown);
+        fc.off('mouse:move', onMove);
+        fc.off('mouse:up', onUp);
+      };
     }
 
-    if (tool === 'pen' || tool === 'highlight') {
+    if (tool === 'pen' || (tool === 'highlight' && highlighterMode !== 'straight-line')) {
+      if (!shouldSync) return;
       // Last drawn path + when it was created (for the 1.2 s window)
       const state = { path: null, time: 0 };
 
@@ -1365,6 +1992,7 @@ export default function LiveClassPage() {
             const cid = p.data?.strokeClientId ?? ('snap_' + Date.now());
             if (!snapped.data) snapped.data = {};
             snapped.data.strokeClientId = cid;
+            snapped.data.drawingToolId = p.data?.drawingToolId ?? (activeDrawToolRef.current === 'highlight' ? 'highlight' : 'pen');
             fc.remove(p);
             fc.add(snapped);
             fc.requestRenderAll();
@@ -1399,96 +2027,162 @@ export default function LiveClassPage() {
       };
     }
 
-    if (['rect', 'circle', 'triangle', 'line', 'arrow', 'diamond', 'star', 'hexagon'].includes(tool)) {
-      let shapeObj = null;
-      let startPt = null;
+    if (tool === 'highlight' && highlighterMode === 'straight-line') {
+      resetShapeDraw();
 
       const onDown = (e) => {
-        if (e.target) return; // don't start on existing object
-        const p = fc.getPointer(e.e);
-        startPt = { x: p.x, y: p.y };
-        const base = { fill: 'transparent', stroke: color, strokeWidth, selectable: false, evented: false };
-        if (tool === 'rect')     shapeObj = new FabricRect({ ...base, left: p.x, top: p.y, width: 0, height: 0 });
-        else if (tool === 'circle')   shapeObj = new FabricCircle({ ...base, left: p.x, top: p.y, radius: 0 });
-        else if (tool === 'triangle') shapeObj = new FabricTriangle({ ...base, left: p.x, top: p.y, width: 0, height: 0 });
-        else if (tool === 'ruler')    shapeObj = new FabricLine([p.x, p.y, p.x, p.y], { stroke: color, strokeWidth, selectable: false, evented: false });
-        else if (tool === 'line')     shapeObj = new FabricLine([p.x, p.y, p.x, p.y], { stroke: color, strokeWidth, selectable: false, evented: false });
-        else if (tool === 'arrow')    shapeObj = new FabricPath(makeArrowPath(p.x, p.y, p.x + 1, p.y, Math.max(12, strokeWidth * 4)), { stroke: color, fill: 'transparent', strokeWidth, selectable: false, evented: false });
-        else if (tool === 'diamond')  shapeObj = new FabricPolygon(diamondPoints(p.x, p.y, 1, 1), { ...base });
-        else if (tool === 'star')     shapeObj = new FabricPolygon(starPoints(p.x, p.y, 1, 0.4), { ...base });
-        else if (tool === 'hexagon')  shapeObj = new FabricPolygon(hexagonPoints(p.x, p.y, 1), { ...base });
-        if (shapeObj) { fc.add(shapeObj); fc.requestRenderAll(); }
+        if (getCanvasTarget(fc, e)) return;
+        const point = getCanvasPoint(fc, e.e);
+        const line = createStraightHighlighterLine(point, point, color, strokeWidth);
+        shapeDrawRef.current = {
+          isDown: true,
+          shape: line,
+          startPt: point,
+          lastPt: point,
+          tool,
+          canvas: fc,
+        };
+        mutateProvisionalShape(() => {
+          fc.add(line);
+        });
+        fc.requestRenderAll();
       };
 
       const onMove = (e) => {
-        if (!shapeObj || !startPt) return;
-        const p = fc.getPointer(e.e);
-        if (tool === 'rect' || tool === 'triangle') {
-          const w = p.x - startPt.x;
-          const h = p.y - startPt.y;
-          shapeObj.set({
-            width: Math.abs(w), height: Math.abs(h),
-            left: w < 0 ? p.x : startPt.x,
-            top:  h < 0 ? p.y : startPt.y,
-          });
-        } else if (tool === 'circle') {
-          const r = Math.sqrt((p.x - startPt.x) ** 2 + (p.y - startPt.y) ** 2) / 2;
-          shapeObj.set({ radius: r, left: startPt.x - r, top: startPt.y - r });
-        } else if (tool === 'ruler' || tool === 'line') {
-          shapeObj.set({ x2: p.x, y2: p.y });
-        } else if (tool === 'arrow') {
-          const headSize = Math.max(12, strokeWidth * 4);
-          fc.remove(shapeObj);
-          shapeObj = new FabricPath(makeArrowPath(startPt.x, startPt.y, p.x, p.y, headSize), { stroke: color, fill: 'transparent', strokeWidth, selectable: false, evented: false });
-          fc.add(shapeObj);
-        } else if (tool === 'diamond') {
-          // M-12: update polygon points in-place instead of remove/add
-          const w = Math.abs(p.x - startPt.x);
-          const h = Math.abs(p.y - startPt.y);
-          const x = Math.min(p.x, startPt.x);
-          const y = Math.min(p.y, startPt.y);
-          shapeObj.set({ points: diamondPoints(x, y, w, h) });
-          shapeObj.setDimensions();
-          shapeObj.setCoords();
-        } else if (tool === 'star') {
-          const w = Math.abs(p.x - startPt.x);
-          const h = Math.abs(p.y - startPt.y);
-          const cx = (p.x + startPt.x) / 2;
-          const cy = (p.y + startPt.y) / 2;
-          const outerR = Math.min(w, h) / 2;
-          shapeObj.set({ points: starPoints(cx, cy, outerR, outerR * 0.4) });
-          shapeObj.setDimensions();
-          shapeObj.setCoords();
-        } else if (tool === 'hexagon') {
-          const w = Math.abs(p.x - startPt.x);
-          const h = Math.abs(p.y - startPt.y);
-          const cx = (p.x + startPt.x) / 2;
-          const cy = (p.y + startPt.y) / 2;
-          shapeObj.set({ points: hexagonPoints(cx, cy, Math.min(w, h) / 2) });
-          shapeObj.setDimensions();
-          shapeObj.setCoords();
-        }
+        const drawState = shapeDrawRef.current;
+        if (!drawState.isDown || !drawState.shape || !drawState.startPt) return;
+        const point = getCanvasPoint(fc, e.e);
+        drawState.lastPt = point;
+        drawState.shape.set({ x2: point.x, y2: point.y });
         fc.requestRenderAll();
       };
 
       const onUp = () => {
-        if (!shapeObj) return;
-        const shape = shapeObj;
-        shapeObj = null;
-        startPt = null;
+        const { shape, canvas, startPt, lastPt } = shapeDrawRef.current;
+        if (!shape || canvas !== fc) return;
+        resetShapeDraw();
+
+        if (isShapeDragTooSmall('line', startPt, lastPt ?? startPt)) {
+          mutateProvisionalShape(() => {
+            fc.remove(shape);
+          });
+          fc.requestRenderAll();
+          return;
+        }
+
+        if (!shape.data) shape.data = {};
+        shape.data.drawingToolId = 'highlight';
         shape.set({ selectable: true, evented: true });
+        shape.setCoords();
+
+        if (!shouldSync) {
+          fc.requestRenderAll();
+          return;
+        }
+
+        const cid = 'stroke_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+        shape.data.strokeClientId = cid;
+        const lineJson = shape.toJSON(['data']);
+        syncRef.current?.sendStroke(classId, JSON.stringify(lineJson), cid);
+        broadcastStrokeAdded(lineJson);
+        saveHistory();
+        fc.requestRenderAll();
+      };
+
+      fc.on('mouse:down', onDown);
+      fc.on('mouse:move', onMove);
+      fc.on('mouse:up', onUp);
+      return () => {
+        const { isDown, shape, canvas } = shapeDrawRef.current;
+        if (isDown && shape && canvas === fc) {
+          mutateProvisionalShape(() => {
+            fc.remove(shape);
+          });
+          resetShapeDraw();
+          fc.requestRenderAll();
+        }
+        fc.off('mouse:down', onDown);
+        fc.off('mouse:move', onMove);
+        fc.off('mouse:up', onUp);
+      };
+    }
+
+    if (SHAPE_TOOLS.includes(tool)) {
+      resetShapeDraw();
+
+      const onDown = (e) => {
+        if (getCanvasTarget(fc, e)) return; // don't start on existing object
+        const p = getCanvasPoint(fc, e.e);
+        const shapeObj = createShapeObject(tool, p, color, strokeWidth);
+        if (!shapeObj) return;
+        shapeDrawRef.current = {
+          isDown: true,
+          shape: shapeObj,
+          startPt: { x: p.x, y: p.y },
+          lastPt: { x: p.x, y: p.y },
+          tool,
+          canvas: fc,
+        };
+        mutateProvisionalShape(() => {
+          fc.add(shapeObj);
+        });
+        fc.requestRenderAll();
+      };
+
+      const onMove = (e) => {
+        const drawState = shapeDrawRef.current;
+        if (!drawState.isDown || !drawState.shape || !drawState.startPt) return;
+        const p = getCanvasPoint(fc, e.e);
+        const { shape, startPt, tool: activeTool } = drawState;
+        drawState.lastPt = { x: p.x, y: p.y };
+        updateShapeFromDrag(shape, activeTool, startPt, drawState.lastPt, color, strokeWidth);
+        fc.requestRenderAll();
+      };
+
+      const onUp = () => {
+        const { shape, tool: activeTool, canvas, startPt, lastPt } = shapeDrawRef.current;
+        if (!shape || canvas !== fc) return;
+        resetShapeDraw();
+
+        if (isShapeDragTooSmall(activeTool, startPt, lastPt ?? startPt)) {
+          mutateProvisionalShape(() => {
+            fc.remove(shape);
+          });
+          fc.requestRenderAll();
+          return;
+        }
+
+        shape.set({ selectable: true, evented: true });
+        shape.setCoords();
+
+        if (!shouldSync) {
+          fc.requestRenderAll();
+          return;
+        }
+
         const cid = 'stroke_' + Date.now() + '_' + Math.random().toString(36).slice(2);
         if (!shape.data) shape.data = {};
         shape.data.strokeClientId = cid;
+  shape.data.shapeToolId = activeTool;
         const shapeJson = shape.toJSON(['data']);
         syncRef.current?.sendStroke(classId, JSON.stringify(shapeJson), cid);
         broadcastStrokeAdded(shapeJson);
+        saveHistory();
+        fc.requestRenderAll();
       };
 
       fc.on('mouse:down', onDown);
       fc.on('mouse:move', onMove);
       fc.on('mouse:up',   onUp);
       return () => {
+        const { isDown, shape, canvas } = shapeDrawRef.current;
+        if (isDown && shape && canvas === fc) {
+          mutateProvisionalShape(() => {
+            fc.remove(shape);
+          });
+          resetShapeDraw();
+          fc.requestRenderAll();
+        }
         fc.off('mouse:down', onDown);
         fc.off('mouse:move', onMove);
         fc.off('mouse:up',   onUp);
@@ -1497,15 +2191,16 @@ export default function LiveClassPage() {
 
     // Text tool: click to create editable text
     if (tool === 'text') {
+      if (!shouldSync) return;
       const onDown = (e) => {
         if (e.target) return; // Don't create on existing object
-        const p = fc.getPointer(e.e);
+        const p = getCanvasPoint(fc, e.e);
 
         // Use IText which is specifically designed for interactive text editing
         const text = new FabricIText('Type here...', {
           left: p.x,
           top: p.y,
-          fontFamily: textFont?.fontFamily || 'Inter, sans-serif',
+          fontFamily: textFont?.fontFamily || DEFAULT_TEXT_FONT.fontFamily,
           fontSize: textFont?.fontSize || 24,
           fontWeight: textFont?.fontWeight || 'normal',
           textDecoration: textFont?.textDecoration || '',
@@ -1567,7 +2262,7 @@ export default function LiveClassPage() {
         fc.off('mouse:down', onDown);
       };
     }
-  }, [tool, color, strokeWidth, role, textFont, classId, themePalette, broadcastStrokeAdded, broadcastStrokeDeleted]);
+  }, [tool, color, strokeWidth, role, textFont, eraserMode, highlighterMode, classId, themePalette, broadcastStrokeAdded, broadcastStrokeDeleted, saveHistory]);
 
   // ── Flowchart node placement & connector tool ─────────────────────────────
   useEffect(() => {
@@ -1578,7 +2273,7 @@ export default function LiveClassPage() {
     if (['fc-process', 'fc-decision', 'fc-terminal'].includes(tool)) {
       const onDown = (e) => {
         if (e.target) return; // don't place on existing object
-        const p = fc.getPointer(e.e);
+        const p = getCanvasPoint(fc, e.e);
         let node;
         if (tool === 'fc-process')  node = createProcessNode(p.x, p.y, 'Process', color);
         if (tool === 'fc-decision') node = createDecisionNode(p.x, p.y, 'Decision', color);
@@ -1681,7 +2376,7 @@ export default function LiveClassPage() {
       let startPt    = null;
 
       const onDown = (e) => {
-        const p = fc.getPointer(e.e);
+        const p = getCanvasPoint(fc, e.e);
         const { projX, projY, perpDist } = project(p.x, p.y);
         if (perpDist > SNAP_DIST) return;
         startPt = { x: projX, y: projY };
@@ -1697,7 +2392,7 @@ export default function LiveClassPage() {
 
       const onMove = (e) => {
         if (!activeLine || !startPt) return;
-        const p = fc.getPointer(e.e);
+        const p = getCanvasPoint(fc, e.e);
         const { projX, projY } = project(p.x, p.y);
         activeLine.set({ x2: projX, y2: projY });
         fc.requestRenderAll();
@@ -1749,10 +2444,10 @@ export default function LiveClassPage() {
   // ── Flowchart: double-click a node to edit its text label ─────────────────
   useEffect(() => {
     const fc = fabricRef.current;
-    if (!fc || role !== 'teacher') return;
+    if (!isCanvasReady || !fc || role !== 'teacher') return;
 
     const onDblClick = (e) => {
-      const target = e.target;
+      const target = getCanvasTarget(fc, e, { allowFindTarget: true });
       const node = target && isFlowchartNode(target) ? target
                  : target?.group && isFlowchartNode(target.group) ? target.group
                  : null;
@@ -1770,7 +2465,7 @@ export default function LiveClassPage() {
         left: center.x,
         top: center.y,
         fontSize: textObj.fontSize || 14,
-        fontFamily: textObj.fontFamily || 'Inter, sans-serif',
+        fontFamily: textObj.fontFamily || DEFAULT_TEXT_FONT.fontFamily,
         fill: textObj.fill || themePalette.ink,
         textAlign: 'center',
         originX: 'center',
@@ -1811,7 +2506,160 @@ export default function LiveClassPage() {
 
     fc.on('mouse:dblclick', onDblClick);
     return () => fc.off('mouse:dblclick', onDblClick);
-  }, [role, classId, saveHistory, themePalette, broadcastStrokeAdded]);
+  }, [role, classId, saveHistory, themePalette, broadcastStrokeAdded, isCanvasReady]);
+
+  // ── Shapes: double-click to add or edit a centered label ──────────────────
+  useEffect(() => {
+    const fc = fabricRef.current;
+    if (!isCanvasReady || !fc || role !== 'teacher') return;
+    const upperCanvas = fc.upperCanvasEl;
+    if (!upperCanvas) return;
+
+    const onDblClick = (nativeEvent) => {
+      const target = getCanvasTarget(fc, nativeEvent, { allowFindTarget: true });
+      const shape = isEditableShapeObject(target) ? target : null;
+      if (!shape) return;
+
+      if (!shape.data) shape.data = {};
+      if (!shape.data.strokeClientId) {
+        shape.data.strokeClientId = 'shape_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+      }
+      if (!shape.data.shapeToolId) {
+        shape.data.shapeToolId = inferShapeToolId(shape) || 'shape';
+      }
+
+      const existingLabel = getLinkedShapeLabel(fc, shape);
+      const tempText = new FabricIText(existingLabel?.text || '', {
+        fontSize: existingLabel?.fontSize ?? textFont?.fontSize ?? 18,
+        fontFamily: existingLabel?.fontFamily || textFont?.fontFamily || DEFAULT_TEXT_FONT.fontFamily,
+        fill: existingLabel?.fill || DEFAULT_CANVAS_INK,
+        fontWeight: existingLabel?.fontWeight || textFont?.fontWeight || 'normal',
+        fontStyle: existingLabel?.fontStyle || textFont?.fontStyle || 'normal',
+        textDecoration: existingLabel?.textDecoration || textFont?.textDecoration || '',
+        textAlign: 'center',
+        originX: 'center',
+        originY: 'center',
+        editable: true,
+      });
+      positionShapeLabel(shape, tempText);
+
+      skipHistory.current = true;
+      if (existingLabel) existingLabel.set('visible', false);
+      fc.add(tempText);
+      skipHistory.current = false;
+      fc.setActiveObject(tempText);
+      tempText.enterEditing();
+      tempText.selectAll();
+      fc.requestRenderAll();
+
+      const onExited = () => {
+        tempText.off('editing:exited', onExited);
+        const nextText = tempText.text?.trim() || '';
+
+        skipHistory.current = true;
+        fc.remove(tempText);
+        skipHistory.current = false;
+
+        if (!nextText) {
+          if (existingLabel) {
+            const labelCid = existingLabel.data?.strokeClientId;
+            skipHistory.current = true;
+            fc.remove(existingLabel);
+            skipHistory.current = false;
+            if (labelCid) {
+              syncRef.current?.sendStrokeDelete(labelCid);
+              broadcastStrokeDeleted(labelCid);
+            }
+            fc.requestRenderAll();
+            saveHistory();
+          }
+          return;
+        }
+
+        let label = existingLabel;
+        let isNewLabel = false;
+        if (!label) {
+          const labelCid = 'label_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+          label = createShapeLabel(shape, nextText, {
+            fontSize: tempText.fontSize,
+            fontFamily: tempText.fontFamily,
+            fill: tempText.fill || DEFAULT_CANVAS_INK,
+            fontWeight: tempText.fontWeight,
+            fontStyle: tempText.fontStyle,
+            textDecoration: tempText.textDecoration,
+            data: {
+              strokeClientId: labelCid,
+              parentShapeId: shape.data?.strokeClientId,
+              objectRole: 'shape-label',
+            },
+          });
+          skipHistory.current = true;
+          fc.add(label);
+          skipHistory.current = false;
+          isNewLabel = true;
+        } else {
+          label.set({
+            text: nextText,
+            visible: true,
+            fontSize: tempText.fontSize,
+            fontFamily: tempText.fontFamily,
+            fill: tempText.fill,
+            fontWeight: tempText.fontWeight,
+            fontStyle: tempText.fontStyle,
+            textDecoration: tempText.textDecoration,
+          });
+          positionShapeLabel(shape, label);
+        }
+
+        if (isNewLabel) {
+          const labelJson = label.toJSON(['data']);
+          syncRef.current?.sendStroke(classId, JSON.stringify(labelJson), label.data.strokeClientId);
+          broadcastStrokeAdded(labelJson);
+        } else {
+          const labelJson = label.toJSON(['data']);
+          syncRef.current?.sendStrokeUpsert(classId, JSON.stringify(labelJson), label.data.strokeClientId);
+          broadcastStrokeAdded(labelJson);
+        }
+
+        fc.requestRenderAll();
+        saveHistory();
+      };
+
+      tempText.on('editing:exited', onExited);
+    };
+
+    upperCanvas.addEventListener('dblclick', onDblClick);
+    return () => upperCanvas.removeEventListener('dblclick', onDblClick);
+  }, [role, classId, textFont, themePalette, saveHistory, broadcastStrokeAdded, broadcastStrokeDeleted, isCanvasReady]);
+
+  // ── Keep shape labels centered while shapes move or resize ────────────────
+  useEffect(() => {
+    const fc = fabricRef.current;
+    if (!isCanvasReady || !fc || role !== 'teacher') return;
+
+    const updateShapeLabel = (shape, { syncRemote = false } = {}) => {
+      if (!isEditableShapeObject(shape)) return;
+      const label = getLinkedShapeLabel(fc, shape);
+      if (!label) return;
+      positionShapeLabel(shape, label);
+      if (syncRemote) {
+        const labelJson = label.toJSON(['data']);
+        syncRef.current?.sendStrokeUpsert(classId, JSON.stringify(labelJson), label.data.strokeClientId);
+        broadcastStrokeAdded(labelJson);
+      }
+      fc.requestRenderAll();
+    };
+
+    const onMoving = (e) => updateShapeLabel(e.target);
+    const onModified = (e) => updateShapeLabel(e.target, { syncRemote: true });
+
+    fc.on('object:moving', onMoving);
+    fc.on('object:modified', onModified);
+    return () => {
+      fc.off('object:moving', onMoving);
+      fc.off('object:modified', onModified);
+    };
+  }, [role, classId, broadcastStrokeAdded, isCanvasReady]);
 
   // ── Undo / Redo ─────────────────────────────────────────────────────────────
 
@@ -1876,22 +2724,100 @@ export default function LiveClassPage() {
     saveHistory();
   }
 
-  // Keyboard shortcuts: Ctrl/Cmd+Z = undo, Ctrl/Cmd+Y / Ctrl/Cmd+Shift+Z = redo
+  const handleDeleteSelectedObjects = useCallback(() => {
+    const fc = role === 'teacher' ? fabricRef.current : myFabricRef.current;
+    if (!fc) return false;
+
+    const activeObject = fc.getActiveObject?.();
+    if (!activeObject || activeObject.isEditing) return false;
+
+    const selectedObjects = activeObject.type === 'activeSelection' && typeof activeObject.getObjects === 'function'
+      ? activeObject.getObjects()
+      : [activeObject];
+
+    const objectsToRemove = new Set();
+    const strokeIdsToDelete = new Set();
+
+    selectedObjects.forEach((obj) => {
+      if (!obj) return;
+      objectsToRemove.add(obj);
+
+      if (isEditableShapeObject(obj)) {
+        const linkedLabel = getLinkedShapeLabel(fc, obj);
+        if (linkedLabel) objectsToRemove.add(linkedLabel);
+      }
+    });
+
+    if (!objectsToRemove.size) return false;
+
+    objectsToRemove.forEach((obj) => {
+      const cid = obj?.data?.strokeClientId;
+      if (cid) strokeIdsToDelete.add(cid);
+    });
+
+    fc.discardActiveObject();
+    objectsToRemove.forEach((obj) => {
+      fc.remove(obj);
+    });
+    fc.requestRenderAll();
+
+    if (role === 'teacher') {
+      strokeIdsToDelete.forEach((cid) => {
+        syncRef.current?.sendStrokeDelete(cid);
+        broadcastStrokeDeleted(cid);
+      });
+      saveHistory();
+    }
+
+    return true;
+  }, [role, broadcastStrokeDeleted, saveHistory]);
+
+  // Keyboard shortcuts: tool switching, Delete/Backspace for selected objects, Ctrl/Cmd+Z/Y for history
   useEffect(() => {
     const onKey = (e) => {
-      const tag = document.activeElement?.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA' || document.activeElement?.isContentEditable) return;
-      if ((e.metaKey || e.ctrlKey) && !e.shiftKey && e.key === 'z') {
+      const activeElement = document.activeElement;
+      const tag = activeElement?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || activeElement?.isContentEditable) return;
+      if (fabricRef.current?.getActiveObject?.()?.isEditing || myFabricRef.current?.getActiveObject?.()?.isEditing) return;
+
+      const key = e.key.toLowerCase();
+
+      if ((e.metaKey || e.ctrlKey) && !e.shiftKey && key === 'z') {
         e.preventDefault();
         handleUndo();
-      } else if ((e.metaKey || e.ctrlKey) && (e.key === 'y' || (e.shiftKey && e.key === 'z'))) {
+        return;
+      }
+
+      if ((e.metaKey || e.ctrlKey) && (key === 'y' || (e.shiftKey && key === 'z'))) {
         e.preventDefault();
         handleRedo();
+        return;
+      }
+
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+      if (e.key === 'Backspace' || e.key === 'Delete') {
+        if (handleDeleteSelectedObjects()) {
+          e.preventDefault();
+        }
+        return;
+      }
+
+      const nextTool = TOOL_SHORTCUT_KEY_MAP[key];
+      if (!nextTool) return;
+      const isLetterShortcut = /^[a-z]$/.test(key);
+      if (isLetterShortcut && !e.shiftKey) return;
+      if (!isTeacher && TEACHER_ONLY_SHORTCUT_TOOLS.has(nextTool)) return;
+
+      e.preventDefault();
+      setTool(nextTool);
+      if (nextTool === 'spotlight') {
+        setSpotlightEnabled(true);
       }
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
-  }, [handleUndo, handleRedo]);
+  }, [handleDeleteSelectedObjects, handleRedo, handleUndo, isTeacher]);
 
   // ── Import: place a single image ──────────────────────────────────────────
   function handlePlaceImage(dataUrl) {
@@ -2017,6 +2943,8 @@ export default function LiveClassPage() {
 
   const isPresenting = presentState?.status === 'active';
   const isMyPresentation = isPresenting && presentState?.presenterIdentity === getCurrentUserId();
+  const isStudentMobileMode = !isTeacher && isStudentCompactLayout;
+  const showStudentToolbar = isTeacher || !isStudentMobileMode || studentMobileView === 'canvas';
 
   // ── Stencil handlers ──────────────────────────────────────────────────────
   /** Place an SVG stencil on the canvas (click from palette or drag-drop) */
@@ -2172,11 +3100,58 @@ export default function LiveClassPage() {
     return <div className="lc-loading">Joining class…</div>;
   }
 
-  const isTeacher = role === 'teacher';
   const bgStyle = BG_STYLE[backgroundType] ?? BG_STYLE.white;
 
+  function renderTeacherToolbarPanel(isOpen, anchor, onClose, content) {
+    if (!isTeacher || !isOpen || !anchor) return null;
+
+    if (isCompactToolbarPanelLayout) {
+      return (
+        <MobileSheetPortal
+          backdropClassName="lc-dropdown-panel-shell lc-dropdown-panel-shell--mobile"
+          sheetClassName="lc-dropdown-panel lc-dropdown-panel--mobile"
+          onClose={onClose}
+          ariaLabel="Live Class panel"
+        >
+          {content}
+        </MobileSheetPortal>
+      );
+    }
+
+    return createPortal(
+      <div className="lc-dropdown-panel" style={{ top: anchor.bottom + 6, left: anchor.left }}>
+        {content}
+      </div>,
+      document.body
+    );
+  }
+
+  function renderTeacherTopbarPanel(isOpen, anchor, onClose, content) {
+    if (!isTeacher || !isOpen || !anchor) return null;
+
+    if (isCompactToolbarPanelLayout) {
+      return (
+        <MobileSheetPortal
+          backdropClassName="lc-dropdown-panel-shell--mobile"
+          sheetClassName="lc-dropdown-panel lc-dropdown-panel--mobile"
+          onClose={onClose}
+          ariaLabel="Live Class panel"
+        >
+          {content}
+        </MobileSheetPortal>
+      );
+    }
+
+    return createPortal(
+      <div className="lc-dropdown-panel" style={{ top: anchor.bottom + 6, left: anchor.left }}>
+        {content}
+      </div>,
+      document.body
+    );
+  }
+
   return (
-    <div className={`lc-page animate-fade-in ${isTeacher ? 'lc-page--teacher' : 'lc-page--student'}`}>
+    <div className={`lc-page animate-fade-in ${isTeacher ? 'lc-page--teacher' : 'lc-page--student'}${isStudentMobileMode ? ' lc-page--student-mobile' : ''}${isStudentMobileMode && studentMobileView === 'canvas' ? ' lc-page--student-mobile-canvas' : ''}${isStudentMobileMode && studentMobileView === 'board' ? ' lc-page--student-mobile-board' : ''}`}>
       {/* ── Top bar ──────────────────────────────────────────────── */}
       <div className="lc-topbar card">
         <div className="lc-topbar-left">
@@ -2271,7 +3246,7 @@ export default function LiveClassPage() {
             </button>
           )}
           {/* My Notes button — student only: opens in a new tab */}
-          {!isTeacher && joinTempId && (
+          {!isTeacher && joinTempId && !isStudentMobileMode && (
             <button
               className="btn btn-sm lc-share-btn"
               onClick={() => window.open(`/my-notes/${classId}/${joinTempId}`, '_blank', 'noopener,noreferrer')}
@@ -2326,14 +3301,38 @@ export default function LiveClassPage() {
         </div>
       </div>
 
+      {isStudentMobileMode && (
+        <div className="lc-student-mobile-switcher" role="tablist" aria-label="Student mobile view switcher">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={studentMobileView === 'board'}
+            className={`lc-student-mobile-switcher-btn ${studentMobileView === 'board' ? 'lc-student-mobile-switcher-btn--active' : ''}`}
+            onClick={() => setStudentMobileView('board')}
+          >
+            Teacher Board
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={studentMobileView === 'canvas'}
+            className={`lc-student-mobile-switcher-btn ${studentMobileView === 'canvas' ? 'lc-student-mobile-switcher-btn--active' : ''}`}
+            onClick={() => setStudentMobileView('canvas')}
+          >
+            My Canvas
+          </button>
+        </div>
+      )}
+
       {/* ── Toolbar ──────────────────────────────────────────────── */}
-      <LiveClassToolbar
+      {showStudentToolbar && <LiveClassToolbar
         tool={tool}
         color={color}
         strokeWidth={strokeWidth}
+        eraserMode={eraserMode}
+        highlighterMode={highlighterMode}
         backgroundType={backgroundType}
         isTeacher={isTeacher}
-        handCount={handRaises.length}
         textFont={textFont}
         laserMode={laserMode}
         onToolChange={setTool}
@@ -2346,6 +3345,8 @@ export default function LiveClassPage() {
 
         }}
         onFontChange={setTextFont}
+        onEraserModeChange={setEraserMode}
+        onHighlighterModeChange={setHighlighterMode}
         onLaserModeChange={setLaserMode}
         onStampSelect={handleStampSelect}
         onOpenImport={() => setShowImportDialog(true)}
@@ -2362,8 +3363,6 @@ export default function LiveClassPage() {
           const fc = fabricRef.current;
           if (fc) { fc.setZoom(Math.max(fc.getZoom() / 1.2, 0.2)); fc.requestRenderAll(); }
         }}
-        onToggleStudentGrid={() => setShowStudentGrid(v => !v)}
-        onToggleHandPanel={() => setShowHandPanel(v => !v)}
         onRaiseHand={() => syncRef.current?.raiseHand(classId)}
         onTogglePollPanel={(rect) => {
           if (showPollPanel) { setShowPollPanel(false); setPollAnchor(null); }
@@ -2386,7 +3385,7 @@ export default function LiveClassPage() {
           if (showGraphWidget) { setShowGraphWidget(false); setGraphAnchor(null); }
           else { setGraphAnchor(rect); setShowGraphWidget(true); }
         }}
-      />
+      />}
 
       {/* ── Main content ─────────────────────────────────────────── */}
       <div className="lc-body">
@@ -2427,7 +3426,7 @@ export default function LiveClassPage() {
             onDragOver={handleCanvasDragOver}
           >
             <ErrorBoundary name="LiveCanvas" inline resetKeys={[classId]}>
-              <canvas ref={isTeacher ? teacherCanvasRefCallback : myCanvasRef} />
+              <canvas ref={isTeacher ? teacherCanvasRefCallback : studentCanvasRefCallback} />
               {isTeacher && <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />}
               {isTeacher && <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={spotlightEnabled} />}
               {isTeacher && tool === 'ruler' && (
@@ -2485,6 +3484,41 @@ export default function LiveClassPage() {
         })()}
       </div>
 
+      {!isTeacher && isStudentMobileMode && (
+        <div className="lc-student-mobile-actions" aria-label="Student quick actions">
+          <button
+            type="button"
+            className="lc-student-mobile-fab lc-student-mobile-fab--secondary"
+            onClick={() => syncRef.current?.raiseHand(classId)}
+            title="Raise hand"
+            aria-label="Raise hand"
+          >
+            <Hand size={18} />
+            <span>Raise Hand</span>
+          </button>
+          {joinTempId && (
+            <button
+              type="button"
+              className="lc-student-mobile-fab"
+              onClick={() => setShowStudentNotes(true)}
+              title="Open my notes"
+              aria-label="Open my notes"
+            >
+              <NoteIcon size={18} />
+              <span>My Notes</span>
+            </button>
+          )}
+        </div>
+      )}
+
+      {!isTeacher && showStudentNotes && joinTempId && (
+        <StudentNotePanel
+          sessionId={classId}
+          tempId={joinTempId}
+          onClose={() => setShowStudentNotes(false)}
+        />
+      )}
+
       {/* ── Import Media Dialog ──────────────────────────────────── */}
       {showImportDialog && (
         <Suspense fallback={null}>
@@ -2497,30 +3531,39 @@ export default function LiveClassPage() {
       )}
 
       {/* ── Topbar dropdown panels (portal) ──────────────────────── */}
-      {isTeacher && showHandPanel && handsAnchor && createPortal(
-        <div className="lc-dropdown-panel" style={{ top: handsAnchor.bottom + 6, left: handsAnchor.left }}>
+      {renderTeacherTopbarPanel(
+        showHandPanel,
+        handsAnchor,
+        () => { setShowHandPanel(false); setHandsAnchor(null); },
+        (
           <HandRaisePanel
             raises={handRaises}
             participants={participants}
             onAcknowledge={(raiseId) => syncRef.current?.acknowledgeRaise(raiseId)}
+            onClose={() => { setShowHandPanel(false); setHandsAnchor(null); }}
           />
-        </div>,
-        document.body
+        )
       )}
-      {isTeacher && showStudentGrid && studentsAnchor && createPortal(
+      {renderTeacherTopbarPanel(
+        showStudentGrid,
+        studentsAnchor,
+        () => { setShowStudentGrid(false); setStudentsAnchor(null); },
         <StudentAdmissionPanel
           anchor={studentsAnchor}
           sessionId={classId}
           autoAccept={autoAccept}
+          presentation={isCompactToolbarPanelLayout ? 'sheet' : 'anchored'}
           onClose={() => { setShowStudentGrid(false); setStudentsAnchor(null); }}
           onAutoAcceptChange={setAutoAccept}
-        />,
-        document.body
+        />
       )}
 
       {/* ── Toolbar dropdown panels (portal) ─────────────────────── */}
-      {isTeacher && showPollPanel && pollAnchor && createPortal(
-        <div className="lc-dropdown-panel" style={{ top: pollAnchor.bottom + 6, left: pollAnchor.left }}>
+      {renderTeacherToolbarPanel(
+        showPollPanel,
+        pollAnchor,
+        () => { setShowPollPanel(false); setPollAnchor(null); },
+        (
           <LivePollPanel
             polls={polls}
             studentCount={participants.length}
@@ -2528,29 +3571,35 @@ export default function LiveClassPage() {
             onClosePoll={handleClosePoll}
             onClose={() => { setShowPollPanel(false); setPollAnchor(null); }}
           />
-        </div>,
-        document.body
+        )
       )}
-      {isTeacher && showStencilPanel && stencilAnchor && createPortal(
-        <div className="lc-dropdown-panel" style={{ top: stencilAnchor.bottom + 6, left: stencilAnchor.left }}>
+      {renderTeacherToolbarPanel(
+        showStencilPanel,
+        stencilAnchor,
+        () => { setShowStencilPanel(false); setStencilAnchor(null); },
+        (
           <StencilPalette
             onDropStencil={(stencil) => handleDropStencil(stencil)}
             onClose={() => { setShowStencilPanel(false); setStencilAnchor(null); }}
           />
-        </div>,
-        document.body
+        )
       )}
-      {isTeacher && showTemplatePicker && templateAnchor && createPortal(
-        <div className="lc-dropdown-panel" style={{ top: templateAnchor.bottom + 6, left: templateAnchor.left }}>
+      {renderTeacherToolbarPanel(
+        showTemplatePicker,
+        templateAnchor,
+        () => { setShowTemplatePicker(false); setTemplateAnchor(null); },
+        (
           <TemplatePicker
             onLoadTemplate={handleLoadTemplate}
             onClose={() => { setShowTemplatePicker(false); setTemplateAnchor(null); }}
           />
-        </div>,
-        document.body
+        )
       )}
-      {isTeacher && showGraphWidget && graphAnchor && createPortal(
-        <div className="lc-dropdown-panel" style={{ top: graphAnchor.bottom + 6, left: graphAnchor.left }}>
+      {renderTeacherToolbarPanel(
+        showGraphWidget,
+        graphAnchor,
+        () => { setShowGraphWidget(false); setGraphAnchor(null); },
+        (
           <GraphWidget
             onStampToCanvas={(dataUrl) => {
               handlePlaceImage(dataUrl);
@@ -2559,8 +3608,7 @@ export default function LiveClassPage() {
             }}
             onClose={() => { setShowGraphWidget(false); setGraphAnchor(null); }}
           />
-        </div>,
-        document.body
+        )
       )}
 
 

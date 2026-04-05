@@ -11,6 +11,7 @@ import { loadPdfJs } from '../services/pdf/loadPdfJs.js';
 import AnnotationToolbar from '../components/annotation/AnnotationToolbar';
 import ThumbnailSidebar from '../components/annotation/ThumbnailSidebar';
 import AnnotationCanvas from '../components/annotation/AnnotationCanvas';
+import { DEFAULT_TEXT_FONT } from '../components/liveclass/fontDefaults.js';
 import './Pages.css';
 
 const PDF_SCALE = 1.5;
@@ -30,7 +31,12 @@ export default function AnnotatePage() {
 
     // Tools
     const [activeTool, setActiveTool] = useState('pen');
-    const [toolOptions, setToolOptions] = useState({ color: '#ef4444', width: 4 });
+    const [toolOptions, setToolOptions] = useState({
+        color: '#ef4444',
+        width: 4,
+        ...DEFAULT_TEXT_FONT,
+        fill: '#ef4444',
+    });
 
     // Persistence
     const [dirty, setDirty] = useState(false);

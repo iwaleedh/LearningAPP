@@ -12,6 +12,7 @@ export default function StudentAdmissionPanel({
   autoAccept,
   onClose,
   onAutoAcceptChange,
+  presentation = 'anchored',
 }) {
   const [tab, setTab] = useState('waiting'); // 'waiting' | 'inclass'
   const [requests, setRequests] = useState([]);
@@ -32,19 +33,51 @@ export default function StudentAdmissionPanel({
     const handler = (e) => {
       if (panelRef.current && !panelRef.current.contains(e.target)) onClose();
     };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
+    document.addEventListener('pointerdown', handler);
+    return () => document.removeEventListener('pointerdown', handler);
   }, [onClose]);
 
-  if (!anchor) return null;
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        onClose?.();
+      }
+    };
 
-  const style = {
-    position: 'fixed',
-    top: anchor.bottom + 8,
-    right: window.innerWidth - anchor.right,
-    width: 320,
-    zIndex: 9999,
-  };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
+
+  if (presentation !== 'sheet' && !anchor) return null;
+
+  const isCompactViewport = typeof window !== 'undefined' && window.innerWidth <= 480;
+
+  const style = presentation === 'sheet'
+    ? {
+        position: 'relative',
+        top: 'auto',
+        right: 'auto',
+        left: 'auto',
+        width: '100%',
+        maxWidth: 'none',
+        zIndex: 'auto',
+      }
+    : isCompactViewport
+      ? {
+          position: 'fixed',
+          top: Math.max(12, anchor.bottom + 8),
+          left: 12,
+          right: 12,
+          width: 'auto',
+          zIndex: 9999,
+        }
+      : {
+          position: 'fixed',
+          top: anchor.bottom + 8,
+          right: Math.max(12, window.innerWidth - anchor.right),
+          width: 320,
+          zIndex: 9999,
+        };
 
   const pending = requests.filter(r => r.status === 'pending');
   const accepted = requests.filter(r => r.status === 'accepted');
@@ -74,23 +107,45 @@ export default function StudentAdmissionPanel({
   };
 
   return (
-    <div ref={panelRef} style={style} className="sap-panel lc-dropdown-panel card animate-fade-in">
+    <div
+      ref={panelRef}
+      style={style}
+      className={`sap-panel lc-dropdown-panel card animate-fade-in ${presentation === 'sheet' ? 'sap-panel--sheet' : ''}`}
+      role="dialog"
+      aria-modal={presentation === 'sheet'}
+      aria-label="Student admission panel"
+    >
       {/* Header */}
       <div className="sap-header">
         <span className="sap-title">Students</span>
-        <button className="sap-auto-toggle" onClick={handleToggleAutoAccept} title="Auto-admit students" type="button">
+        <button
+          className="sap-auto-toggle"
+          onClick={handleToggleAutoAccept}
+          title="Auto-admit students"
+          type="button"
+          aria-label={autoAccept ? 'Disable auto-admit students' : 'Enable auto-admit students'}
+          aria-pressed={autoAccept}
+        >
           {autoAccept
             ? <ToggleRight size={20} className="sap-toggle-icon sap-toggle-icon--on" />
             : <ToggleLeft size={20} className="sap-toggle-icon" />}
           <span className="sap-toggle-label">Auto-admit</span>
         </button>
-        <button className="btn btn-icon btn-ghost btn-sm" onClick={onClose}><X size={14} /></button>
+        <button
+          className="btn btn-icon btn-ghost btn-sm"
+          type="button"
+          onClick={onClose}
+          aria-label="Close student admission panel"
+        ><X size={14} /></button>
       </div>
 
       {/* Tabs */}
-      <div className="sap-tabs">
+      <div className="sap-tabs" role="tablist" aria-label="Student admission tabs">
         <button
           className={`sap-tab ${tab === 'waiting' ? 'sap-tab--active' : ''}`}
+          type="button"
+          role="tab"
+          aria-selected={tab === 'waiting'}
           onClick={() => setTab('waiting')}
         >
           <Clock size={13} />
@@ -98,6 +153,9 @@ export default function StudentAdmissionPanel({
         </button>
         <button
           className={`sap-tab ${tab === 'inclass' ? 'sap-tab--active' : ''}`}
+          type="button"
+          role="tab"
+          aria-selected={tab === 'inclass'}
           onClick={() => setTab('inclass')}
         >
           <UserCheck size={13} />
@@ -116,15 +174,19 @@ export default function StudentAdmissionPanel({
                   <div className="sap-actions">
                     <button
                       className="btn btn-sm btn-primary sap-admit-btn"
+                      type="button"
                       onClick={() => handleApprove(req._id)}
                       disabled={loadingIds.has(req._id)}
                       title="Admit"
+                      aria-label={`Admit ${req.studentName}`}
                     ><Check size={12} /> Admit</button>
                     <button
                       className="btn btn-sm btn-ghost sap-reject-btn"
+                      type="button"
                       onClick={() => handleReject(req._id)}
                       disabled={loadingIds.has(req._id)}
                       title="Decline"
+                      aria-label={`Decline ${req.studentName}`}
                     ><X size={12} /></button>
                   </div>
                 </div>
@@ -138,8 +200,10 @@ export default function StudentAdmissionPanel({
                   <span className="sap-name">{req.studentName}</span>
                   <button
                     className="btn btn-sm btn-ghost"
+                    type="button"
                     onClick={() => window.open(`/live-notes/${sessionId}/${req.tempId}`, '_blank')}
                     title="View student notes"
+                    aria-label={`Open notes for ${req.studentName}`}
                   ><Eye size={12} /> Notes</button>
                 </div>
               ))

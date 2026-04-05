@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 import { updateStudentNote, getStudentNote } from '../../convex-client.js';
+import MobileSheetPortal from './MobileSheetPortal.jsx';
+import useCompactLiveSheet from '../../hooks/useCompactLiveSheet.js';
 
 /**
  * StudentNotePanel — slide-in right panel for students to jot personal notes
  * during a live class. Auto-saves to Convex with 500 ms debounce.
  */
 export default function StudentNotePanel({ sessionId, tempId, onClose }) {
+  const isCompactSheet = useCompactLiveSheet();
   const [content, setContent] = useState('');
   const [saving, setSaving] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -39,6 +42,33 @@ export default function StudentNotePanel({ sessionId, tempId, onClose }) {
       setSaving(false);
     }, 500);
   };
+
+  if (isCompactSheet) {
+    return (
+      <MobileSheetPortal
+        backdropClassName="lc-dropdown-panel-shell--mobile"
+        sheetClassName="snp-panel card animate-fade-in"
+        ariaLabel="My notes"
+        onClose={onClose}
+      >
+        <div className="snp-header">
+          <span className="snp-title">My Notes</span>
+          <span className="snp-save-status">{!loaded ? 'Loading…' : saving ? 'Saving…' : 'Saved'}</span>
+          <button className="btn btn-icon btn-ghost btn-sm" onClick={onClose} title="Close notes">
+            <X size={14} />
+          </button>
+        </div>
+        <textarea
+          className="snp-textarea"
+          placeholder="Type your notes here… they are saved automatically."
+          value={content}
+          onChange={handleChange}
+          spellCheck={true}
+          aria-label="Personal notes"
+        />
+      </MobileSheetPortal>
+    );
+  }
 
   return (
     <div className="snp-panel card animate-fade-in">
