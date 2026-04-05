@@ -140,6 +140,50 @@ test.describe('NotePage mobile QA', () => {
     await expect(page.getByRole('button', { name: 'Enter fullscreen reading mode' })).toBeVisible();
   });
 
+  test('fullscreen reading mode promotes the note surface out of the boxed page shell', async ({ page }) => {
+    await page.getByRole('button', { name: 'Enter fullscreen reading mode' }).click();
+
+    await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+
+    const fullscreenLayout = await page.evaluate(() => {
+      const mainContent = document.getElementById('main-content');
+      const noteBody = document.querySelector('.note-body');
+      const scrollArea = document.querySelector('.note-scroll-area');
+
+      if (!(mainContent instanceof HTMLElement) || !(noteBody instanceof HTMLElement) || !(scrollArea instanceof HTMLElement)) {
+        return null;
+      }
+
+      const mainStyles = window.getComputedStyle(mainContent);
+      const bodyStyles = window.getComputedStyle(noteBody);
+      const scrollStyles = window.getComputedStyle(scrollArea);
+      const scrollRect = scrollArea.getBoundingClientRect();
+
+      return {
+        pageShellFullscreen: mainContent.classList.contains('page-content--note-fullscreen'),
+        pagePaddingTop: mainStyles.paddingTop,
+        pagePaddingLeft: mainStyles.paddingLeft,
+        noteBodyMarginTop: bodyStyles.marginTop,
+        noteBodyMarginLeft: bodyStyles.marginLeft,
+        scrollBorderWidth: scrollStyles.borderTopWidth,
+        scrollRadius: scrollStyles.borderTopLeftRadius,
+        scrollLeft: Math.round(scrollRect.left),
+        scrollRightGap: Math.round(window.innerWidth - scrollRect.right),
+      };
+    });
+
+    expect(fullscreenLayout).not.toBeNull();
+    expect(fullscreenLayout.pageShellFullscreen).toBe(true);
+    expect(fullscreenLayout.pagePaddingTop).toBe('0px');
+    expect(fullscreenLayout.pagePaddingLeft).toBe('0px');
+    expect(fullscreenLayout.noteBodyMarginTop).toBe('0px');
+    expect(fullscreenLayout.noteBodyMarginLeft).toBe('0px');
+    expect(fullscreenLayout.scrollBorderWidth).toBe('0px');
+    expect(fullscreenLayout.scrollRadius).toBe('0px');
+    expect(Math.abs(fullscreenLayout.scrollLeft)).toBeLessThanOrEqual(1);
+    expect(Math.abs(fullscreenLayout.scrollRightGap)).toBeLessThanOrEqual(1);
+  });
+
   test('fullscreen toolbar matches the compact mobile visual baseline', async ({ page }) => {
     await page.getByRole('button', { name: 'Enter fullscreen reading mode' }).click();
 

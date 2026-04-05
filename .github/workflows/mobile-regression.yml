@@ -1,13 +1,12 @@
 name: Mobile Regression
-
-on:
-  pull_request:
+"on":
+  pull_request: {}
   push:
     branches:
       - master
 
 concurrency:
-  group: mobile-regression-${{ github.workflow }}-${{ github.ref }}
+  group: "mobile-regression-${{ github.workflow }}-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:

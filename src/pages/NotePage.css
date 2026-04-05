@@ -10,6 +10,12 @@
 
 .note-page--fullscreen {
     height: calc(100dvh - var(--header-height));
+    width: 100%;
+}
+
+.page-content.page-content--note-fullscreen {
+    padding: 0;
+    max-width: 100%;
 }
 
 .note-page--all-subjects {
@@ -370,7 +376,7 @@
 }
 
 .note-body--fullscreen {
-    margin-top: var(--space-2);
+    margin-top: 0;
 }
 
 /* ── Table of Contents Sidebar ───────────────────────────────────────────── */
@@ -457,6 +463,8 @@
 
 .note-scroll-area--fullscreen {
     box-shadow: none;
+    border: none;
+    border-radius: 0;
 }
 
 .note-scroll-area,
@@ -984,8 +992,8 @@
 
     .note-page--fullscreen .note-toolbar--overlay {
         position: fixed;
-        left: var(--space-2);
-        right: var(--space-2);
+        left: max(var(--space-2), env(safe-area-inset-left));
+        right: max(var(--space-2), env(safe-area-inset-right));
         top: calc(var(--header-height) + max(var(--space-2), env(safe-area-inset-top)));
         margin: 0;
         padding: var(--space-2);
@@ -1059,12 +1067,13 @@
     }
 
     .note-page--fullscreen .note-body {
-        margin: var(--space-2);
+        margin: 0;
         padding-top: calc(var(--touch-min) * 2 + var(--space-5));
+        padding-bottom: env(safe-area-inset-bottom);
     }
 
     .note-page--fullscreen .note-scroll-area {
-        border-radius: 14px;
+        border-radius: 0;
     }
 
     .note-view-toggle .btn {

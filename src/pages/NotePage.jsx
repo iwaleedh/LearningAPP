@@ -129,6 +129,7 @@ function useBodyScrollLock(active) {
 }
 
 const NOTE_FULLSCREEN_STORAGE_KEY = 'LT_NOTE_FULLSCREEN';
+const PAGE_CONTENT_FULLSCREEN_CLASS = 'page-content--note-fullscreen';
 
 function readFullscreenPreference() {
     if (typeof window === 'undefined') return false;
@@ -702,6 +703,19 @@ export default function NotePage() {
     useEffect(() => {
         writeFullscreenPreference(fullscreenActive);
     }, [fullscreenActive]);
+
+    useEffect(() => {
+        if (typeof document === 'undefined') return undefined;
+
+        const mainContent = document.getElementById('main-content');
+        if (!mainContent) return undefined;
+
+        mainContent.classList.toggle(PAGE_CONTENT_FULLSCREEN_CLASS, mobileFullscreenActive);
+
+        return () => {
+            mainContent.classList.remove(PAGE_CONTENT_FULLSCREEN_CLASS);
+        };
+    }, [mobileFullscreenActive]);
 
     useEffect(() => {
         const frameId = window.requestAnimationFrame(() => {
