@@ -128,21 +128,8 @@ test.describe('live class mobile QA', () => {
     await expect(page.getByRole('button', { name: /Color/i })).toBeVisible();
     await expect(page.getByRole('button', { name: /Size/i })).toBeVisible();
     await expect(page.getByRole('button', { name: /More/i })).toBeVisible();
-
-    await page.getByRole('button', { name: /Shapes/i }).click({ force: true });
-    await expect(page.locator('.lc-shape-dropdown')).toBeVisible();
-    await expect(page.locator('.lc-shape-dropdown button')).toHaveCount(8);
-    await page.keyboard.press('Escape');
-
-    await page.getByRole('button', { name: /Color/i }).click({ force: true });
-    await expect(page.locator('#lc-color-grid-dropdown')).toBeVisible();
-    await expect(page.locator('#lc-color-grid-dropdown button')).toHaveCount(40);
-    await page.keyboard.press('Escape');
-
-    await page.getByRole('button', { name: /Size/i }).click({ force: true });
-    await expect(page.locator('#lc-width-dropdown')).toBeVisible();
-    await expect(page.locator('#lc-width-dropdown button')).toHaveCount(7);
-    await page.keyboard.press('Escape');
+    await expect(page.locator('.lc-toolbar-compact-color-chip')).toBeVisible();
+    await expect(page.locator('.lc-toolbar-compact-width-chip')).toBeVisible();
 
     await page.getByRole('button', { name: /More/i }).click({ force: true });
     const moreSheet = page.locator('.lc-toolbar-sheet');

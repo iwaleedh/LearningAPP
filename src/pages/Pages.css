@@ -2366,6 +2366,368 @@
     box-shadow: 0 0 0 3px var(--color-primary-100, #e0e7ff);
 }
 
+.chapter-page,
+.exercise-hub,
+.pastpaper-hub,
+.flashcard-hub,
+.progress-hub,
+.mistake-hub,
+.settings-hub {
+    width: 100%;
+    min-width: 0;
+}
+
+.exercise-hub--mode {
+    gap: var(--space-4);
+}
+
+.exercise-subject-select-wrapper {
+    display: none;
+    margin-bottom: var(--space-4);
+}
+
+.exercise-subject-select {
+    width: 100%;
+    min-height: var(--touch-min);
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-family: var(--font-sans);
+}
+
+.pastpaper-subject-select-wrapper {
+    display: none;
+}
+
+.pastpaper-subject-select {
+    width: 100%;
+    min-height: var(--touch-min);
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-family: var(--font-sans);
+}
+
+.exercise-subject-tab {
+    min-height: var(--touch-min);
+}
+
+button.exercise-type-card {
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-sans);
+    color: inherit;
+}
+
+button.exercise-type-card:disabled {
+    cursor: not-allowed;
+}
+
+.exercise-mode-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.exercise-mode-topic-badge {
+    margin-left: 0;
+}
+
+@media (max-width: 599px) {
+    .pastpaper-page-header,
+    .chapter-page-header,
+    .exercise-page-header {
+        gap: var(--space-4);
+        margin-bottom: var(--space-4);
+    }
+
+    .pastpaper-title-group,
+    .chapter-title-group,
+    .exercise-title-group {
+        align-items: flex-start;
+        gap: var(--space-3);
+    }
+
+    .pastpaper-filter-bar,
+    .flashcard-meta-boxes,
+    .chapter-meta-boxes,
+    .exercise-meta-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .flashcard-meta-boxes {
+        gap: var(--space-2);
+    }
+
+    .flashcard-meta-boxes .meta-box:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .pastpaper-filter-bar {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+        padding: var(--space-4);
+    }
+
+    .pastpaper-filter-bar > * {
+        width: 100%;
+        max-width: none;
+    }
+
+    .chapter-meta-boxes .meta-box,
+    .exercise-meta-boxes .meta-box,
+    .flashcard-meta-boxes .meta-box {
+        min-height: var(--touch-min);
+        align-items: center;
+    }
+
+    .pastpaper-subject-select-wrapper {
+        display: block;
+    }
+
+    .pastpaper-subject-buttons {
+        display: none;
+    }
+
+    .past-paper-session-header,
+    .past-paper-item-header {
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: var(--space-3) var(--space-4);
+        min-height: var(--touch-min);
+    }
+
+    .past-paper-session-main,
+    .past-paper-unit,
+    .past-paper-meta {
+        flex-wrap: wrap;
+    }
+
+    .past-paper-year {
+        font-size: 1.65rem;
+    }
+
+    .past-paper-item-info {
+        min-width: 0;
+    }
+
+    .past-paper-unit-name {
+        line-height: 1.45;
+    }
+
+    .past-paper-item-actions {
+        padding: var(--space-3) var(--space-4) var(--space-4);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pastpaper-action-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: var(--touch-min);
+    }
+
+    .attempt-modal-overlay {
+        align-items: flex-end;
+        padding: max(var(--space-3), env(safe-area-inset-top)) var(--space-3) max(var(--space-3), env(safe-area-inset-bottom));
+    }
+
+    .attempt-modal {
+        width: 100%;
+        max-height: min(88dvh, 42rem);
+        overflow: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .attempt-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .attempt-modal-actions .btn {
+        width: 100%;
+    }
+
+    .chapter-unit-section {
+        margin-bottom: 0;
+        padding: var(--space-4);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-2xl);
+        background: var(--color-surface);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .chapter-unit-heading {
+        font-size: var(--font-size-lg);
+        gap: var(--space-2);
+    }
+
+    .chapter-topic-header {
+        padding: var(--space-3) var(--space-4);
+        align-items: flex-start;
+        min-height: var(--touch-min);
+    }
+
+    .chapter-topic-header-left {
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+
+    .chapter-topic-title {
+        flex-basis: 100%;
+        white-space: normal;
+        line-height: 1.45;
+    }
+
+    .chapter-subtopic-item {
+        padding: var(--space-3) var(--space-4);
+        gap: var(--space-3);
+    }
+
+    .chapter-subtopic-left {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .chapter-subtopic-index {
+        width: 28px;
+        height: 28px;
+    }
+
+    .chapter-subtopic-text {
+        font-size: var(--font-size-base);
+        line-height: 1.5;
+    }
+
+    .chapter-subtopic-item .btn {
+        width: 100%;
+        justify-content: center;
+        min-height: var(--touch-min);
+    }
+
+    .exercise-page-title,
+    .chapter-page-title {
+        font-size: 1.6rem;
+    }
+
+    .exercise-controls-card {
+        padding: var(--space-4);
+    }
+
+    .exercise-subject-select-wrapper {
+        display: block;
+    }
+
+    .exercise-subject-tabs {
+        display: none;
+    }
+
+    .exercise-topic-select-wrapper {
+        margin-bottom: var(--space-4);
+    }
+
+    .exercise-topic-select {
+        max-width: none;
+        min-height: var(--touch-min);
+        font-size: var(--font-size-base);
+    }
+
+    .exercise-types-header {
+        align-items: flex-start;
+    }
+
+    .exercise-types-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    .exercise-type-card {
+        padding: var(--space-4);
+    }
+
+    .exercise-type-header {
+        align-items: flex-start;
+    }
+
+    .exercise-back-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: var(--touch-min);
+        margin-bottom: 0;
+    }
+
+    .exercise-mode-title {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-4);
+    }
+
+    .flashcard-page-title,
+    .pastpaper-page-title,
+    .exercise-page-title,
+    .chapter-page-title {
+        font-size: 1.6rem;
+    }
+
+    .flashcard-container {
+        gap: var(--space-4);
+        padding: var(--space-4) 0 var(--space-6);
+    }
+
+    .flashcard-wrapper {
+        max-width: none;
+        height: 300px;
+    }
+
+    .flashcard-face {
+        padding: var(--space-5);
+    }
+
+    .flashcard-front h3 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    .flashcard-back p {
+        font-size: var(--font-size-base);
+        line-height: 1.7;
+    }
+
+    .flashcard-source-link,
+    .flashcard-container > .btn-ghost {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .flashcard-controls {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-2);
+    }
+
+    .flashcard-controls .btn {
+        width: 100%;
+        justify-content: center;
+        min-height: var(--touch-min);
+        padding-inline: var(--space-3);
+    }
+}
+
 /* -----------------------------------------------------------------
    ANNOTATE PAGE - PDF annotation interface
    ----------------------------------------------------------------- */
@@ -2585,6 +2947,95 @@
     max-width: 78px;
     overflow: hidden;
     text-overflow: ellipsis;
+
+@media (max-width: 599px) {
+    .progress-meta-boxes,
+    .mistake-meta-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-2);
+        width: 100%;
+    }
+
+    .progress-meta-boxes .meta-box:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .progress-overview {
+        gap: var(--space-4);
+    }
+
+    .progress-ring-card {
+        padding: var(--space-4);
+    }
+
+    .progress-ring {
+        width: 140px;
+        height: 140px;
+    }
+
+    .chapter-progress-item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: var(--space-2);
+        align-items: center;
+    }
+
+    .chapter-progress-name,
+    .chapter-progress-bar {
+        min-width: 0;
+        grid-column: 1 / -1;
+    }
+
+    .chapter-progress-pct {
+        min-width: 0;
+        justify-self: end;
+    }
+
+    .mistake-toolbar {
+        margin-bottom: 0;
+    }
+
+    .mistake-toolbar .btn,
+    .mistake-card .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mistake-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+    .settings-grid {
+        max-width: none;
+    }
+
+    .settings-access-card,
+    .settings-profile-header,
+    .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .settings-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-access-actions,
+    .settings-import-actions,
+    .toggle-switch,
+    .setting-item > .btn,
+    .settings-access-card .btn {
+        width: 100%;
+    }
+
+    .settings-import-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+}
     white-space: nowrap;
     font-size: 11px;
     line-height: 1;
@@ -3404,6 +3855,34 @@
     width: 100%;
     justify-content: center;
     margin-top: auto;
+    min-height: var(--touch-min);
+}
+
+@media (max-width: 599px) {
+    .teacher-monitor-header {
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+    }
+
+    .teacher-monitor-header h1 {
+        font-size: 1.6rem;
+        line-height: 1.15;
+    }
+
+    .teacher-session-card {
+        padding: var(--space-4);
+        min-width: 0;
+    }
+
+    .teacher-session-card-header,
+    .teacher-session-participants {
+        flex-wrap: wrap;
+    }
+
+    .teacher-session-duration,
+    .teacher-participant-count {
+        margin-left: 0;
+    }
 }
 
 /* ============================================================
@@ -3425,6 +3904,7 @@
     align-items: center;
     gap: var(--space-2);
     flex-shrink: 0;
+    min-height: 48px;
 }
 
 /* ── Session start modal ──────────────────────────────────── */

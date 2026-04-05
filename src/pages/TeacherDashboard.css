@@ -4,6 +4,7 @@
 
 .teacher-dashboard {
     max-width: 1100px;
+    min-width: 0;
     --mastery-strong: var(--color-success);
     --mastery-good: var(--color-primary);
     --mastery-mid: var(--color-warning);
@@ -85,6 +86,7 @@
     align-items: center;
     gap: var(--space-2);
     padding: var(--space-2) var(--space-4);
+    min-height: var(--touch-min);
     border: none;
     background: transparent;
     border-radius: var(--radius-xl);
@@ -111,6 +113,7 @@
     padding: var(--space-5);
     border: 1px solid var(--color-border-light);
     box-shadow: var(--shadow-sm);
+    min-width: 0;
 }
 
 .teacher-content h3 {
@@ -214,6 +217,7 @@
     border-collapse: collapse;
     font-size: var(--font-size-sm);
     margin-bottom: var(--space-4);
+    min-width: 720px;
 }
 
 .questions-table th {
@@ -375,6 +379,7 @@
     width: 100%;
     border-collapse: collapse;
     font-size: var(--font-size-sm);
+    min-width: 680px;
 }
 
 .export-table th {
@@ -425,4 +430,161 @@
     display: flex;
     align-items: center;
     gap: var(--space-2);
+}
+
+.notes-editor-section,
+.questions-section,
+.export-preview {
+    min-width: 0;
+}
+
+.questions-section,
+.export-preview {
+    overflow-x: auto;
+}
+
+.note-form {
+    min-width: 0;
+}
+
+.teacher-note-grid {
+    display: grid;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.teacher-note-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.teacher-note-grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.teacher-note-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    min-width: 0;
+}
+
+.teacher-note-field label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-secondary);
+}
+
+.teacher-note-field--editor {
+    margin-bottom: var(--space-4);
+}
+
+.teacher-note-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: var(--space-3);
+    font-family: var(--font-mono);
+    resize: vertical;
+}
+
+.teacher-note-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.teacher-note-status {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.teacher-note-status--success {
+    color: var(--color-success-dark);
+}
+
+.teacher-note-status--error {
+    color: var(--color-error-dark);
+}
+
+.teacher-note-divider {
+    margin: var(--space-6) 0;
+    opacity: 0.2;
+}
+
+@media (max-width: 599px) {
+    .teacher-dashboard-header {
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+    }
+
+    .teacher-dashboard-header h1 {
+        font-size: 1.6rem;
+        line-height: 1.15;
+    }
+
+    .teacher-subtitle {
+        margin-bottom: 0;
+    }
+
+    .lc-start-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 48px;
+    }
+
+    .teacher-stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+    }
+
+    .teacher-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-2);
+        margin-bottom: var(--space-4);
+    }
+
+    .teacher-tab {
+        width: 100%;
+        justify-content: center;
+        padding-inline: var(--space-3);
+        font-size: var(--font-size-xs);
+    }
+
+    .teacher-content {
+        padding: var(--space-4);
+    }
+
+    .time-bar-row {
+        grid-template-columns: 1fr auto;
+        gap: var(--space-2);
+    }
+
+    .time-bar-label,
+    .time-bar-track {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
+
+    .time-bar-value,
+    .time-bar-sessions {
+        text-align: left;
+    }
+
+    .teacher-note-grid--two,
+    .teacher-note-grid--three {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-note-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-3);
+    }
+
+    .teacher-note-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }

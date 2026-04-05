@@ -1,5 +1,9 @@
 /* ---- HomePage.css (Modern SaaS overhaul) ---- */
 
+.home-page {
+    min-width: 0;
+}
+
 /* Welcome Banner */
 .welcome-banner {
     position: relative;
@@ -458,4 +462,79 @@
 .lc-invite-banner span {
     flex: 1;
     min-width: 200px;
+}
+
+@media (max-width: 599px) {
+    .welcome-banner {
+        padding: var(--space-5);
+        margin-bottom: var(--space-5);
+    }
+
+    .welcome-banner h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .welcome-content {
+        max-width: none;
+    }
+
+    .welcome-actions {
+        flex-direction: column;
+    }
+
+    .welcome-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .welcome-decoration,
+    .floating-icon {
+        display: none;
+    }
+
+    .stats-grid,
+    .subjects-grid,
+    .actions-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+        margin-bottom: var(--space-6);
+    }
+
+    .stat-card,
+    .subject-card,
+    .action-card {
+        min-width: 0;
+    }
+
+    .subject-card {
+        min-height: 0;
+    }
+
+    .action-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+    }
+
+    .section-header .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lc-invite-banner {
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .lc-invite-banner span,
+    .lc-invite-banner .btn {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+    }
 }

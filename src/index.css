@@ -139,6 +139,8 @@
   --header-height: 64px;
   --max-content-width: 900px;
   --max-page-width: 1400px;
+  --touch-min: 44px;
+  --note-toolbar-height: 56px;
 }
 
 /* ---- CSS Custom Properties (Light Mode) ---- */
@@ -225,6 +227,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 @supports (scrollbar-width: thin) {
@@ -256,6 +259,7 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   transition: background var(--transition-base), color var(--transition-base);
+  overflow-x: hidden;
 }
 
 a {

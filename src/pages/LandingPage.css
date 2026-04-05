@@ -512,3 +512,83 @@
   font-size: var(--font-size-sm);
   background-color: var(--color-bg);
 }
+
+@media (max-width: 599px) {
+  .landing-nav {
+    padding: var(--space-3) var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .landing-logo {
+    font-size: var(--font-size-lg);
+    min-width: 0;
+  }
+
+  .landing-nav .btn {
+    min-height: var(--touch-min);
+    padding-inline: var(--space-4);
+    flex-shrink: 0;
+  }
+
+  .landing-main {
+    padding: var(--space-5) var(--space-4) var(--space-8);
+    gap: var(--space-12);
+  }
+
+  .hero-section {
+    margin-top: var(--space-8);
+  }
+
+  .hero-title,
+  .section-title,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle,
+  .section-subtitle,
+  .section-description,
+  .cta-section p {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-cta {
+    width: 100%;
+    min-height: 52px;
+    padding-inline: var(--space-4);
+  }
+
+  .benefits-section,
+  .cross-platform-section {
+    gap: var(--space-6);
+  }
+
+  .cross-platform-section {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .subject-pill {
+    width: 100%;
+    justify-content: center;
+    padding-inline: var(--space-4);
+  }
+
+  .steps-container,
+  .features-grid {
+    gap: var(--space-4);
+  }
+
+  .step-card,
+  .feature-card {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .faq-question,
+  .faq-answer {
+    padding-inline: var(--space-4);
+  }
+
+  .faq-question h4 {
+    font-size: var(--font-size-base);
+  }
+}

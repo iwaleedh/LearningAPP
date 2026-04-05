@@ -351,6 +351,7 @@ export default function TeacherDashboard() {
                     return (
                         <button
                             key={tab.id}
+                            type="button"
                             className={`teacher-tab ${activeTab === tab.id ? 'active' : ''}`}
                             onClick={() => setActiveTab(tab.id)}
                         >
@@ -494,7 +495,7 @@ export default function TeacherDashboard() {
                                                     )}
                                                 </td>
                                                 <td>
-                                                    <button className="btn btn-sm btn-ghost" onClick={() => handleAskTeacher(q)}>
+                                                    <button type="button" className="btn btn-sm btn-ghost" onClick={() => handleAskTeacher(q)}>
                                                         <Mail size={14} /> Review
                                                     </button>
                                                 </td>
@@ -658,61 +659,60 @@ export default function TeacherDashboard() {
                         <p className="section-desc">Create or update notes directly in the database to test CRUD operations.</p>
 
                         <div className="card note-form">
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-                                <div>
+                            <div className="teacher-note-grid teacher-note-grid--two">
+                                <div className="teacher-note-field">
                                     <label>Subject</label>
                                     <input className="search-input" value={noteSubject} onChange={e => setNoteSubject(e.target.value)} />
                                 </div>
-                                <div>
+                                <div className="teacher-note-field">
                                     <label>Title (Topic/Subtopic)</label>
                                     <input className="search-input" value={noteTitle} onChange={e => setNoteTitle(e.target.value)} />
                                 </div>
                             </div>
 
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-                                <div>
+                            <div className="teacher-note-grid teacher-note-grid--three">
+                                <div className="teacher-note-field">
                                     <label>Unit ID</label>
                                     <input type="number" className="search-input" value={noteUnitId} onChange={e => setNoteUnitId(e.target.value)} />
                                 </div>
-                                <div>
+                                <div className="teacher-note-field">
                                     <label>Topic ID</label>
                                     <input type="number" className="search-input" value={noteTopicId} onChange={e => setNoteTopicId(e.target.value)} />
                                 </div>
-                                <div>
+                                <div className="teacher-note-field">
                                     <label>Subtopic Index</label>
                                     <input type="number" className="search-input" value={noteSubtopicIndex} onChange={e => setNoteSubtopicIndex(e.target.value)} />
                                 </div>
                             </div>
 
-                            <div style={{ marginBottom: '1rem' }}>
+                            <div className="teacher-note-field teacher-note-field--editor">
                                 <label>Content JSON (Blocks & Recall)</label>
                                 <textarea
-                                    className="search-input"
-                                    style={{ width: '100%', height: '200px', fontFamily: 'monospace', padding: '0.5rem' }}
+                                    className="search-input teacher-note-textarea"
                                     value={noteJson}
                                     onChange={e => setNoteJson(e.target.value)}
                                 />
                             </div>
 
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                <button className="btn btn-primary" onClick={handleSaveNote}>
+                            <div className="teacher-note-actions">
+                                <button type="button" className="btn btn-primary" onClick={handleSaveNote}>
                                     <Save size={16} /> Save to Convex
                                 </button>
                                 {noteSaveStatus && (
-                                    <span style={{ color: noteSaveStatus.includes('Error') ? 'var(--danger-color)' : 'var(--success-color)' }}>
+                                    <span className={`teacher-note-status ${noteSaveStatus.includes('Error') ? 'teacher-note-status--error' : 'teacher-note-status--success'}`}>
                                         {noteSaveStatus}
                                     </span>
                                 )}
                             </div>
 
-                            <hr style={{ margin: '1.5rem 0', opacity: 0.2 }} />
+                            <hr className="teacher-note-divider" />
 
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                <button className="btn btn-secondary" onClick={handleSyncNotes}>
+                            <div className="teacher-note-actions">
+                                <button type="button" className="btn btn-secondary" onClick={handleSyncNotes}>
                                     <Save size={16} /> Sync All Seed Notes to DB
                                 </button>
                                 {syncStatus && (
-                                    <span style={{ color: syncStatus.includes('Error') ? 'var(--danger-color)' : 'var(--success-color)' }}>
+                                    <span className={`teacher-note-status ${syncStatus.includes('Error') ? 'teacher-note-status--error' : 'teacher-note-status--success'}`}>
                                         {syncStatus}
                                     </span>
                                 )}

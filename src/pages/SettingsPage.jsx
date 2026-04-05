@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
-import { useMutation } from 'convex/react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck, Settings } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
@@ -7,7 +6,7 @@ import { useTheme } from '../hooks/useTheme.js';
 import { clearGuestData, getGuestDataSummary, importGuestDataToAccount } from '../services/notes/noteStore.js';
 import { exportNotesAsPdf } from '../services/notes/noteExport.js';
 import { clearMistakes } from '../services/mistakeStore.js';
-import { api } from '../convex-client.js';
+import { api, callMutation, getClient } from '../convex-client.js';
 import { clearLocalReadProgress } from '../hooks/useNoteReadStatus.js';
 import {
     buildAccessNotice,
@@ -39,8 +38,6 @@ export default function SettingsPage() {
     const [exportState, setExportState] = useState('idle');
     const [exportMessage, setExportMessage] = useState('');
     const [authOpen, setAuthOpen] = useState(false);
-    const resetMyReadProgress = useMutation(api.readProgress.resetMyReadProgress);
-    const resetFlashcardProgress = useMutation(api.flashcards.resetFlashcardProgress);
 
     const profileRef = useRef(null);
     const shouldFocusProfile =
@@ -181,10 +178,10 @@ export default function SettingsPage() {
         try {
             clearLocalReadProgress();
             await clearMistakes();
-            if (isSignedIn) {
+            if (isSignedIn && getClient()) {
                 await Promise.allSettled([
-                    resetMyReadProgress({}),
-                    resetFlashcardProgress({}),
+                    callMutation(api.readProgress.resetMyReadProgress, {}),
+                    callMutation(api.flashcards.resetFlashcardProgress, {}),
                 ]);
             }
 

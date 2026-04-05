@@ -1,10 +1,11 @@
 /* ── NotePage Layout ──────────────────────────────────────────────────────── */
 
 .note-page {
-    height: calc(100vh - var(--header-height) - calc(var(--space-8) * 2));
+    height: calc(100dvh - var(--header-height) - calc(var(--space-8) * 2));
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    min-width: 0;
 }
 
 .note-page--all-subjects {
@@ -41,7 +42,7 @@
 
 @media (max-width: 768px) {
     .note-page {
-        height: calc(100vh - var(--header-height) - calc(var(--space-4) * 2));
+        height: calc(100dvh - var(--header-height) - calc(var(--space-4) * 2));
     }
 }
 
@@ -58,6 +59,7 @@
     padding: var(--space-3) var(--space-5);
     flex-shrink: 0;
     border-radius: 16px;
+    min-width: 0;
 }
 
 .note-toolbar-left {
@@ -89,6 +91,19 @@
     flex-shrink: 0;
 }
 
+.note-btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.note-btn-label,
+.note-read-btn-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .note-view-toggle {
     display: flex;
     gap: 3px;
@@ -110,10 +125,10 @@
 /* Idle state — greyed out, not yet scrolled enough */
 .note-read-btn--idle {
     background: var(--color-bg-secondary);
-    color: var(--color-text-tertiary);
+    color: var(--color-text-secondary);
     border: 1px solid var(--color-border);
     cursor: not-allowed;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 /* Ready state — scrolled ≥80%, ready to click */
@@ -177,6 +192,7 @@
     flex-shrink: 0;
     position: relative;
     z-index: 50;
+    min-width: 0;
 }
 
 @media (max-width: 600px) {
@@ -267,6 +283,13 @@
     transform: translateY(0);
 }
 
+.topic-tab-container:focus-within .topic-subtopics-dropdown,
+.topic-subtopics-dropdown--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .topic-subtopics-dropdown .dropdown-item {
     padding: var(--space-2) var(--space-4);
     font-size: var(--font-size-sm);
@@ -299,6 +322,7 @@
     overflow: hidden;
     margin: var(--space-3) var(--space-4) var(--space-4);
     min-height: 0;
+    min-width: 0;
 }
 
 /* ── Table of Contents Sidebar ───────────────────────────────────────────── */
@@ -375,10 +399,17 @@
 .note-scroll-area {
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    min-width: 0;
+}
+
+.note-scroll-area,
+.note-toc,
+.recall-panel {
     min-width: 0;
 }
 
@@ -421,6 +452,19 @@
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.recall-panel--modal {
+    position: fixed;
+    inset: 0;
+    width: auto;
+    height: 100dvh;
+    border-radius: 0;
+    z-index: var(--z-modal);
+    box-shadow: none;
+    border: none;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .recall-panel-header {
@@ -476,6 +520,7 @@
     flex-direction: column;
     gap: var(--space-4);
     overflow-y: auto;
+    touch-action: pan-y;
 }
 
 .recall-prompt {
@@ -541,17 +586,21 @@
     display: flex;
     gap: var(--space-2);
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .recall-dot {
-    width: 8px;
-    height: 8px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background: var(--color-border);
     border: none;
     cursor: pointer;
     transition: background var(--transition-fast), transform var(--transition-fast);
     padding: 0;
+    min-width: 28px;
+    min-height: 28px;
 }
 
 .recall-dot:hover    { transform: scale(1.3); }
@@ -584,6 +633,76 @@
     opacity: 0;
     pointer-events: none;
     transform: translateY(12px);
+}
+
+.note-sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    border: none;
+    background: var(--overlay-backdrop);
+    z-index: calc(var(--z-modal) - 1);
+    cursor: pointer;
+}
+
+.note-sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: var(--z-modal);
+    background: var(--color-surface);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid var(--color-border);
+    border-bottom: none;
+    box-shadow: var(--shadow-xl);
+    max-height: min(70dvh, 36rem);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: max(var(--space-3), env(safe-area-inset-bottom));
+}
+
+.note-sheet-handle {
+    width: 56px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--color-border);
+    margin: var(--space-2) auto var(--space-1);
+    flex-shrink: 0;
+}
+
+.note-sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: 0 var(--space-4) var(--space-3);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.note-sheet-title {
+    font-size: var(--font-size-base);
+}
+
+.note-toc--sheet {
+    display: flex;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: var(--space-2) 0 0;
+}
+
+.note-toc.note-toc--sheet {
+    display: flex;
+}
+
+.note-toc--sheet .note-toc-link,
+.topic-subtopics-dropdown .dropdown-item {
+    min-height: var(--touch-min);
+    display: flex;
+    align-items: center;
 }
 
 .note-scroll-top-btn--visible {
@@ -698,9 +817,7 @@
     font-weight: 700;
 }
 
-/* ── Responsive ───────────────────────────────────────────────────────────── */
-
-@media (max-width: 900px) {
+@media (max-width: 899px) {
     .note-toc { display: none; }
 
     .note-toc + .note-scroll-area,
@@ -713,41 +830,85 @@
     .recall-panel {
         border-radius: 16px;
         width: 100%;
-        height: 300px;
+        height: 320px;
         flex-shrink: 0;
     }
 
-    .note-body { flex-direction: column; }
-    .note-toolbar-title { max-width: 200px; }
-}
-
-@media (max-width: 600px) {
-    .note-toolbar {
-        padding: var(--space-2) var(--space-3);
-        gap: var(--space-2);
-        margin: var(--space-2);
-        margin-bottom: 0;
-        border-radius: 12px;
-    }
-
-    .note-toolbar-left {
-        gap: var(--space-1);
-        flex-wrap: wrap;
+    .note-body {
+        flex-direction: column;
     }
 
     .note-toolbar-title {
-        font-size: var(--font-size-sm);
-        max-width: 180px;
+        max-width: 18rem;
+    }
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    .note-toolbar {
+        position: sticky;
+        top: calc(var(--header-height) + max(var(--space-2), env(safe-area-inset-top)));
+        z-index: var(--z-popover);
+        padding: var(--space-3);
+        gap: var(--space-3);
+        margin: var(--space-2);
+        margin-bottom: 0;
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .note-toolbar-left {
+        gap: var(--space-2);
+        width: 100%;
+        align-items: center;
+    }
+
+    .note-toolbar-title {
+        font-size: 0.95rem;
+        max-width: none;
+        flex-basis: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-left: 0;
+        line-height: 1.3;
+    }
+
+    .note-toolbar-unit-badge {
+        display: none;
     }
 
     .note-toolbar-right {
-        gap: var(--space-1);
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0, 1fr);
+        align-items: stretch;
+        gap: var(--space-2);
+    }
+
+    .note-toolbar-right .btn-sm {
+        width: 100%;
+        min-height: var(--touch-min);
+        min-width: var(--touch-min);
+        padding: var(--space-2);
+        border-radius: 12px;
+    }
+
+    .note-toolbar-right .btn-sm .note-btn-label {
+        display: none;
+    }
+
+    .note-toolbar-right .note-read-btn {
+        padding-inline: var(--space-3);
+    }
+
+    .note-toolbar-right {
+        justify-content: stretch;
     }
 
     .note-view-toggle .btn {
@@ -755,24 +916,117 @@
         font-size: var(--font-size-xs);
     }
 
+    .note-read-progress {
+        margin: 0 var(--space-2);
+        height: 4px;
+    }
+
     .note-body {
         margin: var(--space-2);
         gap: var(--space-2);
     }
 
-    .recall-panel { height: 260px; }
+    .recall-panel {
+        height: 300px;
+    }
 
     .recall-cue-card {
-        padding: var(--space-3);
+        padding: var(--space-4);
         gap: var(--space-3);
     }
 
     .recall-prompt {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-sm);
         padding: var(--space-3);
     }
 
-    .recall-nav { padding: var(--space-2) var(--space-3); }
+    .recall-nav {
+        padding: var(--space-3);
+        gap: var(--space-3);
+    }
 
-    .note-read-progress { margin: 0 var(--space-2); }
+    .recall-dot {
+        width: var(--touch-min);
+        height: var(--touch-min);
+        min-width: var(--touch-min);
+        min-height: var(--touch-min);
+        border-radius: 14px;
+    }
+
+    .note-sheet {
+        max-height: min(78dvh, 34rem);
+    }
+
+    .topic-tab {
+        min-height: var(--touch-min);
+        padding: var(--space-2) var(--space-3);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .note-topics-tabs {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        padding: 0 var(--space-2);
+    }
+
+    .topic-tab-container {
+        display: block;
+        width: 100%;
+    }
+
+    .topic-tab-container::after {
+        display: none;
+    }
+
+    .topic-subtopics-dropdown {
+        position: static;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: none;
+        transition: max-height 0.2s ease, margin-top 0.2s ease, opacity 0.2s ease;
+    }
+
+    .topic-subtopics-dropdown--open {
+        max-height: 16rem;
+        overflow-y: auto;
+        margin-top: var(--space-2);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        box-shadow: var(--shadow-sm);
+        padding: var(--space-1) 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .note-footer-nav {
+        margin: var(--space-6) var(--space-3) var(--space-4);
+        padding-top: var(--space-4);
+        justify-content: stretch;
+    }
+
+    .btn-next-subtopic {
+        width: 100%;
+        min-height: 48px;
+        align-items: flex-start;
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .note-scroll-top-btn {
+        right: var(--space-3);
+        margin-right: 0;
+    }
 }

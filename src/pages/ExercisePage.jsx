@@ -82,6 +82,14 @@ export default function ExercisePage() {
 
   function resetToHub() { setActiveType(null); setCurrentQuestion(0); }
 
+  const activateSubject = (subjectId) => {
+    setActiveSubject(subjectId);
+    setSelectedUnitId(null);
+    setSelectedTopicId(null);
+    setActiveType(null);
+    setCurrentQuestion(0);
+  };
+
   if (activeType) {
     if (exerciseSetStatus === "loading") {
       return (
@@ -127,7 +135,7 @@ export default function ExercisePage() {
     };
 
     return (
-      <div className="exercise-hub animate-fade-in">
+      <div className="exercise-hub exercise-hub--mode animate-fade-in">
         <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
         <h2 className="exercise-mode-title">{TITLES[activeType]}</h2>
         <div className="exercise-mode-meta">
@@ -189,11 +197,27 @@ export default function ExercisePage() {
       <ErrorBoundary name="ExerciseControls" inline resetKeys={[activeSubject]}>
       <div className="exercise-controls-card">
         <h3 className="section-label">1. Choose your subject</h3>
+        <div className="exercise-subject-select-wrapper">
+          <label className="sr-only" htmlFor="exercise-subject-select">Choose subject</label>
+          <select
+            id="exercise-subject-select"
+            className="exercise-subject-select"
+            value={activeSubject}
+            onChange={(event) => activateSubject(event.target.value)}
+          >
+            {SUBJECTS.map((subjectOption) => (
+              <option key={subjectOption.id} value={subjectOption.id} disabled={!subjectOption.available}>
+                {subjectOption.label}{subjectOption.available ? '' : ' (Coming soon)'}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="exercise-subject-tabs">
           {SUBJECTS.map(s => (
             <button key={s.id}
+              type="button"
               className={"exercise-subject-tab" + (activeSubject === s.id ? " exercise-subject-tab--active" : "") + (!s.available ? " exercise-subject-tab--disabled" : "")}
-              onClick={() => { if (!s.available) return; setActiveSubject(s.id); setSelectedUnitId(null); setSelectedTopicId(null); setActiveType(null); setCurrentQuestion(0); }}
+              onClick={() => { if (!s.available) return; activateSubject(s.id); }}
               disabled={!s.available}
             >
               {s.label}{!s.available && <span className="tab-coming-soon">Coming soon</span>}
@@ -204,6 +228,7 @@ export default function ExercisePage() {
         <h3 className="section-label exercise-section-label">2. Select a topic</h3>
         <div className="exercise-topic-select-wrapper">
           <select className="exercise-topic-select"
+            aria-label="Select a topic to practise"
             disabled={isLoadingSyllabus}
             value={selectedUnitId && selectedTopicId ? selectedUnitId + ":" + selectedTopicId : ""}
             onChange={e => {
@@ -251,9 +276,14 @@ export default function ExercisePage() {
             const isLoadingTopic = exerciseSetStatus === "loading";
             const hasContent = count !== null && count > 0;
             return (
-              <div key={type.id} className={`exercise-type-card ${hasContent ? 'interactive' : 'empty'}`}
+              <button
+                key={type.id}
+                type="button"
+                className={`exercise-type-card ${hasContent ? 'interactive' : 'empty'}`}
                 style={{ animationDelay: i * 0.05 + "s", animationFillMode: 'both' }}
                 onClick={() => hasContent && !isLoadingTopic && setActiveType(type.id)}
+                disabled={!hasContent || isLoadingTopic}
+                aria-label={`${type.title}. ${isLoadingTopic ? 'Loading content' : count !== null ? `${count} items available` : 'No items available'}`}
               >
                 <div className="exercise-type-header">
                   <div className={`exercise-type-icon ${type.toneClass}`}><Icon size={22} /></div>
@@ -265,7 +295,7 @@ export default function ExercisePage() {
                   </div>
                 </div>
                 <p>{type.desc}</p>
-              </div>
+              </button>
             );
           })}
         </div>

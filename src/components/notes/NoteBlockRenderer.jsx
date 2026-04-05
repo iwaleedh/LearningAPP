@@ -175,11 +175,24 @@ function ChecklistBlock({ data }) {
     const [checked, setChecked] = useState(() => items.map((item) => item.checked || false));
 
     const toggle = (i) => setChecked((prev) => prev.map((v, idx) => (idx === i ? !v : v)));
+    const onKeyDown = (event, index) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        toggle(index);
+    };
 
     return (
         <ul className="nb-checklist">
             {items.map((item, i) => (
-                <li key={i} className={`nb-checklist-item ${checked[i] ? 'checked' : ''}`} onClick={() => toggle(i)}>
+                <li
+                    key={i}
+                    className={`nb-checklist-item ${checked[i] ? 'checked' : ''}`}
+                    onClick={() => toggle(i)}
+                    onKeyDown={(event) => onKeyDown(event, i)}
+                    role="checkbox"
+                    aria-checked={checked[i]}
+                    tabIndex={0}
+                >
                     <span className="nb-checkbox">{checked[i] ? '✅' : '☐'}</span>
                     <span dangerouslySetInnerHTML={{ __html: safe(typeof item === 'object' ? item.text : item) }} />
                 </li>

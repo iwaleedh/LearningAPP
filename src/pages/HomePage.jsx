@@ -1,5 +1,4 @@
 import { useState, useEffect, useMemo } from 'react';
-import { useQuery } from 'convex/react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, Brain,
@@ -10,8 +9,11 @@ import {
     onConvexReady,
     subscribe,
     api,
+    callQuery,
+    getClient,
 } from '../convex-client.js';
 import { useAuth } from '../hooks/useAuth.js';
+import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
 import { useReadProgressSummary } from '../hooks/useNoteReadStatus.js';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import './HomePage.css';
@@ -47,10 +49,49 @@ const oLevelSubjects = [
 export default function HomePage() {
     const navigate = useNavigate();
     const { debugAuthEnabled, username } = useAuth();
-    const badgeMetrics = useQuery(api.badgeMetrics.getMyBadgeMetrics);
-    const activityMetrics = useQuery(api.activityMetrics.getMyActivityMetrics);
+    const activityVersion = useActivityRefresh();
     const readProgress = useReadProgressSummary();
     const [liveInvites, setLiveInvites] = useState([]);
+    const [badgeMetrics, setBadgeMetrics] = useState(null);
+    const [activityMetrics, setActivityMetrics] = useState(null);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadMetrics() {
+            if (!getClient()) {
+                if (!cancelled) {
+                    setBadgeMetrics(null);
+                    setActivityMetrics(null);
+                }
+                return;
+            }
+
+            try {
+                const [nextBadgeMetrics, nextActivityMetrics] = await Promise.all([
+                    callQuery(api.badgeMetrics.getMyBadgeMetrics),
+                    callQuery(api.activityMetrics.getMyActivityMetrics),
+                ]);
+
+                if (!cancelled) {
+                    setBadgeMetrics(nextBadgeMetrics || null);
+                    setActivityMetrics(nextActivityMetrics || null);
+                }
+            } catch {
+                if (!cancelled) {
+                    setBadgeMetrics(null);
+                    setActivityMetrics(null);
+                }
+            }
+        }
+
+        void loadMetrics();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [activityVersion]);
+
     const stats = useMemo(() => ({
         chaptersRead: readProgress.totalRead,
         exercisesDone: badgeMetrics?.exercisesCompleted ?? activityMetrics?.exercisesDone ?? 0,

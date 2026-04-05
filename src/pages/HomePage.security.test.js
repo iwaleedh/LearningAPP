@@ -10,7 +10,8 @@ const __dirname = path.dirname(__filename);
 test('HomePage uses server-backed activity metrics for signed-in stats', () => {
     const source = fs.readFileSync(path.resolve(__dirname, './HomePage.jsx'), 'utf8');
 
-    assert.match(source, /useQuery\(api\.activityMetrics\.getMyActivityMetrics\)/);
+    assert.match(source, /callQuery\(api\.activityMetrics\.getMyActivityMetrics\)/);
+    assert.match(source, /callQuery\(api\.badgeMetrics\.getMyBadgeMetrics\)/);
     assert.match(source, /exercisesDone: badgeMetrics\?\.exercisesCompleted \?\? activityMetrics\?\.exercisesDone \?\? 0/);
     assert.match(source, /papersViewed: activityMetrics\?\.papersViewed \?\? 0/);
     assert.doesNotMatch(source, /getExercisesDone\(|getPapersViewed\(/);

@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useQuery } from 'convex/react';
 import { Trophy, Star, TrendingUp, BookOpen, Target, FileText, Flame, Medal } from 'lucide-react';
 import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
 import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
@@ -26,10 +25,40 @@ function getLevel(xp) {
 
 export default function Leaderboard() {
     const activityVersion = useActivityRefresh();
-    const badgeMetrics = useQuery(api.badgeMetrics.getMyBadgeMetrics);
     const readProgress = useReadProgressSummary();
+    const [badgeMetrics, setBadgeMetrics] = useState(null);
     const [leaderboard, setLeaderboard] = useState({ rows: [], currentUserId: null, currentRow: null });
     const [leaderboardState, setLeaderboardState] = useState('idle');
+
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadBadgeMetrics() {
+            if (!getClient()) {
+                if (!cancelled) {
+                    setBadgeMetrics(null);
+                }
+                return;
+            }
+
+            try {
+                const nextBadgeMetrics = await callQuery(api.badgeMetrics.getMyBadgeMetrics);
+                if (!cancelled) {
+                    setBadgeMetrics(nextBadgeMetrics || null);
+                }
+            } catch {
+                if (!cancelled) {
+                    setBadgeMetrics(null);
+                }
+            }
+        }
+
+        void loadBadgeMetrics();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [activityVersion]);
 
     const stats = useMemo(() => {
         void activityVersion;

@@ -820,4 +820,105 @@
   color: var(--color-text-tertiary);
   margin: 0;
 }
+
+@media (max-width: 599px) {
+    .mcq-option {
+        gap: var(--space-3);
+        padding: var(--space-3);
+        align-items: flex-start;
+    }
+
+    .mcq-option-letter {
+        width: 36px;
+        height: 36px;
+    }
+
+    .mcq-actions,
+    .flashcard-exercise-actions,
+    .fc-ex__actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-2);
+    }
+
+    .mcq-actions .btn,
+    .flashcard-exercise-actions .btn,
+    .fc-ex__actions .btn {
+        width: 100%;
+        min-height: var(--touch-min);
+    }
+
+    .dd-bank-items {
+        flex-direction: column;
+    }
+
+    .dd-item {
+        width: 100%;
+        min-height: var(--touch-min);
+    }
+
+    .dd-zone {
+        padding: var(--space-3);
+        min-height: 96px;
+    }
+
+    .dd-move-btns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .dd-move-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: var(--font-size-xs);
+    }
+
+    .seq-item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: var(--space-3);
+        padding: var(--space-3);
+    }
+
+    .seq-text {
+        flex-basis: calc(100% - 40px);
+    }
+
+    .seq-move-btns {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-end;
+    }
+
+    .seq-move-btn {
+        width: var(--touch-min);
+        height: var(--touch-min);
+    }
+
+    .fb-text {
+        line-height: 1.9;
+    }
+
+    .fb-input {
+        width: min(100%, 10rem);
+        min-height: var(--touch-min);
+        font-size: var(--font-size-base);
+    }
+
+    .kw-textarea {
+        min-height: 200px;
+        font-size: var(--font-size-base);
+    }
+
+    .flashcard-exercise .flashcard-wrapper,
+    .fc-ex__scene {
+        height: 280px;
+    }
+
+    .flashcard-exercise .flashcard-face,
+    .fc-ex__face {
+        padding: var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+}
 .fc-ex__actions { display: flex; gap: var(--space-3); justify-content: center; margin-top: var(--space-4); }

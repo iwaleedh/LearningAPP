@@ -16,6 +16,7 @@ const TopicAccordion = memo(function TopicAccordion({ topic, unitId, subject, de
         <div className="chapter-topic-accordion card">
             <button
                 className="chapter-topic-header"
+                type="button"
                 onClick={() => setOpen((v) => !v)}
                 aria-expanded={open}
             >
@@ -43,6 +44,7 @@ const TopicAccordion = memo(function TopicAccordion({ topic, unitId, subject, de
                             <Link
                                 className="btn btn-sm btn-ghost"
                                 to={`/notes/${subject}/${unitId}/${topic.id}/${index}`}
+                                aria-label={`Open note for ${subtopic}`}
                             >
                                 Open Note →
                             </Link>

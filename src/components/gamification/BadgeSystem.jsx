@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from 'react';
-import { useQuery } from 'convex/react';
 import { Trophy, Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock } from 'lucide-react';
 import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
-import { api } from '../../convex-client.js';
+import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
+import { api, callQuery, getClient } from '../../convex-client.js';
 import './Gamification.css';
 
 const CONFETTI_COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6', '#06b6d4', '#facc15'];
@@ -209,9 +209,40 @@ function getEarnedBadgeIds(stats) {
 }
 
 export default function BadgeSystem() {
-    const serverMetrics = useQuery(api.badgeMetrics.getMyBadgeMetrics);
+    const activityVersion = useActivityRefresh();
     const readProgress = useReadProgressSummary();
     const [justEarned, setJustEarned] = useState(null);
+    const [serverMetrics, setServerMetrics] = useState(null);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadBadgeMetrics() {
+            if (!getClient()) {
+                if (!cancelled) {
+                    setServerMetrics(null);
+                }
+                return;
+            }
+
+            try {
+                const nextServerMetrics = await callQuery(api.badgeMetrics.getMyBadgeMetrics);
+                if (!cancelled) {
+                    setServerMetrics(nextServerMetrics || null);
+                }
+            } catch {
+                if (!cancelled) {
+                    setServerMetrics(null);
+                }
+            }
+        }
+
+        void loadBadgeMetrics();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [activityVersion]);
 
     const stats = useMemo(() => buildLiveStats(serverMetrics, readProgress), [readProgress, serverMetrics]);
 

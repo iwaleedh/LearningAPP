@@ -10,23 +10,24 @@
     font-size: var(--font-size-base);
     color: var(--color-text);
     line-height: 1.7;
+    min-width: 0;
 }
 
 @media (max-width: 768px) {
     .nb-root {
         padding: var(--space-3) var(--space-3) var(--space-6);
         gap: var(--space-3);
-        font-size: var(--font-size-sm);
-        line-height: 1.75;
+        font-size: 0.9375rem;
+        line-height: 1.8;
     }
 
     .nb-equation {
         padding: var(--space-3) var(--space-3);
-        font-size: var(--font-size-sm);
+        font-size: 0.9375rem;
     }
 
     .nb-equation-content {
-        font-size: 1rem;
+        font-size: 0.95rem;
         overflow-x: auto;
     }
 
@@ -35,18 +36,18 @@
     }
 
     .nb-callout-body {
-        font-size: var(--font-size-xs);
-        line-height: 1.7;
+        font-size: var(--font-size-sm);
+        line-height: 1.8;
     }
 
     .nb-callout-title {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-sm);
     }
 
     .nb-table th,
     .nb-table td {
         padding: var(--space-2) var(--space-3);
-        font-size: var(--font-size-xs);
+        font-size: 0.8125rem;
     }
 
     .nb-h1 {
@@ -68,9 +69,8 @@
     }
 
     .nb-checklist-item {
-        padding: var(--space-3) var(--space-3);
-        min-height: 44px;
-        /* comfortable touch target */
+        padding: var(--space-3) var(--space-4);
+        min-height: 48px;
     }
 
     .nb-list {
@@ -82,7 +82,7 @@
     }
 
     .nb-objective p {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-sm);
     }
 
     .nb-summary {
@@ -90,7 +90,7 @@
     }
 
     .nb-summary p {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-sm);
     }
 
     .nb-quote {
@@ -98,8 +98,31 @@
     }
 
     .nb-code {
-        font-size: var(--font-size-xs);
+        font-size: 0.75rem;
         padding: var(--space-3) var(--space-4);
+    }
+}
+
+@media (max-width: 599px) {
+    .nb-root {
+        font-size: 0.9375rem;
+        line-height: 1.85;
+    }
+
+    .nb-equation-content {
+        font-size: 0.9rem;
+    }
+
+    .nb-callout,
+    .nb-summary,
+    .nb-objective,
+    .nb-quote {
+        padding-inline: var(--space-4);
+    }
+
+    .nb-table-wrap::after,
+    .nb-svg-container.nb-svg-dense.nb-svg-wide::after {
+        font-size: 0.75rem;
     }
 }
 
@@ -208,6 +231,11 @@
     background: var(--color-surface);
 }
 
+.nb-checklist-item:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
 .nb-checklist-item:hover {
     background: var(--color-bg-secondary);
 }
@@ -238,6 +266,7 @@
     font-family: 'Georgia', 'Times New Roman', serif;
     color: var(--color-text);
     overflow-x: auto;
+    word-break: break-word;
 }
 
 .nb-equation-caption {
@@ -370,7 +399,7 @@
         content: '← swipe to scroll →';
         display: block;
         text-align: center;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         color: var(--color-text-tertiary);
         padding: var(--space-1) 0;
         background: var(--color-bg-secondary);
@@ -543,8 +572,10 @@
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
+    max-width: 100%;
     color: var(--color-text);
     padding: var(--space-1);
+    touch-action: pan-x pan-y pinch-zoom;
     --note-svg-text: var(--color-text);
     --note-svg-text-secondary: var(--color-text-secondary);
     --note-svg-muted: var(--color-text-secondary);
@@ -836,6 +867,11 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
         border-radius: 8px;
     }
 
+    .nb-svg-container.nb-svg-dense svg {
+        width: 100%;
+        min-width: 100%;
+    }
+
     .nb-svg-container.nb-svg-dense.nb-svg-wide {
         /* Show scroll hint with subtle gradient */
         position: relative;
@@ -845,7 +881,7 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
         content: '← scroll →';
         display: block;
         text-align: center;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         color: var(--color-text-tertiary);
         padding-top: var(--space-1);
         letter-spacing: 0.05em;
@@ -880,6 +916,21 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
     font-size: var(--font-size-sm);
     overflow-x: auto;
     margin: 0;
+    position: relative;
+}
+
+.nb-code::after {
+    content: '';
+    position: sticky;
+    right: 0;
+    top: 0;
+    display: block;
+    float: right;
+    width: 32px;
+    height: 100%;
+    margin-top: -100%;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, var(--color-bg-tertiary));
 }
 
 .nb-code code {

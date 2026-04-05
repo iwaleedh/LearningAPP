@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "test": "tsx --test \"src/**/*.test.js\" \"convex/**/*.test.ts\"",
     "test:e2e": "playwright test",
+    "test:e2e:mobile": "playwright test tests/e2e/dashboard-mobile.spec.js tests/e2e/notepage-mobile.spec.js tests/e2e/study-flow-mobile.spec.js tests/e2e/revision-mobile.spec.js tests/e2e/liveclass-mobile.spec.js tests/e2e/teacher-auth-mobile.spec.js",
     "test:e2e:headed": "playwright test --headed",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

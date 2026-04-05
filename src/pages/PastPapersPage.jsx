@@ -10,6 +10,7 @@ import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
 const PerformanceChart = lazy(() => import('../components/pastpapers/PerformanceChart'));
+const EMPTY_LIST = [];
 
 // Subject configuration
 const subjects = [
@@ -118,7 +119,7 @@ function RecordAttemptModal({ paper, onClose, onSave, saving }) {
                         <h3 id="attempt-modal-title">Record Past Paper Attempt</h3>
                         <p>{paper.unit} • {paper.unitName}</p>
                     </div>
-                    <button type="button" className="btn btn-ghost btn-sm" onClick={onClose} disabled={saving}>
+                    <button type="button" className="btn btn-ghost btn-sm" onClick={onClose} disabled={saving} aria-label="Close record attempt dialog">
                         <X size={14} />
                     </button>
                 </div>
@@ -296,11 +297,18 @@ function ExamSessionCard({ year, month, papers, isOLevel = false, subjectId, onR
     const [expanded, setExpanded] = useState(false);
     const [expandedPaperId, setExpandedPaperId] = useState(null);
     const navigate = useNavigate();
+    const sessionId = `pastpaper-session-${year}-${String(month).toLowerCase()}`.replace(/[^a-z0-9-]/g, '-');
 
     return (
         <div className="past-paper-card card">
             {/* Year/Month Main Header */}
-            <div className="past-paper-session-header" onClick={() => setExpanded(!expanded)}>
+            <button
+                type="button"
+                className="past-paper-session-header"
+                onClick={() => setExpanded(!expanded)}
+                aria-expanded={expanded}
+                aria-controls={sessionId}
+            >
                 <div className="past-paper-session-main">
                     <span className="past-paper-year">{year}</span>
                     <span className="past-paper-month">{month}</span>
@@ -309,16 +317,19 @@ function ExamSessionCard({ year, month, papers, isOLevel = false, subjectId, onR
                 <div className="past-paper-expand">
                     {expanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                 </div>
-            </div>
+            </button>
 
             {/* Papers List (shown when expanded) */}
             {expanded && (
-                <div className="past-paper-papers-list">
+                <div className="past-paper-papers-list" id={sessionId}>
                     {papers.map((paper) => (
                         <div key={paper.id} className="past-paper-item">
-                            <div
+                            <button
+                                type="button"
                                 className={`past-paper-item-header ${expandedPaperId === paper.id ? 'expanded' : ''}`}
                                 onClick={() => setExpandedPaperId(expandedPaperId === paper.id ? null : paper.id)}
+                                aria-expanded={expandedPaperId === paper.id}
+                                aria-controls={`pastpaper-item-${paper.id}`}
                             >
                                 <div className="past-paper-item-info">
                                     <div className="past-paper-unit">
@@ -333,11 +344,11 @@ function ExamSessionCard({ year, month, papers, isOLevel = false, subjectId, onR
                                 <div className="past-paper-expand">
                                     {expandedPaperId === paper.id ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                                 </div>
-                            </div>
+                            </button>
 
                             {/* Paper Actions (shown when paper is expanded) */}
                             {expandedPaperId === paper.id && (
-                                <div className="past-paper-item-actions">
+                                <div className="past-paper-item-actions" id={`pastpaper-item-${paper.id}`}>
                                     <ViewPdfButton
                                         paper={paper}
                                         type="question"
@@ -410,9 +421,9 @@ export default function PastPapersPage() {
     // Get active subject config
     const subjectConfig = subjects.find(s => s.id === activeSubject);
     const activeSubjectData = subjectDataById[activeSubject];
-    const subjectPapers = activeSubjectData?.papers || [];
-    const subjectYears = activeSubjectData?.years || [];
-    const subjectUnits = activeSubjectData?.units || [];
+    const subjectPapers = useMemo(() => activeSubjectData?.papers || EMPTY_LIST, [activeSubjectData]);
+    const subjectYears = useMemo(() => activeSubjectData?.years || EMPTY_LIST, [activeSubjectData]);
+    const subjectUnits = useMemo(() => activeSubjectData?.units || EMPTY_LIST, [activeSubjectData]);
     const isLoadingSubject = !activeSubjectData && !subjectLoadError;
 
     useEffect(() => {
@@ -604,12 +615,27 @@ export default function PastPapersPage() {
             </div>
 
             {/* Subject Tabs */}
+            <div className="pastpaper-subject-select-wrapper">
+                <label className="sr-only" htmlFor="pastpaper-subject-select">Choose past paper subject</label>
+                <select
+                    id="pastpaper-subject-select"
+                    className="pastpaper-subject-select"
+                    value={activeSubject}
+                    onChange={(event) => handleSubjectChange(event.target.value)}
+                    aria-label="Choose past paper subject"
+                >
+                    {subjects.map((subject) => (
+                        <option key={subject.id} value={subject.id}>{subject.name}</option>
+                    ))}
+                </select>
+            </div>
             <div className="pastpaper-subject-buttons">
                 {subjects.map(subject => {
                     const Icon = subject.icon;
                     const isActive = activeSubject === subject.id;
                     return (
                         <button
+                            type="button"
                             key={subject.id}
                             className={`pastpaper-subject-btn ${isActive ? 'active' : ''}`}
                             onClick={() => handleSubjectChange(subject.id)}
@@ -637,6 +663,7 @@ export default function PastPapersPage() {
                     value={filterYear}
                     onChange={e => handleYearChange(e.target.value)}
                     disabled={isLoadingSubject}
+                    aria-label="Filter papers by year"
                 >
                     <option value="all">All Years</option>
                     {subjectYears.map(year => (
@@ -649,6 +676,7 @@ export default function PastPapersPage() {
                     value={filterMonth}
                     onChange={e => setFilterMonth(e.target.value)}
                     disabled={filterYear === 'all' || isLoadingSubject}
+                    aria-label="Filter papers by month"
                 >
                     <option value="all">All Months</option>
                     {availableMonths.map(month => (
@@ -661,6 +689,7 @@ export default function PastPapersPage() {
                     value={filterUnit}
                     onChange={e => setFilterUnit(e.target.value)}
                     disabled={isLoadingSubject}
+                    aria-label="Filter papers by unit"
                 >
                     <option value="all">All Units</option>
                     {subjectUnits.map(unit => (
@@ -671,8 +700,10 @@ export default function PastPapersPage() {
                 </select>
 
                 <button
+                    type="button"
                     className={`btn ${showPerformance ? 'btn-primary' : 'btn-ghost'}`}
                     onClick={() => setShowPerformance(!showPerformance)}
+                    aria-expanded={showPerformance}
                 >
                     <FileText size={16} /> Analytics
                 </button>

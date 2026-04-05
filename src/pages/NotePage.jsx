@@ -26,11 +26,112 @@ function buildToc(blocks) {
         }));
 }
 
-function TableOfContents({ toc, activeId, onSelect }) {
+function useViewportMatch(query) {
+    const getMatches = useCallback(() => {
+        if (typeof window === 'undefined' || !window.matchMedia) return false;
+        return window.matchMedia(query).matches;
+    }, [query]);
+
+    const [matches, setMatches] = useState(getMatches);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia(query);
+        const updateMatch = (event) => setMatches(event.matches);
+
+        if (mediaQuery.addEventListener) {
+            mediaQuery.addEventListener('change', updateMatch);
+            return () => mediaQuery.removeEventListener('change', updateMatch);
+        }
+
+        mediaQuery.addListener(updateMatch);
+        return () => mediaQuery.removeListener(updateMatch);
+    }, [query]);
+
+    return matches;
+}
+
+function getFocusableElements(container) {
+    if (!container) return [];
+
+    return [...container.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+        .filter((element) => !element.hasAttribute('hidden') && element.getAttribute('aria-hidden') !== 'true');
+}
+
+function useOverlayA11y({ open, containerRef, returnFocusRef, onClose }) {
+    useEffect(() => {
+        if (!open) return undefined;
+
+        const container = containerRef.current;
+        if (!container) return undefined;
+
+        const previousFocus = document.activeElement;
+        const returnFocusTarget = returnFocusRef?.current;
+        const nextFocusable = getFocusableElements(container)[0] || container;
+        const focusTimer = window.requestAnimationFrame(() => {
+            nextFocusable.focus?.();
+        });
+
+        const onKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                onClose?.();
+                return;
+            }
+
+            if (event.key !== 'Tab') return;
+
+            const focusables = getFocusableElements(container);
+            if (!focusables.length) {
+                event.preventDefault();
+                container.focus?.();
+                return;
+            }
+
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+            const active = document.activeElement;
+
+            if (event.shiftKey && active === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && active === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        };
+
+        document.addEventListener('keydown', onKeyDown);
+
+        return () => {
+            window.cancelAnimationFrame(focusTimer);
+            document.removeEventListener('keydown', onKeyDown);
+            (returnFocusTarget || previousFocus)?.focus?.();
+        };
+    }, [containerRef, onClose, open, returnFocusRef]);
+}
+
+function useBodyScrollLock(active) {
+    useEffect(() => {
+        if (!active) return undefined;
+
+        const previousBodyOverflow = document.body.style.overflow;
+        const previousHtmlOverflow = document.documentElement.style.overflow;
+
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+
+        return () => {
+            document.body.style.overflow = previousBodyOverflow;
+            document.documentElement.style.overflow = previousHtmlOverflow;
+        };
+    }, [active]);
+}
+
+function TableOfContents({ toc, activeId, onSelect, className = '', showHeader = true }) {
     if (!toc.length) return null;
     return (
-        <nav className="note-toc" aria-label="Table of contents">
-            <div className="note-toc-header">Contents</div>
+        <nav className={`note-toc ${className}`.trim()} aria-label="Table of contents">
+            {showHeader ? <div className="note-toc-header">Contents</div> : null}
             <ul className="note-toc-list">
                 {toc.map((item) => (
                     <li key={item.id} className={`note-toc-item level-${item.level}`}>
@@ -48,12 +149,72 @@ function TableOfContents({ toc, activeId, onSelect }) {
     );
 }
 
+function MobileTableOfContents({ toc, activeId, onSelect, onClose, returnFocusRef }) {
+    const containerRef = useRef(null);
+
+    useOverlayA11y({ open: true, containerRef, returnFocusRef, onClose });
+
+    return (
+        <>
+            <button
+                className="note-sheet-backdrop"
+                type="button"
+                onClick={onClose}
+                aria-label="Close table of contents"
+            />
+            <div
+                ref={containerRef}
+                className="note-sheet note-toc-sheet"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="note-toc-sheet-title"
+                tabIndex={-1}
+            >
+                <div className="note-sheet-handle" aria-hidden="true" />
+                <div className="note-sheet-header">
+                    <h3 id="note-toc-sheet-title" className="note-sheet-title">Contents</h3>
+                    <button
+                        type="button"
+                        className="btn btn-ghost btn-sm"
+                        onClick={onClose}
+                        aria-label="Close table of contents"
+                    >
+                        ✕
+                    </button>
+                </div>
+                <TableOfContents
+                    toc={toc}
+                    activeId={activeId}
+                    showHeader={false}
+                    className="note-toc--sheet"
+                    onSelect={(blockId) => {
+                        onSelect(blockId);
+                        onClose();
+                    }}
+                />
+            </div>
+        </>
+    );
+}
+
 // ── Recall Panel ───────────────────────────────────────────────────────────
 
-function RecallPanel({ recall, onClose }) {
+function RecallPanel({ recall, onClose, isMobileModal = false, returnFocusRef }) {
     const cues = recall?.cues || [];
     const [revealedSet, setRevealedSet] = useState(new Set());
     const [currentIdx, setCurrentIdx] = useState(0);
+    const containerRef = useRef(null);
+    const swipeStartRef = useRef(null);
+
+    useOverlayA11y({ open: isMobileModal, containerRef, returnFocusRef, onClose });
+
+    const movePrev = useCallback(() => {
+        setCurrentIdx((index) => Math.max(0, index - 1));
+    }, []);
+
+    const moveNext = useCallback(() => {
+        setCurrentIdx((index) => Math.min(cues.length - 1, index + 1));
+    }, [cues.length]);
 
     const toggle = (id) => setRevealedSet((prev) => {
         const next = new Set(prev);
@@ -64,9 +225,55 @@ function RecallPanel({ recall, onClose }) {
     const cue = cues[currentIdx];
     const answer = cue?.answer || recall?.summaryText || 'See note content.';
 
+    const handleTouchStart = useCallback((event) => {
+        const touch = event.changedTouches?.[0];
+        if (!touch) return;
+        swipeStartRef.current = { x: touch.clientX, y: touch.clientY };
+    }, []);
+
+    const handleTouchEnd = useCallback((event) => {
+        const touch = event.changedTouches?.[0];
+        const start = swipeStartRef.current;
+        swipeStartRef.current = null;
+        if (!touch || !start) return;
+
+        const deltaX = touch.clientX - start.x;
+        const deltaY = touch.clientY - start.y;
+        if (Math.abs(deltaX) < 48 || Math.abs(deltaY) > 40) return;
+
+        if (deltaX > 0) {
+            movePrev();
+        } else {
+            moveNext();
+        }
+    }, [moveNext, movePrev]);
+
+    const handleKeyDown = useCallback((event) => {
+        if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            movePrev();
+        }
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            moveNext();
+        }
+        if (event.key === 'Escape' && isMobileModal) {
+            event.preventDefault();
+            onClose?.();
+        }
+    }, [isMobileModal, moveNext, movePrev, onClose]);
+
     if (!cues.length) {
         return (
-            <div className="recall-panel" role="complementary" aria-label="Recall mode">
+            <div
+                ref={containerRef}
+                className={`recall-panel ${isMobileModal ? 'recall-panel--modal' : ''}`}
+                role={isMobileModal ? 'dialog' : 'complementary'}
+                aria-modal={isMobileModal ? 'true' : undefined}
+                aria-label="Recall mode"
+                tabIndex={-1}
+                onKeyDown={handleKeyDown}
+            >
                 <div className="recall-panel-header">
                     <span>🧠 Recall Mode</span>
                     <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close recall mode">✕</button>
@@ -77,7 +284,15 @@ function RecallPanel({ recall, onClose }) {
     }
 
     return (
-        <div className="recall-panel" role="complementary" aria-label="Recall mode">
+        <div
+            ref={containerRef}
+            className={`recall-panel ${isMobileModal ? 'recall-panel--modal' : ''}`}
+            role={isMobileModal ? 'dialog' : 'complementary'}
+            aria-modal={isMobileModal ? 'true' : undefined}
+            aria-labelledby="recall-panel-title"
+            tabIndex={-1}
+            onKeyDown={handleKeyDown}
+        >
             <div className="recall-panel-header">
                 <span id="recall-panel-title">🧠 Recall Mode <span className="recall-count">{currentIdx + 1} / {cues.length}</span></span>
                 <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close recall mode">✕</button>
@@ -88,7 +303,7 @@ function RecallPanel({ recall, onClose }) {
             </div>
 
             {cue && (
-                <div className="recall-cue-card">
+                <div className="recall-cue-card" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
                     <p className="recall-prompt">{cue.prompt}</p>
                     {!revealedSet.has(cue.id) ? (
                         <button
@@ -109,7 +324,7 @@ function RecallPanel({ recall, onClose }) {
             <div className="recall-nav">
                 <button
                     className="btn btn-secondary btn-sm"
-                    onClick={() => { setCurrentIdx((i) => Math.max(0, i - 1)); }}
+                    onClick={movePrev}
                     disabled={currentIdx === 0}
                 >← Prev</button>
                 <div className="recall-dots" role="tablist" aria-label="Recall cue navigation">
@@ -118,14 +333,16 @@ function RecallPanel({ recall, onClose }) {
                             key={c.id}
                             className={`recall-dot ${i === currentIdx ? 'active' : ''} ${revealedSet.has(c.id) ? 'done' : ''}`}
                             onClick={() => setCurrentIdx(i)}
+                            role="tab"
                             aria-label={`Cue ${i + 1}${revealedSet.has(c.id) ? ', answered' : ''}`}
-                            aria-pressed={i === currentIdx}
+                            aria-selected={i === currentIdx}
+                            tabIndex={i === currentIdx ? 0 : -1}
                         />
                     ))}
                 </div>
                 <button
                     className="btn btn-secondary btn-sm"
-                    onClick={() => { setCurrentIdx((i) => Math.min(cues.length - 1, i + 1)); }}
+                    onClick={moveNext}
                     disabled={currentIdx === cues.length - 1}
                 >Next →</button>
             </div>
@@ -219,9 +436,15 @@ export default function NotePage() {
     const { subject, unitId, topicId, subtopicIndex } = useParams();
     const navigate = useNavigate();
     const [recallOpen, setRecallOpen] = useState(false);
-    const [tocOpen, setTocOpen] = useState(true);
+    const [tocPinnedOpen, setTocPinnedOpen] = useState(true);
+    const [tocSheetOpen, setTocSheetOpen] = useState(false);
+    const [openTopicId, setOpenTopicId] = useState(null);
     const [scrollPct, setScrollPct] = useState(0);
     const scrollRef = useRef(null);
+    const tocButtonRef = useRef(null);
+    const recallButtonRef = useRef(null);
+    const isCompactLayout = useViewportMatch('(max-width: 899px)');
+    const isPhoneLayout = useViewportMatch('(max-width: 599px)');
 
     const { subjectKey: normalizedSubject, syllabus, isLoading: isLoadingSyllabusAsync } = useSyllabus(subject || 'chemistry');
     const fallbackSyllabus = useMemo(
@@ -319,6 +542,51 @@ export default function NotePage() {
 
     const hasNote = Boolean(seedNote);
     const hasCues = Boolean(seedNote?.recall?.cues?.length);
+    const isModalLayerOpen = (isCompactLayout && tocSheetOpen) || (isPhoneLayout && recallOpen);
+
+    useBodyScrollLock(isModalLayerOpen);
+
+    useEffect(() => {
+        const frameId = window.requestAnimationFrame(() => {
+            setTocSheetOpen(false);
+            setOpenTopicId(null);
+            if (!isCompactLayout) {
+                setTocPinnedOpen(true);
+            }
+        });
+
+        return () => window.cancelAnimationFrame(frameId);
+    }, [isCompactLayout]);
+
+    useEffect(() => {
+        const frameId = window.requestAnimationFrame(() => {
+            setTocSheetOpen(false);
+            setOpenTopicId(null);
+        });
+
+        return () => window.cancelAnimationFrame(frameId);
+    }, [noteId]);
+
+    useEffect(() => {
+        const handlePointerDown = (event) => {
+            const target = event.target;
+            if (!(target instanceof HTMLElement)) return;
+            if (target.closest('.topic-tab-container')) return;
+            setOpenTopicId(null);
+        };
+
+        document.addEventListener('pointerdown', handlePointerDown);
+        return () => document.removeEventListener('pointerdown', handlePointerDown);
+    }, []);
+
+    const handleTocToggle = useCallback(() => {
+        if (isCompactLayout) {
+            setTocSheetOpen((value) => !value);
+            return;
+        }
+
+        setTocPinnedOpen((value) => !value);
+    }, [isCompactLayout]);
 
     return (
         <div className="note-page note-page--all-subjects animate-fade-in">
@@ -327,8 +595,8 @@ export default function NotePage() {
             <div className="note-toolbar card">
                 {/* Left: breadcrumbs */}
                 <div className="note-toolbar-left">
-                    <span className="badge">{getSubjectLabel(context.subject)}</span>
-                    <span className="badge">{context.unitCode || (isLoadingSyllabus ? '...' : 'Unknown unit')}</span>
+                    <span className="badge note-toolbar-subject-badge" title={getSubjectLabel(context.subject)}>{getSubjectLabel(context.subject)}</span>
+                    <span className="badge note-toolbar-unit-badge">{context.unitCode || (isLoadingSyllabus ? '...' : 'Unknown unit')}</span>
                     <h2 className="note-toolbar-title">{context.subtopicTitle || (isLoadingSyllabus ? 'Loading topic...' : 'Untitled subtopic')}</h2>
                 </div>
 
@@ -341,8 +609,10 @@ export default function NotePage() {
                                 className="btn btn-sm note-read-btn note-read-btn--done"
                                 onClick={markUnread}
                                 title={`Marked as read on ${new Date(readAt).toLocaleDateString()}\nClick to undo`}
+                                aria-label={`Marked as read on ${new Date(readAt).toLocaleDateString()}. Activate to mark unread.`}
                             >
-                                ✓ Read
+                                <span className="note-btn-icon" aria-hidden="true">✓</span>
+                                <span className="note-read-btn-text">Read</span>
                             </button>
                         ) : (
                             <button
@@ -350,8 +620,16 @@ export default function NotePage() {
                                 onClick={scrollPct >= 80 ? markRead : undefined}
                                 title={scrollPct >= 80 ? 'Mark this note as read' : `Scroll more to unlock — ${scrollPct}% read`}
                                 disabled={scrollPct < 80}
+                                aria-label={scrollPct >= 80 ? 'Mark this note as read' : `${scrollPct}% read. Scroll more to unlock mark as read.`}
                             >
-                                {scrollPct >= 80 ? '✓ Mark as Read' : `${scrollPct}% read`}
+                                {scrollPct >= 80 ? (
+                                    <>
+                                        <span className="note-btn-icon" aria-hidden="true">✓</span>
+                                        <span className="note-read-btn-text">Mark as Read</span>
+                                    </>
+                                ) : (
+                                    <span className="note-read-btn-text">{`${scrollPct}% read`}</span>
+                                )}
                             </button>
                         )
                     )}
@@ -359,22 +637,32 @@ export default function NotePage() {
                     {/* ToC toggle */}
                     {hasNote && toc.length > 0 && (
                         <button
-                            className={`btn btn-sm ${tocOpen ? 'btn-primary' : 'btn-ghost'}`}
-                            onClick={() => setTocOpen((v) => !v)}
+                            ref={tocButtonRef}
+                            className={`btn btn-sm ${(isCompactLayout ? tocSheetOpen : tocPinnedOpen) ? 'btn-primary' : 'btn-ghost'}`}
+                            onClick={handleTocToggle}
                             title="Toggle table of contents"
+                            aria-label="Toggle table of contents"
+                            aria-expanded={isCompactLayout ? tocSheetOpen : tocPinnedOpen}
+                            aria-haspopup={isCompactLayout ? 'dialog' : undefined}
                         >
-                            ☰ Contents
+                            <span className="note-btn-icon" aria-hidden="true">☰</span>
+                            <span className="note-btn-label">Contents</span>
                         </button>
                     )}
 
                     {/* Recall mode toggle */}
                     {hasNote && hasCues && (
                         <button
+                            ref={recallButtonRef}
                             className={`btn btn-sm ${recallOpen ? 'btn-primary' : 'btn-ghost'}`}
                             onClick={() => setRecallOpen((v) => !v)}
                             title="Toggle recall mode"
+                            aria-label="Toggle recall mode"
+                            aria-expanded={recallOpen}
+                            aria-haspopup={isPhoneLayout ? 'dialog' : undefined}
                         >
-                            🧠 Recall
+                            <span className="note-btn-icon" aria-hidden="true">🧠</span>
+                            <span className="note-btn-label">Recall</span>
                         </button>
                     )}
 
@@ -382,7 +670,10 @@ export default function NotePage() {
                         className="btn btn-secondary btn-sm"
                         onClick={() => navigate(`/chapters?subject=${context.subject}`)}
                         aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
-                    >← Chapters</button>
+                    >
+                        <span className="note-btn-icon" aria-hidden="true">←</span>
+                        <span className="note-btn-label">Chapters</span>
+                    </button>
                 </div>
             </div>
 
@@ -399,11 +690,17 @@ export default function NotePage() {
                             key={topic.id}
                             className={`topic-tab-container ${String(topic.id) === String(topicId) ? 'active' : ''}`}
                         >
-                            <button className="topic-tab">
+                            <button
+                                className="topic-tab"
+                                type="button"
+                                aria-haspopup="menu"
+                                aria-expanded={openTopicId === topic.id}
+                                onClick={() => setOpenTopicId((current) => (current === topic.id ? null : topic.id))}
+                            >
                                 Topic {topic.id}: {topic.title}
                                 <span className="topic-tab-caret">▼</span>
                             </button>
-                            <div className="topic-subtopics-dropdown">
+                            <div className={`topic-subtopics-dropdown ${openTopicId === topic.id ? 'topic-subtopics-dropdown--open' : ''}`} role="menu" aria-label={`Subtopics for topic ${topic.id}`}>
                                 {topic.subtopics.map((sub, idx) => {
                                     const isActive = String(topic.id) === String(topicId) && String(idx) === String(subtopicIndex);
                                     return (
@@ -411,6 +708,8 @@ export default function NotePage() {
                                             key={idx}
                                             to={`/notes/${context.subject}/${activeUnit.id}/${topic.id}/${idx}`}
                                             className={`dropdown-item ${isActive ? 'active' : ''}`}
+                                            role="menuitem"
+                                            onClick={() => setOpenTopicId(null)}
                                         >
                                             {sub}
                                         </Link>
@@ -422,11 +721,21 @@ export default function NotePage() {
                 </div>
             )}
 
+            {hasNote && toc.length > 0 && isCompactLayout && tocSheetOpen && (
+                <MobileTableOfContents
+                    toc={toc}
+                    activeId={activeId}
+                    onSelect={scrollToBlock}
+                    onClose={() => setTocSheetOpen(false)}
+                    returnFocusRef={tocButtonRef}
+                />
+            )}
+
             {/* ── Main content row ── */}
             <div className="note-body">
 
                 {/* ToC sidebar */}
-                {hasNote && toc.length > 0 && tocOpen && (
+                {hasNote && toc.length > 0 && !isCompactLayout && tocPinnedOpen && (
                     <TableOfContents toc={toc} activeId={activeId} onSelect={scrollToBlock} />
                 )}
 
@@ -466,9 +775,20 @@ export default function NotePage() {
                 )}
 
                 {/* Recall panel (right column) */}
-                {hasNote && recallOpen && (
+                {hasNote && recallOpen && !isPhoneLayout && (
                     <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
-                        <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} />
+                        <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} returnFocusRef={recallButtonRef} />
+                    </ErrorBoundary>
+                )}
+
+                {hasNote && recallOpen && isPhoneLayout && (
+                    <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
+                        <RecallPanel
+                            recall={seedNote.recall}
+                            onClose={() => setRecallOpen(false)}
+                            isMobileModal
+                            returnFocusRef={recallButtonRef}
+                        />
                     </ErrorBoundary>
                 )}
 

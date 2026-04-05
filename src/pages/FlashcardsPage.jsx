@@ -1,9 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useMutation, useQuery } from 'convex/react';
 import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight, Layers, CheckCircle, BookOpen } from 'lucide-react';
 import { listFlashcards } from '../services/notes/noteStore.js';
-import { api } from '../convex-client.js';
+import { api, callMutation, callQuery, getClient } from '../convex-client.js';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
@@ -49,6 +48,14 @@ function clearLegacyStatus() {
     }
 }
 
+    function persistLocalStatus(statusMap) {
+        try {
+            localStorage.setItem(STATUS_KEY, JSON.stringify(statusMap));
+        } catch {
+            // ignore local persistence failures
+        }
+    }
+
 function mapServerProgressRows(rows) {
     if (!Array.isArray(rows)) return {};
     // D11: If duplicate rows exist for the same cardId, pick the one with the
@@ -76,13 +83,10 @@ export default function FlashcardsPage() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [status, setStatus] = useState({});
+    const [serverProgressRows, setServerProgressRows] = useState(undefined);
     const flipTimerRef = useRef(null); // track flip-transition timer to prevent unmount leaks
     const legacyStatusRef = useRef(loadStatus());
     const migratedLegacyRef = useRef(false);
-    const serverProgressRows = useQuery(api.flashcards.listFlashcardProgress);
-    const setFlashcardProgress = useMutation(api.flashcards.setFlashcardProgress);
-    const bulkUpsertFlashcardProgress = useMutation(api.flashcards.bulkUpsertFlashcardProgress);
-    const resetFlashcardProgress = useMutation(api.flashcards.resetFlashcardProgress);
 
     const known = useMemo(() =>
         Object.entries(status).filter(([, v]) => v === 'known').map(([k]) => k),
@@ -114,15 +118,50 @@ export default function FlashcardsPage() {
     }, []);
 
     useEffect(() => {
+        let cancelled = false;
+
+        async function loadFlashcardProgress() {
+            const client = getClient();
+            if (!client) {
+                if (!cancelled) setServerProgressRows([]);
+                return;
+            }
+
+            try {
+                const rows = await callQuery(api.flashcards.listFlashcardProgress);
+                if (!cancelled) {
+                    setServerProgressRows(rows || []);
+                }
+            } catch {
+                if (!cancelled) {
+                    setServerProgressRows([]);
+                }
+            }
+        }
+
+        void loadFlashcardProgress();
+
+        return () => {
+            cancelled = true;
+        };
+    }, []);
+
+    useEffect(() => {
         if (serverProgressRows === undefined) return;
 
         const serverStatus = mapServerProgressRows(serverProgressRows);
         const legacyStatus = legacyStatusRef.current;
+        const client = getClient();
+
+        if (!client) {
+            setStatus(legacyStatus);
+            return;
+        }
 
         if (!migratedLegacyRef.current && Object.keys(serverStatus).length === 0 && Object.keys(legacyStatus).length > 0) {
             migratedLegacyRef.current = true;
             setStatus(legacyStatus);
-            void bulkUpsertFlashcardProgress({ statusesJson: JSON.stringify(legacyStatus) })
+            void callMutation(api.flashcards.bulkUpsertFlashcardProgress, { statusesJson: JSON.stringify(legacyStatus) })
                 .then(() => {
                     legacyStatusRef.current = {};
                     clearLegacyStatus();
@@ -139,7 +178,7 @@ export default function FlashcardsPage() {
         }
 
         setStatus(serverStatus);
-    }, [bulkUpsertFlashcardProgress, serverProgressRows]);
+    }, [serverProgressRows]);
 
     const cards = useMemo(() => {
         return userCards.map((card) => ({
@@ -175,8 +214,15 @@ export default function FlashcardsPage() {
 
     const persistStatus = (nextStatus) => {
         if (!card?.id) return;
-        setStatus((prev) => ({ ...prev, [card.id]: nextStatus }));
-        void setFlashcardProgress({ cardId: card.id, status: nextStatus });
+        setStatus((prev) => {
+            const next = { ...prev, [card.id]: nextStatus };
+            persistLocalStatus(next);
+            return next;
+        });
+
+        const client = getClient();
+        if (!client) return;
+        void callMutation(api.flashcards.setFlashcardProgress, { cardId: card.id, status: nextStatus });
     };
 
     const markKnown = () => {
@@ -266,6 +312,7 @@ export default function FlashcardsPage() {
                 <ErrorBoundary name="FlashcardDisplay" inline resetKeys={[card?.id]}>
                 <button
                     className="flashcard-wrapper"
+                    type="button"
                     onClick={() => setIsFlipped(!isFlipped)}
                     aria-label={isFlipped ? `Hide answer. Card ${currentIndex + 1} of ${totalCards}: ${card.front}` : `Reveal answer for card ${currentIndex + 1} of ${totalCards}: ${card.front}`}
                     aria-pressed={isFlipped}
@@ -290,7 +337,7 @@ export default function FlashcardsPage() {
                 <span className="flashcard-counter">{currentIndex + 1} / {totalCards}</span>
 
                 {sourcePath && (
-                    <Link className="btn btn-sm btn-ghost" to={sourcePath}>
+                    <Link className="btn btn-sm btn-ghost flashcard-source-link" to={sourcePath}>
                         From note: {card.sourceLabel || card.sourceNoteId}
                     </Link>
                 )}
@@ -298,6 +345,7 @@ export default function FlashcardsPage() {
                 <div className="flashcard-controls">
                     <button
                         className="btn btn-secondary"
+                        type="button"
                         onClick={goPrev}
                         aria-label="Previous flashcard"
                     >
@@ -305,6 +353,7 @@ export default function FlashcardsPage() {
                     </button>
                     <button
                         className="btn btn-danger btn-lg"
+                        type="button"
                         onClick={markLearning}
                         aria-label="Mark as still learning and go to next card"
                     >
@@ -312,6 +361,7 @@ export default function FlashcardsPage() {
                     </button>
                     <button
                         className="btn btn-success btn-lg"
+                        type="button"
                         onClick={markKnown}
                         aria-label="Mark as known and go to next card"
                     >
@@ -319,6 +369,7 @@ export default function FlashcardsPage() {
                     </button>
                     <button
                         className="btn btn-secondary"
+                        type="button"
                         onClick={goNext}
                         aria-label="Next flashcard"
                     >
@@ -328,12 +379,17 @@ export default function FlashcardsPage() {
 
                 <button
                     className="btn btn-ghost"
+                    type="button"
                     onClick={() => {
                         setStatus({});
+                        persistLocalStatus({});
                         clearLegacyStatus();
                         setCurrentIndex(0);
                         setIsFlipped(false);
-                        void resetFlashcardProgress();
+                        const client = getClient();
+                        if (client) {
+                            void callMutation(api.flashcards.resetFlashcardProgress);
+                        }
                     }}
                     aria-label="Reset all flashcard progress"
                 >
