@@ -12,7 +12,121 @@ import './NoteBlockRenderer.css';
 // Sanitize HTML strings before rendering — defence-in-depth against XSS
 const safe = (html) => DOMPurify.sanitize(html ?? '');
 // SVG sanitization: allow SVG-specific tags/attrs but strip scripts & event handlers
-const safeSvg = (svg) => DOMPurify.sanitize(svg ?? '', { USE_PROFILES: { svg: true, svgFilters: true } });
+const safeSvg = (svg, label) => DOMPurify.sanitize(enhanceSvgMarkup(svg ?? '', label), {
+    USE_PROFILES: { svg: true, svgFilters: true },
+    ADD_ATTR: ['role', 'aria-label', 'aria-labelledby', 'focusable', 'preserveAspectRatio', 'class'],
+});
+
+function stripHtml(value) {
+    return (value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function escapeAttribute(value) {
+    return value
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
+
+function parseSvgMetrics(svg = '') {
+    const viewBoxMatch = svg.match(/viewBox=["']([^"']+)["']/i);
+    const viewBoxParts = viewBoxMatch?.[1]?.trim().split(/\s+/).map(Number) || [];
+    const viewBoxWidth = Number.isFinite(viewBoxParts[2]) ? viewBoxParts[2] : 0;
+    const viewBoxHeight = Number.isFinite(viewBoxParts[3]) ? viewBoxParts[3] : 0;
+    const textCount = (svg.match(/<text\b/gi) || []).length + (svg.match(/<tspan\b/gi) || []).length;
+    const inlineFontSizes = [...svg.matchAll(/font-size=["']([0-9.]+)/gi)].map((match) => Number.parseFloat(match[1]));
+    const styleFontSizes = [...svg.matchAll(/font-size\s*:\s*([0-9.]+)px/gi)].map((match) => Number.parseFloat(match[1]));
+    const fontSizes = [...inlineFontSizes, ...styleFontSizes].filter((size) => Number.isFinite(size));
+    const minFontSize = fontSizes.length ? Math.min(...fontSizes) : null;
+    const isWide = viewBoxWidth > 400;
+    const isDense = textCount >= 26
+        || (viewBoxWidth >= 600 && textCount >= 14 && minFontSize !== null && minFontSize <= 11)
+        || (viewBoxHeight >= 420 && textCount >= 10);
+
+    return {
+        viewBoxWidth,
+        viewBoxHeight,
+        textCount,
+        minFontSize,
+        isWide,
+        isDense,
+    };
+}
+
+function normalizeSvgFontSizes(svg = '', minimum = 10) {
+    let nextSvg = svg.replace(/font-size=(['"])([0-9.]+)(px)?\1/gi, (match, quote, size, unit = '') => {
+        const parsed = Number.parseFloat(size);
+        if (!Number.isFinite(parsed) || parsed >= minimum) return match;
+        const normalized = Number.isInteger(minimum) ? String(minimum) : minimum.toFixed(1).replace(/\.0$/, '');
+        return `font-size=${quote}${normalized}${unit}${quote}`;
+    });
+
+    nextSvg = nextSvg.replace(/font-size\s*:\s*([0-9.]+)px/gi, (match, size) => {
+        const parsed = Number.parseFloat(size);
+        if (!Number.isFinite(parsed) || parsed >= minimum) return match;
+        const normalized = Number.isInteger(minimum) ? String(minimum) : minimum.toFixed(1).replace(/\.0$/, '');
+        return `font-size:${normalized}px`;
+    });
+
+    return nextSvg;
+}
+
+function padSvgViewBox(svg = '') {
+    return svg.replace(/viewBox=(['"])([^"']+)\1/i, (match, quote, rawViewBox) => {
+        const parts = rawViewBox.trim().split(/\s+/).map(Number);
+        if (parts.length !== 4 || parts.some((value) => !Number.isFinite(value))) return match;
+
+        const [x, y, width, height] = parts;
+        const marginX = Math.max(6, Math.min(18, width * 0.03));
+        const marginY = Math.max(6, Math.min(18, height * 0.04));
+        const padded = [
+            Number((x - marginX).toFixed(2)),
+            Number((y - marginY).toFixed(2)),
+            Number((width + marginX * 2).toFixed(2)),
+            Number((height + marginY * 2).toFixed(2)),
+        ];
+
+        return `viewBox=${quote}${padded.join(' ')}${quote}`;
+    });
+}
+
+function enhanceSvgMarkup(svg = '', label = '') {
+    if (!svg.includes('<svg')) return svg;
+
+    const fallbackLabel = stripHtml(label) || 'Chemistry diagram';
+    const escapedLabel = escapeAttribute(fallbackLabel);
+    let nextSvg = normalizeSvgFontSizes(svg, 10);
+    nextSvg = padSvgViewBox(nextSvg);
+
+    nextSvg = nextSvg.replace(/<svg\b([^>]*)>/i, (match, attrs) => {
+        let updatedAttrs = attrs;
+
+        if (!/\bclass=/.test(updatedAttrs)) {
+            updatedAttrs += ' class="nb-inline-svg"';
+        } else {
+            updatedAttrs = updatedAttrs.replace(/class=(['"])(.*?)\1/i, (classMatch, quote, classNames) => {
+                if (classNames.includes('nb-inline-svg')) return classMatch;
+                return `class=${quote}${classNames} nb-inline-svg${quote}`;
+            });
+        }
+
+        if (!/\brole=/.test(updatedAttrs)) updatedAttrs += ' role="img"';
+        if (!/\baria-label=/.test(updatedAttrs) && !/\baria-labelledby=/.test(updatedAttrs)) {
+            updatedAttrs += ` aria-label="${escapedLabel}"`;
+        }
+        if (!/\bfocusable=/.test(updatedAttrs)) updatedAttrs += ' focusable="false"';
+        if (!/\bpreserveAspectRatio=/.test(updatedAttrs)) updatedAttrs += ' preserveAspectRatio="xMidYMid meet"';
+
+        return `<svg${updatedAttrs}>`;
+    });
+
+    if (!/<title[\s>]/i.test(nextSvg)) {
+        nextSvg = nextSvg.replace(/<svg\b[^>]*>/i, (openTag) => `${openTag}<title>${escapedLabel}</title>`);
+    }
+
+    return nextSvg;
+}
 
 // ── Individual block renderers ─────────────────────────────────────────────
 
@@ -247,20 +361,23 @@ function CalloutBlock({ data }) {
 }
 
 function SvgBlock({ data }) {
-    // Detect viewBox width to classify narrow vs wide SVGs
-    const svgClass = useMemo(() => {
-        const match = (data.svg || '').match(/viewBox=["'][^"']*["']/);
-        if (!match) return 'nb-svg-wide';
-        const parts = match[0].replace(/viewBox=["']/, '').replace(/["']/, '').trim().split(/\s+/);
-        const w = parseFloat(parts[2]);
-        return w > 400 ? 'nb-svg-wide' : 'nb-svg-narrow';
-    }, [data.svg]);
+    const metrics = useMemo(() => parseSvgMetrics(data.svg || ''), [data.svg]);
+    const svgClassName = [
+        'nb-svg-container',
+        metrics.isWide ? 'nb-svg-wide' : 'nb-svg-narrow',
+        metrics.isDense ? 'nb-svg-dense' : '',
+    ].filter(Boolean).join(' ');
+    const svgStyle = metrics.isDense && metrics.viewBoxWidth
+        ? { '--nb-svg-min-width': `${Math.min(Math.max(metrics.viewBoxWidth, 640), 920)}px` }
+        : undefined;
+    const accessibleLabel = stripHtml(data.caption) || 'Chemistry diagram';
 
     return (
-        <figure className="nb-svg-figure">
+        <figure className="nb-svg-figure" aria-label={accessibleLabel}>
             <div
-                className={`nb-svg-container ${svgClass}`}
-                dangerouslySetInnerHTML={{ __html: safeSvg(data.svg) }}
+                className={svgClassName}
+                style={svgStyle}
+                dangerouslySetInnerHTML={{ __html: safeSvg(data.svg, accessibleLabel) }}
             />
             {data.caption && <figcaption className="nb-svg-caption">{data.caption}</figcaption>}
         </figure>

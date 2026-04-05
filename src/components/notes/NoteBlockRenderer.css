@@ -544,9 +544,32 @@
     overflow-y: hidden;
     width: 100%;
     color: var(--color-text);
-    --note-svg-text: #f8fafc;
-    --note-svg-muted: #cbd5e1;
+    padding: var(--space-1);
+    --note-svg-text: var(--color-text);
+    --note-svg-text-secondary: var(--color-text-secondary);
+    --note-svg-muted: var(--color-text-secondary);
     --note-svg-grid: rgba(148, 163, 184, 0.35);
+}
+
+html[data-theme="dark"] .nb-svg-container {
+    --note-svg-text: #e5edf8;
+    --note-svg-text-secondary: #cbd5e1;
+    --note-svg-muted: #cbd5e1;
+    --note-svg-grid: rgba(148, 163, 184, 0.45);
+    --note-svg-accent-blue: #7cc4ff;
+    --note-svg-accent-green: #6ee7b7;
+    --note-svg-accent-red: #fca5a5;
+    --note-svg-accent-amber: #fdba74;
+    --note-svg-accent-purple: #d8b4fe;
+    --note-svg-accent-pink: #f9a8d4;
+    --note-svg-panel: #1a2336;
+    --note-svg-panel-alt: #202b43;
+    --note-svg-panel-blue: #17283f;
+    --note-svg-panel-green: #152a24;
+    --note-svg-panel-amber: #312615;
+    --note-svg-panel-orange: #332316;
+    --note-svg-panel-rose: #321c25;
+    --note-svg-panel-purple: #2a1f39;
 }
 
 .nb-svg-container svg {
@@ -555,20 +578,158 @@
     max-width: 100%;
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
-    /* C7: Fix SVG layout shift */
-    max-height: 60vh;
+    max-height: none;
+    overflow: visible;
 }
 
-.nb-svg-container svg text,
-.nb-svg-container svg tspan,
-.nb-svg-container svg .lbl,
-.nb-svg-container svg .sub,
-.nb-svg-container svg .hdr {
-    fill: var(--note-svg-text) !important;
+.nb-svg-container svg :is(text, tspan) {
     font-family: var(--font-sans) !important;
-    font-weight: 600;
     letter-spacing: 0.01em;
+}
+
+.nb-svg-container svg :is(text, tspan):not([fill]) {
+    fill: var(--note-svg-text) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#000" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#212529" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2c3e50" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#343a40" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#495057" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2d2d72" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e1b4b" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#111827" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1f2937" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e293b" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#334155" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#374151" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#444" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#555" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#333" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="black" i] {
+    fill: var(--note-svg-text) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#64748b" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#6b7280" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#868e96" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#adb5bd" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#ced4da" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#dee2e6" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#94a3b8" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9ca3af" i] {
+    fill: var(--note-svg-text-secondary) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1864ab" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1d4ed8" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e40af" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2563eb" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#0369a1" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#0c4a6e" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1250a0" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#0284c7" i] {
+    fill: var(--note-svg-accent-blue) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2b8a3e" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#065f46" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#166534" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#15803d" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#14532d" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#22543d" i] {
+    fill: var(--note-svg-accent-green) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#c92a2a" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#dc2626" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#991b1b" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#7f1d1d" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#b91c1c" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#742a2a" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9b2c2c" i] {
+    fill: var(--note-svg-accent-red) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#92400e" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#78350f" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#532407" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#c2410c" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9a3412" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#e67700" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#b45309" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#d97706" i] {
+    fill: var(--note-svg-accent-amber) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2d2d72" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e1b4b" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#4c1d95" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#5b21b6" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#3730a3" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#6d28d9" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#862e9c" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9b59b6" i] {
+    fill: var(--note-svg-accent-purple) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#4a1040" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9d174d" i],
+html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#be185d" i] {
+    fill: var(--note-svg-accent-pink) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="white" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fff" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#ffffff" i] {
+    fill: var(--note-svg-panel) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#f8fafc" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#f8f9fa" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#ecf0f1" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#edf2f7" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#f1f5f9" i] {
+    fill: var(--note-svg-panel-alt) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#f0f9ff" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#dbeafe" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#e0f2fe" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#eff6ff" i] {
+    fill: var(--note-svg-panel-blue) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#f0fdf4" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#dcfce7" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#d1fae5" i] {
+    fill: var(--note-svg-panel-green) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fff7ed" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#ffedd5" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fed7aa" i] {
+    fill: var(--note-svg-panel-orange) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fef9c3" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fef3c7" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fde68a" i] {
+    fill: var(--note-svg-panel-amber) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fff1f2" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#ffe4e6" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fef2f2" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fee2e2" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fecdd3" i] {
+    fill: var(--note-svg-panel-rose) !important;
+}
+
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fdf4ff" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#fce7f3" i],
+html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
+    fill: var(--note-svg-panel-purple) !important;
 }
 
 .nb-svg-container svg [fill="#000" i]:not(text):not(tspan),
@@ -647,9 +808,18 @@
 
 /* Wide SVGs (> 400px viewBox width) — set a minimum width so text stays readable */
 .nb-svg-container.nb-svg-wide svg {
-    min-width: 420px;
+    min-width: 0;
     width: 100%;
     height: auto;
+}
+
+.nb-svg-container.nb-svg-dense {
+    padding-bottom: var(--space-2);
+}
+
+.nb-svg-container.nb-svg-dense svg {
+    width: max(100%, var(--nb-svg-min-width, 680px));
+    max-width: none;
 }
 
 .nb-svg-caption {
@@ -666,12 +836,12 @@
         border-radius: 8px;
     }
 
-    .nb-svg-container.nb-svg-wide {
+    .nb-svg-container.nb-svg-dense.nb-svg-wide {
         /* Show scroll hint with subtle gradient */
         position: relative;
     }
 
-    .nb-svg-container.nb-svg-wide::after {
+    .nb-svg-container.nb-svg-dense.nb-svg-wide::after {
         content: '← scroll →';
         display: block;
         text-align: center;
