@@ -1,10 +1,11 @@
 import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { Layers3, Maximize2, Minimize2, Wrench, MoreHorizontal } from 'lucide-react';
+import { Layers3, Wrench, MoreHorizontal, Maximize2, Minimize2 } from 'lucide-react';
 import { getSubjectLabel } from '../data/syllabusIndex.js';
 import { getSyllabusBySubject as getStaticSyllabusBySubject } from '../data/syllabusCatalog.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote, hasSeedNote } from '../data/seedNotes/index.js';
+import NoteReadingToolbar from '../components/notes/NoteReadingToolbar.jsx';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
 import Highlighter from '../components/student/Highlighter.jsx';
 import StickyNotes from '../components/student/StickyNotes.jsx';
@@ -16,6 +17,8 @@ import './Pages.css';
 import './NotePage.css';
 
 // ── Table of Contents ──────────────────────────────────────────────────────
+
+const DEV_FULLSCREEN_CHECKLIST_ENABLED = import.meta.env.DEV;
 
 function buildToc(blocks) {
     return (blocks || [])
@@ -130,6 +133,7 @@ function useBodyScrollLock(active) {
 
 const NOTE_FULLSCREEN_STORAGE_KEY = 'LT_NOTE_FULLSCREEN';
 const PAGE_CONTENT_FULLSCREEN_CLASS = 'page-content--note-fullscreen';
+const ROOT_FULLSCREEN_CLASS = 'note-fullscreen-active';
 
 function readFullscreenPreference() {
     if (typeof window === 'undefined') return false;
@@ -561,6 +565,32 @@ function useActiveHeading(scrollRef, toc) {
     return activeId;
 }
 
+function FullscreenDebugChecklist({ visible, checks }) {
+    if (!visible || !checks.length) return null;
+
+    const passedChecks = checks.filter((check) => check.passed).length;
+
+    return (
+        <aside className="note-dev-checklist" aria-label="Fullscreen verification checklist">
+            <div className="note-dev-checklist__header">
+                <span>Dev Fullscreen Checklist</span>
+                <span>{passedChecks}/{checks.length}</span>
+            </div>
+            <ul className="note-dev-checklist__list">
+                {checks.map((check) => (
+                    <li key={check.id} className={`note-dev-checklist__item ${check.passed ? 'is-pass' : 'is-fail'}`}>
+                        <span className="note-dev-checklist__status" aria-hidden="true">{check.passed ? 'OK' : 'NO'}</span>
+                        <span>
+                            <span>{check.label}</span>
+                            {check.detail ? <span className="note-dev-checklist__detail">{check.detail}</span> : null}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+        </aside>
+    );
+}
+
 // ── Main NotePage ──────────────────────────────────────────────────────────
 
 export default function NotePage() {
@@ -576,6 +606,7 @@ export default function NotePage() {
     const [fullscreenActive, setFullscreenActive] = useState(readFullscreenPreference);
     const [mobileChromeHidden, setMobileChromeHidden] = useState(false);
     const [mobileHeaderCondensed, setMobileHeaderCondensed] = useState(false);
+    const [fullscreenChecklist, setFullscreenChecklist] = useState([]);
     const scrollRef = useRef(null);
     const noteSurfaceRef = useRef(null);
     const tocButtonRef = useRef(null);
@@ -590,6 +621,8 @@ export default function NotePage() {
     const [srAnnouncement, setSrAnnouncement] = useState('');
     const isCompactLayout = useViewportMatch('(max-width: 899px)');
     const isPhoneLayout = useViewportMatch('(max-width: 599px)');
+    const notePageRef = useRef(null);
+    const swipeStartRef = useRef(null);
 
     const setScrollAreaRef = useCallback((node) => {
         scrollRef.current = node;
@@ -611,6 +644,35 @@ export default function NotePage() {
     const activeUnit = useMemo(() => {
         return activeSyllabus?.units?.find((u) => String(u.id) === String(unitId)) || activeSyllabus?.units?.[0] || null;
     }, [activeSyllabus, unitId]);
+
+    const previousSubtopicParams = useMemo(() => {
+        if (!activeUnit) return null;
+        const currentTopicIndex = activeUnit.topics.findIndex((topic) => String(topic.id) === String(topicId));
+        if (currentTopicIndex === -1) return null;
+
+        const currentTopic = activeUnit.topics[currentTopicIndex];
+        const previousSubIdx = Number(subtopicIndex) - 1;
+
+        if (previousSubIdx >= 0) {
+            return {
+                topicId: currentTopic.id,
+                subtopicIndex: previousSubIdx,
+                title: currentTopic.subtopics[previousSubIdx],
+            };
+        }
+
+        if (currentTopicIndex - 1 >= 0) {
+            const previousTopic = activeUnit.topics[currentTopicIndex - 1];
+            const previousTopicSubtopicIndex = previousTopic.subtopics.length - 1;
+            return {
+                topicId: previousTopic.id,
+                subtopicIndex: previousTopicSubtopicIndex,
+                title: previousTopic.subtopics[previousTopicSubtopicIndex],
+            };
+        }
+
+        return null;
+    }, [activeUnit, subtopicIndex, topicId]);
 
     // Calculate Next Subtopic
     const nextSubtopicParams = useMemo(() => {
@@ -680,6 +742,7 @@ export default function NotePage() {
 
     const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);
     const activeId = useActiveHeading(scrollRef, toc);
+    const activeTocIndex = useMemo(() => toc.findIndex((item) => item.id === activeId), [activeId, toc]);
 
     const scrollToBlock = useCallback((blockId) => {
         const el = scrollRef.current;
@@ -693,11 +756,11 @@ export default function NotePage() {
     const hasNote = Boolean(seedNote);
     const hasCues = Boolean(seedNote?.recall?.cues?.length);
     const mobileFullscreenActive = fullscreenActive && isPhoneLayout;
-    const showDesktopTopicTabs = Boolean(activeUnit) && !isPhoneLayout;
-    const showMobileTopicsTrigger = Boolean(activeUnit) && isPhoneLayout;
-    const showInlineStudyTools = hasNote && !isPhoneLayout && !mobileFullscreenActive;
-    const showReadProgressStrip = hasNote && !mobileFullscreenActive;
-    const showFooterNextLink = Boolean(nextSubtopicParams) && !mobileFullscreenActive;
+    const showDesktopTopicTabs = Boolean(activeUnit) && !isPhoneLayout && !fullscreenActive;
+    const showMobileTopicsTrigger = Boolean(activeUnit) && isPhoneLayout && !fullscreenActive;
+    const showInlineStudyTools = hasNote && !isPhoneLayout && !fullscreenActive;
+    const showReadProgressStrip = hasNote && !fullscreenActive;
+    const showFooterNextLink = Boolean(nextSubtopicParams);
     // Include overflowMenuOpen so toolbar doesn't auto-hide while the overflow menu is open
     const isAnySheetOpen = tocSheetOpen || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen) || overflowMenuOpen;
     const isModalLayerOpen = (isCompactLayout && tocSheetOpen) || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen);
@@ -712,14 +775,42 @@ export default function NotePage() {
         if (typeof document === 'undefined') return undefined;
 
         const mainContent = document.getElementById('main-content');
-        if (!mainContent) return undefined;
-
-        mainContent.classList.toggle(PAGE_CONTENT_FULLSCREEN_CLASS, mobileFullscreenActive);
+        document.documentElement.classList.toggle(ROOT_FULLSCREEN_CLASS, fullscreenActive);
+        mainContent?.classList.toggle(PAGE_CONTENT_FULLSCREEN_CLASS, fullscreenActive);
 
         return () => {
-            mainContent.classList.remove(PAGE_CONTENT_FULLSCREEN_CLASS);
+            document.documentElement.classList.remove(ROOT_FULLSCREEN_CLASS);
+            mainContent?.classList.remove(PAGE_CONTENT_FULLSCREEN_CLASS);
         };
-    }, [mobileFullscreenActive]);
+    }, [fullscreenActive]);
+
+    useEffect(() => {
+        if (!fullscreenActive || typeof document === 'undefined') return undefined;
+
+        const target = notePageRef.current;
+        if (!document.fullscreenElement && target?.requestFullscreen) {
+            target.requestFullscreen().catch(() => {
+                // App-level immersive mode remains available even if Fullscreen API fails.
+            });
+        }
+
+        return undefined;
+    }, [fullscreenActive]);
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            if (document.fullscreenElement) return;
+            setFullscreenActive((value) => {
+                if (!value) return value;
+                setMobileChromeHidden(false);
+                setSrAnnouncement('Exited fullscreen reading mode.');
+                return false;
+            });
+        };
+
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    }, []);
 
     useEffect(() => {
         const frameId = window.requestAnimationFrame(() => {
@@ -810,26 +901,6 @@ export default function NotePage() {
         };
     }, [hasNote, isAnySheetOpen, isPhoneLayout, mobileFullscreenActive]);
 
-    useEffect(() => {
-        if (!mobileFullscreenActive) return undefined;
-
-        const onKeyDown = (event) => {
-            if (event.key !== 'Escape') return;
-            event.preventDefault();
-            setFullscreenActive(false);
-            setMobileChromeHidden(false);
-            setSrAnnouncement('Exited fullscreen reading mode.');
-            window.requestAnimationFrame(() => {
-                // On phone the fullscreen toggle lives inside the overflow menu;
-                // return focus to the overflow button instead.
-                (overflowButtonRef.current || fullscreenButtonRef.current)?.focus?.();
-            });
-        };
-
-        document.addEventListener('keydown', onKeyDown);
-        return () => document.removeEventListener('keydown', onKeyDown);
-    }, [mobileFullscreenActive]);
-
     // Close overflow menu on outside click or Escape
     useEffect(() => {
         if (!overflowMenuOpen) return undefined;
@@ -879,16 +950,23 @@ export default function NotePage() {
         setTocPinnedOpen((value) => !value);
     }, [isCompactLayout]);
 
-    const handleFullscreenToggle = useCallback(() => {
+    const handleFullscreenToggle = useCallback((forcedValue) => {
         setRecallOpen(false);
         setOverflowMenuOpen(false);
         setFullscreenActive((value) => {
-            const nextValue = !value;
+            const nextValue = typeof forcedValue === 'boolean' ? forcedValue : !value;
             setTocSheetOpen(false);
             setTopicSheetOpen(false);
             setToolsSheetOpen(false);
             setOpenTopicId(null);
             setMobileChromeHidden(false);
+            if (!nextValue) {
+                if (document.fullscreenElement && document.exitFullscreen) {
+                    document.exitFullscreen().catch(() => {
+                        // App-level fullscreen already exited.
+                    });
+                }
+            }
             setSrAnnouncement(
                 nextValue
                     ? 'Fullscreen reading mode activated. Press Escape to exit.'
@@ -910,39 +988,233 @@ export default function NotePage() {
         });
     }, []);
 
-    const notePageClassName = ['note-page', 'note-page--all-subjects', 'animate-fade-in', mobileFullscreenActive ? 'note-page--fullscreen' : '']
+    const navigateToNote = useCallback((target) => {
+        if (!target || !activeUnit) return;
+        navigate(`/notes/${context.subject}/${activeUnit.id}/${target.topicId}/${target.subtopicIndex}`);
+    }, [activeUnit, context.subject, navigate]);
+
+    const handleScrollTouchStart = useCallback((event) => {
+        const touch = event.changedTouches?.[0];
+        if (!touch) return;
+        swipeStartRef.current = { x: touch.clientX, y: touch.clientY };
+    }, []);
+
+    const handleScrollTouchEnd = useCallback((event) => {
+        if (!fullscreenActive) return;
+
+        const touch = event.changedTouches?.[0];
+        const start = swipeStartRef.current;
+        swipeStartRef.current = null;
+        if (!touch || !start) return;
+
+        const deltaX = touch.clientX - start.x;
+        const deltaY = touch.clientY - start.y;
+        if (Math.abs(deltaX) < 72 || Math.abs(deltaY) > 48) return;
+
+        if (deltaX > 0 && previousSubtopicParams) {
+            void navigateToNote(previousSubtopicParams);
+        } else if (deltaX < 0 && nextSubtopicParams) {
+            void navigateToNote(nextSubtopicParams);
+        }
+    }, [fullscreenActive, navigateToNote, nextSubtopicParams, previousSubtopicParams]);
+
+    useEffect(() => {
+        if (!fullscreenActive) return undefined;
+
+        const onKeyDown = (event) => {
+            const hasModifier = event.metaKey || event.ctrlKey || event.altKey;
+
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                handleFullscreenToggle(false);
+                return;
+            }
+
+            if (!hasModifier && event.key.toLowerCase() === 'f') {
+                event.preventDefault();
+                handleFullscreenToggle();
+                return;
+            }
+
+            if (!hasModifier && event.key === 'ArrowLeft' && previousSubtopicParams) {
+                event.preventDefault();
+                void navigateToNote(previousSubtopicParams);
+                return;
+            }
+
+            if (!hasModifier && event.key === 'ArrowRight' && nextSubtopicParams) {
+                event.preventDefault();
+                void navigateToNote(nextSubtopicParams);
+                return;
+            }
+
+            if (!hasModifier && event.key === 'PageUp' && activeTocIndex > 0) {
+                event.preventDefault();
+                scrollToBlock(toc[activeTocIndex - 1].id);
+                return;
+            }
+
+            if (!hasModifier && event.key === 'PageDown' && activeTocIndex >= 0 && activeTocIndex < toc.length - 1) {
+                event.preventDefault();
+                scrollToBlock(toc[activeTocIndex + 1].id);
+            }
+        };
+
+        document.addEventListener('keydown', onKeyDown);
+        return () => document.removeEventListener('keydown', onKeyDown);
+    }, [
+        activeTocIndex,
+        fullscreenActive,
+        handleFullscreenToggle,
+        navigateToNote,
+        nextSubtopicParams,
+        previousSubtopicParams,
+        scrollToBlock,
+        toc,
+    ]);
+
+    const notePageClassName = ['note-page', 'note-page--all-subjects', 'animate-fade-in', fullscreenActive ? 'note-page--fullscreen' : '']
         .filter(Boolean)
         .join(' ');
+
+    const hasPrevSection = activeTocIndex > 0;
+    const hasNextSection = activeTocIndex >= 0 && activeTocIndex < toc.length - 1;
 
     const toolbarClassName = [
         'note-toolbar',
         'card',
         isPhoneLayout ? 'note-toolbar--mobile' : '',
         isPhoneLayout && mobileHeaderCondensed ? 'note-toolbar--condensed' : '',
-        mobileFullscreenActive ? 'note-toolbar--overlay note-overlay-controls' : '',
-        mobileFullscreenActive && mobileChromeHidden && !isAnySheetOpen ? 'note-overlay-controls--hidden' : '',
-        mobileFullscreenActive && (!mobileChromeHidden || isAnySheetOpen) ? 'note-overlay-controls--visible' : '',
     ].filter(Boolean).join(' ');
 
-    const noteBodyClassName = ['note-body', mobileFullscreenActive ? 'note-body--fullscreen' : '']
+    const noteBodyClassName = ['note-body', fullscreenActive ? 'note-body--fullscreen' : '']
         .filter(Boolean)
         .join(' ');
 
-    const noteScrollAreaClassName = ['note-scroll-area', mobileFullscreenActive ? 'note-scroll-area--fullscreen' : '']
+    const noteScrollAreaClassName = ['note-scroll-area', fullscreenActive ? 'note-scroll-area--fullscreen' : '']
         .filter(Boolean)
         .join(' ');
+
+    useEffect(() => {
+        if (!DEV_FULLSCREEN_CHECKLIST_ENABLED || !fullscreenActive) return undefined;
+
+        const updateChecklist = () => {
+            const mainContent = document.getElementById('main-content');
+            const header = document.querySelector('.app-header');
+            const sidebar = document.querySelector('.app-sidebar');
+            const noteBody = notePageRef.current?.querySelector('.note-body');
+            const scrollArea = notePageRef.current?.querySelector('.note-scroll-area');
+            const noteContent = notePageRef.current?.querySelector('.note-study-content');
+            const tocSidebar = notePageRef.current?.querySelector('.note-toc');
+            const annotationOverlay = notePageRef.current?.querySelector('.annotate-canvas-overlay');
+
+            const headerHidden = !(header instanceof HTMLElement) || window.getComputedStyle(header).display === 'none';
+            const sidebarHidden = !(sidebar instanceof HTMLElement) || window.getComputedStyle(sidebar).display === 'none';
+            const bodyMaximized = noteBody instanceof HTMLElement
+                ? window.getComputedStyle(noteBody).marginTop === '0px' && window.getComputedStyle(noteBody).marginLeft === '0px'
+                : false;
+            const scrollChromeRemoved = scrollArea instanceof HTMLElement
+                ? window.getComputedStyle(scrollArea).borderTopWidth === '0px' && window.getComputedStyle(scrollArea).borderTopLeftRadius === '0px'
+                : false;
+            const contentTopOffset = noteContent instanceof HTMLElement
+                ? Math.round(noteContent.getBoundingClientRect().top)
+                : null;
+            const viewportFillPct = scrollArea instanceof HTMLElement && window.innerHeight > 0
+                ? Math.round((scrollArea.getBoundingClientRect().height / window.innerHeight) * 100)
+                : null;
+
+            setFullscreenChecklist([
+                {
+                    id: 'fullscreen-active',
+                    label: 'Fullscreen state is active',
+                    passed: fullscreenActive,
+                },
+                {
+                    id: 'page-shell',
+                    label: 'Page shell promoted to fullscreen',
+                    passed: mainContent instanceof HTMLElement && mainContent.classList.contains(PAGE_CONTENT_FULLSCREEN_CLASS),
+                },
+                {
+                    id: 'root-shell',
+                    label: 'Root chrome hidden',
+                    passed: document.documentElement.classList.contains(ROOT_FULLSCREEN_CLASS) && headerHidden && sidebarHidden,
+                },
+                {
+                    id: 'note-surface',
+                    label: 'Note surface expanded edge-to-edge',
+                    passed: bodyMaximized && scrollChromeRemoved,
+                    detail: bodyMaximized && scrollChromeRemoved ? 'Body margins cleared and scroll chrome removed' : 'Margins or scroll chrome still present',
+                },
+                {
+                    id: 'content-offset',
+                    label: 'Content starts near the top of the viewport',
+                    passed: contentTopOffset !== null && contentTopOffset <= 140,
+                    detail: contentTopOffset !== null ? `Measured top offset: ${contentTopOffset}px` : 'Content offset unavailable',
+                },
+                {
+                    id: 'viewport-fill',
+                    label: 'Reading surface fills most of the viewport',
+                    passed: viewportFillPct !== null && viewportFillPct >= 85,
+                    detail: viewportFillPct !== null ? `Viewport fill: ${viewportFillPct}%` : 'Viewport fill unavailable',
+                },
+                {
+                    id: 'toc-hidden',
+                    label: 'Table of contents removed from fullscreen',
+                    passed: !tocSidebar,
+                },
+                {
+                    id: 'annotations-hidden',
+                    label: 'Annotation overlay absent',
+                    passed: !annotationOverlay,
+                },
+            ]);
+        };
+
+        const frameId = window.requestAnimationFrame(updateChecklist);
+        window.addEventListener('resize', updateChecklist);
+        document.addEventListener('fullscreenchange', updateChecklist);
+
+        return () => {
+            window.cancelAnimationFrame(frameId);
+            window.removeEventListener('resize', updateChecklist);
+            document.removeEventListener('fullscreenchange', updateChecklist);
+        };
+    }, [fullscreenActive, noteId]);
 
     return (
-        <div className={notePageClassName}>
+        <div
+            ref={notePageRef}
+            className={notePageClassName}
+            role={fullscreenActive ? 'dialog' : undefined}
+            aria-modal={fullscreenActive ? 'true' : undefined}
+            aria-label={fullscreenActive ? 'Fullscreen note reading mode' : undefined}
+        >
+
+            {fullscreenActive ? (
+                <NoteReadingToolbar
+                    title={context.subtopicTitle || context.topicTitle || 'Note'}
+                    compact={isPhoneLayout}
+                    hidden={mobileFullscreenActive && mobileChromeHidden && !isAnySheetOpen}
+                    hasPrevNote={Boolean(previousSubtopicParams)}
+                    hasNextNote={Boolean(nextSubtopicParams)}
+                    hasPrevSection={hasPrevSection}
+                    hasNextSection={hasNextSection}
+                    onExit={() => handleFullscreenToggle(false)}
+                    onPrevNote={() => void navigateToNote(previousSubtopicParams)}
+                    onNextNote={() => void navigateToNote(nextSubtopicParams)}
+                    onPrevSection={() => hasPrevSection && scrollToBlock(toc[activeTocIndex - 1].id)}
+                    onNextSection={() => hasNextSection && scrollToBlock(toc[activeTocIndex + 1].id)}
+                />
+            ) : null}
 
             {/* ── Toolbar ── */}
-            <div className={toolbarClassName}>
+            {!fullscreenActive ? <div className={toolbarClassName}>
                 {/* Left: breadcrumbs */}
                 <div className="note-toolbar-left">
                     {(!isPhoneLayout || !mobileHeaderCondensed) && (
                         <span className="badge note-toolbar-subject-badge" title={getSubjectLabel(context.subject)}>{getSubjectLabel(context.subject)}</span>
                     )}
-                    {!isPhoneLayout && !mobileFullscreenActive && (
+                    {!isPhoneLayout && (
                         <span className="badge note-toolbar-unit-badge">{context.unitCode || (isLoadingSyllabus ? '...' : 'Unknown unit')}</span>
                     )}
                     <h2 className={`note-toolbar-title ${isPhoneLayout ? 'note-toolbar-title--compact' : ''}`.trim()}>
@@ -1016,7 +1288,7 @@ export default function NotePage() {
                                 <span className="note-btn-icon" aria-hidden="true">←</span>
                             </button>
 
-                            {/* ⋯ More — overflow menu with Contents, Recall, Tools, Focus Mode */}
+                            {/* ⋯ More — overflow menu with Contents, Recall, Tools, Zoom controls */}
                             {hasNote && (
                                 <div className="note-overflow-wrapper">
                                     <button
@@ -1072,15 +1344,12 @@ export default function NotePage() {
                                             <button
                                                 ref={fullscreenButtonRef}
                                                 role="menuitem"
-                                                className={`note-overflow-item note-overflow-fullscreen ${mobileFullscreenActive ? 'note-overflow-fullscreen--active' : ''}`}
+                                                className="note-overflow-item note-overflow-fullscreen"
                                                 onClick={handleFullscreenToggle}
-                                                aria-pressed={mobileFullscreenActive}
-                                                aria-label={mobileFullscreenActive ? 'Exit fullscreen reading mode' : 'Enter fullscreen reading mode'}
+                                                aria-label="Enter fullscreen note view"
                                             >
-                                                {mobileFullscreenActive
-                                                    ? <Minimize2 size={14} aria-hidden="true" />
-                                                    : <Maximize2 size={14} aria-hidden="true" />}
-                                                {mobileFullscreenActive ? 'Exit Focus Mode' : 'Focus Mode'}
+                                                <Maximize2 size={14} aria-hidden="true" />
+                                                Fullscreen
                                             </button>
                                         </div>
                                     )}
@@ -1090,6 +1359,17 @@ export default function NotePage() {
                     ) : (
                         /* ── Desktop / tablet: ToC + Recall + Back ── */
                         <>
+                            <button
+                                ref={fullscreenButtonRef}
+                                className="btn btn-sm btn-ghost"
+                                onClick={handleFullscreenToggle}
+                                title="Enter fullscreen note view"
+                                aria-label="Enter fullscreen note view"
+                                aria-keyshortcuts="F"
+                            >
+                                <Maximize2 size={16} aria-hidden="true" />
+                                <span className="note-btn-label">Fullscreen</span>
+                            </button>
                             {hasNote && toc.length > 0 && (
                                 <button
                                     ref={tocButtonRef}
@@ -1130,7 +1410,7 @@ export default function NotePage() {
                         </>
                     )}
                 </div>
-            </div>
+            </div> : null}
 
             {/* Screen reader live region for fullscreen state changes */}
             <div role="status" aria-live="polite" className="note-sr-only">{srAnnouncement}</div>
@@ -1139,6 +1419,11 @@ export default function NotePage() {
             {mobileFullscreenActive && mobileChromeHidden && !isAnySheetOpen && (
                 <div className="note-toolbar-hint" aria-hidden="true" />
             )}
+
+            <FullscreenDebugChecklist
+                visible={DEV_FULLSCREEN_CHECKLIST_ENABLED && fullscreenActive}
+                checks={fullscreenChecklist}
+            />
 
             {/* ── Read progress bar ── */}
             {showReadProgressStrip && (
@@ -1218,7 +1503,7 @@ export default function NotePage() {
             <div className={noteBodyClassName}>
 
                 {/* ToC sidebar */}
-                {hasNote && toc.length > 0 && !isCompactLayout && tocPinnedOpen && (
+                {hasNote && toc.length > 0 && !isCompactLayout && !fullscreenActive && tocPinnedOpen && (
                     <TableOfContents toc={toc} activeId={activeId} onSelect={scrollToBlock} />
                 )}
 
@@ -1229,8 +1514,10 @@ export default function NotePage() {
                         ref={setScrollAreaRef}
                         tabIndex={-1}
                         onPointerDown={mobileFullscreenActive ? revealChromeTemporarily : undefined}
+                        onTouchStart={fullscreenActive ? handleScrollTouchStart : undefined}
+                        onTouchEnd={fullscreenActive ? handleScrollTouchEnd : undefined}
                     >
-                        {mobileFullscreenActive && (
+                        {fullscreenActive && (
                             <ReadProgressBar
                                 scrollRef={scrollRef}
                                 onScrollPct={setScrollPct}
@@ -1252,9 +1539,9 @@ export default function NotePage() {
                         )}
 
                         <ErrorBoundary name="NoteContent" inline resetKeys={[noteId]}>
-                        <div className="note-study-content chapter-body">
-                            <NoteBlockRenderer blocks={seedNote.blocks} />
-                        </div>
+                            <div className="note-study-content chapter-body">
+                                <NoteBlockRenderer blocks={seedNote.blocks} />
+                            </div>
                         </ErrorBoundary>
 
                         {showFooterNextLink && (
@@ -1273,13 +1560,13 @@ export default function NotePage() {
                 )}
 
                 {/* Recall panel (right column) */}
-                {hasNote && recallOpen && !isPhoneLayout && (
+                {hasNote && recallOpen && !isPhoneLayout && !fullscreenActive && (
                     <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
                         <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} returnFocusRef={recallButtonRef} />
                     </ErrorBoundary>
                 )}
 
-                {hasNote && recallOpen && isPhoneLayout && (
+                {hasNote && recallOpen && isPhoneLayout && !fullscreenActive && (
                     <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
                         <RecallPanel
                             recall={seedNote.recall}

@@ -10,11 +10,16 @@ const __dirname = path.dirname(__filename);
 test('NotePage promotes mobile fullscreen reading to the page shell', () => {
     const source = fs.readFileSync(path.resolve(__dirname, './NotePage.jsx'), 'utf8');
     const styles = fs.readFileSync(path.resolve(__dirname, './NotePage.css'), 'utf8');
+    const rootStyles = fs.readFileSync(path.resolve(__dirname, '../index.css'), 'utf8');
 
     assert.match(source, /const PAGE_CONTENT_FULLSCREEN_CLASS = 'page-content--note-fullscreen';/);
-    assert.match(source, /mainContent\.classList\.toggle\(PAGE_CONTENT_FULLSCREEN_CLASS, mobileFullscreenActive\);/);
+    assert.match(source, /const ROOT_FULLSCREEN_CLASS = 'note-fullscreen-active';/);
+    assert.match(source, /mainContent\?\.classList\.toggle\(PAGE_CONTENT_FULLSCREEN_CLASS, fullscreenActive\);/);
+    assert.match(source, /document\.documentElement\.classList\.toggle\(ROOT_FULLSCREEN_CLASS, fullscreenActive\);/);
     assert.match(styles, /\.page-content\.page-content--note-fullscreen \{/);
+    assert.match(styles, /\.note-page--fullscreen \{/);
     assert.match(styles, /\.note-scroll-area--fullscreen \{/);
     assert.match(styles, /border:\s*none;/);
     assert.match(styles, /border-radius:\s*0;/);
+    assert.match(rootStyles, /html\.note-fullscreen-active \.app-sidebar,/);
 });
