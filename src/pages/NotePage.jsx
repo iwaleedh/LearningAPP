@@ -1,6 +1,6 @@
 import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { Layers3, Maximize2, Minimize2, Wrench } from 'lucide-react';
+import { Layers3, Maximize2, Minimize2, Wrench, MoreHorizontal } from 'lucide-react';
 import { getSubjectLabel } from '../data/syllabusIndex.js';
 import { getSyllabusBySubject as getStaticSyllabusBySubject } from '../data/syllabusCatalog.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
@@ -585,6 +585,9 @@ export default function NotePage() {
     const fullscreenButtonRef = useRef(null);
     const lastScrollTopRef = useRef(0);
     const chromeRevealTimeoutRef = useRef(null);
+    const overflowButtonRef = useRef(null);
+    const [overflowMenuOpen, setOverflowMenuOpen] = useState(false);
+    const [srAnnouncement, setSrAnnouncement] = useState('');
     const isCompactLayout = useViewportMatch('(max-width: 899px)');
     const isPhoneLayout = useViewportMatch('(max-width: 599px)');
 
@@ -695,7 +698,8 @@ export default function NotePage() {
     const showInlineStudyTools = hasNote && !isPhoneLayout && !mobileFullscreenActive;
     const showReadProgressStrip = hasNote && !mobileFullscreenActive;
     const showFooterNextLink = Boolean(nextSubtopicParams) && !mobileFullscreenActive;
-    const isAnySheetOpen = tocSheetOpen || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen);
+    // Include overflowMenuOpen so toolbar doesn't auto-hide while the overflow menu is open
+    const isAnySheetOpen = tocSheetOpen || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen) || overflowMenuOpen;
     const isModalLayerOpen = (isCompactLayout && tocSheetOpen) || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen);
 
     useBodyScrollLock(isModalLayerOpen);
@@ -737,6 +741,7 @@ export default function NotePage() {
             setTopicSheetOpen(false);
             setToolsSheetOpen(false);
             setOpenTopicId(null);
+            setOverflowMenuOpen(false);
         });
 
         return () => window.cancelAnimationFrame(frameId);
@@ -777,16 +782,19 @@ export default function NotePage() {
                 rafId = null;
                 const nextScrollTop = el.scrollTop;
                 const previousScrollTop = lastScrollTopRef.current;
-                const isScrollingDown = nextScrollTop > previousScrollTop;
+                const delta = nextScrollTop - previousScrollTop;
+                const isScrollingDown = delta > 0;
 
                 setMobileHeaderCondensed(nextScrollTop > 24);
 
                 if (mobileFullscreenActive && !isAnySheetOpen) {
                     if (nextScrollTop <= 24) {
                         setMobileChromeHidden(false);
-                    } else if (isScrollingDown && nextScrollTop > 48) {
+                    } else if (isScrollingDown && delta > 12 && nextScrollTop > 48) {
+                        // Require a meaningful downward movement before hiding toolbar
                         setMobileChromeHidden(true);
-                    } else if (!isScrollingDown) {
+                    } else if (!isScrollingDown && delta < -4) {
+                        // Reveal on intentional upward scroll
                         setMobileChromeHidden(false);
                     }
                 }
@@ -810,14 +818,42 @@ export default function NotePage() {
             event.preventDefault();
             setFullscreenActive(false);
             setMobileChromeHidden(false);
+            setSrAnnouncement('Exited fullscreen reading mode.');
             window.requestAnimationFrame(() => {
-                fullscreenButtonRef.current?.focus?.();
+                // On phone the fullscreen toggle lives inside the overflow menu;
+                // return focus to the overflow button instead.
+                (overflowButtonRef.current || fullscreenButtonRef.current)?.focus?.();
             });
         };
 
         document.addEventListener('keydown', onKeyDown);
         return () => document.removeEventListener('keydown', onKeyDown);
     }, [mobileFullscreenActive]);
+
+    // Close overflow menu on outside click or Escape
+    useEffect(() => {
+        if (!overflowMenuOpen) return undefined;
+
+        const handleOutside = (event) => {
+            if (!overflowButtonRef.current?.closest('.note-overflow-wrapper')?.contains(event.target)) {
+                setOverflowMenuOpen(false);
+            }
+        };
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                event.stopPropagation();
+                setOverflowMenuOpen(false);
+                overflowButtonRef.current?.focus?.();
+            }
+        };
+
+        document.addEventListener('pointerdown', handleOutside);
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('pointerdown', handleOutside);
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [overflowMenuOpen]);
 
     useEffect(() => {
         const handlePointerDown = (event) => {
@@ -845,6 +881,7 @@ export default function NotePage() {
 
     const handleFullscreenToggle = useCallback(() => {
         setRecallOpen(false);
+        setOverflowMenuOpen(false);
         setFullscreenActive((value) => {
             const nextValue = !value;
             setTocSheetOpen(false);
@@ -852,10 +889,16 @@ export default function NotePage() {
             setToolsSheetOpen(false);
             setOpenTopicId(null);
             setMobileChromeHidden(false);
+            setSrAnnouncement(
+                nextValue
+                    ? 'Fullscreen reading mode activated. Press Escape to exit.'
+                    : 'Exited fullscreen reading mode.'
+            );
 
             if (!nextValue) {
                 window.requestAnimationFrame(() => {
-                    fullscreenButtonRef.current?.focus?.();
+                    // On phone the toggle lives in the overflow menu — focus its trigger
+                    (overflowButtonRef.current || fullscreenButtonRef.current)?.focus?.();
                 });
             } else {
                 window.requestAnimationFrame(() => {
@@ -909,7 +952,7 @@ export default function NotePage() {
 
                 {/* Right: actions */}
                 <div className="note-toolbar-right">
-                    {/* Mark as Read button */}
+                    {/* Mark as Read — shown on all layouts */}
                     {hasNote && (
                         isRead ? (
                             <button
@@ -919,7 +962,7 @@ export default function NotePage() {
                                 aria-label={`Marked as read on ${new Date(readAt).toLocaleDateString()}. Activate to mark unread.`}
                             >
                                 <span className="note-btn-icon" aria-hidden="true">✓</span>
-                                <span className="note-read-btn-text">{isPhoneLayout ? 'Read' : 'Read'}</span>
+                                <span className="note-read-btn-text">Read</span>
                             </button>
                         ) : (
                             <button
@@ -941,102 +984,161 @@ export default function NotePage() {
                         )
                     )}
 
-                    {showMobileTopicsTrigger && (
-                        <button
-                            ref={topicsButtonRef}
-                            className={`btn btn-sm ${topicSheetOpen ? 'btn-primary' : 'btn-ghost'} note-mobile-topics-trigger`}
-                            onClick={() => {
-                                setMobileChromeHidden(false);
-                                setTocSheetOpen(false);
-                                setToolsSheetOpen(false);
-                                setTopicSheetOpen((value) => !value);
-                            }}
-                            title="Open topics"
-                            aria-label="Open topics"
-                            aria-expanded={topicSheetOpen}
-                            aria-haspopup="dialog"
-                        >
-                            <Layers3 size={16} aria-hidden="true" />
-                            <span className="note-btn-label">Topics</span>
-                        </button>
-                    )}
+                    {isPhoneLayout ? (
+                        /* ── Phone: Topics + Back + ⋯ overflow (max 4 buttons = 1 grid row) ── */
+                        <>
+                            {showMobileTopicsTrigger && (
+                                <button
+                                    ref={topicsButtonRef}
+                                    className={`btn btn-sm ${topicSheetOpen ? 'btn-primary' : 'btn-ghost'} note-mobile-topics-trigger`}
+                                    onClick={() => {
+                                        setMobileChromeHidden(false);
+                                        setTocSheetOpen(false);
+                                        setToolsSheetOpen(false);
+                                        setOverflowMenuOpen(false);
+                                        setTopicSheetOpen((value) => !value);
+                                    }}
+                                    title="Open topics"
+                                    aria-label="Open topics"
+                                    aria-expanded={topicSheetOpen}
+                                    aria-haspopup="dialog"
+                                >
+                                    <Layers3 size={16} aria-hidden="true" />
+                                </button>
+                            )}
 
-                    {/* ToC toggle */}
-                    {hasNote && toc.length > 0 && (
-                        <button
-                            ref={tocButtonRef}
-                            className={`btn btn-sm ${(isCompactLayout ? tocSheetOpen : tocPinnedOpen) ? 'btn-primary' : 'btn-ghost'}`}
-                            onClick={handleTocToggle}
-                            title="Toggle table of contents"
-                            aria-label="Toggle table of contents"
-                            aria-expanded={isCompactLayout ? tocSheetOpen : tocPinnedOpen}
-                            aria-haspopup={isCompactLayout ? 'dialog' : undefined}
-                        >
-                            <span className="note-btn-icon" aria-hidden="true">☰</span>
-                            <span className="note-btn-label">Contents</span>
-                        </button>
-                    )}
+                            <button
+                                className="btn btn-secondary btn-sm"
+                                onClick={() => navigate(`/chapters?subject=${context.subject}`)}
+                                aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
+                                title="Back to chapters"
+                            >
+                                <span className="note-btn-icon" aria-hidden="true">←</span>
+                            </button>
 
-                    {/* Recall mode toggle */}
-                    {hasNote && hasCues && (
-                        <button
-                            ref={recallButtonRef}
-                            className={`btn btn-sm ${recallOpen ? 'btn-primary' : 'btn-ghost'}`}
-                            onClick={() => setRecallOpen((v) => !v)}
-                            title="Toggle recall mode"
-                            aria-label="Toggle recall mode"
-                            aria-expanded={recallOpen}
-                            aria-haspopup={isPhoneLayout ? 'dialog' : undefined}
-                        >
-                            <span className="note-btn-icon" aria-hidden="true">🧠</span>
-                            <span className="note-btn-label">Recall</span>
-                        </button>
-                    )}
+                            {/* ⋯ More — overflow menu with Contents, Recall, Tools, Focus Mode */}
+                            {hasNote && (
+                                <div className="note-overflow-wrapper">
+                                    <button
+                                        ref={overflowButtonRef}
+                                        className={`btn btn-sm ${overflowMenuOpen ? 'btn-primary' : 'btn-ghost'}`}
+                                        onClick={() => setOverflowMenuOpen((v) => !v)}
+                                        aria-label="More actions"
+                                        aria-expanded={overflowMenuOpen}
+                                        aria-haspopup="menu"
+                                        title="More actions"
+                                    >
+                                        <MoreHorizontal size={16} aria-hidden="true" />
+                                    </button>
 
-                    {hasNote && isPhoneLayout && (
-                        <button
-                            ref={toolsButtonRef}
-                            className={`btn btn-sm ${toolsSheetOpen ? 'btn-primary' : 'btn-ghost'} note-mobile-tools-trigger`}
-                            onClick={() => {
-                                setMobileChromeHidden(false);
-                                setTocSheetOpen(false);
-                                setTopicSheetOpen(false);
-                                setToolsSheetOpen((value) => !value);
-                            }}
-                            title="Open study tools"
-                            aria-label="Open study tools"
-                            aria-expanded={toolsSheetOpen}
-                            aria-haspopup="dialog"
-                        >
-                            <Wrench size={16} aria-hidden="true" />
-                            <span className="note-btn-label">Tools</span>
-                        </button>
-                    )}
+                                    {overflowMenuOpen && (
+                                        <div className="note-overflow-menu" role="menu" aria-label="More note actions">
+                                            {toc.length > 0 && (
+                                                <button
+                                                    ref={tocButtonRef}
+                                                    role="menuitem"
+                                                    className={`note-overflow-item ${(isCompactLayout ? tocSheetOpen : tocPinnedOpen) ? 'note-overflow-item--active' : ''}`}
+                                                    onClick={() => { handleTocToggle(); setOverflowMenuOpen(false); }}
+                                                    aria-expanded={isCompactLayout ? tocSheetOpen : tocPinnedOpen}
+                                                >
+                                                    <span aria-hidden="true">☰</span> Contents
+                                                </button>
+                                            )}
+                                            {hasCues && (
+                                                <button
+                                                    ref={recallButtonRef}
+                                                    role="menuitem"
+                                                    className={`note-overflow-item ${recallOpen ? 'note-overflow-item--active' : ''}`}
+                                                    onClick={() => { setRecallOpen((v) => !v); setOverflowMenuOpen(false); }}
+                                                    aria-expanded={recallOpen}
+                                                >
+                                                    <span aria-hidden="true">🧠</span> Recall
+                                                </button>
+                                            )}
+                                            <button
+                                                ref={toolsButtonRef}
+                                                role="menuitem"
+                                                className={`note-overflow-item ${toolsSheetOpen ? 'note-overflow-item--active' : ''}`}
+                                                onClick={() => {
+                                                    setMobileChromeHidden(false);
+                                                    setTocSheetOpen(false);
+                                                    setTopicSheetOpen(false);
+                                                    setToolsSheetOpen(true);
+                                                    setOverflowMenuOpen(false);
+                                                }}
+                                            >
+                                                <Wrench size={14} aria-hidden="true" /> Study Tools
+                                            </button>
+                                            <button
+                                                ref={fullscreenButtonRef}
+                                                role="menuitem"
+                                                className={`note-overflow-item note-overflow-fullscreen ${mobileFullscreenActive ? 'note-overflow-fullscreen--active' : ''}`}
+                                                onClick={handleFullscreenToggle}
+                                                aria-pressed={mobileFullscreenActive}
+                                                aria-label={mobileFullscreenActive ? 'Exit fullscreen reading mode' : 'Enter fullscreen reading mode'}
+                                            >
+                                                {mobileFullscreenActive
+                                                    ? <Minimize2 size={14} aria-hidden="true" />
+                                                    : <Maximize2 size={14} aria-hidden="true" />}
+                                                {mobileFullscreenActive ? 'Exit Focus Mode' : 'Focus Mode'}
+                                            </button>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </>
+                    ) : (
+                        /* ── Desktop / tablet: ToC + Recall + Back ── */
+                        <>
+                            {hasNote && toc.length > 0 && (
+                                <button
+                                    ref={tocButtonRef}
+                                    className={`btn btn-sm ${(isCompactLayout ? tocSheetOpen : tocPinnedOpen) ? 'btn-primary' : 'btn-ghost'}`}
+                                    onClick={handleTocToggle}
+                                    title="Toggle table of contents"
+                                    aria-label="Toggle table of contents"
+                                    aria-expanded={isCompactLayout ? tocSheetOpen : tocPinnedOpen}
+                                    aria-haspopup={isCompactLayout ? 'dialog' : undefined}
+                                >
+                                    <span className="note-btn-icon" aria-hidden="true">☰</span>
+                                    <span className="note-btn-label">Contents</span>
+                                </button>
+                            )}
 
-                    {hasNote && isPhoneLayout && (
-                        <button
-                            ref={fullscreenButtonRef}
-                            className={`btn btn-sm btn-ghost note-fullscreen-btn ${mobileFullscreenActive ? 'note-fullscreen-btn--active' : ''}`}
-                            onClick={handleFullscreenToggle}
-                            title={mobileFullscreenActive ? 'Exit fullscreen reading mode' : 'Enter fullscreen reading mode'}
-                            aria-label={mobileFullscreenActive ? 'Exit fullscreen reading mode' : 'Enter fullscreen reading mode'}
-                            aria-pressed={mobileFullscreenActive}
-                        >
-                            {mobileFullscreenActive ? <Minimize2 size={16} aria-hidden="true" /> : <Maximize2 size={16} aria-hidden="true" />}
-                            <span className="note-btn-label">{mobileFullscreenActive ? 'Exit' : 'Fullscreen'}</span>
-                        </button>
-                    )}
+                            {hasNote && hasCues && (
+                                <button
+                                    ref={recallButtonRef}
+                                    className={`btn btn-sm ${recallOpen ? 'btn-primary' : 'btn-ghost'}`}
+                                    onClick={() => setRecallOpen((v) => !v)}
+                                    title="Toggle recall mode"
+                                    aria-label="Toggle recall mode"
+                                    aria-expanded={recallOpen}
+                                >
+                                    <span className="note-btn-icon" aria-hidden="true">🧠</span>
+                                    <span className="note-btn-label">Recall</span>
+                                </button>
+                            )}
 
-                    <button
-                        className="btn btn-secondary btn-sm"
-                        onClick={() => navigate(`/chapters?subject=${context.subject}`)}
-                        aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
-                    >
-                        <span className="note-btn-icon" aria-hidden="true">←</span>
-                        <span className="note-btn-label">{isPhoneLayout ? 'Back' : 'Chapters'}</span>
-                    </button>
+                            <button
+                                className="btn btn-secondary btn-sm"
+                                onClick={() => navigate(`/chapters?subject=${context.subject}`)}
+                                aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
+                            >
+                                <span className="note-btn-icon" aria-hidden="true">←</span>
+                                <span className="note-btn-label">Chapters</span>
+                            </button>
+                        </>
+                    )}
                 </div>
             </div>
+
+            {/* Screen reader live region for fullscreen state changes */}
+            <div role="status" aria-live="polite" className="note-sr-only">{srAnnouncement}</div>
+
+            {/* Thin indicator strip — hints that toolbar is auto-hidden in fullscreen */}
+            {mobileFullscreenActive && mobileChromeHidden && !isAnySheetOpen && (
+                <div className="note-toolbar-hint" aria-hidden="true" />
+            )}
 
             {/* ── Read progress bar ── */}
             {showReadProgressStrip && (
