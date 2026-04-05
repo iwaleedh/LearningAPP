@@ -107,15 +107,67 @@ test.describe('NotePage mobile QA', () => {
     await expect(recallTrigger).toBeFocused();
   });
 
-  test('topic menus open on tap and checklist items support keyboard activation', async ({ page }) => {
+  test('fullscreen reading mode persists across navigation and reload, then exits predictably', async ({ page }) => {
+    await page.evaluate(() => {
+      window.localStorage.removeItem('LT_NOTE_FULLSCREEN');
+    });
+    await page.reload();
+
+    await expect(page.locator('.note-page--fullscreen')).toHaveCount(0);
+
+    const enterFullscreen = page.getByRole('button', { name: 'Enter fullscreen reading mode' });
+    await expect(enterFullscreen).toBeVisible();
+    await enterFullscreen.click();
+
+    await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Exit fullscreen reading mode' })).toHaveAttribute('aria-pressed', 'true');
+
+    await page.goto(checklistNotePath);
+    await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+    await expect(page.locator('.note-study-content')).toBeVisible();
+
+    await page.reload();
+    await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+
+    const exitFullscreen = page.getByRole('button', { name: 'Exit fullscreen reading mode' });
+    await expect(exitFullscreen).toBeVisible();
+    await exitFullscreen.click();
+
+    await expect(page.locator('.note-page--fullscreen')).toHaveCount(0);
+
+    await page.reload();
+    await expect(page.locator('.note-page--fullscreen')).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Enter fullscreen reading mode' })).toBeVisible();
+  });
+
+  test('fullscreen toolbar matches the compact mobile visual baseline', async ({ page }) => {
+    await page.getByRole('button', { name: 'Enter fullscreen reading mode' }).click();
+
+    const toolbar = page.locator('.note-toolbar');
+    await expect(toolbar).toBeVisible();
+
+    await expect(toolbar).toHaveScreenshot('note-toolbar-fullscreen-mobile.png', {
+      animations: 'disabled',
+      caret: 'hide',
+    });
+  });
+
+  test('topics open through the mobile sheet and checklist items support keyboard activation', async ({ page }) => {
     await page.goto(checklistNotePath);
     await expect(page.locator('.note-study-content')).toBeVisible();
 
-    const firstTopic = page.getByRole('button', { name: /Topic 1:/i }).first();
-    await firstTopic.evaluate((element) => element.scrollIntoView({ block: 'center' }));
-    await firstTopic.focus();
+    const topicsTrigger = page.getByRole('button', { name: 'Open topics' });
+    await expect(topicsTrigger).toBeVisible();
+    await topicsTrigger.focus();
     await page.keyboard.press('Enter');
-    await expect(page.locator('.topic-subtopics-dropdown--open')).toBeVisible();
+
+    const topicsDialog = page.getByRole('dialog', { name: 'Topics' });
+    await expect(topicsDialog).toBeVisible();
+    await expect(topicsDialog.locator('.note-mobile-topic-link.active')).toBeVisible();
+
+    await page.keyboard.press('Escape');
+    await expect(topicsDialog).toBeHidden();
+    await expect(topicsTrigger).toBeFocused();
 
     const checkbox = page.locator('[role="checkbox"]').first();
     await expect(checkbox).toBeVisible();
