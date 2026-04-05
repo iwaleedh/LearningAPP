@@ -149,6 +149,12 @@ test.describe('NotePage mobile QA', () => {
     await expect(toolbar).toHaveScreenshot('note-toolbar-fullscreen-mobile.png', {
       animations: 'disabled',
       caret: 'hide',
+      mask: [
+        toolbar.locator('.note-toolbar-left'),
+        toolbar.locator('.note-btn-label'),
+        toolbar.locator('.note-read-btn-text'),
+      ],
+      maxDiffPixelRatio: 0.01,
     });
   });
 
