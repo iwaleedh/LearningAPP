@@ -7,6 +7,38 @@
     overflow: hidden;
 }
 
+.note-page--all-subjects {
+    --lt-topic-body-font: 'Kalam', cursive;
+    --lt-topic-title-font: 'Patrick Hand', cursive;
+}
+
+.note-page--all-subjects .note-toolbar,
+.note-page--all-subjects .note-topics-tabs,
+.note-page--all-subjects .note-toc,
+.note-page--all-subjects .note-study-content,
+.note-page--all-subjects .note-footer-nav,
+.note-page--all-subjects .recall-panel,
+.note-page--all-subjects .note-empty,
+.note-page--all-subjects .btn-next-subtopic {
+    font-family: var(--lt-topic-body-font);
+}
+
+.note-page--all-subjects .note-toolbar-title,
+.note-page--all-subjects .topic-tab,
+.note-page--all-subjects .topic-subtopics-dropdown .dropdown-item,
+.note-page--all-subjects .note-toc-header,
+.note-page--all-subjects .note-toc-link,
+.note-page--all-subjects .recall-panel-header,
+.note-page--all-subjects .recall-prompt,
+.note-page--all-subjects .note-empty-title,
+.note-page--all-subjects .btn-next-subtopic strong,
+.note-page--all-subjects .note-study-content .nb-heading,
+.note-page--all-subjects .note-study-content .nb-objective-label,
+.note-page--all-subjects .note-study-content .nb-summary-label,
+.note-page--all-subjects .note-study-content .nb-callout-title {
+    font-family: var(--lt-topic-title-font);
+}
+
 @media (max-width: 768px) {
     .note-page {
         height: calc(100vh - var(--header-height) - calc(var(--space-4) * 2));

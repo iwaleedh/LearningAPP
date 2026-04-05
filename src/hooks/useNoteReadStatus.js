@@ -10,9 +10,8 @@
  */
 
 import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
-import { useMutation, useQuery } from 'convex/react';
 import { getRecordedActivityByDate, subscribeToActivityUpdates } from '../services/activityStore.js';
-import { api, callQuery, getClient } from '../convex-client.js';
+import { api, callMutation, callQuery, getClient } from '../convex-client.js';
 
 const PREFIX = 'lt_read:';
 
@@ -200,10 +199,10 @@ export async function getReadProgressSnapshot() {
 }
 
 export function useReadProgressSummary() {
-    const serverSummary = useQuery(api.readProgress.getMyReadProgressSummary);
-    const bulkSyncReadProgress = useMutation(api.readProgress.bulkSyncReadProgress);
     const [localVersion, setLocalVersion] = useState(0);
+    const [serverSummary, setServerSummary] = useState(() => (getClient() ? undefined : null));
     const migrationAttemptedRef = useRef(false);
+    const client = getClient();
 
     useEffect(() => {
         return subscribeToActivityUpdates(() => {
@@ -217,18 +216,56 @@ export function useReadProgressSummary() {
     }, [localVersion]);
 
     useEffect(() => {
+        let cancelled = false;
+
+        if (!client) {
+            return () => {
+                cancelled = true;
+            };
+        }
+
+        async function loadServerSummary() {
+            try {
+                const nextSummary = await callQuery(api.readProgress.getMyReadProgressSummary, {});
+                if (!cancelled) {
+                    setServerSummary(nextSummary || {
+                        totalRead: 0,
+                        readAtByNoteId: {},
+                        activityByDate: {},
+                    });
+                }
+            } catch {
+                if (!cancelled) {
+                    setServerSummary(null);
+                }
+            }
+        }
+
+        void loadServerSummary();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [client]);
+
+    useEffect(() => {
         if (serverSummary === undefined || migrationAttemptedRef.current) return;
+        if (!serverSummary) return;
         if (serverSummary.totalRead > 0 || localSummary.totalRead === 0) return;
 
         migrationAttemptedRef.current = true;
-        void bulkSyncReadProgress({
+        void callMutation(api.readProgress.bulkSyncReadProgress, {
             readStatesJson: JSON.stringify(toBulkSyncPayload(localSummary)),
         }).catch(() => {
             migrationAttemptedRef.current = false;
         });
-    }, [bulkSyncReadProgress, localSummary, serverSummary]);
+    }, [localSummary, serverSummary]);
 
     if (serverSummary === undefined) {
+        return localSummary;
+    }
+
+    if (!serverSummary) {
         return localSummary;
     }
 
@@ -245,8 +282,7 @@ export function useReadProgressSummary() {
  */
 export function useNoteReadStatus(noteId) {
     const summary = useReadProgressSummary();
-    const markNoteRead = useMutation(api.readProgress.markNoteRead);
-    const markNoteUnread = useMutation(api.readProgress.markNoteUnread);
+    const client = getClient();
     const readAt = summary.readAtByNoteId[noteId] || null;
 
     const markRead = useCallback(() => {
@@ -254,14 +290,18 @@ export function useNoteReadStatus(noteId) {
         const now = new Date().toISOString();
         markReadLocally(noteId, now);
         emitReadProgressUpdate();
-        void markNoteRead({ noteId, readAt: now, localDateKey: toLocalDateKey(now) });
-    }, [markNoteRead, noteId, readAt]);
+        if (client) {
+            void callMutation(api.readProgress.markNoteRead, { noteId, readAt: now, localDateKey: toLocalDateKey(now) });
+        }
+    }, [client, noteId, readAt]);
 
     const markUnread = useCallback(() => {
         markUnreadLocally(noteId);
         emitReadProgressUpdate();
-        void markNoteUnread({ noteId });
-    }, [markNoteUnread, noteId]);
+        if (client) {
+            void callMutation(api.readProgress.markNoteUnread, { noteId });
+        }
+    }, [client, noteId]);
 
     return {
         isRead: Boolean(readAt),

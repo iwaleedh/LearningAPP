@@ -1,6 +1,7 @@
 import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getSubjectLabel } from '../data/syllabusIndex.js';
+import { getSyllabusBySubject as getStaticSyllabusBySubject } from '../data/syllabusCatalog.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote, hasSeedNote } from '../data/seedNotes/index.js';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
@@ -222,15 +223,21 @@ export default function NotePage() {
     const [scrollPct, setScrollPct] = useState(0);
     const scrollRef = useRef(null);
 
-    const { subjectKey: normalizedSubject, syllabus, isLoading: isLoadingSyllabus } = useSyllabus(subject || 'chemistry');
+    const { subjectKey: normalizedSubject, syllabus, isLoading: isLoadingSyllabusAsync } = useSyllabus(subject || 'chemistry');
+    const fallbackSyllabus = useMemo(
+        () => getStaticSyllabusBySubject(subject || 'chemistry'),
+        [subject]
+    );
+    const activeSyllabus = syllabus || fallbackSyllabus;
+    const isLoadingSyllabus = !activeSyllabus && isLoadingSyllabusAsync;
     const context = useMemo(
-        () => resolveNoteContext({ subject: normalizedSubject, unitId, topicId, subtopicIndex }, syllabus),
-        [normalizedSubject, unitId, topicId, subtopicIndex, syllabus]
+        () => resolveNoteContext({ subject: normalizedSubject, unitId, topicId, subtopicIndex }, activeSyllabus),
+        [normalizedSubject, unitId, topicId, subtopicIndex, activeSyllabus]
     );
 
     const activeUnit = useMemo(() => {
-        return syllabus?.units?.find((u) => String(u.id) === String(unitId)) || syllabus?.units?.[0] || null;
-    }, [syllabus, unitId]);
+        return activeSyllabus?.units?.find((u) => String(u.id) === String(unitId)) || activeSyllabus?.units?.[0] || null;
+    }, [activeSyllabus, unitId]);
 
     // Calculate Next Subtopic
     const nextSubtopicParams = useMemo(() => {
@@ -314,7 +321,7 @@ export default function NotePage() {
     const hasCues = Boolean(seedNote?.recall?.cues?.length);
 
     return (
-        <div className="note-page animate-fade-in">
+        <div className="note-page note-page--all-subjects animate-fade-in">
 
             {/* ── Toolbar ── */}
             <div className="note-toolbar card">
