@@ -31,7 +31,9 @@ jobs:
         run: npm run lint
 
       - name: Run unit tests
-        run: npm test
+        run: |
+          shopt -s globstar
+          npx tsx --test src/**/*.test.js convex/**/*.test.ts
 
       - name: Build frontend
         run: npm run build
