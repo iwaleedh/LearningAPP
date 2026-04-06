@@ -35,8 +35,8 @@ jobs:
       - name: Verify deterministic test seeds
         run: npm run test:seed
 
-      - name: Run full end-to-end suite
-        run: npm run test:e2e
+      - name: Run mobile regression suite
+        run: npm run test:e2e:mobile
 
       - name: Upload Playwright artifacts
         if: failure()
