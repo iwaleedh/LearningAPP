@@ -49,7 +49,7 @@ export default function LandingPage() {
 
       <main className="landing-main">
         <section className="hero-section">
-          <h1 className="hero-title">Master A-Level & IAL Subjects</h1>
+          <h1 className="hero-title">Master A-Level & O' Level Subjects</h1>
           <p className="hero-subtitle">
             An interactive study companion with structured notes, built-in active recall, endless practice papers, and automated feedback.
           </p>

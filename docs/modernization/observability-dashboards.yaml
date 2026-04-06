@@ -1,0 +1,76 @@
+generated_at: 2026-04-05
+
+dashboards:
+  - name: release-health
+    audience:
+      - engineering
+      - product
+    panels:
+      - frontend_error_rate
+      - failed_convex_mutations
+      - failed_convex_queries
+      - deploy_marker_timeline
+      - active_feature_flags
+      - rollback_events
+    alerts:
+      - error_rate_spike
+      - failed_requests_spike
+
+  - name: note-reading-funnel
+    audience:
+      - product
+      - engineering
+    panels:
+      - note_page_views
+      - read_progress_completion_rate
+      - recall_panel_usage
+      - fullscreen_mode_adoption
+      - note_export_usage
+
+  - name: live-class-operations
+    audience:
+      - engineering
+      - teacher-ops
+    panels:
+      - active_live_classes
+      - join_failures
+      - sync_degradation_rate
+      - reconnect_success_rate
+      - poll_submission_errors
+      - timer_state_errors
+    alerts:
+      - live_class_join_failures_above_threshold
+      - sync_disconnection_burst
+
+  - name: payments-and-approvals
+    audience:
+      - admin
+      - operations
+    panels:
+      - payment_submission_success_rate
+      - pending_approval_backlog
+      - approval_turnaround_time
+      - rejected_upload_reasons
+
+  - name: security-and-access
+    audience:
+      - engineering
+      - operations
+    panels:
+      - auth_failures
+      - unauthorized_route_attempts
+      - rejected_webhook_requests
+      - admin_actions_audit
+      - suspicious_upload_attempts
+
+service_level_expectations:
+  core_read_flows:
+    availability: 99.9%
+    measurement_window: monthly
+  teacher_and_admin_tools:
+    availability: 99.5%
+    measurement_window: monthly
+  incident_detection:
+    critical_release_regression: <=10m
+  rollback_execution:
+    flagged_feature_incident: <=15m

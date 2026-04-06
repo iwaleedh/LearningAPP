@@ -212,9 +212,6 @@ export async function initConvex() {
   return initPromise;
 }
 
-// Keep backward-compatible names
-export const initSpacetimeDB = initConvex;
-
 /** Register a callback for when Convex is fully ready. Returns an unsubscribe function. */
 export function onConvexReady(callback) {
   if (isReady && convexClient && currentUserId) {
@@ -228,7 +225,6 @@ export function onConvexReady(callback) {
     if (idx !== -1) connectionCallbacks.splice(idx, 1);
   };
 }
-export const onSpacetimeDBReady = onConvexReady;
 
 /**
  * Returns a Promise that resolves with the Convex client once it is
@@ -270,7 +266,6 @@ export function onConvexError(callback) {
     if (idx !== -1) errorCallbacks.splice(idx, 1);
   };
 }
-export const onSpacetimeDBError = onConvexError;
 
 /** Register a disconnect callback (fires if client closes). Returns an unsubscribe function. */
 export function onConvexDisconnect(callback) {
@@ -280,7 +275,6 @@ export function onConvexDisconnect(callback) {
     if (idx !== -1) disconnectCallbacks.splice(idx, 1);
   };
 }
-export const onSpacetimeDBDisconnect = onConvexDisconnect;
 
 // ── Identity helpers ────────────────────────────────────────────────
 export function getCurrentIdentity() {

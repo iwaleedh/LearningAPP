@@ -1,0 +1,115 @@
+metadata:
+  program: living-textbook-modernization
+  generated_at: 2026-04-05
+  status: phase-1-updated
+
+current_state:
+  frontend:
+    framework: react-19
+    build_tool: vite-7
+    router: react-router-dom-7
+    language: javascript
+    styling: css-custom-properties
+    state_layers:
+      - convex
+      - indexeddb
+      - localStorage
+      - broadcastChannel
+  backend:
+    canonical_runtime: convex
+    legacy_runtime_present: false
+    legacy_runtime_status: removed_from_repo
+    auth: clerk-plus-convex
+    http_surface:
+      - /api/health
+      - /api/webhook
+  deployment:
+    frontend_paths:
+      - root-path hosting standardized in vite config
+      - vercel.json present
+    backend_paths:
+      - convex deploy workflow with lint, test, and build quality gates
+  scale:
+    seed_note_files: 2020
+    exercise_files: 354
+    built_assets: 2463
+    past_paper_files: 4462
+
+target_state:
+  architecture_style: convex-first modular monolith
+  frontend:
+    keep:
+      - react
+      - vite
+      - react-router
+      - css design tokens
+    add:
+      - incremental typescript
+      - runtime schema validation for edge contracts
+      - enforced feature-gate layer
+    module_boundaries:
+      - app-shell
+      - domains/content
+      - domains/study
+      - domains/live-class
+      - domains/admin
+      - platform/auth
+      - platform/offline
+      - platform/observability
+    content_delivery:
+      notes: fetched manifests/assets
+      exercises: fetched manifests/assets
+      pdfs: object storage plus CDN
+  backend:
+    canonical_runtime: convex
+    auth: clerk retained unless cost or ops require later review
+    domains:
+      - identity
+      - content
+      - study-analytics
+      - live-class
+      - admin-and-payments
+      - platform-observability
+    external_api_strategy:
+      versioned_edge_routes: true
+      policy: path-versioning for external consumers only
+  deployment:
+    frontend_host: vercel
+    backend_host: convex
+    binary_assets: object-storage-cdn
+    environments:
+      - development
+      - preview
+      - production
+  observability:
+    error_tracking: required
+    release_dashboard: required
+    product_funnel_dashboard: required
+    live_class_ops_dashboard: required
+
+delta:
+  completed_since_assessment:
+    - spacetime-backend directory removed from the product repo
+    - spacetime compatibility naming removed from the frontend runtime
+    - root-path hosting standardized in vite config
+    - feature flags enforced in runtime routes and navigation
+  remove:
+    - root-level pipeline artifacts from product root
+    - production exposure of internal QA/test pages
+  refactor:
+    - noteStore into explicit offline and convex adapters
+    - liveClassSync to reduce dual transport complexity
+    - read progress into canonical server-backed model
+    - activity tracking into server-backed projections
+  introduce:
+    - feature flags enforced in runtime
+    - bundle budgets and performance checks
+    - ADR governance
+    - typed contracts for high-risk frontend modules
+
+principles:
+  - avoid full rewrite
+  - prefer consolidation over replacement
+  - keep one canonical source of truth per user-facing data domain
+  - isolate internal tools from end-user runtime
+  - ship changes behind flags and rollback levers

@@ -6,6 +6,7 @@ import {
     Brain, Trophy, Zap, UserPlus, Radio, Shield
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth.js';
+import { useFeatureFlags } from '../../hooks/useFeatureFlags.js';
 import { createLiveClassSync } from '../../services/liveclass/liveClassSync.js';
 import './Layout.css';
 
@@ -14,22 +15,25 @@ const SessionStartModal = lazy(() => import('../liveclass/SessionStartModal.jsx'
 
 const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
-    { path: '/notes', label: 'Notes', icon: BookOpen },
-    { path: '/exercises', label: 'Exercises', icon: FlaskConical },
-    { path: '/past-papers', label: 'Past Papers', icon: FileQuestion },
-    { path: '/flashcards', label: 'Flashcards', icon: Brain },
-    { path: '/progress', label: 'Progress', icon: Trophy },
-    { path: '/mistakes', label: 'Mistake Bank', icon: GraduationCap },
+    { path: '/notes', label: 'Notes', icon: BookOpen, featureKey: 'notes' },
+    { path: '/exercises', label: 'Exercises', icon: FlaskConical, featureKey: 'exercises' },
+    { path: '/past-papers', label: 'Past Papers', icon: FileQuestion, featureKey: 'pastPapers' },
+    { path: '/flashcards', label: 'Flashcards', icon: Brain, featureKey: 'flashcards' },
+    { path: '/progress', label: 'Progress', icon: Trophy, featureKey: 'progress' },
+    { path: '/mistakes', label: 'Mistake Bank', icon: GraduationCap, featureKey: 'mistakeBank' },
 ];
 
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
     const navigate = useNavigate();
     const { isAccessReady, role, isAdmin } = useAuth();
+    const { isEnabled } = useFeatureFlags();
     const [showJoinModal, setShowJoinModal] = useState(false);
     const [showStartModal, setShowStartModal] = useState(false);
     const [startError, setStartError] = useState('');
     const isTeacher = role === 'teacher';
+    const liveClassEnabled = isEnabled('liveClass');
+    const visibleNavItems = navItems.filter((item) => !item.featureKey || isEnabled(item.featureKey));
     const startBlockedReason = !isAccessReady
         ? 'Checking your account access. Try again in a moment.'
         : 'Only teacher accounts can create live classes.';
@@ -96,7 +100,7 @@ export default function Sidebar({ isOpen, onToggle }) {
                 {/* Navigation */}
                 <nav className="sidebar-nav">
                     <div className="nav-section-label">Study</div>
-                    {navItems.map(item => {
+                    {visibleNavItems.map(item => {
                         const Icon = item.icon;
                         const isActive = location.pathname === item.path ||
                             (item.path !== '/' && location.pathname.startsWith(item.path));
@@ -141,34 +145,38 @@ export default function Sidebar({ isOpen, onToggle }) {
                         </>
                     )}
 
-                    <div className="nav-section-label">Live Class</div>
-                    <button
-                        className={`nav-item ${showStartModal ? 'active' : ''}`}
-                        onClick={() => {
-                            if (!isTeacher || !isAccessReady) {
-                                setStartError(startBlockedReason);
-                                return;
-                            }
-                            setStartError('');
-                            setShowStartModal(true);
-                            if (window.innerWidth < 1024) onToggle();
-                        }}
-                        title={isTeacher ? 'Create and start a new live class' : startBlockedReason}
-                        disabled={!isTeacher || !isAccessReady}
-                    >
-                        <Radio size={18} />
-                        <span>Create Live Class</span>
-                    </button>
-                    <button
-                        className={`nav-item ${location.pathname.startsWith('/live') ? 'active' : ''}`}
-                        onClick={() => { setShowJoinModal(true); if (window.innerWidth < 1024) onToggle(); }}
-                        title="Join a live class with a code"
-                    >
-                        <UserPlus size={18} />
-                        <span>Join Live Class</span>
-                    </button>
+                    {liveClassEnabled && (
+                        <>
+                            <div className="nav-section-label">Live Class</div>
+                            <button
+                                className={`nav-item ${showStartModal ? 'active' : ''}`}
+                                onClick={() => {
+                                    if (!isTeacher || !isAccessReady) {
+                                        setStartError(startBlockedReason);
+                                        return;
+                                    }
+                                    setStartError('');
+                                    setShowStartModal(true);
+                                    if (window.innerWidth < 1024) onToggle();
+                                }}
+                                title={isTeacher ? 'Create and start a new live class' : startBlockedReason}
+                                disabled={!isTeacher || !isAccessReady}
+                            >
+                                <Radio size={18} />
+                                <span>Create Live Class</span>
+                            </button>
+                            <button
+                                className={`nav-item ${location.pathname.startsWith('/live') ? 'active' : ''}`}
+                                onClick={() => { setShowJoinModal(true); if (window.innerWidth < 1024) onToggle(); }}
+                                title="Join a live class with a code"
+                            >
+                                <UserPlus size={18} />
+                                <span>Join Live Class</span>
+                            </button>
 
-                    <div className="nav-divider" />
+                            <div className="nav-divider" />
+                        </>
+                    )}
                     <div className="nav-section-label">Settings</div>
                     <Link
                         to="/settings"

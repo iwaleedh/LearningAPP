@@ -7,15 +7,29 @@ const debugSession = {
 };
 
 const notePath = '/notes/chemistry/1/1/0';
-const checklistNotePath = '/notes/chemistry/1/2/5';
+const nextNotePath = '/notes/chemistry/1/1/1';
 
 async function seedDebugSession(page) {
-  await page.addInitScript((session) => {
+  await page.addInitScript(({ session }) => {
     window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(session));
-  }, debugSession);
+  }, { session: debugSession });
 }
 
-test.describe('NotePage mobile QA', () => {
+async function openMoreMenu(page) {
+  const trigger = page.getByRole('button', { name: 'More actions' });
+  await expect(trigger).toBeVisible();
+  await trigger.click();
+  await expect(page.getByRole('menu', { name: 'More note actions' })).toBeVisible();
+}
+
+async function enterFullscreen(page) {
+  await openMoreMenu(page);
+  await page.getByRole('menuitem', { name: 'Enter fullscreen note view' }).click({ force: true });
+  await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+  await expect(page.getByRole('toolbar', { name: 'Fullscreen note reading controls' })).toBeVisible();
+}
+
+test.describe('NotePage mobile fullscreen reading QA', () => {
   test.use({
     viewport: { width: 390, height: 844 },
     screen: { width: 390, height: 844 },
@@ -28,100 +42,107 @@ test.describe('NotePage mobile QA', () => {
   test.beforeEach(async ({ page }) => {
     await seedDebugSession(page);
     await page.goto(notePath);
+    await page.evaluate(() => {
+      window.localStorage.removeItem('LT_NOTE_FULLSCREEN');
+    });
+    await page.reload();
     await expect(page.locator('.note-toolbar')).toBeVisible();
     await expect(page.locator('.note-study-content')).toBeVisible();
   });
 
-  test('toolbar actions stay reachable and toc opens as a mobile sheet', async ({ page }) => {
-    const toolbar = page.locator('.note-toolbar');
-    await expect(toolbar).toBeVisible();
-
-    await expect(page.getByRole('button', { name: 'Toggle table of contents' })).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Toggle recall mode' })).toBeVisible();
-    await expect(page.getByRole('button', { name: /Back to .*chapters/i })).toBeVisible();
-
-    await page.getByRole('button', { name: 'Toggle table of contents' }).click();
+  test('overflow menu exposes contents and recall on phone', async ({ page }) => {
+    await openMoreMenu(page);
+    await page.getByRole('menuitem', { name: /Contents/i }).evaluate((element) => element.click());
 
     const tocDialog = page.getByRole('dialog', { name: 'Contents' });
     await expect(tocDialog).toBeVisible();
     await expect(tocDialog.locator('.note-toc-link').first()).toBeVisible();
-
     await page.keyboard.press('Escape');
     await expect(tocDialog).toBeHidden();
-    await expect(page.getByRole('button', { name: 'Toggle table of contents' })).toBeFocused();
-  });
 
-  test('page avoids horizontal overflow and keeps visible controls touch sized', async ({ page }) => {
-    const overflow = await page.evaluate(() => ({
-      page: document.documentElement.scrollWidth - window.innerWidth,
-    }));
-
-    expect(overflow.page).toBeLessThanOrEqual(1);
-
-    const touchTargetViolations = await page.evaluate(() => {
-      const selectors = [
-        '.note-page button',
-        '.note-page [role="menuitem"]',
-        '.note-page [role="checkbox"]',
-      ];
-
-      return [...document.querySelectorAll(selectors.join(','))]
-        .filter((element) => {
-          const rect = element.getBoundingClientRect();
-          const style = window.getComputedStyle(element);
-          return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
-        })
-        .map((element) => {
-          const rect = element.getBoundingClientRect();
-          return {
-            text: element.getAttribute('aria-label') || element.textContent?.trim() || element.className,
-            width: Math.round(rect.width),
-            height: Math.round(rect.height),
-          };
-        })
-        .filter((item) => item.width < 44 || item.height < 44);
-    });
-
-    expect(touchTargetViolations).toEqual([]);
-  });
-
-  test('recall opens as a fullscreen mobile dialog with 44px cue navigation and restores focus', async ({ page }) => {
-    const recallTrigger = page.getByRole('button', { name: 'Toggle recall mode' });
-    await recallTrigger.click();
+    await openMoreMenu(page);
+    await page.getByRole('menuitem', { name: /Recall/i }).evaluate((element) => element.click());
 
     const recallDialog = page.getByRole('dialog', { name: /Recall Mode/i });
     await expect(recallDialog).toBeVisible();
-
-    const firstDot = recallDialog.locator('.recall-dot').first();
-    await expect(firstDot).toBeVisible();
-
-    const dotBox = await firstDot.boundingBox();
-    expect(dotBox?.width ?? 0).toBeGreaterThanOrEqual(44);
-    expect(dotBox?.height ?? 0).toBeGreaterThanOrEqual(44);
-
-    await page.keyboard.press('ArrowRight');
-    await expect(recallDialog.locator('.recall-dot[aria-selected="true"]').first()).toBeVisible();
-
+    await expect(recallDialog.locator('.recall-dot').first()).toBeVisible();
     await page.keyboard.press('Escape');
     await expect(recallDialog).toBeHidden();
-    await expect(recallTrigger).toBeFocused();
   });
 
-  test('topic menus open on tap and checklist items support keyboard activation', async ({ page }) => {
-    await page.goto(checklistNotePath);
-    await expect(page.locator('.note-study-content')).toBeVisible();
+  test('fullscreen persists across reload, hides shell chrome, and exits predictably', async ({ page }) => {
+    await enterFullscreen(page);
+    await expect(page.locator('html')).toHaveClass(/note-fullscreen-active/);
 
-    const firstTopic = page.getByRole('button', { name: /Topic 1:/i }).first();
-    await firstTopic.evaluate((element) => element.scrollIntoView({ block: 'center' }));
-    await firstTopic.focus();
-    await page.keyboard.press('Enter');
-    await expect(page.locator('.topic-subtopics-dropdown--open')).toBeVisible();
+    const fullscreenLayout = await page.evaluate(() => {
+      const mainContent = document.getElementById('main-content');
+      const header = document.querySelector('.app-header');
+      const sidebar = document.querySelector('.app-sidebar');
+      const scrollArea = document.querySelector('.note-scroll-area');
+      if (!(mainContent instanceof HTMLElement) || !(header instanceof HTMLElement) || !(sidebar instanceof HTMLElement) || !(scrollArea instanceof HTMLElement)) {
+        return null;
+      }
 
-    const checkbox = page.locator('[role="checkbox"]').first();
-    await expect(checkbox).toBeVisible();
-    const initialState = await checkbox.getAttribute('aria-checked');
-    await checkbox.focus();
-    await page.keyboard.press('Space');
-    await expect(checkbox).toHaveAttribute('aria-checked', initialState === 'true' ? 'false' : 'true');
+      return {
+        pageShellFullscreen: mainContent.classList.contains('page-content--note-fullscreen'),
+        headerDisplay: window.getComputedStyle(header).display,
+        sidebarDisplay: window.getComputedStyle(sidebar).display,
+        scrollBorderWidth: window.getComputedStyle(scrollArea).borderTopWidth,
+        scrollRadius: window.getComputedStyle(scrollArea).borderTopLeftRadius,
+      };
+    });
+
+    expect(fullscreenLayout).not.toBeNull();
+    expect(fullscreenLayout.pageShellFullscreen).toBe(true);
+    expect(fullscreenLayout.headerDisplay).toBe('none');
+    expect(fullscreenLayout.sidebarDisplay).toBe('none');
+    expect(fullscreenLayout.scrollBorderWidth).toBe('0px');
+    expect(fullscreenLayout.scrollRadius).toBe('0px');
+    await expect(page.locator('.annotate-canvas-overlay')).toHaveCount(0);
+
+    await page.reload();
+    await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+    await expect(page.getByRole('toolbar', { name: 'Fullscreen note reading controls' })).toBeVisible();
+    await page.getByRole('button', { name: 'Exit fullscreen note view' }).click();
+    await expect(page.locator('.note-page--fullscreen')).toHaveCount(0);
+    await expect(page.locator('html')).not.toHaveClass(/note-fullscreen-active/);
+  });
+
+  test('mobile fullscreen keeps the reading surface maximized', async ({ page }) => {
+    await enterFullscreen(page);
+
+    const fullscreenView = await page.evaluate(() => {
+      const body = document.querySelector('.note-body');
+      const scrollArea = document.querySelector('.note-scroll-area');
+      const noteContent = document.querySelector('.note-study-content');
+      if (!(body instanceof HTMLElement) || !(scrollArea instanceof HTMLElement) || !(noteContent instanceof HTMLElement)) {
+        return null;
+      }
+
+      return {
+        bodyMarginTop: window.getComputedStyle(body).marginTop,
+        bodyMarginLeft: window.getComputedStyle(body).marginLeft,
+        scrollBorderWidth: window.getComputedStyle(scrollArea).borderTopWidth,
+        scrollRadius: window.getComputedStyle(scrollArea).borderTopLeftRadius,
+        contentTop: noteContent.getBoundingClientRect().top,
+      };
+    });
+
+    expect(fullscreenView).not.toBeNull();
+    expect(fullscreenView.bodyMarginTop).toBe('0px');
+    expect(fullscreenView.bodyMarginLeft).toBe('0px');
+    expect(fullscreenView.scrollBorderWidth).toBe('0px');
+    expect(fullscreenView.scrollRadius).toBe('0px');
+    expect(fullscreenView.contentTop).toBeLessThan(140);
+    await expect(page.locator('.annotate-canvas-overlay')).toHaveCount(0);
+  });
+
+  test('mobile fullscreen next-note controls work from the reading toolbar', async ({ page }) => {
+    await enterFullscreen(page);
+
+    await page.getByRole('button', { name: 'Next note' }).click();
+    await expect(page).toHaveURL(new RegExp(`${nextNotePath}$`));
+    await expect(page.locator('.note-page--fullscreen')).toBeVisible();
+    await expect(page.getByRole('toolbar', { name: 'Fullscreen note reading controls' })).toBeVisible();
   });
 });

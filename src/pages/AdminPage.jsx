@@ -8,6 +8,7 @@ import {
   LayoutDashboard, ToggleLeft, ToggleRight,
   GraduationCap, Search, ChevronDown, Trash2, AlertTriangle,
   Receipt, ExternalLink, CheckCircle, XCircle,
+  Activity,
 } from 'lucide-react';
 import './AdminPage.css';
 
@@ -516,6 +517,103 @@ function PaymentsTab() {
   );
 }
 
+function ObservabilityTab() {
+  const summary = useQuery(api.observability.getReleaseHealthSummary);
+
+  if (!summary) {
+    return <div className="admin-empty">Loading observability metrics…</div>;
+  }
+
+  const stats = [
+    { icon: Activity, label: 'Route Views (24h)', value: summary.routeViews24h, tone: 'primary' },
+    { icon: LayoutDashboard, label: 'Note Views (24h)', value: summary.noteViews24h, tone: 'info' },
+    { icon: CheckCircle, label: 'Fullscreen Enters', value: summary.fullscreenEntries24h, tone: 'success' },
+    { icon: Clock, label: 'Recall Opens', value: summary.recallOpens24h, tone: 'accent' },
+    { icon: AlertTriangle, label: 'Warnings', value: summary.warnings24h, tone: 'accent' },
+    { icon: XCircle, label: 'Errors', value: summary.errors24h, tone: 'error' },
+  ];
+
+  return (
+    <div className="admin-observability-stack">
+      <div className="admin-stat-grid">
+        {stats.map((s) => {
+          const Icon = s.icon;
+          return (
+            <div key={s.label} className={`admin-stat-card admin-stat-card--${s.tone} card`}>
+              <div className="admin-stat-icon">
+                <Icon size={24} />
+              </div>
+              <div className="admin-stat-value">{s.value}</div>
+              <div className="admin-stat-label">{s.label}</div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className={`admin-pending-notice card ${summary.status === 'degraded' ? 'admin-pending-notice--degraded' : 'admin-pending-notice--healthy'}`}>
+        <AlertTriangle size={18} />
+        <span>
+          Release health is <strong>{summary.status}</strong>. Pending background events: <strong>{summary.pendingEvents}</strong>.
+        </span>
+      </div>
+
+      <div className="admin-observability-layout">
+        <div className="admin-table-wrap card">
+          <div className="admin-section-heading">Top Routes</div>
+          {summary.topRoutes.length === 0 ? (
+            <div className="admin-empty">No recent route telemetry yet.</div>
+          ) : (
+            <table className="admin-table">
+              <thead>
+                <tr>
+                  <th>Route</th>
+                  <th>Views (24h)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {summary.topRoutes.map((route) => (
+                  <tr key={route.route} className="admin-user-row">
+                    <td className="admin-log-message">{route.route}</td>
+                    <td>{route.count}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+
+        <div className="admin-table-wrap card">
+          <div className="admin-section-heading">Recent Warnings And Errors</div>
+          {summary.recentErrors.length === 0 ? (
+            <div className="admin-empty">No recent warning or error logs.</div>
+          ) : (
+            <table className="admin-table">
+              <thead>
+                <tr>
+                  <th>Level</th>
+                  <th>Component</th>
+                  <th>Message</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {summary.recentErrors.map((entry, index) => (
+                  <tr key={`${entry.timestamp}-${index}`} className="admin-user-row">
+                    <td><span className={`admin-badge ${entry.level === 'error' ? 'ab--blocked' : 'ab--pending'}`}>{entry.level}</span></td>
+                    <td>{entry.component || 'app'}</td>
+                    <td className="admin-log-message">{entry.message}</td>
+                    <td className="admin-date">{formatDate(entry.timestamp)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ── Main Page ─────────────────────────────────────────────────────────────────
 
 const TABS = [
@@ -523,6 +621,7 @@ const TABS = [
   { id: 'users',    label: 'Users',         icon: Users },
   { id: 'features', label: 'Feature Flags', icon: ToggleRight },
   { id: 'payments', label: 'Payments',      icon: Receipt },
+  { id: 'observability', label: 'Observability', icon: Activity },
 ];
 
 export default function AdminPage() {
@@ -597,6 +696,7 @@ export default function AdminPage() {
         {tab === 'users'    && <UsersTab allUsers={allUsers} pendingUsers={pendingUsers} />}
         {tab === 'features' && <FeaturesTab />}
         {tab === 'payments' && <PaymentsTab />}
+        {tab === 'observability' && <ObservabilityTab />}
       </div>
     </div>
   );

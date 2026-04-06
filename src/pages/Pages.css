@@ -4255,7 +4255,7 @@ button.exercise-type-card:disabled {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.65; }
 }
-/* SpacetimeDB connection status pill */
+/* Live sync connection status pill */
 .lc-stdb-pill {
     display: inline-flex;
     align-items: center;

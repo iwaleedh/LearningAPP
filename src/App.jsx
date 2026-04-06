@@ -10,8 +10,10 @@ import HomePage from './pages/HomePage';
 import RequireRole from './components/auth/RequireRole';
 import RequireSignIn from './components/auth/RequireSignIn';
 import RequireApproved from './components/auth/RequireApproved';
+import RequireFeature from './components/auth/RequireFeature';
 import { canAccessLocalLiveClassAsGuest } from './components/auth/accessControl.js';
 import { ToastProvider } from './components/common/Toast';
+import { trackRouteView } from './services/observability/clientTelemetry.js';
 import './components/common/Skeleton.css';
 import './components/common/StateScreens.css';
 
@@ -88,6 +90,11 @@ function AppContent() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  useEffect(() => {
+    if (!isLoaded || !isSignedIn) return;
+    trackRouteView(location.pathname);
+  }, [isLoaded, isSignedIn, location.pathname]);
+
   if (isLoaded && !isSignedIn && location.pathname === '/') {
     return (
       <div className="app-root">
@@ -132,19 +139,19 @@ function AppContent() {
 
               {/* All other routes require approved account */}
               <Route path="/" element={<RequireApproved><HomePage /></RequireApproved>} />
-              <Route path="/chapters" element={<RequireApproved><ChapterPage /></RequireApproved>} />
-              <Route path="/chapters/:chapterId" element={<RequireApproved><ChapterPage /></RequireApproved>} />
-              <Route path="/notes" element={<RequireApproved><ChapterPage /></RequireApproved>} />
-              <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<RequireApproved><NotePage /></RequireApproved>} />
-              <Route path="/exercises" element={<RequireApproved><ExercisePage /></RequireApproved>} />
+              <Route path="/chapters" element={<RequireApproved><RequireFeature featureKey="notes"><ChapterPage /></RequireFeature></RequireApproved>} />
+              <Route path="/chapters/:chapterId" element={<RequireApproved><RequireFeature featureKey="notes"><ChapterPage /></RequireFeature></RequireApproved>} />
+              <Route path="/notes" element={<RequireApproved><RequireFeature featureKey="notes"><ChapterPage /></RequireFeature></RequireApproved>} />
+              <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<RequireApproved><RequireFeature featureKey="notes"><NotePage /></RequireFeature></RequireApproved>} />
+              <Route path="/exercises" element={<RequireApproved><RequireFeature featureKey="exercises"><ExercisePage /></RequireFeature></RequireApproved>} />
               <Route path="/past-papers" element={
                 <RequireApproved>
-                  <PastPapersPage />
+                  <RequireFeature featureKey="pastPapers"><PastPapersPage /></RequireFeature>
                 </RequireApproved>
               } />
-              <Route path="/flashcards" element={<RequireApproved><FlashcardsPage /></RequireApproved>} />
-              <Route path="/progress" element={<RequireApproved><ProgressPage /></RequireApproved>} />
-              <Route path="/mistakes" element={<RequireApproved><MistakeBankPage /></RequireApproved>} />
+              <Route path="/flashcards" element={<RequireApproved><RequireFeature featureKey="flashcards"><FlashcardsPage /></RequireFeature></RequireApproved>} />
+              <Route path="/progress" element={<RequireApproved><RequireFeature featureKey="progress"><ProgressPage /></RequireFeature></RequireApproved>} />
+              <Route path="/mistakes" element={<RequireApproved><RequireFeature featureKey="mistakeBank"><MistakeBankPage /></RequireFeature></RequireApproved>} />
               <Route path="/settings" element={<RequireApproved><SettingsPage /></RequireApproved>} />
               <Route
                 path="/teacher"
@@ -178,7 +185,7 @@ function AppContent() {
                       canAccessLocalLiveClassAsGuest(location?.pathname, { canSignIn })
                     }
                   >
-                    <LiveClassPage />
+                    <RequireFeature featureKey="liveClass"><LiveClassPage /></RequireFeature>
                   </RequireSignIn>
                 )}
               />
@@ -187,7 +194,7 @@ function AppContent() {
                 element={(
                   <RequireApproved>
                     <RequireRole allowedRoles={['teacher']} reason="view student live notes">
-                      <StudentNotesViewPage />
+                      <RequireFeature featureKey="liveClass"><StudentNotesViewPage /></RequireFeature>
                     </RequireRole>
                   </RequireApproved>
                 )}

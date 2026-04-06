@@ -1,0 +1,51 @@
+flowchart LR
+    subgraph UserSurface[User Surface]
+        Landing[Public Landing]
+        App[Authenticated React App]
+        Internal[Internal Tools\nQA/Admin Only]
+    end
+
+    subgraph Frontend[Frontend Runtime]
+        Router[Route Shell]
+        Gates[Feature Gate Layer]
+        Domains[Domain Modules\nContent / Study / Live Class / Admin]
+        Offline[Offline Cache + Draft Queue]
+    end
+
+    subgraph Backend[Application Backend]
+        Convex[Convex Modular Monolith]
+        Edge[Versioned Edge APIs\n/api/v1]
+        Jobs[Background Jobs / Cron / Webhooks]
+    end
+
+    subgraph Storage[Data And Asset Layer]
+        AppData[(Convex Data)]
+        AssetCDN[(Object Storage + CDN)]
+        Local[(Local Cache Only)]
+    end
+
+    subgraph Ops[Observability And Delivery]
+        CI[CI/CD Pipeline]
+        Flags[Release Flags + Kill Switches]
+        Sentry[Error Tracking]
+        Dashboards[Ops Dashboards]
+    end
+
+    Landing --> Router
+    App --> Router
+    Internal --> Router
+    Router --> Gates
+    Gates --> Domains
+    Domains --> Convex
+    Domains --> Offline
+    Offline --> Local
+    Convex --> AppData
+    Edge --> Convex
+    Jobs --> Convex
+    Domains --> AssetCDN
+    CI --> Router
+    CI --> Convex
+    Flags --> Gates
+    Convex --> Dashboards
+    Router --> Sentry
+    Convex --> Sentry

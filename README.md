@@ -1,16 +1,49 @@
-# React + Vite
+# Living Textbook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Living Textbook is a React + Vite study platform for Pearson Edexcel International A-Level and IGCSE learners.
 
-Currently, two official plugins are available:
+## Active Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Frontend: React 19, Vite 7, React Router 7, vanilla CSS
+- Backend: Convex
+- Auth: Clerk, with anonymous and debug fallbacks for development and mobile regression tests
+- Testing: Node test runner plus Playwright mobile regression coverage
 
-## React Compiler
+Convex is the only supported backend path. The historical SpacetimeDB backend has been removed from the product repo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Commands
 
-## Expanding the ESLint configuration
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
+npm run lint:all
+npm run test
+npm run test:e2e:mobile
+npm run convex:deploy
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Environment Variables
+
+Create `.env.local` with the values required for your environment:
+
+```bash
+VITE_CONVEX_URL=https://<your-convex-deployment>.convex.cloud
+VITE_CLERK_PUBLISHABLE_KEY=<your-clerk-publishable-key>
+```
+
+## Deployment
+
+- Frontend hosting is standardized for root-path deployment behind `vercel.json`
+- Backend deployment is handled through `npx convex deploy`
+- GitHub Actions block backend deploys unless lint, tests, and build succeed
+
+## Repository Boundaries
+
+- `src/` contains the application runtime
+- `convex/` contains the active backend schema, queries, mutations, and HTTP actions
+- `public/` contains static PDFs, past papers, and PWA assets
+- `scripts/` contains support and content pipeline utilities
+
+Assessment artifacts and the current migration backlog live in `docs/modernization/`.

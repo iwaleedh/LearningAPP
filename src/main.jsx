@@ -6,9 +6,11 @@ import { registerServiceWorker } from './pwa/registerServiceWorker'
 import { getCurrentUserId, initConvex } from './convex-client.js'
 import { logger, setLogContext } from './services/logger/logger.js'
 import { startBufferFlush, flush as flushLogBuffer } from './services/logger/logBuffer.js'
+import { healthMonitor } from './services/health/healthMonitor.js'
 
 // ── Logger: start buffer flush + global error handlers ──────────────
 startBufferFlush();
+healthMonitor.start();
 
 window.addEventListener('error', (event) => {
   logger.error('Uncaught error', {

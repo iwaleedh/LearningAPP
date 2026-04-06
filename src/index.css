@@ -902,6 +902,22 @@ select.input {
   margin: 0 auto;
 }
 
+html.note-fullscreen-active .app-sidebar,
+html.note-fullscreen-active .app-header,
+html.note-fullscreen-active .skip-link {
+  display: none;
+}
+
+html.note-fullscreen-active .app-main {
+  margin-left: 0;
+  width: 100%;
+}
+
+html.note-fullscreen-active .page-content {
+  padding: 0;
+  max-width: 100%;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .app-sidebar {

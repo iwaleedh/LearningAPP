@@ -9,10 +9,12 @@ export function EmptyState({
   action, 
   className = '' 
 }) {
+  const iconNode = React.createElement(Icon, { size: 48, strokeWidth: 1.5 });
+
   return (
     <div className={`empty-state ${className}`}>
       <div className="empty-state-icon">
-        <Icon size={48} strokeWidth={1.5} />
+        {iconNode}
       </div>
       <h3 className="empty-state-title">{title}</h3>
       <p className="empty-state-desc">{description}</p>
@@ -35,10 +37,12 @@ export function ErrorState({
   retryAction, 
   className = '' 
 }) {
+  const iconNode = React.createElement(Icon, { size: 48, strokeWidth: 1.5 });
+
   return (
     <div className={`error-state ${className}`}>
       <div className="error-state-icon">
-        <Icon size={48} strokeWidth={1.5} />
+        {iconNode}
       </div>
       <h3 className="error-state-title">{title}</h3>
       <p className="error-state-desc">{description}</p>

@@ -5,6 +5,20 @@ export const getMyActivityMetrics = query({
   args: {},
   handler: async (ctx) => {
     const ownerUserId = await requireApprovedAuthenticatedUserId(ctx);
+
+    const projection = await ctx.db
+      .query("activityMetricProjections")
+      .withIndex("by_owner", (q) => q.eq("ownerUserId", ownerUserId))
+      .first();
+
+    if (projection) {
+      return {
+        exercisesDone: projection.exercisesDone,
+        papersViewed: projection.papersViewed,
+        updatedAt: projection.updatedAt,
+      };
+    }
+
     const attempts = await ctx.db
       .query("studyAttempts")
       .withIndex("by_owner", (q) => q.eq("ownerUserId", ownerUserId))
