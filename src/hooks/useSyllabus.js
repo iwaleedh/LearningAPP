@@ -10,13 +10,24 @@ export function useSyllabus(subject) {
     const error = errorsBySubject[subjectKey] || null;
 
     useEffect(() => {
-        if (syllabus || error) return;
+        if (!subjectKey || syllabus) {
+            return undefined;
+        }
 
         let cancelled = false;
 
         void getSyllabusBySubject(subjectKey)
             .then((nextSyllabus) => {
                 if (cancelled) return;
+                setErrorsBySubject((prev) => {
+                    if (!prev[subjectKey]) {
+                        return prev;
+                    }
+
+                    const next = { ...prev };
+                    delete next[subjectKey];
+                    return next;
+                });
                 setSyllabusesBySubject((prev) => (
                     prev[subjectKey] ? prev : { ...prev, [subjectKey]: nextSyllabus }
                 ));
@@ -31,7 +42,7 @@ export function useSyllabus(subject) {
         return () => {
             cancelled = true;
         };
-    }, [error, subjectKey, syllabus]);
+    }, [subjectKey, syllabus]);
 
     return {
         subjectKey,

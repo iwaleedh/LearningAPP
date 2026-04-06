@@ -2,31 +2,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import packageJson from './package.json' with { type: 'json' }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const productionBase = (() => {
-  if (process.env.VERCEL) {
-    return '/'
-  }
-
-  const homepage = packageJson.homepage
-
-  if (!homepage) {
-    return '/'
-  }
-
-  try {
-    const pathname = new URL(homepage).pathname
-    return pathname.endsWith('/') ? pathname : `${pathname}/`
-  } catch {
-    return homepage.endsWith('/') ? homepage : `${homepage}/`
-  }
-})()
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? productionBase : '/',
+export default defineConfig(() => ({
+  base: '/',
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1000,

@@ -1,0 +1,64 @@
+generated_at: 2026-04-05
+
+policy:
+  announce_window_days: 30
+  soft_disable_window_days: 60
+  hard_removal_window_days: 90-180
+
+items:
+  - name: spacetime-backend
+    type: codebase-component
+    owner: engineering
+    status: completed
+    sunset_target: 2026-04-05
+    replacement: convex-only backend architecture
+    notes:
+      - removed from the product repo in the phase-1 cleanup tranche
+
+  - name: spacetime compatibility names in convex-client
+    type: compatibility-shim
+    owner: engineering
+    status: completed
+    sunset_target: 2026-04-05
+    replacement: convex-only naming surface
+    notes:
+      - legacy compatibility exports were removed from the active runtime client
+
+  - name: root-level pipeline artifacts in app workspace root
+    type: repo-structure
+    owner: engineering
+    status: relocate
+    sunset_target: 2026-05-31
+    replacement: dedicated tools/content-pipeline area
+
+  - name: AdvancedPage production utilities
+    type: runtime-surface
+    owner: engineering
+    status: move-internal
+    sunset_target: 2026-06-15
+    replacement: internal QA tools or local-only dev tooling
+
+  - name: BackendArchitecturesPage route
+    type: runtime-surface
+    owner: product-engineering
+    status: evaluate-for-removal
+    sunset_target: 2026-06-15
+    replacement: docs or marketing content if still needed
+
+  - name: localStorage migration helpers for note assets
+    type: migration-code
+    owner: engineering
+    status: remove-after-threshold
+    sunset_target: 2026-09-30
+    replacement: canonical noteAssets data in Convex
+    removal_gate:
+      - migration success rate >= 99 percent of active authenticated users
+      - no remaining support tickets tied to legacy asset recovery for 30 days
+
+api_versioning:
+  external_routes:
+    current_target: /api/v1
+    rule:
+      - breaking changes require new versioned path
+      - prior version supported for at least one deprecation window
+      - add deprecation metadata to docs and response headers where feasible

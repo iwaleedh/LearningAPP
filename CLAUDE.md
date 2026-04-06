@@ -6,7 +6,7 @@ Reference document for AI agents and developers working on this codebase.
 
 ## Project Overview
 
-**Living Textbook** is an interactive A-Level exam-prep platform targeting Pearson Edexcel International A-Level students. It covers 7 subjects, delivering structured notes, exercises, flashcards, and past-paper practice inside a React PWA backed by SpacetimeDB.
+**Living Textbook** is an interactive A-Level exam-prep platform targeting Pearson Edexcel International A-Level students. It covers 7 subjects, delivering structured notes, exercises, flashcards, and past-paper practice inside a React PWA backed by Convex.
 
 ---
 
@@ -17,8 +17,8 @@ Reference document for AI agents and developers working on this codebase.
 | Framework | React 19.2 |
 | Build | Vite 7.3 |
 | Routing | React Router DOM 7.13 |
-| Backend/Sync | SpacetimeDB 2.0 |
-| Alternative backend | Convex 1.34 |
+| Backend/Sync | Convex 1.34 |
+| Legacy backend | Removed SpacetimeDB subtree (no longer active) |
 | Math rendering | KaTeX 0.16 |
 | Charts | Chart.js 4 + react-chartjs-2 |
 | Icons | Lucide React |
@@ -42,8 +42,8 @@ npm run test      # node --test "src/**/*.test.js"
 
 **Environment variables** (`.env.local`):
 ```
-VITE_SPACETIMEDB_URI=http://localhost:3000
-VITE_SPACETIMEDB_MODULE=spacetime-backend-dev
+VITE_CONVEX_URL=https://<your-convex-deployment>.convex.cloud
+VITE_CLERK_PUBLISHABLE_KEY=<your-clerk-publishable-key>
 ```
 
 ---
@@ -54,8 +54,8 @@ VITE_SPACETIMEDB_MODULE=spacetime-backend-dev
 LearningAPP/
 ├── src/
 │   ├── App.jsx                    # Root component — routing, global keyboard shortcuts
-│   ├── main.jsx                   # React root, SpacetimeDB init
-│   ├── spacetime.js               # SpacetimeDB client singleton
+│   ├── main.jsx                   # React root, Convex init
+│   ├── convex-client.js           # Convex client singleton + imperative helpers
 │   ├── index.css                  # Global design system (CSS custom properties)
 │   ├── App.css
 │   │
@@ -152,11 +152,11 @@ LearningAPP/
 │   │   ├── ThemeProvider.jsx      # Wraps app; sets data-theme on <html>
 │   │   └── ThemeContext.jsx
 │   │
-│   ├── spacetime/                 # SpacetimeDB table types (TypeScript)
-│   │   ├── user_table.ts
-│   │   ├── note_table.ts
-│   │   ├── flashcard_table.ts
-│   │   └── *_reducer.ts
+├── convex/
+│   ├── schema.ts                  # Convex schema
+│   ├── http.ts                    # Convex HTTP actions
+│   ├── featureFlags.ts            # Runtime feature flag storage
+│   └── ...
 │   │
 │   ├── pwa/
 │   │   ├── registerServiceWorker.js
@@ -347,12 +347,12 @@ Each note file exports an object:
 - Sets `data-theme="dark"|"light"` on `<html>`
 - Persists to localStorage; respects system preference as default
 
-### SpacetimeDB ([src/spacetime.js](src/spacetime.js))
+### Convex ([src/convex-client.js](src/convex-client.js))
 - Initialised async in `main.jsx`
-- Stores identity + token in localStorage
-- Subscribed tables: `user`, `note`, `flashcard`, `note_asset`
-- Register callback: `onSpacetimeDBReady(fn)`
-- Env vars: `VITE_SPACETIMEDB_URI`, `VITE_SPACETIMEDB_MODULE`
+- Stores anonymous/debug identity locally when Clerk is unavailable
+- Provides imperative query, mutation, and subscription helpers for runtime services
+- Used through `ConvexProvider` / `ConvexProviderWithClerk` in `AuthProvider.jsx`
+- Env vars: `VITE_CONVEX_URL`, `VITE_CLERK_PUBLISHABLE_KEY`
 
 ---
 

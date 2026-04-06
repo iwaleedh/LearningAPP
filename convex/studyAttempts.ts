@@ -166,6 +166,16 @@ function buildBadgeMetricDelta(args: {
   };
 }
 
+function buildActivityMetricDelta(args: {
+  sourceType: "exercise" | "pastpaper";
+  activityType: string;
+}) {
+  return {
+    exercisesDone: args.sourceType === "exercise" ? 1 : 0,
+    papersViewed: args.sourceType === "pastpaper" && args.activityType !== "completed_session" ? 1 : 0,
+  };
+}
+
 async function projectBadgeMetrics(
   ctx: any,
   ownerUserId: string,
@@ -219,6 +229,39 @@ async function projectBadgeMetrics(
     papersCompleted: delta.papersCompleted,
     perfectScores: delta.perfectScores,
     fastCompletions: delta.fastCompletions,
+    updatedAt: now,
+  });
+}
+
+async function projectActivityMetrics(
+  ctx: any,
+  ownerUserId: string,
+  args: {
+    sourceType: "exercise" | "pastpaper";
+    activityType: string;
+  },
+  now: number,
+) {
+  const delta = buildActivityMetricDelta(args);
+
+  const existingProjection = await ctx.db
+    .query("activityMetricProjections")
+    .withIndex("by_owner", (q: any) => q.eq("ownerUserId", ownerUserId))
+    .first();
+
+  if (existingProjection) {
+    await ctx.db.patch(existingProjection._id, {
+      exercisesDone: safeAdd(existingProjection.exercisesDone, delta.exercisesDone),
+      papersViewed: safeAdd(existingProjection.papersViewed, delta.papersViewed),
+      updatedAt: now,
+    });
+    return;
+  }
+
+  await ctx.db.insert("activityMetricProjections", {
+    ownerUserId,
+    exercisesDone: delta.exercisesDone,
+    papersViewed: delta.papersViewed,
     updatedAt: now,
   });
 }
@@ -336,6 +379,11 @@ export const recordAttempt = mutation({
       metadataJson,
       scorePercent,
       durationSeconds,
+    }, now);
+
+    await projectActivityMetrics(ctx, ownerUserId, {
+      sourceType: args.sourceType as SourceType,
+      activityType: args.activityType,
     }, now);
 
     return studyAttemptId;

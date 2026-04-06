@@ -1,0 +1,100 @@
+program: living-textbook-modernization
+generated_at: 2026-04-05
+
+procedural_plan:
+  - step: 1
+    name: establish cutover controls
+    status: completed
+    actions:
+      - enable runtime feature flags for release, migration, and kill-switch use cases
+      - create preview environment validation path
+      - define rollback owner and on-call contact for each migration
+    rollback:
+      - disable release flag
+      - revert deployment
+
+  - step: 2
+    name: standardize environments and deployment
+    status: completed
+    actions:
+      - choose canonical frontend host
+      - align Vite base path, hosting config, and deploy scripts
+      - map environment variables across dev, preview, production
+    rollback:
+      - keep current deploy path active until preview verification passes
+
+  - step: 3
+    name: remove legacy backend path
+    status: completed
+    actions:
+      - archive or remove spacetime-backend
+      - remove legacy naming shims from docs and runtime compatibility surface
+      - publish internal deprecation note
+    rollback:
+      - restore archived directory only if historical reference is required
+
+  - step: 4
+    name: migrate read progress to canonical server model
+    actions:
+      - add dual-read capability for local and server state
+      - backfill server state from existing local records on authenticated session start
+      - verify counts against sampled accounts
+      - switch UI reads to server-first
+    rollback:
+      - revert UI reads to local source
+      - preserve migrated records for retry
+
+  - step: 5
+    name: migrate activity metrics and projections
+    actions:
+      - identify all local-only activity counters
+      - backfill server-side projections from event history where possible
+      - dual-write during one release window
+      - cut reads to server projections after parity checks
+    rollback:
+      - restore local read path behind migration flag
+
+  - step: 6
+    name: split note persistence adapters
+    actions:
+      - create explicit offline note adapter
+      - create explicit convex note adapter
+      - limit orchestrator to policy selection and fallback only
+      - run contract tests across both adapters
+    rollback:
+      - re-enable existing noteStore adapter path behind a compatibility flag
+
+  - step: 7
+    name: consolidate live-class sync
+    actions:
+      - define canonical sync path for admitted sessions
+      - keep BroadcastChannel only as same-browser resilience transport
+      - run reconnection, offline, and duplicate-event regression tests
+    rollback:
+      - revert to pre-cutover sync controller via release flag
+
+  - step: 8
+    name: move heavyweight assets to object storage and CDN
+    actions:
+      - publish PDFs and large binaries to dedicated object storage
+      - update manifests and consumers to use CDN URLs
+      - add cache headers and access policy
+    rollback:
+      - continue serving current public path until CDN validation is complete
+
+  - step: 9
+    name: re-platform content delivery
+    actions:
+      - generate note and exercise manifests
+      - fetch content data rather than bundling code modules
+      - compare build output and runtime performance budgets before cutover
+    rollback:
+      - retain manifest flag to toggle between bundled and fetched content during transition
+
+verification:
+  required:
+    - unit and integration tests green
+    - e2e smoke and mobile regression green
+    - migration parity checks recorded
+    - dashboard and alert validation completed
+    - rollback drill completed for high-risk phases

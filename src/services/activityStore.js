@@ -24,6 +24,10 @@ function emitActivityUpdate() {
     window.dispatchEvent(new CustomEvent(ACTIVITY_EVENT));
 }
 
+export function notifyActivityUpdated() {
+    emitActivityUpdate();
+}
+
 function isAuthenticatedIntent() {
     return getCurrentIdentityMode() === 'authenticated';
 }
@@ -60,6 +64,9 @@ function incrementCounter(key, amount = 1) {
 }
 
 export function recordStudyActivity(amount = 1, when = new Date()) {
+    if (isAuthenticatedIntent()) {
+        return;
+    }
     // D14: Use local date (en-CA = YYYY-MM-DD) to avoid UTC off-by-one.
     const dateKey = new Date(when).toLocaleDateString('en-CA');
     const days = readActivityDays();

@@ -246,7 +246,7 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
             fc.selection = false;
             const brush = new PencilBrush(fc);
             brush.color = hexToRgba(toolOptions.color, 0.4);
-            brush.width = 14;
+            brush.width = toolOptions.width || 14;
             fc.freeDrawingBrush = brush;
         } else {
             fc.isDrawingMode = false;

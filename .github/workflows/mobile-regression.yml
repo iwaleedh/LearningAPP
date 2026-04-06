@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+---
 name: Mobile Regression
-
-on:
-  pull_request:
+"on":
+  pull_request: {}
   push:
     branches:
       - master

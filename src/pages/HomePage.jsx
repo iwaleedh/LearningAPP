@@ -15,6 +15,7 @@ import {
 import { useAuth } from '../hooks/useAuth.js';
 import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
 import { useReadProgressSummary } from '../hooks/useNoteReadStatus.js';
+import { useFeatureFlags } from '../hooks/useFeatureFlags.js';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import './HomePage.css';
 
@@ -49,11 +50,46 @@ const oLevelSubjects = [
 export default function HomePage() {
     const navigate = useNavigate();
     const { debugAuthEnabled, username } = useAuth();
+    const { isEnabled } = useFeatureFlags();
     const activityVersion = useActivityRefresh();
     const readProgress = useReadProgressSummary();
     const [liveInvites, setLiveInvites] = useState([]);
     const [badgeMetrics, setBadgeMetrics] = useState(null);
     const [activityMetrics, setActivityMetrics] = useState(null);
+    const notesEnabled = isEnabled('notes');
+    const pastPapersEnabled = isEnabled('pastPapers');
+    const liveClassEnabled = isEnabled('liveClass');
+
+    const quickActions = [
+        isEnabled('exercises') ? {
+            key: 'exercises',
+            to: '/exercises',
+            icon: FlaskConical,
+            title: 'Practice Exercises',
+            description: 'Test your understanding with interactive questions',
+        } : null,
+        isEnabled('flashcards') ? {
+            key: 'flashcards',
+            to: '/flashcards',
+            icon: Brain,
+            title: 'Flashcard Review',
+            description: 'Quick active recall study sessions',
+        } : null,
+        pastPapersEnabled ? {
+            key: 'past-papers',
+            to: '/past-papers',
+            icon: Target,
+            title: 'Mock Exam',
+            description: 'Timed past paper practice under exam conditions',
+        } : null,
+        isEnabled('progress') ? {
+            key: 'progress',
+            to: '/progress',
+            icon: TrendingUp,
+            title: 'View Progress',
+            description: 'Track your study streak and performance',
+        } : null,
+    ].filter(Boolean);
 
     useEffect(() => {
         let cancelled = false;
@@ -152,7 +188,7 @@ export default function HomePage() {
     return (
         <div className="home-page animate-fade-in">
             {/* Live Class invite banner */}
-            {liveInvites.length > 0 && (
+            {liveClassEnabled && liveInvites.length > 0 && (
                 <div className="lc-invite-banner animate-fade-in">
                     <Radio size={18} />
                     <span>Your teacher has started a live class!</span>
@@ -176,14 +212,18 @@ export default function HomePage() {
                     <h1>Welcome to Living Textbook</h1>
                     <p>Your personal, interactive study companion — notes, exercises, past papers, and flashcards, all in one place.</p>
                     <div className="welcome-actions">
-                        <Link to="/chapters" className="btn btn-primary btn-lg">
-                            <BookOpen size={20} />
-                            Start Learning
-                        </Link>
-                        <Link to="/past-papers" className="btn btn-secondary btn-lg">
-                            <FileQuestion size={20} />
-                            Practice Papers
-                        </Link>
+                        {notesEnabled && (
+                            <Link to="/chapters" className="btn btn-primary btn-lg">
+                                <BookOpen size={20} />
+                                Start Learning
+                            </Link>
+                        )}
+                        {pastPapersEnabled && (
+                            <Link to="/past-papers" className="btn btn-secondary btn-lg">
+                                <FileQuestion size={20} />
+                                Practice Papers
+                            </Link>
+                        )}
                     </div>
                 </div>
                 <div className="welcome-decoration">
@@ -220,106 +260,103 @@ export default function HomePage() {
             </div>
 
             {/* A Level Subjects */}
-            <div className="section-header">
-                <h2>A Level</h2>
-                <Link to="/chapters" className="btn btn-ghost">
-                    View All <ArrowRight size={16} />
-                </Link>
-            </div>
-            <div className="subjects-grid">
-                {aLevelSubjects.map((subject, i) => {
-                    const pct = subjectProgress[subject.id] || 0;
-                    return (
-                        <Link
-                            key={subject.id}
-                            to={`/chapters?subject=${subject.id}`}
-                            className="subject-card card card-hover animate-slide-in-up"
-                            style={{
-                                animationDelay: `${0.1 + i * 0.05}s`,
-                                '--subject-accent': subject.color,
-                                '--subject-accent-soft': `${subject.color}18`,
-                            }}
-                        >
-                            <div className="subject-card-header">
-                                <div className="subject-emoji">{subject.emoji}</div>
-                            </div>
-                            <div>
-                                <h3>{subject.name}</h3>
-                                <p>{subject.chapters} Chapters</p>
-                                <div className="subject-progress subject-progress--spaced">
-                                    <div className="progress-bar-container">
-                                        <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
-                                    </div>
-                                    <span className="progress-text">{pct}% Complete</span>
-                                </div>
-                            </div>
+            {notesEnabled && (
+                <>
+                    <div className="section-header">
+                        <h2>A Level</h2>
+                        <Link to="/chapters" className="btn btn-ghost">
+                            View All <ArrowRight size={16} />
                         </Link>
-                    );
-                })}
-            </div>
+                    </div>
+                    <div className="subjects-grid">
+                        {aLevelSubjects.map((subject, i) => {
+                            const pct = subjectProgress[subject.id] || 0;
+                            return (
+                                <Link
+                                    key={subject.id}
+                                    to={`/chapters?subject=${subject.id}`}
+                                    className="subject-card card card-hover animate-slide-in-up"
+                                    style={{
+                                        animationDelay: `${0.1 + i * 0.05}s`,
+                                        '--subject-accent': subject.color,
+                                        '--subject-accent-soft': `${subject.color}18`,
+                                    }}
+                                >
+                                    <div className="subject-card-header">
+                                        <div className="subject-emoji">{subject.emoji}</div>
+                                    </div>
+                                    <div>
+                                        <h3>{subject.name}</h3>
+                                        <p>{subject.chapters} Chapters</p>
+                                        <div className="subject-progress subject-progress--spaced">
+                                            <div className="progress-bar-container">
+                                                <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
+                                            </div>
+                                            <span className="progress-text">{pct}% Complete</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            );
+                        })}
+                    </div>
 
-            {/* O Level / IGCSE Subjects */}
-            <div className="section-header section-header--spaced">
-                <h2>O Level / IGCSE</h2>
-            </div>
-            <div className="subjects-grid">
-                {oLevelSubjects.map((subject, i) => {
-                    const pct = subjectProgress[subject.id] || 0;
-                    return (
-                        <Link
-                            key={subject.id}
-                            to={`/chapters?subject=${subject.id}`}
-                            className="subject-card card card-hover animate-slide-in-up"
-                            style={{
-                                animationDelay: `${0.1 + i * 0.05}s`,
-                                '--subject-accent': subject.color,
-                                '--subject-accent-soft': `${subject.color}18`,
-                            }}
-                        >
-                            <div className="subject-card-header">
-                                <div className="subject-emoji">{subject.emoji}</div>
-                            </div>
-                            <div>
-                                <h3>{subject.name}</h3>
-                                <p>{subject.chapters} Chapters</p>
-                                <div className="subject-progress subject-progress--spaced">
-                                    <div className="progress-bar-container">
-                                        <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
+                    <div className="section-header section-header--spaced">
+                        <h2>O Level / IGCSE</h2>
+                    </div>
+                    <div className="subjects-grid">
+                        {oLevelSubjects.map((subject, i) => {
+                            const pct = subjectProgress[subject.id] || 0;
+                            return (
+                                <Link
+                                    key={subject.id}
+                                    to={`/chapters?subject=${subject.id}`}
+                                    className="subject-card card card-hover animate-slide-in-up"
+                                    style={{
+                                        animationDelay: `${0.1 + i * 0.05}s`,
+                                        '--subject-accent': subject.color,
+                                        '--subject-accent-soft': `${subject.color}18`,
+                                    }}
+                                >
+                                    <div className="subject-card-header">
+                                        <div className="subject-emoji">{subject.emoji}</div>
                                     </div>
-                                    <span className="progress-text">{pct}% Complete</span>
-                                </div>
-                            </div>
-                        </Link>
-                    );
-                })}
-            </div>
+                                    <div>
+                                        <h3>{subject.name}</h3>
+                                        <p>{subject.chapters} Chapters</p>
+                                        <div className="subject-progress subject-progress--spaced">
+                                            <div className="progress-bar-container">
+                                                <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
+                                            </div>
+                                            <span className="progress-text">{pct}% Complete</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            );
+                        })}
+                    </div>
+                </>
+            )}
 
             {/* Quick Actions Grid */}
-            <div className="section-header">
-                <h2>Quick Actions</h2>
-            </div>
-            <div className="actions-grid">
-                <Link to="/exercises" className="action-card card card-hover">
-                    <FlaskConical size={28} className="action-icon" />
-                    <h4>Practice Exercises</h4>
-                    <p>Test your understanding with interactive questions</p>
-                </Link>
-                <Link to="/flashcards" className="action-card card card-hover">
-                    <Brain size={28} className="action-icon" />
-                    <h4>Flashcard Review</h4>
-                    <p>Quick active recall study sessions</p>
-                </Link>
-                <Link to="/past-papers" className="action-card card card-hover">
-                    <Target size={28} className="action-icon" />
-                    <h4>Mock Exam</h4>
-                    <p>Timed past paper practice under exam conditions</p>
-                </Link>
-                <Link to="/progress" className="action-card card card-hover">
-                    <TrendingUp size={28} className="action-icon" />
-                    <h4>View Progress</h4>
-                    <p>Track your study streak and performance</p>
-                </Link>
-            </div>
+            {quickActions.length > 0 && (
+                <>
+                    <div className="section-header">
+                        <h2>Quick Actions</h2>
+                    </div>
+                    <div className="actions-grid">
+                        {quickActions.map((action) => {
+                            const Icon = action.icon;
+                            return (
+                                <Link key={action.key} to={action.to} className="action-card card card-hover">
+                                    <Icon size={28} className="action-icon" />
+                                    <h4>{action.title}</h4>
+                                    <p>{action.description}</p>
+                                </Link>
+                            );
+                        })}
+                    </div>
+                </>
+            )}
         </div>
     );
 }

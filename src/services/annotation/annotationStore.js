@@ -1,7 +1,7 @@
 /**
- * IndexedDB persistence for PDF annotations.
+ * IndexedDB persistence for annotations.
  * DB: 'lt-annotations'  Store: 'annotations'
- * Key format: '{paperId}:qp:{pageNumber}'
+ * Key format: '{documentId}:{docType}:{pageNumber}'
  */
 
 const DB_NAME = 'lt-annotations';
@@ -9,6 +9,79 @@ const STORE_NAME = 'annotations';
 const DB_VERSION = 1;
 
 let _db = null;
+
+function buildAnnotationKey(documentId, docType, pageNumber) {
+    return `${documentId}:${docType}:${pageNumber}`;
+}
+
+async function saveAnnotationRecord({ documentId, docType, pageNumber, fabricJson }) {
+    const db = await openAnnotationDB();
+    return new Promise((resolve, reject) => {
+        const key = buildAnnotationKey(documentId, docType, pageNumber);
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        const store = tx.objectStore(STORE_NAME);
+        store.put({
+            key,
+            paperId: documentId,
+            documentId,
+            docType,
+            pageNumber,
+            fabricJson,
+            updatedAt: new Date().toISOString(),
+        });
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+    });
+}
+
+async function getAnnotationRecords(documentId, docType) {
+    const db = await openAnnotationDB();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(STORE_NAME, 'readonly');
+        const store = tx.objectStore(STORE_NAME);
+        const results = {};
+        const req = store.openCursor();
+        req.onsuccess = (e) => {
+            const cursor = e.target.result;
+            if (cursor) {
+                const rec = cursor.value;
+                const matchesDocument = (rec.documentId || rec.paperId) === documentId;
+                if (matchesDocument && rec.docType === docType) {
+                    results[rec.pageNumber] = rec.fabricJson;
+                }
+                cursor.continue();
+            } else {
+                resolve(results);
+            }
+        };
+        req.onerror = () => reject(req.error);
+    });
+}
+
+async function deleteAnnotationRecords(documentId, docType) {
+    const db = await openAnnotationDB();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        const store = tx.objectStore(STORE_NAME);
+        const keysToDelete = [];
+        const req = store.openCursor();
+        req.onsuccess = (e) => {
+            const cursor = e.target.result;
+            if (cursor) {
+                const value = cursor.value;
+                const matchesDocument = (value.documentId || value.paperId) === documentId;
+                if (matchesDocument && value.docType === docType) {
+                    keysToDelete.push(cursor.key);
+                }
+                cursor.continue();
+            } else {
+                keysToDelete.forEach((key) => store.delete(key));
+            }
+        };
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+    });
+}
 
 export function openAnnotationDB() {
     if (_db) return Promise.resolve(_db);
@@ -29,45 +102,24 @@ export function openAnnotationDB() {
 }
 
 export async function savePageAnnotation(paperId, pageNumber, fabricJson) {
-    const db = await openAnnotationDB();
-    return new Promise((resolve, reject) => {
-        const key = `${paperId}:qp:${pageNumber}`;
-        const tx = db.transaction(STORE_NAME, 'readwrite');
-        const store = tx.objectStore(STORE_NAME);
-        store.put({
-            key,
-            paperId,
-            docType: 'qp',
-            pageNumber,
-            fabricJson,
-            updatedAt: new Date().toISOString(),
-        });
-        tx.oncomplete = () => resolve();
-        tx.onerror = () => reject(tx.error);
+    return saveAnnotationRecord({
+        documentId: paperId,
+        docType: 'qp',
+        pageNumber,
+        fabricJson,
     });
 }
 
 export async function getPageAnnotations(paperId) {
-    const db = await openAnnotationDB();
-    return new Promise((resolve, reject) => {
-        const tx = db.transaction(STORE_NAME, 'readonly');
-        const store = tx.objectStore(STORE_NAME);
-        const results = {};
-        const req = store.openCursor();
-        req.onsuccess = (e) => {
-            const cursor = e.target.result;
-            if (cursor) {
-                const rec = cursor.value;
-                if (rec.paperId === paperId && rec.docType === 'qp') {
-                    results[rec.pageNumber] = rec.fabricJson;
-                }
-                cursor.continue();
-            } else {
-                resolve(results);
-            }
-        };
-        req.onerror = () => reject(req.error);
-    });
+    return getAnnotationRecords(paperId, 'qp');
+}
+
+export async function saveDocumentAnnotation(documentId, docType, pageNumber, fabricJson) {
+    return saveAnnotationRecord({ documentId, docType, pageNumber, fabricJson });
+}
+
+export async function getDocumentAnnotations(documentId, docType) {
+    return getAnnotationRecords(documentId, docType);
 }
 
 export async function getAllAnnotatedPaperIds() {
@@ -91,22 +143,9 @@ export async function getAllAnnotatedPaperIds() {
 }
 
 export async function deleteAnnotations(paperId) {
-    const db = await openAnnotationDB();
-    return new Promise((resolve, reject) => {
-        const tx = db.transaction(STORE_NAME, 'readwrite');
-        const store = tx.objectStore(STORE_NAME);
-        const keysToDelete = [];
-        const req = store.openCursor();
-        req.onsuccess = (e) => {
-            const cursor = e.target.result;
-            if (cursor) {
-                if (cursor.value.paperId === paperId) keysToDelete.push(cursor.key);
-                cursor.continue();
-            } else {
-                keysToDelete.forEach(k => store.delete(k));
-            }
-        };
-        tx.oncomplete = () => resolve();
-        tx.onerror = () => reject(tx.error);
-    });
+    return deleteAnnotationRecords(paperId, 'qp');
+}
+
+export async function deleteDocumentAnnotations(documentId, docType) {
+    return deleteAnnotationRecords(documentId, docType);
 }

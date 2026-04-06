@@ -1,0 +1,111 @@
+program: living-textbook-modernization
+generated_at: 2026-04-06
+
+status_update:
+  as_of: 2026-04-06
+  completed_tranche:
+    - MOD-001
+    - MOD-002
+    - MOD-003
+    - MOD-004
+    - MOD-005
+    - MOD-006
+    - MOD-007
+    - MOD-008
+    - MOD-009
+    - MOD-010
+
+team_model:
+  roles:
+    - tech_lead_architect: 1
+    - frontend_engineer: 2
+    - backend_platform_engineer: 1
+    - qa_automation_engineer: 1
+    - product_design_partner: 0.3
+
+cost_ranges_usd:
+  phase_1_mvp: 60000-120000
+  full_program: 180000-420000
+  monthly_tooling_uplift_after_hardening: 300-2000
+
+phases:
+  - id: phase-0
+    name: validate-and-stabilize
+    duration_weeks: 2
+    objectives:
+      - confirm canonical backend and hosting strategy
+      - fix failing tests
+      - separate runtime lint from pipeline lint
+      - approve deprecation list and implementation sequencing
+    exit_criteria:
+      - stakeholder signoff recorded
+      - zero failing tests
+      - runtime lint target defined
+
+  - id: phase-1
+    name: mvp-modernization
+    status: core-hardening-completed
+    duration_weeks: 4-6
+    objectives:
+      - remove dead backend and root-level repo clutter
+      - standardize CI/CD and deployment environments
+      - enforce runtime feature flags
+      - establish observability baseline
+      - begin canonicalization of read progress and activity metrics
+    milestone: first-safe-release-foundation
+    mvp: true
+    rollback_strategy:
+      - feature flags
+      - host-platform deployment rollback
+      - no destructive data migrations without snapshots
+
+  - id: phase-2
+    name: data-and-sync-consolidation
+    duration_weeks: 6-8
+    objectives:
+      - split note storage adapters clearly by responsibility
+      - consolidate live-class sync architecture
+      - remove local-only canonical state for authenticated users
+      - introduce typed contracts in services and hooks
+    exit_criteria:
+      - cross-device state consistency verified
+      - live-class regression suite green
+
+  - id: phase-3
+    name: content-delivery-replatforming
+    duration_weeks: 6-10
+    objectives:
+      - move PDFs to dedicated object storage and CDN
+      - replace content-as-bundled-JS with fetched manifests/assets
+      - enforce bundle budgets and route performance targets
+    exit_criteria:
+      - bundle asset count materially reduced
+      - mobile performance budgets achieved on critical routes
+
+  - id: phase-4
+    name: cleanup-and-governance-closeout
+    duration_weeks: 2-4
+    objectives:
+      - remove legacy migration helpers after threshold is met
+      - finalize ADRs and runbooks
+      - close remaining technical debt items accepted into program
+    exit_criteria:
+      - sunset checklist complete
+      - governance artifacts approved
+
+milestones:
+  - name: architecture-signoff
+    target: within-5-business-days
+  - name: phase-1-kickoff
+    target: within-10-business-days-of-approval
+  - name: phase-1-mvp-release
+    target: within-6-weeks-of-kickoff
+  - name: phase-3-content-cutover
+    target: within-4-5-months-of-kickoff
+
+success_metrics:
+  - zero failing tests before phase-1 release
+  - runtime lint passes in CI
+  - reduce app runtime bundle fragmentation by at least 60 percent
+  - reduce state-sync incidents by at least 70 percent
+  - achieve p75 mobile LCP <= 2.5s on landing and note entry routes
