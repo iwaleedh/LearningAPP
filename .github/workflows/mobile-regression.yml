@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 ---
-name: E2E Regression
+name: Mobile Regression
 "on":
   pull_request: {}
   push:
@@ -8,11 +8,11 @@ name: E2E Regression
       - master
 
 concurrency:
-  group: e2e-regression-${{ github.workflow }}-${{ github.ref }}
+  group: mobile-regression-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  e2e-regression:
+  mobile-regression:
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
