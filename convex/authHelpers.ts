@@ -8,12 +8,27 @@ type IdentityWithRoleClaims = {
   nickname?: string;
   name?: string;
   email?: string;
+  sid?: unknown;
+  sessionId?: unknown;
+  tokenIdentifier?: unknown;
   role?: unknown;
   appRole?: unknown;
   app_role?: unknown;
   publicMetadata?: { role?: unknown };
   public_metadata?: { role?: unknown };
 };
+
+type AccessTrackedUser = {
+  email?: string;
+  username?: string;
+  accountStatus?: string;
+  accessExpiresAt?: number;
+  accessRevokedAt?: number;
+  accessRevokedReason?: string;
+  sessionVersion?: number;
+};
+
+export type AccessStatus = "selection_required" | "active" | "expired" | "revoked" | "restricted";
 
 // ── Admin config — read from environment variables (S4 fix) ──────────
 // Set ADMIN_EMAILS and ADMIN_USERNAMES in the Convex dashboard → Settings → Environment Variables.
@@ -23,27 +38,81 @@ const processEnv = (globalThis as typeof globalThis & {
   process?: { env?: Record<string, string | undefined> };
 }).process?.env;
 
-function parseEnvList(key: string, devFallback: string[]): string[] {
-  const raw = processEnv?.[key];
+const processArgv = (globalThis as typeof globalThis & {
+  process?: { argv?: string[] };
+}).process?.argv ?? [];
+
+const loggedAdminConfigMessages = new Set<string>();
+
+type AdminConfigLogger = Pick<Console, "warn" | "error">;
+
+export function isProductionAdminRuntime(env = processEnv) {
+  return Boolean(env?.CONVEX_CLOUD_URL || env?.NODE_ENV === "production");
+}
+
+export function shouldSuppressAdminFallbackWarnings(
+  env = processEnv,
+  argv = processArgv,
+) {
+  return env?.NODE_ENV === "test"
+    || env?.VITEST === "true"
+    || argv.includes("--test")
+    || argv.some((value) => value.includes(".test."));
+}
+
+function logAdminConfigMessage(
+  level: keyof AdminConfigLogger,
+  key: string,
+  message: string,
+  logger: AdminConfigLogger,
+) {
+  const logKey = `${level}:${key}:${message}`;
+  if (loggedAdminConfigMessages.has(logKey)) {
+    return;
+  }
+  loggedAdminConfigMessages.add(logKey);
+  logger[level](message);
+}
+
+export function resolveAdminEnvList(
+  key: string,
+  devFallback: string[],
+  env = processEnv,
+  argv = processArgv,
+  logger: AdminConfigLogger = console,
+): string[] {
+  const raw = env?.[key];
   if (raw && raw.trim()) {
     return raw.split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
   }
   // S4 fix: In production, admin lists MUST come from environment variables.
   // Hardcoded fallbacks are only acceptable during local development.
-  const isProduction = processEnv?.CONVEX_CLOUD_URL || processEnv?.NODE_ENV === "production";
+  const isProduction = isProductionAdminRuntime(env);
   if (isProduction) {
-    console.error(`[authHelpers] FATAL: ${key} env var is not set in production. Admin features are disabled until configured in the Convex dashboard.`);
+    logAdminConfigMessage(
+      "error",
+      key,
+      `[authHelpers] FATAL: ${key} env var is not set in production. Admin features are disabled until configured in the Convex dashboard.`,
+      logger,
+    );
     return [];
   }
-  console.warn(`[authHelpers] ${key} env var not set — using dev-only fallback. Set it in Convex dashboard for production.`);
+  if (!shouldSuppressAdminFallbackWarnings(env, argv)) {
+    logAdminConfigMessage(
+      "warn",
+      key,
+      `[authHelpers] ${key} env var not set — using dev-only fallback. Set it in Convex dashboard for production.`,
+      logger,
+    );
+  }
   return devFallback;
 }
 
 // S4 fix: Dev-only defaults are used ONLY when env vars are absent AND
 // the runtime is not production.  In production the list will be empty
 // (effectively disabling admin access) until properly configured.
-const ADMIN_EMAILS: string[] = parseEnvList("ADMIN_EMAILS", ["iwaleedh@gmail.com"]);
-const ADMIN_USERNAMES: string[] = parseEnvList("ADMIN_USERNAMES", ["admin"]);
+const ADMIN_EMAILS: string[] = resolveAdminEnvList("ADMIN_EMAILS", ["iwaleedh@gmail.com"]);
+const ADMIN_USERNAMES: string[] = resolveAdminEnvList("ADMIN_USERNAMES", ["admin"]);
 
 export function isAdminEmail(email: string | undefined | null): boolean {
   if (!email) return false;
@@ -86,6 +155,35 @@ export function effectiveAccountStatus(
   return "approved";
 }
 
+export function getIdentitySessionId(identity: IdentityWithRoleClaims | null | undefined): string | null {
+  const candidates = [identity?.sid, identity?.sessionId, identity?.tokenIdentifier];
+  for (const candidate of candidates) {
+    if (typeof candidate === "string" && candidate.trim()) {
+      return candidate.trim();
+    }
+  }
+  return null;
+}
+
+export function resolveAccessStatus(
+  user: AccessTrackedUser | null | undefined,
+  now = Date.now(),
+): AccessStatus {
+  if (!user || effectiveAccountStatus(user) !== "approved") {
+    return "restricted";
+  }
+  if (typeof user.accessRevokedAt === "number" && user.accessRevokedAt > 0) {
+    return "revoked";
+  }
+  if (typeof user.accessExpiresAt !== "number" || user.accessExpiresAt <= 0) {
+    return "selection_required";
+  }
+  if (user.accessExpiresAt <= now) {
+    return "expired";
+  }
+  return "active";
+}
+
 /**
  * Throws if the calling user's account is not approved.
  * Admin emails always pass. Missing accountStatus = approved (legacy users).
@@ -107,6 +205,34 @@ export async function requireApprovedAccount(ctx: PublicCtx): Promise<void> {
   }
   if (status === "blocked") {
     throw new Error("Account blocked by administrator.");
+  }
+
+  const accessStatus = resolveAccessStatus(user);
+  if (accessStatus === "expired") {
+    throw new Error("Access window expired.");
+  }
+  if (accessStatus === "revoked") {
+    throw new Error(user?.accessRevokedReason || "Session revoked. Please sign in again.");
+  }
+
+  const identitySessionId = getIdentitySessionId(identity);
+  if (!identitySessionId) {
+    return;
+  }
+
+  const authSession = await ctx.db
+    .query("authSessions")
+    .withIndex("by_user_session", (q) => q.eq("userId", identity.subject).eq("sessionId", identitySessionId))
+    .first();
+
+  if (!authSession) {
+    return;
+  }
+  if (typeof authSession.revokedAt === "number" && authSession.revokedAt > 0) {
+    throw new Error(authSession.revokeReason || "Session revoked. Please sign in again.");
+  }
+  if (authSession.sessionVersion !== (user.sessionVersion ?? 1)) {
+    throw new Error("Session revoked. Please sign in again.");
   }
 }
 

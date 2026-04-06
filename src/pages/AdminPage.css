@@ -347,6 +347,20 @@
 
 .admin-date { color: var(--color-text-secondary); white-space: nowrap; }
 
+.admin-date-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 12rem;
+}
+
+.admin-date-exact {
+  color: var(--color-text-tertiary);
+  font-size: 0.73rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  word-break: break-all;
+}
+
 .admin-action-btns {
   display: flex;
   gap: var(--space-2);
@@ -387,6 +401,44 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-4);
+}
+
+.admin-alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.admin-alert-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.admin-alert-item--warn {
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+.admin-alert-item--error {
+  background: color-mix(in srgb, var(--color-error) 8%, transparent);
+}
+
+.admin-alert-heading,
+.admin-alert-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.admin-alert-code,
+.admin-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
 }
 
 .admin-section-heading {
@@ -529,6 +581,12 @@
   box-shadow: var(--shadow-xl);
 }
 
+.admin-modal--wide {
+  max-width: 560px;
+  align-items: stretch;
+  text-align: left;
+}
+
 @keyframes admin-slide-up {
   from { transform: translateY(12px); opacity: 0; }
   to   { transform: translateY(0);    opacity: 1; }
@@ -537,6 +595,10 @@
 .admin-modal-icon {
   line-height: 1;
   color: var(--color-error);
+}
+
+.admin-modal-icon--primary {
+  color: var(--color-primary);
 }
 
 .admin-modal-title {
@@ -558,6 +620,30 @@
   gap: var(--space-3);
   width: 100%;
   justify-content: center;
+}
+
+.admin-modal-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.admin-modal-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.admin-preset-row {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.admin-modal-hint {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
 }
 
 /* ── Payments Tab ───────────────────────────────────────────────────────────── */

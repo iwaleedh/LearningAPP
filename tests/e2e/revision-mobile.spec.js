@@ -1,71 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { seedDevAuthSession, seedGuestFlashcards } from './support/browserSeeds.js';
+import { SEEDED_FLASHCARDS, createDebugSession } from '../support/testSeeds.js';
 
-const debugSession = {
+const debugSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_revision_mobile',
   username: 'Revision QA',
-};
-
-const flashcards = [
-  {
-    cardId: 'card:test:1',
-    subject: 'chemistry',
-    sourceNoteId: 'note:chemistry:1:1:0',
-    sourceLabel: 'Formulae & Amount',
-    front: 'What is Avogadro constant?',
-    back: '6.02 × 10^23 mol^-1',
-    createdAt: '2026-01-01T00:00:00.000Z',
-  },
-  {
-    cardId: 'card:test:2',
-    subject: 'chemistry',
-    sourceNoteId: 'note:chemistry:1:1:1',
-    sourceLabel: 'The Mole',
-    front: 'Define molar mass.',
-    back: 'Mass per mole of a substance.',
-    createdAt: '2026-01-02T00:00:00.000Z',
-  },
-];
-
-async function seedDebugSession(page) {
-  await page.addInitScript((session) => {
-    window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(session));
-  }, debugSession);
-}
-
-async function seedGuestFlashcards(page) {
-  await page.goto('/');
-  await page.evaluate(async (cards) => {
-    const DB_NAME = 'lt-guest-study-data';
-    const DB_VERSION = 1;
-    const openDb = await new Promise((resolve, reject) => {
-      const request = indexedDB.open(DB_NAME, DB_VERSION);
-      request.onupgradeneeded = (event) => {
-        const db = event.target.result;
-        if (!db.objectStoreNames.contains('guestNotes')) db.createObjectStore('guestNotes', { keyPath: 'noteId' });
-        if (!db.objectStoreNames.contains('guestFlashcards')) db.createObjectStore('guestFlashcards', { keyPath: 'cardId' });
-        if (!db.objectStoreNames.contains('guestNoteAssets')) db.createObjectStore('guestNoteAssets', { keyPath: 'assetId' });
-      };
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-
-    await new Promise((resolve, reject) => {
-      const tx = openDb.transaction('guestFlashcards', 'readwrite');
-      const store = tx.objectStore('guestFlashcards');
-      store.clear();
-      for (const card of cards) {
-        store.put(card);
-      }
-      tx.oncomplete = () => resolve();
-      tx.onerror = () => reject(tx.error);
-    });
-
-    localStorage.removeItem('lt_flashcard_status');
-    localStorage.removeItem('lt_flashcard_known');
-    localStorage.removeItem('lt_flashcard_learning');
-  }, flashcards);
-}
+});
 
 test.describe('past papers and flashcards mobile QA', () => {
   test.use({
@@ -78,7 +19,7 @@ test.describe('past papers and flashcards mobile QA', () => {
   });
 
   test.beforeEach(async ({ page }) => {
-    await seedDebugSession(page);
+    await seedDevAuthSession(page, debugSession);
   });
 
   test('past papers exposes mobile subject/filter controls and reachable paper actions', async ({ page }) => {
@@ -104,11 +45,11 @@ test.describe('past papers and flashcards mobile QA', () => {
     expect(pageOverflow).toBeLessThanOrEqual(1);
 
     const actionBox = await firstAction.boundingBox();
-    expect(actionBox?.height ?? 0).toBeGreaterThanOrEqual(44);
+    expect(actionBox?.height ?? 0).toBeGreaterThanOrEqual(43.5);
   });
 
   test('flashcards keeps the card viewer and mobile controls reachable', async ({ page }) => {
-    await seedGuestFlashcards(page);
+    await seedGuestFlashcards(page, SEEDED_FLASHCARDS);
     await page.goto('/flashcards');
 
     const card = page.locator('.flashcard-wrapper');

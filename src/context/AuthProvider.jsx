@@ -14,22 +14,45 @@ import { ConvexProvider } from 'convex/react';
 import { ConvexProviderWithClerk } from 'convex/react-clerk';
 import AuthContext from './AuthContext';
 import { api } from '../../convex/_generated/api.js';
+import AccessWindowModal from '../components/auth/AccessWindowModal.jsx';
 import {
+  finalizeAuthenticatedAccess,
   getClient,
   getCurrentUserId,
   getCurrentUsername,
   restoreAnonymousIdentity,
+  selectAccessWindow as persistAccessWindow,
   setExpectedIdentityMode,
   setLocalDebugIdentity,
   setCurrentUsernameOverride,
   setAuthenticatedIdentity,
 } from '../convex-client.js';
 import { setLogContext } from '../services/logger/logger.js';
+import {
+  clearAccessExpiredNotice,
+  getAccessSummaryStorageKey,
+  writeAccessExpiredNotice,
+} from '../services/auth/accessWindow.js';
 
 const CLERK_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const HAS_CLERK = Boolean(CLERK_KEY);
 const DEV_AUTH_ENABLED = import.meta.env.DEV && !HAS_CLERK;
 const DEV_AUTH_STORAGE_KEY = 'lt_dev_auth_session';
+
+function normalizeDebugRole(role) {
+  if (role === 'teacher' || role === 'admin') {
+    return role;
+  }
+  return 'student';
+}
+
+function resolveClerkProvider(clerkUser) {
+  const externalProvider = clerkUser?.externalAccounts?.[0]?.provider;
+  if (typeof externalProvider === 'string' && externalProvider.trim()) {
+    return externalProvider.trim();
+  }
+  return 'clerk';
+}
 
 function readStoredDevAuthSession() {
   if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
@@ -44,7 +67,7 @@ function readStoredDevAuthSession() {
       return null;
     }
 
-    const role = parsed.role === 'teacher' ? 'teacher' : 'student';
+    const role = normalizeDebugRole(parsed.role);
     return {
       role,
       userId: String(parsed.userId),
@@ -89,12 +112,20 @@ function resolveClerkProfile(clerkUser) {
 function AuthContextProvider({ children }) {
   const { user: clerkUser, isLoaded, isSignedIn } = useUser();
   const { signOut: clerkSignOut } = useClerk();
-  const { getToken } = useClerkAuth();
+  const { getToken, sessionId } = useClerkAuth();
   const [dbUser, setDbUser] = useState(null);
   const [role, setRole] = useState('student');
   const [accountStatus, setAccountStatus] = useState(null);
+  const [accessStatus, setAccessStatus] = useState(null);
+  const [accessExpiresAt, setAccessExpiresAt] = useState(null);
+  const [accessDurationMonths, setAccessDurationMonths] = useState(null);
+  const [accessWindowStartedAt, setAccessWindowStartedAt] = useState(null);
+  const [firstSignInAt, setFirstSignInAt] = useState(null);
+  const [lastSignInAt, setLastSignInAt] = useState(null);
   const [isAdminUser, setIsAdminUser] = useState(false);
   const [syncedAccessKey, setSyncedAccessKey] = useState(null);
+  const [accessModalState, setAccessModalState] = useState(null);
+  const [isSelectingAccessWindow, setIsSelectingAccessWindow] = useState(false);
   // D7: Tracks when the auth sync is retrying after a "registration completing"
   // error so the UI can show a graceful spinner instead of a hard failure.
   const [isRegistrationPending, setIsRegistrationPending] = useState(false);
@@ -107,6 +138,59 @@ function AuthContextProvider({ children }) {
       : null,
     [isLoaded, isSignedIn, clerkUser?.id], // eslint-disable-line react-hooks/exhaustive-deps
   );
+
+  const applyAccessSummary = useCallback((statusResult) => {
+    setAccountStatus(statusResult?.accountStatus ?? null);
+    setAccessStatus(statusResult?.accessStatus ?? null);
+    setAccessExpiresAt(statusResult?.accessExpiresAt ?? null);
+    setAccessDurationMonths(statusResult?.accessDurationMonths ?? null);
+    setAccessWindowStartedAt(statusResult?.accessWindowStartedAt ?? null);
+    setFirstSignInAt(statusResult?.firstSignInAt ?? null);
+    setLastSignInAt(statusResult?.lastSignInAt ?? null);
+  }, []);
+
+  const resetSignedInState = useCallback(() => {
+    setDbUser(null);
+    setRole('student');
+    setAccountStatus(null);
+    setAccessStatus(null);
+    setAccessExpiresAt(null);
+    setAccessDurationMonths(null);
+    setAccessWindowStartedAt(null);
+    setFirstSignInAt(null);
+    setLastSignInAt(null);
+    setIsAdminUser(false);
+    setAccessModalState(null);
+    setIsSelectingAccessWindow(false);
+  }, []);
+
+  const forceExpirySignOut = useCallback(async (statusResult) => {
+    writeAccessExpiredNotice({
+      type: 'expired',
+      accessExpiresAt: statusResult?.accessExpiresAt ?? null,
+      accessDurationMonths: statusResult?.accessDurationMonths ?? null,
+      occurredAt: Date.now(),
+    });
+    await clerkSignOut();
+    resetSignedInState();
+  }, [clerkSignOut, resetSignedInState]);
+
+  const maybeOpenAccessSummary = useCallback(({ statusResult, finalizeResult }) => {
+    if (!sessionId) return;
+    if (statusResult?.accessStatus === 'selection_required') {
+      setAccessModalState({ mode: 'select' });
+      return;
+    }
+    if (statusResult?.accessStatus !== 'active' || !finalizeResult?.createdSession) {
+      return;
+    }
+    const storageKey = getAccessSummaryStorageKey(sessionId, statusResult?.accessExpiresAt);
+    if (!storageKey || window.sessionStorage.getItem(storageKey) === '1') {
+      return;
+    }
+    window.sessionStorage.setItem(storageKey, '1');
+    setAccessModalState({ mode: 'summary' });
+  }, [sessionId]);
 
   useEffect(() => {
     let cancelled = false;
@@ -149,11 +233,15 @@ function AuthContextProvider({ children }) {
 
           setLogContext({ userId: clerkUser.id });
           if (!client) {
-            setDbUser(null);
-            setRole('student');
+            resetSignedInState();
             setIsRegistrationPending(false);
             return;
           }
+          const finalizeResult = await finalizeAuthenticatedAccess({
+            sessionId,
+            provider: resolveClerkProvider(clerkUser),
+            userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : '',
+          });
           const [user, serverRole, statusResult] = await Promise.all([
             client.query(api.users.getUser, { userId: clerkUser.id }),
             client.query(api.users.getMyRole, {}),
@@ -162,14 +250,20 @@ function AuthContextProvider({ children }) {
           if (cancelled) return;
 
           setIsRegistrationPending(false);
-          setAccountStatus(statusResult?.accountStatus ?? null);
+          applyAccessSummary(statusResult);
           setIsAdminUser(statusResult?.isAdmin ?? false);
+          if (statusResult?.accessStatus === 'expired' || statusResult?.accessStatus === 'revoked') {
+            await forceExpirySignOut(statusResult);
+            return;
+          }
           const resolvedRole = statusResult?.isAdmin ? 'admin' : (serverRole || user?.role || 'student');
           if (user?.username) {
             setCurrentUsernameOverride(user.username);
           }
           setDbUser(user ? { ...user, role: resolvedRole } : null);
           setRole(resolvedRole);
+          clearAccessExpiredNotice();
+          maybeOpenAccessSummary({ statusResult, finalizeResult });
           return;
         }
 
@@ -178,10 +272,7 @@ function AuthContextProvider({ children }) {
 
         const anonId = getCurrentUserId();
         setLogContext({ userId: anonId || '' });
-        setDbUser(null);
-        setRole('student');
-        setAccountStatus(null);
-        setIsAdminUser(false);
+        resetSignedInState();
         setIsRegistrationPending(false);
       } catch (error) {
         if (cancelled) return;
@@ -204,10 +295,7 @@ function AuthContextProvider({ children }) {
 
         setIsRegistrationPending(false);
         console.error('Auth sync failed:', error);
-        setDbUser(null);
-        setRole('student');
-        setAccountStatus(null);
-        setIsAdminUser(false);
+        resetSignedInState();
       } finally {
         // Don't commit the access key while we're waiting to retry —
         // isAccessReady would flip to true before auth is actually settled.
@@ -222,16 +310,66 @@ function AuthContextProvider({ children }) {
     return () => {
       cancelled = true;
     };
-  }, [expectedAccessKey, getToken, isLoaded, isSignedIn, clerkUser]);
+  }, [applyAccessSummary, clerkSignOut, expectedAccessKey, forceExpirySignOut, getToken, isLoaded, isSignedIn, clerkUser, maybeOpenAccessSummary, resetSignedInState, sessionId]);
+
+  useEffect(() => {
+    if (!isLoaded || !isSignedIn || accessStatus !== 'active') {
+      return undefined;
+    }
+    const client = getClient();
+    if (!client) {
+      return undefined;
+    }
+
+    let cancelled = false;
+    const refreshAccessState = async () => {
+      try {
+        const statusResult = await client.query(api.admin.getMyAccountStatus, {});
+        if (cancelled) return;
+        applyAccessSummary(statusResult);
+        if (statusResult?.accessStatus === 'expired' || statusResult?.accessStatus === 'revoked') {
+          await forceExpirySignOut(statusResult);
+        }
+      } catch {
+        // Non-fatal; backend request guards still enforce expiry.
+      }
+    };
+
+    const intervalId = window.setInterval(() => {
+      void refreshAccessState();
+    }, 60_000);
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        void refreshAccessState();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => {
+      cancelled = true;
+      window.clearInterval(intervalId);
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
+  }, [accessStatus, applyAccessSummary, forceExpirySignOut, isLoaded, isSignedIn]);
 
   const signOut = useCallback(async () => {
     await clerkSignOut();
     if (!isLoaded) return;
-    setDbUser(null);
-    setRole('student');
-    setAccountStatus(null);
-    setIsAdminUser(false);
-  }, [clerkSignOut, isLoaded]);
+    resetSignedInState();
+  }, [clerkSignOut, isLoaded, resetSignedInState]);
+
+  const selectAccessWindow = useCallback(async ({ months }) => {
+    if (!sessionId) return;
+    setIsSelectingAccessWindow(true);
+    try {
+      const statusResult = await persistAccessWindow({ months, sessionId });
+      applyAccessSummary(statusResult);
+      setAccessModalState({ mode: 'summary' });
+      clearAccessExpiredNotice();
+    } finally {
+      setIsSelectingAccessWindow(false);
+    }
+  }, [applyAccessSummary, sessionId]);
 
   const value = useMemo(() => {
     const profile = isSignedIn && clerkUser ? resolveClerkProfile(clerkUser) : null;
@@ -257,15 +395,38 @@ function AuthContextProvider({ children }) {
       isSignedIn: !!isSignedIn,
       role: resolvedRole,
       accountStatus,
+      accessStatus,
+      accessExpiresAt,
+      accessDurationMonths,
+      accessWindowStartedAt,
+      firstSignInAt,
+      lastSignInAt,
       isAdmin: isAdminUser,
       userId,
       username,
       avatarUrl,
+      selectAccessWindow,
       signOut,
     };
-  }, [accountStatus, clerkUser, dbUser, expectedAccessKey, isAdminUser, isLoaded, isRegistrationPending, isSignedIn, role, signOut, syncedAccessKey]);
+  }, [accessDurationMonths, accessExpiresAt, accessStatus, accessWindowStartedAt, accountStatus, clerkUser, dbUser, expectedAccessKey, firstSignInAt, isAdminUser, isLoaded, isRegistrationPending, isSignedIn, lastSignInAt, role, selectAccessWindow, signOut, syncedAccessKey]);
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={value}>
+      {children}
+      {isSignedIn && accessModalState && (accessStatus === 'selection_required' || accessStatus === 'active') && (
+        <AccessWindowModal
+          mode={accessModalState.mode}
+          username={value.username}
+          accessExpiresAt={accessExpiresAt}
+          accessDurationMonths={accessDurationMonths}
+          busy={isSelectingAccessWindow}
+          onClose={() => setAccessModalState(null)}
+          onSelectDuration={selectAccessWindow}
+          onSignOut={signOut}
+        />
+      )}
+    </AuthContext.Provider>
+  );
 }
 
 function AnonymousAuthContextProvider({ children }) {
@@ -295,8 +456,8 @@ function AnonymousAuthContextProvider({ children }) {
       return;
     }
 
-    const normalizedRole = role === 'teacher' ? 'teacher' : 'student';
-    const baseUsername = String(username || '').trim() || `Debug ${normalizedRole === 'teacher' ? 'Teacher' : 'Student'}`;
+    const normalizedRole = normalizeDebugRole(role);
+    const baseUsername = String(username || '').trim() || `Debug ${normalizedRole.charAt(0).toUpperCase()}${normalizedRole.slice(1)}`;
     const slug = baseUsername
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '_')
@@ -339,10 +500,17 @@ function AnonymousAuthContextProvider({ children }) {
     isSignedIn: Boolean(devSession),
     role: devSession?.role || 'student',
     accountStatus: devSession ? 'approved' : null,
-    isAdmin: false,
+    accessStatus: devSession ? 'active' : null,
+    accessExpiresAt: null,
+    accessDurationMonths: null,
+    accessWindowStartedAt: null,
+    firstSignInAt: null,
+    lastSignInAt: null,
+    isAdmin: devSession?.role === 'admin',
     userId: devSession?.userId || getCurrentUserId(),
     username: devSession?.username || getCurrentUsername() || 'Anonymous',
     avatarUrl: null,
+    selectAccessWindow: async () => {},
     signInDebug,
     signOut,
   }), [devSession, signInDebug, signOut]);

@@ -209,12 +209,13 @@ function AppContent() {
         </main>
       </div>
 
+      </div>
+
       {searchOpen && (
         <Suspense fallback={null}>
           <CommandSearch onClose={() => setSearchOpen(false)} />
         </Suspense>
       )}
-      </div>
     </ToastProvider>
   );
 }

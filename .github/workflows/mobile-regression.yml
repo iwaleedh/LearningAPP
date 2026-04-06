@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 ---
-name: Mobile Regression
+name: E2E Regression
 "on":
   pull_request: {}
   push:
@@ -8,13 +8,13 @@ name: Mobile Regression
       - master
 
 concurrency:
-  group: mobile-regression-${{ github.workflow }}-${{ github.ref }}
+  group: e2e-regression-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  mobile-regression:
+  e2e-regression:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -32,17 +32,17 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
 
-      - name: Build app
-        run: npm run build
+      - name: Verify deterministic test seeds
+        run: npm run test:seed
 
-      - name: Run mobile regression suite
-        run: npm run test:e2e:mobile
+      - name: Run full end-to-end suite
+        run: npm run test:e2e
 
       - name: Upload Playwright artifacts
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-mobile-artifacts
+          name: playwright-e2e-artifacts
           path: |
             playwright-report
             test-results

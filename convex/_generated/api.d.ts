@@ -8,10 +8,12 @@
  * @module
  */
 
+import type * as access from "../access.js";
 import type * as activityMetrics from "../activityMetrics.js";
 import type * as admin from "../admin.js";
 import type * as assets from "../assets.js";
 import type * as authHelpers from "../authHelpers.js";
+import type * as authNotifications from "../authNotifications.js";
 import type * as badgeMetrics from "../badgeMetrics.js";
 import type * as crons from "../crons.js";
 import type * as cursors from "../cursors.js";
@@ -32,7 +34,9 @@ import type * as liveclass from "../liveclass.js";
 import type * as logs from "../logs.js";
 import type * as mistakes from "../mistakes.js";
 import type * as notes from "../notes.js";
+import type * as observability from "../observability.js";
 import type * as paymentRequests from "../paymentRequests.js";
+import type * as polls from "../polls.js";
 import type * as readProgress from "../readProgress.js";
 import type * as sessions from "../sessions.js";
 import type * as strokes from "../strokes.js";
@@ -49,10 +53,12 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  access: typeof access;
   activityMetrics: typeof activityMetrics;
   admin: typeof admin;
   assets: typeof assets;
   authHelpers: typeof authHelpers;
+  authNotifications: typeof authNotifications;
   badgeMetrics: typeof badgeMetrics;
   crons: typeof crons;
   cursors: typeof cursors;
@@ -73,7 +79,9 @@ declare const fullApi: ApiFromModules<{
   logs: typeof logs;
   mistakes: typeof mistakes;
   notes: typeof notes;
+  observability: typeof observability;
   paymentRequests: typeof paymentRequests;
+  polls: typeof polls;
   readProgress: typeof readProgress;
   sessions: typeof sessions;
   strokes: typeof strokes;

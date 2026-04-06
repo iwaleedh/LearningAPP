@@ -37,3 +37,4 @@ public/pastpapers/olevel/
 .env*.local
 playwright-report/
 test-results/
+tmp-*.json

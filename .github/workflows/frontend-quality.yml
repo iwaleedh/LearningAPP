@@ -30,10 +30,14 @@ jobs:
       - name: Lint app runtime
         run: npm run lint
 
+      - name: Verify deterministic test seeds
+        run: npm run test:seed
+
       - name: Run unit tests
-        run: |
-          shopt -s globstar
-          npx tsx --test src/**/*.test.js convex/**/*.test.ts
+        run: npm run test:unit
+
+      - name: Run integration tests
+        run: npm run test:integration
 
       - name: Build frontend
         run: npm run build

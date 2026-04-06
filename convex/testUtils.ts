@@ -1,5 +1,8 @@
 type MockIdentity = {
   subject: string;
+  sid?: string;
+  sessionId?: string;
+  tokenIdentifier?: string;
   role?: string;
   appRole?: string;
   app_role?: string;
@@ -67,17 +70,19 @@ class MockQuery {
 
   withIndex(_name: string, callback?: (query: { eq: (field: string, value: any) => any }) => any) {
     if (callback) {
-      const conditions: Array<{ field: string; value: any }> = [];
+      const predicates: Array<(doc: Record<string, any>) => boolean> = [];
       const chain = {
         eq: (field: string, value: any) => {
-          conditions.push({ field, value });
+          predicates.push((doc: Record<string, any>) => doc[field] === value);
+          return chain;
+        },
+        lt: (field: string, value: any) => {
+          predicates.push((doc: Record<string, any>) => doc[field] < value);
           return chain;
         },
       };
       callback(chain);
-      this.indexPredicates.push(
-        ...conditions.map(({ field, value }) => (doc: Record<string, any>) => doc[field] === value)
-      );
+      this.indexPredicates.push(...predicates);
     }
     return this;
   }

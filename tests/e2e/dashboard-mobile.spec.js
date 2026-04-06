@@ -1,35 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { seedDevAuthSession, seedMistakes } from './support/browserSeeds.js';
+import { SEEDED_MISTAKES, createDebugSession } from '../support/testSeeds.js';
 
-const debugSession = {
+const debugSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_dashboard_mobile',
   username: 'Dashboard QA',
-};
-
-const seededMistakes = [
-  {
-    id: 'm:test:1',
-    topic: 'Formulae & Amount',
-    question: 'What is the formula for amount of substance?',
-    yourAnswer: 'mass x molar mass',
-    correctAnswer: 'mass / molar mass',
-    attempts: 2,
-    lastAttempt: '2026-01-01T00:00:00.000Z',
-  },
-];
-
-async function seedDebugSession(page) {
-  await page.addInitScript((session) => {
-    window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(session));
-  }, debugSession);
-}
-
-async function seedMistakes(page) {
-  await page.goto('/');
-  await page.evaluate((mistakes) => {
-    localStorage.setItem('lt_mistakes', JSON.stringify(mistakes));
-  }, seededMistakes);
-}
+});
 
 test.describe('dashboard and utility pages mobile QA', () => {
   test.use({
@@ -42,8 +19,8 @@ test.describe('dashboard and utility pages mobile QA', () => {
   });
 
   test.beforeEach(async ({ page }) => {
-    await seedDebugSession(page);
-    await seedMistakes(page);
+    await seedDevAuthSession(page, debugSession);
+    await seedMistakes(page, SEEDED_MISTAKES);
   });
 
   test('home page renders mobile dashboard cards without provider errors or overflow', async ({ page }) => {

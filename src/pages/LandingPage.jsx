@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { LogIn, BookOpen, Brain, Trophy, Shield, ArrowRight, CheckCircle2, ChevronDown, ChevronUp, Star, Laptop, Smartphone } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
 import AuthModal from '../components/auth/AuthModal.jsx';
+import { clearAccessExpiredNotice, formatAccessDueDate, readAccessExpiredNotice } from '../services/auth/accessWindow.js';
 import './LandingPage.css';
 
 const FAQItem = ({ question, answer }) => {
@@ -21,6 +22,7 @@ const FAQItem = ({ question, answer }) => {
 export default function LandingPage() {
   const { canSignIn } = useAuth();
   const location = useLocation();
+  const [accessNotice, setAccessNotice] = useState(() => readAccessExpiredNotice());
   const [authOpen, setAuthOpen] = useState(
     location.state?.accessRequired === 'auth' || false
   );
@@ -48,6 +50,34 @@ export default function LandingPage() {
       </nav>
 
       <main className="landing-main">
+        {accessNotice && (
+          <section className="landing-access-notice card" aria-live="polite">
+            <div>
+              <div className="landing-access-notice-eyebrow">Access expired</div>
+              <h2>Sign in again to renew your access window</h2>
+              <p>
+                Your previous access window ended on {formatAccessDueDate(accessNotice.accessExpiresAt)}.
+                Sign in to choose a new one-month or one-year duration.
+              </p>
+            </div>
+            <div className="landing-access-notice-actions">
+              {canSignIn && (
+                <button className="btn btn-primary" onClick={openAuth} type="button">Renew Access</button>
+              )}
+              <button
+                className="btn btn-ghost"
+                onClick={() => {
+                  clearAccessExpiredNotice();
+                  setAccessNotice(null);
+                }}
+                type="button"
+              >
+                Dismiss
+              </button>
+            </div>
+          </section>
+        )}
+
         <section className="hero-section">
           <h1 className="hero-title">Master A-Level & O' Level Subjects</h1>
           <p className="hero-subtitle">

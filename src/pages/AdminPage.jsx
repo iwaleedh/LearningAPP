@@ -3,12 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api.js';
 import { useAuth } from '../hooks/useAuth.js';
+import { formatAccessDueDate, formatAccessDueDateExact } from '../services/auth/accessWindow.js';
+import { readAdminDevFixture } from './adminDevFixture.js';
 import {
   Shield, UserCheck, UserX, Users, Clock,
   LayoutDashboard, ToggleLeft, ToggleRight,
   GraduationCap, Search, ChevronDown, Trash2, AlertTriangle,
   Receipt, ExternalLink, CheckCircle, XCircle,
-  Activity,
+  Activity, Mail, Workflow,
 } from 'lucide-react';
 import './AdminPage.css';
 
@@ -21,6 +23,32 @@ function formatDate(ts) {
   });
 }
 
+function toDatetimeLocalValue(timestamp) {
+  if (!timestamp) return '';
+  const date = new Date(timestamp);
+  const localDate = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
+  return localDate.toISOString().slice(0, 16);
+}
+
+function fromDatetimeLocalValue(value) {
+  if (!value) return null;
+  const parsed = Date.parse(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function ExpiryTimestampCell({ timestamp }) {
+  if (!timestamp) {
+    return <span className="admin-date">—</span>;
+  }
+
+  return (
+    <div className="admin-date-stack">
+      <div className="admin-date">{formatAccessDueDate(timestamp)}</div>
+      <div className="admin-date-exact">{formatAccessDueDateExact(timestamp)}</div>
+    </div>
+  );
+}
+
 function StatusBadge({ status }) {
   const cls = status === 'approved' ? 'ab--approved'
     : status === 'blocked' ? 'ab--blocked'
@@ -28,11 +56,19 @@ function StatusBadge({ status }) {
   return <span className={`admin-badge ${cls}`}>{status}</span>;
 }
 
+function AccessBadge({ status }) {
+  const cls = status === 'active' ? 'ab--approved'
+    : status === 'expired' || status === 'revoked' ? 'ab--blocked'
+    : 'ab--pending';
+  return <span className={`admin-badge ${cls}`}>{status || 'selection_required'}</span>;
+}
+
 // ── Overview Tab ─────────────────────────────────────────────────────────────
 
-function OverviewTab({ allUsers, pendingUsers }) {
+function OverviewTab({ allUsers, pendingUsers, recentLogins }) {
   const approved = allUsers.filter(u => u.accountStatus === 'approved');
   const blocked  = allUsers.filter(u => u.accountStatus === 'blocked');
+  const expired  = allUsers.filter(u => u.accessStatus === 'expired' || u.accessStatus === 'revoked');
   const teachers = allUsers.filter(u => u.role === 'teacher');
   const students = allUsers.filter(u => u.role === 'student');
 
@@ -41,6 +77,7 @@ function OverviewTab({ allUsers, pendingUsers }) {
     { icon: Clock, label: 'Pending', value: pendingUsers.length, tone: 'accent' },
     { icon: UserCheck, label: 'Approved', value: approved.length, tone: 'success' },
     { icon: UserX, label: 'Blocked', value: blocked.length, tone: 'error' },
+    { icon: AlertTriangle, label: 'Expired', value: expired.length, tone: 'error' },
     { icon: GraduationCap, label: 'Teachers', value: teachers.length, tone: 'violet' },
     { icon: Users, label: 'Students', value: students.length, tone: 'info' },
   ];
@@ -70,6 +107,36 @@ function OverviewTab({ allUsers, pendingUsers }) {
           </span>
         </div>
       )}
+
+      <div className="admin-table-wrap card">
+        <div className="admin-section-heading">Recent Login Events</div>
+        {recentLogins.length === 0 ? (
+          <div className="admin-empty">No login events recorded yet.</div>
+        ) : (
+          <table className="admin-table">
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Provider</th>
+                <th>Event</th>
+                <th>Due</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recentLogins.map((event) => (
+                <tr key={event._id} className="admin-user-row">
+                  <td>{event.username}</td>
+                  <td>{event.provider}</td>
+                  <td>{event.eventType}</td>
+                  <td><ExpiryTimestampCell timestamp={event.accessExpiresAt} /></td>
+                  <td><AccessBadge status={event.emailDeliveryStatus || 'pending'} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
     </div>
   );
 }
@@ -101,6 +168,89 @@ function DeleteConfirmModal({ user, onConfirm, onCancel, busy }) {
   );
 }
 
+function AccessExpiryModal({ user, onConfirm, onCancel, busy, error }) {
+  const [expiryValue, setExpiryValue] = useState(() => {
+    if (user?.accessExpiresAt) {
+      return toDatetimeLocalValue(user.accessExpiresAt);
+    }
+    return toDatetimeLocalValue(Date.now() + (30 * 24 * 60 * 60 * 1000));
+  });
+  const [reason, setReason] = useState('');
+  const [idempotencyKey] = useState(() => `set-expiry-${user?.userId || 'user'}-${crypto.randomUUID()}`);
+
+  const parsedExpiry = fromDatetimeLocalValue(expiryValue);
+
+  const applyPreset = (days) => {
+    setExpiryValue(toDatetimeLocalValue(Date.now() + (days * 24 * 60 * 60 * 1000)));
+  };
+
+  return (
+    <div className="admin-modal-overlay" onClick={busy ? undefined : onCancel}>
+      <div className="admin-modal card admin-modal--wide" onClick={(event) => event.stopPropagation()}>
+        <div className="admin-modal-icon admin-modal-icon--primary">
+          <Clock size={32} />
+        </div>
+        <h3 className="admin-modal-title">Set Access Expiry</h3>
+        <p className="admin-modal-body">
+          Update the access expiry for <strong>{user.username || user.email || 'this user'}</strong> directly.
+        </p>
+
+        <div className="admin-modal-form">
+          <label className="admin-modal-label" htmlFor="admin-access-expiry-input">Access expires at</label>
+          <input
+            id="admin-access-expiry-input"
+            type="datetime-local"
+            className="admin-search"
+            value={expiryValue}
+            onChange={(event) => setExpiryValue(event.target.value)}
+            disabled={busy}
+          />
+
+          <div className="admin-preset-row">
+            <button type="button" className="btn btn-secondary btn-sm" disabled={busy} onClick={() => applyPreset(30)}>+30 days</button>
+            <button type="button" className="btn btn-secondary btn-sm" disabled={busy} onClick={() => applyPreset(90)}>+90 days</button>
+            <button type="button" className="btn btn-secondary btn-sm" disabled={busy} onClick={() => applyPreset(365)}>+1 year</button>
+          </div>
+
+          {parsedExpiry && (
+            <div className="admin-modal-hint">
+              Effective UTC timestamp: {formatAccessDueDateExact(parsedExpiry)}
+            </div>
+          )}
+
+          <label className="admin-modal-label" htmlFor="admin-access-expiry-reason">Reason</label>
+          <input
+            id="admin-access-expiry-reason"
+            className="admin-search"
+            placeholder="Optional admin note for the audit log…"
+            value={reason}
+            onChange={(event) => setReason(event.target.value)}
+            disabled={busy}
+          />
+
+          {error && <div className="admin-inline-error admin-inline-error--banner">{error}</div>}
+        </div>
+
+        <div className="admin-modal-actions">
+          <button className="btn btn-secondary" onClick={onCancel} disabled={busy}>Cancel</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => onConfirm({
+              userId: user.userId,
+              accessExpiresAt: parsedExpiry,
+              reason,
+              idempotencyKey,
+            })}
+            disabled={busy || !parsedExpiry}
+          >
+            {busy ? 'Saving…' : 'Apply Expiry'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function RoleSelect({ userId, currentRole }) {
   const setRole = useMutation(api.admin.setUserRole);
   const [busy, setBusy] = useState(false);
@@ -125,7 +275,7 @@ function RoleSelect({ userId, currentRole }) {
   );
 }
 
-function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, busy }) {
+function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess, onClearAccessWindow, onSetExpiry, busy }) {
   const isPending  = user.accountStatus === 'pending';
   const isBlocked  = user.accountStatus === 'blocked';
   const isApproved = user.accountStatus === 'approved';
@@ -145,6 +295,8 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, busy }) {
         </div>
       </td>
       <td><StatusBadge status={user.accountStatus} /></td>
+      <td><AccessBadge status={user.accessStatus} /></td>
+      <td><ExpiryTimestampCell timestamp={user.accessExpiresAt} /></td>
       <td><RoleSelect userId={user.userId} currentRole={user.role || 'student'} /></td>
       <td className="admin-date">{formatDate(user.createdAt)}</td>
       <td>
@@ -167,6 +319,19 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, busy }) {
               <UserCheck size={13} /> Unblock
             </button>
           )}
+          {isApproved && (
+            <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => onRevokeAccess(user.userId)}>
+              <Clock size={13} /> Revoke Access
+            </button>
+          )}
+          {!isPending && (
+            <button className="btn btn-sm btn-secondary" disabled={busy} onClick={() => onSetExpiry(user)}>
+              <Clock size={13} /> Set Expiry
+            </button>
+          )}
+          <button className="btn btn-sm btn-secondary" disabled={busy} onClick={() => onClearAccessWindow(user.userId)}>
+            <Shield size={13} /> Reset Window
+          </button>
           <button className="btn btn-sm admin-btn-delete" disabled={busy} onClick={() => onDelete(user)} title="Delete user">
             <Trash2 size={13} />
           </button>
@@ -181,16 +346,38 @@ function UsersTab({ allUsers, pendingUsers }) {
   const [search, setSearch] = useState('');
   const [busy, setBusy] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState(null); // user object to confirm deletion
+  const [expiryTarget, setExpiryTarget] = useState(null);
   const [actionError, setActionError] = useState('');
 
   const approve     = useMutation(api.admin.approveUser);
   const block       = useMutation(api.admin.blockUser);
   const unblock     = useMutation(api.admin.unblockUser);
+  const revokeAccess = useMutation(api.admin.revokeUserAccess);
+  const setUserAccessExpiry = useMutation(api.admin.setUserAccessExpiry);
+  const clearAccessWindow = useMutation(api.admin.clearUserAccessWindow);
   const deleteUser  = useMutation(api.admin.deleteUser);
 
   const handleApprove = async (userId) => { setBusy(true); setActionError(''); try { await approve({ userId }); } catch (e) { setActionError(e?.message || 'Failed to approve user.'); } finally { setBusy(false); } };
   const handleBlock   = async (userId) => { setBusy(true); setActionError(''); try { await block({ userId }); } catch (e) { setActionError(e?.message || 'Failed to block user.'); } finally { setBusy(false); } };
   const handleUnblock = async (userId) => { setBusy(true); setActionError(''); try { await unblock({ userId }); } catch (e) { setActionError(e?.message || 'Failed to unblock user.'); } finally { setBusy(false); } };
+  const handleRevokeAccess = async (userId) => { setBusy(true); setActionError(''); try { await revokeAccess({ userId }); } catch (e) { setActionError(e?.message || 'Failed to revoke access.'); } finally { setBusy(false); } };
+  const handleSetExpiry = async ({ userId, accessExpiresAt, reason, idempotencyKey }) => {
+    if (!accessExpiresAt) {
+      setActionError('Choose a valid future expiry time.');
+      return;
+    }
+    setBusy(true);
+    setActionError('');
+    try {
+      await setUserAccessExpiry({ userId, accessExpiresAt, reason: reason || undefined, idempotencyKey });
+      setExpiryTarget(null);
+    } catch (e) {
+      setActionError(e?.message || 'Failed to set access expiry.');
+    } finally {
+      setBusy(false);
+    }
+  };
+  const handleClearAccessWindow = async (userId) => { setBusy(true); setActionError(''); try { await clearAccessWindow({ userId }); } catch (e) { setActionError(e?.message || 'Failed to reset access window.'); } finally { setBusy(false); } };
   const handleDeleteConfirm = async () => {
     if (!deleteTarget) return;
     setBusy(true);
@@ -216,6 +403,15 @@ function UsersTab({ allUsers, pendingUsers }) {
           onConfirm={handleDeleteConfirm}
           onCancel={() => setDeleteTarget(null)}
           busy={busy}
+        />
+      )}
+      {expiryTarget && (
+        <AccessExpiryModal
+          user={expiryTarget}
+          onConfirm={handleSetExpiry}
+          onCancel={() => setExpiryTarget(null)}
+          busy={busy}
+          error={actionError}
         />
       )}
       <div className="admin-users-toolbar">
@@ -258,6 +454,8 @@ function UsersTab({ allUsers, pendingUsers }) {
               <tr>
                 <th>User</th>
                 <th>Status</th>
+                <th>Access</th>
+                <th>Due</th>
                 <th>Role</th>
                 <th>Joined</th>
                 <th>Actions</th>
@@ -271,6 +469,9 @@ function UsersTab({ allUsers, pendingUsers }) {
                   onApprove={handleApprove}
                   onBlock={handleBlock}
                   onUnblock={handleUnblock}
+                  onRevokeAccess={handleRevokeAccess}
+                  onClearAccessWindow={handleClearAccessWindow}
+                  onSetExpiry={setExpiryTarget}
                   onDelete={setDeleteTarget}
                   busy={busy}
                 />
@@ -285,7 +486,7 @@ function UsersTab({ allUsers, pendingUsers }) {
 
 // ── Feature Flags Tab ─────────────────────────────────────────────────────────
 
-function FlagRow({ flag }) {
+function FlagRow({ flag, readOnly = false }) {
   const setFlag = useMutation(api.featureFlags.setFlag);
   const [busy, setBusy] = useState(false);
 
@@ -305,8 +506,8 @@ function FlagRow({ flag }) {
       <button
         className={`flag-toggle ${flag.enabled ? 'flag-toggle--on' : 'flag-toggle--off'}`}
         onClick={toggle}
-        disabled={busy}
-        title={flag.enabled ? 'Click to disable' : 'Click to enable'}
+        disabled={busy || readOnly}
+        title={readOnly ? 'Unavailable in fixture mode' : flag.enabled ? 'Click to disable' : 'Click to enable'}
       >
         {flag.enabled
           ? <><ToggleRight size={28} /> <span>Enabled</span></>
@@ -317,9 +518,7 @@ function FlagRow({ flag }) {
   );
 }
 
-function FeaturesTab() {
-  const flags = useQuery(api.featureFlags.getAllFlags) ?? [];
-
+function FeaturesTab({ flags, readOnly = false }) {
   if (flags.length === 0) {
     return <div className="admin-empty">Loading feature flags…</div>;
   }
@@ -330,7 +529,7 @@ function FeaturesTab() {
         Toggle features on or off for all users. Changes take effect immediately.
       </p>
       <div className="flag-list">
-        {flags.map(flag => <FlagRow key={flag.key} flag={flag} />)}
+        {flags.map(flag => <FlagRow key={flag.key} flag={flag} readOnly={readOnly} />)}
       </div>
     </div>
   );
@@ -368,7 +567,7 @@ function PaymentStatusBadge({ status }) {
   return <span className={`admin-badge ${cls}`}>{PAYMENT_STATUS_LABEL[status] ?? status}</span>;
 }
 
-function PaymentRow({ req }) {
+function PaymentRow({ req, readOnly = false }) {
   const review = useMutation(api.paymentRequests.reviewPaymentRequest);
   const [busy, setBusy] = useState(false);
   const [showReject, setShowReject] = useState(false);
@@ -420,10 +619,10 @@ function PaymentRow({ req }) {
         {req.status === 'pending' ? (
           <div className="admin-review-stack">
             <div className="admin-action-btns">
-              <button className="btn btn-sm btn-primary" disabled={busy} onClick={handleApprove}>
+              <button className="btn btn-sm btn-primary" disabled={busy || readOnly} onClick={handleApprove}>
                 <CheckCircle size={13} /> Approve
               </button>
-              <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => setShowReject(v => !v)}>
+              <button className="btn btn-sm admin-btn-block" disabled={busy || readOnly} onClick={() => setShowReject(v => !v)}>
                 <XCircle size={13} /> Reject
               </button>
             </div>
@@ -434,8 +633,9 @@ function PaymentRow({ req }) {
                   placeholder="Reason (optional)…"
                   value={notes}
                   onChange={e => setNotes(e.target.value)}
+                  disabled={busy || readOnly}
                 />
-                <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={handleReject}>
+                <button className="btn btn-sm admin-btn-block" disabled={busy || readOnly} onClick={handleReject}>
                   Confirm Reject
                 </button>
               </div>
@@ -461,12 +661,26 @@ const PAYMENT_FILTERS = [
   { value: 'rejected', label: 'Rejected' },
 ];
 
-function PaymentsTab() {
+function buildPaymentCounts(requests) {
+  const summary = { pending: 0, approved: 0, rejected: 0, total: requests.length };
+  for (const request of requests) {
+    if (request.status === 'pending' || request.status === 'approved' || request.status === 'rejected') {
+      summary[request.status] += 1;
+    }
+  }
+  return summary;
+}
+
+function PaymentsTab({ requests = [], counts: initialCounts = {}, readOnly = false }) {
   const [filter, setFilter] = useState('all');
 
   const queryArgs = filter === 'all' ? {} : { status: filter };
-  const displayed = useQuery(api.paymentRequests.listPaymentRequests, queryArgs) ?? [];
-  const counts    = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
+  const liveDisplayed = useQuery(api.paymentRequests.listPaymentRequests, readOnly ? 'skip' : queryArgs) ?? [];
+  const liveCounts = useQuery(api.paymentRequests.getPaymentCounts, readOnly ? 'skip' : {}) ?? {};
+  const counts = readOnly ? { ...buildPaymentCounts(requests), ...initialCounts } : liveCounts;
+  const displayed = readOnly
+    ? requests.filter((request) => filter === 'all' || request.status === filter)
+    : liveDisplayed;
 
   return (
     <div className="admin-payments-tab">
@@ -507,7 +721,7 @@ function PaymentsTab() {
             </thead>
             <tbody>
               {displayed.map(req => (
-                <PaymentRow key={req._id} req={req} />
+                <PaymentRow key={req._id} req={req} readOnly={readOnly} />
               ))}
             </tbody>
           </table>
@@ -517,18 +731,43 @@ function PaymentsTab() {
   );
 }
 
-function ObservabilityTab() {
-  const summary = useQuery(api.observability.getReleaseHealthSummary);
+function ObservabilityTab({ summary, readOnly = false }) {
+  const retryPendingLoginAlerts = useMutation(api.admin.retryPendingLoginAlerts);
+  const [retryBusy, setRetryBusy] = useState(false);
+  const [retryMessage, setRetryMessage] = useState('');
 
   if (!summary) {
     return <div className="admin-empty">Loading observability metrics…</div>;
   }
+
+  const handleRetryPendingLoginAlerts = async () => {
+    setRetryBusy(true);
+    setRetryMessage('');
+    try {
+      const result = await retryPendingLoginAlerts({});
+      const queued = result?.queued ?? 0;
+      setRetryMessage(
+        queued > 0
+          ? `Queued ${queued} pending login alert email${queued === 1 ? '' : 's'} for retry.`
+          : 'No pending login alert emails were eligible for retry.',
+      );
+    } catch (error) {
+      setRetryMessage(error?.message || 'Unable to queue login alert retries.');
+    } finally {
+      setRetryBusy(false);
+    }
+  };
 
   const stats = [
     { icon: Activity, label: 'Route Views (24h)', value: summary.routeViews24h, tone: 'primary' },
     { icon: LayoutDashboard, label: 'Note Views (24h)', value: summary.noteViews24h, tone: 'info' },
     { icon: CheckCircle, label: 'Fullscreen Enters', value: summary.fullscreenEntries24h, tone: 'success' },
     { icon: Clock, label: 'Recall Opens', value: summary.recallOpens24h, tone: 'accent' },
+    { icon: Mail, label: 'Email Attempts', value: summary.emailAttempts24h, tone: 'info' },
+    { icon: Mail, label: 'Email Failures', value: summary.emailFailures24h, tone: 'error' },
+    { icon: Clock, label: 'Pending Email Alerts', value: summary.pendingLoginAlerts, tone: 'accent' },
+    { icon: Workflow, label: 'Cron Runs', value: summary.cronRuns24h, tone: 'primary' },
+    { icon: Workflow, label: 'Cron Failures', value: summary.cronFailures24h, tone: 'error' },
     { icon: AlertTriangle, label: 'Warnings', value: summary.warnings24h, tone: 'accent' },
     { icon: XCircle, label: 'Errors', value: summary.errors24h, tone: 'error' },
   ];
@@ -553,8 +792,51 @@ function ObservabilityTab() {
       <div className={`admin-pending-notice card ${summary.status === 'degraded' ? 'admin-pending-notice--degraded' : 'admin-pending-notice--healthy'}`}>
         <AlertTriangle size={18} />
         <span>
-          Release health is <strong>{summary.status}</strong>. Pending background events: <strong>{summary.pendingEvents}</strong>.
+          Release health is <strong>{summary.status}</strong>. Pending background events: <strong>{summary.pendingEvents}</strong>. Last successful cron: <strong>{summary.lastSuccessfulCronAt ? formatDate(summary.lastSuccessfulCronAt) : '—'}</strong>.
         </span>
+      </div>
+
+      <div className="admin-table-wrap card">
+        <div className="admin-section-heading">Operator Actions</div>
+        <div className="admin-action-btns">
+          <button
+            className="btn btn-primary btn-sm"
+            disabled={readOnly || retryBusy || summary.pendingLoginAlerts === 0}
+            onClick={handleRetryPendingLoginAlerts}
+          >
+            {retryBusy ? 'Queueing…' : 'Retry Pending Login Alert Emails'}
+          </button>
+        </div>
+        <div className="admin-date" role="status">
+          {readOnly
+            ? 'Manual retries are disabled while the admin fixture is active.'
+            : retryMessage || 'Queue a manual retry for pending login alert emails that are still below the retry cap.'}
+        </div>
+      </div>
+
+      <div className="admin-table-wrap card">
+        <div className="admin-section-heading">Active Alerts</div>
+        {summary.alerts.length === 0 ? (
+          <div className="admin-empty">No active delivery or cron alerts.</div>
+        ) : (
+          <div className="admin-alert-list">
+            {summary.alerts.map((alert) => (
+              <div key={`${alert.code}-${alert.traceId || alert.jobName || 'summary'}`} className={`admin-alert-item admin-alert-item--${alert.severity}`}>
+                <div className="admin-alert-heading">
+                  <span className={`admin-badge ${alert.severity === 'error' ? 'ab--blocked' : 'ab--pending'}`}>{alert.severity}</span>
+                  <span className="admin-alert-code">{alert.code}</span>
+                </div>
+                <div className="admin-log-message">{alert.message}</div>
+                {(alert.traceId || alert.jobName) && (
+                  <div className="admin-alert-meta">
+                    {alert.jobName && <span>{alert.jobName}</span>}
+                    {alert.traceId && <span className="admin-mono">Trace: {alert.traceId}</span>}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="admin-observability-layout">
@@ -610,6 +892,64 @@ function ObservabilityTab() {
           )}
         </div>
       </div>
+
+      <div className="admin-observability-layout">
+        <div className="admin-table-wrap card">
+          <div className="admin-section-heading">Recent Email Delivery Failures</div>
+          {summary.recentEmailFailures.length === 0 ? (
+            <div className="admin-empty">No recent email delivery failures.</div>
+          ) : (
+            <table className="admin-table">
+              <thead>
+                <tr>
+                  <th>Trace</th>
+                  <th>Attempt</th>
+                  <th>Recipient</th>
+                  <th>Error</th>
+                </tr>
+              </thead>
+              <tbody>
+                {summary.recentEmailFailures.map((entry) => (
+                  <tr key={entry.traceId} className="admin-user-row">
+                    <td className="admin-mono">{entry.traceId}</td>
+                    <td>{entry.attemptNumber}</td>
+                    <td>{entry.recipientMasked || '—'}</td>
+                    <td className="admin-log-message">{entry.errorMessage || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+
+        <div className="admin-table-wrap card">
+          <div className="admin-section-heading">Recent Cron Runs</div>
+          {summary.recentCronRuns.length === 0 ? (
+            <div className="admin-empty">No recent cron runs recorded yet.</div>
+          ) : (
+            <table className="admin-table">
+              <thead>
+                <tr>
+                  <th>Job</th>
+                  <th>Status</th>
+                  <th>Duration</th>
+                  <th>Trace</th>
+                </tr>
+              </thead>
+              <tbody>
+                {summary.recentCronRuns.map((entry) => (
+                  <tr key={entry.traceId} className="admin-user-row">
+                    <td className="admin-log-message">{entry.jobName}</td>
+                    <td><span className={`admin-badge ${entry.status === 'failed' ? 'ab--blocked' : entry.status === 'succeeded' ? 'ab--approved' : 'ab--pending'}`}>{entry.status}</span></td>
+                    <td>{typeof entry.durationMs === 'number' ? `${entry.durationMs} ms` : '—'}</td>
+                    <td className="admin-mono">{entry.traceId}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
@@ -630,10 +970,23 @@ export default function AdminPage() {
   // isAdmin:  undefined while loading, true for admins, false for everyone else
   const { isLoaded, isAdmin } = useAuth();
   const [tab, setTab] = useState('overview');
+  const [devFixture] = useState(() => readAdminDevFixture());
+  const useDevFixture = Boolean(devFixture);
 
-  const pendingUsers    = useQuery(api.admin.listPendingUsers) ?? [];
-  const allUsers        = useQuery(api.admin.listAllUsersAdmin) ?? [];
-  const paymentCounts      = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
+  const pendingUsersQuery = useQuery(api.admin.listPendingUsers, useDevFixture ? 'skip' : {});
+  const allUsersQuery = useQuery(api.admin.listAllUsersAdmin, useDevFixture ? 'skip' : {});
+  const recentLoginsQuery = useQuery(api.admin.listRecentLoginEvents, useDevFixture ? 'skip' : { limit: 8 });
+  const flagsQuery = useQuery(api.featureFlags.getAllFlags, useDevFixture ? 'skip' : {});
+  const observabilitySummaryQuery = useQuery(api.observability.getReleaseHealthSummary, useDevFixture ? 'skip' : {});
+  const paymentCountsQuery = useQuery(api.paymentRequests.getPaymentCounts, useDevFixture ? 'skip' : {});
+
+  const pendingUsers = pendingUsersQuery ?? devFixture?.pendingUsers ?? [];
+  const allUsers = allUsersQuery ?? devFixture?.allUsers ?? [];
+  const recentLogins = recentLoginsQuery ?? devFixture?.recentLogins ?? [];
+  const flags = flagsQuery ?? devFixture?.flags ?? [];
+  const observabilitySummary = observabilitySummaryQuery ?? devFixture?.observabilitySummary ?? null;
+  const paymentCounts = paymentCountsQuery ?? devFixture?.paymentCounts ?? {};
+  const paymentRequests = devFixture?.paymentRequests ?? [];
   const pendingPaymentCount = paymentCounts.pending ?? 0;
 
   // Show a neutral loading state while auth is resolving to prevent the
@@ -692,11 +1045,11 @@ export default function AdminPage() {
 
       {/* Tab content */}
       <div className="admin-content">
-        {tab === 'overview' && <OverviewTab allUsers={allUsers} pendingUsers={pendingUsers} />}
+        {tab === 'overview' && <OverviewTab allUsers={allUsers} pendingUsers={pendingUsers} recentLogins={recentLogins} />}
         {tab === 'users'    && <UsersTab allUsers={allUsers} pendingUsers={pendingUsers} />}
-        {tab === 'features' && <FeaturesTab />}
-        {tab === 'payments' && <PaymentsTab />}
-        {tab === 'observability' && <ObservabilityTab />}
+        {tab === 'features' && <FeaturesTab flags={flags} readOnly={useDevFixture} />}
+        {tab === 'payments' && <PaymentsTab requests={paymentRequests} counts={paymentCounts} readOnly={useDevFixture} />}
+        {tab === 'observability' && <ObservabilityTab summary={observabilitySummary} readOnly={useDevFixture} />}
       </div>
     </div>
   );

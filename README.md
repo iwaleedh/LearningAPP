@@ -19,10 +19,15 @@ npm run build
 npm run preview
 npm run lint
 npm run lint:all
+npm run test:seed
+npm run test:unit
+npm run test:integration
+npm run test:e2e
 npm run test
-npm run test:e2e:mobile
 npm run convex:deploy
 ```
+
+`npm run test` is the default full-repository quality gate. It runs deterministic seed verification, unit tests, integration tests, and the full Playwright suite in sequence.
 
 ## Environment Variables
 
@@ -32,6 +37,15 @@ Create `.env.local` with the values required for your environment:
 VITE_CONVEX_URL=https://<your-convex-deployment>.convex.cloud
 VITE_CLERK_PUBLISHABLE_KEY=<your-clerk-publishable-key>
 ```
+
+## Test Prerequisites
+
+- Node.js 20.x
+- `npm ci`
+- `npx playwright install --with-deps chromium`
+- For local e2e runs, the default debug-auth path works with `VITE_CLERK_PUBLISHABLE_KEY=""`; no live Clerk sign-in is required.
+
+See [docs/testing.md](docs/testing.md) for suite breakdown, deterministic seeds, CI parity, and reproduction steps.
 
 ## Deployment
 

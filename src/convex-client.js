@@ -395,6 +395,25 @@ export async function setAuthenticatedIdentity({
   return client;
 }
 
+export async function finalizeAuthenticatedAccess({ sessionId, provider, userAgent }) {
+  const client = getOrCreateClient();
+  if (!client) return null;
+  return await client.mutation(api.access.finalizeSignIn, {
+    sessionId,
+    provider,
+    userAgent,
+  });
+}
+
+export async function selectAccessWindow({ months, sessionId }) {
+  const client = getOrCreateClient();
+  if (!client) return null;
+  return await client.mutation(api.access.selectAccessWindow, {
+    months,
+    sessionId,
+  });
+}
+
 export async function restoreAnonymousIdentity() {
   const anonymousIdentity = ensureAnonymousIdentity();
   const client = getOrCreateClient();
