@@ -14,6 +14,17 @@ export default defineSchema({
       v.literal('approved'),
       v.literal('blocked'),
     )),
+    firstSignInAt: v.optional(v.number()),
+    lastSignInAt: v.optional(v.number()),
+    accessWindowStartedAt: v.optional(v.number()),
+    accessDurationMonths: v.optional(v.union(v.literal(1), v.literal(12))),
+    accessExpiresAt: v.optional(v.number()),
+    accessRevokedAt: v.optional(v.number()),
+    accessRevokedReason: v.optional(v.string()),
+    sessionVersion: v.optional(v.number()),
+    lastAuthProvider: v.optional(v.string()),
+    lastAuthSessionId: v.optional(v.string()),
+    lastLoginEventId: v.optional(v.id("loginEvents")),
     statusUpdatedAt: v.optional(v.number()),
     createdAt: v.number(),
   })
@@ -21,8 +32,92 @@ export default defineSchema({
     // D17: btree index for O(log n) exact-match username lookup (used by resolveCanonicalUsername).
     .index("by_username", ["username"])
     .index("by_accountStatus", ["accountStatus"])
+    .index("by_accessExpiresAt", ["accessExpiresAt"])
     // D17: full-text search index for the searchUsers query.
     .searchIndex("search_username", { searchField: "username" }),
+
+  authSessions: defineTable({
+    userId: v.string(),
+    sessionId: v.string(),
+    provider: v.string(),
+    sessionVersion: v.number(),
+    userAgent: v.optional(v.string()),
+    createdAt: v.number(),
+    lastSeenAt: v.number(),
+    revokedAt: v.optional(v.number()),
+    revokeReason: v.optional(v.string()),
+  })
+    .index("by_user", ["userId"])
+    .index("by_user_session", ["userId", "sessionId"]),
+
+  loginEvents: defineTable({
+    userId: v.string(),
+    sessionId: v.optional(v.string()),
+    provider: v.string(),
+    username: v.string(),
+    email: v.optional(v.string()),
+    eventType: v.union(v.literal("sign_in"), v.literal("access_selected")),
+    occurredAt: v.number(),
+    accessDurationMonths: v.optional(v.union(v.literal(1), v.literal(12))),
+    accessExpiresAt: v.optional(v.number()),
+    userAgent: v.optional(v.string()),
+    ipAddress: v.optional(v.string()),
+    emailDeliveryStatus: v.optional(v.union(v.literal("pending"), v.literal("sent"), v.literal("failed"))),
+    emailRetryCount: v.optional(v.number()),
+    emailLastAttemptAt: v.optional(v.number()),
+    emailLastError: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_session", ["sessionId"])
+    .index("by_emailDeliveryStatus", ["emailDeliveryStatus"])
+    .index("by_createdAt", ["createdAt"]),
+
+  emailDeliveryAttempts: defineTable({
+    loginEventId: v.id("loginEvents"),
+    userId: v.string(),
+    provider: v.string(),
+    traceId: v.string(),
+    status: v.union(
+      v.literal("started"),
+      v.literal("sent"),
+      v.literal("failed"),
+      v.literal("skipped"),
+    ),
+    attemptNumber: v.number(),
+    recipientMasked: v.optional(v.string()),
+    messageId: v.optional(v.string()),
+    httpStatus: v.optional(v.number()),
+    errorMessage: v.optional(v.string()),
+    durationMs: v.optional(v.number()),
+    startedAt: v.number(),
+    completedAt: v.optional(v.number()),
+    createdAt: v.number(),
+  })
+    .index("by_loginEvent", ["loginEventId"])
+    .index("by_status", ["status"])
+    .index("by_createdAt", ["createdAt"])
+    .index("by_traceId", ["traceId"]),
+
+  cronRuns: defineTable({
+    jobName: v.string(),
+    traceId: v.string(),
+    status: v.union(
+      v.literal("started"),
+      v.literal("succeeded"),
+      v.literal("failed"),
+    ),
+    startedAt: v.number(),
+    completedAt: v.optional(v.number()),
+    durationMs: v.optional(v.number()),
+    resultJson: v.optional(v.string()),
+    errorMessage: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_jobName", ["jobName"])
+    .index("by_status", ["status"])
+    .index("by_startedAt", ["startedAt"])
+    .index("by_traceId", ["traceId"]),
 
   notes: defineTable({
     noteId: v.string(),
@@ -429,5 +524,16 @@ export default defineSchema({
   })
     .index("by_actor", ["actorId"])
     .index("by_action", ["action"])
+    .index("by_target", ["targetId"]),
+
+  adminActionReceipts: defineTable({
+    actorId: v.string(),
+    action: v.string(),
+    targetId: v.optional(v.string()),
+    idempotencyKey: v.string(),
+    responseJson: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_actor_action_key", ["actorId", "action", "idempotencyKey"])
     .index("by_target", ["targetId"]),
 });

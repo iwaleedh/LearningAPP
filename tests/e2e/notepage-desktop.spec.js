@@ -1,19 +1,15 @@
 import { test, expect } from '@playwright/test';
+import { seedDevAuthSession } from './support/browserSeeds.js';
+import { createDebugSession } from '../support/testSeeds.js';
 
-const debugSession = {
+const debugSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_note_desktop',
   username: 'Note Desktop QA',
-};
+});
 
 const notePath = '/notes/chemistry/1/1/0';
 const nextNotePath = '/notes/chemistry/1/1/1';
-
-async function seedDebugSession(page) {
-  await page.addInitScript(({ session }) => {
-    window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(session));
-  }, { session: debugSession });
-}
 
 async function enterFullscreen(page) {
   const trigger = page.getByRole('button', { name: 'Enter fullscreen note view' });
@@ -30,7 +26,7 @@ test.describe('NotePage desktop fullscreen reading QA', () => {
   });
 
   test.beforeEach(async ({ page }) => {
-    await seedDebugSession(page);
+    await seedDevAuthSession(page, debugSession);
     await page.goto(notePath);
     await page.evaluate(() => {
       window.localStorage.removeItem('LT_NOTE_FULLSCREEN');

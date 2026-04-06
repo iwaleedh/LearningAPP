@@ -1,20 +1,21 @@
 import { test, expect } from '@playwright/test';
+import { createDebugSession } from '../support/testSeeds.js';
 
 const SESSION_ID = 'local_1775329403089_mobilee2e';
 const JOIN_REQUEST_ID = 'local_join_1775329403089_mobilee2e';
 const STUDENT_TEMP_ID = 'temp_mobile_student_e2e';
 
-const teacherSession = {
+const teacherSession = createDebugSession({
   role: 'teacher',
   userId: 'debug_teacher_mobilee2e',
   username: 'Mobile Teacher',
-};
+});
 
-const studentSession = {
+const studentSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_mobilee2e',
   username: 'Mobile Student',
-};
+});
 
 function createLocalLiveStore() {
   return {
@@ -85,7 +86,10 @@ async function seedLiveClassSession(page, { authSession, includeJoinState = fals
 
 async function gotoLiveClass(page) {
   await page.goto(`/live/${SESSION_ID}`);
-  await expect(page.getByText('Local')).toBeVisible();
+  const featureLoadingCard = page.getByText('Loading feature availability...');
+  await featureLoadingCard.waitFor({ state: 'hidden', timeout: 90000 }).catch(() => {});
+  await expect(page.locator('.lc-topbar')).toBeVisible();
+  await expect(page.locator('.lc-stdb-pill')).toBeVisible();
 }
 
 async function dragSheetToDismiss(page, sheet) {
@@ -100,10 +104,33 @@ async function dragSheetToDismiss(page, sheet) {
   const startX = box.x + (box.width / 2);
   const startY = box.y + (box.height / 2);
 
-  await page.mouse.move(startX, startY);
-  await page.mouse.down();
-  await page.mouse.move(startX, startY + 140, { steps: 8 });
-  await page.mouse.up();
+  await page.evaluate(async ({ pointerX, pointerStartY, pointerEndY }) => {
+    const handleElement = document.elementFromPoint(pointerX, pointerStartY)?.closest('.lc-mobile-sheet-handle');
+    if (!handleElement) {
+      throw new Error('Expected to find the mobile sheet handle at the drag start point');
+    }
+
+    const eventInit = (clientY, buttons) => ({
+      bubbles: true,
+      cancelable: true,
+      clientX: pointerX,
+      clientY,
+      pointerId: 1,
+      pointerType: 'touch',
+      isPrimary: true,
+      buttons,
+    });
+
+    handleElement.dispatchEvent(new PointerEvent('pointerdown', eventInit(pointerStartY, 1)));
+    await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
+    window.dispatchEvent(new PointerEvent('pointermove', eventInit(pointerEndY, 1)));
+    await new Promise((resolve) => window.requestAnimationFrame(resolve));
+    window.dispatchEvent(new PointerEvent('pointerup', eventInit(pointerEndY, 0)));
+  }, {
+    pointerX: startX,
+    pointerStartY: startY,
+    pointerEndY: startY + 180,
+  });
 }
 
 test.describe('live class mobile QA', () => {

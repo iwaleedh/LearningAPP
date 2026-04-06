@@ -21,14 +21,28 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Lint app runtime
         run: npm run lint
 
-      - name: Run unit tests
-        run: npm test
+      - name: Run full test suite
+        run: npm run test:ci
 
       - name: Build frontend
         run: npm run build
+
+      - name: Upload test artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy-test-artifacts
+          path: |
+            playwright-report
+            test-results
+            dist
+          if-no-files-found: ignore
 
       - name: Deploy Convex functions to production
         run: npx convex deploy --yes

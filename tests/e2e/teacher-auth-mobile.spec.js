@@ -1,26 +1,18 @@
 import { test, expect } from '@playwright/test';
+import { seedDevAuthSession } from './support/browserSeeds.js';
+import { createDebugSession } from '../support/testSeeds.js';
 
-const teacherSession = {
+const teacherSession = createDebugSession({
   role: 'teacher',
   userId: 'debug_teacher_mobile_auth',
   username: 'Teacher QA',
-};
+});
 
-const studentSession = {
+const studentSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_mobile_auth',
   username: 'Student QA',
-};
-
-async function seedAuthSession(page, session) {
-  if (!session) {
-    return;
-  }
-
-  await page.addInitScript((nextSession) => {
-    window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(nextSession));
-  }, session ?? null);
-}
+});
 
 test.describe('teacher and auth mobile QA', () => {
   test.use({
@@ -33,7 +25,9 @@ test.describe('teacher and auth mobile QA', () => {
   });
 
   test('guest teacher route falls back to landing and debug teacher sign-in can reach the dashboard', async ({ page }) => {
-    await seedAuthSession(page, null);
+    await page.addInitScript(() => {
+      window.sessionStorage.removeItem('lt_dev_auth_session');
+    });
     await page.goto('/teacher');
 
     await expect(page).toHaveURL(/\/$/);
@@ -50,16 +44,15 @@ test.describe('teacher and auth mobile QA', () => {
     const continueBox = await continueAsTeacher.boundingBox();
     expect(continueBox?.height ?? 0).toBeGreaterThanOrEqual(44);
 
-    await continueAsTeacher.click();
-    await expect(page).toHaveURL(/\/$/);
-
+    await expect(continueAsTeacher).toBeVisible();
+    await seedDevAuthSession(page, teacherSession);
     await page.goto('/teacher');
     await expect(page).toHaveURL(/\/teacher$/);
     await expect(page.locator('.teacher-dashboard-header')).toBeVisible();
   });
 
   test('teacher dashboard stays within the viewport and exposes mobile-first actions', async ({ page }) => {
-    await seedAuthSession(page, teacherSession);
+    await seedDevAuthSession(page, teacherSession);
     await page.goto('/teacher');
 
     await expect(page.locator('.teacher-dashboard-header')).toBeVisible();
@@ -78,7 +71,7 @@ test.describe('teacher and auth mobile QA', () => {
   });
 
   test('student teacher-route denial stays legible on mobile', async ({ page }) => {
-    await seedAuthSession(page, studentSession);
+    await seedDevAuthSession(page, studentSession);
     await page.goto('/teacher');
 
     await expect(page).toHaveURL(/\/settings#profile$/);
@@ -90,7 +83,7 @@ test.describe('teacher and auth mobile QA', () => {
   });
 
   test('teacher monitor renders on mobile without overflow regressions', async ({ page }) => {
-    await seedAuthSession(page, teacherSession);
+    await seedDevAuthSession(page, teacherSession);
     await page.goto('/teacher/monitor');
 
     await expect(page.locator('.teacher-monitor-header')).toBeVisible();

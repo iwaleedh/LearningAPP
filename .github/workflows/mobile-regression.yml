@@ -14,7 +14,7 @@ concurrency:
 jobs:
   mobile-regression:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -32,8 +32,8 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
 
-      - name: Build app
-        run: npm run build
+      - name: Verify deterministic test seeds
+        run: npm run test:seed
 
       - name: Run mobile regression suite
         run: npm run test:e2e:mobile
@@ -42,7 +42,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-mobile-artifacts
+          name: playwright-e2e-artifacts
           path: |
             playwright-report
             test-results

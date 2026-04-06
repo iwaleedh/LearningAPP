@@ -1,16 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { seedDevAuthSession } from './support/browserSeeds.js';
+import { createDebugSession } from '../support/testSeeds.js';
 
-const debugSession = {
+const debugSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_study_mobile',
   username: 'Study Flow QA',
-};
-
-async function seedDebugSession(page) {
-  await page.addInitScript((session) => {
-    window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(session));
-  }, debugSession);
-}
+});
 
 test.describe('chapter and exercise mobile QA', () => {
   test.setTimeout(120000);
@@ -25,7 +21,7 @@ test.describe('chapter and exercise mobile QA', () => {
   });
 
   test.beforeEach(async ({ page }) => {
-    await seedDebugSession(page);
+    await seedDevAuthSession(page, debugSession);
   });
 
   test('chapter page keeps accordion navigation and open-note actions reachable on phones', async ({ page }) => {

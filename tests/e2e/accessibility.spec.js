@@ -1,20 +1,16 @@
 import { test, expect } from '@playwright/test';
+import { seedDevAuthSession } from './support/browserSeeds.js';
+import { createDebugSession } from '../support/testSeeds.js';
 
-const debugSession = {
+const debugSession = createDebugSession({
   role: 'student',
   userId: 'debug_student_e2e',
   username: 'Debug Student',
-};
-
-async function seedDebugSession(page) {
-  await page.addInitScript((session) => {
-    window.sessionStorage.setItem('lt_dev_auth_session', JSON.stringify(session));
-  }, debugSession);
-}
+});
 
 test.describe('signed-in shell accessibility', () => {
   test.beforeEach(async ({ page }) => {
-    await seedDebugSession(page);
+    await seedDevAuthSession(page, debugSession);
     await page.goto('/');
     await expect(page.getByRole('button', { name: 'Search (Command K)' })).toBeVisible();
   });

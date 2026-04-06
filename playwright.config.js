@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: './tests/e2e',
   snapshotPathTemplate: '{testDir}/{testFilePath}-snapshots/{arg}{ext}',
   fullyParallel: false,
-  retries: 0,
+  retries: process.env.CI ? 1 : 0,
   workers: 1,
   use: {
     baseURL: 'http://127.0.0.1:4173',

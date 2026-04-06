@@ -6,7 +6,7 @@ import { useAuth } from '../../hooks/useAuth.js';
  * to the /pending page. Anonymous (guest) users are NOT blocked.
  */
 export default function RequireApproved({ children }) {
-  const { isLoaded, isSignedIn, accountStatus } = useAuth();
+  const { isLoaded, isSignedIn, accountStatus, accessStatus } = useAuth();
 
   if (!isLoaded) {
     return <div className="card animate-fade-in">Checking access...</div>;
@@ -20,6 +20,10 @@ export default function RequireApproved({ children }) {
   // Signed in but account not approved
   if (accountStatus === 'pending' || accountStatus === 'blocked') {
     return <Navigate to="/pending" replace />;
+  }
+
+  if (accessStatus === 'expired' || accessStatus === 'revoked') {
+    return <Navigate to="/" replace />;
   }
 
   return children;

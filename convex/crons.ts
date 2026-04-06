@@ -17,64 +17,76 @@
 import { cronJobs } from "convex/server";
 import { internal } from "./_generated/api";
 
+const anyInternal = internal as any;
+
 const crons = cronJobs();
 
 // ── Process pending pub/sub events every 30 seconds ─────────────────
 crons.interval(
   "process event queue",
   { seconds: 30 },
-  internal.eventHandlers.processEventQueue,
+  anyInternal.observability.runProcessEventQueueCron,
 );
 
 // ── Cleanup ended sessions every hour ───────────────────────────────
 crons.interval(
   "cleanup ended sessions",
   { hours: 1 },
-  internal.sessions.cleanupEndedSessions,
+  anyInternal.observability.runCleanupEndedSessionsCron,
 );
 
 // ── Purge old processed events daily ────────────────────────────────
 crons.interval(
   "cleanup old events",
   { hours: 24 },
-  internal.eventBus.cleanupOldEvents,
-  { olderThanMs: 7 * 24 * 60 * 60 * 1000 }, // 7 days
+  anyInternal.observability.runCleanupOldEventsCron,
 );
 
 // ── Purge old log entries daily ─────────────────────────────────────
 crons.interval(
   "cleanup old logs",
   { hours: 24 },
-  internal.logs.cleanupOldLogs,
-  { maxAgeMs: 14 * 24 * 60 * 60 * 1000 }, // 14 days
+  anyInternal.observability.runCleanupOldLogsCron,
 );
 
 // ── Purge stale payment upload intents hourly ──────────────────────
 crons.interval(
   "cleanup stale payment upload intents",
   { hours: 1 },
-  internal.paymentRequests.cleanupStalePaymentUploadIntents,
+  anyInternal.observability.runCleanupStalePaymentUploadIntentsCron,
+);
+
+crons.interval(
+  "process pending login alert emails",
+  { minutes: 5 },
+  anyInternal.observability.runProcessPendingLoginAlertsCron,
+);
+
+crons.interval(
+  "revoke expired access sessions",
+  { minutes: 30 },
+  anyInternal.observability.runRevokeExpiredAccessSessionsCron,
 );
 
 // ── D2: Detect NaN badge metric projections nightly at 03:00 UTC ────
 crons.daily(
   "D2 detect NaN badge projections",
   { hourUTC: 3, minuteUTC: 0 },
-  internal.dataQuality.detectNaNProjections,
+  anyInternal.observability.runDetectNaNProjectionsCron,
 );
 
 // ── D10: Detect orphaned payment approvals nightly at 03:10 UTC ─────
 crons.daily(
   "D10 detect orphaned payment approvals",
   { hourUTC: 3, minuteUTC: 10 },
-  internal.dataQuality.detectOrphanedApprovals,
+  anyInternal.observability.runDetectOrphanedApprovalsCron,
 );
 
 // ── D11: Repair duplicate flashcard progress rows nightly at 03:20 UTC
 crons.daily(
   "D11 repair duplicate flashcard progress",
   { hourUTC: 3, minuteUTC: 20 },
-  internal.dataQuality.repairDuplicateFlashcardProgress,
+  anyInternal.observability.runRepairDuplicateFlashcardProgressCron,
 );
 
 export default crons;

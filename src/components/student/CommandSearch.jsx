@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, BookOpen, ArrowRight } from 'lucide-react';
 import { loadSyllabusesBySubjects } from '../../data/syllabusIndex.js';
@@ -69,21 +69,22 @@ export default function CommandSearch({ onClose }) {
             : searchableItems.slice(0, 6)
     ), [query, searchableItems]);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const focusInput = () => {
             if (!inputRef.current) return;
-            const activeEl = document.activeElement;
-            if (modalRef.current?.contains(activeEl)) return;
-            inputRef.current.focus();
+            if (document.activeElement === inputRef.current) return;
+            inputRef.current.focus({ preventScroll: true });
         };
 
         focusInput();
+        const rafId = window.requestAnimationFrame(focusInput);
         const timerIds = [
             window.setTimeout(focusInput, 0),
             window.setTimeout(focusInput, 50),
         ];
 
         return () => {
+            window.cancelAnimationFrame(rafId);
             timerIds.forEach((timerId) => window.clearTimeout(timerId));
         };
     }, []);
