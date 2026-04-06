@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { CheckCircle, XCircle, RotateCcw, GripVertical, ArrowRight } from 'lucide-react';
 import './Exercises.css';
 

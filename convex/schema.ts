@@ -94,6 +94,13 @@ export default defineSchema({
     updatedAt: v.number(),
   }).index("by_owner", ["ownerUserId"]),
 
+  activityMetricProjections: defineTable({
+    ownerUserId: v.string(),
+    exercisesDone: v.number(),
+    papersViewed: v.number(),
+    updatedAt: v.number(),
+  }).index("by_owner", ["ownerUserId"]),
+
   // D5: One row per (userId, dateKey) — tracks unique study days for real
   // login/activity-day counts used by badge criteria. Deduped at insert time.
   userSessions: defineTable({
@@ -372,6 +379,9 @@ export default defineSchema({
     enabled: v.boolean(),
     label: v.string(),        // display name
     description: v.string(),
+    owner: v.string(),
+    purpose: v.string(),
+    sunsetDate: v.optional(v.string()),
     updatedAt: v.number(),
     updatedBy: v.string(),    // admin userId
   }).index("by_key", ["key"]),
@@ -389,6 +399,25 @@ export default defineSchema({
     .index("by_level", ["level"])
     .index("by_component", ["component"])
     .index("by_timestamp", ["timestamp"]),
+
+  clientTelemetry: defineTable({
+    ownerUserId: v.string(),
+    eventType: v.union(
+      v.literal("route_view"),
+      v.literal("note_view"),
+      v.literal("fullscreen_enter"),
+      v.literal("recall_open"),
+    ),
+    route: v.string(),
+    noteId: v.optional(v.string()),
+    subject: v.optional(v.string()),
+    metadataJson: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_owner", ["ownerUserId"])
+    .index("by_eventType", ["eventType"])
+    .index("by_route", ["route"])
+    .index("by_createdAt", ["createdAt"]),
 
   // ── Audit Logs ──────────────────────────────────────────────────
   auditLogs: defineTable({

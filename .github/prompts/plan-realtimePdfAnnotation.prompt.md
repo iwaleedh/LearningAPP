@@ -23,9 +23,9 @@ then (later phases) collaborate in real time with classmates and teachers.
 | PDF rendering | **pdf.js** (`pdfjs-dist`) | Industry standard; renders to canvas so fabric.js can overlay |
 | PDF export | **pdf-lib** | Lightweight (~200KB); merges annotation PNGs onto original PDF |
 | Page navigation | Thumbnail sidebar + active page center | User preference |
-| Phase 1 storage | **IndexedDB** (new `lt-annotations` DB) | Large data support; SpacetimeDB server not available yet |
+| Phase 1 storage | **IndexedDB** (new `lt-annotations` DB) | Large data support; collaboration backend work is deferred until the realtime phase |
 | Teacher monitoring | Architect from Phase 1 | Equally important to student annotation |
-| SpacetimeDB server | Frontend only for Phase 1 | Server access not available yet |
+| Collaboration backend | Convex in later phases | Phase 1 stays local-first; realtime sync comes later |
 | Which PDF | Question paper only | Per user decision; key format supports MS later |
 | Eraser tool | Object removal on click (no built-in EraserBrush in fabric v6) | fabric v6 dropped EraserBrush |
 | Sidebar nav | No entry | Accessed only via PastPapersPage "Do it Live" button |
@@ -40,8 +40,8 @@ then (later phases) collaborate in real time with classmates and teachers.
 - **Paper object shape**: `{ id, year, month, unit, unitName, type, questionPaperUrl, markingSchemeUrl, duration, totalMarks }`
 - **Paper IDs**: Prefixed per subject (`chem-2026-jan-wch11`, `phys-...`). Globally unique across all 13 arrays.
 - **PDF files**: Static in `public/pastpapers/` — flat structure, naming: `{unitCode}-{year}-{month}-{type}.pdf`
-- **Persistence**: SpacetimeDB (4 tables: `user`, `note`, `flashcard`, `note_asset`). No IndexedDB in use.
-- **Auth**: Device-based identity via SpacetimeDB. Auto-generated username. No email, no password.
+- **Persistence**: Convex + local browser storage already coexist in the product. Annotation persistence should stay isolated in its own IndexedDB store.
+- **Auth**: Clerk + Convex auth flows already exist. Annotation collaboration should reuse the current authenticated user/session model.
 - **Canvas**: Only `chart.js` for charts. No annotation canvas exists.
 - **Mobile/PWA**: Full viewport meta, touch setup, service worker. Ready for canvas annotation.
 
@@ -50,7 +50,7 @@ then (later phases) collaborate in real time with classmates and teachers.
 - pdf.js library — not installed
 - fabric.js library — not installed
 - pdf-lib library — not installed
-- IndexedDB infrastructure — never used in this app
+- Annotation-specific IndexedDB infrastructure — not implemented yet
 - Annotation page, route, components, services — all new
 
 ---
@@ -129,7 +129,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
   }
   ```
   - Each object stored as serializable fabric.js JSON (via `canvas.toJSON()`)
-  - This format translates directly to SpacetimeDB `annotation_stroke` rows in Phase 2
+  - This format translates directly to Convex `annotation_stroke` records in Phase 2
 
 ### Step 5 — Toolbar
 - **New file**: `src/components/annotation/AnnotationToolbar.jsx`
@@ -176,7 +176,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 ### Step 7 — IndexedDB persistence
 - **New file**: `src/services/annotation/annotationStore.js`
-- **This is new infrastructure** — the app has never used IndexedDB. Not a copy of `noteStore.js` (which uses SpacetimeDB).
+- **This is annotation-specific infrastructure** — keep it separate from `noteStore.js` even though the repo already uses browser persistence elsewhere.
 - **Database**: `lt-annotations`
 - **Object store**: `annotations`
 - **Key**: `paperId:qp:pageNumber` (includes doc type so marking scheme annotations could coexist later)
@@ -231,11 +231,11 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 ---
 
-## 5. Phase 2: Real-Time Collaboration via SpacetimeDB
+## 5. Phase 2: Real-Time Collaboration via Convex
 
-*Depends on: Phase 1 complete + SpacetimeDB server access*
+*Depends on: Phase 1 complete + Convex collaboration backend work*
 
-### Step 11 — New SpacetimeDB tables (server-side Rust)
+### Step 11 — New Convex schema tables and functions
 
 | Table | Columns | Notes |
 |-------|---------|-------|
@@ -244,7 +244,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 | `annotation_stroke` | `strokeId` (PK), `sessionId`, `pageNumber`, `userIdentity`, `fabricObjectJson`, `createdAt`, `updatedAt` | One row per canvas object |
 | `session_invite` | `inviteId` (PK), `sessionId`, `fromIdentity`, `toUsername`, `status` ('pending'\|'accepted'\|'declined'), `createdAt` | Username-based (no email yet) |
 
-### Step 12 — New reducers (server-side Rust)
+### Step 12 — New Convex mutations and queries
 
 | Reducer | Params | Action |
 |---------|--------|--------|
@@ -258,14 +258,16 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 | `endSession` | `sessionId` | Sets `status = 'ended'` |
 
 ### Step 13 — Client subscription architecture
-**Global subscriptions** (added to `spacetime.js` on connect):
-- `SELECT * FROM live_session WHERE status = 'active'`
-- `SELECT * FROM session_participant WHERE userIdentity = :myIdentity`
-- `SELECT * FROM session_invite WHERE toUsername = :myUsername AND status = 'pending'`
+**Global subscriptions**:
+- active live sessions for the current user
+- current-user participant rows
+- pending session invites for the current user
 
 **Per-session subscription** (when user opens a live session):
-- `SELECT * FROM annotation_stroke WHERE sessionId = :id`
-- Subscribe only for active session — not all sessions globally
+- annotation strokes for the active `sessionId`
+- optional cursor or presence events for that same session only
+
+Use live Convex queries and targeted subscriptions instead of a standalone websocket client. Keep session-scoped listeners attached only while a live annotation session is open.
 
 ### Step 14 — Share dialog
 - **New file**: `src/components/annotation/ShareDialog.jsx`
@@ -277,9 +279,9 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 ### Step 15 — Real-time stroke sync
 - **New file**: `src/services/annotation/sessionSync.js`
-- **Outbound**: fabric.js `object:added` / `object:modified` / `object:removed` events → call corresponding reducer
-- **Inbound**: SpacetimeDB subscription updates → deserialize fabric JSON → apply to canvas
-- **Conflict resolution**: Last-write-wins (LWW) per stroke — handled by SpacetimeDB server
+- **Outbound**: fabric.js `object:added` / `object:modified` / `object:removed` events → call corresponding Convex mutation
+- **Inbound**: Convex subscription updates → deserialize fabric JSON → apply to canvas
+- **Conflict resolution**: Last-write-wins (LWW) per stroke — handled by server timestamps or versioning in Convex
 - **Batching**: Freehand strokes send complete path on mouseup/touchend (not per-point — prevents ~100 reducer calls/second)
 - **Cursor presence** (optional): Lightweight `cursor_position` table or ephemeral broadcasts
 
@@ -327,7 +329,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 ### Step 21 — User registration with email
 - Add `email` field to `user` table
-- Registration form on first visit: email + display name (no password — keep SpacetimeDB device auth)
+- Registration changes should extend the existing Clerk-based auth flow rather than introducing a separate identity system
 - Email uniqueness enforced by reducer
 - Optional: email verification via external service
 
@@ -368,7 +370,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 | File | Purpose |
 |------|---------|
 | `src/components/annotation/ShareDialog.jsx` | Username search + invite + permissions |
-| `src/services/annotation/sessionSync.js` | Real-time stroke sync via SpacetimeDB |
+| `src/services/annotation/sessionSync.js` | Real-time stroke sync via Convex |
 
 ### New files (Phase 3)
 
@@ -384,7 +386,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 | `src/hooks/useDraftAutosave.js` | Debounced save timing pattern |
 | `src/pages/PastPapersPage.jsx` | Modal pattern, page component structure |
 | `src/pages/NotePage.jsx` | Sidebar layout pattern (for thumbnail sidebar) |
-| `src/spacetime.js` | SpacetimeDB connection + subscription pattern (Phase 2) |
+| `src/convex-client.js` | Convex connection helpers and readiness patterns |
 | `src/components/pastpapers/PerformanceChart.jsx` | Canvas ref pattern (chart.js, non-conflicting) |
 
 ---
@@ -412,7 +414,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 ### Phase 2
 
-1. Create session → `live_session` row appears in SpacetimeDB
+1. Create session → `live_session` record appears in Convex
 2. Invite by username → target user sees pending invite
 3. Two browser tabs in same session: draw in one → appears in other within 500ms
 4. Delete/modify stroke → reflected in other tab
@@ -435,17 +437,17 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 - pdf.js handles PDF parsing/rendering (fonts, vectors, forms — the hard part)
 - fabric.js handles interactive annotation (drawing, selection, serialization — the creative part)
 - Separation means PDF rendering is pixel-perfect while annotations are editable objects
-- fabric.js `toJSON()` serialization maps directly to SpacetimeDB `annotation_stroke` rows in Phase 2
+- fabric.js `toJSON()` serialization maps directly to Convex `annotation_stroke` records in Phase 2
 
 ### Why one canvas instance, not N
 - Reusing a single fabric.js canvas and swapping content per page avoids memory blow-up on large PDFs (20–30 pages)
 - Canvas state saved to IndexedDB on page switch; restored on page re-entry
 - Adjacent page canvases are NOT pre-rendered (only active page is live)
 
-### Why IndexedDB before SpacetimeDB
-- SpacetimeDB server changes not currently available
+### Why IndexedDB before live backend sync
+- Collaboration backend work is not part of Phase 1
 - IndexedDB supports arbitrarily large binary/JSON data
-- Migration path: Phase 2 adds a sync layer that writes to both IndexedDB (offline cache) and SpacetimeDB (cloud sync) — no rewrite needed
+- Migration path: Phase 2 adds a sync layer that writes to both IndexedDB (offline cache) and Convex (cloud sync) — no rewrite needed
 
 ### Data flow — Phase 1
 
@@ -469,9 +471,9 @@ User opens previously annotated paper
 
 ```
 User draws on canvas (same as Phase 1)
-  → ADDITIONALLY: if in live session, call addStroke reducer with fabric object JSON
+  → ADDITIONALLY: if in live session, call addStroke mutation with fabric object JSON
 
-SpacetimeDB subscription fires (new/updated/deleted stroke from another user)
+Convex subscription fires (new/updated/deleted stroke from another user)
   → deserialize fabric.js JSON → add/update/remove on canvas
   → tag with user-specific color for visual distinction
   → do NOT push to local undo stack (only user's own actions are undoable)
@@ -502,7 +504,7 @@ SpacetimeDB subscription fires (new/updated/deleted stroke from another user)
 | Exported PDF re-import | Partial | JSON exported alongside flattened PDF enables re-import, but no UI for it yet |
 | Note PDF annotation | Out of scope | Only past papers in Phase 1 |
 | Email-based sharing | Phase 4 | Requires email registration system |
-| Password auth | Not planned | SpacetimeDB device-based identity continues |
+| Password auth | Not applicable | Clerk already owns authentication and account flows |
 
 ---
 
@@ -510,7 +512,7 @@ SpacetimeDB subscription fires (new/updated/deleted stroke from another user)
 
 - **fabric.js v6**: ESM-only, different API from v5. Use `new Canvas()` not `new fabric.Canvas()`. No built-in `EraserBrush` — implement eraser as click-to-remove-object.
 - **pdf.js worker**: Must set `GlobalWorkerOptions.workerSrc` using `import.meta.url` pattern (Vite). Don't use CDN in production.
-- **IndexedDB is new**: This app has never used IndexedDB. `annotationStore.js` is standalone — NOT based on `noteStore.js` (which uses SpacetimeDB).
+- **IndexedDB is not new to the repo**: `noteStore.js` already uses local persistence patterns, but `annotationStore.js` should stay standalone because annotation sync and export rules are different.
 - **No `getPaperById()` exists yet**: Must be added to `pastPaperService.js` before `AnnotatePage` can work at all.
 - **CSS**: Use CSS custom properties only. No Tailwind. All `.annotate-*` classes in `Pages.css`. Respect `[data-theme="dark"]`.
 - **Touch**: Set `touch-action: none` on canvas element. One finger draws, two fingers zoom/pan. Never allow browser-level pinch-zoom over the canvas.

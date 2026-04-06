@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-04-05",
+  "risks": [
+    {
+      "id": "RISK-001",
+      "title": "Live-class regressions during sync consolidation",
+      "severity": "critical",
+      "likelihood": "medium",
+      "mitigation": [
+        "Use release flag and kill switch",
+        "Run mobile and reconnect regression suites",
+        "Keep compatibility fallback during one release window"
+      ],
+      "owner": "engineering"
+    },
+    {
+      "id": "RISK-002",
+      "title": "Data loss during local-to-server migration",
+      "severity": "high",
+      "likelihood": "medium",
+      "mitigation": [
+        "Dual-read and parity verification",
+        "Do not destructively delete local state before validation",
+        "Add rollback path to local reads"
+      ],
+      "owner": "engineering"
+    },
+    {
+      "id": "RISK-003",
+      "title": "Deployment ambiguity causes misconfigured production release",
+      "severity": "high",
+      "likelihood": "medium",
+      "mitigation": [
+        "Approve one canonical frontend host",
+        "Document environment promotion path",
+        "Block deploys on incomplete checks"
+      ],
+      "owner": "platform"
+    },
+    {
+      "id": "RISK-004",
+      "title": "Feature flags remain non-operative as release controls",
+      "severity": "high",
+      "likelihood": "high",
+      "mitigation": [
+        "Implement runtime gate layer",
+        "Require expiry metadata for new flags",
+        "Add flag validation to release checklist"
+      ],
+      "owner": "engineering"
+    },
+    {
+      "id": "RISK-005",
+      "title": "Content migration from bundled JS takes longer than expected",
+      "severity": "high",
+      "likelihood": "high",
+      "mitigation": [
+        "Start with manifests for highest-traffic subjects first",
+        "Keep hybrid mode behind migration flag",
+        "Automate content export pipeline"
+      ],
+      "owner": "engineering"
+    },
+    {
+      "id": "RISK-006",
+      "title": "Observability blind spots delay incident response",
+      "severity": "high",
+      "likelihood": "medium",
+      "mitigation": [
+        "Add production error tracking",
+        "Create release-health dashboard",
+        "Define alert thresholds and owners"
+      ],
+      "owner": "platform"
+    },
+    {
+      "id": "RISK-007",
+      "title": "TypeScript migration expands scope and slows delivery",
+      "severity": "medium",
+      "likelihood": "medium",
+      "mitigation": [
+        "Limit initial migration to services and hooks",
+        "Do not require full app conversion in phase 1",
+        "Use typed boundaries first"
+      ],
+      "owner": "engineering"
+    },
+    {
+      "id": "RISK-008",
+      "title": "Privacy obligations are assumed incorrectly",
+      "severity": "high",
+      "likelihood": "medium",
+      "mitigation": [
+        "Confirm data residency and retention requirements",
+        "Review student-data handling with stakeholder",
+        "Add deletion and export policy before major migrations"
+      ],
+      "owner": "product"
+    },
+    {
+      "id": "RISK-009",
+      "title": "Internal-only pages continue shipping to end users",
+      "severity": "medium",
+      "likelihood": "high",
+      "mitigation": [
+        "Review routes for product relevance",
+        "Move QA and educational pages to docs or protected tools",
+        "Add navigation ownership review"
+      ],
+      "owner": "product-engineering"
+    },
+    {
+      "id": "RISK-010",
+      "title": "CDN/object storage migration breaks PDF access paths",
+      "severity": "medium",
+      "likelihood": "medium",
+      "mitigation": [
+        "Publish manifests with fallback URLs during cutover",
+        "Run availability checks on high-traffic PDFs",
+        "Roll out subject by subject"
+      ],
+      "owner": "platform"
+    }
+  ]
+}

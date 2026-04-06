@@ -377,6 +377,40 @@
   margin: 0 0 var(--space-4);
 }
 
+.admin-observability-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.admin-observability-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.admin-section-heading {
+  padding: var(--space-4) var(--space-4) 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.admin-log-message {
+  max-width: 420px;
+  word-break: break-word;
+}
+
+.admin-pending-notice--healthy {
+  color: var(--color-success);
+  background: color-mix(in srgb, var(--color-success) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-success) 30%, transparent);
+}
+
+.admin-pending-notice--degraded {
+  color: var(--color-accent);
+}
+
 .flag-list {
   display: flex;
   flex-direction: column;

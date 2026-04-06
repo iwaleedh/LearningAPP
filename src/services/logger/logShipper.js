@@ -8,6 +8,16 @@
 import { callMutation } from '../../convex-client.js';
 import { api } from '../../../convex/_generated/api.js';
 
+let shipState = {
+  lastSuccessAt: null,
+  lastFailureAt: null,
+  lastError: null,
+};
+
+export function getLogShippingState() {
+  return { ...shipState };
+}
+
 /**
  * Ship a batch of log entries to the Convex backend.
  * @param {Array} entries — Array of log entry objects from logBuffer
@@ -16,8 +26,19 @@ export function shipLogs(entries) {
   if (!entries || entries.length === 0) return;
 
   // Fire-and-forget — don't await, don't block UI
-  callMutation(api.logs.ingestLogBatch, { entries }).catch(() => {
-    // Transport failed — silent drop. The console output from logger.js
-    // already captured these entries for local dev.
-  });
+  callMutation(api.logs.ingestLogBatch, { entries })
+    .then(() => {
+      shipState = {
+        lastSuccessAt: Date.now(),
+        lastFailureAt: shipState.lastFailureAt,
+        lastError: null,
+      };
+    })
+    .catch((error) => {
+      shipState = {
+        lastSuccessAt: shipState.lastSuccessAt,
+        lastFailureAt: Date.now(),
+        lastError: error?.message || 'Unknown transport error',
+      };
+    });
 }

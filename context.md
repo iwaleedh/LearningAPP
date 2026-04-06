@@ -10,8 +10,8 @@
 
 ### 1a. Auth Token Logging (CRITICAL — Fixed ✅)
 
-**File:** `src/spacetime.js`  
-**Issue:** `console.log('SpacetimeDB Connected!', { identity, token: tokenStr })` logged the full auth token to the browser console in all environments, exposing credentials in production.  
+**File:** Historical legacy realtime client module (removed)  
+**Issue:** A legacy realtime client logged the full auth token to the browser console in all environments, exposing credentials in production.  
 **Fix:** Wrapped all three `console.log` calls in `if (import.meta.env.DEV) { ... }` guards. The token is no longer included in even the dev log.
 
 ### 1b. XSS via dangerouslySetInnerHTML (HIGH — Fixed ✅)
@@ -147,8 +147,8 @@
 | Issue | Location | Notes |
 | ----- | -------- | ----- |
 | `npm audit` warnings | `package.json` | Run `npm audit fix` periodically; no critical CVSS ≥ 7 in app dependencies |
-| SpacetimeDB WASM bundle size | Build output | ~2MB WASM chunk is expected; consider lazy-loading if needed post-deploy |
-| TeacherDashboard / LiveClass pages | `/teacher`, `/live/:id` | Feature-complete but tied to SpacetimeDB live session tables — test with real server |
+| Large route bundle output | Build output | Continue reducing runtime bundle weight as note and exercise delivery moves off bundled JS |
+| TeacherDashboard / LiveClass pages | `/teacher`, `/live/:id` | Feature-complete but still need regression coverage against the Convex-backed live session flows |
 | PDF fallback iframe | `NotePage.jsx` | PDFs served from `/public/notes/` — ensure all PDF files are present in production build |
 | `og:url` and `og:image` meta | `index.html` | Add final production domain + social image once deploy URL is known |
 
@@ -158,7 +158,7 @@
 
 | File | Change |
 | ---- | ------ |
-| `src/spacetime.js` | DEV-guard 3 console.log calls; remove token from log |
+| legacy realtime client module | DEV-guard 3 console.log calls; remove token from log |
 | `src/components/notes/NoteBlockRenderer.jsx` | Install + add DOMPurify; wrap all 13 dangerouslySetInnerHTML with safe()/safeSvg() |
 | `src/context/ThemeProvider.jsx` | Implement real useState-based theme toggle with localStorage persistence |
 | `src/index.css` | Add [data-theme="light"] CSS variable block |

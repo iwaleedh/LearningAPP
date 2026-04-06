@@ -1,0 +1,374 @@
+{
+  "generatedAt": "2026-04-06",
+  "program": "living-textbook-modernization",
+  "scale": {
+    "seedNoteFiles": 2020,
+    "exerciseFiles": 354,
+    "builtAssets": 2463,
+    "pastPaperFiles": 4462,
+    "sampledRepoFiles": 8783
+  },
+  "items": [
+    {
+      "id": "MOD-001",
+      "title": "Declare Convex as canonical backend",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "architecture",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "small",
+      "estimateDays": 1,
+      "remove": [
+        "spacetime-backend",
+        "SpacetimeDB naming in docs"
+      ],
+      "acceptanceCriteria": [
+        "AGENTS.md and CLAUDE.md describe Convex as the active backend",
+        "A deprecation notice is added for SpacetimeDB artifacts",
+        "No runtime docs describe SpacetimeDB as current production path"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "MOD-002",
+      "title": "Remove dead SpacetimeDB repo subtree",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "deprecation",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "small",
+      "estimateDays": 1,
+      "acceptanceCriteria": [
+        "The unused spacetime-backend directory is removed or archived outside the product repo",
+        "No CI, docs, or package references point to SpacetimeDB",
+        "Migration note exists for historical recovery if needed"
+      ],
+      "dependencies": [
+        "MOD-001"
+      ]
+    },
+    {
+      "id": "MOD-003",
+      "title": "Fix useSyllabus regression and failing tests",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "quality",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "small",
+      "estimateDays": 1,
+      "acceptanceCriteria": [
+        "All automated tests pass",
+        "useSyllabus uses explicit dedup and retry-safe fetch guarding",
+        "The failing tests in useSyllabus.test.js and memory-stability.test.js pass without weakening assertions"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "MOD-004",
+      "title": "Split runtime lint from pipeline lint",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "tooling",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "small",
+      "estimateDays": 2,
+      "acceptanceCriteria": [
+        "App runtime lint can pass independently of archived content-generation scripts",
+        "Historical scripts are either excluded or moved under a separate lint target",
+        "CI enforces runtime lint on src, convex, public, and active scripts only"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "MOD-005",
+      "title": "Standardize frontend deployment path",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "platform",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "medium",
+      "estimateDays": 3,
+      "acceptanceCriteria": [
+        "One production frontend host is approved and documented",
+        "Build base path, deploy scripts, and hosting config align with the chosen host",
+        "Preview and production environments are defined and reproducible"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "MOD-006",
+      "title": "Enforce runtime feature flags",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "release-engineering",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "medium",
+      "estimateDays": 4,
+      "acceptanceCriteria": [
+        "Feature flags gate routes, navigation, and page entry points",
+        "At least one kill switch exists for live class and one for uploads or payments",
+        "Flag metadata includes owner, purpose, and sunset date"
+      ],
+      "dependencies": [
+        "MOD-005"
+      ]
+    },
+    {
+      "id": "MOD-007",
+      "title": "Add frontend CI quality gate",
+      "status": "completed",
+      "completedAt": "2026-04-05",
+      "category": "ci-cd",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "medium",
+      "estimateDays": 3,
+      "acceptanceCriteria": [
+        "CI runs build, runtime lint, unit tests, and required Playwright smoke/mobile jobs",
+        "Production deploys cannot proceed on failing checks",
+        "Artifacts are uploaded on failure for debugging"
+      ],
+      "dependencies": [
+        "MOD-003",
+        "MOD-004"
+      ]
+    },
+    {
+      "id": "MOD-008",
+      "title": "Implement observability baseline",
+      "status": "completed",
+      "completedAt": "2026-04-06",
+      "category": "observability",
+      "priority": "P0",
+      "impact": "high",
+      "effort": "medium",
+      "estimateDays": 4,
+      "acceptanceCriteria": [
+        "Frontend exceptions are captured in production error monitoring",
+        "Release health and core funnel dashboards exist",
+        "Alert rules are defined for major error spikes and degraded critical flows"
+      ],
+      "dependencies": [
+        "MOD-005"
+      ]
+    },
+    {
+      "id": "MOD-009",
+      "title": "Consolidate read progress into Convex",
+      "status": "completed",
+      "completedAt": "2026-04-06",
+      "category": "data",
+      "priority": "P1",
+      "impact": "high",
+      "effort": "medium",
+      "estimateDays": 4,
+      "acceptanceCriteria": [
+        "Read progress is canonical in Convex for authenticated users",
+        "Local read state is migrated without loss",
+        "Cross-device read progress is verified in QA"
+      ],
+      "dependencies": [
+        "MOD-007"
+      ]
+    },
+    {
+      "id": "MOD-010",
+      "title": "Consolidate activity metrics into server-backed projections",
+      "status": "completed",
+      "completedAt": "2026-04-06",
+      "category": "data",
+      "priority": "P1",
+      "impact": "high",
+      "effort": "medium",
+      "estimateDays": 5,
+      "acceptanceCriteria": [
+        "Home and progress metrics no longer rely on local-only counters for authenticated users",
+        "Badge and activity projections are derived from server events",
+        "Legacy local counters are migrated or deprecated"
+      ],
+      "dependencies": [
+        "MOD-009"
+      ]
+    },
+    {
+      "id": "MOD-011",
+      "title": "Refactor noteStore into explicit offline and Convex adapters",
+      "category": "architecture",
+      "priority": "P1",
+      "impact": "high",
+      "effort": "large",
+      "estimateDays": 7,
+      "acceptanceCriteria": [
+        "Guest/offline and authenticated storage paths are implemented in separate modules",
+        "Callers use a thin orchestrator instead of branching through a monolithic service",
+        "Contract tests cover offline, authenticated, and fallback behavior"
+      ],
+      "dependencies": [
+        "MOD-009",
+        "MOD-010"
+      ]
+    },
+    {
+      "id": "MOD-012",
+      "title": "Consolidate live-class sync architecture",
+      "category": "real-time",
+      "priority": "P1",
+      "impact": "high",
+      "effort": "large",
+      "estimateDays": 10,
+      "acceptanceCriteria": [
+        "Convex-backed sync is canonical for admitted sessions",
+        "BroadcastChannel is retained only as same-browser resilience transport where needed",
+        "Teacher and student live-class flows pass regression tests across offline and reconnect scenarios"
+      ],
+      "dependencies": [
+        "MOD-006",
+        "MOD-008"
+      ]
+    },
+    {
+      "id": "MOD-013",
+      "title": "Move internal pages out of product runtime",
+      "category": "product-boundary",
+      "priority": "P1",
+      "impact": "medium",
+      "effort": "medium",
+      "estimateDays": 3,
+      "acceptanceCriteria": [
+        "AdvancedPage internal test utilities are removed from the main app or protected behind internal-only access",
+        "BackendArchitecturesPage is moved to docs or removed from app routing",
+        "Production navigation and routing only expose product-relevant destinations"
+      ],
+      "dependencies": [
+        "MOD-005"
+      ]
+    },
+    {
+      "id": "MOD-014",
+      "title": "Introduce frontend TypeScript migration rules",
+      "category": "maintainability",
+      "priority": "P1",
+      "impact": "medium",
+      "effort": "medium",
+      "estimateDays": 5,
+      "acceptanceCriteria": [
+        "TypeScript is enabled for selected frontend paths",
+        "Services and hooks use typed DTOs and return contracts",
+        "Migration rules prevent broad unsafe any usage"
+      ],
+      "dependencies": [
+        "MOD-004"
+      ]
+    },
+    {
+      "id": "MOD-015",
+      "title": "Restructure repo into app, pipeline, and docs boundaries",
+      "category": "repo-hygiene",
+      "priority": "P1",
+      "impact": "medium",
+      "effort": "medium",
+      "estimateDays": 4,
+      "acceptanceCriteria": [
+        "Content-generation scripts and extracted artifacts no longer sit in the application root",
+        "README and contributor docs explain the new structure",
+        "Tooling targets map cleanly to runtime code versus pipeline code"
+      ],
+      "dependencies": [
+        "MOD-004"
+      ]
+    },
+    {
+      "id": "MOD-016",
+      "title": "Version external HTTP APIs",
+      "category": "api",
+      "priority": "P1",
+      "impact": "medium",
+      "effort": "medium",
+      "estimateDays": 3,
+      "acceptanceCriteria": [
+        "External endpoints are exposed through a versioned path structure",
+        "Deprecation headers and compatibility policy are documented",
+        "Contract tests exist for each versioned endpoint"
+      ],
+      "dependencies": [
+        "MOD-005"
+      ]
+    },
+    {
+      "id": "MOD-017",
+      "title": "Move PDFs to dedicated object storage and CDN",
+      "category": "performance",
+      "priority": "P2",
+      "impact": "high",
+      "effort": "large",
+      "estimateDays": 8,
+      "acceptanceCriteria": [
+        "Past-paper and note PDF assets are served from dedicated object storage/CDN",
+        "App bundle and frontend host are not responsible for large binary distribution",
+        "Access control and cache headers are defined for protected and public assets"
+      ],
+      "dependencies": [
+        "MOD-005"
+      ]
+    },
+    {
+      "id": "MOD-018",
+      "title": "Re-platform note and exercise delivery away from bundled JS",
+      "category": "performance",
+      "priority": "P2",
+      "impact": "high",
+      "effort": "extra-large",
+      "estimateDays": 15,
+      "acceptanceCriteria": [
+        "Notes and exercises are fetched through manifests or content assets rather than statically bundled modules",
+        "Bundle budgets are met for home and note routes",
+        "Content authoring and publishing pipeline remains deterministic"
+      ],
+      "dependencies": [
+        "MOD-015",
+        "MOD-017"
+      ]
+    },
+    {
+      "id": "MOD-019",
+      "title": "Add accessibility and performance gates to QA",
+      "category": "quality",
+      "priority": "P2",
+      "impact": "medium",
+      "effort": "medium",
+      "estimateDays": 4,
+      "acceptanceCriteria": [
+        "Critical flows run automated accessibility checks in E2E",
+        "Performance budgets are enforced in CI or release checks",
+        "QA checklist includes keyboard, mobile overflow, and offline resilience validation"
+      ],
+      "dependencies": [
+        "MOD-007",
+        "MOD-008"
+      ]
+    },
+    {
+      "id": "MOD-020",
+      "title": "Retire legacy localStorage migration helpers",
+      "category": "deprecation",
+      "priority": "P3",
+      "impact": "medium",
+      "effort": "small",
+      "estimateDays": 2,
+      "acceptanceCriteria": [
+        "Migration success threshold is defined and met",
+        "Legacy note asset migration code is removed",
+        "Rollback/archive guidance exists for any straggler users"
+      ],
+      "dependencies": [
+        "MOD-011"
+      ]
+    }
+  ]
+}

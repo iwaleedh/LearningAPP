@@ -13,6 +13,7 @@ import ExportPDF from '../components/student/ExportPDF.jsx';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
 import { useSyllabus } from '../hooks/useSyllabus.js';
+import { trackNoteEvent } from '../services/observability/clientTelemetry.js';
 import './Pages.css';
 import './NotePage.css';
 
@@ -623,6 +624,9 @@ export default function NotePage() {
     const isPhoneLayout = useViewportMatch('(max-width: 599px)');
     const notePageRef = useRef(null);
     const swipeStartRef = useRef(null);
+    const lastTrackedNoteViewRef = useRef('');
+    const previousRecallOpenRef = useRef(false);
+    const previousFullscreenActiveRef = useRef(fullscreenActive);
 
     const setScrollAreaRef = useCallback((node) => {
         scrollRef.current = node;
@@ -760,6 +764,58 @@ export default function NotePage() {
     const showMobileTopicsTrigger = Boolean(activeUnit) && isPhoneLayout && !fullscreenActive;
     const showInlineStudyTools = hasNote && !isPhoneLayout && !fullscreenActive;
     const showReadProgressStrip = hasNote && !fullscreenActive;
+
+    useEffect(() => {
+        if (!hasNote || seedNoteStatus !== 'ready') return;
+        if (lastTrackedNoteViewRef.current === noteId) return;
+
+        lastTrackedNoteViewRef.current = noteId;
+        trackNoteEvent('note_view', {
+            route: `/notes/${context.subject}/${context.unitId}/${context.topicId}/${context.subtopicIndex}`,
+            noteId,
+            subject: context.subject,
+            unitId: context.unitId,
+            topicId: context.topicId,
+            subtopicIndex: context.subtopicIndex,
+            hasRecall: hasCues,
+            layout: isPhoneLayout ? 'phone' : isCompactLayout ? 'tablet' : 'desktop',
+        });
+    }, [context.subject, context.subtopicIndex, context.topicId, context.unitId, hasCues, hasNote, isCompactLayout, isPhoneLayout, noteId, seedNoteStatus]);
+
+    useEffect(() => {
+        if (!hasNote) {
+            previousRecallOpenRef.current = recallOpen;
+            return;
+        }
+
+        if (recallOpen && !previousRecallOpenRef.current) {
+            trackNoteEvent('recall_open', {
+                route: `/notes/${context.subject}/${context.unitId}/${context.topicId}/${context.subtopicIndex}`,
+                noteId,
+                subject: context.subject,
+            });
+        }
+
+        previousRecallOpenRef.current = recallOpen;
+    }, [context.subject, context.subtopicIndex, context.topicId, context.unitId, hasNote, noteId, recallOpen]);
+
+    useEffect(() => {
+        if (!hasNote) {
+            previousFullscreenActiveRef.current = fullscreenActive;
+            return;
+        }
+
+        if (fullscreenActive && !previousFullscreenActiveRef.current) {
+            trackNoteEvent('fullscreen_enter', {
+                route: `/notes/${context.subject}/${context.unitId}/${context.topicId}/${context.subtopicIndex}`,
+                noteId,
+                subject: context.subject,
+                mobile: isPhoneLayout,
+            });
+        }
+
+        previousFullscreenActiveRef.current = fullscreenActive;
+    }, [context.subject, context.subtopicIndex, context.topicId, context.unitId, fullscreenActive, hasNote, isPhoneLayout, noteId]);
     const showFooterNextLink = Boolean(nextSubtopicParams);
     // Include overflowMenuOpen so toolbar doesn't auto-hide while the overflow menu is open
     const isAnySheetOpen = tocSheetOpen || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen) || overflowMenuOpen;

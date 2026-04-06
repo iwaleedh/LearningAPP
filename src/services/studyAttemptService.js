@@ -1,4 +1,5 @@
 import { api, callMutation, getClient } from '../convex-client.js';
+import { notifyActivityUpdated } from './activityStore.js';
 
 function clampPercent(value) {
     if (typeof value !== 'number' || Number.isNaN(value)) return undefined;
@@ -59,6 +60,7 @@ export async function recordStudyAttempt(payload) {
             metadataJson: stringifyMetadata(payload.metadata),
             clientAttemptId,
         });
+        notifyActivityUpdated();
         return { success: true, data: result };
     } catch (error) {
         console.error('[StudyAttemptService] recordAttempt failed:', error);

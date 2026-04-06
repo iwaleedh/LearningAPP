@@ -60,3 +60,43 @@ test('getMyActivityMetrics counts exercise attempts and past paper action views 
     updatedAt: 30,
   });
 });
+
+test('getMyActivityMetrics prefers projection rows when available', async () => {
+  const { ctx } = createMockConvexCtx({
+    identity: { subject: 'student_metrics', role: 'student' },
+    tables: {
+      users: [{
+        _id: 'users:student_metrics',
+        userId: 'student_metrics',
+        username: 'Metrics Student',
+        role: 'student',
+        accountStatus: 'approved',
+        createdAt: 1,
+      }],
+      activityMetricProjections: [{
+        _id: 'activityMetricProjections:1',
+        ownerUserId: 'student_metrics',
+        exercisesDone: 9,
+        papersViewed: 4,
+        updatedAt: 50,
+      }],
+      studyAttempts: [{
+        _id: 'studyAttempts:1',
+        ownerUserId: 'student_metrics',
+        sourceType: 'exercise',
+        activityType: 'mcq',
+        subject: 'chemistry',
+        questionKey: 'chemistry:1',
+        prompt: 'Exercise',
+        createdAt: 10,
+      }],
+    },
+  });
+
+  const summary = await getMyActivityMetricsHandler(ctx, {});
+  assert.deepEqual(summary, {
+    exercisesDone: 9,
+    papersViewed: 4,
+    updatedAt: 50,
+  });
+});

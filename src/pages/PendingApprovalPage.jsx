@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api.js';
 import { useAuth } from '../hooks/useAuth.js';
+import { useFeatureFlags } from '../hooks/useFeatureFlags.js';
 import {
   Clock, CheckCircle, Upload, FileText, AlertCircle, Loader,
 } from 'lucide-react';
@@ -272,10 +273,23 @@ function PaymentSubmitted({ request }) {
   );
 }
 
+function PaymentUnavailable() {
+  return (
+    <div className="payment-rejected-banner">
+      <AlertCircle size={16} />
+      <div>
+        <strong>Payment submissions are temporarily unavailable.</strong>
+        {' '}Please contact the admin to complete approval manually.
+      </div>
+    </div>
+  );
+}
+
 // ── Main Page ─────────────────────────────────────────────────────────────────
 
 export default function PendingApprovalPage() {
   const { isSignedIn, signOut, username } = useAuth();
+  const { isEnabled, isLoading: flagsLoading } = useFeatureFlags();
   const navigate = useNavigate();
 
   const statusResult  = useQuery(api.admin.getMyAccountStatus);
@@ -283,6 +297,7 @@ export default function PendingApprovalPage() {
 
   const accountStatus = statusResult?.accountStatus ?? 'pending';
   const email         = statusResult?.email ?? '';
+  const paymentsEnabled = isEnabled('payments');
 
   // Auto-redirect when approved
   useEffect(() => {
@@ -325,7 +340,7 @@ export default function PendingApprovalPage() {
   }
 
   // Loading state — wait for both queries
-  if (statusResult === undefined || paymentReq === undefined) {
+  if (flagsLoading || statusResult === undefined || paymentReq === undefined) {
     return (
       <div className="pending-page pending-page--payment">
         <div className="payment-page-card pending-loading-card card">
@@ -370,7 +385,7 @@ export default function PendingApprovalPage() {
         {/* Main content */}
         {hasActiveSubmission
           ? <PaymentSubmitted request={paymentReq} />
-          : <PaymentForm />
+          : paymentsEnabled ? <PaymentForm /> : <PaymentUnavailable />
         }
 
         {/* Footer */}
