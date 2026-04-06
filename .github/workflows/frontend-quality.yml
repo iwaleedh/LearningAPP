@@ -1,5 +1,4 @@
 name: Frontend Quality
-
 on:
   pull_request: {}
   push:

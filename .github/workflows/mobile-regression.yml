@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+---
 name: Mobile Regression
 "on":
   pull_request: {}
@@ -6,7 +8,7 @@ name: Mobile Regression
       - master
 
 concurrency:
-  group: "mobile-regression-${{ github.workflow }}-${{ github.ref }}"
+  group: mobile-regression-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:

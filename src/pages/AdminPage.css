@@ -403,8 +403,8 @@
 
 .admin-pending-notice--healthy {
   color: var(--color-success);
-  background: color-mix(in srgb, var(--color-success) 10%, transparent);
-  border-color: color-mix(in srgb, var(--color-success) 30%, transparent);
+  background: var(--color-success-light);
+  border-color: var(--color-success);
 }
 
 .admin-pending-notice--degraded {
