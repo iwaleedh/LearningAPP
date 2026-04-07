@@ -16,6 +16,51 @@ export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = n
   const [debugName, setDebugName] = useState('');
   const safeRedirectTo = sanitizeRedirectPath(redirectTo, '/');
   const modalRef = useRef(null);
+  const clerkAppearance = {
+    elements: {
+      rootBox: 'auth-clerk-root',
+      cardBox: 'auth-clerk-card-box',
+      card: 'auth-clerk-card',
+      main: 'auth-clerk-main',
+      header: 'auth-clerk-header',
+      headerTitle: 'auth-clerk-header-title',
+      headerSubtitle: 'auth-clerk-header-subtitle',
+      socialButtonsRoot: 'auth-clerk-social-root',
+      socialButtonsBlockButton: 'auth-clerk-social-button',
+      socialButtonsBlockButtonText: 'auth-clerk-social-button-text',
+      dividerLine: 'auth-clerk-divider-line',
+      dividerText: 'auth-clerk-divider-text',
+      formFieldLabel: 'auth-clerk-label',
+      formFieldInput: 'auth-clerk-input',
+      formFieldInputGroup: 'auth-clerk-input-group',
+      formFieldInputShowPasswordButton: 'auth-clerk-input-toggle',
+      formButtonPrimary: 'auth-clerk-primary-button',
+      footer: 'auth-clerk-footer',
+      footerAction: 'auth-clerk-footer-action',
+      footerActionText: 'auth-clerk-footer-text',
+      footerActionLink: 'auth-clerk-footer-link',
+      formFieldErrorText: 'auth-clerk-field-message auth-clerk-field-message--error',
+      formFieldSuccessText: 'auth-clerk-field-message',
+      formFieldWarningText: 'auth-clerk-field-message',
+      formResendCodeLink: 'auth-clerk-link',
+      identityPreviewText: 'auth-clerk-identity-text',
+      identityPreviewEditButton: 'auth-clerk-link',
+      otpCodeFieldInput: 'auth-clerk-input auth-clerk-otp-input',
+      alternativeMethodsBlockButton: 'auth-clerk-social-button',
+      alertText: 'auth-clerk-field-message',
+    },
+    variables: {
+      colorPrimary: 'var(--color-primary)',
+      colorText: 'var(--color-text)',
+      colorTextSecondary: 'var(--color-text-secondary)',
+      colorBackground: 'transparent',
+      colorInputBackground: 'var(--color-surface-elevated)',
+      colorInputText: 'var(--color-text)',
+      colorNeutral: 'var(--color-border)',
+      borderRadius: '14px',
+      fontFamily: 'var(--font-sans)',
+    },
+  };
 
   // A8: trap focus inside the modal while it is open
   useFocusTrap(modalRef, true, returnFocusEl);
@@ -118,13 +163,13 @@ export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = n
             <div className="auth-clerk-container">
               {tab === 'signin' ? (
                 <SignIn
-                  appearance={{ elements: { card: 'auth-clerk-card', rootBox: 'auth-clerk-root' } }}
+                  appearance={clerkAppearance}
                   forceRedirectUrl={safeRedirectTo}
                   fallbackRedirectUrl={safeRedirectTo}
                 />
               ) : (
                 <SignUp
-                  appearance={{ elements: { card: 'auth-clerk-card', rootBox: 'auth-clerk-root' } }}
+                  appearance={clerkAppearance}
                   forceRedirectUrl={safeRedirectTo}
                   fallbackRedirectUrl={safeRedirectTo}
                 />
