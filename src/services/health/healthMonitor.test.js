@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { healthMonitor } from './healthMonitor.js';
+import { buildHealthEndpointUrl, healthMonitor } from './healthMonitor.js';
 
 test('M4a: subscribe returns an unsubscribe function that removes the listener', () => {
     const before = healthMonitor.listenerCount();
@@ -39,4 +39,14 @@ test('M4d: getSnapshot returns a valid status object', () => {
 test('M4e: start and stop do not throw', () => {
     assert.doesNotThrow(() => healthMonitor.start());
     assert.doesNotThrow(() => healthMonitor.stop());
+});
+
+test('M4f: buildHealthEndpointUrl switches Convex cloud hosts to the site host', () => {
+    const endpointUrl = buildHealthEndpointUrl('https://astute-turtle-844.convex.cloud');
+    assert.equal(endpointUrl?.href, 'https://astute-turtle-844.convex.site/api/health');
+});
+
+test('M4g: buildHealthEndpointUrl preserves non-cloud hosts and appends the health path', () => {
+    const endpointUrl = buildHealthEndpointUrl('https://custom.example.com/sync');
+    assert.equal(endpointUrl?.href, 'https://custom.example.com/api/health');
 });
