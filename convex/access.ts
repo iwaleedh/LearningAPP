@@ -6,6 +6,7 @@ import {
   getAuthenticatedIdentity,
   getIdentitySessionId,
   getUserRecordById,
+  hasUnlimitedAccessWindow,
   resolveAccessStatus,
   requireAuthenticatedIdentity,
 } from "./authHelpers";
@@ -44,16 +45,17 @@ function normalizeUserAgent(value: string | undefined | null) {
 
 function buildAccessSummary(user: any, extra: Record<string, unknown> = {}) {
   const now = Date.now();
-  const accessExpiresAt = user?.accessExpiresAt ?? null;
+  const hasUnlimitedAccess = hasUnlimitedAccessWindow(user);
+  const accessExpiresAt = hasUnlimitedAccess ? null : user?.accessExpiresAt ?? null;
   return {
     accountStatus: user ? effectiveAccountStatus(user) : "pending",
     accessStatus: resolveAccessStatus(user, now),
     accessExpiresAt,
-    accessDurationMonths: user?.accessDurationMonths ?? null,
-    accessWindowStartedAt: user?.accessWindowStartedAt ?? null,
+    accessDurationMonths: hasUnlimitedAccess ? null : user?.accessDurationMonths ?? null,
+    accessWindowStartedAt: hasUnlimitedAccess ? null : user?.accessWindowStartedAt ?? null,
     firstSignInAt: user?.firstSignInAt ?? null,
     lastSignInAt: user?.lastSignInAt ?? null,
-    remainingMs: typeof accessExpiresAt === "number" && accessExpiresAt > now ? accessExpiresAt - now : 0,
+    remainingMs: !hasUnlimitedAccess && typeof accessExpiresAt === "number" && accessExpiresAt > now ? accessExpiresAt - now : 0,
     ...extra,
   };
 }
@@ -165,6 +167,10 @@ export const selectAccessWindow = mutation({
       throw new Error("User not found.");
     }
 
+    if (hasUnlimitedAccessWindow(user)) {
+      throw new Error("Admin accounts have unlimited access and do not use access windows.");
+    }
+
     const status = effectiveAccountStatus(user);
     if (status === "pending") {
       throw new Error("Account pending approval.");
@@ -264,6 +270,9 @@ export const revokeExpiredAccessSessions = internalMutation({
     let revokedSessions = 0;
     for (const user of expiredUsers) {
       if (effectiveAccountStatus(user) !== "approved") {
+        continue;
+      }
+      if (hasUnlimitedAccessWindow(user)) {
         continue;
       }
       if (typeof user.accessExpiresAt !== "number" || user.accessExpiresAt <= 0) {

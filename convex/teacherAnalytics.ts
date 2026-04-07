@@ -1,5 +1,5 @@
 import { query } from "./_generated/server";
-import { effectiveAccountStatus, requireTeacher } from "./authHelpers";
+import { effectiveAccountStatus, hasUnlimitedAccessWindow, requireTeacher } from "./authHelpers";
 
 const SUBJECT_LABELS: Record<string, string> = {
   chemistry: "AL Chemistry",
@@ -100,6 +100,7 @@ export const getDashboardSummary = query({
     const users = await ctx.db.query("users").collect();
     const students = users
       .filter((user) => user.role !== "teacher")
+      .filter((user) => !hasUnlimitedAccessWindow(user))
       .filter((user) => effectiveAccountStatus(user) === "approved");
 
     const studentIds = new Set(students.map((student) => student.userId));

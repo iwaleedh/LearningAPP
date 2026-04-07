@@ -563,7 +563,8 @@ export default function LiveClassPage() {
   const { sessionId } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
-  const { isAccessReady, role: authRole, userId: authUserId } = useAuth();
+  const { isAccessReady, role: authRole, userId: authUserId, isAdmin } = useAuth();
+  const hasTeacherAccess = authRole === 'teacher' || isAdmin;
   const { theme } = useTheme();
 
   const classId = sessionId ?? null;
@@ -1039,10 +1040,10 @@ export default function LiveClassPage() {
     setBackgroundType(navSession.backgroundType ?? 'white');
 
     if (isAccessReady) {
-      setRoleWithPriority(authRole === 'teacher' ? 'teacher' : 'student', 'nav');
+      setRoleWithPriority(hasTeacherAccess ? 'teacher' : 'student', 'nav');
       setStdbStatus((prev) => (prev === 'connected' ? prev : 'offline'));
     }
-  }, [authRole, classId, isAccessReady, location.state, setRoleWithPriority]);
+  }, [classId, hasTeacherAccess, isAccessReady, location.state, setRoleWithPriority]);
 
   // ── Refresh recovery for already-authorized sessions (local or cached) ─────
   useEffect(() => {
@@ -1057,7 +1058,7 @@ export default function LiveClassPage() {
       setBackgroundType(session.backgroundType ?? 'white');
 
       const isHost = Boolean(authUserId && session.hostUserId === authUserId);
-      setRoleWithPriority(isHost && authRole === 'teacher' ? 'teacher' : 'student', 'cache');
+      setRoleWithPriority(isHost && hasTeacherAccess ? 'teacher' : 'student', 'cache');
       setStdbStatus((prev) => (prev === 'connected' ? prev : 'offline'));
     }).catch(() => {
       // Keep the dedicated online bootstrap path below as the source of truth.
@@ -1066,7 +1067,7 @@ export default function LiveClassPage() {
     return () => {
       cancelled = true;
     };
-  }, [authRole, authUserId, classId, isAccessReady, location.state, setRoleWithPriority]);
+  }, [authUserId, classId, hasTeacherAccess, isAccessReady, location.state, setRoleWithPriority]);
 
   // ── Handle join-request flow (student arriving from JoinClassModal) ───────
   useEffect(() => {
@@ -1173,7 +1174,7 @@ export default function LiveClassPage() {
         setBackgroundType(session.backgroundType ?? 'white');
 
         const isHost = session.hostUserId === userId;
-        let hasTeacherRole = authRole === 'teacher';
+        let hasTeacherRole = hasTeacherAccess;
         try {
           hasTeacherRole = hasTeacherRole || await convexIsTeacher();
         } catch {
@@ -1203,7 +1204,7 @@ export default function LiveClassPage() {
       unsubError();
       unsubDisconnect();
     };
-  }, [authRole, classId, joinRequestId, location.state, setRoleWithPriority]);
+  }, [classId, hasTeacherAccess, joinRequestId, location.state, setRoleWithPriority]);
 
   // ── Teacher: subscribe to join requests ──────────────────────────────────
   useEffect(() => {

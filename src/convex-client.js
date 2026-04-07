@@ -464,7 +464,18 @@ export async function getMyRole() {
 
 export async function isTeacher() {
   const role = await getMyRole();
-  return role === 'teacher';
+  if (role === 'teacher') {
+    return true;
+  }
+  if (!convexClient || !currentUserId) {
+    return false;
+  }
+  try {
+    const accountStatus = await convexClient.query(api.admin.getMyAccountStatus, {});
+    return accountStatus?.isAdmin === true;
+  } catch {
+    return false;
+  }
 }
 
 export async function setTeacherRole(teacher) {

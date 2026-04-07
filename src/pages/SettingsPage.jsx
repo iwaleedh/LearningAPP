@@ -32,6 +32,7 @@ export default function SettingsPage() {
     } = useAuth();
     const { theme, toggleTheme } = useTheme();
     const role = authRole ?? 'student';
+    const hasTeacherAccess = role === 'teacher' || role === 'admin';
     const [guestSummary, setGuestSummary] = useState(null);
     const [guestActionState, setGuestActionState] = useState('idle');
     const [guestActionMessage, setGuestActionMessage] = useState('');
@@ -274,7 +275,7 @@ export default function SettingsPage() {
                         <div className="settings-profile-meta">
                             <h2>Profile</h2>
                             <span className="badge">{isSignedIn ? 'Signed In' : 'Guest Session'}</span>
-                            {role === 'teacher' && <span className="badge teacher-badge">Teacher</span>}
+                            {hasTeacherAccess && <span className="badge teacher-badge">Teacher Tools</span>}
                         </div>
                         <p className="settings-profile-name">{username}</p>
                         <p className="settings-profile-subtitle">
@@ -438,7 +439,7 @@ export default function SettingsPage() {
                             <ShieldCheck size={16} className="settings-inline-icon" />
                             Teacher Access
                         </h4>
-                        {role === 'teacher' ? (
+                        {hasTeacherAccess ? (
                             <p>
                                 This account can access teacher tools, including{' '}
                                 <Link to="/teacher" className="settings-inline-link">
@@ -457,12 +458,12 @@ export default function SettingsPage() {
                         )}
                     </div>
                     <div className="settings-access-actions">
-                        {role === 'teacher' && (
+                        {hasTeacherAccess && (
                             <span className="badge teacher-badge teacher-badge--compact">
-                                Teacher
+                                Teacher Tools
                             </span>
                         )}
-                        {role !== 'teacher' && (
+                        {!hasTeacherAccess && (
                             <span className="badge">Managed</span>
                         )}
                     </div>

@@ -149,11 +149,11 @@ function isTeacherIdentity(userId) {
 }
 
 function assertTeacherCanCreateLiveClass(hostUserId, actorRole) {
-  if (actorRole === 'teacher' || isTeacherIdentity(hostUserId)) {
+  if (actorRole === 'teacher' || actorRole === 'admin' || isTeacherIdentity(hostUserId)) {
     return;
   }
 
-  throw new Error('Only teacher accounts can create a live class.');
+  throw new Error('Only teacher or admin accounts can create a live class.');
 }
 
 function buildPreview(session) {
