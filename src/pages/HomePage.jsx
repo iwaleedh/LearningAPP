@@ -209,7 +209,7 @@ export default function HomePage() {
                         <Sparkles size={14} />
                         <span>Interactive Learning Platform</span>
                     </div>
-                    <h1>Welcome to Living Textbook</h1>
+                    <h1>Welcome to Study Smart</h1>
                     <p>Your personal, interactive study companion — notes, exercises, past papers, and flashcards, all in one place.</p>
                     <div className="welcome-actions">
                         {notesEnabled && (

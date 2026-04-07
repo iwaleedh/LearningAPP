@@ -1,7 +1,7 @@
 # context.md — Pre-Deployment Audit & Implementation Record
 
 **Date:** 2025  
-**App:** Living Textbook (LT) — React + Vite PWA  
+**App:** Study Smart (SS) — React + Vite PWA  
 **Purpose:** Documents all issues found and fixes applied before production deployment.
 
 ---

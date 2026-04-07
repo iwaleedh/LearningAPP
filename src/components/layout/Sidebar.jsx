@@ -88,7 +88,7 @@ export default function Sidebar({ isOpen, onToggle }) {
                             <BookOpen size={24} />
                         </div>
                         <div className="logo-text">
-                            <span className="logo-title">Living Textbook</span>
+                            <span className="logo-title">Study Smart</span>
                             <span className="logo-subtitle">Interactive Learning</span>
                         </div>
                     </Link>

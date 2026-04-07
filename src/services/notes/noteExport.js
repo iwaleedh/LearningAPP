@@ -197,7 +197,7 @@ export async function exportNotesAsPdf() {
     const boldFont = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
     const { drawLine, drawParagraph } = createPage(pdfDoc, regularFont);
 
-    drawLine('Living Textbook Notes Export', {
+    drawLine('Study Smart Notes Export', {
         size: 22,
         font: boldFont,
         color: rgb(0.15, 0.27, 0.6),

@@ -37,7 +37,7 @@ test.describe('teacher and auth mobile QA', () => {
     await expect(signInButton).toBeVisible();
     await signInButton.click();
 
-    const dialog = page.getByRole('dialog', { name: 'Living Textbook' });
+    const dialog = page.getByRole('dialog', { name: 'Study Smart' });
     await expect(dialog).toBeVisible();
 
     const continueAsTeacher = dialog.getByRole('button', { name: /continue as teacher/i });

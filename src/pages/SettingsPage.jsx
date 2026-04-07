@@ -481,7 +481,7 @@ export default function SettingsPage() {
 
             {/* About */}
             <div className="card settings-about-card">
-                <h4>About Living Textbook</h4>
+                <h4>About Study Smart</h4>
                 <p className="settings-about-desc">
                     An interactive learning platform built for students who want to go beyond passive reading.
                     Features include smart exercises, flashcards, past paper practice, and progress tracking.

@@ -173,7 +173,7 @@ test("sendLoginAlert marks the login event sent when SendGrid accepts the email"
 
     assert.equal(requestBody.personalizations[0].to[0].email, "alerts@example.com");
     assert.equal(requestBody.from.email, "noreply@example.com");
-    assert.match(requestBody.subject, /Living Textbook login: Student One/);
+    assert.match(requestBody.subject, /Study Smart login: Student One/);
     assert.equal(tables.loginEvents[0]?.emailDeliveryStatus, "sent");
     assert.equal(tables.loginEvents[0]?.emailRetryCount, 0);
     assert.equal(tables.emailDeliveryAttempts[0]?.status, "sent");

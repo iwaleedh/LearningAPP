@@ -1,4 +1,4 @@
-# Living Textbook Modernization Assessment And Target State
+# Study Smart Modernization Assessment And Target State
 
 ## Scope
 

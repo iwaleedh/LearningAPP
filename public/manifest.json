@@ -1,7 +1,7 @@
 {
-    "name": "Living Textbook",
-    "short_name": "Textbook",
-    "description": "Interactive Learning Platform — Notes, Exercises, Flashcards & Past Papers",
+    "name": "Study Smart",
+    "short_name": "StudySmart",
+    "description": "A-Level and O-Level revision with notes, flashcards, exercises, and past papers.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#0f0f23",
