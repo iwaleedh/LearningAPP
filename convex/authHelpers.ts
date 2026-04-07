@@ -22,12 +22,15 @@ type AccessTrackedUser = {
   email?: string;
   username?: string;
   accountStatus?: string;
+  trialStartedAt?: number;
+  trialExpiresAt?: number;
   accessExpiresAt?: number;
   accessRevokedAt?: number;
   accessRevokedReason?: string;
   sessionVersion?: number;
 };
 
+export type AccessGrantKind = "trial" | "paid" | "unlimited" | null;
 export type AccessStatus = "selection_required" | "active" | "expired" | "revoked" | "restricted";
 
 // ── Admin config — read from environment variables (S4 fix) ──────────
@@ -185,13 +188,36 @@ export function resolveAccessStatus(
   if (typeof user.accessRevokedAt === "number" && user.accessRevokedAt > 0) {
     return "revoked";
   }
-  if (typeof user.accessExpiresAt !== "number" || user.accessExpiresAt <= 0) {
-    return "selection_required";
+  const accessGrant = resolveAccessGrant(user, now);
+  if (accessGrant.kind) {
+    return "active";
   }
-  if (user.accessExpiresAt <= now) {
+  if (typeof user.accessExpiresAt === "number" && user.accessExpiresAt > 0 && user.accessExpiresAt <= now) {
     return "expired";
   }
-  return "active";
+  return "selection_required";
+}
+
+export function resolveAccessGrant(
+  user: AccessTrackedUser | null | undefined,
+  now = Date.now(),
+): { kind: AccessGrantKind; expiresAt: number | null } {
+  if (!user || effectiveAccountStatus(user) !== "approved") {
+    return { kind: null, expiresAt: null };
+  }
+  if (hasUnlimitedAccessWindow(user)) {
+    return { kind: "unlimited", expiresAt: null };
+  }
+  if (typeof user.accessRevokedAt === "number" && user.accessRevokedAt > 0) {
+    return { kind: null, expiresAt: null };
+  }
+  if (typeof user.accessExpiresAt === "number" && user.accessExpiresAt > now) {
+    return { kind: "paid", expiresAt: user.accessExpiresAt };
+  }
+  if (typeof user.trialExpiresAt === "number" && user.trialExpiresAt > now) {
+    return { kind: "trial", expiresAt: user.trialExpiresAt };
+  }
+  return { kind: null, expiresAt: null };
 }
 
 /**
