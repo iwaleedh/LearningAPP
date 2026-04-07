@@ -889,6 +889,11 @@ export default function NotePage() {
             setToolsSheetOpen(false);
             setOpenTopicId(null);
             setOverflowMenuOpen(false);
+            setMobileChromeHidden(false);
+            setMobileHeaderCondensed(false);
+            setScrollPct(0);
+            lastScrollTopRef.current = 0;
+            scrollRef.current?.scrollTo({ top: 0, behavior: 'auto' });
         });
 
         return () => window.cancelAnimationFrame(frameId);
