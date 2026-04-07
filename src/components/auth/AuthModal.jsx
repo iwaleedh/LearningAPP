@@ -164,12 +164,14 @@ export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = n
               {tab === 'signin' ? (
                 <SignIn
                   appearance={clerkAppearance}
+                  routing="virtual"
                   forceRedirectUrl={safeRedirectTo}
                   fallbackRedirectUrl={safeRedirectTo}
                 />
               ) : (
                 <SignUp
                   appearance={clerkAppearance}
+                  routing="virtual"
                   forceRedirectUrl={safeRedirectTo}
                   fallbackRedirectUrl={safeRedirectTo}
                 />
