@@ -4,6 +4,7 @@ import { v } from "convex/values";
 import {
   effectiveAccountStatus,
   getAuthenticatedIdentity,
+  resolveAccessGrant,
   resolveAccessStatus,
   getUserRecordById,
   hasUnlimitedAccessWindow,
@@ -17,6 +18,7 @@ const MAX_IDEMPOTENCY_KEY_LENGTH = 120;
 const MAX_ACCESS_EXTENSION_MS = 5 * 365 * 24 * 60 * 60 * 1000;
 const MAX_PENDING_LOGIN_ALERT_RETRIES = 3;
 const MAX_MANUAL_LOGIN_ALERT_RETRY_BATCH = 20;
+const TRIAL_DURATION_MS = 7 * 24 * 60 * 60 * 1000;
 const anyInternal = internal as any;
 
 async function revokeAuthSessionsForUser(ctx: any, userId: string, reason: string, revokedAt: number) {
@@ -69,6 +71,28 @@ function ensureManagedAccessWindowUser(user: { email?: string; username?: string
   }
 }
 
+function buildUserAccessSnapshot(user: any, now = Date.now()) {
+  const isAdminUser = hasUnlimitedAccessWindow(user);
+  const accessGrant = resolveAccessGrant(user, now);
+  return {
+    accountStatus: effectiveAccountStatus(user),
+    accessStatus: resolveAccessStatus(user, now),
+    accessGrantKind: accessGrant.kind,
+    accessExpiresAt: isAdminUser ? null : accessGrant.expiresAt ?? null,
+    paidAccessExpiresAt: isAdminUser ? null : user.accessExpiresAt ?? null,
+    accessDurationMonths: isAdminUser || accessGrant.kind !== "paid" ? null : user.accessDurationMonths ?? null,
+    accessWindowStartedAt: isAdminUser || accessGrant.kind !== "paid" ? null : user.accessWindowStartedAt ?? null,
+    trialStartedAt: user.trialStartedAt ?? null,
+    trialExpiresAt: user.trialExpiresAt ?? null,
+    hasUsedTrial: typeof user.trialStartedAt === "number",
+    firstSignInAt: user.firstSignInAt ?? null,
+    lastSignInAt: user.lastSignInAt ?? null,
+    role: user.role ?? "student",
+    email: user.email ?? null,
+    isAdmin: isAdminUser,
+  };
+}
+
 /**
  * Returns the calling user's account status + admin flag.
  * This query is allowed BEFORE approval (used by the pending page).
@@ -78,16 +102,21 @@ export const getMyAccountStatus = query({
   handler: async (ctx) => {
     const identity = await getAuthenticatedIdentity(ctx);
     if (!identity?.subject) {
-      return { accountStatus: null, role: "student", email: null, isAdmin: false };
+      return { accountStatus: null, role: "student", email: null, isAdmin: false, accessGrantKind: null, trialStartedAt: null, trialExpiresAt: null, hasUsedTrial: false };
     }
     const user = await getUserRecordById(ctx, identity.subject);
     if (!user) {
       return {
         accountStatus: "pending",
         accessStatus: "restricted",
+        accessGrantKind: null,
         accessExpiresAt: null,
+        paidAccessExpiresAt: null,
         accessDurationMonths: null,
         accessWindowStartedAt: null,
+        trialStartedAt: null,
+        trialExpiresAt: null,
+        hasUsedTrial: false,
         firstSignInAt: null,
         lastSignInAt: null,
         role: "student",
@@ -95,18 +124,10 @@ export const getMyAccountStatus = query({
         isAdmin: isAdminEmail(identity.email),
       };
     }
-    const isAdminUser = hasUnlimitedAccessWindow(user) || isAdminEmail(identity.email);
+    const snapshot = buildUserAccessSnapshot(user);
     return {
-      accountStatus: effectiveAccountStatus(user),
-      accessStatus: resolveAccessStatus(user),
-      accessExpiresAt: isAdminUser ? null : user.accessExpiresAt ?? null,
-      accessDurationMonths: isAdminUser ? null : user.accessDurationMonths ?? null,
-      accessWindowStartedAt: isAdminUser ? null : user.accessWindowStartedAt ?? null,
-      firstSignInAt: user.firstSignInAt ?? null,
-      lastSignInAt: user.lastSignInAt ?? null,
-      role: user.role ?? "student",
-      email: user.email ?? null,
-      isAdmin: isAdminUser,
+      ...snapshot,
+      isAdmin: snapshot.isAdmin || isAdminEmail(identity.email),
     };
   },
 });
@@ -128,14 +149,7 @@ export const listPendingUsers = query({
       _id: u._id,
       userId: u.userId,
       username: u.username,
-      email: u.email,
-      role: u.role,
-      accountStatus: effectiveAccountStatus(u),
-      accessStatus: resolveAccessStatus(u),
-      accessExpiresAt: isAdminUser ? null : u.accessExpiresAt,
-      accessDurationMonths: isAdminUser ? null : u.accessDurationMonths,
-      firstSignInAt: u.firstSignInAt,
-      lastSignInAt: u.lastSignInAt,
+      ...buildUserAccessSnapshot(u),
       avatarUrl: u.avatarUrl,
       createdAt: u.createdAt,
       isAdmin: isAdminUser,
@@ -158,14 +172,7 @@ export const listAllUsersAdmin = query({
       _id: u._id,
       userId: u.userId,
       username: u.username,
-      email: u.email,
-      role: u.role,
-      accountStatus: effectiveAccountStatus(u),
-      accessStatus: resolveAccessStatus(u),
-      accessExpiresAt: isAdminUser ? null : u.accessExpiresAt,
-      accessDurationMonths: isAdminUser ? null : u.accessDurationMonths,
-      firstSignInAt: u.firstSignInAt,
-      lastSignInAt: u.lastSignInAt,
+      ...buildUserAccessSnapshot(u),
       avatarUrl: u.avatarUrl,
       createdAt: u.createdAt,
       statusUpdatedAt: u.statusUpdatedAt,
@@ -184,12 +191,24 @@ export const approveUser = mutation({
     const adminId = await requireAdmin(ctx);
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
-    await ctx.db.patch(user._id, {
+    const now = Date.now();
+    const patch: Record<string, unknown> = {
       accountStatus: "approved",
-      statusUpdatedAt: Date.now(),
-    });
+      statusUpdatedAt: now,
+    };
+    if (effectiveAccountStatus(user) === "pending" && typeof user.trialStartedAt !== "number") {
+      patch.trialStartedAt = now;
+      patch.trialExpiresAt = now + TRIAL_DURATION_MS;
+      patch.accessRevokedAt = undefined;
+      patch.accessRevokedReason = undefined;
+    }
+    await ctx.db.patch(user._id, patch);
     await ctx.db.insert("auditLogs", {
-      actorId: adminId, action: "APPROVE_USER", targetId: userId, timestamp: Date.now()
+      actorId: adminId,
+      action: "APPROVE_USER",
+      targetId: userId,
+      details: JSON.stringify({ grantedTrial: typeof patch.trialStartedAt === "number" }),
+      timestamp: now,
     });
   },
 });
@@ -305,12 +324,16 @@ export const revokeUserAccess = mutation({
     const now = Date.now();
     const revokeReason = reason?.trim() || "Access revoked by administrator.";
 
-    await ctx.db.patch(user._id, {
+    const patch: Record<string, unknown> = {
       accessExpiresAt: now,
       accessRevokedAt: now,
       accessRevokedReason: revokeReason,
       sessionVersion: (user.sessionVersion ?? 1) + 1,
-    });
+    };
+    if (typeof user.trialStartedAt === "number") {
+      patch.trialExpiresAt = now;
+    }
+    await ctx.db.patch(user._id, patch);
     await revokeAuthSessionsForUser(ctx, userId, revokeReason, now);
     await ctx.db.insert("auditLogs", {
       actorId: adminUserId,
@@ -331,14 +354,18 @@ export const clearUserAccessWindow = mutation({
     ensureManagedAccessWindowUser(user);
 
     const now = Date.now();
-    await ctx.db.patch(user._id, {
+    const patch: Record<string, unknown> = {
       accessWindowStartedAt: undefined,
       accessDurationMonths: undefined,
       accessExpiresAt: undefined,
       accessRevokedAt: undefined,
       accessRevokedReason: undefined,
       sessionVersion: (user.sessionVersion ?? 1) + 1,
-    });
+    };
+    if (typeof user.trialStartedAt === "number") {
+      patch.trialExpiresAt = now;
+    }
+    await ctx.db.patch(user._id, patch);
     await revokeAuthSessionsForUser(ctx, userId, "Access window reset by administrator.", now);
     await ctx.db.insert("auditLogs", {
       actorId: adminUserId,
@@ -384,7 +411,7 @@ export const setUserAccessExpiry = mutation({
     const adminReason = normalizeAdminReason(reason, "Access expiry updated by administrator.");
     const nextSessionVersion = (user.sessionVersion ?? 1) + 1;
 
-    await ctx.db.patch(user._id, {
+    const patch: Record<string, unknown> = {
       accessWindowStartedAt: now,
       accessDurationMonths: undefined,
       accessExpiresAt,
@@ -392,18 +419,26 @@ export const setUserAccessExpiry = mutation({
       accessRevokedReason: undefined,
       sessionVersion: nextSessionVersion,
       statusUpdatedAt: now,
-    });
+    };
+    if (typeof user.trialStartedAt === "number") {
+      patch.trialExpiresAt = now;
+    }
+    await ctx.db.patch(user._id, patch);
     await revokeAuthSessionsForUser(ctx, userId, adminReason, now);
+
+    const nextUserState = {
+      ...user,
+      accessExpiresAt,
+      accessRevokedAt: undefined,
+      accessRevokedReason: undefined,
+      trialExpiresAt: typeof user.trialStartedAt === "number" ? now : user.trialExpiresAt,
+    };
 
     const response = {
       userId,
       accountStatus: effectiveAccountStatus(user),
-      accessStatus: resolveAccessStatus({
-        ...user,
-        accessExpiresAt,
-        accessRevokedAt: undefined,
-      }),
-      accessExpiresAt,
+      accessStatus: resolveAccessStatus(nextUserState),
+      accessExpiresAt: resolveAccessGrant(nextUserState).expiresAt,
       previousAccessExpiresAt: user.accessExpiresAt ?? null,
       sessionVersion: nextSessionVersion,
       appliedAt: now,

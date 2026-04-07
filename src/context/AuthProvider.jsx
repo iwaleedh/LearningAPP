@@ -117,9 +117,13 @@ function AuthContextProvider({ children }) {
   const [role, setRole] = useState('student');
   const [accountStatus, setAccountStatus] = useState(null);
   const [accessStatus, setAccessStatus] = useState(null);
+  const [accessGrantKind, setAccessGrantKind] = useState(null);
   const [accessExpiresAt, setAccessExpiresAt] = useState(null);
   const [accessDurationMonths, setAccessDurationMonths] = useState(null);
   const [accessWindowStartedAt, setAccessWindowStartedAt] = useState(null);
+  const [trialStartedAt, setTrialStartedAt] = useState(null);
+  const [trialExpiresAt, setTrialExpiresAt] = useState(null);
+  const [hasUsedTrial, setHasUsedTrial] = useState(false);
   const [firstSignInAt, setFirstSignInAt] = useState(null);
   const [lastSignInAt, setLastSignInAt] = useState(null);
   const [isAdminUser, setIsAdminUser] = useState(false);
@@ -142,9 +146,13 @@ function AuthContextProvider({ children }) {
   const applyAccessSummary = useCallback((statusResult) => {
     setAccountStatus(statusResult?.accountStatus ?? null);
     setAccessStatus(statusResult?.accessStatus ?? null);
+    setAccessGrantKind(statusResult?.accessGrantKind ?? null);
     setAccessExpiresAt(statusResult?.accessExpiresAt ?? null);
     setAccessDurationMonths(statusResult?.accessDurationMonths ?? null);
     setAccessWindowStartedAt(statusResult?.accessWindowStartedAt ?? null);
+    setTrialStartedAt(statusResult?.trialStartedAt ?? null);
+    setTrialExpiresAt(statusResult?.trialExpiresAt ?? null);
+    setHasUsedTrial(statusResult?.hasUsedTrial ?? false);
     setFirstSignInAt(statusResult?.firstSignInAt ?? null);
     setLastSignInAt(statusResult?.lastSignInAt ?? null);
   }, []);
@@ -154,9 +162,13 @@ function AuthContextProvider({ children }) {
     setRole('student');
     setAccountStatus(null);
     setAccessStatus(null);
+    setAccessGrantKind(null);
     setAccessExpiresAt(null);
     setAccessDurationMonths(null);
     setAccessWindowStartedAt(null);
+    setTrialStartedAt(null);
+    setTrialExpiresAt(null);
+    setHasUsedTrial(false);
     setFirstSignInAt(null);
     setLastSignInAt(null);
     setIsAdminUser(false);
@@ -313,7 +325,7 @@ function AuthContextProvider({ children }) {
   }, [applyAccessSummary, clerkSignOut, expectedAccessKey, forceExpirySignOut, getToken, isLoaded, isSignedIn, clerkUser, maybeOpenAccessSummary, resetSignedInState, sessionId]);
 
   useEffect(() => {
-    if (!isLoaded || !isSignedIn || accessStatus !== 'active') {
+    if (!isLoaded || !isSignedIn || (accountStatus !== 'pending' && accessStatus !== 'active')) {
       return undefined;
     }
     const client = getClient();
@@ -327,8 +339,17 @@ function AuthContextProvider({ children }) {
         const statusResult = await client.query(api.admin.getMyAccountStatus, {});
         if (cancelled) return;
         applyAccessSummary(statusResult);
+        const wasPendingApproval = accountStatus === 'pending' && statusResult?.accountStatus === 'approved';
         if (statusResult?.accessStatus === 'expired' || statusResult?.accessStatus === 'revoked') {
           await forceExpirySignOut(statusResult);
+          return;
+        }
+        if (statusResult?.accessStatus === 'selection_required') {
+          setAccessModalState({ mode: 'select' });
+          return;
+        }
+        if (wasPendingApproval && statusResult?.accessStatus === 'active') {
+          setAccessModalState({ mode: 'summary' });
         }
       } catch {
         // Non-fatal; backend request guards still enforce expiry.
@@ -350,7 +371,7 @@ function AuthContextProvider({ children }) {
       window.clearInterval(intervalId);
       document.removeEventListener('visibilitychange', handleVisibility);
     };
-  }, [accessStatus, applyAccessSummary, forceExpirySignOut, isLoaded, isSignedIn]);
+  }, [accessStatus, accountStatus, applyAccessSummary, forceExpirySignOut, isLoaded, isSignedIn]);
 
   const signOut = useCallback(async () => {
     await clerkSignOut();
@@ -396,9 +417,13 @@ function AuthContextProvider({ children }) {
       role: resolvedRole,
       accountStatus,
       accessStatus,
+      accessGrantKind,
       accessExpiresAt,
       accessDurationMonths,
       accessWindowStartedAt,
+      trialStartedAt,
+      trialExpiresAt,
+      hasUsedTrial,
       firstSignInAt,
       lastSignInAt,
       isAdmin: isAdminUser,
@@ -408,7 +433,7 @@ function AuthContextProvider({ children }) {
       selectAccessWindow,
       signOut,
     };
-  }, [accessDurationMonths, accessExpiresAt, accessStatus, accessWindowStartedAt, accountStatus, clerkUser, dbUser, expectedAccessKey, firstSignInAt, isAdminUser, isLoaded, isRegistrationPending, isSignedIn, lastSignInAt, role, selectAccessWindow, signOut, syncedAccessKey]);
+  }, [accessDurationMonths, accessExpiresAt, accessGrantKind, accessStatus, accessWindowStartedAt, accountStatus, clerkUser, dbUser, expectedAccessKey, firstSignInAt, hasUsedTrial, isAdminUser, isLoaded, isRegistrationPending, isSignedIn, lastSignInAt, role, selectAccessWindow, signOut, syncedAccessKey, trialExpiresAt, trialStartedAt]);
 
   return (
     <AuthContext.Provider value={value}>
@@ -417,8 +442,10 @@ function AuthContextProvider({ children }) {
         <AccessWindowModal
           mode={accessModalState.mode}
           username={value.username}
+          accessGrantKind={accessGrantKind}
           accessExpiresAt={accessExpiresAt}
           accessDurationMonths={accessDurationMonths}
+          hasUsedTrial={hasUsedTrial}
           busy={isSelectingAccessWindow}
           onClose={() => setAccessModalState(null)}
           onSelectDuration={selectAccessWindow}
@@ -501,9 +528,13 @@ function AnonymousAuthContextProvider({ children }) {
     role: devSession?.role || 'student',
     accountStatus: devSession ? 'approved' : null,
     accessStatus: devSession ? 'active' : null,
+    accessGrantKind: devSession ? 'unlimited' : null,
     accessExpiresAt: null,
     accessDurationMonths: null,
     accessWindowStartedAt: null,
+    trialStartedAt: null,
+    trialExpiresAt: null,
+    hasUsedTrial: false,
     firstSignInAt: null,
     lastSignInAt: null,
     isAdmin: devSession?.role === 'admin',

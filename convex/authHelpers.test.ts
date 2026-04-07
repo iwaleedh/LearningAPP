@@ -77,6 +77,32 @@ test("resolveAccessStatus keeps admin accounts active without an expiry", () => 
   assert.equal(resolveAccessStatus({ email: "iwaleedh@gmail.com", accountStatus: "approved" }), "active");
 });
 
+test("resolveAccessStatus treats an approved active trial as active access", () => {
+  const now = Date.now();
+
+  assert.equal(
+    resolveAccessStatus({
+      accountStatus: "approved",
+      trialStartedAt: now - 1_000,
+      trialExpiresAt: now + 7_000,
+    }, now),
+    "active",
+  );
+});
+
+test("resolveAccessStatus falls back to selection_required after a trial ends", () => {
+  const now = Date.now();
+
+  assert.equal(
+    resolveAccessStatus({
+      accountStatus: "approved",
+      trialStartedAt: now - 20_000,
+      trialExpiresAt: now - 1_000,
+    }, now),
+    "selection_required",
+  );
+});
+
 test("isTeacherUserId treats the configured admin email as teacher-capable", async () => {
   const { ctx } = createMockConvexCtx({
     identity: null,

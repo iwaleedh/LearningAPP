@@ -285,6 +285,41 @@ function PaymentUnavailable() {
   );
 }
 
+function ApprovalAwaitingState({ email, username }) {
+  return (
+    <div className="payment-submitted">
+      <div className="payment-submitted-icon"><Clock size={32} /></div>
+      <h2 className="payment-submitted-title">Awaiting Admin Approval</h2>
+      <p className="payment-submitted-msg">
+        Your account is waiting for an admin to approve it.
+        Once approved, your 7-day free trial starts automatically.
+      </p>
+      <div className="payment-submitted-details card">
+        <div className="payment-bank-row">
+          <span className="payment-bank-key">What happens next</span>
+          <span className="payment-bank-val">Admin approval unlocks your free trial</span>
+        </div>
+        <div className="payment-bank-row">
+          <span className="payment-bank-key">Trial length</span>
+          <span className="payment-bank-val">7 days</span>
+        </div>
+        <div className="payment-bank-row">
+          <span className="payment-bank-key">After the trial</span>
+          <span className="payment-bank-val">Choose a monthly or yearly access plan</span>
+        </div>
+        <div className="payment-bank-row">
+          <span className="payment-bank-key">Signed in as</span>
+          <span className="payment-bank-val">{email || username || '—'}</span>
+        </div>
+      </div>
+      <div className="payment-status-badge">
+        <span className="pending-status-dot waiting" />
+        Waiting for approval
+      </div>
+    </div>
+  );
+}
+
 // ── Main Page ─────────────────────────────────────────────────────────────────
 
 export default function PendingApprovalPage() {
@@ -353,6 +388,7 @@ export default function PendingApprovalPage() {
 
   const hasActiveSubmission = paymentReq && paymentReq.status === 'pending';
   const wasRejected         = paymentReq && paymentReq.status === 'rejected';
+  const canResubmitPayment  = Boolean(paymentReq) && wasRejected && paymentsEnabled;
 
   return (
     <div className="pending-page pending-page--payment">
@@ -361,9 +397,9 @@ export default function PendingApprovalPage() {
         <div className="payment-header">
           <div className="payment-header-icon">📚</div>
           <div>
-            <h1 className="payment-title">Subscribe to Study Smart</h1>
+            <h1 className="payment-title">Awaiting Approval</h1>
             <p className="payment-subtitle">
-              Hi{username ? `, ${username}` : ''}! Complete your subscription to get full access.
+              Hi{username ? `, ${username}` : ''}! An admin approval starts your 7-day free trial.
             </p>
           </div>
         </div>
@@ -385,7 +421,7 @@ export default function PendingApprovalPage() {
         {/* Main content */}
         {hasActiveSubmission
           ? <PaymentSubmitted request={paymentReq} />
-          : paymentsEnabled ? <PaymentForm /> : <PaymentUnavailable />
+          : canResubmitPayment ? <PaymentForm /> : paymentsEnabled ? <ApprovalAwaitingState email={email} username={username} /> : <PaymentUnavailable />
         }
 
         {/* Footer */}

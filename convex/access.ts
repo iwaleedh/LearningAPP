@@ -7,6 +7,7 @@ import {
   getIdentitySessionId,
   getUserRecordById,
   hasUnlimitedAccessWindow,
+  resolveAccessGrant,
   resolveAccessStatus,
   requireAuthenticatedIdentity,
 } from "./authHelpers";
@@ -46,13 +47,19 @@ function normalizeUserAgent(value: string | undefined | null) {
 function buildAccessSummary(user: any, extra: Record<string, unknown> = {}) {
   const now = Date.now();
   const hasUnlimitedAccess = hasUnlimitedAccessWindow(user);
-  const accessExpiresAt = hasUnlimitedAccess ? null : user?.accessExpiresAt ?? null;
+  const accessGrant = resolveAccessGrant(user, now);
+  const accessExpiresAt = hasUnlimitedAccess ? null : accessGrant.expiresAt ?? null;
   return {
     accountStatus: user ? effectiveAccountStatus(user) : "pending",
     accessStatus: resolveAccessStatus(user, now),
+    accessGrantKind: accessGrant.kind,
     accessExpiresAt,
-    accessDurationMonths: hasUnlimitedAccess ? null : user?.accessDurationMonths ?? null,
-    accessWindowStartedAt: hasUnlimitedAccess ? null : user?.accessWindowStartedAt ?? null,
+    paidAccessExpiresAt: hasUnlimitedAccess ? null : user?.accessExpiresAt ?? null,
+    accessDurationMonths: hasUnlimitedAccess || accessGrant.kind !== "paid" ? null : user?.accessDurationMonths ?? null,
+    accessWindowStartedAt: hasUnlimitedAccess || accessGrant.kind !== "paid" ? null : user?.accessWindowStartedAt ?? null,
+    trialStartedAt: user?.trialStartedAt ?? null,
+    trialExpiresAt: user?.trialExpiresAt ?? null,
+    hasUsedTrial: typeof user?.trialStartedAt === "number",
     firstSignInAt: user?.firstSignInAt ?? null,
     lastSignInAt: user?.lastSignInAt ?? null,
     remainingMs: !hasUnlimitedAccess && typeof accessExpiresAt === "number" && accessExpiresAt > now ? accessExpiresAt - now : 0,

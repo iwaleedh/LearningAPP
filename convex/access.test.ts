@@ -2,13 +2,14 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import { finalizeSignIn, revokeExpiredAccessSessions, selectAccessWindow } from "./access";
-import { retryPendingLoginAlerts, revokeUserAccess, setUserAccessExpiry } from "./admin";
+import { approveUser, retryPendingLoginAlerts, revokeUserAccess, setUserAccessExpiry } from "./admin";
 import { requireApprovedAccount } from "./authHelpers";
 import { createMockConvexCtx } from "./testUtils";
 
 const finalizeSignInHandler = (finalizeSignIn as any)._handler as (ctx: any, args: any) => Promise<any>;
 const selectAccessWindowHandler = (selectAccessWindow as any)._handler as (ctx: any, args: any) => Promise<any>;
 const revokeExpiredAccessSessionsHandler = (revokeExpiredAccessSessions as any)._handler as (ctx: any, args: any) => Promise<any>;
+const approveUserHandler = (approveUser as any)._handler as (ctx: any, args: any) => Promise<any>;
 const retryPendingLoginAlertsHandler = (retryPendingLoginAlerts as any)._handler as (ctx: any, args: any) => Promise<any>;
 const revokeUserAccessHandler = (revokeUserAccess as any)._handler as (ctx: any, args: any) => Promise<any>;
 const setUserAccessExpiryHandler = (setUserAccessExpiry as any)._handler as (ctx: any, args: any) => Promise<any>;
@@ -97,6 +98,116 @@ test("finalizeSignIn creates a tracked auth session and login event", async () =
   assert.equal(tables.loginEvents.length, 1);
   assert.equal(tables.loginEvents[0]?.emailDeliveryStatus, "pending");
   assert.equal(schedulerCalls.length, 1);
+});
+
+test("finalizeSignIn returns the active trial summary for approved trial users", async () => {
+  const now = Date.now();
+  const trialExpiresAt = now + (7 * 24 * 60 * 60 * 1000);
+  const { ctx } = createMockConvexCtx({
+    identity: {
+      subject: "student_trial_active",
+      email: "trial@example.com",
+      sid: "sess_trial",
+    },
+    tables: {
+      users: [{
+        _id: "users:trial",
+        userId: "student_trial_active",
+        username: "Trial Student",
+        email: "trial@example.com",
+        role: "student",
+        accountStatus: "approved",
+        trialStartedAt: now - 5_000,
+        trialExpiresAt,
+        sessionVersion: 1,
+        createdAt: 1,
+      }],
+    },
+  });
+
+  const result = await finalizeSignInHandler(ctx, {
+    sessionId: "sess_trial",
+    provider: "clerk",
+    userAgent: "QA Browser",
+  });
+
+  assert.equal(result.accessStatus, "active");
+  assert.equal(result.accessGrantKind, "trial");
+  assert.equal(result.accessExpiresAt, trialExpiresAt);
+  assert.equal(result.hasUsedTrial, true);
+  assert.equal(result.accessDurationMonths, null);
+});
+
+test("approveUser grants a one-time 7-day trial to first-time pending users", async () => {
+  const realNow = Date.now;
+  const approvedAt = Date.parse("2026-04-07T12:00:00.000Z");
+  Date.now = () => approvedAt;
+
+  try {
+    const { ctx, tables } = createMockConvexCtx({
+      identity: {
+        subject: "admin_user",
+        email: "iwaleedh@gmail.com",
+      },
+      tables: {
+        users: [{
+          _id: "users:pending",
+          userId: "student_pending",
+          username: "Pending Student",
+          email: "pending@example.com",
+          role: "student",
+          accountStatus: "pending",
+          createdAt: 1,
+        }],
+      },
+    });
+
+    await approveUserHandler(ctx, { userId: "student_pending" });
+
+    assert.equal(tables.users[0]?.accountStatus, "approved");
+    assert.equal(tables.users[0]?.trialStartedAt, approvedAt);
+    assert.equal(tables.users[0]?.trialExpiresAt, approvedAt + (7 * 24 * 60 * 60 * 1000));
+  } finally {
+    Date.now = realNow;
+  }
+});
+
+test("approveUser does not reissue a consumed trial", async () => {
+  const realNow = Date.now;
+  const approvedAt = Date.parse("2026-04-07T12:00:00.000Z");
+  const originalTrialStart = approvedAt - (30 * 24 * 60 * 60 * 1000);
+  const originalTrialExpiry = originalTrialStart + (7 * 24 * 60 * 60 * 1000);
+  Date.now = () => approvedAt;
+
+  try {
+    const { ctx, tables } = createMockConvexCtx({
+      identity: {
+        subject: "admin_user",
+        email: "iwaleedh@gmail.com",
+      },
+      tables: {
+        users: [{
+          _id: "users:returning",
+          userId: "student_returning",
+          username: "Returning Student",
+          email: "returning@example.com",
+          role: "student",
+          accountStatus: "pending",
+          trialStartedAt: originalTrialStart,
+          trialExpiresAt: originalTrialExpiry,
+          createdAt: 1,
+        }],
+      },
+    });
+
+    await approveUserHandler(ctx, { userId: "student_returning" });
+
+    assert.equal(tables.users[0]?.accountStatus, "approved");
+    assert.equal(tables.users[0]?.trialStartedAt, originalTrialStart);
+    assert.equal(tables.users[0]?.trialExpiresAt, originalTrialExpiry);
+  } finally {
+    Date.now = realNow;
+  }
 });
 
 test("selectAccessWindow sets a due date and revokes sibling sessions", async () => {

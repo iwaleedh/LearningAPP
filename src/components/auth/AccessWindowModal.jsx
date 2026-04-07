@@ -20,8 +20,10 @@ function SummaryMetric({ icon, label, value, detail = null }) {
 export default function AccessWindowModal({
   mode,
   username,
+  accessGrantKind = null,
   accessExpiresAt,
   accessDurationMonths,
+  hasUsedTrial = false,
   busy = false,
   onClose,
   onSelectDuration,
@@ -46,6 +48,7 @@ export default function AccessWindowModal({
   }, [accessDurationMonths]);
 
   const isSelectionMode = mode === 'select';
+  const isTrialSummary = !isSelectionMode && accessGrantKind === 'trial';
 
   return (
     <div className="access-window-overlay">
@@ -53,12 +56,22 @@ export default function AccessWindowModal({
         <div className="access-window-header">
           <div className="access-window-badge">Access Window</div>
           <h2 id="access-window-title" className="access-window-title">
-            {isSelectionMode ? 'Choose Your Access Duration' : `Welcome back${username ? `, ${username}` : ''}`}
+            {isSelectionMode
+              ? hasUsedTrial
+                ? 'Choose Your Paid Access Duration'
+                : 'Choose Your Access Duration'
+              : isTrialSummary
+                ? `Free Trial Active${username ? `, ${username}` : ''}`
+                : `Welcome back${username ? `, ${username}` : ''}`}
           </h2>
           <p className="access-window-subtitle">
             {isSelectionMode
-              ? 'Your first successful sign-in starts the access window. Pick one option to continue.'
-              : 'Your session is active. Review the due date and remaining time before continuing.'}
+              ? hasUsedTrial
+                ? 'Your 7-day free trial has ended. Pick a plan to continue.'
+                : 'Your first successful sign-in starts the access window. Pick one option to continue.'
+              : isTrialSummary
+                ? 'Your account has been approved and the 7-day free trial is now active.'
+                : 'Your session is active. Review the due date and remaining time before continuing.'}
           </p>
         </div>
 
@@ -79,12 +92,16 @@ export default function AccessWindowModal({
           <div className="access-window-summary">
             <SummaryMetric
               icon={<CalendarDays size={18} />}
-              label="Due date"
+              label={isTrialSummary ? 'Trial ends' : 'Due date'}
               value={formatAccessDueDate(accessExpiresAt)}
               detail={`Exact UTC: ${formatAccessDueDateExact(accessExpiresAt)}`}
             />
             <SummaryMetric icon={<Clock3 size={18} />} label="Remaining" value={formatRemainingTime(remainingMs)} />
-            <SummaryMetric icon={<ShieldCheck size={18} />} label="Duration" value={durationLabel} />
+            <SummaryMetric
+              icon={<ShieldCheck size={18} />}
+              label={isTrialSummary ? 'Access type' : 'Duration'}
+              value={isTrialSummary ? '7-day free trial' : durationLabel}
+            />
           </div>
         )}
 

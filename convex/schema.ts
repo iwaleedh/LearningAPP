@@ -16,6 +16,8 @@ export default defineSchema({
     )),
     firstSignInAt: v.optional(v.number()),
     lastSignInAt: v.optional(v.number()),
+    trialStartedAt: v.optional(v.number()),
+    trialExpiresAt: v.optional(v.number()),
     accessWindowStartedAt: v.optional(v.number()),
     accessDurationMonths: v.optional(v.union(v.literal(1), v.literal(12))),
     accessExpiresAt: v.optional(v.number()),

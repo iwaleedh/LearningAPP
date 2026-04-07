@@ -36,7 +36,7 @@ function fromDatetimeLocalValue(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
-function ExpiryTimestampCell({ timestamp, isUnlimited = false }) {
+function ExpiryTimestampCell({ timestamp, isUnlimited = false, detail = null }) {
   if (isUnlimited) {
     return <span className="admin-date">No limit</span>;
   }
@@ -48,6 +48,7 @@ function ExpiryTimestampCell({ timestamp, isUnlimited = false }) {
   return (
     <div className="admin-date-stack">
       <div className="admin-date">{formatAccessDueDate(timestamp)}</div>
+      {detail ? <div className="admin-date-exact">{detail}</div> : null}
       <div className="admin-date-exact">{formatAccessDueDateExact(timestamp)}</div>
     </div>
   );
@@ -60,7 +61,7 @@ function StatusBadge({ status }) {
   return <span className={`admin-badge ${cls}`}>{status}</span>;
 }
 
-function AccessBadge({ status, isUnlimited = false }) {
+function AccessBadge({ status, isUnlimited = false, accessGrantKind = null }) {
   if (isUnlimited) {
     return <span className="admin-badge ab--approved">unlimited</span>;
   }
@@ -68,7 +69,10 @@ function AccessBadge({ status, isUnlimited = false }) {
   const cls = status === 'active' ? 'ab--approved'
     : status === 'expired' || status === 'revoked' ? 'ab--blocked'
     : 'ab--pending';
-  return <span className={`admin-badge ${cls}`}>{status || 'selection_required'}</span>;
+  const label = status === 'active' && accessGrantKind === 'trial'
+    ? 'trial'
+    : status || 'selection_required';
+  return <span className={`admin-badge ${cls}`}>{label}</span>;
 }
 
 // ── Overview Tab ─────────────────────────────────────────────────────────────
@@ -309,8 +313,21 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
         </div>
       </td>
       <td><StatusBadge status={user.accountStatus} /></td>
-      <td><AccessBadge status={user.accessStatus} isUnlimited={isAdminUser} /></td>
-      <td><ExpiryTimestampCell timestamp={user.accessExpiresAt} isUnlimited={isAdminUser} /></td>
+      <td>
+        <div>
+          <AccessBadge status={user.accessStatus} isUnlimited={isAdminUser} accessGrantKind={user.accessGrantKind} />
+          {user.hasUsedTrial && !isAdminUser ? (
+            <div className="admin-date-exact">
+              {user.accessGrantKind === 'trial'
+                ? '7-day trial active'
+                : user.trialExpiresAt
+                  ? `trial used · ended ${formatDate(user.trialExpiresAt)}`
+                  : 'trial used'}
+            </div>
+          ) : null}
+        </div>
+      </td>
+      <td><ExpiryTimestampCell timestamp={user.accessExpiresAt} isUnlimited={isAdminUser} detail={user.accessGrantKind === 'trial' ? 'Trial access' : null} /></td>
       <td>
         {isAdminUser ? (
           <div className="admin-role-static-wrap">
@@ -326,7 +343,7 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
         <div className="admin-action-btns">
           {isPending && <>
             <button className="btn btn-sm btn-primary" disabled={busy} onClick={() => onApprove(user.userId)}>
-              <UserCheck size={13} /> Approve
+              <UserCheck size={13} /> Approve + Trial
             </button>
             <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => onBlock(user.userId)}>
               <UserX size={13} /> Block
