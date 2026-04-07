@@ -260,6 +260,30 @@ test("requireApprovedAccount rejects expired users", async () => {
   await assert.rejects(() => requireApprovedAccount(ctx as any), /Access window expired\./);
 });
 
+test("requireApprovedAccount allows the configured admin email without an access window", async () => {
+  const { ctx } = createMockConvexCtx({
+    identity: {
+      subject: "admin_user",
+      email: "iwaleedh@gmail.com",
+      sid: "sess_admin",
+    },
+    tables: {
+      users: [{
+        _id: "users:admin",
+        userId: "admin_user",
+        username: "Admin User",
+        email: "iwaleedh@gmail.com",
+        role: "student",
+        accountStatus: "approved",
+        sessionVersion: 1,
+        createdAt: 1,
+      }],
+    },
+  });
+
+  await assert.doesNotReject(() => requireApprovedAccount(ctx as any));
+});
+
 test("revokeExpiredAccessSessions revokes active sessions for expired users", async () => {
   const now = Date.now();
   const { ctx, tables } = createMockConvexCtx({
@@ -290,6 +314,41 @@ test("revokeExpiredAccessSessions revokes active sessions for expired users", as
   const result = await revokeExpiredAccessSessionsHandler(ctx, {});
   assert.equal(result.revokedUsers, 1);
   assert.equal(tables.authSessions[0]?.revokeReason, "Access window expired.");
+});
+
+test("revokeExpiredAccessSessions ignores admin accounts", async () => {
+  const now = Date.now();
+  const { ctx, tables } = createMockConvexCtx({
+    identity: null,
+    tables: {
+      users: [{
+        _id: "users:admin",
+        userId: "admin_user",
+        username: "Admin User",
+        email: "iwaleedh@gmail.com",
+        role: "student",
+        accountStatus: "approved",
+        sessionVersion: 2,
+        accessExpiresAt: now - 5_000,
+        createdAt: now,
+      }],
+      authSessions: [{
+        _id: "authSessions:admin",
+        userId: "admin_user",
+        sessionId: "sess_admin",
+        provider: "clerk",
+        sessionVersion: 2,
+        createdAt: now,
+        lastSeenAt: now,
+      }],
+    },
+  });
+
+  const result = await revokeExpiredAccessSessionsHandler(ctx, {});
+
+  assert.equal(result.revokedUsers, 0);
+  assert.equal(result.revokedSessions, 0);
+  assert.equal(tables.authSessions[0]?.revokeReason, undefined);
 });
 
 test("admin revokeUserAccess expires the account and revokes sessions", async () => {
@@ -374,6 +433,39 @@ test("admin setUserAccessExpiry sets a future expiry and revokes active sessions
   assert.equal(tables.users[0]?.sessionVersion, 3);
   assert.equal(tables.authSessions[0]?.revokeReason, "Manual extension");
   assert.equal(tables.auditLogs[0]?.action, "SET_ACCESS_EXPIRY");
+});
+
+test("admin setUserAccessExpiry rejects the configured admin account", async () => {
+  const now = Date.now();
+  const { ctx } = createMockConvexCtx({
+    identity: {
+      subject: "admin_actor",
+      email: "iwaleedh@gmail.com",
+    },
+    tables: {
+      users: [{
+        _id: "users:admin-target",
+        userId: "admin_target",
+        username: "Admin Target",
+        role: "student",
+        email: "iwaleedh@gmail.com",
+        accountStatus: "approved",
+        sessionVersion: 2,
+        createdAt: now,
+      }],
+      authSessions: [],
+      auditLogs: [],
+      adminActionReceipts: [],
+    },
+  });
+
+  await assert.rejects(
+    () => setUserAccessExpiryHandler(ctx, {
+      userId: "admin_target",
+      accessExpiresAt: now + (30 * 24 * 60 * 60 * 1000),
+    }),
+    /Admin accounts have unlimited access and cannot be given an expiry\./,
+  );
 });
 
 test("admin setUserAccessExpiry is idempotent when the same key is retried", async () => {

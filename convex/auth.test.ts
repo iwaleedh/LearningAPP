@@ -870,6 +870,37 @@ test("createLiveClass rejects a student caller", async () => {
   );
 });
 
+test("createLiveClass allows the configured admin email", async () => {
+  const { ctx, tables } = createMockConvexCtx({
+    identity: {
+      subject: "admin_user",
+      email: "iwaleedh@gmail.com",
+      role: "student",
+    },
+    tables: {
+      users: [{
+        _id: "users:admin_user",
+        userId: "admin_user",
+        username: "Admin User",
+        email: "iwaleedh@gmail.com",
+        role: "student",
+        accountStatus: "approved",
+        createdAt: 1,
+      }],
+      liveClassSessions: [],
+    },
+  });
+
+  const classId = await createLiveClassHandler(ctx, {
+    hostUserId: undefined,
+    title: "Admin Office Hours",
+    backgroundType: "grid",
+  });
+
+  assert.ok(classId);
+  assert.equal(tables.liveClassSessions[0]?.hostUserId, "admin_user");
+});
+
 test("createLiveClass rejects creating a class for another host", async () => {
   const { ctx } = createMockConvexCtx({
     identity: {
@@ -1149,6 +1180,29 @@ test("getPlatformOverview rejects a student caller", async () => {
   });
 
   await assert.rejects(() => getPlatformOverviewHandler(ctx, {}), /Teacher access required\./);
+});
+
+test("getPlatformOverview allows the configured admin email", async () => {
+  const { ctx } = createMockConvexCtx({
+    identity: {
+      subject: "admin_user",
+      email: "iwaleedh@gmail.com",
+      role: "student",
+    },
+    tables: {
+      users: [{
+        _id: "users:admin_user",
+        userId: "admin_user",
+        username: "Admin",
+        email: "iwaleedh@gmail.com",
+        role: "student",
+        accountStatus: "approved",
+        createdAt: 1,
+      }],
+    },
+  });
+
+  await assert.doesNotReject(() => getPlatformOverviewHandler(ctx, {}));
 });
 
 test("getActiveSessions rejects a student caller", async () => {

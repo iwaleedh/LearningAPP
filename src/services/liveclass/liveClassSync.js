@@ -212,8 +212,8 @@ export function createLiveClassSync({
     const userId = myUserId();
     const actorRole = options.actorRole;
 
-    if (actorRole !== 'teacher' && !isDebugTeacherIdentity(userId)) {
-      throw new Error('Only teacher accounts can create a live class.');
+    if (actorRole !== 'teacher' && actorRole !== 'admin' && !isDebugTeacherIdentity(userId)) {
+      throw new Error('Only teacher or admin accounts can create a live class.');
     }
 
     if (!userId || !getClient() || isDebugTeacherIdentity(userId)) {

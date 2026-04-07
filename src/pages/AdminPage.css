@@ -345,6 +345,26 @@
   color: var(--color-text-secondary);
 }
 
+.admin-role-static-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.admin-role-static {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.admin-role-override-note {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
 .admin-date { color: var(--color-text-secondary); white-space: nowrap; }
 
 .admin-date-stack {

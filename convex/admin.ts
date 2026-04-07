@@ -6,6 +6,7 @@ import {
   getAuthenticatedIdentity,
   resolveAccessStatus,
   getUserRecordById,
+  hasUnlimitedAccessWindow,
   isAdminEmail,
   requireAdmin,
   requireAuthenticatedUserId,
@@ -62,6 +63,12 @@ async function storeAdminActionReceipt(ctx: any, actorId: string, action: string
   });
 }
 
+function ensureManagedAccessWindowUser(user: { email?: string; username?: string }) {
+  if (hasUnlimitedAccessWindow(user)) {
+    throw new Error("Admin accounts have unlimited access and cannot be given an expiry.");
+  }
+}
+
 /**
  * Returns the calling user's account status + admin flag.
  * This query is allowed BEFORE approval (used by the pending page).
@@ -88,17 +95,18 @@ export const getMyAccountStatus = query({
         isAdmin: isAdminEmail(identity.email),
       };
     }
+    const isAdminUser = hasUnlimitedAccessWindow(user) || isAdminEmail(identity.email);
     return {
       accountStatus: effectiveAccountStatus(user),
       accessStatus: resolveAccessStatus(user),
-      accessExpiresAt: user.accessExpiresAt ?? null,
-      accessDurationMonths: user.accessDurationMonths ?? null,
-      accessWindowStartedAt: user.accessWindowStartedAt ?? null,
+      accessExpiresAt: isAdminUser ? null : user.accessExpiresAt ?? null,
+      accessDurationMonths: isAdminUser ? null : user.accessDurationMonths ?? null,
+      accessWindowStartedAt: isAdminUser ? null : user.accessWindowStartedAt ?? null,
       firstSignInAt: user.firstSignInAt ?? null,
       lastSignInAt: user.lastSignInAt ?? null,
       role: user.role ?? "student",
       email: user.email ?? null,
-      isAdmin: isAdminEmail(user.email) || isAdminEmail(identity.email),
+      isAdmin: isAdminUser,
     };
   },
 });
@@ -114,7 +122,9 @@ export const listPendingUsers = query({
       .query("users")
       .withIndex("by_accountStatus", (q) => q.eq("accountStatus", "pending"))
       .collect();
-    return users.map((u) => ({
+    return users.map((u) => {
+      const isAdminUser = hasUnlimitedAccessWindow(u);
+      return {
       _id: u._id,
       userId: u.userId,
       username: u.username,
@@ -122,13 +132,15 @@ export const listPendingUsers = query({
       role: u.role,
       accountStatus: effectiveAccountStatus(u),
       accessStatus: resolveAccessStatus(u),
-      accessExpiresAt: u.accessExpiresAt,
-      accessDurationMonths: u.accessDurationMonths,
+      accessExpiresAt: isAdminUser ? null : u.accessExpiresAt,
+      accessDurationMonths: isAdminUser ? null : u.accessDurationMonths,
       firstSignInAt: u.firstSignInAt,
       lastSignInAt: u.lastSignInAt,
       avatarUrl: u.avatarUrl,
       createdAt: u.createdAt,
-    }));
+      isAdmin: isAdminUser,
+      };
+    });
   },
 });
 
@@ -140,7 +152,9 @@ export const listAllUsersAdmin = query({
   handler: async (ctx) => {
     await requireAdmin(ctx);
     const users = await ctx.db.query("users").collect();
-    return users.map((u) => ({
+    return users.map((u) => {
+      const isAdminUser = hasUnlimitedAccessWindow(u);
+      return {
       _id: u._id,
       userId: u.userId,
       username: u.username,
@@ -148,14 +162,16 @@ export const listAllUsersAdmin = query({
       role: u.role,
       accountStatus: effectiveAccountStatus(u),
       accessStatus: resolveAccessStatus(u),
-      accessExpiresAt: u.accessExpiresAt,
-      accessDurationMonths: u.accessDurationMonths,
+      accessExpiresAt: isAdminUser ? null : u.accessExpiresAt,
+      accessDurationMonths: isAdminUser ? null : u.accessDurationMonths,
       firstSignInAt: u.firstSignInAt,
       lastSignInAt: u.lastSignInAt,
       avatarUrl: u.avatarUrl,
       createdAt: u.createdAt,
       statusUpdatedAt: u.statusUpdatedAt,
-    }));
+      isAdmin: isAdminUser,
+      };
+    });
   },
 });
 
@@ -284,6 +300,7 @@ export const revokeUserAccess = mutation({
     const adminUserId = await requireAdmin(ctx);
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
+    ensureManagedAccessWindowUser(user);
 
     const now = Date.now();
     const revokeReason = reason?.trim() || "Access revoked by administrator.";
@@ -311,6 +328,7 @@ export const clearUserAccessWindow = mutation({
     const adminUserId = await requireAdmin(ctx);
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
+    ensureManagedAccessWindowUser(user);
 
     const now = Date.now();
     await ctx.db.patch(user._id, {
@@ -342,6 +360,7 @@ export const setUserAccessExpiry = mutation({
     const adminUserId = await requireAdmin(ctx);
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
+    ensureManagedAccessWindowUser(user);
 
     const normalizedIdempotencyKey = normalizeIdempotencyKey(idempotencyKey);
     if (normalizedIdempotencyKey) {

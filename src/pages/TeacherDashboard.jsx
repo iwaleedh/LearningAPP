@@ -30,7 +30,7 @@ function formatDurationMinutes(value) {
 /* ─── Component ─── */
 export default function TeacherDashboard() {
     const navigate = useNavigate();
-    const { isAccessReady, role } = useAuth();
+    const { isAccessReady, role, isAdmin } = useAuth();
     const [activeTab, setActiveTab] = useState('heatmap');
     const [questionSort, setQuestionSort] = useState('successRate');
     const [sortAsc, setSortAsc] = useState(true);
@@ -39,10 +39,10 @@ export default function TeacherDashboard() {
     const [analytics, setAnalytics] = useState(null);
     const [analyticsState, setAnalyticsState] = useState('idle');
     const [analyticsError, setAnalyticsError] = useState('');
-    const isTeacher = role === 'teacher';
+    const isTeacher = role === 'teacher' || isAdmin;
     const startBlockedReason = !isAccessReady
         ? 'Checking your account access. Try again in a moment.'
-        : 'Only teacher accounts can create live classes.';
+        : 'Only teacher or admin accounts can create live classes.';
 
     const [syncStatus, setSyncStatus] = useState('');
     const handleSyncNotes = async () => {

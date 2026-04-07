@@ -31,12 +31,12 @@ export default function Sidebar({ isOpen, onToggle }) {
     const [showJoinModal, setShowJoinModal] = useState(false);
     const [showStartModal, setShowStartModal] = useState(false);
     const [startError, setStartError] = useState('');
-    const isTeacher = role === 'teacher';
+    const isTeacher = role === 'teacher' || isAdmin;
     const liveClassEnabled = isEnabled('liveClass');
     const visibleNavItems = navItems.filter((item) => !item.featureKey || isEnabled(item.featureKey));
     const startBlockedReason = !isAccessReady
         ? 'Checking your account access. Try again in a moment.'
-        : 'Only teacher accounts can create live classes.';
+        : 'Only teacher or admin accounts can create live classes.';
 
     const handleStartClass = async (title, backgroundType) => {
         if (!isTeacher) {

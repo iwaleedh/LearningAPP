@@ -36,7 +36,11 @@ function fromDatetimeLocalValue(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
-function ExpiryTimestampCell({ timestamp }) {
+function ExpiryTimestampCell({ timestamp, isUnlimited = false }) {
+  if (isUnlimited) {
+    return <span className="admin-date">No limit</span>;
+  }
+
   if (!timestamp) {
     return <span className="admin-date">—</span>;
   }
@@ -56,7 +60,11 @@ function StatusBadge({ status }) {
   return <span className={`admin-badge ${cls}`}>{status}</span>;
 }
 
-function AccessBadge({ status }) {
+function AccessBadge({ status, isUnlimited = false }) {
+  if (isUnlimited) {
+    return <span className="admin-badge ab--approved">unlimited</span>;
+  }
+
   const cls = status === 'active' ? 'ab--approved'
     : status === 'expired' || status === 'revoked' ? 'ab--blocked'
     : 'ab--pending';
@@ -275,10 +283,16 @@ function RoleSelect({ userId, currentRole }) {
   );
 }
 
+function formatRoleLabel(role) {
+  const normalizedRole = role === 'teacher' ? 'teacher' : 'student';
+  return normalizedRole.charAt(0).toUpperCase() + normalizedRole.slice(1);
+}
+
 function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess, onClearAccessWindow, onSetExpiry, busy }) {
   const isPending  = user.accountStatus === 'pending';
   const isBlocked  = user.accountStatus === 'blocked';
   const isApproved = user.accountStatus === 'approved';
+  const isAdminUser = user.isAdmin === true;
 
   return (
     <tr className="admin-user-row">
@@ -295,9 +309,18 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
         </div>
       </td>
       <td><StatusBadge status={user.accountStatus} /></td>
-      <td><AccessBadge status={user.accessStatus} /></td>
-      <td><ExpiryTimestampCell timestamp={user.accessExpiresAt} /></td>
-      <td><RoleSelect userId={user.userId} currentRole={user.role || 'student'} /></td>
+      <td><AccessBadge status={user.accessStatus} isUnlimited={isAdminUser} /></td>
+      <td><ExpiryTimestampCell timestamp={user.accessExpiresAt} isUnlimited={isAdminUser} /></td>
+      <td>
+        {isAdminUser ? (
+          <div className="admin-role-static-wrap">
+            <span className="admin-role-static">{formatRoleLabel(user.role || 'student')}</span>
+            <span className="admin-role-override-note">admin override</span>
+          </div>
+        ) : (
+          <RoleSelect userId={user.userId} currentRole={user.role || 'student'} />
+        )}
+      </td>
       <td className="admin-date">{formatDate(user.createdAt)}</td>
       <td>
         <div className="admin-action-btns">
@@ -319,17 +342,17 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
               <UserCheck size={13} /> Unblock
             </button>
           )}
-          {isApproved && (
+          {isApproved && !isAdminUser && (
             <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => onRevokeAccess(user.userId)}>
               <Clock size={13} /> Revoke Access
             </button>
           )}
-          {!isPending && (
+          {!isPending && !isAdminUser && (
             <button className="btn btn-sm btn-secondary" disabled={busy} onClick={() => onSetExpiry(user)}>
               <Clock size={13} /> Set Expiry
             </button>
           )}
-          <button className="btn btn-sm btn-secondary" disabled={busy} onClick={() => onClearAccessWindow(user.userId)}>
+          <button className="btn btn-sm btn-secondary" disabled={busy || isAdminUser} onClick={() => onClearAccessWindow(user.userId)}>
             <Shield size={13} /> Reset Window
           </button>
           <button className="btn btn-sm admin-btn-delete" disabled={busy} onClick={() => onDelete(user)} title="Delete user">

@@ -157,7 +157,7 @@ function AppContent() {
                 path="/teacher"
                 element={(
                   <RequireApproved>
-                    <RequireRole allowedRoles={['teacher']} reason="open the teacher dashboard">
+                    <RequireRole allowedRoles={['teacher', 'admin']} reason="open the teacher dashboard">
                       <TeacherDashboard />
                     </RequireRole>
                   </RequireApproved>
@@ -167,7 +167,7 @@ function AppContent() {
                 path="/teacher/monitor"
                 element={(
                   <RequireApproved>
-                    <RequireRole allowedRoles={['teacher']} reason="monitor live teacher sessions">
+                    <RequireRole allowedRoles={['teacher', 'admin']} reason="monitor live teacher sessions">
                       <TeacherMonitorPage />
                     </RequireRole>
                   </RequireApproved>
@@ -193,7 +193,7 @@ function AppContent() {
                 path="/live-notes/:sessionId/:tempId"
                 element={(
                   <RequireApproved>
-                    <RequireRole allowedRoles={['teacher']} reason="view student live notes">
+                    <RequireRole allowedRoles={['teacher', 'admin']} reason="view student live notes">
                       <RequireFeature featureKey="liveClass"><StudentNotesViewPage /></RequireFeature>
                     </RequireRole>
                   </RequireApproved>

@@ -124,6 +124,13 @@ export function isAdminUsername(username: string | undefined | null): boolean {
   return ADMIN_USERNAMES.includes(username.trim().toLowerCase());
 }
 
+export function hasUnlimitedAccessWindow(
+  user: Pick<AccessTrackedUser, "email" | "username"> | null | undefined,
+): boolean {
+  if (!user) return false;
+  return isAdminEmail(user.email) || isAdminUsername(user.username);
+}
+
 export async function isAdmin(ctx: PublicCtx): Promise<boolean> {
   const identity = await getAuthenticatedIdentity(ctx);
   if (!identity?.subject) return false;
@@ -171,6 +178,9 @@ export function resolveAccessStatus(
 ): AccessStatus {
   if (!user || effectiveAccountStatus(user) !== "approved") {
     return "restricted";
+  }
+  if (hasUnlimitedAccessWindow(user)) {
+    return "active";
   }
   if (typeof user.accessRevokedAt === "number" && user.accessRevokedAt > 0) {
     return "revoked";
@@ -343,7 +353,7 @@ export async function getCurrentUsername(ctx: PublicCtx) {
  */
 export async function isTeacherUserId(ctx: PublicCtx, userId: string) {
   const user = await getUserRecordById(ctx, userId);
-  return user?.role === "teacher";
+  return user?.role === "teacher" || hasUnlimitedAccessWindow(user);
 }
 
 /**

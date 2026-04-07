@@ -14,8 +14,22 @@ test('local live class creation requires a teacher role', () => {
       title: 'Student session',
       actorRole: 'student',
     }),
-    /Only teacher accounts can create a live class\./
+    /Only teacher or admin accounts can create a live class\./
   );
+});
+
+test('local live class creation succeeds for admins', () => {
+  __resetLocalLiveStoreForTests();
+
+  const session = createLocalLiveClass({
+    hostUserId: 'admin_123',
+    title: 'Admin session',
+    actorRole: 'admin',
+  });
+
+  assert.ok(session);
+  assert.equal(session.title, 'Admin session');
+  assert.equal(session.hostUserId, 'admin_123');
 });
 
 test('local live class creation succeeds for teachers', () => {

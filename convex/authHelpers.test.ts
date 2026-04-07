@@ -2,10 +2,14 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import {
+  hasUnlimitedAccessWindow,
+  isTeacherUserId,
   isProductionAdminRuntime,
+  resolveAccessStatus,
   resolveAdminEnvList,
   shouldSuppressAdminFallbackWarnings,
 } from "./authHelpers";
+import { createMockConvexCtx } from "./testUtils";
 
 test("shouldSuppressAdminFallbackWarnings detects automated test runtimes", () => {
   assert.equal(shouldSuppressAdminFallbackWarnings({ NODE_ENV: "test" }, []), true);
@@ -62,4 +66,31 @@ test("resolveAdminEnvList emits a single production error and returns no fallbac
   assert.deepEqual(second, []);
   assert.equal(errors.length, 1);
   assert.match(errors[0] || "", /ADMIN_EMAILS_TEST_ONLY/);
+});
+
+test("hasUnlimitedAccessWindow recognises the configured admin email", () => {
+  assert.equal(hasUnlimitedAccessWindow({ email: "iwaleedh@gmail.com" }), true);
+  assert.equal(hasUnlimitedAccessWindow({ email: "student@example.com" }), false);
+});
+
+test("resolveAccessStatus keeps admin accounts active without an expiry", () => {
+  assert.equal(resolveAccessStatus({ email: "iwaleedh@gmail.com", accountStatus: "approved" }), "active");
+});
+
+test("isTeacherUserId treats the configured admin email as teacher-capable", async () => {
+  const { ctx } = createMockConvexCtx({
+    identity: null,
+    tables: {
+      users: [{
+        _id: "users:admin",
+        userId: "admin_user",
+        username: "Admin",
+        email: "iwaleedh@gmail.com",
+        role: "student",
+        createdAt: 1,
+      }],
+    },
+  });
+
+  assert.equal(await isTeacherUserId(ctx as any, "admin_user"), true);
 });
