@@ -361,7 +361,7 @@ export default function PendingApprovalPage() {
         <div className="payment-header">
           <div className="payment-header-icon">📚</div>
           <div>
-            <h1 className="payment-title">Subscribe to Living Textbook</h1>
+            <h1 className="payment-title">Subscribe to Study Smart</h1>
             <p className="payment-subtitle">
               Hi{username ? `, ${username}` : ''}! Complete your subscription to get full access.
             </p>

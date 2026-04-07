@@ -47,7 +47,7 @@ export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = n
 
         <div className="auth-modal-header">
           <div className="auth-modal-logo">📚</div>
-          <h2 id="auth-modal-title" className="auth-modal-title">Living Textbook</h2>
+          <h2 id="auth-modal-title" className="auth-modal-title">Study Smart</h2>
           <p className="auth-modal-subtitle">
             {canSignIn
               ? 'Sign in to sync your progress across devices'

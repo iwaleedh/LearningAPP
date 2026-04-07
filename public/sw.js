@@ -1,4 +1,4 @@
-/* Service Worker for Living Textbook PWA — v8 */
+/* Service Worker for Study Smart PWA — v8 */
 
 const BASE_PATH = new URL('./', self.location.href).pathname; // e.g. '/LearningAPP/'
 const OFFLINE_PAGE = BASE_PATH + 'offline.html';

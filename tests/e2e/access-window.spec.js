@@ -14,6 +14,6 @@ test.describe('access window landing flow', () => {
     const renewButton = page.getByRole('button', { name: /renew access/i });
     await renewButton.click();
 
-    await expect(page.getByRole('dialog', { name: 'Living Textbook' })).toBeVisible();
+    await expect(page.getByRole('dialog', { name: 'Study Smart' })).toBeVisible();
   });
 });

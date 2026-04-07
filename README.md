@@ -1,6 +1,6 @@
-# Living Textbook
+# Study Smart
 
-Living Textbook is a React + Vite study platform for Pearson Edexcel International A-Level and IGCSE learners.
+Study Smart is a React + Vite study platform for Pearson Edexcel International A-Level and IGCSE learners.
 
 ## Active Stack
 

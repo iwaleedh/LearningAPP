@@ -1,4 +1,4 @@
-# CLAUDE.md — Living Textbook
+# CLAUDE.md — Study Smart
 
 Reference document for AI agents and developers working on this codebase.
 
@@ -6,7 +6,7 @@ Reference document for AI agents and developers working on this codebase.
 
 ## Project Overview
 
-**Living Textbook** is an interactive A-Level exam-prep platform targeting Pearson Edexcel International A-Level students. It covers 7 subjects, delivering structured notes, exercises, flashcards, and past-paper practice inside a React PWA backed by Convex.
+**Study Smart** is an interactive A-Level exam-prep platform targeting Pearson Edexcel International A-Level students. It covers 7 subjects, delivering structured notes, exercises, flashcards, and past-paper practice inside a React PWA backed by Convex.
 
 ---
 

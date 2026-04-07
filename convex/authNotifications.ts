@@ -142,7 +142,7 @@ function buildEmailBody({ loginEvent, user }: any) {
   const userLabel = user?.username || loginEvent.username || loginEvent.userId;
 
   return {
-    subject: `Living Textbook login: ${userLabel}`,
+    subject: `Study Smart login: ${userLabel}`,
     text: [
       `User: ${userLabel}`,
       `User ID: ${loginEvent.userId}`,

@@ -37,7 +37,7 @@ export default function LandingPage() {
   return (
     <div className="landing-page">
       <nav className="landing-nav">
-        <div className="landing-logo">📚 Living Textbook</div>
+        <div className="landing-logo">📚 Study Smart</div>
         {canSignIn && (
           <button 
             className="btn btn-primary"
@@ -120,7 +120,7 @@ export default function LandingPage() {
 
         <section className="benefits-section">
           <div className="benefits-content">
-            <h2 className="section-title text-left">Why choose Living Textbook?</h2>
+            <h2 className="section-title text-left">Why choose Study Smart?</h2>
             <ul className="benefits-list">
               <li><CheckCircle2 className="benefit-icon" /> <strong>All-in-one platform</strong> — No more juggling scattered PDFs.</li>
               <li><CheckCircle2 className="benefit-icon" /> <strong>Gamified learning</strong> — Earn streaks, track confidence, and stay motivated.</li>
@@ -159,7 +159,7 @@ export default function LandingPage() {
         </section>
 
         <section className="how-it-works-section">
-          <h2 className="section-title">How Living Textbook Works</h2>
+          <h2 className="section-title">How Study Smart Works</h2>
           <div className="steps-container">
             <div className="step-card">
               <div className="step-number">1</div>
@@ -187,7 +187,7 @@ export default function LandingPage() {
           <div className="cross-platform-content">
             <h2 className="section-title text-left">Study Anywhere, Anytime</h2>
             <p className="section-description">
-              Living Textbook is built as a Progressive Web App (PWA). Install it on your phone, tablet, or desktop to enjoy seamless syncing and offline capabilities.
+              Study Smart is built as a Progressive Web App (PWA). Install it on your phone, tablet, or desktop to enjoy seamless syncing and offline capabilities.
             </p>
             <ul className="benefits-list">
               <li><CheckCircle2 className="benefit-icon" /> Works on iOS, Android, macOS, and Windows.</li>
@@ -205,8 +205,8 @@ export default function LandingPage() {
               answer="Currently, our content is heavily tailored to Pearson Edexcel International A-Levels (IAL) and O-Levels." 
             />
             <FAQItem 
-              question="Can I use Living Textbook on my phone?" 
-              answer="Yes! Living Textbook is fully responsive. You can even install it on your home screen for an app-like experience." 
+              question="Can I use Study Smart on my phone?" 
+              answer="Yes! Study Smart is fully responsive. You can even install it on your home screen for an app-like experience." 
             />
             <FAQItem 
               question="How do the past papers work?" 
@@ -233,7 +233,7 @@ export default function LandingPage() {
       </main>
 
       <footer className="landing-footer">
-        <p>&copy; {new Date().getFullYear()} Living Textbook. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Study Smart. All rights reserved.</p>
       </footer>
 
       {authOpen && (
