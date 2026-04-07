@@ -17,6 +17,7 @@ import { getDroppedCount } from '../logger/logBuffer.js';
 import { getLogShippingState } from '../logger/logShipper.js';
 
 const log = logger.child({ component: 'healthMonitor' });
+const CONVEX_SITE_URL = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_CONVEX_SITE_URL) || '';
 
 const POLL_INTERVAL_MS = 30_000; // 30 seconds
 const MAX_PENDING_EVENTS = 0;
@@ -86,13 +87,40 @@ function updateSnapshot(nextSnapshot) {
   lastSnapshot = nextSnapshot;
 }
 
+export function buildHealthEndpointUrl(connectionUrl) {
+  const candidateUrl = CONVEX_SITE_URL || connectionUrl;
+  if (!candidateUrl) return null;
+
+  try {
+    const endpointUrl = new URL(candidateUrl);
+    if (endpointUrl.hostname.endsWith('.convex.cloud')) {
+      endpointUrl.hostname = endpointUrl.hostname.replace(/\.convex\.cloud$/, '.convex.site');
+    }
+    endpointUrl.pathname = '/api/health';
+    endpointUrl.search = '';
+    endpointUrl.hash = '';
+    return endpointUrl;
+  } catch {
+    return null;
+  }
+}
+
 async function fetchEndpointHealth(connectionUrl) {
   if (!connectionUrl || typeof window === 'undefined' || typeof fetch !== 'function') {
     return { endpointHealthy: null, pendingEvents: null, endpointError: null };
   }
 
+  const endpointUrl = buildHealthEndpointUrl(connectionUrl);
+  if (!endpointUrl) {
+    return {
+      endpointHealthy: false,
+      pendingEvents: null,
+      endpointError: 'Health endpoint URL is invalid',
+    };
+  }
+
   try {
-    const response = await fetch(new URL('/api/health', connectionUrl), {
+    const response = await fetch(endpointUrl, {
       headers: { accept: 'application/json' },
     });
     if (!response.ok) {
@@ -104,9 +132,15 @@ async function fetchEndpointHealth(connectionUrl) {
     }
 
     const payload = await response.json();
+    const pendingEvents = Number.isFinite(payload?.pendingEvents)
+      ? payload.pendingEvents
+      : Number.isFinite(payload?.checks?.eventQueue?.pending)
+        ? payload.checks.eventQueue.pending
+        : null;
+
     return {
-      endpointHealthy: payload?.ok !== false,
-      pendingEvents: Number.isFinite(payload?.pendingEvents) ? payload.pendingEvents : null,
+      endpointHealthy: payload?.status ? payload.status === 'healthy' : payload?.ok !== false,
+      pendingEvents,
       endpointError: null,
     };
   } catch (error) {

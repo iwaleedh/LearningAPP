@@ -19,6 +19,11 @@ const processEnv = (globalThis as typeof globalThis & {
   process?: { env?: Record<string, string | undefined> };
 }).process?.env;
 const WEBHOOK_SECRET = processEnv?.WEBHOOK_SHARED_SECRET;
+const HEALTH_RESPONSE_HEADERS = {
+  "Content-Type": "application/json",
+  "Cache-Control": "no-store",
+  "Access-Control-Allow-Origin": "*",
+};
 
 // ── GET /api/health ─────────────────────────────────────────────────
 http.route({
@@ -51,10 +56,7 @@ http.route({
       }),
       {
         status: dbOk ? 200 : 503,
-        headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-store",
-        },
+        headers: HEALTH_RESPONSE_HEADERS,
       }
     );
   }),
