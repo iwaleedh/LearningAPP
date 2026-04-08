@@ -75,9 +75,81 @@ function AccessBadge({ status, isUnlimited = false, accessGrantKind = null }) {
   return <span className={`admin-badge ${cls}`}>{label}</span>;
 }
 
+function LegacyPendingMigrationCard({ pendingUsers, readOnly = false }) {
+  const migrateLegacyPendingUsers = useMutation(api.admin.migrateLegacyPendingUsers);
+  const [busy, setBusy] = useState(false);
+  const [startTrial, setStartTrial] = useState(true);
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+
+  if (pendingUsers.length === 0) {
+    return null;
+  }
+
+  const handleMigrate = async () => {
+    setBusy(true);
+    setError('');
+    setMessage('');
+    try {
+      const result = await migrateLegacyPendingUsers({ startTrial });
+      if (result.migratedCount === 0) {
+        setMessage('No legacy pending users were left to migrate.');
+        return;
+      }
+      setMessage(
+        `Migrated ${result.migratedCount} user${result.migratedCount === 1 ? '' : 's'}; ` +
+        `${result.trialStartedCount} trial${result.trialStartedCount === 1 ? '' : 's'} started.`
+      );
+    } catch (migrationError) {
+      setError(migrationError?.message || 'Failed to migrate legacy pending users.');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <div className="admin-migration-card card">
+      <div className="admin-migration-copy">
+        <div className="admin-section-heading admin-section-heading--flush">Legacy Pending Users</div>
+        <p className="admin-migration-text">
+          Existing pending accounts were created before the trial-first flow. Migrate them in one batch so they enter the new model.
+        </p>
+        <div className="admin-migration-meta">
+          <span className="admin-badge ab--pending">{pendingUsers.length} pending</span>
+          <label className="admin-migration-check">
+            <input
+              type="checkbox"
+              checked={startTrial}
+              onChange={(event) => setStartTrial(event.target.checked)}
+              disabled={busy || readOnly}
+            />
+            Start 7-day trial for users who have never used one
+          </label>
+        </div>
+      </div>
+      <div className="admin-migration-actions">
+        <button
+          type="button"
+          className="btn btn-primary"
+          disabled={busy || readOnly}
+          onClick={handleMigrate}
+        >
+          {busy ? 'Migrating…' : 'Migrate Legacy Pending Users'}
+        </button>
+        <div className="admin-migration-note">
+          {readOnly
+            ? 'Unavailable in fixture mode.'
+            : message || 'This only touches accounts still marked pending.'}
+        </div>
+        {error ? <div className="admin-inline-error">{error}</div> : null}
+      </div>
+    </div>
+  );
+}
+
 // ── Overview Tab ─────────────────────────────────────────────────────────────
 
-function OverviewTab({ allUsers, pendingUsers, recentLogins }) {
+function OverviewTab({ allUsers, pendingUsers, recentLogins, readOnly = false }) {
   const approved = allUsers.filter(u => u.accountStatus === 'approved');
   const blocked  = allUsers.filter(u => u.accountStatus === 'blocked');
   const expired  = allUsers.filter(u => u.accessStatus === 'expired' || u.accessStatus === 'revoked');
@@ -96,6 +168,8 @@ function OverviewTab({ allUsers, pendingUsers, recentLogins }) {
 
   return (
     <div className="admin-overview">
+      <LegacyPendingMigrationCard pendingUsers={pendingUsers} readOnly={readOnly} />
+
       <div className="admin-stat-grid">
         {stats.map(s => {
           const Icon = s.icon;
@@ -125,7 +199,7 @@ function OverviewTab({ allUsers, pendingUsers, recentLogins }) {
         {recentLogins.length === 0 ? (
           <div className="admin-empty">No login events recorded yet.</div>
         ) : (
-          <table className="admin-table">
+          <table className="admin-table admin-table--users">
             <thead>
               <tr>
                 <th>User</th>
@@ -157,9 +231,9 @@ function OverviewTab({ allUsers, pendingUsers, recentLogins }) {
 
 // ── Delete Confirm Modal ─────────────────────────────────────────────────────
 
-function DeleteConfirmModal({ user, onConfirm, onCancel, busy }) {
+function DeleteConfirmModal({ user, onConfirm, onCancel, busy, error }) {
   return (
-    <div className="admin-modal-overlay" onClick={onCancel}>
+    <div className="admin-modal-overlay" onClick={busy ? undefined : onCancel}>
       <div className="admin-modal card" onClick={e => e.stopPropagation()}>
         <div className="admin-modal-icon">
           <AlertTriangle size={32} />
@@ -169,6 +243,7 @@ function DeleteConfirmModal({ user, onConfirm, onCancel, busy }) {
           Permanently delete <strong>{user.username || user.email || 'this user'}</strong>?
           This cannot be undone.
         </p>
+        {error ? <div className="admin-inline-error admin-inline-error--banner">{error}</div> : null}
         <div className="admin-modal-actions">
           <button className="btn btn-secondary" onClick={onCancel} disabled={busy}>Cancel</button>
           <button className="btn admin-btn-delete" onClick={onConfirm} disabled={busy}>
@@ -292,15 +367,20 @@ function formatRoleLabel(role) {
   return normalizedRole.charAt(0).toUpperCase() + normalizedRole.slice(1);
 }
 
-function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess, onClearAccessWindow, onSetExpiry, busy }) {
+function UserRow({ user, currentUserId, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess, onClearAccessWindow, onSetExpiry, busy }) {
   const isPending  = user.accountStatus === 'pending';
   const isBlocked  = user.accountStatus === 'blocked';
   const isApproved = user.accountStatus === 'approved';
   const isAdminUser = user.isAdmin === true;
+  const isCurrentUser = user.userId === currentUserId;
+  const canDeleteUser = !isAdminUser && !isCurrentUser;
+  const deleteDisabledReason = isCurrentUser
+    ? 'You cannot delete your own account.'
+    : 'Admin accounts cannot be deleted.';
 
   return (
     <tr className="admin-user-row">
-      <td>
+      <td data-label="User">
         <div className="admin-user-info">
           {user.avatarUrl
             ? <img src={user.avatarUrl} alt="" className="admin-avatar" />
@@ -312,8 +392,8 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
           </div>
         </div>
       </td>
-      <td><StatusBadge status={user.accountStatus} /></td>
-      <td>
+      <td data-label="Status"><StatusBadge status={user.accountStatus} /></td>
+      <td data-label="Access">
         <div>
           <AccessBadge status={user.accessStatus} isUnlimited={isAdminUser} accessGrantKind={user.accessGrantKind} />
           {user.hasUsedTrial && !isAdminUser ? (
@@ -327,8 +407,8 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
           ) : null}
         </div>
       </td>
-      <td><ExpiryTimestampCell timestamp={user.accessExpiresAt} isUnlimited={isAdminUser} detail={user.accessGrantKind === 'trial' ? 'Trial access' : null} /></td>
-      <td>
+      <td data-label="Due"><ExpiryTimestampCell timestamp={user.accessExpiresAt} isUnlimited={isAdminUser} detail={user.accessGrantKind === 'trial' ? 'Trial access' : null} /></td>
+      <td data-label="Role">
         {isAdminUser ? (
           <div className="admin-role-static-wrap">
             <span className="admin-role-static">{formatRoleLabel(user.role || 'student')}</span>
@@ -338,8 +418,8 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
           <RoleSelect userId={user.userId} currentRole={user.role || 'student'} />
         )}
       </td>
-      <td className="admin-date">{formatDate(user.createdAt)}</td>
-      <td>
+      <td className="admin-date" data-label="Joined">{formatDate(user.createdAt)}</td>
+      <td data-label="Actions">
         <div className="admin-action-btns">
           {isPending && <>
             <button className="btn btn-sm btn-primary" disabled={busy} onClick={() => onApprove(user.userId)}>
@@ -372,16 +452,26 @@ function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, onRevokeAccess
           <button className="btn btn-sm btn-secondary" disabled={busy || isAdminUser} onClick={() => onClearAccessWindow(user.userId)}>
             <Shield size={13} /> Reset Window
           </button>
-          <button className="btn btn-sm admin-btn-delete" disabled={busy} onClick={() => onDelete(user)} title="Delete user">
-            <Trash2 size={13} />
-          </button>
+          {canDeleteUser ? (
+            <button
+              className="btn btn-sm admin-btn-delete"
+              disabled={busy}
+              onClick={() => onDelete(user)}
+              title={`Delete ${user.username || user.email || 'user'}`}
+              aria-label={`Delete ${user.username || user.email || 'user'}`}
+            >
+              <Trash2 size={13} />
+            </button>
+          ) : (
+            <span className="admin-action-note" title={deleteDisabledReason}>Protected</span>
+          )}
         </div>
       </td>
     </tr>
   );
 }
 
-function UsersTab({ allUsers, pendingUsers }) {
+function UsersTab({ allUsers, pendingUsers, currentUserId }) {
   const [filter, setFilter] = useState('all'); // 'all' | 'pending' | 'approved' | 'blocked'
   const [search, setSearch] = useState('');
   const [busy, setBusy] = useState(false);
@@ -422,9 +512,12 @@ function UsersTab({ allUsers, pendingUsers }) {
     if (!deleteTarget) return;
     setBusy(true);
     setActionError('');
-    try { await deleteUser({ userId: deleteTarget.userId }); }
+    try {
+      await deleteUser({ userId: deleteTarget.userId });
+      setDeleteTarget(null);
+    }
     catch (e) { setActionError(e?.message || 'Failed to delete user.'); }
-    finally { setBusy(false); setDeleteTarget(null); }
+    finally { setBusy(false); }
   };
 
   const source = filter === 'pending' ? pendingUsers : allUsers;
@@ -441,8 +534,12 @@ function UsersTab({ allUsers, pendingUsers }) {
         <DeleteConfirmModal
           user={deleteTarget}
           onConfirm={handleDeleteConfirm}
-          onCancel={() => setDeleteTarget(null)}
+          onCancel={() => {
+            setActionError('');
+            setDeleteTarget(null);
+          }}
           busy={busy}
+          error={actionError}
         />
       )}
       {expiryTarget && (
@@ -512,7 +609,11 @@ function UsersTab({ allUsers, pendingUsers }) {
                   onRevokeAccess={handleRevokeAccess}
                   onClearAccessWindow={handleClearAccessWindow}
                   onSetExpiry={setExpiryTarget}
-                  onDelete={setDeleteTarget}
+                  onDelete={(user) => {
+                    setActionError('');
+                    setDeleteTarget(user);
+                  }}
+                  currentUserId={currentUserId}
                   busy={busy}
                 />
               ))}
@@ -1008,7 +1109,7 @@ export default function AdminPage() {
   const navigate = useNavigate();
   // isLoaded: Clerk has finished resolving the session (true once auth state is known)
   // isAdmin:  undefined while loading, true for admins, false for everyone else
-  const { isLoaded, isAdmin } = useAuth();
+  const { isLoaded, isAdmin, userId: currentUserId } = useAuth();
   const [tab, setTab] = useState('overview');
   const [devFixture] = useState(() => readAdminDevFixture());
   const useDevFixture = Boolean(devFixture);
@@ -1085,8 +1186,8 @@ export default function AdminPage() {
 
       {/* Tab content */}
       <div className="admin-content">
-        {tab === 'overview' && <OverviewTab allUsers={allUsers} pendingUsers={pendingUsers} recentLogins={recentLogins} />}
-        {tab === 'users'    && <UsersTab allUsers={allUsers} pendingUsers={pendingUsers} />}
+        {tab === 'overview' && <OverviewTab allUsers={allUsers} pendingUsers={pendingUsers} recentLogins={recentLogins} readOnly={useDevFixture} />}
+        {tab === 'users'    && <UsersTab allUsers={allUsers} pendingUsers={pendingUsers} currentUserId={currentUserId} />}
         {tab === 'features' && <FeaturesTab flags={flags} readOnly={useDevFixture} />}
         {tab === 'payments' && <PaymentsTab requests={paymentRequests} counts={paymentCounts} readOnly={useDevFixture} />}
         {tab === 'observability' && <ObservabilityTab summary={observabilitySummary} readOnly={useDevFixture} />}

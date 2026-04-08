@@ -189,10 +189,6 @@ function AuthContextProvider({ children }) {
 
   const maybeOpenAccessSummary = useCallback(({ statusResult, finalizeResult }) => {
     if (!sessionId) return;
-    if (statusResult?.accessStatus === 'selection_required') {
-      setAccessModalState({ mode: 'select' });
-      return;
-    }
     if (statusResult?.accessStatus !== 'active' || !finalizeResult?.createdSession) {
       return;
     }
@@ -344,10 +340,6 @@ function AuthContextProvider({ children }) {
           await forceExpirySignOut(statusResult);
           return;
         }
-        if (statusResult?.accessStatus === 'selection_required') {
-          setAccessModalState({ mode: 'select' });
-          return;
-        }
         if (wasPendingApproval && statusResult?.accessStatus === 'active') {
           setAccessModalState({ mode: 'summary' });
         }
@@ -438,7 +430,7 @@ function AuthContextProvider({ children }) {
   return (
     <AuthContext.Provider value={value}>
       {children}
-      {isSignedIn && accessModalState && (accessStatus === 'selection_required' || accessStatus === 'active') && (
+      {isSignedIn && accessModalState && accessStatus === 'active' && (
         <AccessWindowModal
           mode={accessModalState.mode}
           username={value.username}

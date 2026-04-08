@@ -249,7 +249,7 @@ function PaymentSubmitted({ request }) {
       <h2 className="payment-submitted-title">Payment Slip Submitted</h2>
       <p className="payment-submitted-msg">
         Your receipt has been sent to the admin for review.
-        You'll be approved shortly — no further action needed.
+        Access will be restored once it is approved.
       </p>
       <div className="payment-submitted-details card">
         <div className="payment-bank-row">
@@ -305,7 +305,7 @@ function ApprovalAwaitingState({ email, username }) {
         </div>
         <div className="payment-bank-row">
           <span className="payment-bank-key">After the trial</span>
-          <span className="payment-bank-val">Choose a monthly or yearly access plan</span>
+          <span className="payment-bank-val">Upload a payment slip for a monthly or yearly plan</span>
         </div>
         <div className="payment-bank-row">
           <span className="payment-bank-key">Signed in as</span>
@@ -331,13 +331,16 @@ export default function PendingApprovalPage() {
   const paymentReq    = useQuery(api.paymentRequests.getMyPaymentRequest);
 
   const accountStatus = statusResult?.accountStatus ?? 'pending';
+  const accessStatus  = statusResult?.accessStatus ?? 'restricted';
   const email         = statusResult?.email ?? '';
   const paymentsEnabled = isEnabled('payments');
+  const isLegacyApprovalState = accountStatus === 'pending';
+  const needsPayment = accountStatus === 'approved' && accessStatus === 'selection_required';
 
-  // Auto-redirect when approved
+  // Auto-redirect when access is active
   useEffect(() => {
-    if (accountStatus === 'approved') navigate('/', { replace: true });
-  }, [accountStatus, navigate]);
+    if (accessStatus === 'active') navigate('/', { replace: true });
+  }, [accessStatus, navigate]);
 
   useEffect(() => {
     if (isSignedIn === false) navigate('/', { replace: true });
@@ -389,6 +392,10 @@ export default function PendingApprovalPage() {
   const hasActiveSubmission = paymentReq && paymentReq.status === 'pending';
   const wasRejected         = paymentReq && paymentReq.status === 'rejected';
   const canResubmitPayment  = Boolean(paymentReq) && wasRejected && paymentsEnabled;
+  const headerTitle = isLegacyApprovalState ? 'Awaiting Approval' : 'Continue After Trial';
+  const headerSubtitle = isLegacyApprovalState
+    ? `Hi${username ? `, ${username}` : ''}! Your free trial will start automatically once an admin approves your account.`
+    : `Hi${username ? `, ${username}` : ''}! Your 7-day free trial has ended. Choose a plan, upload your payment slip, and wait for admin approval to continue.`;
 
   return (
     <div className="pending-page pending-page--payment">
@@ -397,10 +404,8 @@ export default function PendingApprovalPage() {
         <div className="payment-header">
           <div className="payment-header-icon">📚</div>
           <div>
-            <h1 className="payment-title">Awaiting Approval</h1>
-            <p className="payment-subtitle">
-              Hi{username ? `, ${username}` : ''}! An admin approval starts your 7-day free trial.
-            </p>
+            <h1 className="payment-title">{headerTitle}</h1>
+            <p className="payment-subtitle">{headerSubtitle}</p>
           </div>
         </div>
 
@@ -421,7 +426,11 @@ export default function PendingApprovalPage() {
         {/* Main content */}
         {hasActiveSubmission
           ? <PaymentSubmitted request={paymentReq} />
-          : canResubmitPayment ? <PaymentForm /> : paymentsEnabled ? <ApprovalAwaitingState email={email} username={username} /> : <PaymentUnavailable />
+          : isLegacyApprovalState
+            ? <ApprovalAwaitingState email={email} username={username} />
+            : canResubmitPayment || needsPayment
+              ? paymentsEnabled ? <PaymentForm /> : <PaymentUnavailable />
+              : <PaymentUnavailable />
         }
 
         {/* Footer */}

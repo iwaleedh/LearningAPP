@@ -21,7 +21,7 @@ test.describe('admin dashboard QA', () => {
     await expect(page.getByText('Recent Login Events')).toBeVisible();
     await expect(page.getByText('Fixture Student')).toBeVisible();
 
-    await page.getByRole('button', { name: 'Users' }).click();
+    await page.getByRole('button', { name: /^Users(?:\s+\d+)?$/ }).click();
     await expect(page.getByText('Fixture Student')).toBeVisible();
     await expect(page.getByRole('button', { name: 'Set Expiry' }).first()).toBeVisible();
     await expect(page.getByRole('button', { name: 'Reset Window' }).first()).toBeVisible();
@@ -36,6 +36,49 @@ test.describe('admin dashboard QA', () => {
 
     await page.locator('#admin-access-expiry-reason').fill('Manual extension for QA');
     await expect(page.locator('#admin-access-expiry-reason')).toHaveValue('Manual extension for QA');
+  });
+
+  test('overview exposes the legacy pending migration control in fixture mode', async ({ page }) => {
+    await page.goto('/admin');
+
+    await expect(page.locator('.admin-section-heading--flush')).toHaveText('Legacy Pending Users');
+    await expect(page.getByLabel('Start 7-day trial for users who have never used one')).toBeChecked();
+    await expect(page.getByRole('button', { name: 'Migrate Legacy Pending Users' })).toBeDisabled();
+    await expect(page.getByText('Unavailable in fixture mode.')).toBeVisible();
+  });
+
+  test('users tab stays usable on mobile and protects the current admin row', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await seedAdminDashboardFixture(page, {
+      ...SEEDED_ADMIN_DASHBOARD_FIXTURE,
+      allUsers: [
+        ...SEEDED_ADMIN_DASHBOARD_FIXTURE.allUsers,
+        {
+          _id: 'users:admin-fixture',
+          userId: 'debug_admin_dashboard',
+          username: 'Admin QA',
+          email: 'iwaleedh@gmail.com',
+          role: 'admin',
+          accountStatus: 'approved',
+          accessStatus: 'active',
+          accessGrantKind: 'unlimited',
+          accessExpiresAt: null,
+          createdAt: Date.now(),
+          isAdmin: true,
+        },
+      ],
+    });
+
+    await page.goto('/admin');
+    await page.getByRole('button', { name: /^Users(?:\s+\d+)?$/ }).click();
+
+    const usersTableWrap = page.locator('.admin-table-wrap').first();
+    const overflows = await usersTableWrap.evaluate((node) => node.scrollWidth > node.clientWidth + 1);
+
+    await expect(page.locator('.admin-user-row .admin-user-name').filter({ hasText: 'Admin QA' })).toBeVisible();
+    await expect(page.getByText('Protected')).toBeVisible();
+    await expect(page.getByRole('button', { name: /Delete Fixture Student/i })).toBeVisible();
+    expect(overflows).toBe(false);
   });
 
   test('observability tab renders seeded alerts and delivery tables', async ({ page }) => {

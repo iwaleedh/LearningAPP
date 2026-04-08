@@ -214,6 +214,75 @@ export const approveUser = mutation({
 });
 
 /**
+ * Bulk-migrate legacy pending users to the trial-first flow. Admin only.
+ * Existing consumed trials or paid access windows are preserved.
+ */
+export const migrateLegacyPendingUsers = mutation({
+  args: {
+    startTrial: v.optional(v.boolean()),
+  },
+  handler: async (ctx, { startTrial }) => {
+    const adminId = await requireAdmin(ctx);
+    const now = Date.now();
+    const shouldStartTrial = startTrial !== false;
+    const pendingUsers = await ctx.db
+      .query("users")
+      .withIndex("by_accountStatus", (q) => q.eq("accountStatus", "pending"))
+      .collect();
+
+    let migratedCount = 0;
+    let trialStartedCount = 0;
+    let skippedTrialCount = 0;
+
+    for (const user of pendingUsers) {
+      if (hasUnlimitedAccessWindow(user)) {
+        continue;
+      }
+
+      const patch: Record<string, unknown> = {
+        accountStatus: "approved",
+        statusUpdatedAt: now,
+      };
+
+      const canStartTrial = shouldStartTrial
+        && typeof user.trialStartedAt !== "number"
+        && typeof user.accessExpiresAt !== "number";
+
+      if (canStartTrial) {
+        patch.trialStartedAt = now;
+        patch.trialExpiresAt = now + TRIAL_DURATION_MS;
+        patch.accessRevokedAt = undefined;
+        patch.accessRevokedReason = undefined;
+        trialStartedCount += 1;
+      } else {
+        skippedTrialCount += 1;
+      }
+
+      await ctx.db.patch(user._id, patch);
+      migratedCount += 1;
+    }
+
+    const response = {
+      migratedCount,
+      trialStartedCount,
+      skippedTrialCount,
+      startTrial: shouldStartTrial,
+      migratedAt: now,
+    };
+
+    await ctx.db.insert("auditLogs", {
+      actorId: adminId,
+      action: "MIGRATE_LEGACY_PENDING_USERS",
+      targetId: undefined,
+      details: JSON.stringify(response),
+      timestamp: now,
+    });
+
+    return response;
+  },
+});
+
+/**
  * Block a user. Admin only. Cannot block self.
  */
 export const blockUser = mutation({
@@ -287,15 +356,30 @@ export const deleteUser = mutation({
     }
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
+    if (hasUnlimitedAccessWindow(user)) {
+      throw new Error("Admin accounts cannot be deleted.");
+    }
 
     const paymentRequests = await ctx.db
       .query("paymentRequests")
       .withIndex("by_userId", (q) => q.eq("userId", userId))
       .collect();
 
+    const authSessions = await ctx.db
+      .query("authSessions")
+      .withIndex("by_user", (q: any) => q.eq("userId", userId))
+      .collect();
+
+    const paymentUploadIntents = await ctx.db
+      .query("paymentUploadIntents" as any)
+      .withIndex("by_user_submission", (q: any) => q.eq("userId", userId))
+      .collect();
+
     for (const request of paymentRequests) {
       try {
-        await ctx.storage.delete(request.storageId);
+        if (request.storageId) {
+          await ctx.storage.delete(request.storageId);
+        }
       } catch (error) {
         console.warn("Failed to delete payment slip from storage", {
           paymentRequestId: request._id,
@@ -304,6 +388,14 @@ export const deleteUser = mutation({
         });
       }
       await ctx.db.delete(request._id);
+    }
+
+    for (const session of authSessions) {
+      await ctx.db.delete(session._id);
+    }
+
+    for (const intent of paymentUploadIntents) {
+      await ctx.db.delete(intent._id);
     }
 
     await ctx.db.delete(user._id);

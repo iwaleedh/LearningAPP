@@ -102,6 +102,14 @@ export default function AccessWindowModal({
               label={isTrialSummary ? 'Access type' : 'Duration'}
               value={isTrialSummary ? '7-day free trial' : durationLabel}
             />
+            {isTrialSummary ? (
+              <SummaryMetric
+                icon={<ShieldCheck size={18} />}
+                label="After day 7"
+                value="Upload a payment slip"
+                detail="Paid access starts after admin approval."
+              />
+            ) : null}
           </div>
         )}
 

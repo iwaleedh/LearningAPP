@@ -101,6 +101,7 @@
 
 .admin-content {
   min-height: 300px;
+  min-width: 0;
 }
 
 /* ── Overview Tab ───────────────────────────────────────────────────────── */
@@ -155,6 +156,60 @@
   color: var(--color-accent);
   border-radius: var(--radius-lg);
   font-size: 0.9rem;
+}
+
+.admin-migration-card {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 6%, transparent), var(--color-surface));
+}
+
+.admin-migration-copy {
+  flex: 1;
+  min-width: 240px;
+}
+
+.admin-section-heading--flush {
+  padding: 0;
+}
+
+.admin-migration-text {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.admin-migration-meta {
+  margin-top: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.admin-migration-check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-primary);
+  font-size: 0.85rem;
+}
+
+.admin-migration-actions {
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.admin-migration-note {
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
 }
 
 /* ── Users Tab ──────────────────────────────────────────────────────────── */
@@ -243,7 +298,10 @@
 .admin-pill.active .admin-pill-count { background: rgba(255,255,255,0.25); }
 
 /* Table */
-.admin-table-wrap { overflow-x: auto; padding: 0; }
+.admin-table-wrap {
+  overflow-x: auto;
+  padding: 0;
+}
 
 .admin-table {
   width: 100%;
@@ -385,6 +443,18 @@
   display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
+}
+
+.admin-action-note {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 var(--space-2);
+  border-radius: 999px;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .admin-btn-block {
@@ -549,11 +619,198 @@
 
 /* ── Responsive ─────────────────────────────────────────────────────────── */
 
+@media (max-width: 900px) {
+  .admin-page {
+    padding: var(--space-5);
+    gap: var(--space-5);
+  }
+
+  .admin-migration-card {
+    flex-direction: column;
+  }
+
+  .admin-migration-actions {
+    min-width: 0;
+  }
+
+  .admin-header-left {
+    align-items: flex-start;
+  }
+
+  .admin-tabs {
+    gap: var(--space-1);
+  }
+
+  .admin-tab {
+    padding-inline: var(--space-3);
+  }
+
+  .admin-action-btns .btn {
+    min-height: 36px;
+  }
+}
+
+@media (max-width: 720px) {
+  .admin-page {
+    padding: var(--space-4);
+  }
+
+  .admin-header {
+    align-items: flex-start;
+  }
+
+  .admin-header-left {
+    width: 100%;
+    gap: var(--space-3);
+  }
+
+  .admin-title {
+    font-size: 1.25rem;
+  }
+
+  .admin-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-tab {
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .admin-users-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-search-wrap {
+    min-width: 0;
+  }
+
+  .admin-filter-pills {
+    width: 100%;
+  }
+
+  .admin-modal {
+    width: calc(100% - var(--space-6));
+    padding: var(--space-5);
+  }
+
+  .admin-modal-actions {
+    flex-direction: column;
+  }
+
+  .admin-modal-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 640px) {
   .admin-page { padding: var(--space-4); }
-  .admin-stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .admin-stat-grid { grid-template-columns: 1fr; }
   .admin-table th:nth-child(4),
   .admin-table td:nth-child(4) { display: none; }
+
+  .admin-table--users thead {
+    display: none;
+  }
+
+  .admin-table--users,
+  .admin-table--users tbody,
+  .admin-table--users tr,
+  .admin-table--users td {
+    display: block;
+    width: 100%;
+  }
+
+  .admin-table-wrap:has(.admin-table--users) {
+    padding: var(--space-3);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .admin-table--users tbody {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .admin-table--users .admin-user-row {
+    display: grid;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .admin-table--users td {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .admin-table--users td:not([data-label='User']) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .admin-table--users td:not([data-label='User'])::before {
+    content: attr(data-label);
+    flex: 0 0 4.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+  }
+
+  .admin-table--users td[data-label='User']::before,
+  .admin-table--users td[data-label='Actions']::before {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+  }
+
+  .admin-table--users td[data-label='User']::before {
+    content: 'User';
+  }
+
+  .admin-table--users td[data-label='Actions'] {
+    display: block;
+  }
+
+  .admin-table--users td[data-label='Actions']::before {
+    content: 'Actions';
+  }
+
+  .admin-table--users .admin-user-info {
+    align-items: flex-start;
+  }
+
+  .admin-table--users .admin-date-stack {
+    min-width: 0;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .admin-table--users .admin-action-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table--users .admin-action-btns .btn,
+  .admin-table--users .admin-action-note {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* ── Delete button ──────────────────────────────────────────────────────── */

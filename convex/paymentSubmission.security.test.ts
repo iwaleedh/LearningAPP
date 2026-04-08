@@ -419,5 +419,9 @@ test("reviewPaymentRequest deletes rejected receipt blobs but preserves approved
   });
 
   assert.equal(approvedCtx.tables.paymentRequests[0]?.status, "approved");
+  assert.equal(approvedCtx.tables.users[0]?.accountStatus, "approved");
+  assert.equal(approvedCtx.tables.users[0]?.accessDurationMonths, 1);
+  assert.equal(typeof approvedCtx.tables.users[0]?.accessWindowStartedAt, "number");
+  assert.equal(typeof approvedCtx.tables.users[0]?.accessExpiresAt, "number");
   assert.equal(approvedCtx.deletedStorageIds.has("_storage:approve-me"), false);
 });
