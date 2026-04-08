@@ -93,7 +93,7 @@ export const registerUser = mutation({
       role: "student",
       email,
       avatarUrl,
-      accountStatus: (isAdminEmail(email) || isAdminUsername(username)) ? "approved" : "pending",
+      accountStatus: "approved",
       sessionVersion: 1,
       statusUpdatedAt: Date.now(),
       createdAt: Date.now(),

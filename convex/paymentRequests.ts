@@ -20,6 +20,27 @@ const PAYMENT_UPLOAD_INTENT_WINDOW_MS = 15 * 60 * 1000;
 const PAYMENT_UPLOAD_INTENT_CONSUMED_RETENTION_MS = 24 * 60 * 60 * 1000;
 const PAYMENT_UPLOAD_INTENT_CLEANUP_BATCH_SIZE = 200;
 
+function addMonthsUtc(baseMs: number, months: 1 | 12) {
+  const source = new Date(baseMs);
+  const targetMonthIndex = source.getUTCMonth() + months;
+  const daysInTargetMonth = new Date(Date.UTC(
+    source.getUTCFullYear(),
+    targetMonthIndex + 1,
+    0,
+  )).getUTCDate();
+  const clampedDay = Math.min(source.getUTCDate(), daysInTargetMonth);
+
+  return Date.UTC(
+    source.getUTCFullYear(),
+    targetMonthIndex,
+    clampedDay,
+    source.getUTCHours(),
+    source.getUTCMinutes(),
+    source.getUTCSeconds(),
+    source.getUTCMilliseconds(),
+  );
+}
+
 function normalizePaymentMimeType(mimeType: string) {
   const normalized = requireTrimmedValue(mimeType, "mimeType", MAX_PAYMENT_MIME_LENGTH).toLowerCase();
   return normalized === "image/jpg" ? "image/jpeg" : normalized;
@@ -428,6 +449,10 @@ export const reviewPaymentRequest = mutation({
         throw new Error("Cannot approve payment request before the user account is fully registered.");
       }
 
+      const grantedAt = Date.now();
+      const accessDurationMonths = req.plan === "annual" ? 12 : 1;
+      const accessExpiresAt = addMonthsUtc(grantedAt, accessDurationMonths);
+
       const existingEntitlement = await ctx.db
         .query("paymentEntitlements")
         .withIndex("by_request", (q) => q.eq("requestId", requestId))
@@ -438,7 +463,7 @@ export const reviewPaymentRequest = mutation({
           plan: req.plan,
           amount: req.amount,
           status: "active",
-          grantedAt: Date.now(),
+          grantedAt,
           grantedBy: adminUserId,
           revokedAt: undefined,
           revokedBy: undefined,
@@ -451,14 +476,19 @@ export const reviewPaymentRequest = mutation({
           plan: req.plan,
           amount: req.amount,
           status: "active",
-          grantedAt: Date.now(),
+          grantedAt,
           grantedBy: adminUserId,
         }));
       }
 
       await ctx.db.patch(user._id, {
-        accountStatus:   "approved",
-        statusUpdatedAt: Date.now(),
+        accountStatus: "approved",
+        accessWindowStartedAt: grantedAt,
+        accessDurationMonths,
+        accessExpiresAt,
+        accessRevokedAt: undefined,
+        accessRevokedReason: undefined,
+        statusUpdatedAt: grantedAt,
       });
     }
 

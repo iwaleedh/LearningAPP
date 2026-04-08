@@ -251,6 +251,7 @@ test("registerUser canonicalizes conflicting usernames and publishes registratio
   assert.equal(insertedUser?.username, "Alice_bbbbbb");
   assert.equal(insertedUser?.userId, "user_bbbbbb");
   assert.equal(insertedUser?.email, "new@example.com");
+  assert.equal(insertedUser?.accountStatus, "approved");
   assert.equal(schedulerCalls.length, 1);
   assert.deepEqual(schedulerCalls[0]?.args, {
     topic: "user:registered",

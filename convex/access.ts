@@ -13,6 +13,7 @@ import {
 } from "./authHelpers";
 
 const anyInternal = internal as any;
+const TRIAL_DURATION_MS = 7 * 24 * 60 * 60 * 1000;
 
 function addMonthsUtc(baseMs: number, months: 1 | 12) {
   const source = new Date(baseMs);
@@ -86,6 +87,11 @@ export const finalizeSignIn = mutation({
     const resolvedSessionId = String(sessionId || identitySessionId || "").trim() || undefined;
     const currentSessionVersion = user.sessionVersion ?? 1;
     const normalizedUserAgent = normalizeUserAgent(userAgent);
+    const shouldStartTrial = !hasUnlimitedAccessWindow(user)
+      && effectiveAccountStatus(user) === "approved"
+      && typeof user.trialStartedAt !== "number"
+      && typeof user.accessExpiresAt !== "number";
+    const trialExpiresAt = shouldStartTrial ? now + TRIAL_DURATION_MS : user.trialExpiresAt;
 
     let existingSession = null;
     if (resolvedSessionId) {
@@ -102,6 +108,18 @@ export const finalizeSignIn = mutation({
       lastAuthSessionId: resolvedSessionId,
       sessionVersion: currentSessionVersion,
     };
+    if (shouldStartTrial) {
+      userPatch.trialStartedAt = now;
+      userPatch.trialExpiresAt = trialExpiresAt;
+      userPatch.accessRevokedAt = undefined;
+      userPatch.accessRevokedReason = undefined;
+    }
+
+    const nextUserState = {
+      ...user,
+      ...userPatch,
+    };
+    const currentAccessGrant = resolveAccessGrant(nextUserState, now);
 
     let loginEventId = null;
     let createdSession = false;
@@ -132,8 +150,8 @@ export const finalizeSignIn = mutation({
         email: user.email,
         eventType: "sign_in",
         occurredAt: now,
-        accessDurationMonths: user.accessDurationMonths,
-        accessExpiresAt: user.accessExpiresAt,
+        accessDurationMonths: currentAccessGrant.kind === "paid" ? nextUserState.accessDurationMonths : undefined,
+        accessExpiresAt: currentAccessGrant.expiresAt ?? undefined,
         userAgent: normalizedUserAgent,
         emailDeliveryStatus: "pending",
         emailRetryCount: 0,
@@ -144,10 +162,7 @@ export const finalizeSignIn = mutation({
 
     await ctx.db.patch(user._id, userPatch);
 
-    const updatedUser = {
-      ...user,
-      ...userPatch,
-    };
+    const updatedUser = nextUserState;
 
     if (loginEventId) {
       await ctx.scheduler.runAfter(0, anyInternal.authNotifications.sendLoginAlert, {

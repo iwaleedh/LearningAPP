@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import { finalizeSignIn, revokeExpiredAccessSessions, selectAccessWindow } from "./access";
-import { approveUser, retryPendingLoginAlerts, revokeUserAccess, setUserAccessExpiry } from "./admin";
+import { approveUser, migrateLegacyPendingUsers, retryPendingLoginAlerts, revokeUserAccess, setUserAccessExpiry } from "./admin";
 import { requireApprovedAccount } from "./authHelpers";
 import { createMockConvexCtx } from "./testUtils";
 
@@ -10,6 +10,7 @@ const finalizeSignInHandler = (finalizeSignIn as any)._handler as (ctx: any, arg
 const selectAccessWindowHandler = (selectAccessWindow as any)._handler as (ctx: any, args: any) => Promise<any>;
 const revokeExpiredAccessSessionsHandler = (revokeExpiredAccessSessions as any)._handler as (ctx: any, args: any) => Promise<any>;
 const approveUserHandler = (approveUser as any)._handler as (ctx: any, args: any) => Promise<any>;
+const migrateLegacyPendingUsersHandler = (migrateLegacyPendingUsers as any)._handler as (ctx: any, args: any) => Promise<any>;
 const retryPendingLoginAlertsHandler = (retryPendingLoginAlerts as any)._handler as (ctx: any, args: any) => Promise<any>;
 const revokeUserAccessHandler = (revokeUserAccess as any)._handler as (ctx: any, args: any) => Promise<any>;
 const setUserAccessExpiryHandler = (setUserAccessExpiry as any)._handler as (ctx: any, args: any) => Promise<any>;
@@ -66,7 +67,7 @@ function createSelectAccessWindowCtx({
   });
 }
 
-test("finalizeSignIn creates a tracked auth session and login event", async () => {
+test("finalizeSignIn auto-starts the first trial and tracks the session", async () => {
   const { ctx, tables, schedulerCalls } = createMockConvexCtx({
     identity: {
       subject: "student_1",
@@ -93,9 +94,13 @@ test("finalizeSignIn creates a tracked auth session and login event", async () =
     userAgent: "QA Browser",
   });
 
-  assert.equal(result.accessStatus, "selection_required");
+  assert.equal(result.accessStatus, "active");
+  assert.equal(result.accessGrantKind, "trial");
+  assert.equal(typeof tables.users[0]?.trialStartedAt, "number");
+  assert.equal(typeof tables.users[0]?.trialExpiresAt, "number");
   assert.equal(tables.authSessions.length, 1);
   assert.equal(tables.loginEvents.length, 1);
+  assert.equal(tables.loginEvents[0]?.accessExpiresAt, tables.users[0]?.trialExpiresAt);
   assert.equal(tables.loginEvents[0]?.emailDeliveryStatus, "pending");
   assert.equal(schedulerCalls.length, 1);
 });
@@ -208,6 +213,108 @@ test("approveUser does not reissue a consumed trial", async () => {
   } finally {
     Date.now = realNow;
   }
+});
+
+test("migrateLegacyPendingUsers approves legacy pending users and starts trials when eligible", async () => {
+  const realNow = Date.now;
+  const migratedAt = Date.parse("2026-04-08T09:00:00.000Z");
+  Date.now = () => migratedAt;
+
+  try {
+    const originalTrialStart = migratedAt - (30 * 24 * 60 * 60 * 1000);
+    const originalTrialExpiry = originalTrialStart + (7 * 24 * 60 * 60 * 1000);
+    const existingPaidExpiry = migratedAt + (14 * 24 * 60 * 60 * 1000);
+    const { ctx, tables } = createMockConvexCtx({
+      identity: {
+        subject: "admin_user",
+        email: "iwaleedh@gmail.com",
+      },
+      tables: {
+        users: [
+          {
+            _id: "users:pending-one",
+            userId: "pending_one",
+            username: "Pending One",
+            email: "pending.one@example.com",
+            role: "student",
+            accountStatus: "pending",
+            createdAt: 1,
+          },
+          {
+            _id: "users:pending-two",
+            userId: "pending_two",
+            username: "Pending Two",
+            email: "pending.two@example.com",
+            role: "student",
+            accountStatus: "pending",
+            trialStartedAt: originalTrialStart,
+            trialExpiresAt: originalTrialExpiry,
+            createdAt: 2,
+          },
+          {
+            _id: "users:pending-three",
+            userId: "pending_three",
+            username: "Pending Three",
+            email: "pending.three@example.com",
+            role: "student",
+            accountStatus: "pending",
+            accessExpiresAt: existingPaidExpiry,
+            createdAt: 3,
+          },
+        ],
+      },
+    });
+
+    const result = await migrateLegacyPendingUsersHandler(ctx, { startTrial: true });
+
+    assert.deepEqual(result, {
+      migratedCount: 3,
+      trialStartedCount: 1,
+      skippedTrialCount: 2,
+      startTrial: true,
+      migratedAt,
+    });
+    assert.equal(tables.users[0]?.accountStatus, "approved");
+    assert.equal(tables.users[0]?.trialStartedAt, migratedAt);
+    assert.equal(tables.users[0]?.trialExpiresAt, migratedAt + (7 * 24 * 60 * 60 * 1000));
+    assert.equal(tables.users[1]?.accountStatus, "approved");
+    assert.equal(tables.users[1]?.trialStartedAt, originalTrialStart);
+    assert.equal(tables.users[1]?.trialExpiresAt, originalTrialExpiry);
+    assert.equal(tables.users[2]?.accountStatus, "approved");
+    assert.equal(tables.users[2]?.accessExpiresAt, existingPaidExpiry);
+  } finally {
+    Date.now = realNow;
+  }
+});
+
+test("migrateLegacyPendingUsers can approve legacy pending users without starting trials", async () => {
+  const { ctx, tables } = createMockConvexCtx({
+    identity: {
+      subject: "admin_user",
+      email: "iwaleedh@gmail.com",
+    },
+    tables: {
+      users: [{
+        _id: "users:pending-no-trial",
+        userId: "pending_no_trial",
+        username: "Pending No Trial",
+        email: "pending.no.trial@example.com",
+        role: "student",
+        accountStatus: "pending",
+        createdAt: 1,
+      }],
+    },
+  });
+
+  const result = await migrateLegacyPendingUsersHandler(ctx, { startTrial: false });
+
+  assert.equal(result.migratedCount, 1);
+  assert.equal(result.trialStartedCount, 0);
+  assert.equal(result.skippedTrialCount, 1);
+  assert.equal(result.startTrial, false);
+  assert.equal(tables.users[0]?.accountStatus, "approved");
+  assert.equal(tables.users[0]?.trialStartedAt, undefined);
+  assert.equal(tables.users[0]?.trialExpiresAt, undefined);
 });
 
 test("selectAccessWindow sets a due date and revokes sibling sessions", async () => {
