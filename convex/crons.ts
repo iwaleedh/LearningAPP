@@ -6,7 +6,6 @@
  *
  * Jobs:
  *   1. processEventQueue            — every 30s: drain pending pub/sub events
- *   2. cleanupEndedSessions         — every hour: delete stale ended sessions
  *   3. cleanupOldEvents             — daily: purge processed events older than 7 days
  *   4. cleanupOldLogs               — daily: purge log entries older than 14 days
  *   5. detectNaNProjections         — nightly: D2 alert on corrupt badge projections
@@ -26,13 +25,6 @@ crons.interval(
   "process event queue",
   { seconds: 30 },
   anyInternal.observability.runProcessEventQueueCron,
-);
-
-// ── Cleanup ended sessions every hour ───────────────────────────────
-crons.interval(
-  "cleanup ended sessions",
-  { hours: 1 },
-  anyInternal.observability.runCleanupEndedSessionsCron,
 );
 
 // ── Purge old processed events daily ────────────────────────────────

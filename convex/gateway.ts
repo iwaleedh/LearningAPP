@@ -7,7 +7,6 @@
  *
  * Domains:
  *   Content      — notes, flashcards, noteAssets
- *   Collaboration — liveSessions, sessionParticipants, liveClasses, ...
  *   Identity     — users
  *   Platform     — events, logs
  */
@@ -16,7 +15,6 @@ import { v } from "convex/values";
 import {
   isTeacherUserId,
   requireApprovedAuthenticatedUserId,
-  requireHostedSessionAccess,
   requireTeacher,
 } from "./authHelpers";
 
@@ -53,40 +51,6 @@ export const getNotesWithAuthors = query({
       lastEditedAt: note.lastEditedAt,
       authorUsername: userMap.get(note.ownerUserId) || "Unknown",
     }));
-  },
-});
-
-// ── Session + Participants + Users: enriched session detail ─────────
-export const getSessionWithParticipants = query({
-  args: { sessionId: v.id("liveSessions") },
-  handler: async (ctx, { sessionId }) => {
-    await requireHostedSessionAccess(ctx, String(sessionId));
-    const session = await ctx.db.get(sessionId);
-    if (!session) return null;
-
-    const participants = await ctx.db
-      .query("sessionParticipants")
-      .withIndex("by_session", (q) => q.eq("sessionId", String(sessionId)))
-      .collect();
-
-    // Enrich with usernames
-    const enriched = await Promise.all(
-      participants.map(async (p) => {
-        const user = await ctx.db
-          .query("users")
-          .withIndex("by_userId", (q) => q.eq("userId", p.userId))
-          .first();
-        return {
-          ...p,
-          username: user?.username || "Unknown",
-        };
-      })
-    );
-
-    return {
-      ...session,
-      participants: enriched,
-    };
   },
 });
 

@@ -6,7 +6,6 @@ const DEFAULT_FLAGS = [
   { key: "flashcards", label: "Flashcards", description: "Spaced-repetition flashcard study mode", owner: "student-experience", purpose: "Controls the flashcard study workflow", sunsetDate: "2026-09-30" },
   { key: "pastPapers", label: "Past Papers", description: "Timed past-paper practice and review", owner: "student-experience", purpose: "Controls access to past-paper practice flows", sunsetDate: "2026-09-30" },
   { key: "exercises", label: "Exercises", description: "MCQ, fill-in-blank, drag & drop exercises", owner: "student-experience", purpose: "Controls access to interactive exercises", sunsetDate: "2026-09-30" },
-  { key: "liveClass", label: "Live Class", description: "Real-time teacher-hosted live sessions", owner: "classroom-platform", purpose: "Emergency kill switch for live classroom features", sunsetDate: "2026-09-30" },
   { key: "mistakeBank", label: "Mistake Bank", description: "Review and retry incorrectly answered questions", owner: "student-experience", purpose: "Controls the mistake review workflow", sunsetDate: "2026-09-30" },
   { key: "progress", label: "Progress Tracker", description: "Study analytics and performance charts", owner: "student-experience", purpose: "Controls analytics and progress views", sunsetDate: "2026-09-30" },
   { key: "notes", label: "Notes", description: "Structured subject notes and reading view", owner: "content-platform", purpose: "Controls note browsing and note reading routes", sunsetDate: "2026-09-30" },
@@ -21,7 +20,9 @@ const DEFAULT_FLAGS = [
 export const getAllFlags = query({
   args: {},
   handler: async (ctx) => {
-    const existing = await ctx.db.query("featureFlags").collect();
+    const activeKeys = new Set(DEFAULT_FLAGS.map((flag) => flag.key));
+    const existing = (await ctx.db.query("featureFlags").collect())
+      .filter((flag) => activeKeys.has(flag.key));
     const existingKeys = new Set(existing.map((f) => f.key));
 
     // Return existing flags merged with defaults for any missing keys
@@ -45,11 +46,12 @@ export const getAllFlags = query({
 });
 
 /**
- * Returns a single flag value (true = enabled). Defaults to true if not set.
+ * Returns an active flag value. Active flags default to true; unknown flags are disabled.
  */
 export const getFlag = query({
   args: { key: v.string() },
   handler: async (ctx, { key }) => {
+    if (!DEFAULT_FLAGS.some((flag) => flag.key === key)) return false;
     const flag = await ctx.db
       .query("featureFlags")
       .withIndex("by_key", (q) => q.eq("key", key))
@@ -65,6 +67,9 @@ export const setFlag = mutation({
   args: { key: v.string(), enabled: v.boolean() },
   handler: async (ctx, { key, enabled }) => {
     const adminId = await requireAdmin(ctx);
+    if (!DEFAULT_FLAGS.some((flag) => flag.key === key)) {
+      throw new Error("Unknown feature flag.");
+    }
     const existing = await ctx.db
       .query("featureFlags")
       .withIndex("by_key", (q) => q.eq("key", key))

@@ -1,3 +1,4 @@
+import './annotationFonts.css';
 export const FONT_CATEGORIES = [
   {
     id: 'handwriting',
@@ -74,18 +75,18 @@ export const FONT_CATEGORIES = [
   },
 ];
 
-export const ALL_LIVE_CLASS_FONTS = FONT_CATEGORIES.flatMap((category) => category.fonts);
+export const ALL_ANNOTATION_FONTS = FONT_CATEGORIES.flatMap((category) => category.fonts);
 
 export const HANDWRITING_FONT_OPTIONS = FONT_CATEGORIES.find((category) => category.id === 'handwriting')?.fonts ?? [];
 
-export const DEFAULT_LIVE_CLASS_FONT_FAMILY = HANDWRITING_FONT_OPTIONS[0]?.value || 'Inter, sans-serif';
+export const DEFAULT_ANNOTATION_FONT_FAMILY = HANDWRITING_FONT_OPTIONS[0]?.value || 'Inter, sans-serif';
 
-export function getLiveClassFontLabel(fontFamily) {
-  return ALL_LIVE_CLASS_FONTS.find((font) => font.value === fontFamily)?.name || 'Font';
+export function getFontLabel(fontFamily) {
+  return ALL_ANNOTATION_FONTS.find((font) => font.value === fontFamily)?.name || 'Font';
 }
 
 export const DEFAULT_TEXT_FONT = {
-  fontFamily: DEFAULT_LIVE_CLASS_FONT_FAMILY,
+  fontFamily: DEFAULT_ANNOTATION_FONT_FAMILY,
   fontSize: 24,
   fontWeight: 'normal',
   textDecoration: '',

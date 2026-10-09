@@ -1,6 +1,6 @@
 import { useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
-import { Canvas as FabricCanvas, PencilBrush, IText, Rect, Ellipse, Line, util } from 'fabric';
-import { DEFAULT_TEXT_FONT } from '../liveclass/fontDefaults.js';
+import { Canvas as FabricCanvas, PencilBrush, IText, Rect, Ellipse, Line } from 'fabric';
+import { DEFAULT_TEXT_FONT } from './fontDefaults.js';
 
 function hexToRgba(hex, alpha) {
     if (!hex || !hex.startsWith('#') || hex.length < 7) return hex;
@@ -11,7 +11,7 @@ function hexToRgba(hex, alpha) {
 }
 
 const AnnotationCanvas = forwardRef(function AnnotationCanvas(
-    { width, height, activeTool, toolOptions, onCanvasChange, onStrokeEvent },
+    { width, height, activeTool, toolOptions, onCanvasChange },
     ref
 ) {
     const canvasElRef = useRef(null);
@@ -23,11 +23,9 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
     const drawStateRef = useRef({ isDown: false, origX: 0, origY: 0, shape: null, prevState: null });
     const isLoadingRef = useRef(false);
     const lastStateRef = useRef(null);
-    const onStrokeEventRef = useRef(onStrokeEvent);
 
     useEffect(() => { activeToolRef.current = activeTool; }, [activeTool]);
     useEffect(() => { toolOptsRef.current = toolOptions; }, [toolOptions]);
-    useEffect(() => { onStrokeEventRef.current = onStrokeEvent; }, [onStrokeEvent]);
 
     // Initialise fabric canvas once on mount
     useEffect(() => {
@@ -46,35 +44,10 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
         const trackChange = () => {
             if (isLoadingRef.current) return;
             onCanvasChange?.({ prevState: lastStateRef.current });
-            lastStateRef.current = fc.toJSON(['data']);
+            lastStateRef.current = fc.toObject(['data']);
         };
-        fc.on('path:created', (e) => {
-            if (isLoadingRef.current) return;
-            const path = e.path;
-            if (path && !path.data?.strokeClientId) {
-                path.data = { ...path.data, strokeClientId: crypto.randomUUID() };
-            }
-            onCanvasChange?.({ prevState: lastStateRef.current });
-            lastStateRef.current = fc.toJSON(['data']);
-            if (path?.data?.strokeClientId) {
-                onStrokeEventRef.current?.('created', {
-                    clientId: path.data.strokeClientId,
-                    json: JSON.stringify(path.toObject(['data'])),
-                });
-            }
-        });
-        fc.on('object:modified', (e) => {
-            if (isLoadingRef.current) return;
-            const obj = e.target;
-            onCanvasChange?.({ prevState: lastStateRef.current });
-            lastStateRef.current = fc.toJSON(['data']);
-            if (obj?.data?.strokeClientId) {
-                onStrokeEventRef.current?.('modified', {
-                    clientId: obj.data.strokeClientId,
-                    json: JSON.stringify(obj.toObject(['data'])),
-                });
-            }
-        });
+        fc.on('path:created', trackChange);
+        fc.on('object:modified', trackChange);
         fc.on('object:removed', trackChange);
 
         // ── Shape / text / eraser drawing ──────────────────────────────
@@ -86,22 +59,14 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
 
             if (tool === 'eraser') {
                 if (opt.target) {
-                    const prev = lastStateRef.current;
-                    const clientId = opt.target?.data?.strokeClientId;
                     fc.remove(opt.target);
                     fc.renderAll();
-                    onCanvasChange?.({ prevState: prev });
-                    lastStateRef.current = fc.toJSON(['data']);
-                    if (clientId) {
-                        onStrokeEventRef.current?.('deleted', { clientId });
-                    }
                 }
                 return;
             }
 
             if (tool === 'text') {
                 const prev = lastStateRef.current;
-                const strokeClientId = crypto.randomUUID();
                 const text = new IText('', {
                     left: pointer.x,
                     top: pointer.y,
@@ -113,7 +78,6 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                     textDecoration: opts.textDecoration || DEFAULT_TEXT_FONT.textDecoration,
                     textAlign: opts.textAlign || DEFAULT_TEXT_FONT.textAlign,
                     selectable: true,
-                    data: { strokeClientId },
                 });
                 fc.add(text);
                 fc.setActiveObject(text);
@@ -123,11 +87,7 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                         fc.remove(text);
                     } else {
                         onCanvasChange?.({ prevState: prev });
-                        lastStateRef.current = fc.toJSON(['data']);
-                        onStrokeEventRef.current?.('created', {
-                            clientId: strokeClientId,
-                            json: JSON.stringify(text.toObject(['data'])),
-                        });
+                        lastStateRef.current = fc.toObject(['data']);
                     }
                     fc.renderAll();
                 });
@@ -199,14 +159,8 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                 if (tooSmall) {
                     fc.remove(ds.shape);
                 } else {
-                    const clientId = crypto.randomUUID();
-                    ds.shape.data = { strokeClientId: clientId };
                     onCanvasChange?.({ prevState: ds.prevState });
-                    lastStateRef.current = fc.toJSON(['data']);
-                    onStrokeEventRef.current?.('created', {
-                        clientId,
-                        json: JSON.stringify(ds.shape.toObject(['data'])),
-                    });
+                    lastStateRef.current = fc.toObject(['data']);
                 }
             }
             ds.isDown = false;
@@ -257,7 +211,7 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
     // Imperative API exposed to parent via ref
     useImperativeHandle(ref, () => ({
         getCanvas: () => fabricRef.current,
-        toJSON: () => fabricRef.current?.toJSON(['data']) ?? null,
+        toJSON: () => fabricRef.current?.toObject(['data']) ?? null,
         loadFromJSON: async (json) => {
             const fc = fabricRef.current;
             if (!fc) return;
@@ -267,7 +221,7 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                 await fc.loadFromJSON(json);
             }
             fc.renderAll();
-            lastStateRef.current = fc.toJSON(['data']);
+            lastStateRef.current = fc.toObject(['data']);
             isLoadingRef.current = false;
         },
         clear: () => {
@@ -275,48 +229,7 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
             if (!fc) return;
             fc.clear();
             fc.renderAll();
-            lastStateRef.current = fc.toJSON(['data']);
-        },
-        applyStrokeDelta: async (type, strokeId, clientId, fabricObjectJson) => {
-            const fc = fabricRef.current;
-            if (!fc) return;
-
-            if (type === 'created') {
-                try {
-                    const parsed = JSON.parse(fabricObjectJson);
-                    if (!parsed.data) parsed.data = {};
-                    if (clientId) parsed.data.strokeClientId = clientId;
-                    const [obj] = await util.enlivenObjects([parsed]);
-                    if (obj) {
-                        obj.set({ selectable: false, evented: false });
-                        fc.add(obj);
-                    }
-                    fc.renderAll();
-                } catch (e) {
-                    console.warn('applyStrokeDelta: parse error', e);
-                }
-            } else if (type === 'updated') {
-                try {
-                    const parsed = JSON.parse(fabricObjectJson);
-                    const targetClientId = clientId ?? parsed.data?.strokeClientId;
-                    const existing = fc.getObjects().find(o => o.data?.strokeClientId === targetClientId);
-                    if (existing) fc.remove(existing);
-                    const [obj] = await util.enlivenObjects([parsed]);
-                    if (obj) {
-                        obj.set({ selectable: false, evented: false });
-                        fc.add(obj);
-                    }
-                    fc.renderAll();
-                } catch (e) {
-                    console.warn('applyStrokeDelta: update error', e);
-                }
-            } else if (type === 'deleted') {
-                const existing = fc.getObjects().find(o => o.data?.strokeClientId === clientId);
-                if (existing) {
-                    fc.remove(existing);
-                    fc.renderAll();
-                }
-            }
+            lastStateRef.current = fc.toObject(['data']);
         },
     }), []);
 

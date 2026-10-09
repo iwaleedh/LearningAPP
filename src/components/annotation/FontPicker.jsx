@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { X, Type, Italic, Underline, AlignLeft, AlignCenter, AlignRight } from 'lucide-react';
 import {
-  ALL_LIVE_CLASS_FONTS,
+  ALL_ANNOTATION_FONTS,
   FONT_CATEGORIES,
   HANDWRITING_FONT_OPTIONS,
-  getLiveClassFontLabel,
+  getFontLabel,
 } from './fontDefaults.js';
 
-const ALL_FONTS = ALL_LIVE_CLASS_FONTS;
+const ALL_FONTS = ALL_ANNOTATION_FONTS;
 
 const FONT_SIZES = [8, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36, 42, 48, 60, 72, 96];
 
@@ -42,7 +42,7 @@ export default function FontPicker({
   const underline = isUnderline || false;
   const italic = isItalic || false;
   const align = currentAlign || 'left';
-  const [previewText, setPreviewText] = useState('Write clearly on the board');
+  const [previewText, setPreviewText] = useState('Write clearly on your notes');
   const [showFontMenu, setShowFontMenu] = useState(false);
   const [fontQuery, setFontQuery] = useState('');
   const pickerRef = useRef(null);
@@ -81,7 +81,7 @@ export default function FontPicker({
   };
 
   const isDhivehi = font.includes('Thaana') || font.includes('MV Boli');
-  const selectedFontLabel = getLiveClassFontLabel(font);
+  const selectedFontLabel = getFontLabel(font);
   const fontPreviewSample = previewText.trim() || 'Sample text';
   const normalizedFontQuery = fontQuery.trim().toLowerCase();
   const filteredFontCategories = FONT_CATEGORIES
@@ -96,30 +96,30 @@ export default function FontPicker({
 
   return (
     <div
-      className="lc-font-picker"
+      className="annotation-font-picker"
       ref={pickerRef}
       style={style}
       onMouseDown={(event) => event.stopPropagation()}
       onClick={(event) => event.stopPropagation()}
     >
       {/* Header */}
-      <div className="lc-font-picker-header">
-        <span className="lc-font-picker-title">
+      <div className="annotation-font-picker-header">
+        <span className="annotation-font-picker-title">
           <Type size={16} />
           Font
         </span>
-        <button className="lc-font-picker-close" onClick={onClose} aria-label="Close">
+        <button className="annotation-font-picker-close" onClick={onClose} aria-label="Close">
           <X size={16} />
         </button>
       </div>
 
       {/* Live preview */}
-      <div className="lc-font-preview">
+      <div className="annotation-font-preview">
         <input
           type="text"
           value={previewText}
           onChange={(e) => setPreviewText(e.target.value)}
-          className="lc-font-preview-input"
+          className="annotation-font-preview-input"
           placeholder="Type to preview…"
           dir={isDhivehi ? 'rtl' : 'ltr'}
           style={{
@@ -134,26 +134,26 @@ export default function FontPicker({
         />
       </div>
 
-      <div className="lc-font-row">
-        <div className="lc-font-section-head">
-          <label className="lc-font-label">Handwriting picks</label>
-          <span className="lc-font-helper">Visible previews for classroom writing</span>
+      <div className="annotation-font-row">
+        <div className="annotation-font-section-head">
+          <label className="annotation-font-label">Handwriting picks</label>
+          <span className="annotation-font-helper">Visible previews for your annotations</span>
         </div>
-        <div className="lc-font-swatch-grid" role="listbox" aria-label="Handwriting fonts">
+        <div className="annotation-font-swatch-grid" role="listbox" aria-label="Handwriting fonts">
           {HANDWRITING_FONT_OPTIONS.map((fontOption) => {
             const isActive = fontOption.value === font;
             return (
               <button
                 key={fontOption.id}
                 type="button"
-                className={`lc-font-swatch${isActive ? ' lc-font-swatch--active' : ''}`}
+                className={`annotation-font-swatch${isActive ? ' annotation-font-swatch--active' : ''}`}
                 style={{ fontFamily: fontOption.value }}
                 onClick={() => emit({ font: fontOption.value })}
                 aria-pressed={isActive}
                 title={fontOption.name}
               >
-                <span className="lc-font-swatch-name">{fontOption.name}</span>
-                <span className="lc-font-swatch-sample">{fontPreviewSample}</span>
+                <span className="annotation-font-swatch-name">{fontOption.name}</span>
+                <span className="annotation-font-swatch-sample">{fontPreviewSample}</span>
               </button>
             );
           })}
@@ -161,46 +161,46 @@ export default function FontPicker({
       </div>
 
       {/* Font family */}
-      <div className="lc-font-row">
-        <div className="lc-font-section-head">
-          <label className="lc-font-label">All fonts</label>
-          <span className="lc-font-helper">Current: {selectedFontLabel}</span>
+      <div className="annotation-font-row">
+        <div className="annotation-font-section-head">
+          <label className="annotation-font-label">All fonts</label>
+          <span className="annotation-font-helper">Current: {selectedFontLabel}</span>
         </div>
-        <div className="lc-font-family-dropdown">
+        <div className="annotation-font-family-dropdown">
           <button
             type="button"
-            className={`lc-font-family-trigger${showFontMenu ? ' lc-font-family-trigger--active' : ''}`}
+            className={`annotation-font-family-trigger${showFontMenu ? ' annotation-font-family-trigger--active' : ''}`}
             onClick={(event) => {
               event.stopPropagation();
               setShowFontMenu((value) => !value);
             }}
             title={`Choose font: ${selectedFontLabel}`}
           >
-            <span className="lc-font-family-trigger-main" style={{ fontFamily: font }}>{selectedFontLabel}</span>
-            <span className="lc-font-family-trigger-meta">{totalFontCount} fonts</span>
+            <span className="annotation-font-family-trigger-main" style={{ fontFamily: font }}>{selectedFontLabel}</span>
+            <span className="annotation-font-family-trigger-meta">{totalFontCount} fonts</span>
           </button>
 
           {showFontMenu && (
-            <div className="lc-font-family-menu">
+            <div className="annotation-font-family-menu">
               <input
                 type="text"
                 value={fontQuery}
                 onChange={(event) => setFontQuery(event.target.value)}
-                className="lc-font-family-search"
+                className="annotation-font-family-search"
                 placeholder="Search fonts..."
               />
 
-              <div className="lc-font-family-list" role="listbox" aria-label="All fonts">
+              <div className="annotation-font-family-list" role="listbox" aria-label="All fonts">
                 {filteredFontCategories.map((category) => (
-                  <div key={category.id} className="lc-font-family-group">
-                    <div className="lc-font-family-group-label">{category.label}</div>
+                  <div key={category.id} className="annotation-font-family-group">
+                    <div className="annotation-font-family-group-label">{category.label}</div>
                     {category.fonts.map((fontOption) => {
                       const isActive = fontOption.value === font;
                       return (
                         <button
                           key={fontOption.id}
                           type="button"
-                          className={`lc-font-family-option${isActive ? ' lc-font-family-option--active' : ''}`}
+                          className={`annotation-font-family-option${isActive ? ' annotation-font-family-option--active' : ''}`}
                           style={{ fontFamily: fontOption.value }}
                           onClick={(event) => {
                             event.stopPropagation();
@@ -210,8 +210,8 @@ export default function FontPicker({
                           aria-pressed={isActive}
                           title={fontOption.name}
                         >
-                          <span className="lc-font-family-option-name">{fontOption.name}</span>
-                          <span className="lc-font-family-option-sample">{fontPreviewSample}</span>
+                          <span className="annotation-font-family-option-name">{fontOption.name}</span>
+                          <span className="annotation-font-family-option-sample">{fontPreviewSample}</span>
                         </button>
                       );
                     })}
@@ -219,7 +219,7 @@ export default function FontPicker({
                 ))}
 
                 {filteredFontCategories.length === 0 && (
-                  <div className="lc-font-family-empty">No fonts match that search.</div>
+                  <div className="annotation-font-family-empty">No fonts match that search.</div>
                 )}
               </div>
             </div>
@@ -228,11 +228,11 @@ export default function FontPicker({
       </div>
 
       {/* Size + Weight */}
-      <div className="lc-font-row lc-font-row--split">
+      <div className="annotation-font-row annotation-font-row--split">
         <div>
-          <label className="lc-font-label">Size</label>
+          <label className="annotation-font-label">Size</label>
           <select
-            className="lc-font-select"
+            className="annotation-font-select"
             value={size}
             onChange={(e) => emit({ size: Number(e.target.value) })}
           >
@@ -242,9 +242,9 @@ export default function FontPicker({
           </select>
         </div>
         <div>
-          <label className="lc-font-label">Weight</label>
+          <label className="annotation-font-label">Weight</label>
           <select
-            className="lc-font-select"
+            className="annotation-font-select"
             value={weight}
             onChange={(e) => emit({ weight: e.target.value })}
           >
@@ -256,17 +256,17 @@ export default function FontPicker({
       </div>
 
       {/* Align + Style */}
-      <div className="lc-font-row lc-font-row--split">
+      <div className="annotation-font-row annotation-font-row--split">
         <div>
-          <label className="lc-font-label">Align</label>
-          <div className="lc-font-style-toggles">
+          <label className="annotation-font-label">Align</label>
+          <div className="annotation-font-style-toggles">
             {ALIGN_OPTIONS.map((option) => {
               const IconComponent = option.icon;
               return (
                 <button
                   key={option.value}
                   type="button"
-                  className={`lc-font-style-btn${align === option.value ? ' lc-font-style-btn--active' : ''}`}
+                  className={`annotation-font-style-btn${align === option.value ? ' annotation-font-style-btn--active' : ''}`}
                   onClick={() => emit({ align: option.value })}
                   title={option.value.charAt(0).toUpperCase() + option.value.slice(1)}
                 >
@@ -277,11 +277,11 @@ export default function FontPicker({
           </div>
         </div>
         <div>
-          <label className="lc-font-label">Style</label>
-          <div className="lc-font-style-toggles">
+          <label className="annotation-font-label">Style</label>
+          <div className="annotation-font-style-toggles">
             <button
               type="button"
-              className={`lc-font-style-btn${italic ? ' lc-font-style-btn--active' : ''}`}
+              className={`annotation-font-style-btn${italic ? ' annotation-font-style-btn--active' : ''}`}
               onClick={() => emit({ italic: !italic })}
               title="Italic"
             >
@@ -289,7 +289,7 @@ export default function FontPicker({
             </button>
             <button
               type="button"
-              className={`lc-font-style-btn${underline ? ' lc-font-style-btn--active' : ''}`}
+              className={`annotation-font-style-btn${underline ? ' annotation-font-style-btn--active' : ''}`}
               onClick={() => emit({ underline: !underline })}
               title="Underline"
             >

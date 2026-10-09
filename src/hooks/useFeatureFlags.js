@@ -9,7 +9,6 @@ const FEATURE_KEYS = [
     'flashcards',
     'progress',
     'mistakeBank',
-    'liveClass',
     'requireApproval',
     'payments',
 ];
@@ -45,7 +44,7 @@ export function useFeatureFlags() {
 
         const nextFlags = { ...DEFAULT_FLAGS };
         rawFlags.forEach((flag) => {
-            nextFlags[flag.key] = flag.enabled;
+            if (FEATURE_KEYS.includes(flag.key)) nextFlags[flag.key] = flag.enabled;
         });
         return nextFlags;
     }, [rawFlags]);
@@ -56,6 +55,6 @@ export function useFeatureFlags() {
         // received the first flags response.  When Convex is not configured the
         // hook resolves immediately with DEFAULT_FLAGS and isLoading stays false.
         isLoading: Boolean(CONVEX_CONFIGURED && isLoaded && isSignedIn && rawFlags === undefined),
-        isEnabled: (featureKey) => flags[featureKey] ?? true,
+        isEnabled: (featureKey) => flags[featureKey] ?? false,
     };
 }

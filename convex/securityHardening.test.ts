@@ -2,7 +2,6 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import { recordAttempt } from "./studyAttempts";
-import { getSessionByStringId } from "./sessions";
 import { getCurrentUserRole } from "./authHelpers";
 import { internalPublish, publish } from "./eventBus";
 import { validateEventPayload } from "./eventSchemas";
@@ -10,7 +9,6 @@ import { EVENT_TOPICS } from "./eventTopics";
 import { createMockConvexCtx } from "./testUtils";
 
 const recordAttemptHandler = (recordAttempt as any)._handler as (ctx: any, args: any) => Promise<any>;
-const getSessionByStringIdHandler = (getSessionByStringId as any)._handler as (ctx: any, args: any) => Promise<any>;
 const internalPublishHandler = (internalPublish as any)._handler as (ctx: any, args: any) => Promise<any>;
 const publishHandler = (publish as any)._handler as (ctx: any, args: any) => Promise<any>;
 
@@ -78,68 +76,6 @@ test("getCurrentUserRole ignores JWT role claims and trusts the database", async
 
   const role = await getCurrentUserRole(ctx as any);
   assert.equal(role, "student");
-});
-
-test("getSessionByStringId rejects an unrelated teacher for a session they do not host or join", async () => {
-  const { ctx } = createMockConvexCtx({
-    identity: { subject: "teacher_intruder", role: "teacher" },
-    tables: {
-      users: [{
-        _id: "users:teacher",
-        userId: "teacher_intruder",
-        username: "Intruder",
-        role: "teacher",
-        createdAt: 1,
-      }],
-      liveSessions: [{
-        _id: "session:1",
-        hostUserId: "host_aaaaaa",
-        paperId: "paper-1",
-        title: "Paper",
-        status: "active",
-        createdAt: 1,
-      }],
-      sessionParticipants: [{
-        _id: "sessionParticipants:host",
-        sessionId: "session:1",
-        userId: "host_aaaaaa",
-        role: "host",
-        joinedAt: 1,
-      }],
-    },
-  });
-
-  await assert.rejects(
-    () => getSessionByStringIdHandler(ctx, { sessionId: "session:1" }),
-    /You do not have access to this session\./
-  );
-});
-
-test("getSessionByStringId still allows an admitted participant", async () => {
-  const { ctx } = createMockConvexCtx({
-    identity: { subject: "student_bbbbbb", role: "student" },
-    tables: {
-      users: [{ _id: "users:student_bbbbbb", userId: "student_bbbbbb", username: "Student", role: "student", createdAt: 1 }],
-      liveSessions: [{
-        _id: "session:1",
-        hostUserId: "host_aaaaaa",
-        paperId: "paper-1",
-        title: "Paper",
-        status: "active",
-        createdAt: 1,
-      }],
-      sessionParticipants: [{
-        _id: "sessionParticipants:participant",
-        sessionId: "session:1",
-        userId: "student_bbbbbb",
-        role: "editor",
-        joinedAt: 1,
-      }],
-    },
-  });
-
-  const result = await getSessionByStringIdHandler(ctx, { sessionId: "session:1" });
-  assert.equal(result?._id, "session:1");
 });
 
 test("validateEventPayload rejects malformed webhook payloads", () => {
