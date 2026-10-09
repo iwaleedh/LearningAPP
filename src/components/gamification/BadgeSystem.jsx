@@ -1,11 +1,12 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Trophy, Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock } from 'lucide-react';
+import { Star, Flame, BookOpen, Target, Zap, Crown, Award, Lock, ChevronDown } from 'lucide-react';
 import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
 import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
 import { api, callQuery, getClient } from '../../convex-client.js';
 import './Gamification.css';
 
-const CONFETTI_COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6', '#06b6d4', '#facc15'];
+// Brand palette: burgundy, rose, streak gold, mint and a warm white
+const CONFETTI_COLORS = ['#a3264c', '#f27b9f', '#f2b544', '#4cc38a', '#fbe9ef', '#d94f78'];
 
 function Confetti({ active }) {
     const particles = useMemo(() => {
@@ -45,112 +46,21 @@ function Confetti({ active }) {
     );
 }
 
+// Each badge is a threshold on one live metric, so progress toward it can be shown honestly.
+// perfectScores and fastCompletions are not tracked yet; those badges unlock once timed-exam tracking lands.
 const BADGE_DEFINITIONS = [
-    {
-        id: 'first_login',
-        name: 'First Login',
-        description: 'Welcome aboard! Your learning journey begins.',
-        icon: Star,
-        color: '#facc15',
-        gradient: 'linear-gradient(135deg, #facc15, #f59e0b)',
-        criteria: (stats) => stats.logins >= 1,
-    },
-    {
-        id: 'explorer',
-        name: 'Explorer',
-        description: 'Read 3 different notes.',
-        icon: BookOpen,
-        color: '#60a5fa',
-        gradient: 'linear-gradient(135deg, #60a5fa, #3b82f6)',
-        // D5: Use real notesRead count — pagesVisited was a hardcoded approximation.
-        criteria: (stats) => stats.notesRead >= 3,
-    },
-    {
-        id: 'first_exercise',
-        name: 'First Steps',
-        description: 'Completed your first exercise.',
-        icon: Target,
-        color: '#4ade80',
-        gradient: 'linear-gradient(135deg, #4ade80, #22c55e)',
-        criteria: (stats) => stats.exercisesCompleted >= 1,
-    },
-    {
-        id: 'notes_5',
-        name: 'Studious',
-        description: 'Read 5 notes.',
-        icon: BookOpen,
-        color: '#34d399',
-        gradient: 'linear-gradient(135deg, #34d399, #059669)',
-        criteria: (stats) => stats.notesRead >= 5,
-    },
-    {
-        id: 'notes_25',
-        name: 'Bookworm',
-        description: 'Read 25 notes.',
-        icon: BookOpen,
-        color: '#a78bfa',
-        gradient: 'linear-gradient(135deg, #a78bfa, #7c3aed)',
-        criteria: (stats) => stats.notesRead >= 25,
-    },
-    {
-        id: 'exercises_10',
-        name: 'Practice Makes Perfect',
-        description: 'Completed 10 exercises.',
-        icon: Target,
-        color: '#38bdf8',
-        gradient: 'linear-gradient(135deg, #38bdf8, #0284c7)',
-        criteria: (stats) => stats.exercisesCompleted >= 10,
-    },
-    {
-        id: 'streak_3',
-        name: '3-Day Streak',
-        description: 'Studied for 3 days in a row!',
-        icon: Flame,
-        color: '#fb923c',
-        gradient: 'linear-gradient(135deg, #fb923c, #f97316)',
-        criteria: (stats) => stats.currentStreak >= 3,
-    },
-    {
-        id: 'streak_7',
-        name: 'Week Warrior',
-        description: '7-day study streak. Unstoppable!',
-        icon: Flame,
-        color: '#ef4444',
-        gradient: 'linear-gradient(135deg, #ef4444, #dc2626)',
-        criteria: (stats) => stats.currentStreak >= 7,
-    },
-    {
-        id: 'quiz_master',
-        name: 'Quiz Master',
-        description: 'Scored 100% on an exam.',
-        icon: Crown,
-        color: '#93c5fd',
-        gradient: 'linear-gradient(135deg, #93c5fd, #8b5cf6)',
-        // perfectScores not yet tracked in activityStore — badge is achievable
-        // once the timed-exam perfect-score tracking is implemented.
-        criteria: (stats) => stats.perfectScores >= 1,
-    },
-    {
-        id: 'paper_pro',
-        name: 'Paper Pro',
-        description: 'Completed 5 past papers.',
-        icon: Award,
-        color: '#f472b6',
-        gradient: 'linear-gradient(135deg, #f472b6, #ec4899)',
-        criteria: (stats) => stats.papersCompleted >= 5,
-    },
-    {
-        id: 'speed_demon',
-        name: 'Speed Demon',
-        description: 'Finished an exam with over 50% time remaining.',
-        icon: Zap,
-        color: '#fbbf24',
-        gradient: 'linear-gradient(135deg, #fbbf24, #eab308)',
-        // fastCompletions not yet tracked in activityStore — badge is achievable
-        // once the timed-exam fast-finish tracking is implemented.
-        criteria: (stats) => stats.fastCompletions >= 1,
-    },
-];
+    { id: 'first_login', name: 'First sign-in', description: 'Sign in for the first time.', icon: Star, metric: 'logins', goal: 1 },
+    { id: 'explorer', name: 'Explorer', description: 'Read 3 different notes.', icon: BookOpen, metric: 'notesRead', goal: 3 },
+    { id: 'first_exercise', name: 'First steps', description: 'Complete your first exercise.', icon: Target, metric: 'exercisesCompleted', goal: 1 },
+    { id: 'notes_5', name: 'Studious', description: 'Read 5 notes.', icon: BookOpen, metric: 'notesRead', goal: 5 },
+    { id: 'notes_25', name: 'Bookworm', description: 'Read 25 notes.', icon: BookOpen, metric: 'notesRead', goal: 25 },
+    { id: 'exercises_10', name: 'Practice makes perfect', description: 'Complete 10 exercises.', icon: Target, metric: 'exercisesCompleted', goal: 10 },
+    { id: 'streak_3', name: '3-day streak', description: 'Study 3 days in a row.', icon: Flame, metric: 'currentStreak', goal: 3 },
+    { id: 'streak_7', name: 'Week warrior', description: 'Study 7 days in a row.', icon: Flame, metric: 'currentStreak', goal: 7 },
+    { id: 'quiz_master', name: 'Quiz master', description: 'Score 100% on an exam.', icon: Crown, metric: 'perfectScores', goal: 1 },
+    { id: 'paper_pro', name: 'Paper pro', description: 'Complete 5 past papers.', icon: Award, metric: 'papersCompleted', goal: 5 },
+    { id: 'speed_demon', name: 'Speed demon', description: 'Finish an exam with over half the time left.', icon: Zap, metric: 'fastCompletions', goal: 1 },
+].map((badge) => ({ ...badge, criteria: (stats) => (stats[badge.metric] || 0) >= badge.goal }));
 
 /**
  * SECURITY NOTE — Badge spoofing defence:
@@ -213,6 +123,7 @@ export default function BadgeSystem() {
     const readProgress = useReadProgressSummary();
     const [justEarned, setJustEarned] = useState(null);
     const [serverMetrics, setServerMetrics] = useState(null);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         let cancelled = false;
@@ -272,49 +183,101 @@ export default function BadgeSystem() {
 
     const earnedCount = earned.length;
     const totalCount = BADGE_DEFINITIONS.length;
+    const earnedBadges = BADGE_DEFINITIONS.filter((badge) => earned.includes(badge.id));
+    // Closest locked badges first, so "next up" is always the most reachable goal
+    const nextUp = BADGE_DEFINITIONS
+        .filter((badge) => !earned.includes(badge.id))
+        .map((badge) => ({ ...badge, current: Math.min(stats[badge.metric] || 0, badge.goal) }))
+        .sort((a, b) => (b.current / b.goal) - (a.current / a.goal) || a.goal - b.goal)
+        .slice(0, 3);
 
     return (
-        <div className="badge-system">
+        <section className="badge-system" aria-labelledby="badge-system-title">
             <Confetti active={Boolean(justEarned)} />
 
             <div className="badge-header">
-                <Trophy size={20} />
-                <h3>Achievements</h3>
-                <span className="badge-progress">{earnedCount}/{totalCount}</span>
+                <h2 className="progress-card-title" id="badge-system-title">Achievements</h2>
+                <span className="badge-progress">{earnedCount} of {totalCount} earned</span>
             </div>
 
             {justEarned && (
-                <div className="badge-toast animate-slide-up">
-                    🎉 Badge Unlocked: <strong>{BADGE_DEFINITIONS.find(b => b.id === justEarned)?.name}</strong>
+                <div className="badge-toast animate-slide-up" role="status">
+                    Badge unlocked: <strong>{BADGE_DEFINITIONS.find(b => b.id === justEarned)?.name}</strong>
                 </div>
             )}
 
-            <div className="badge-grid">
-                {BADGE_DEFINITIONS.map(badge => {
-                    const isEarned = earned.includes(badge.id);
-                    const Icon = badge.icon;
+            {earnedBadges.length > 0 && (
+                <ul className="badge-earned-row" aria-label="Earned badges">
+                    {earnedBadges.map((badge) => {
+                        const Icon = badge.icon;
+                        return (
+                            <li key={badge.id} className="badge-earned" title={badge.description}>
+                                <span className="badge-icon is-earned"><Icon size={20} aria-hidden="true" /></span>
+                                <span className="badge-earned-name">{badge.name}</span>
+                            </li>
+                        );
+                    })}
+                </ul>
+            )}
 
-                    return (
-                        <div
-                            key={badge.id}
-                            className={`badge-card ${isEarned ? 'earned' : 'locked'}`}
-                        >
+            {nextUp.length > 0 && (
+                <div className="badge-next">
+                    <h3 className="badge-next-title">Next up</h3>
+                    <ul className="badge-next-list">
+                        {nextUp.map((badge) => {
+                            const Icon = badge.icon;
+                            return (
+                                <li key={badge.id} className="badge-next-item">
+                                    <span className="badge-icon"><Icon size={18} aria-hidden="true" /></span>
+                                    <span className="badge-next-main">
+                                        <span className="badge-name">{badge.name}</span>
+                                        <span className="badge-desc">{badge.description}</span>
+                                        <span className="badge-next-track" aria-hidden="true">
+                                            <span style={{ transform: `scaleX(${badge.current / badge.goal})` }} />
+                                        </span>
+                                    </span>
+                                    <span className="badge-next-count">{badge.current} / {badge.goal}</span>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            )}
+
+            <button
+                type="button"
+                className="btn btn-ghost btn-sm badge-toggle"
+                aria-expanded={showAll}
+                aria-controls="badge-all-grid"
+                onClick={() => setShowAll((value) => !value)}
+            >
+                {showAll ? 'Hide all achievements' : `See all ${totalCount} achievements`}
+                <ChevronDown size={16} aria-hidden="true" className={showAll ? 'is-flipped' : ''} />
+            </button>
+
+            {showAll && (
+                <div className="badge-grid" id="badge-all-grid">
+                    {BADGE_DEFINITIONS.map(badge => {
+                        const isEarned = earned.includes(badge.id);
+                        const Icon = badge.icon;
+
+                        return (
                             <div
-                                className="badge-icon"
-                                style={{
-                                    background: isEarned ? badge.gradient : 'var(--color-bg-tertiary)',
-                                }}
+                                key={badge.id}
+                                className={`badge-card ${isEarned ? 'earned' : 'locked'}`}
                             >
-                                {isEarned ? <Icon size={24} color="white" /> : <Lock size={18} />}
+                                <div className={`badge-icon ${isEarned ? 'is-earned' : ''}`}>
+                                    {isEarned ? <Icon size={22} aria-hidden="true" /> : <Lock size={18} aria-hidden="true" />}
+                                </div>
+                                <div className="achievement-info">
+                                    <div className="badge-name">{badge.name}</div>
+                                    <div className="badge-desc">{badge.description}</div>
+                                </div>
                             </div>
-                            <div className="badge-info">
-                                <div className="badge-name">{badge.name}</div>
-                                <div className="badge-desc">{badge.description}</div>
-                            </div>
-                        </div>
-                    );
-                })}
-            </div>
-        </div>
+                        );
+                    })}
+                </div>
+            )}
+        </section>
     );
 }

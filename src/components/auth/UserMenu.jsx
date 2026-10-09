@@ -5,8 +5,9 @@
  */
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LogOut, User } from 'lucide-react';
+import { LogOut, User, UserRound } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth.js';
+import { friendlyDisplayName } from '../../utils/displayName.js';
 import './UserMenu.css';
 
 export default function UserMenu() {
@@ -22,9 +23,9 @@ export default function UserMenu() {
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
-  const initials = username
-    ? username.slice(0, 2).toUpperCase()
-    : '??';
+  const friendly = friendlyDisplayName(username);
+  const displayName = friendly || 'Student';
+  const initials = friendly ? friendly.slice(0, 2).toUpperCase() : null;
 
   function handleProfileClick() {
     setOpen(false);
@@ -51,15 +52,15 @@ export default function UserMenu() {
         {avatarUrl ? (
           <img src={avatarUrl} alt={username} className="user-avatar" />
         ) : (
-          <div className="user-avatar-initials">{initials}</div>
+          <div className="user-avatar-initials">{initials || <UserRound size={16} aria-hidden="true" />}</div>
         )}
-        <span className="user-menu-name">{username}</span>
+        <span className="user-menu-name">{displayName}</span>
       </button>
 
       {open && (
         <div className="user-menu-dropdown" role="menu">
           <div className="user-menu-info">
-            <p className="user-menu-info-name">{username}</p>
+            <p className="user-menu-info-name">{displayName}</p>
             <p className="user-menu-info-role">{role}</p>
           </div>
 
@@ -80,7 +81,7 @@ export default function UserMenu() {
             role="menuitem"
           >
             <LogOut size={15} />
-            Sign Out
+            Sign out
           </button>
         </div>
       )}

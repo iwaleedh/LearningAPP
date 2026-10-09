@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
-import { AlertTriangle, RotateCcw, CheckCircle, XCircle, Trash2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Check, CheckCircle, XCircle, Trash2 } from 'lucide-react';
+import PageHeader from '../components/common/PageHeader.jsx';
 import { listMistakes, removeMistake, clearMistakes } from '../services/mistakeStore.js';
 import './Pages.css';
 
@@ -7,16 +9,17 @@ function timeAgo(isoString) {
     const diff = Date.now() - new Date(isoString).getTime();
     const mins = Math.floor(diff / 60000);
     if (mins < 1) return 'Just now';
-    if (mins < 60) return `${mins}m ago`;
+    if (mins < 60) return `${mins} min ago`;
     const hrs = Math.floor(mins / 60);
-    if (hrs < 24) return `${hrs}h ago`;
+    if (hrs < 24) return `${hrs} h ago`;
     const days = Math.floor(hrs / 24);
-    return `${days}d ago`;
+    return days === 1 ? 'Yesterday' : `${days} days ago`;
 }
 
 export default function MistakeBankPage() {
     const [mistakes, setMistakes] = useState([]);
     const [status, setStatus] = useState('loading');
+    const [confirmingClear, setConfirmingClear] = useState(false);
 
     useEffect(() => {
         let cancelled = false;
@@ -46,123 +49,88 @@ export default function MistakeBankPage() {
         const cleared = await clearMistakes();
         if (!cleared) return;
         setMistakes([]);
+        setConfirmingClear(false);
     }
+
+    const header = (
+        <PageHeader
+            title="Mistake bank"
+            description="Questions you got wrong in Practice. Go over each one, then mark it as learned."
+            actions={mistakes.length > 0 ? (
+                confirmingClear ? (
+                    <div className="mistake-clear-confirm" role="group" aria-label="Confirm clearing all mistakes">
+                        <span>Clear all {mistakes.length}?</span>
+                        <button type="button" className="btn btn-sm btn-danger" onClick={() => void dismissAll()}>Clear all</button>
+                        <button type="button" className="btn btn-sm btn-ghost" onClick={() => setConfirmingClear(false)}>Cancel</button>
+                    </div>
+                ) : (
+                    <button type="button" className="btn btn-ghost btn-sm" onClick={() => setConfirmingClear(true)}>
+                        <Trash2 size={16} aria-hidden="true" /> Clear all
+                    </button>
+                )
+            ) : null}
+        />
+    );
 
     if (status === 'loading') {
         return (
-            <div className="mistake-hub animate-fade-in">
-                <div className="mistake-page-header">
-                    <div className="mistake-title-group">
-                        <div className="mistake-subject-icon">
-                            <AlertTriangle size={28} />
-                        </div>
-                        <div>
-                            <h1 className="mistake-page-title">Mistake Bank</h1>
-                            <p className="mistake-page-qual">Loading your saved mistakes...</p>
-                        </div>
-                    </div>
-                </div>
+            <div className="mistake-hub">
+                {header}
+                <p className="exercise-status" role="status">Loading your mistakes…</p>
             </div>
         );
     }
 
     if (mistakes.length === 0) {
         return (
-            <div className="mistake-hub animate-fade-in">
-                <div className="mistake-page-header">
-                    <div className="mistake-title-group">
-                        <div className="mistake-subject-icon">
-                            <CheckCircle size={28} />
-                        </div>
-                        <div>
-                            <h1 className="mistake-page-title">Mistake Bank</h1>
-                            <p className="mistake-page-qual">All clear — no pending mistakes</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="empty-state">
+            <div className="mistake-hub">
+                {header}
+                <div className="card empty-state">
                     <div className="empty-state-icon">
-                        <CheckCircle size={36} />
+                        <CheckCircle size={36} aria-hidden="true" />
                     </div>
-                    <h3>All clear!</h3>
-                    <p>Wrong answers from exercises will appear here for review. Keep practising!</p>
+                    <h3>Nothing to review</h3>
+                    <p>When you get a question wrong in Practice, it is saved here so you can go over it later.</p>
+                    <Link to="/exercises" className="btn btn-primary">
+                        Go to Practice <ArrowRight size={18} aria-hidden="true" />
+                    </Link>
                 </div>
             </div>
         );
     }
 
-    const totalAttempts = mistakes.reduce((s, m) => s + m.attempts, 0);
-
     return (
-        <div className="mistake-hub animate-fade-in">
-            {/* Bento Header */}
-            <div className="mistake-page-header">
-                <div className="mistake-title-group">
-                    <div className="mistake-subject-icon">
-                        <AlertTriangle size={28} />
-                    </div>
-                    <div>
-                        <h1 className="mistake-page-title">Mistake Bank</h1>
-                        <p className="mistake-page-qual">Questions you got wrong — review and dismiss when mastered</p>
-                    </div>
-                </div>
-                <div className="mistake-meta-boxes">
-                    <div className="meta-box">
-                        <div className="meta-icon meta-icon--danger">
-                            <XCircle size={18} />
-                        </div>
-                        <div className="meta-text">
-                            <strong>{mistakes.length}</strong>
-                            <span>To Review</span>
-                        </div>
-                    </div>
-                    <div className="meta-box">
-                        <div className="meta-icon meta-icon--success">
-                            <RotateCcw size={18} />
-                        </div>
-                        <div className="meta-text">
-                            <strong>{totalAttempts}</strong>
-                            <span>Total Attempts</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="mistake-hub">
+            {header}
 
-            <div className="mistake-toolbar">
-                <button className="btn btn-ghost btn-sm" onClick={() => void dismissAll()}>
-                    <Trash2 size={14} /> Clear All
-                </button>
-            </div>
+            <p className="mistake-count">{mistakes.length} {mistakes.length === 1 ? 'question' : 'questions'} to review</p>
 
-            {/* Mistake Cards */}
-            <div className="mistake-list">
-                {mistakes.map((mistake, i) => (
-                    <div
-                        key={mistake.id}
-                        className="mistake-card card animate-fade-in"
-                        style={{ animationDelay: `${i * 0.05}s` }}
-                    >
-                        <div className="mistake-header">
-                            <span className="mistake-topic badge badge-primary">{mistake.topic}</span>
-                            <span className="mistake-attempts">
-                                {mistake.attempts} attempt{mistake.attempts !== 1 ? 's' : ''} · {timeAgo(mistake.lastAttempt)}
+            <ul className="list-card mistake-list">
+                {mistakes.map((mistake) => (
+                    <li key={mistake.id} className="mistake-item">
+                        <div className="mistake-item-meta">
+                            {mistake.topic && <span className="chip chip--static">{mistake.topic}</span>}
+                            <span>
+                                {mistake.attempts} {mistake.attempts === 1 ? 'attempt' : 'attempts'} · {timeAgo(mistake.lastAttempt)}
                             </span>
                         </div>
                         <p className="mistake-question">{mistake.question}</p>
-                        <div className="mistake-answers">
-                            <span className="mistake-yours">
-                                <XCircle size={13} /> Your answer: <strong>{mistake.yourAnswer}</strong>
-                            </span>
-                            <span className="mistake-correct">
-                                <CheckCircle size={13} /> Correct: <strong>{mistake.correctAnswer}</strong>
-                            </span>
-                        </div>
-                        <button className="btn btn-ghost btn-sm" onClick={() => void dismiss(mistake.id)}>
-                            <CheckCircle size={14} /> Mark as Mastered
+                        <dl className="mistake-answer-pair">
+                            <div className="mistake-answer is-yours">
+                                <dt><XCircle size={16} aria-hidden="true" /> Your answer</dt>
+                                <dd>{mistake.yourAnswer || '—'}</dd>
+                            </div>
+                            <div className="mistake-answer is-correct">
+                                <dt><CheckCircle size={16} aria-hidden="true" /> Correct answer</dt>
+                                <dd>{mistake.correctAnswer || '—'}</dd>
+                            </div>
+                        </dl>
+                        <button type="button" className="btn btn-outline btn-sm mistake-learned-btn" onClick={() => void dismiss(mistake.id)}>
+                            <Check size={16} aria-hidden="true" /> Mark as learned
                         </button>
-                    </div>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </div>
     );
 }

@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Moon, Sun, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck, Settings } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Moon, Sun, Download, Trash2, GraduationCap, User, Mail, Fingerprint } from 'lucide-react';
+import PageHeader from '../components/common/PageHeader.jsx';
+import { friendlyDisplayName } from '../utils/displayName.js';
 import { useAuth } from '../hooks/useAuth.js';
 import { useTheme } from '../hooks/useTheme.js';
 import { clearGuestData, getGuestDataSummary, importGuestDataToAccount } from '../services/notes/noteStore.js';
@@ -32,7 +34,6 @@ export default function SettingsPage() {
     } = useAuth();
     const { theme, toggleTheme } = useTheme();
     const role = authRole ?? 'student';
-    const hasTeacherAccess = role === 'teacher' || role === 'admin';
     const [guestSummary, setGuestSummary] = useState(null);
     const [guestActionState, setGuestActionState] = useState('idle');
     const [guestActionMessage, setGuestActionMessage] = useState('');
@@ -215,20 +216,11 @@ export default function SettingsPage() {
         }
     }
 
+    const displayName = friendlyDisplayName(username) || 'Student';
+
     return (
-        <div className="settings-hub animate-fade-in">
-            {/* Bento Header */}
-            <div className="settings-page-header">
-                <div className="settings-title-group">
-                    <div className="settings-subject-icon">
-                        <Settings size={28} />
-                    </div>
-                    <div>
-                        <h1 className="settings-page-title">Settings</h1>
-                        <p className="settings-page-qual">Customize your learning experience</p>
-                    </div>
-                </div>
-            </div>
+        <div className="settings-hub">
+            <PageHeader title="Settings" description="Your account, how the app looks, and your study data." />
 
             {showAccessNotice && (
                 <section className="card settings-access-card" aria-live="polite">
@@ -256,219 +248,124 @@ export default function SettingsPage() {
                 </section>
             )}
 
-            <section
-                id="profile"
-                ref={profileRef}
-                className="card settings-profile-card"
-                tabIndex={-1}
-            >
-                <div className="settings-profile-header">
-                    {avatarUrl ? (
-                        <img src={avatarUrl} alt={username} className="settings-profile-avatar" />
-                    ) : (
-                        <div className="settings-profile-avatar settings-profile-avatar--initials">
-                            {initials}
-                        </div>
-                    )}
-
-                    <div className="settings-profile-intro">
-                        <div className="settings-profile-meta">
-                            <h2>Profile</h2>
-                            <span className="badge">{isSignedIn ? 'Signed In' : 'Guest Session'}</span>
-                            {hasTeacherAccess && <span className="badge teacher-badge">Teacher Tools</span>}
-                        </div>
-                        <p className="settings-profile-name">{username}</p>
-                        <p className="settings-profile-subtitle">
-                            {isSignedIn
-                                ? 'Your account is connected and ready to sync across devices.'
-                                : 'You are using a local guest profile. Sign-in is required for a portable account.'}
-                        </p>
+            {/* ── Account ── */}
+            <section className="settings-section" aria-labelledby="settings-account-title">
+                <h2 className="settings-section-title" id="settings-account-title">Account</h2>
+                <div id="profile" ref={profileRef} className="list-card settings-profile-card" tabIndex={-1}>
+                    <div className="list-row settings-profile-row">
+                        {avatarUrl ? (
+                            <img src={avatarUrl} alt="" className="settings-profile-avatar" />
+                        ) : (
+                            <div className="settings-profile-avatar settings-profile-avatar--initials" aria-hidden="true">
+                                {friendlyDisplayName(username) ? initials : <User size={22} />}
+                            </div>
+                        )}
+                        <span className="list-row-main">
+                            <span className="list-row-title settings-profile-name">{displayName}</span>
+                            <span className="list-row-meta">
+                                {isSignedIn ? 'Signed in · progress syncs across your devices' : 'Guest on this device · sign in to keep your progress'}
+                            </span>
+                        </span>
                     </div>
+                    <div className="list-row">
+                        <span className="list-row-icon"><Mail size={18} aria-hidden="true" /></span>
+                        <span className="list-row-main"><span className="list-row-title">Email</span></span>
+                        <span className="list-row-end settings-value">{email}</span>
+                    </div>
+                    <div className="list-row">
+                        <span className="list-row-icon"><GraduationCap size={18} aria-hidden="true" /></span>
+                        <span className="list-row-main"><span className="list-row-title">Role</span></span>
+                        <span className="list-row-end settings-value settings-value--caps">{role}</span>
+                    </div>
+                    <details className="settings-details">
+                        <summary className="list-row">
+                            <span className="list-row-icon"><Fingerprint size={18} aria-hidden="true" /></span>
+                            <span className="list-row-main"><span className="list-row-title">Technical details</span></span>
+                        </summary>
+                        <dl className="settings-details-body">
+                            <dt>Account ID</dt>
+                            <dd>{userId || 'Unavailable'}</dd>
+                            <dt>Username</dt>
+                            <dd>{username || 'Unavailable'}</dd>
+                        </dl>
+                    </details>
                 </div>
+            </section>
 
-                <div className="settings-profile-grid">
-                    <div className="settings-profile-field">
-                        <span className="settings-profile-label">
-                            <User size={14} />
-                            Display Name
+            {/* ── Appearance ── */}
+            <section className="settings-section" aria-labelledby="settings-appearance-title">
+                <h2 className="settings-section-title" id="settings-appearance-title">Appearance</h2>
+                <div className="list-card">
+                    <div className="list-row">
+                        <span className="list-row-icon">
+                            {theme === 'dark' ? <Moon size={18} aria-hidden="true" /> : <Sun size={18} aria-hidden="true" />}
                         </span>
-                        <strong className="settings-profile-value">{username}</strong>
-                    </div>
-
-                    <div className="settings-profile-field">
-                        <span className="settings-profile-label">
-                            <Mail size={14} />
-                            Email
+                        <span className="list-row-main">
+                            <span className="list-row-title">Theme</span>
+                            <span className="list-row-meta">Dark is easier on the eyes for evening study.</span>
                         </span>
-                        <strong className="settings-profile-value">{email}</strong>
-                    </div>
-
-                    <div className="settings-profile-field">
-                        <span className="settings-profile-label">
-                            <GraduationCap size={14} />
-                            Current Role
-                        </span>
-                        <strong className="settings-profile-value settings-profile-value--caps">
-                            {role}
-                        </strong>
-                    </div>
-
-                    <div className="settings-profile-field">
-                        <span className="settings-profile-label">
-                            <Fingerprint size={14} />
-                            User ID
-                        </span>
-                        <strong className="settings-profile-value">{userId || 'Unavailable'}</strong>
+                        <div className="segmented settings-theme-toggle" role="group" aria-label="Theme">
+                            <button type="button" className="segmented-option" aria-pressed={theme === 'dark'} onClick={() => theme !== 'dark' && toggleTheme()}>Dark</button>
+                            <button type="button" className="segmented-option" aria-pressed={theme === 'light'} onClick={() => theme !== 'light' && toggleTheme()}>Light</button>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <div className="settings-grid">
-                {isSignedIn && (((guestSummary?.totalItems) || 0) > 0 || guestActionMessage) && (
-                    <div className="setting-item card settings-import-card">
-                        <div className="setting-info">
-                            <h4>Import Guest Data</h4>
-                            <p>
-                                {guestSummary?.totalItems > 0
-                                    ? 'This device still has local guest work waiting to be moved into your account.'
-                                    : 'Guest data migration on this device is up to date.'}
-                            </p>
+            {/* ── Data ── */}
+            <section className="settings-section" aria-labelledby="settings-data-title">
+                <h2 className="settings-section-title" id="settings-data-title">Your data</h2>
+                <div className="list-card">
+                    {isSignedIn && (((guestSummary?.totalItems) || 0) > 0 || guestActionMessage) && (
+                        <div className="list-row settings-row--stack">
+                            <span className="list-row-main">
+                                <span className="list-row-title">Import guest data</span>
+                                <span className="list-row-meta">
+                                    {guestSummary?.totalItems > 0
+                                        ? `${guestSummary.notes} notes · ${guestSummary.flashcards} flashcards · ${guestSummary.assets} files are waiting on this device.`
+                                        : 'Guest data on this device is up to date.'}
+                                </span>
+                                {guestActionMessage && (
+                                    <span className={`settings-import-status settings-import-status--${guestActionState}`}>{guestActionMessage}</span>
+                                )}
+                            </span>
                             {guestSummary?.totalItems > 0 && (
-                                <div className="settings-import-summary">
-                                    <span className="badge">{guestSummary.notes} notes</span>
-                                    <span className="badge">{guestSummary.flashcards} flashcards</span>
-                                    <span className="badge">{guestSummary.assets} assets</span>
-                                </div>
-                            )}
-                            {guestActionMessage && (
-                                <p className={`settings-import-status settings-import-status--${guestActionState}`}>
-                                    {guestActionMessage}
-                                </p>
+                                <span className="settings-row-actions">
+                                    <button type="button" className="btn btn-outline" onClick={handleGuestClear} disabled={guestActionState === 'loading'}>Discard</button>
+                                    <button type="button" className="btn btn-primary" onClick={handleGuestImport} disabled={guestActionState === 'loading'}>
+                                        {guestActionState === 'loading' ? 'Importing…' : 'Import'}
+                                    </button>
+                                </span>
                             )}
                         </div>
-                        {guestSummary?.totalItems > 0 && (
-                            <div className="settings-import-actions">
-                                <button
-                                    type="button"
-                                    className="btn btn-secondary btn-sm"
-                                    onClick={handleGuestClear}
-                                    disabled={guestActionState === 'loading'}
-                                >
-                                    Discard
-                                </button>
-                                <button
-                                    type="button"
-                                    className="btn btn-primary btn-sm"
-                                    onClick={handleGuestImport}
-                                    disabled={guestActionState === 'loading'}
-                                >
-                                    {guestActionState === 'loading' ? 'Importing…' : 'Import Now'}
-                                </button>
-                            </div>
-                        )}
-                    </div>
-                )}
+                    )}
 
-                {/* Theme */}
-                <div className="setting-item card">
-                    <div className="setting-info">
-                        <h4>
-                            {theme === 'dark' ? (
-                                <Moon size={16} className="settings-inline-icon" />
-                            ) : (
-                                <Sun size={16} className="settings-inline-icon" />
+                    <div className="list-row settings-row--stack">
+                        <span className="list-row-icon"><Download size={18} aria-hidden="true" /></span>
+                        <span className="list-row-main">
+                            <span className="list-row-title">Export notes</span>
+                            <span className="list-row-meta">Download your highlights and saved notes as a PDF.</span>
+                            {exportMessage && (
+                                <span className={`settings-import-status settings-import-status--${exportState}`}>{exportMessage}</span>
                             )}
-                            Theme
-                        </h4>
-                        <p>
-                            Switch between dark and light themes. The design tokens are already wired app-wide, so this changes the full interface.
-                        </p>
+                        </span>
+                        <button type="button" className="btn btn-outline" onClick={handleExportNotes} disabled={exportState === 'loading'}>
+                            {exportState === 'loading' ? 'Exporting…' : 'Export'}
+                        </button>
                     </div>
-                    <button
-                        type="button"
-                        className={`toggle-switch ${theme === 'light' ? 'active' : ''}`}
-                        onClick={toggleTheme}
-                        aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-                        aria-pressed={theme === 'light'}
-                        title={`Currently ${theme} mode`}
-                    />
-                </div>
 
-                {/* Export */}
-                <div className="setting-item card">
-                    <div className="setting-info">
-                        <h4>
-                            <Download size={16} className="settings-inline-icon" />
-                            Export Notes
-                        </h4>
-                        <p>Download your highlights and notes as PDF</p>
-                        {exportMessage && (
-                            <p className={`settings-import-status settings-import-status--${exportState}`}>
-                                {exportMessage}
-                            </p>
-                        )}
-                    </div>
-                    <button
-                        type="button"
-                        className="btn btn-secondary btn-sm"
-                        onClick={handleExportNotes}
-                        disabled={exportState === 'loading'}
-                    >
-                        <Download size={14} /> {exportState === 'loading' ? 'Exporting…' : 'Export'}
-                    </button>
-                </div>
-
-                {/* Clear Data */}
-                <div className="setting-item card">
-                    <div className="setting-info">
-                        <h4>
-                            <Trash2 size={16} className="settings-inline-icon" />
-                            Clear Progress
-                        </h4>
-                        <p>Reset all progress and saved data</p>
-                    </div>
-                    <button className="btn btn-danger btn-sm" onClick={handleClearProgress}>
-                        <Trash2 size={14} /> Reset
-                    </button>
-                </div>
-
-                {/* Teacher Access */}
-                <div className="setting-item card">
-                    <div className="setting-info">
-                        <h4>
-                            <ShieldCheck size={16} className="settings-inline-icon" />
-                            Teacher Access
-                        </h4>
-                        {hasTeacherAccess ? (
-                            <p>
-                                This account can access teacher tools, including{' '}
-                                <Link to="/teacher" className="settings-inline-link">
-                                    the dashboard
-                                </Link>{' '}
-                                and{' '}
-                                <Link to="/teacher/monitor" className="settings-inline-link">
-                                    live session monitoring
-                                </Link>.
-                            </p>
-                        ) : (
-                            <p>
-                                Teacher access is assigned outside the app. Ask an administrator to
-                                provision this account in Convex before using teacher-only tools.
-                            </p>
-                        )}
-                    </div>
-                    <div className="settings-access-actions">
-                        {hasTeacherAccess && (
-                            <span className="badge teacher-badge teacher-badge--compact">
-                                Teacher Tools
-                            </span>
-                        )}
-                        {!hasTeacherAccess && (
-                            <span className="badge">Managed</span>
-                        )}
+                    <div className="list-row settings-row--stack">
+                        <span className="list-row-icon settings-danger-icon"><Trash2 size={18} aria-hidden="true" /></span>
+                        <span className="list-row-main">
+                            <span className="list-row-title">Reset progress</span>
+                            <span className="list-row-meta">Clears read notes, flashcard progress and mistakes. This can't be undone.</span>
+                        </span>
+                        <button type="button" className="btn btn-outline settings-danger-btn" onClick={handleClearProgress}>
+                            Reset
+                        </button>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {!isSignedIn && authOpen && (
                 <Suspense fallback={null}>
@@ -479,17 +376,7 @@ export default function SettingsPage() {
                 </Suspense>
             )}
 
-            {/* About */}
-            <div className="card settings-about-card">
-                <h4>About Study Smart</h4>
-                <p className="settings-about-desc">
-                    An interactive learning platform built for students who want to go beyond passive reading.
-                    Features include smart exercises, flashcards, past paper practice, and progress tracking.
-                </p>
-                <p className="settings-about-version">
-                    Version 1.0.0 · Built with React + Vite
-                </p>
-            </div>
+            <p className="settings-about">Study Smart · Version 1.0.0</p>
         </div>
     );
 }

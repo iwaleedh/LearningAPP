@@ -120,27 +120,23 @@
         padding-inline: var(--space-4);
     }
 
-    .nb-table-wrap::after,
-    .nb-svg-container.nb-svg-dense.nb-svg-wide::after {
-        font-size: 0.75rem;
-    }
 }
 
 /* ── Objective ────────────────────────────────────────────────────────────── */
 .nb-objective {
-    background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100));
-    border-left: 4px solid var(--color-primary);
-    border-radius: 10px;
+    background: var(--color-primary-50);
+    border: 1px solid var(--color-primary-100);
+    border-radius: 12px;
     padding: var(--space-4) var(--space-5);
 }
 
 .nb-objective-label {
-    display: block;
-    font-size: var(--font-size-xs);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--color-primary-dark);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-primary);
     margin-bottom: var(--space-2);
 }
 
@@ -155,19 +151,24 @@
     margin: var(--space-2) 0 var(--space-1);
     font-weight: 700;
     color: var(--color-text);
+    line-height: 1.25;
+    text-wrap: balance;
 }
 
 .nb-h1 {
     font-size: var(--font-size-2xl);
-    border-bottom: 2px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
     padding-bottom: var(--space-2);
 }
 
 .nb-h2 {
     font-size: var(--font-size-xl);
-    color: var(--color-primary-dark);
-    border-left: 3px solid var(--color-primary);
-    padding-left: var(--space-3);
+    margin-top: var(--space-5);
+}
+
+.nb-root > :first-child .nb-h2,
+.nb-root > .nb-h2:first-child {
+    margin-top: 0;
 }
 
 .nb-h3 {
@@ -247,9 +248,14 @@
 }
 
 .nb-checkbox {
-    font-size: 1.1rem;
+    display: inline-flex;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 0.15em;
+    color: var(--color-text-secondary);
+}
+
+.nb-checklist-item.checked .nb-checkbox {
+    color: var(--color-success);
 }
 
 /* ── Equation ─────────────────────────────────────────────────────────────── */
@@ -339,12 +345,13 @@
 }
 
 .nb-table th {
-    background: var(--color-primary);
-    color: #fff;
+    background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface));
+    color: var(--color-text);
     padding: var(--space-3) var(--space-4);
     text-align: left;
     font-weight: 600;
     white-space: nowrap;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .nb-table td {
@@ -394,19 +401,6 @@
         shape-outside: inset(0);
     }
 
-    /* Scroll hint label below the table */
-    .nb-table-wrap::after {
-        content: '← swipe to scroll →';
-        display: block;
-        text-align: center;
-        font-size: 0.75rem;
-        color: var(--color-text-tertiary);
-        padding: var(--space-1) 0;
-        background: var(--color-bg-secondary);
-        border-top: 1px solid var(--color-border-light);
-        letter-spacing: 0.05em;
-    }
-
     .nb-table th {
         font-size: var(--font-size-xs);
         padding: var(--space-2) var(--space-3);
@@ -423,141 +417,91 @@
 
 /* ── Summary ──────────────────────────────────────────────────────────────── */
 .nb-summary {
-    background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(251, 191, 36, 0.1));
-    border: 1.5px solid rgba(251, 191, 36, 0.38);
-    border-radius: 10px;
+    --block-accent: #fbbf24;
+    --block-ink: #fbbf24;
+    background: color-mix(in srgb, var(--block-accent) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--block-accent) 28%, transparent);
+    border-radius: 12px;
     padding: var(--space-4) var(--space-5);
 }
 
 .nb-summary-label {
-    display: block;
-    font-size: var(--font-size-xs);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    /* A7: default (dark theme) amber — contrast ≥ 4.5:1 against dark surface (#111827) */
-    color: #fbbf24;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--block-ink);
     margin-bottom: var(--space-2);
 }
 
 .nb-summary p {
     margin: 0;
-    /* A7: use theme-aware text variable; #fef3c7 was near-white on light-mode backgrounds */
     color: var(--color-text);
     font-size: var(--font-size-sm);
 }
 
-/* A7: Light-mode overrides — amber #fbbf24 fails contrast on the pale-amber summary bg.
-   #92400e (#8B6914 or darker) gives ≥ 4.5:1 against rgba(245,158,11,0.18) over #fff. */
-[data-theme="light"] .nb-summary-label {
-    color: #92400e;
-}
-
-[data-theme="light"] .nb-summary p {
-    color: #132033;
-    /* same as --color-text in light mode */
-}
-
 /* ── Callout ──────────────────────────────────────────────────────────────── */
+/* Each variant sets an accent (tint/border) and an ink (title) colour per theme;
+   body text always uses --color-text so it stays readable in light and dark. */
 .nb-callout {
-    border-radius: 10px;
+    --block-accent: #60a5fa;
+    --block-ink: #93c5fd;
+    border-radius: 12px;
     padding: var(--space-4) var(--space-5);
-    border-left: 4px solid transparent;
+    background: color-mix(in srgb, var(--block-accent) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--block-accent) 26%, transparent);
 }
 
 .nb-callout-title {
     font-weight: 700;
     font-size: var(--font-size-sm);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
     display: flex;
     align-items: center;
     gap: var(--space-2);
+    color: var(--block-ink);
+}
+
+.nb-callout-icon {
+    flex-shrink: 0;
 }
 
 .nb-callout-body {
     font-size: var(--font-size-sm);
-    line-height: 1.8;
+    line-height: 1.75;
     white-space: pre-wrap;
     font-family: inherit;
+    color: var(--color-text);
 }
 
-/* Key idea */
-.nb-callout-key {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.08));
-    border-color: rgba(96, 165, 250, 0.6);
-}
+.nb-callout-key { --block-accent: #60a5fa; --block-ink: #93c5fd; }
+.nb-callout-worked { --block-accent: #4ade80; --block-ink: #86efac; }
+.nb-callout-tip { --block-accent: #c084fc; --block-ink: #d8b4fe; }
+.nb-callout-warning { --block-accent: #fb923c; --block-ink: #fdba74; }
 
-.nb-callout-key .nb-callout-title {
-    color: #93c5fd;
-}
+[data-theme="light"] .nb-summary { --block-accent: #d97706; --block-ink: #92400e; }
+[data-theme="light"] .nb-callout-key { --block-accent: #2563eb; --block-ink: #1d4ed8; }
+[data-theme="light"] .nb-callout-worked { --block-accent: #16a34a; --block-ink: #15803d; }
+[data-theme="light"] .nb-callout-tip { --block-accent: #9333ea; --block-ink: #7e22ce; }
+[data-theme="light"] .nb-callout-warning { --block-accent: #ea580c; --block-ink: #c2410c; }
 
-.nb-callout-key .nb-callout-body {
-    color: #dbeafe;
-}
-
-/* Worked example */
-.nb-callout-worked {
-    background: linear-gradient(135deg, rgba(22, 163, 74, 0.18), rgba(34, 197, 94, 0.08));
-    border-color: rgba(74, 222, 128, 0.55);
-}
-
-.nb-callout-worked .nb-callout-title {
-    color: #86efac;
-}
-
-.nb-callout-worked .nb-callout-body {
-    color: #dcfce7;
-    font-family: 'Courier New', monospace;
-    font-size: 0.92rem;
-    line-height: 1.85;
-}
-
-.nb-callout-worked .nb-callout-body,
-.nb-callout-worked .nb-callout-body * {
-    color: #f0fdf4 !important;
+/* Worked examples that line figures up in columns need a true monospace face */
+.nb-callout-worked.nb-callout--aligned .nb-callout-body {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.8;
 }
 
 .nb-callout-worked .nb-callout-body strong,
 .nb-callout-worked .nb-callout-body b {
-    color: #bbf7d0 !important;
-    font-weight: 700;
-}
-
-.nb-callout-worked .nb-callout-body em,
-.nb-callout-worked .nb-callout-body code {
-    color: #dcfce7 !important;
-}
-
-/* Tip */
-.nb-callout-tip {
-    background: linear-gradient(135deg, rgba(147, 51, 234, 0.18), rgba(168, 85, 247, 0.08));
-    border-color: rgba(196, 181, 253, 0.52);
-}
-
-.nb-callout-tip .nb-callout-title {
-    color: #d8b4fe;
-}
-
-.nb-callout-tip .nb-callout-body {
-    color: #f3e8ff;
-}
-
-/* Warning */
-.nb-callout-warning {
-    background: linear-gradient(135deg, rgba(249, 115, 22, 0.18), rgba(251, 146, 60, 0.08));
-    border-color: rgba(253, 186, 116, 0.55);
-}
-
-.nb-callout-warning .nb-callout-title {
-    color: #fdba74;
-}
-
-.nb-callout-warning .nb-callout-body {
-    color: #ffedd5;
+    color: var(--block-ink);
 }
 
 /* ── SVG figure ───────────────────────────────────────────────────────────── */
 .nb-svg-figure {
+    min-width: 0;
+    max-width: 100%;
     margin: 0;
     text-align: center;
     background: var(--color-surface);
@@ -567,259 +511,68 @@
     overflow: hidden;
 }
 
-/* Scroll wrapper — allows wide SVGs to scroll horizontally on mobile */
+/* Preserve diagram palettes on a neutral canvas in both app themes. */
 .nb-svg-container {
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto;
     width: 100%;
     max-width: 100%;
-    color: var(--color-text);
-    padding: var(--space-1);
+    min-width: 0;
+    padding: var(--space-2);
+    background: #ffffff;
+    color: #0f172a;
+    border-radius: 8px;
     touch-action: pan-x pan-y pinch-zoom;
-    --note-svg-text: var(--color-text);
-    --note-svg-text-secondary: var(--color-text-secondary);
-    --note-svg-muted: var(--color-text-secondary);
-    --note-svg-grid: rgba(148, 163, 184, 0.35);
+    --color-text: #0f172a;
+    --color-text-secondary: #475569;
+    --color-surface: #ffffff;
+    --color-border: #cbd5e1;
+    --color-primary: #4338ca;
+    --color-accent: #7c3aed;
+    --color-success: #15803d;
 }
 
-html[data-theme="dark"] .nb-svg-container {
-    --note-svg-text: #e5edf8;
-    --note-svg-text-secondary: #cbd5e1;
-    --note-svg-muted: #cbd5e1;
-    --note-svg-grid: rgba(148, 163, 184, 0.45);
-    --note-svg-accent-blue: #7cc4ff;
-    --note-svg-accent-green: #6ee7b7;
-    --note-svg-accent-red: #fca5a5;
-    --note-svg-accent-amber: #fdba74;
-    --note-svg-accent-purple: #d8b4fe;
-    --note-svg-accent-pink: #f9a8d4;
-    --note-svg-panel: #1a2336;
-    --note-svg-panel-alt: #202b43;
-    --note-svg-panel-blue: #17283f;
-    --note-svg-panel-green: #152a24;
-    --note-svg-panel-amber: #312615;
-    --note-svg-panel-orange: #332316;
-    --note-svg-panel-rose: #321c25;
-    --note-svg-panel-purple: #2a1f39;
+.nb-svg-container:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 
-.nb-svg-container svg {
+.nb-svg-container > svg {
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: none;
-    overflow: visible;
+    margin: 0 auto;
 }
 
-.nb-svg-container svg :is(text, tspan) {
-    font-family: var(--font-sans) !important;
-    letter-spacing: 0.01em;
+.nb-svg-container--enlarged > svg {
+    width: max(100%, var(--nb-svg-min-width, 0px));
+    max-width: none;
 }
 
-.nb-svg-container svg :is(text, tspan):not([fill]) {
-    fill: var(--note-svg-text) !important;
+.nb-svg-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--space-2);
 }
 
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#000" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#212529" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2c3e50" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#343a40" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#495057" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2d2d72" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e1b4b" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#111827" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1f2937" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e293b" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#334155" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#374151" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#444" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#555" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#333" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="black" i] {
-    fill: var(--note-svg-text) !important;
+.nb-svg-size-toggle {
+    min-height: 44px;
+    white-space: normal;
 }
 
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#64748b" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#6b7280" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#868e96" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#adb5bd" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#ced4da" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#dee2e6" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#94a3b8" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9ca3af" i] {
-    fill: var(--note-svg-text-secondary) !important;
+/* HTML images and diagrams embedded in paragraphs/callouts also fit phones. */
+.nb-root img,
+.nb-root video,
+.nb-root canvas,
+.nb-root svg:not(.nb-inline-svg):not(.lucide) {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    object-fit: contain;
 }
 
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1864ab" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1d4ed8" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e40af" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2563eb" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#0369a1" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#0c4a6e" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1250a0" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#0284c7" i] {
-    fill: var(--note-svg-accent-blue) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2b8a3e" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#065f46" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#166534" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#15803d" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#14532d" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#22543d" i] {
-    fill: var(--note-svg-accent-green) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#c92a2a" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#dc2626" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#991b1b" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#7f1d1d" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#b91c1c" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#742a2a" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9b2c2c" i] {
-    fill: var(--note-svg-accent-red) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#92400e" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#78350f" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#532407" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#c2410c" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9a3412" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#e67700" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#b45309" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#d97706" i] {
-    fill: var(--note-svg-accent-amber) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#2d2d72" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#1e1b4b" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#4c1d95" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#5b21b6" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#3730a3" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#6d28d9" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#862e9c" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9b59b6" i] {
-    fill: var(--note-svg-accent-purple) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#4a1040" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#9d174d" i],
-html[data-theme="dark"] .nb-svg-container svg :is(text, tspan)[fill="#be185d" i] {
-    fill: var(--note-svg-accent-pink) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="white" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fff" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#ffffff" i] {
-    fill: var(--note-svg-panel) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#f8fafc" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#f8f9fa" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#ecf0f1" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#edf2f7" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#f1f5f9" i] {
-    fill: var(--note-svg-panel-alt) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#f0f9ff" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#dbeafe" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#e0f2fe" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#eff6ff" i] {
-    fill: var(--note-svg-panel-blue) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#f0fdf4" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#dcfce7" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#d1fae5" i] {
-    fill: var(--note-svg-panel-green) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fff7ed" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#ffedd5" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fed7aa" i] {
-    fill: var(--note-svg-panel-orange) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fef9c3" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fef3c7" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fde68a" i] {
-    fill: var(--note-svg-panel-amber) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fff1f2" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#ffe4e6" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fef2f2" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fee2e2" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fecdd3" i] {
-    fill: var(--note-svg-panel-rose) !important;
-}
-
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fdf4ff" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#fce7f3" i],
-html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
-    fill: var(--note-svg-panel-purple) !important;
-}
-
-.nb-svg-container svg [fill="#000" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#111827" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#1f2937" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#334155" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#374151" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#444" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#555" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#666" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#777" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#888" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#999" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#333" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="black" i]:not(text):not(tspan) {
-    fill: var(--note-svg-muted) !important;
-}
-
-/* Medium-grey non-text shapes → semi-visible on dark surface */
-.nb-svg-container svg [fill="#64748b" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#6b7280" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#94a3b8" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#9ca3af" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#a1a1aa" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#d1d5db" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#e5e7eb" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#e2e8f0" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#f1f5f9" i]:not(text):not(tspan),
-.nb-svg-container svg [fill="#f8fafc" i]:not(text):not(tspan) {
-    fill: var(--note-svg-grid) !important;
-}
-
-.nb-svg-container svg [stroke="#000" i],
-.nb-svg-container svg [stroke="#111827" i],
-.nb-svg-container svg [stroke="#1f2937" i],
-.nb-svg-container svg [stroke="#334155" i],
-.nb-svg-container svg [stroke="#374151" i],
-.nb-svg-container svg [stroke="#444" i],
-.nb-svg-container svg [stroke="#555" i],
-.nb-svg-container svg [stroke="#666" i],
-.nb-svg-container svg [stroke="#777" i],
-.nb-svg-container svg [stroke="#888" i],
-.nb-svg-container svg [stroke="#999" i],
-.nb-svg-container svg [stroke="#333" i],
-.nb-svg-container svg [stroke="black" i] {
-    stroke: var(--note-svg-muted) !important;
-}
-
-/* Medium-grey strokes → faint grid / tick lines */
-.nb-svg-container svg [stroke="#64748b" i],
-.nb-svg-container svg [stroke="#6b7280" i],
-.nb-svg-container svg [stroke="#94a3b8" i],
-.nb-svg-container svg [stroke="#9ca3af" i],
-.nb-svg-container svg [stroke="#ddd" i],
-.nb-svg-container svg [stroke="#e5e7eb" i],
-.nb-svg-container svg [stroke="#eee" i],
-.nb-svg-container svg [stroke="#f1f5f9" i],
-.nb-svg-container svg [stroke="#cbd5e1" i] {
-    stroke: var(--note-svg-grid) !important;
+.nb-svg-caption {
+    overflow-wrap: anywhere;
 }
 
 .nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color:#555"],
@@ -829,28 +582,6 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
 .nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color:#6b7280"],
 .nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color: #6b7280"] {
     color: var(--color-text-secondary) !important;
-}
-
-/* Narrow SVGs (≤ 320px viewBox width) — scale freely */
-.nb-svg-container.nb-svg-narrow svg {
-    width: 100%;
-    height: auto;
-}
-
-/* Wide SVGs (> 400px viewBox width) — set a minimum width so text stays readable */
-.nb-svg-container.nb-svg-wide svg {
-    min-width: 0;
-    width: 100%;
-    height: auto;
-}
-
-.nb-svg-container.nb-svg-dense {
-    padding-bottom: var(--space-2);
-}
-
-.nb-svg-container.nb-svg-dense svg {
-    width: max(100%, var(--nb-svg-min-width, 680px));
-    max-width: none;
 }
 
 .nb-svg-caption {
@@ -867,34 +598,16 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
         border-radius: 8px;
     }
 
-    .nb-svg-container.nb-svg-dense svg {
-        width: 100%;
-        min-width: 100%;
-    }
 
-    .nb-svg-container.nb-svg-dense.nb-svg-wide {
-        /* Show scroll hint with subtle gradient */
-        position: relative;
-    }
-
-    .nb-svg-container.nb-svg-dense.nb-svg-wide::after {
-        content: '← scroll →';
-        display: block;
-        text-align: center;
-        font-size: 0.75rem;
-        color: var(--color-text-tertiary);
-        padding-top: var(--space-1);
-        letter-spacing: 0.05em;
-    }
 }
 
 /* ── Quote ────────────────────────────────────────────────────────────────── */
 .nb-quote {
-    border-left: 4px solid var(--color-primary);
+    border: 1px solid var(--color-border-light);
     margin: 0;
     padding: var(--space-3) var(--space-5);
     background: var(--color-bg-secondary);
-    border-radius: 0 8px 8px 0;
+    border-radius: 12px;
     font-style: italic;
     color: var(--color-text-secondary);
 }
@@ -1003,7 +716,17 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
     margin: 0;
     font-size: var(--font-size-sm);
     line-height: 1.7;
+    color: var(--color-text) !important;
 }
+
+.nb-deeper-icon {
+    color: #c7d2fe;
+}
+
+[data-theme="light"] .nb-deeper-understand .nb-deeper-card-label { color: #1d4ed8; }
+[data-theme="light"] .nb-deeper-apply .nb-deeper-card-label { color: #15803d; }
+[data-theme="light"] .nb-deeper-analyze .nb-deeper-card-label { color: #0e7490; }
+[data-theme="light"] .nb-deeper-evaluate .nb-deeper-card-label { color: #b45309; }
 
 /* Understand — blue */
 .nb-deeper-understand {
@@ -1079,17 +802,11 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
     background: var(--color-bg-secondary);
 }
 
-.nb-objective {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(99, 102, 241, 0.08));
-}
 
 .nb-equation {
     background: var(--color-bg-secondary);
 }
 
-.nb-table th {
-    background: var(--color-primary-dark);
-}
 
 .nb-svg-figure {
     background: var(--color-bg-secondary);
@@ -1109,4 +826,16 @@ html[data-theme="dark"] .nb-svg-container svg rect[fill="#ede9fe" i] {
     .nb-table-container {
         overflow-x: auto;
     }
+}
+
+/* Dark theme: diagrams keep their light palette (so colours stay correct) on a softer,
+   slightly dimmed paper instead of a pure-white slab that glares at night */
+html[data-theme="dark"] .nb-svg-container {
+    background: #efe8eb;
+    filter: brightness(0.92);
+}
+
+.nb-svg-caption {
+    font-style: normal;
+    color: var(--color-text-secondary);
 }

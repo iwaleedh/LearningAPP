@@ -1,17 +1,17 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, useLocation, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, Outlet, Navigate } from 'react-router-dom';
 import ThemeProvider from './context/ThemeProvider';
 import AuthProvider from './context/AuthProvider';
 import { useAuth } from './hooks/useAuth.js';
 import ErrorBoundary from './components/ErrorBoundary';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
+import MobileTabBar from './components/layout/MobileTabBar';
 import HomePage from './pages/HomePage';
 import RequireRole from './components/auth/RequireRole';
-import RequireSignIn from './components/auth/RequireSignIn';
 import RequireApproved from './components/auth/RequireApproved';
 import RequireFeature from './components/auth/RequireFeature';
-import { canAccessLocalLiveClassAsGuest } from './components/auth/accessControl.js';
+import { AUTH_GATING_HALTED } from './components/auth/accessControl.js';
 import { ToastProvider } from './components/common/Toast';
 import { trackRouteView } from './services/observability/clientTelemetry.js';
 import './components/common/Skeleton.css';
@@ -25,16 +25,9 @@ const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage'));
 const ProgressPage = lazy(() => import('./pages/ProgressPage'));
 const MistakeBankPage = lazy(() => import('./pages/MistakeBankPage'));
 const SettingsPage = lazy(() => import('./pages/SettingsPage'));
-const TeacherDashboard = lazy(() => import('./pages/TeacherDashboard'));
-const BackendArchitecturesPage = lazy(() => import('./pages/BackendArchitecturesPage'));
-const AdvancedPage = lazy(() => import('./pages/AdvancedPage'));
 const NotePage = lazy(() => import('./pages/NotePage'));
 const AnnotatePage = lazy(() => import('./pages/AnnotatePage'));
-const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
-const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
-const StudentNotesViewPage = lazy(() => import('./pages/StudentNotesViewPage'));
-const StudentMyNotesPage = lazy(() => import('./pages/StudentMyNotesPage'));
 const PendingApprovalPage = lazy(() => import('./pages/PendingApprovalPage'));
 const AdminPage = lazy(() => import('./pages/AdminPage'));
 const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
@@ -95,7 +88,7 @@ function AppContent() {
     trackRouteView(location.pathname);
   }, [isLoaded, isSignedIn, location.pathname]);
 
-  if (isLoaded && !isSignedIn && location.pathname === '/') {
+  if (!AUTH_GATING_HALTED && isLoaded && !isSignedIn && location.pathname === '/') {
     return (
       <div className="app-root">
         <Suspense fallback={<PageLoader />}>
@@ -119,11 +112,13 @@ function AppContent() {
             sidebarOpen={sidebarOpen}
             onSearchOpen={() => setSearchOpen(true)}
           />
+          <MobileTabBar onMore={() => setSidebarOpen(true)} moreOpen={sidebarOpen} />
           <main className="page-content" id="main-content" tabIndex={-1}>
               <Routes>
                 <Route element={<RouteWrapper />}>
                   {/* Ungated routes — accessible before approval */}
-                  <Route path="/pending" element={<PendingApprovalPage />} />
+                  <Route path="/landing" element={<LandingPage />} />
+                  <Route path="/pending" element={AUTH_GATING_HALTED ? <Navigate to="/" replace /> : <PendingApprovalPage />} />
 
               {/* Admin route — requires admin flag */}
               <Route
@@ -153,56 +148,7 @@ function AppContent() {
               <Route path="/progress" element={<RequireApproved><RequireFeature featureKey="progress"><ProgressPage /></RequireFeature></RequireApproved>} />
               <Route path="/mistakes" element={<RequireApproved><RequireFeature featureKey="mistakeBank"><MistakeBankPage /></RequireFeature></RequireApproved>} />
               <Route path="/settings" element={<RequireApproved><SettingsPage /></RequireApproved>} />
-              <Route
-                path="/teacher"
-                element={(
-                  <RequireApproved>
-                    <RequireRole allowedRoles={['teacher', 'admin']} reason="open the teacher dashboard">
-                      <TeacherDashboard />
-                    </RequireRole>
-                  </RequireApproved>
-                )}
-              />
-              <Route
-                path="/teacher/monitor"
-                element={(
-                  <RequireApproved>
-                    <RequireRole allowedRoles={['teacher', 'admin']} reason="monitor live teacher sessions">
-                      <TeacherMonitorPage />
-                    </RequireRole>
-                  </RequireApproved>
-                )}
-              />
-              <Route path="/advanced" element={<RequireApproved><AdvancedPage /></RequireApproved>} />
-              <Route path="/backend-architectures" element={<RequireApproved><BackendArchitecturesPage /></RequireApproved>} />
               <Route path="/annotate/:paperId" element={<RequireApproved><AnnotatePage /></RequireApproved>} />
-              <Route
-                path="/live/:sessionId"
-                element={(
-                  <RequireSignIn
-                    reason="join a live class"
-                    allowAnonymousAccess={({ canSignIn, location }) =>
-                      canAccessLocalLiveClassAsGuest(location?.pathname, { canSignIn })
-                    }
-                  >
-                    <RequireFeature featureKey="liveClass"><LiveClassPage /></RequireFeature>
-                  </RequireSignIn>
-                )}
-              />
-              <Route
-                path="/live-notes/:sessionId/:tempId"
-                element={(
-                  <RequireApproved>
-                    <RequireRole allowedRoles={['teacher', 'admin']} reason="view student live notes">
-                      <RequireFeature featureKey="liveClass"><StudentNotesViewPage /></RequireFeature>
-                    </RequireRole>
-                  </RequireApproved>
-                )}
-              />
-              <Route
-                path="/my-notes/:sessionId/:tempId"
-                element={<StudentMyNotesPage />}
-              />
               <Route path="*" element={<NotFoundPage />} />
                 </Route>
               </Routes>

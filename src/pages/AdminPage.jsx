@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Component, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api.js';
 import { useAuth } from '../hooks/useAuth.js';
 import { formatAccessDueDate, formatAccessDueDateExact } from '../services/auth/accessWindow.js';
 import { readAdminDevFixture } from './adminDevFixture.js';
 import {
-  Shield, UserCheck, UserX, Users, Clock,
+  Shield, ShieldAlert, UserCheck, UserX, Users, Clock,
   LayoutDashboard, ToggleLeft, ToggleRight,
   GraduationCap, Search, ChevronDown, Trash2, AlertTriangle,
   Receipt, ExternalLink, CheckCircle, XCircle,
@@ -1105,7 +1105,7 @@ const TABS = [
   { id: 'observability', label: 'Observability', icon: Activity },
 ];
 
-export default function AdminPage() {
+function AdminDashboard() {
   const navigate = useNavigate();
   // isLoaded: Clerk has finished resolving the session (true once auth state is known)
   // isAdmin:  undefined while loading, true for admins, false for everyone else
@@ -1193,5 +1193,47 @@ export default function AdminPage() {
         {tab === 'observability' && <ObservabilityTab summary={observabilitySummary} readOnly={useDevFixture} />}
       </div>
     </div>
+  );
+}
+
+// Convex queries throw when the server rejects the session, so the admin page owns its failure state
+// instead of falling through to the app-wide "Something went wrong" screen.
+class AdminErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+
+  render() {
+    const { error } = this.state;
+    if (!error) return this.props.children;
+    const isAccessProblem = /authenticat|admin|unauthori|forbidden|permission/i.test(error?.message || '');
+    return (
+      <div className="admin-state" role="alert">
+        <ShieldAlert size={36} className="admin-state-icon" aria-hidden="true" />
+        <h1 className="admin-state-title">{isAccessProblem ? 'Admin access needed' : 'The admin dashboard could not load'}</h1>
+        <p className="admin-state-text">
+          {isAccessProblem
+            ? 'The server does not recognise this session as an admin. Sign out, then sign in again with an admin account.'
+            : 'Something interrupted loading the dashboard. Try again in a moment.'}
+        </p>
+        <div className="admin-state-actions">
+          <button type="button" className="btn btn-outline" onClick={() => this.setState({ error: null })}>Try again</button>
+          <Link to="/" className="btn btn-primary">Go to Home</Link>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default function AdminPage() {
+  return (
+    <AdminErrorBoundary>
+      <AdminDashboard />
+    </AdminErrorBoundary>
   );
 }

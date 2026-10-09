@@ -1,3 +1,4 @@
+import { AlertTriangle } from 'lucide-react';
 import { Component } from 'react';
 import '../pages/Pages.css';
 
@@ -90,7 +91,7 @@ export default class ErrorBoundary extends Component {
 
         return (
             <div className="fallback-screen">
-                <div className="fallback-screen-icon">⚠️</div>
+                <AlertTriangle size={40} className="fallback-screen-icon" aria-hidden="true" />
                 <h2 className="fallback-screen-title">Something went wrong</h2>
                 <p className="fallback-screen-copy">
                     An unexpected error occurred. Please refresh the page or try again.
@@ -102,7 +103,7 @@ export default class ErrorBoundary extends Component {
                         window.location.href = import.meta.env.BASE_URL || '/';
                     }}
                 >
-                    Return to Dashboard
+                    Go to Home
                 </button>
             </div>
         );

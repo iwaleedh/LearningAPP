@@ -9,6 +9,7 @@ import { useAuth } from '../../hooks/useAuth.js';
 import { sanitizeRedirectPath } from './accessControl.js';
 import useFocusTrap from '../../hooks/useFocusTrap.js';
 import './AuthModal.css';
+import BrandMark from '../common/BrandMark.jsx';
 
 export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = null }) {
   const { canSignIn, debugAuthEnabled, signInDebug } = useAuth();
@@ -91,7 +92,7 @@ export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = n
         <button type="button" className="auth-modal-close" onClick={onClose} aria-label="Close sign-in dialog">✕</button>
 
         <div className="auth-modal-header">
-          <div className="auth-modal-logo">📚</div>
+          <div className="auth-modal-logo"><BrandMark size={44} /></div>
           <h2 id="auth-modal-title" className="auth-modal-title">Study Smart</h2>
           <p className="auth-modal-subtitle">
             {canSignIn
@@ -116,7 +117,7 @@ export default function AuthModal({ onClose, redirectTo = '/', returnFocusEl = n
               Local dev auth is enabled for this environment. Choose a role to test protected flows without Clerk.
             </p>
             <input
-              className="lc-modal-input"
+              className="auth-modal-input"
               type="text"
               placeholder="Display name (optional)"
               value={debugName}

@@ -37,11 +37,11 @@ export default function FlashcardExercise({ question, onNext, onAttempt }) {
           <div className="fc-ex__face fc-ex__face--back"><p>{question.back}</p></div>
         </div>
       </div>
-      {!isFlipped && <p className="fc-ex__hint">Click card to reveal answer</p>}
+      {!isFlipped && <p className="fc-ex__hint">Tap the card to see the answer</p>}
       {isFlipped && (
         <div className="fc-ex__actions">
-          <button className="btn btn-secondary" onClick={() => handleAnswer(false)}>Still Learning</button>
-          <button className="btn btn-primary" onClick={() => handleAnswer(true)}>Got it!</button>
+          <button className="btn btn-secondary" onClick={() => handleAnswer(false)}>Still learning</button>
+          <button className="btn btn-primary" onClick={() => handleAnswer(true)}>Got it</button>
         </div>
       )}
     </div>

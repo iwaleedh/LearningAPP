@@ -131,7 +131,7 @@ export default function TimedExam({ paper, questions, onFinish }) {
                         <div className="exam-score-details">
                             <p><strong>{score}/{questions.length}</strong> correct</p>
                             <p className="exam-score-label">
-                                {percentage >= 70 ? '🎉 Well done!' : percentage >= 50 ? '📚 Keep studying' : '💪 More practice needed'}
+                                {percentage >= 70 ? 'Well done!' : percentage >= 50 ? 'Keep studying' : 'More practice needed'}
                             </p>
                         </div>
                     </div>

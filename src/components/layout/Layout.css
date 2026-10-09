@@ -6,9 +6,7 @@
 .sidebar-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    -webkit-backdrop-filter: blur(var(--glass-blur));
-    backdrop-filter: blur(var(--glass-blur));
+    background: var(--overlay-backdrop);
     z-index: calc(var(--z-sidebar) - 1);
     animation: fadeIn 0.2s ease-out;
     display: none;
@@ -24,9 +22,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-4) var(--space-4);
-    border-bottom: 1px solid var(--color-border-light);
-    margin-bottom: var(--space-2);
+    min-height: var(--header-height);
+    padding: var(--space-3) var(--space-4) var(--space-3) var(--space-5);
 }
 
 .sidebar-logo {
@@ -34,25 +31,23 @@
     align-items: center;
     gap: var(--space-3);
     text-decoration: none;
-    color: var(--color-text);
-    transition: transform 0.2s;
+    color: var(--sidebar-text);
 }
 
 .sidebar-logo:hover {
-    transform: translateY(-1px);
+    color: var(--sidebar-text);
 }
 
 .logo-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: var(--radius-xl);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #8b1e3f;
     flex-shrink: 0;
-    box-shadow: 0 4px 14px -4px var(--color-primary-dark);
 }
 
 .logo-text {
@@ -61,24 +56,27 @@
 }
 
 .logo-title {
-    font-size: var(--font-size-base);
+    font-size: 1.0625rem;
     font-weight: 700;
-    color: var(--color-text);
+    color: var(--sidebar-text);
     line-height: 1.2;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.01em;
 }
 
 .logo-subtitle {
-    font-size: 11px;
+    font-size: 0.75rem;
     font-weight: 500;
-    color: var(--color-text-tertiary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 2px;
+    color: var(--sidebar-text-muted);
+    margin-top: 1px;
 }
 
 .sidebar-close {
     display: none;
+    color: var(--sidebar-text);
+}
+
+.sidebar-close:hover {
+    background: var(--sidebar-hover);
 }
 
 @media (max-width: 1024px) {
@@ -89,7 +87,7 @@
 
 /* Nav */
 .sidebar-nav {
-    padding: var(--space-4) var(--space-3);
+    padding: var(--space-2) var(--space-3) var(--space-6);
     flex: 1;
     overflow-y: auto;
     display: flex;
@@ -98,61 +96,59 @@
 }
 
 .nav-section-label {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--color-text-tertiary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: var(--space-4) var(--space-4) var(--space-2);
-    margin-top: var(--space-2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--sidebar-label);
+    padding: var(--space-5) var(--space-3) var(--space-2);
+}
+
+.nav-section-label:first-child {
+    padding-top: var(--space-2);
 }
 
 .nav-item {
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    padding: var(--space-3) var(--space-4);
-    border-radius: var(--radius-lg);
-    color: var(--color-text-secondary);
-    font-size: var(--font-size-sm);
+    min-height: var(--touch-min);
+    padding: 0 var(--space-3);
+    border-radius: 12px;
+    color: var(--sidebar-text-muted);
+    font-size: 0.9375rem;
     font-weight: 500;
     text-decoration: none;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    margin-bottom: var(--space-1);
-    border: 1px solid transparent;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.nav-item svg {
+    flex-shrink: 0;
+    opacity: 0.85;
 }
 
 .nav-item:hover {
-    background: linear-gradient(90deg, var(--color-bg-secondary) 0%, transparent 100%);
-    color: var(--color-text);
+    background: var(--sidebar-hover);
+    color: var(--sidebar-text);
 }
 
 .nav-item.active {
-    background: linear-gradient(90deg, var(--color-primary-50) 0%, transparent 100%);
-    color: var(--color-primary);
+    background: var(--sidebar-active);
+    color: var(--sidebar-text);
     font-weight: 600;
-    border-color: var(--color-border-light);
-    box-shadow: 0 4px 12px -2px rgba(99, 102, 241, 0.05);
 }
 
-.nav-item.active::before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 18px;
-    background: var(--color-primary);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    box-shadow: 0 0 8px var(--color-primary);
+.nav-item.active svg {
+    opacity: 1;
+}
+
+.nav-item:focus-visible {
+    outline: 2px solid var(--sidebar-text);
+    outline-offset: -2px;
 }
 
 .nav-divider {
     height: 1px;
-    background: var(--color-border);
-    margin: var(--space-3) var(--space-3);
+    background: var(--sidebar-border);
+    margin: var(--space-3) var(--space-3) 0;
 }
 
 /* Sidebar footer */
@@ -189,6 +185,15 @@
 /* ---- Header ---- */
 .header-menu-btn {
     display: none;
+    width: var(--touch-min);
+    height: var(--touch-min);
+    padding: 0;
+    color: var(--color-text-secondary);
+}
+
+.header-menu-btn:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
 }
 
 @media (max-width: 1024px) {
@@ -211,22 +216,22 @@
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    padding: var(--space-2) var(--space-4);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-full);
+    min-height: 40px;
+    padding: 0 var(--space-3) 0 var(--space-4);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-light);
+    border-radius: 12px;
     color: var(--color-text-secondary);
     font-size: var(--font-size-sm);
     font-family: var(--font-sans);
     cursor: pointer;
-    transition: all 0.2s ease;
-    min-width: 240px;
-    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.03);
+    transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+    min-width: 260px;
 }
 
 .header-search-btn:hover {
-    border-color: var(--color-primary-50);
-    box-shadow: 0 4px 12px -2px rgba(99, 102, 241, 0.1);
+    border-color: var(--color-border);
+    background: var(--color-surface);
     color: var(--color-text);
 }
 
@@ -237,22 +242,14 @@
 }
 
 .search-kbd {
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 600;
-    font-family: var(--font-mono);
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border-light);
-    border-radius: var(--radius-md);
+    font-family: var(--font-sans);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
     padding: 2px 6px;
-    /* A7: --color-text-tertiary (#7d8da3 in light mode) gives ~3.4:1 on #eef2f8.
-       Use --color-text-secondary (#516176 in light mode) for ≥ 4.5:1 compliance. */
     color: var(--color-text-secondary);
-    transition: all 0.2s;
-}
-
-.header-search-btn:hover .search-kbd {
-    border-color: var(--color-primary-50);
-    color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
@@ -401,5 +398,148 @@
     .notification-dropdown {
         width: calc(100vw - var(--space-8));
         right: calc(-1 * var(--space-4));
+    }
+}
+/* ---- Phone brand in the header (the sidebar is off-canvas there) ---- */
+.header-brand {
+    display: none;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.header-brand:hover {
+    color: var(--color-text);
+}
+
+.header-brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: var(--color-brand);
+    color: var(--color-on-brand);
+}
+
+/* ---- Phone tab bar ---- */
+.mobile-tabbar {
+    display: none;
+}
+
+@media (max-width: 599px) {
+    .header-menu-btn {
+        display: none;
+    }
+
+    .header-brand {
+        display: inline-flex;
+    }
+
+    .app-header {
+        padding: 0 var(--space-4);
+    }
+
+    .mobile-tabbar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: var(--z-header);
+        display: flex;
+        padding: var(--space-1) var(--space-2) max(var(--space-1), env(safe-area-inset-bottom));
+        border-top: 1px solid var(--color-border-light);
+        background: color-mix(in srgb, var(--color-bg) 90%, transparent);
+        -webkit-backdrop-filter: blur(16px) saturate(1.3);
+        backdrop-filter: blur(16px) saturate(1.3);
+    }
+
+    .mobile-tab {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        min-height: 52px;
+        padding: 0;
+        border: none;
+        border-radius: 12px;
+        background: none;
+        color: var(--color-text-secondary);
+        font: 600 0.6875rem/1.1 var(--font-sans);
+        text-decoration: none;
+        cursor: pointer;
+        transition: color var(--transition-fast);
+    }
+
+    .mobile-tab:hover {
+        color: var(--color-text);
+    }
+
+    .mobile-tab.is-active {
+        color: var(--color-primary);
+    }
+
+    .mobile-tab:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: -2px;
+    }
+
+    .page-content {
+        padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    }
+
+    /* The note reader and focus mode bring their own bottom controls */
+    html.note-reader-phone .mobile-tabbar,
+    html.note-fullscreen-active .mobile-tabbar {
+        display: none;
+    }
+
+    html.note-reader-phone .page-content {
+        padding-bottom: 0;
+    }
+}
+
+/* ---- Notes: the sidebar collapses to an icon rail on wide screens ---- */
+@media (min-width: 1025px) {
+    html.note-reader-desktop {
+        --sidebar-width: 76px;
+    }
+
+    html.note-reader-desktop .sidebar-header {
+        justify-content: center;
+        padding: var(--space-3) 0;
+    }
+
+    html.note-reader-desktop .logo-text,
+    html.note-reader-desktop .nav-section-label,
+    html.note-reader-desktop .nav-item span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+
+    html.note-reader-desktop .sidebar-nav {
+        align-items: center;
+        padding: var(--space-2) var(--space-3);
+    }
+
+    html.note-reader-desktop .nav-item {
+        justify-content: center;
+        width: 48px;
+        padding: 0;
+    }
+
+    html.note-reader-desktop .nav-divider {
+        width: 32px;
+        margin: var(--space-3) auto;
     }
 }

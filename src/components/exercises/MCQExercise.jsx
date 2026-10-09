@@ -149,7 +149,7 @@ export default function MCQExercise({ question, onNext, onMistake, onAttempt }) 
                         {isCorrect ? (
                             <>
                                 <CheckCircle size={22} />
-                                <span>Correct! Well done! 🎉</span>
+                                <span>Correct, well done.</span>
                             </>
                         ) : (
                             <>
@@ -161,7 +161,7 @@ export default function MCQExercise({ question, onNext, onMistake, onAttempt }) 
 
                     {!showRationale && (
                         <button className="btn btn-ghost btn-sm" onClick={() => setShowRationale(true)}>
-                            <Lightbulb size={14} /> Show Explanation
+                            <Lightbulb size={14} /> Show explanation
                         </button>
                     )}
 
@@ -178,11 +178,11 @@ export default function MCQExercise({ question, onNext, onMistake, onAttempt }) 
                         onClick={handleSubmit}
                         disabled={selected === null}
                     >
-                        Check Answer
+                        Check answer
                     </button>
                 ) : (
                     <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                        Next Question <ArrowRight size={18} />
+                        Next question <ArrowRight size={18} />
                     </button>
                 )}
             </div>

@@ -131,7 +131,7 @@ export default function KeywordCheck({ question, onNext, onMistake, onAttempt })
                     </button>
                 ) : (
                     <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                        Next Question <ArrowRight size={18} />
+                        Next question <ArrowRight size={18} />
                     </button>
                 )}
             </div>

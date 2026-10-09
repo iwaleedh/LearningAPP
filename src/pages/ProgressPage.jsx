@@ -1,192 +1,178 @@
-import { Target, BookOpen, TrendingUp, Award } from 'lucide-react';
+import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
 import BadgeSystem from '../components/gamification/BadgeSystem';
 import StreakTracker from '../components/gamification/StreakTracker';
 import Leaderboard from '../components/gamification/Leaderboard';
+import PageHeader from '../components/common/PageHeader.jsx';
+import ProgressLine from '../components/common/ProgressLine.jsx';
+import SubjectIcon from '../components/common/SubjectIcon.jsx';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
+import { SUBJECT_GROUPS } from '../data/subjectGroups.js';
 import { useReadProgressSummary } from '../hooks/useNoteReadStatus';
 import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
 import './Pages.css';
 
-const SUBJECTS = [
-    { key: 'chemistry',            label: 'Chemistry',               group: 'alevel' },
-    { key: 'biology',              label: 'Biology',                  group: 'alevel' },
-    { key: 'physics',              label: 'Physics',                  group: 'alevel' },
-    { key: 'mathematics',          label: 'Mathematics',              group: 'alevel' },
-    { key: 'economics',            label: 'Economics',                group: 'alevel' },
-    { key: 'business',             label: 'Business',                 group: 'alevel' },
-    { key: 'accounting',           label: 'Accounting',               group: 'alevel' },
-    { key: 'cae',                  label: 'CAE (C1 Advanced)',         group: 'alevel' },
-    { key: 'cpe',                  label: 'CPE (C2 Proficiency)',      group: 'alevel' },
-    { key: 'olevel_biology',       label: 'IGCSE Biology',            group: 'igcse' },
-    { key: 'olevel_chemistry',     label: 'IGCSE Chemistry',          group: 'igcse' },
-    { key: 'olevel_physics',       label: 'IGCSE Physics',            group: 'igcse' },
-    { key: 'olevel_business',      label: 'IGCSE Business',           group: 'igcse' },
-    { key: 'olevel_maths_core',    label: 'IGCSE Maths Core',         group: 'igcse' },
-    { key: 'olevel_maths_extended',label: 'IGCSE Maths Extended',     group: 'igcse' },
-];
+// Every subject with notes, labelled the way the rest of the app labels them.
+const SUBJECTS = SUBJECT_GROUPS.flatMap((group) => group.subjects.map((subject) => ({
+    id: subject.id,
+    label: group.id === 'igcse' ? `IGCSE ${subject.name}` : subject.name,
+    level: group.label,
+})));
 
-function buildChapterProgress(readIds) {
-    return SUBJECTS.map(({ key, label, group }) => {
-        const total = subjectNoteCounts[key] || 0;
-        const read = [...readIds].filter(id => id.startsWith(`note:${key}:`)).length;
-        return { name: label, group, read, progress: total > 0 ? Math.round((read / total) * 100) : 0 };
-    });
+function localDateKey(date) {
+    return date.toLocaleDateString('en-CA'); // local YYYY-MM-DD, same keys as activityByDate
+}
+
+function WeekCard({ activityByDate, totalRead, startedCount }) {
+    const days = useMemo(() => {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        return Array.from({ length: 7 }, (_, index) => {
+            const date = new Date(today);
+            date.setDate(today.getDate() - (6 - index));
+            return {
+                key: localDateKey(date),
+                short: date.toLocaleDateString(undefined, { weekday: 'short' }),
+                full: date.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' }),
+                isToday: index === 6,
+                count: activityByDate?.[localDateKey(date)] || 0,
+            };
+        });
+    }, [activityByDate]);
+
+    const weekTotal = days.reduce((sum, day) => sum + day.count, 0);
+    const activeDays = days.filter((day) => day.count > 0).length;
+    const scaleMax = Math.max(4, ...days.map((day) => day.count));
+
+    return (
+        <section className="card progress-week" aria-labelledby="progress-week-title">
+            <div className="progress-week-head">
+                <h2 className="progress-card-title" id="progress-week-title">Last 7 days</h2>
+                <p className="progress-week-summary">
+                    {weekTotal === 0
+                        ? 'Nothing logged yet this week. Reading one note starts your streak.'
+                        : `${weekTotal} study ${weekTotal === 1 ? 'action' : 'actions'} on ${activeDays} of 7 days.`}
+                </p>
+            </div>
+
+            <ol className="week-chart">
+                {days.map((day) => (
+                    <li key={day.key} className={`week-day${day.isToday ? ' is-today' : ''}${day.count ? ' has-activity' : ''}`}>
+                        <span className="week-day-count" aria-hidden="true">{day.count || ''}</span>
+                        <span className="week-day-bar" aria-hidden="true">
+                            <span className="week-day-fill" style={{ '--fill': day.count / scaleMax }} />
+                        </span>
+                        <span className="week-day-label" aria-hidden="true">{day.isToday ? 'Today' : day.short}</span>
+                        <span className="sr-only">{day.full}: {day.count} study {day.count === 1 ? 'action' : 'actions'}</span>
+                    </li>
+                ))}
+            </ol>
+
+            <dl className="progress-stats">
+                <div>
+                    <dt>Notes read</dt>
+                    <dd>{totalRead}</dd>
+                </div>
+                <div>
+                    <dt>Subjects started</dt>
+                    <dd>{startedCount}</dd>
+                </div>
+                <div>
+                    <dt>Active days</dt>
+                    <dd>{activeDays}<span> / 7</span></dd>
+                </div>
+            </dl>
+        </section>
+    );
 }
 
 export default function ProgressPage() {
     useActivityRefresh();
     const readProgress = useReadProgressSummary();
-    const readIds = new Set(readProgress.readNoteIds);
-    const totalRead = readProgress.totalRead;
-    const chapterProgress = buildChapterProgress(readIds);
 
-    const startedSubjects = chapterProgress.filter(c => c.read > 0);
-    // Average over ALL subjects that have notes — not just started ones.
-    // The old approach (averaging only startedSubjects) inflated the % because
-    // a subject with 1/1 notes read would count as 100% even if 14 other subjects
-    // had 0% completion.
-    const subjectsWithContent = chapterProgress.filter(c => (subjectNoteCounts[SUBJECTS.find(s => s.label === c.name)?.key] || 0) > 0);
-    const overallProgress = subjectsWithContent.length > 0
-        ? Math.round(subjectsWithContent.reduce((sum, c) => sum + c.progress, 0) / subjectsWithContent.length)
-        : 0;
+    const subjects = useMemo(() => {
+        const readBySubject = {};
+        readProgress.readNoteIds.forEach((id) => {
+            const key = id.split(':')[1];
+            readBySubject[key] = (readBySubject[key] || 0) + 1;
+        });
+        return SUBJECTS
+            .map((subject) => {
+                const total = subjectNoteCounts[subject.id] || 0;
+                const read = Math.min(readBySubject[subject.id] || 0, total);
+                return { ...subject, total, read, pct: total ? Math.round((read / total) * 100) : 0 };
+            })
+            .filter((subject) => subject.total > 0);
+    }, [readProgress.readNoteIds]);
 
-    const aLevelProgress = chapterProgress.filter(c => c.group === 'alevel');
-    const igcseProgress = chapterProgress.filter(c => c.group === 'igcse');
-
-    const circumference = 2 * Math.PI * 60;
-    const strokeDashoffset = circumference - (overallProgress / 100) * circumference;
+    const started = subjects.filter((subject) => subject.read > 0).sort((a, b) => b.pct - a.pct);
+    const notStarted = subjects.filter((subject) => subject.read === 0);
 
     return (
-        <div className="progress-hub animate-fade-in">
-            {/* Bento Header */}
-            <div className="progress-page-header">
-                <div className="progress-title-group">
-                    <div className="progress-subject-icon">
-                        <TrendingUp size={28} />
-                    </div>
-                    <div>
-                        <h1 className="progress-page-title">Your Progress</h1>
-                        <p className="progress-page-qual">Track your learning journey, study streaks, and achievements</p>
-                    </div>
-                </div>
-                <div className="progress-meta-boxes">
-                    <div className="meta-box">
-                        <div className="meta-icon meta-icon--notes">
-                            <BookOpen size={18} />
-                        </div>
-                        <div className="meta-text">
-                            <strong>{totalRead}</strong>
-                            <span>Notes Read</span>
-                        </div>
-                    </div>
-                    <div className="meta-box">
-                        <div className="meta-icon meta-icon--started">
-                            <Target size={18} />
-                        </div>
-                        <div className="meta-text">
-                            <strong>{startedSubjects.length}</strong>
-                            <span>Subjects Started</span>
-                        </div>
-                    </div>
-                    <div className="meta-box">
-                        <div className="meta-icon meta-icon--overall">
-                            <Award size={18} />
-                        </div>
-                        <div className="meta-text">
-                            <strong>{overallProgress}%</strong>
-                            <span>Overall</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="progress-hub progress-page">
+            <PageHeader title="Progress" description="How your revision is going: this week, each subject, and what you have earned." />
 
-            <div className="progress-overview">
-                {/* Ring Chart */}
-                <ErrorBoundary name="ProgressRing" inline>
-                <div className="card progress-ring-card">
-                    <svg className="progress-ring" viewBox="0 0 140 140">
-                        <circle
-                            cx="70" cy="70" r="60"
-                            fill="none"
-                            stroke="var(--color-bg-tertiary)"
-                            strokeWidth="10"
-                        />
-                        <circle
-                            cx="70" cy="70" r="60"
-                            fill="none"
-                            stroke="var(--color-primary)"
-                            strokeWidth="10"
-                            strokeLinecap="round"
-                            strokeDasharray={circumference}
-                            strokeDashoffset={strokeDashoffset}
-                            className="progress-ring-circle"
-                            transform="rotate(-90 70 70)"
-                        />
-                        <text x="70" y="65" textAnchor="middle" className="progress-ring-text"
-                            fill="var(--color-text)" fontWeight="700" fontSize="28"
-                        >
-                            {overallProgress}%
-                        </text>
-                        <text x="70" y="85" textAnchor="middle"
-                            fill="var(--color-text-tertiary)" fontSize="11"
-                        >
-                            Overall
-                        </text>
-                    </svg>
+            <ErrorBoundary name="ProgressWeek" inline>
+                <WeekCard
+                    activityByDate={readProgress.activityByDate}
+                    totalRead={readProgress.totalRead}
+                    startedCount={started.length}
+                />
+            </ErrorBoundary>
 
-                    {/* Quick stats */}
-                    <div className="progress-ring-stats">
-                        <span><BookOpen size={14} /> {totalRead} notes read</span>
-                        <span><Target size={14} /> {startedSubjects.length} subjects started</span>
-                    </div>
-                </div>
+            <div className="progress-columns">
+                <ErrorBoundary name="SubjectProgress" inline>
+                    <section className="progress-subjects" aria-labelledby="progress-subjects-title">
+                        <h2 className="section-heading" id="progress-subjects-title">Subjects</h2>
+                        {started.length > 0 ? (
+                            <div className="list-card">
+                                {started.map((subject) => (
+                                    <Link key={subject.id} to={`/chapters?subject=${subject.id}`} className="list-row progress-subject-row">
+                                        <span className="list-row-icon"><SubjectIcon subject={subject.id} size={20} /></span>
+                                        <span className="list-row-main">
+                                            <span className="list-row-title">{subject.label}</span>
+                                            <ProgressLine value={subject.read} total={subject.total} label={`${subject.read} of ${subject.total} notes read`} />
+                                        </span>
+                                        <span className="list-row-end progress-subject-pct">
+                                            {subject.pct}%
+                                            <ChevronRight size={18} aria-hidden="true" />
+                                        </span>
+                                    </Link>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="card progress-subjects-empty">
+                                <p>Subjects appear here once you read your first note.</p>
+                                <Link to="/chapters" className="btn btn-primary btn-sm">Browse notes</Link>
+                            </div>
+                        )}
+
+                        {notStarted.length > 0 && (
+                            <details className="progress-not-started">
+                                <summary>
+                                    Not started yet <span className="chip-count">{notStarted.length}</span>
+                                    <ChevronRight size={16} className="progress-not-started-chevron" aria-hidden="true" />
+                                </summary>
+                                <div className="chip-row">
+                                    {notStarted.map((subject) => (
+                                        <Link key={subject.id} to={`/chapters?subject=${subject.id}`} className="chip subject-chip">
+                                            <SubjectIcon subject={subject.id} size={16} />
+                                            <span>{subject.label}</span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </details>
+                        )}
+                    </section>
                 </ErrorBoundary>
 
-                {/* Chapter Progress */}
-                <ErrorBoundary name="ChapterProgress" inline>
-                <div className="card">
-                    <h3 className="progress-chapter-title">Chapter Progress</h3>
-                    <div className="chapter-progress-list">
-                        <p className="progress-group-label">A Level</p>
-                        {aLevelProgress.map((ch, i) => (
-                            <div key={i} className="chapter-progress-item">
-                                <span className="chapter-progress-name">{ch.name}</span>
-                                <div className="chapter-progress-bar progress-bar">
-                                    <div className="progress-bar-fill" style={{ width: `${ch.progress}%` }} />
-                                </div>
-                                <span className="chapter-progress-pct">{ch.progress}%</span>
-                            </div>
-                        ))}
-                        <p className="progress-group-label progress-group-label--spaced">IGCSE / O Level</p>
-                        {igcseProgress.map((ch, i) => (
-                            <div key={i} className="chapter-progress-item">
-                                <span className="chapter-progress-name">{ch.name}</span>
-                                <div className="chapter-progress-bar progress-bar">
-                                    <div className="progress-bar-fill" style={{ width: `${ch.progress}%` }} />
-                                </div>
-                                <span className="chapter-progress-pct">{ch.progress}%</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                </ErrorBoundary>
-            </div>
-
-            {/* Study Streak Heatmap */}
-            <div className="progress-section">
                 <ErrorBoundary name="StreakTracker" inline><StreakTracker /></ErrorBoundary>
             </div>
 
-            {/* Badges */}
-            <div className="progress-section">
-                <ErrorBoundary name="BadgeSystem" inline><BadgeSystem /></ErrorBoundary>
-            </div>
-
-            {/* Leaderboard */}
-            <div className="progress-section">
-                <ErrorBoundary name="Leaderboard" inline><Leaderboard /></ErrorBoundary>
-            </div>
+            <ErrorBoundary name="BadgeSystem" inline><BadgeSystem /></ErrorBoundary>
+            <ErrorBoundary name="Leaderboard" inline><Leaderboard /></ErrorBoundary>
         </div>
     );
 }

@@ -1,11 +1,22 @@
 import { useState, useRef, useEffect, useLayoutEffect, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, BookOpen, ArrowRight } from 'lucide-react';
+import { Search, ArrowRight, History } from 'lucide-react';
 import { loadSyllabusesBySubjects } from '../../data/syllabusIndex.js';
+import { SUBJECT_GROUPS } from '../../data/subjectGroups.js';
+import { readRecentNote } from '../../services/notes/recentNote.js';
 import useFocusTrap from '../../hooks/useFocusTrap.js';
+import SubjectIcon from '../common/SubjectIcon.jsx';
 
-const SEARCH_SUBJECTS = ['chemistry', 'biology', 'physics', 'mathematics', 'economics', 'business', 'accounting'];
-const SUBJECT_LABELS = { chemistry: 'Chemistry', biology: 'Biology', physics: 'Physics', mathematics: 'Maths', economics: 'Economics', business: 'Business', accounting: 'Accounting' };
+// Every subject with a syllabus (A Level and IGCSE), with the short level tag students recognise.
+const SEARCH_SUBJECTS = SUBJECT_GROUPS
+    .filter((group) => group.id !== 'english')
+    .flatMap((group) => group.subjects.map((subject) => ({
+        id: subject.id,
+        name: subject.name,
+        level: group.id === 'igcse' ? 'IGCSE' : 'AL',
+    })));
+const SUGGESTIONS = ['moles', 'enzymes', 'differentiation', 'forces', 'elasticity'];
+const MAX_RESULTS = 40;
 
 let _cachedSearchIndex = null;
 let _cachedSearchPromise = null;
@@ -13,25 +24,52 @@ let _cachedSearchPromise = null;
 function buildSearchIndexFromSyllabuses(syllabusesBySubject) {
     const items = [];
     SEARCH_SUBJECTS.forEach(subject => {
-        const syllabus = syllabusesBySubject[subject];
+        const syllabus = syllabusesBySubject[subject.id];
         if (!syllabus) return;
         (syllabus.units || []).forEach(unit => {
             (unit.topics || []).forEach(topic => {
                 (topic.subtopics || []).forEach((sub, si) => {
                     const title = typeof sub === 'string' ? sub : (sub.title || sub.name || '');
-                    if (title) {
-                        items.push({
-                            type: SUBJECT_LABELS[subject] || subject,
-                            title,
-                            path: `/notes/${subject}/${unit.id}/${topic.id}/${si}`,
-                            icon: BookOpen,
-                        });
-                    }
+                    if (!title) return;
+                    const context = `${subject.level} ${subject.name} · ${topic.title}`;
+                    items.push({
+                        subject: subject.id,
+                        title,
+                        context,
+                        haystack: `${title} ${topic.title} ${subject.name}`.toLowerCase(),
+                        path: `/notes/${subject.id}/${unit.id}/${topic.id}/${si}`,
+                    });
                 });
             });
         });
     });
     return items;
+}
+
+// All query words must appear somewhere; titles that start with (or contain) the query rank first.
+function searchItems(items, query) {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    const words = q.split(/\s+/);
+    return items
+        .filter((item) => words.every((word) => item.haystack.includes(word)))
+        .map((item) => {
+            const title = item.title.toLowerCase();
+            const rank = title.startsWith(q) ? 0 : title.includes(q) ? 1 : words.every((word) => title.includes(word)) ? 2 : 3;
+            return { item, rank };
+        })
+        .sort((a, b) => a.rank - b.rank || a.item.title.length - b.item.title.length)
+        .slice(0, MAX_RESULTS)
+        .map(({ item }) => item);
+}
+
+function Highlight({ text, query }) {
+    const words = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    if (!words.length) return text;
+    const pattern = new RegExp(`(${words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+    return text.split(pattern).map((part, index) => (
+        index % 2 === 1 ? <mark key={index}>{part}</mark> : part
+    ));
 }
 
 export default function CommandSearch({ onClose }) {
@@ -61,13 +99,20 @@ export default function CommandSearch({ onClose }) {
         };
     }, []);
 
-    const results = useMemo(() => (
-        query.trim()
-            ? searchableItems.filter(item =>
-                item.title.toLowerCase().includes(query.toLowerCase())
-            )
-            : searchableItems.slice(0, 6)
-    ), [query, searchableItems]);
+    const recent = useMemo(() => readRecentNote(), []);
+    const results = useMemo(() => {
+        if (query.trim()) return searchItems(searchableItems, query);
+        // Empty box: offer the note the student was last reading
+        return recent?.path
+            ? [{
+                subject: recent.subject,
+                title: recent.subtopicTitle || 'Continue reading',
+                context: `${recent.subjectLabel || ''}${recent.topicTitle ? ` · ${recent.topicTitle}` : ''}`,
+                path: recent.path,
+                isRecent: true,
+            }]
+            : [];
+    }, [query, searchableItems, recent]);
 
     useLayoutEffect(() => {
         const focusInput = () => {
@@ -97,7 +142,7 @@ export default function CommandSearch({ onClose }) {
         }
 
         if (!_cachedSearchPromise) {
-            _cachedSearchPromise = loadSyllabusesBySubjects(SEARCH_SUBJECTS)
+            _cachedSearchPromise = loadSyllabusesBySubjects(SEARCH_SUBJECTS.map((subject) => subject.id))
                 .then((syllabuses) => {
                     _cachedSearchIndex = buildSearchIndexFromSyllabuses(syllabuses);
                     return _cachedSearchIndex;
@@ -155,7 +200,7 @@ export default function CommandSearch({ onClose }) {
                 ref={modalRef}
                 role="dialog"
                 aria-modal="true"
-                aria-label="Search topics and chapters"
+                aria-label="Search notes"
             >
                 <div className="search-input-wrapper">
                     <Search size={20} className="search-input-icon" aria-hidden="true" />
@@ -164,14 +209,14 @@ export default function CommandSearch({ onClose }) {
                         autoFocus
                         type="text"
                         role="combobox"
-                        aria-label="Search topics and chapters"
+                        aria-label="Search notes by topic"
                         aria-expanded={results.length > 0}
                         aria-controls="cmd-search-results"
                         aria-activedescendant={
                             results.length > 0 ? `cmd-result-${focusedIndex}` : undefined
                         }
                         aria-autocomplete="list"
-                        placeholder="Search chapters, exercises, glossary..."
+                        placeholder="Search notes by topic…"
                         value={query}
                         onChange={handleQueryChange}
                         onKeyDown={handleKeyDown}
@@ -184,46 +229,65 @@ export default function CommandSearch({ onClose }) {
                     aria-label="Search results"
                     className="search-results"
                 >
-                    {searchIndexStatus === 'loading' ? (
+                    {!query.trim() && results.length > 0 && (
+                        <div className="search-section-label" role="presentation">Continue reading</div>
+                    )}
+                    {query.trim() && searchIndexStatus === 'loading' ? (
                         <div className="search-results-state" role="status">
-                            Building search index...
+                            Loading notes…
                         </div>
                     ) : searchIndexStatus === 'error' ? (
                         <div className="search-results-state" role="alert">
-                            Search is unavailable right now.
+                            Search is unavailable right now. Check your connection and try again.
                         </div>
-                    ) : results.length === 0 ? (
+                    ) : query.trim() && results.length === 0 ? (
                         <div className="search-results-state" role="status">
-                            No results found for &quot;{query}&quot;
+                            No notes match &ldquo;{query.trim()}&rdquo;. Try a shorter word or a topic name.
                         </div>
                     ) : (
-                        results.map((item, i) => {
-                            const Icon = item.icon;
-                            return (
-                                <div
-                                    key={i}
-                                    id={`cmd-result-${i}`}
-                                    role="option"
-                                    aria-selected={i === focusedIndex}
-                                    className={`search-result-item ${i === focusedIndex ? 'focused' : ''}`}
-                                    onClick={() => handleSelect(item)}
-                                    onMouseEnter={() => setFocusedIndex(i)}
-                                >
-                                    <Icon size={18} className="search-result-icon" aria-hidden="true" />
-                                    <div className="search-result-content">
-                                        <div className="search-result-title">
-                                            {item.title}
-                                        </div>
-                                        <div className="search-result-type">{item.type}</div>
+                        results.map((item, i) => (
+                            <div
+                                key={item.path}
+                                id={`cmd-result-${i}`}
+                                role="option"
+                                aria-selected={i === focusedIndex}
+                                className={`search-result-item ${i === focusedIndex ? 'focused' : ''}`}
+                                onClick={() => handleSelect(item)}
+                                onMouseEnter={() => setFocusedIndex(i)}
+                            >
+                                <span className="search-result-icon-tile" aria-hidden="true">
+                                    {item.isRecent ? <History size={18} /> : <SubjectIcon subject={item.subject} size={18} />}
+                                </span>
+                                <div className="search-result-content">
+                                    <div className="search-result-title">
+                                        <Highlight text={item.title} query={query} />
                                     </div>
-                                    {i === focusedIndex && (
-                                        <ArrowRight size={14} className="search-result-arrow" aria-hidden="true" />
-                                    )}
+                                    <div className="search-result-type">{item.context}</div>
                                 </div>
-                            );
-                        })
+                                <ArrowRight size={16} className="search-result-arrow" aria-hidden="true" />
+                            </div>
+                        ))
                     )}
                 </div>
+
+                {!query.trim() && (
+                    <div className="search-suggestions">
+                        <span className="search-section-label">Try searching</span>
+                        <div className="chip-row">
+                            {SUGGESTIONS.map((word) => (
+                                <button
+                                    key={word}
+                                    type="button"
+                                    className="chip"
+                                    tabIndex={-1}
+                                    onClick={() => { setQuery(word); setFocusedIndex(0); inputRef.current?.focus(); }}
+                                >
+                                    {word}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                )}
 
                 <div className="search-footer" aria-hidden="true">
                     <span><kbd>↑↓</kbd> Navigate</span>

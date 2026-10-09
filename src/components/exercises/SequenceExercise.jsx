@@ -221,7 +221,7 @@ export default function SequenceExercise({ question, onNext, onMistake, onAttemp
                         {allCorrect ? (
                             <>
                                 <CheckCircle size={22} />
-                                <span>Perfect order! 🎉</span>
+                                <span>Perfect order!</span>
                             </>
                         ) : (
                             <>
@@ -237,7 +237,7 @@ export default function SequenceExercise({ question, onNext, onMistake, onAttemp
                 {submitted ? (
                     <>
                         <button className="btn btn-secondary" onClick={handleReset}>
-                            <RotateCcw size={16} /> Try Again
+                            <RotateCcw size={16} /> Try again
                         </button>
                         <button className="btn btn-primary btn-lg" onClick={handleNext}>
                             Next <ArrowRight size={18} />

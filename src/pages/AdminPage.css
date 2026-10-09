@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-1);
-  background: linear-gradient(135deg, var(--color-warning-light), rgba(245, 158, 11, 0.05));
+  background: var(--color-warning-light);
   color: var(--color-accent);
   border: 1px solid rgba(245, 158, 11, 0.22);
   border-radius: 999px;
@@ -151,7 +151,7 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-4);
-  background: linear-gradient(135deg, var(--color-warning-light), rgba(245, 158, 11, 0.04));
+  background: var(--color-warning-light);
   border: 1px solid rgba(245, 158, 11, 0.22);
   color: var(--color-accent);
   border-radius: var(--radius-lg);
@@ -164,7 +164,7 @@
   gap: var(--space-4);
   padding: var(--space-4);
   margin-bottom: var(--space-5);
-  border: 1px solid rgba(99, 102, 241, 0.18);
+  border: 1px solid rgba(139, 30, 63, 0.18);
   background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 6%, transparent), var(--color-surface));
 }
 
@@ -282,7 +282,7 @@
 .admin-pill:hover { border-color: var(--color-primary); color: var(--color-primary); }
 
 .admin-pill.active {
-  background: var(--color-primary);
+  background: var(--color-brand);
   border-color: var(--color-primary);
   color: var(--color-text-inverse);
 }
@@ -348,7 +348,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--color-primary);
+  background: var(--color-brand);
   color: var(--color-text-inverse);
   display: flex;
   align-items: center;
@@ -987,4 +987,39 @@
   border-radius: var(--radius-md);
   color: var(--color-error-dark);
   font-size: var(--font-size-sm);
+}
+
+/* Access / load failure state */
+.admin-state {
+  max-width: 520px;
+  margin: var(--space-12) auto;
+  padding: var(--space-8) var(--space-6);
+  border: 1px solid var(--color-border-light);
+  border-radius: 16px;
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.admin-state-icon {
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.admin-state-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.admin-state-text {
+  margin: 0 0 var(--space-6);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.admin-state-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
 }

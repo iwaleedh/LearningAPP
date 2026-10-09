@@ -1,94 +1,75 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
-    BookOpen, FlaskConical, FileQuestion, Brain,
-    ArrowRight, Flame, Target, TrendingUp, Sparkles, Radio
+    FlaskConical, FileQuestion, Brain,
+    ArrowRight, Flame, TrendingUp, ChevronRight, GraduationCap, Play,
 } from 'lucide-react';
 import {
-    getMyPendingLiveClassInvites,
-    onConvexReady,
-    subscribe,
     api,
     callQuery,
     getClient,
 } from '../convex-client.js';
-import { useAuth } from '../hooks/useAuth.js';
 import { useActivityRefresh } from '../hooks/useActivityRefresh.js';
 import { useReadProgressSummary } from '../hooks/useNoteReadStatus.js';
 import { useFeatureFlags } from '../hooks/useFeatureFlags.js';
+import { useAuth } from '../hooks/useAuth.js';
 import { subjectNoteCounts } from '../data/syllabusIndex.js';
+import { readRecentNote } from '../services/notes/recentNote.js';
+import { SUBJECT_GROUPS, findSubjectGroupId } from '../data/subjectGroups.js';
+import { friendlyDisplayName } from '../utils/displayName.js';
 import './HomePage.css';
 
-const STAT_META = [
-    { key: 'chaptersRead', label: 'Chapters Read', icon: BookOpen, tone: 'primary' },
-    { key: 'exercisesDone', label: 'Exercises Done', icon: FlaskConical, tone: 'success' },
-    { key: 'papersViewed', label: 'Papers Viewed', icon: FileQuestion, tone: 'accent' },
-    { key: 'streak', label: 'Study Streak', icon: Flame, tone: 'error' },
-];
+const DAILY_NOTE_GOAL = 3;
+const RING_RADIUS = 22;
+const RING_CIRCUMFERENCE = 2 * Math.PI * RING_RADIUS;
 
-const aLevelSubjects = [
-    { id: 'chemistry', name: 'AL Chemistry', chapters: 12, color: '#3b82f6', emoji: '⚗️' },
-    { id: 'biology', name: 'AL Biology', chapters: 10, color: '#10b981', emoji: '🧬' },
-    { id: 'physics', name: 'AL Physics', chapters: 14, color: '#f59e0b', emoji: '⚡' },
-    { id: 'mathematics', name: 'AL Mathematics', chapters: 16, color: '#ef4444', emoji: '📐' },
-    { id: 'business', name: 'AL Business', chapters: 20, color: '#0ea5e9', emoji: '💼' },
-    { id: 'economics', name: 'AL Economics', chapters: 23, color: '#14b8a6', emoji: '📊' },
-    { id: 'accounting', name: 'AL Accounting', chapters: 15, color: '#f97316', emoji: '📒' },
-    { id: 'cae', name: 'CAE (C1 Advanced)', chapters: 10, color: '#3b82f6', emoji: '🇬🇧' },
-    { id: 'cpe', name: 'CPE (C2 Proficiency)', chapters: 10, color: '#0ea5e9', emoji: '🎓' },
-];
+function greetingForHour(hour) {
+    if (hour < 12) return 'Good morning';
+    if (hour < 18) return 'Good afternoon';
+    return 'Good evening';
+}
 
-const oLevelSubjects = [
-    { id: 'olevel_biology', name: 'IGCSE Biology', chapters: 21, color: '#10b981', emoji: '🔬' },
-    { id: 'olevel_chemistry', name: 'IGCSE Chemistry', chapters: 12, color: '#8b5cf6', emoji: '🧪' },
-    { id: 'olevel_physics', name: 'IGCSE Physics', chapters: 22, color: '#3b82f6', emoji: '⚡' },
-    { id: 'olevel_business', name: 'IGCSE Business', chapters: 6, color: '#f59e0b', emoji: '💼' },
-    { id: 'olevel_maths_core', name: 'IGCSE Maths Core', chapters: 9, color: '#ef4444', emoji: '📐' },
-    { id: 'olevel_maths_extended', name: 'IGCSE Maths Extended', chapters: 9, color: '#e11d48', emoji: '🧮' },
-];
+function friendlyName(username) {
+    return friendlyDisplayName(username).split(/\s+/)[0];
+}
+
+function ProgressRing({ pct }) {
+    const offset = RING_CIRCUMFERENCE * (1 - pct / 100);
+    return (
+        <svg className="subject-ring" viewBox="0 0 52 52" aria-hidden="true">
+            <circle className="subject-ring-track" cx="26" cy="26" r={RING_RADIUS} />
+            <circle
+                className="subject-ring-fill"
+                cx="26"
+                cy="26"
+                r={RING_RADIUS}
+                strokeDasharray={RING_CIRCUMFERENCE}
+                style={{ '--ring-from': RING_CIRCUMFERENCE, '--ring-to': offset }}
+                strokeDashoffset={offset}
+            />
+        </svg>
+    );
+}
 
 export default function HomePage() {
-    const navigate = useNavigate();
-    const { debugAuthEnabled, username } = useAuth();
     const { isEnabled } = useFeatureFlags();
+    const { username } = useAuth();
     const activityVersion = useActivityRefresh();
     const readProgress = useReadProgressSummary();
-    const [liveInvites, setLiveInvites] = useState([]);
     const [badgeMetrics, setBadgeMetrics] = useState(null);
     const [activityMetrics, setActivityMetrics] = useState(null);
+    const [recentNote] = useState(readRecentNote);
     const notesEnabled = isEnabled('notes');
-    const pastPapersEnabled = isEnabled('pastPapers');
-    const liveClassEnabled = isEnabled('liveClass');
 
-    const quickActions = [
-        isEnabled('exercises') ? {
-            key: 'exercises',
-            to: '/exercises',
-            icon: FlaskConical,
-            title: 'Practice Exercises',
-            description: 'Test your understanding with interactive questions',
-        } : null,
-        isEnabled('flashcards') ? {
-            key: 'flashcards',
-            to: '/flashcards',
-            icon: Brain,
-            title: 'Flashcard Review',
-            description: 'Quick active recall study sessions',
-        } : null,
-        pastPapersEnabled ? {
-            key: 'past-papers',
-            to: '/past-papers',
-            icon: Target,
-            title: 'Mock Exam',
-            description: 'Timed past paper practice under exam conditions',
-        } : null,
-        isEnabled('progress') ? {
-            key: 'progress',
-            to: '/progress',
-            icon: TrendingUp,
-            title: 'View Progress',
-            description: 'Track your study streak and performance',
-        } : null,
+    const initialGroup = useMemo(() => findSubjectGroupId(recentNote?.subject), [recentNote]);
+    const [activeGroupId, setActiveGroupId] = useState(initialGroup);
+
+    const practiceLinks = [
+        isEnabled('exercises') ? { key: 'exercises', to: '/exercises', icon: FlaskConical, title: 'Exercises', description: 'Questions on every topic' } : null,
+        isEnabled('flashcards') ? { key: 'flashcards', to: '/flashcards', icon: Brain, title: 'Flashcards', description: 'Quick active-recall reviews' } : null,
+        isEnabled('pastPapers') ? { key: 'past-papers', to: '/past-papers', icon: FileQuestion, title: 'Past papers', description: 'Timed exam practice' } : null,
+        isEnabled('mistakeBank') ? { key: 'mistakes', to: '/mistakes', icon: GraduationCap, title: 'Mistake bank', description: 'Revisit what you got wrong' } : null,
+        isEnabled('progress') ? { key: 'progress', to: '/progress', icon: TrendingUp, title: 'Progress', description: 'Streaks and subject mastery' } : null,
     ].filter(Boolean);
 
     useEffect(() => {
@@ -134,228 +115,187 @@ export default function HomePage() {
         papersViewed: activityMetrics?.papersViewed ?? 0,
         streak: readProgress.currentStreak,
     }), [activityMetrics, badgeMetrics, readProgress]);
-    const subjectProgress = useMemo(() => {
-        const readIds = readProgress.readNoteIds;
+
+    const readCountBySubject = useMemo(() => {
         const counts = {};
-        readIds.forEach(noteId => {
+        readProgress.readNoteIds.forEach((noteId) => {
             const subject = noteId.split(':')[1];
             if (subject) counts[subject] = (counts[subject] || 0) + 1;
         });
-        const progress = {};
-        Object.entries(counts).forEach(([subject, count]) => {
-            const total = subjectNoteCounts[subject];
-            if (total) progress[subject] = Math.min(100, Math.round((count / total) * 100));
-        });
-        return progress;
+        return counts;
     }, [readProgress]);
 
-    useEffect(() => {
-        if (debugAuthEnabled) {
-            return undefined;
-        }
+    const now = new Date();
+    const todayKey = now.toDateString();
+    const notesToday = Object.values(readProgress.readAtByNoteId || {})
+        .filter((readAt) => readAt && new Date(readAt).toDateString() === todayKey).length;
+    const goalPct = Math.min(100, Math.round((notesToday / DAILY_NOTE_GOAL) * 100));
+    const todayMessage = notesToday >= DAILY_NOTE_GOAL
+        ? 'Goal reached for today. Nice work.'
+        : notesToday > 0
+            ? `${DAILY_NOTE_GOAL - notesToday} more to hit today's goal.`
+            : stats.streak > 0
+                ? `Read a note today to keep your ${stats.streak}-day streak.`
+                : 'Read your first note tonight to start a streak.';
 
-        let cancelled = false;
-        let unsubInvites = null;
-
-        async function refreshLiveInvites() {
-            const invites = await getMyPendingLiveClassInvites(username);
-            if (!cancelled) {
-                setLiveInvites(invites);
-            }
-        }
-
-        // M7: capture unsubscribe so we can remove the callback if effect cleans up
-        // before Convex is ready, and check `cancelled` inside the callback.
-        const unsubReady = onConvexReady(() => {
-            if (cancelled) return;
-            void refreshLiveInvites();
-
-            if (!username) return;
-
-            unsubInvites?.();
-            unsubInvites = subscribe(api.invites.getMyPendingInvites, {}, () => {
-                void refreshLiveInvites();
-            });
-        });
-
-        return () => {
-            cancelled = true;
-            unsubReady();
-            unsubInvites?.();
-        };
-    }, [debugAuthEnabled, username]);
+    // Progress through the topic the student was last reading
+    const recentTopicRead = recentNote?.topicId !== undefined
+        ? readProgress.readNoteIds.filter((noteId) => noteId.startsWith(`note:${recentNote.subject}:${recentNote.unitId}:${recentNote.topicId}:`)).length
+        : 0;
+    const recentTopicSize = recentNote?.topicSize || 0;
+    const name = friendlyName(username);
+    const greeting = `${greetingForHour(now.getHours())}${name ? `, ${name}` : ''}`;
+    const dateLine = now.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' });
+    const activeGroup = SUBJECT_GROUPS.find((group) => group.id === activeGroupId) || SUBJECT_GROUPS[0];
+    const streakDays = stats.streak;
 
     return (
-        <div className="home-page animate-fade-in">
-            {/* Live Class invite banner */}
-            {liveClassEnabled && liveInvites.length > 0 && (
-                <div className="lc-invite-banner animate-fade-in">
-                    <Radio size={18} />
-                    <span>Your teacher has started a live class!</span>
-                    <button
-                        type="button"
-                        className="btn btn-primary btn-sm"
-                        onClick={() => navigate(`/live/${liveInvites[0]?.sessionId}`)}
-                    >
-                        Join Now
-                    </button>
-                    <button type="button" className="btn btn-ghost btn-sm" onClick={() => setLiveInvites([])}>Dismiss</button>
+        <div className="home-page">
+            <header className="home-head home-reveal">
+                <div className="home-head-text">
+                    <h1 className="home-greeting">{greeting}</h1>
+                    <p className="home-date">{dateLine}</p>
                 </div>
-            )}
-            {/* Welcome Banner */}
-            <div className="welcome-banner">
-                <div className="welcome-content">
-                    <div className="welcome-badge">
-                        <Sparkles size={14} />
-                        <span>Interactive Learning Platform</span>
-                    </div>
-                    <h1>Welcome to Study Smart</h1>
-                    <p>Your personal, interactive study companion — notes, exercises, past papers, and flashcards, all in one place.</p>
-                    <div className="welcome-actions">
-                        {notesEnabled && (
-                            <Link to="/chapters" className="btn btn-primary btn-lg">
-                                <BookOpen size={20} />
-                                Start Learning
-                            </Link>
-                        )}
-                        {pastPapersEnabled && (
-                            <Link to="/past-papers" className="btn btn-secondary btn-lg">
-                                <FileQuestion size={20} />
-                                Practice Papers
-                            </Link>
-                        )}
-                    </div>
+                <div className={`streak-chip ${streakDays > 0 ? 'is-lit' : ''}`}>
+                    <Flame size={18} aria-hidden="true" />
+                    {streakDays > 0 ? (
+                        <>
+                            <span className="streak-chip-value">{streakDays}</span>
+                            <span className="streak-chip-label">day streak</span>
+                        </>
+                    ) : (
+                        <span className="streak-chip-label">Start your streak tonight</span>
+                    )}
                 </div>
-                <div className="welcome-decoration">
-                    <div className="floating-icon fi-1">📚</div>
-                    <div className="floating-icon fi-2">🧪</div>
-                    <div className="floating-icon fi-3">🎯</div>
-                    <div className="floating-icon fi-4">⭐</div>
-                </div>
-            </div>
+            </header>
 
-            {/* Quick Stats */}
-            <div className="stats-grid">
-                {STAT_META.map((stat, i) => {
-                    const Icon = stat.icon;
-                    const value = stat.key === 'streak'
-                        ? `${stats.streak} day${stats.streak !== 1 ? 's' : ''}`
-                        : String(stats[stat.key]);
-                    return (
-                        <div
-                            key={stat.key}
-                            className={`stat-card stat-card--${stat.tone} card animate-slide-in-up`}
-                            style={{ animationDelay: `${i * 0.05}s` }}
-                        >
-                            <div className="stat-icon">
-                                <Icon size={24} strokeWidth={2.5} />
-                            </div>
-                            <div className="stat-info">
-                                <span className="stat-value">{value}</span>
-                                <span className="stat-label">{stat.label}</span>
-                            </div>
+            <section className="home-hero home-reveal" aria-label="Your study today">
+                {notesEnabled && (recentNote ? (
+                    <Link to={recentNote.path} className="continue-card" aria-label={`Continue learning: ${recentNote.subtopicTitle || 'your last note'}`}>
+                        <div className="continue-card-body">
+                            <h2 className="continue-card-title">{recentNote.subtopicTitle || 'Your last note'}</h2>
+                            <p className="continue-card-subject">{recentNote.subjectLabel || 'Notes'}{recentNote.topicTitle ? ` · ${recentNote.topicTitle}` : ''}</p>
+                            {recentTopicSize > 0 && (
+                                <div className="continue-card-progress">
+                                    <div className="continue-card-track" aria-hidden="true">
+                                        <div className="continue-card-fill" style={{ transform: `scaleX(${Math.min(recentTopicRead, recentTopicSize) / recentTopicSize})` }} />
+                                    </div>
+                                    <span>{Math.min(recentTopicRead, recentTopicSize)} of {recentTopicSize} read in this topic</span>
+                                </div>
+                            )}
                         </div>
-                    );
-                })}
-            </div>
+                        <span className="continue-card-action">
+                            <Play size={16} aria-hidden="true" fill="currentColor" />
+                            Resume
+                        </span>
+                    </Link>
+                ) : (
+                    <Link to="/chapters" className="continue-card">
+                        <div className="continue-card-body">
+                            <h2 className="continue-card-title">Pick a subject and open your first note</h2>
+                            <p className="continue-card-subject">Notes follow your exam board's syllabus, topic by topic.</p>
+                        </div>
+                        <span className="continue-card-action">
+                            Browse notes
+                            <ArrowRight size={16} aria-hidden="true" />
+                        </span>
+                    </Link>
+                ))}
 
-            {/* A Level Subjects */}
+                <div className="today-card">
+                    <h2 className="today-card-heading">Today</h2>
+                    <p className="today-goal">
+                        <span className="today-goal-value">{Math.min(notesToday, DAILY_NOTE_GOAL)}</span>
+                        <span className="today-goal-of">/ {DAILY_NOTE_GOAL} notes read</span>
+                    </p>
+                    <div
+                        className="today-goal-track"
+                        role="progressbar"
+                        aria-label="Daily note goal"
+                        aria-valuemin={0}
+                        aria-valuemax={DAILY_NOTE_GOAL}
+                        aria-valuenow={Math.min(notesToday, DAILY_NOTE_GOAL)}
+                    >
+                        <div className="today-goal-fill" style={{ transform: `scaleX(${goalPct / 100})` }} />
+                    </div>
+                    <p className="today-message">{todayMessage}</p>
+                    <p className="today-totals">
+                        All time: {stats.chaptersRead} notes · {stats.exercisesDone} exercises · {stats.papersViewed} papers
+                    </p>
+                </div>
+            </section>
+
             {notesEnabled && (
-                <>
-                    <div className="section-header">
-                        <h2>A Level</h2>
-                        <Link to="/chapters" className="btn btn-ghost">
-                            View All <ArrowRight size={16} />
-                        </Link>
-                    </div>
-                    <div className="subjects-grid">
-                        {aLevelSubjects.map((subject, i) => {
-                            const pct = subjectProgress[subject.id] || 0;
-                            return (
-                                <Link
-                                    key={subject.id}
-                                    to={`/chapters?subject=${subject.id}`}
-                                    className="subject-card card card-hover animate-slide-in-up"
-                                    style={{
-                                        animationDelay: `${0.1 + i * 0.05}s`,
-                                        '--subject-accent': subject.color,
-                                        '--subject-accent-soft': `${subject.color}18`,
-                                    }}
+                <section className="home-section home-reveal" aria-labelledby="home-subjects-title">
+                    <div className="home-section-head">
+                        <h2 id="home-subjects-title">Your subjects</h2>
+                        <div className="home-tabs" role="tablist" aria-label="Qualification">
+                            {SUBJECT_GROUPS.map((group) => (
+                                <button
+                                    key={group.id}
+                                    type="button"
+                                    role="tab"
+                                    aria-selected={group.id === activeGroup.id}
+                                    className={`home-tab ${group.id === activeGroup.id ? 'is-active' : ''}`}
+                                    onClick={() => setActiveGroupId(group.id)}
                                 >
-                                    <div className="subject-card-header">
-                                        <div className="subject-emoji">{subject.emoji}</div>
-                                    </div>
-                                    <div>
-                                        <h3>{subject.name}</h3>
-                                        <p>{subject.chapters} Chapters</p>
-                                        <div className="subject-progress subject-progress--spaced">
-                                            <div className="progress-bar-container">
-                                                <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
-                                            </div>
-                                            <span className="progress-text">{pct}% Complete</span>
-                                        </div>
-                                    </div>
-                                </Link>
-                            );
-                        })}
+                                    {group.label}
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
-                    <div className="section-header section-header--spaced">
-                        <h2>O Level / IGCSE</h2>
-                    </div>
-                    <div className="subjects-grid">
-                        {oLevelSubjects.map((subject, i) => {
-                            const pct = subjectProgress[subject.id] || 0;
+                    <div className="subject-grid" role="tabpanel" aria-label={`${activeGroup.label} subjects`}>
+                        {activeGroup.subjects.map((subject) => {
+                            const total = subjectNoteCounts[subject.id] || 0;
+                            const read = Math.min(readCountBySubject[subject.id] || 0, total);
+                            const pct = total ? Math.round((read / total) * 100) : 0;
                             return (
                                 <Link
                                     key={subject.id}
                                     to={`/chapters?subject=${subject.id}`}
-                                    className="subject-card card card-hover animate-slide-in-up"
-                                    style={{
-                                        animationDelay: `${0.1 + i * 0.05}s`,
-                                        '--subject-accent': subject.color,
-                                        '--subject-accent-soft': `${subject.color}18`,
-                                    }}
+                                    className="subject-tile"
+                                    aria-label={`${activeGroup.label} ${subject.name}: ${pct}% read`}
                                 >
-                                    <div className="subject-card-header">
-                                        <div className="subject-emoji">{subject.emoji}</div>
+                                    <div className="subject-tile-ring">
+                                        <ProgressRing pct={pct} />
+                                        <span className="subject-tile-pct">{pct}<small>%</small></span>
                                     </div>
-                                    <div>
-                                        <h3>{subject.name}</h3>
-                                        <p>{subject.chapters} Chapters</p>
-                                        <div className="subject-progress subject-progress--spaced">
-                                            <div className="progress-bar-container">
-                                                <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
-                                            </div>
-                                            <span className="progress-text">{pct}% Complete</span>
-                                        </div>
+                                    <div className="subject-tile-text">
+                                        <span className="subject-tile-name">{subject.name}</span>
+                                        <span className="subject-tile-meta">
+                                            {activeGroup.id === 'igcse' ? `${subject.code} · ` : ''}{read} of {total} notes
+                                        </span>
                                     </div>
+                                    <ChevronRight size={18} className="subject-tile-chevron" aria-hidden="true" />
                                 </Link>
                             );
                         })}
                     </div>
-                </>
+                </section>
             )}
 
-            {/* Quick Actions Grid */}
-            {quickActions.length > 0 && (
-                <>
-                    <div className="section-header">
-                        <h2>Quick Actions</h2>
+            {practiceLinks.length > 0 && (
+                <section className="home-section home-reveal" aria-labelledby="home-practice-title">
+                    <div className="home-section-head">
+                        <h2 id="home-practice-title">Practice</h2>
                     </div>
-                    <div className="actions-grid">
-                        {quickActions.map((action) => {
-                            const Icon = action.icon;
+                    <nav className="practice-list" aria-label="Practice tools">
+                        {practiceLinks.map((item) => {
+                            const Icon = item.icon;
                             return (
-                                <Link key={action.key} to={action.to} className="action-card card card-hover">
-                                    <Icon size={28} className="action-icon" />
-                                    <h4>{action.title}</h4>
-                                    <p>{action.description}</p>
+                                <Link key={item.key} to={item.to} className="practice-row">
+                                    <span className="practice-row-icon"><Icon size={20} aria-hidden="true" /></span>
+                                    <span className="practice-row-text">
+                                        <span className="practice-row-title">{item.title}</span>
+                                        <span className="practice-row-desc">{item.description}</span>
+                                    </span>
+                                    <ChevronRight size={18} className="practice-row-chevron" aria-hidden="true" />
                                 </Link>
                             );
                         })}
-                    </div>
-                </>
+                    </nav>
+                </section>
             )}
         </div>
     );

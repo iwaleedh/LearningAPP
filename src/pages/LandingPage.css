@@ -3,7 +3,7 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--color-bg);
-  background-image: radial-gradient(var(--color-primary-100) 1px, transparent 1px);
+  background-image: none;
   background-size: 24px 24px;
   color: var(--color-text);
   overflow-x: hidden;
@@ -70,7 +70,7 @@
   align-items: center;
   padding: var(--space-6);
   border-radius: 22px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--color-warning) 10%, var(--color-surface)), var(--color-surface));
+  background: var(--color-surface);
 }
 
 .landing-access-notice h2 {
@@ -118,10 +118,7 @@
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 800;
   line-height: 1.1;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-text);
   margin-bottom: var(--space-4);
   max-width: 900px;
 }
@@ -391,7 +388,8 @@
 .step-number {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  background: var(--color-primary-100);
+  color: var(--color-primary);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -549,9 +547,9 @@
 }
 
 @keyframes pulse-shadow {
-  0% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4); }
-  70% { box-shadow: 0 0 0 15px rgba(79, 70, 229, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(139, 30, 63, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(139, 30, 63, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(139, 30, 63, 0); }
 }
 
 /* Footer */
@@ -642,4 +640,112 @@
   .faq-question h4 {
     font-size: var(--font-size-base);
   }
+}
+
+/* Feature icons share one tinted tile */
+.feature-icon-wrapper,
+.feature-icon-wrapper.blue,
+.feature-icon-wrapper.cyan,
+.feature-icon-wrapper.orange,
+.feature-icon-wrapper.green {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary);
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+/* Real-product preview (replaces the empty mock) */
+.landing-preview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: 20px;
+  background: var(--color-bg-secondary);
+}
+
+.landing-preview-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: 16px;
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+.landing-preview-title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.landing-preview-meta {
+  font-size: 0.8125rem;
+  opacity: 0.85;
+}
+
+.landing-preview-track {
+  display: block;
+  height: 4px;
+  margin: var(--space-2) 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  overflow: hidden;
+}
+
+.landing-preview-track span {
+  display: block;
+  height: 100%;
+  background: #fff;
+  transform-origin: left center;
+}
+
+.landing-preview-action {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: #fff;
+  color: #7a1634;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.landing-preview-subjects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.landing-preview-subjects li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 12px;
+  background: var(--color-surface);
+  font-weight: 600;
+}
+
+.landing-preview-ring {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: conic-gradient(var(--color-primary) calc(var(--pct) * 1%), var(--color-track) 0);
+  mask: radial-gradient(circle, transparent 9px, #000 10px);
+  -webkit-mask: radial-gradient(circle, transparent 9px, #000 10px);
+}
+
+.landing-preview-pct {
+  margin-left: auto;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
 }

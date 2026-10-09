@@ -1,59 +1,57 @@
-import { useState, useEffect } from "react";
-import { GripVertical, PenLine, ArrowUpDown, Brain, CheckCircle, Search, Target, BookOpen, Activity } from "lucide-react";
+import { useState, useEffect, useMemo } from "react";
+import { Link } from "react-router-dom";
+import { GripVertical, PenLine, ArrowUpDown, Brain, CheckCircle, FileText, ArrowLeft, ChevronRight, RotateCcw, ListChecks } from "lucide-react";
 import MCQExercise from "../components/exercises/MCQExercise";
 import DragDropExercise from "../components/exercises/DragDropExercise";
 import FillBlankExercise from "../components/exercises/FillBlankExercise";
 import SequenceExercise from "../components/exercises/SequenceExercise";
 import KeywordCheck from "../components/exercises/KeywordCheck";
 import FlashcardExercise from "../components/exercises/FlashcardExercise";
-import { getExerciseSet } from "../data/exercises/index";
+import { getExerciseSet, getAvailableTopics } from "../data/exercises/index";
+import { SUBJECT_GROUPS, findSubjectGroupId } from "../data/subjectGroups.js";
 import { useSyllabus } from "../hooks/useSyllabus.js";
 import { incrementExercisesDone } from "../services/activityStore.js";
 import { saveMistake } from "../services/mistakeStore.js";
 import { recordExerciseAttempt } from "../services/studyAttemptService.js";
+import { readRecentNote } from "../services/notes/recentNote.js";
+import PageHeader from "../components/common/PageHeader.jsx";
+import SubjectPicker from "../components/common/SubjectPicker.jsx";
 import ErrorBoundary from "../components/ErrorBoundary.jsx";
 import "./Pages.css";
 
-const SUBJECTS = [
-  { id: "chemistry", label: "AL Chemistry", available: true },
-  { id: "biology", label: "AL Biology", available: true },
-  { id: "physics", label: "AL Physics", available: true },
-  { id: "mathematics", label: "AL Mathematics", available: true },
-  { id: "business", label: "AL Business", available: true },
-  { id: "economics", label: "AL Economics", available: true },
-  { id: "accounting", label: "AL Accounting", available: true },
-  { id: "cae", label: "CAE (C1 Advanced)", available: true },
-  { id: "cpe", label: "CPE (C2 Proficiency)", available: true },
-  { id: "olevel_chemistry", label: "IGCSE Chemistry", available: true },
-  { id: "olevel_biology", label: "IGCSE Biology", available: true },
-  { id: "olevel_physics", label: "IGCSE Physics", available: true },
-  { id: "olevel_business", label: "IGCSE Business", available: true },
-  { id: "olevel_maths_core", label: "IGCSE Maths Core", available: false },
-  { id: "olevel_maths_extended", label: "IGCSE Maths Extended", available: true },
-];
-
 const ET = [
-  { id: "mcq", title: "Multiple Choice", desc: "Test your knowledge with randomized MCQs and instant rationale", icon: CheckCircle, toneClass: "exercise-type-icon--primary", key: "mcq" },
-  { id: "drag-drop", title: "Drag and Drop", desc: "Sort elements, events, or concepts into the right categories", icon: GripVertical, toneClass: "exercise-type-icon--success", key: "dragdrop" },
-  { id: "fill-blank", title: "Fill in the Blanks", desc: "Complete sentences with fuzzy typo tolerance", icon: PenLine, toneClass: "exercise-type-icon--warning", key: "fillblank" },
-  { id: "sequence", title: "Sequence Ordering", desc: "Arrange steps, events, or processes in the correct order", icon: ArrowUpDown, toneClass: "exercise-type-icon--danger", key: "sequence" },
-  { id: "keyword", title: "Theory / Keyword Check", desc: "Write your answer and get keywords scanned automatically", icon: Search, toneClass: "exercise-type-icon--info", key: "keyword" },
-  { id: "flashcards", title: "Flashcard Review", desc: "Quick flip cards for active recall practice", icon: Brain, toneClass: "exercise-type-icon--accent", key: "flashcards" },
+  { id: "mcq", title: "Multiple choice", desc: "Quick questions with instant explanations", icon: CheckCircle, key: "mcq" },
+  { id: "flashcards", title: "Flashcards", desc: "Flip cards for active recall", icon: Brain, key: "flashcards" },
+  { id: "fill-blank", title: "Fill in the blanks", desc: "Complete key sentences (small typos are fine)", icon: PenLine, key: "fillblank" },
+  { id: "drag-drop", title: "Sort into groups", desc: "Drag ideas into the right categories", icon: GripVertical, key: "dragdrop" },
+  { id: "sequence", title: "Put in order", desc: "Arrange steps and processes correctly", icon: ArrowUpDown, key: "sequence" },
+  { id: "keyword", title: "Written answers", desc: "Write an answer; key terms are checked", icon: FileText, key: "keyword" },
 ];
 
 const COMPS = { "mcq": MCQExercise, "drag-drop": DragDropExercise, "fill-blank": FillBlankExercise, "sequence": SequenceExercise, "keyword": KeywordCheck, "flashcards": FlashcardExercise };
-const TITLES = { "mcq": "Multiple Choice Questions", "drag-drop": "Drag and Drop", "fill-blank": "Fill in the Blanks", "sequence": "Sequence Ordering", "keyword": "Theory / Keyword Check", "flashcards": "Flashcard Review" };
-const KEY_MAP = { "mcq": "mcq", "drag-drop": "dragdrop", "fill-blank": "fillblank", "sequence": "sequence", "keyword": "keyword", "flashcards": "flashcards" };
+const TITLES = Object.fromEntries(ET.map((type) => [type.id, type.title]));
+const KEY_MAP = Object.fromEntries(ET.map((type) => [type.id, type.key]));
+const DEFAULT_SUBJECT = "chemistry";
 
 export default function ExercisePage() {
-  const [activeSubject, setActiveSubject] = useState("chemistry");
+  const [activeSubject, setActiveSubject] = useState(() => readRecentNote()?.subject || DEFAULT_SUBJECT);
+  const [groupId, setGroupId] = useState(() => findSubjectGroupId(readRecentNote()?.subject || DEFAULT_SUBJECT));
   const [selectedUnitId, setSelectedUnitId] = useState(null);
   const [selectedTopicId, setSelectedTopicId] = useState(null);
   const [activeType, setActiveType] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  // One entry per answered question in the current set; null while the set is still running
+  const [sessionResults, setSessionResults] = useState([]);
+  const [sessionDone, setSessionDone] = useState(false);
   const [exerciseSet, setExerciseSet] = useState(null);
   const [exerciseSetStatus, setExerciseSetStatus] = useState("idle");
   const { syllabus, isLoading: isLoadingSyllabus } = useSyllabus(activeSubject);
+
+  const availableTopicKeys = useMemo(
+    () => new Set(getAvailableTopics(activeSubject).map((topic) => `${topic.unitId}:${topic.topicId}`)),
+    [activeSubject],
+  );
+  const group = SUBJECT_GROUPS.find((item) => item.id === groupId) || SUBJECT_GROUPS[0];
 
   useEffect(() => {
     let cancelled = false;
@@ -80,31 +78,47 @@ export default function ExercisePage() {
     };
   }, [activeSubject, selectedUnitId, selectedTopicId]);
 
-  function resetToHub() { setActiveType(null); setCurrentQuestion(0); }
+  function startSession(typeId) {
+    setActiveType(typeId);
+    setCurrentQuestion(0);
+    setSessionResults([]);
+    setSessionDone(false);
+  }
+
+  function resetToHub() { startSession(null); }
 
   const activateSubject = (subjectId) => {
     setActiveSubject(subjectId);
     setSelectedUnitId(null);
     setSelectedTopicId(null);
-    setActiveType(null);
-    setCurrentQuestion(0);
+    startSession(null);
   };
 
+  const selectedUnit = syllabus?.units?.find((unit) => String(unit.id) === String(selectedUnitId));
+  const selectedTopic = selectedUnit?.topics?.find((topic) => String(topic.id) === String(selectedTopicId));
+
+  // ── In a practice session ──
   if (activeType) {
+    const backToModes = (
+      <button className="outline-back exercise-back-link" type="button" onClick={resetToHub}>
+        <ArrowLeft size={16} aria-hidden="true" /> {selectedTopic?.title || "Back to practice"}
+      </button>
+    );
+
     if (exerciseSetStatus === "loading") {
       return (
-        <div className="exercise-hub animate-fade-in">
-          <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
-          <p>Loading exercises...</p>
+        <div className="exercise-hub">
+          {backToModes}
+          <p className="exercise-status">Loading questions…</p>
         </div>
       );
     }
 
     const questions = exerciseSet ? (exerciseSet[KEY_MAP[activeType]] || []) : [];
     if (!questions.length) return (
-      <div className="exercise-hub animate-fade-in">
-        <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
-        <p>No exercises available for this topic yet. Please select a topic with content.</p>
+      <div className="exercise-hub">
+        {backToModes}
+        <p className="exercise-status">No questions of this type for this topic yet.</p>
       </div>
     );
     const ExComp = COMPS[activeType];
@@ -112,7 +126,62 @@ export default function ExercisePage() {
     const questionPrompt = currentItem?.stem || currentItem?.front || currentItem?.template || TITLES[activeType];
     const questionKey = `${activeSubject}:${selectedUnitId}:${selectedTopicId}:${activeType}:${currentItem?.id || currentQuestion}`;
 
+    if (sessionDone) {
+      const correctCount = sessionResults.filter((result) => result.correct).length;
+      const answered = sessionResults.length || questions.length;
+      const ratio = answered ? correctCount / answered : 0;
+      const verdict = ratio >= 0.8 ? "Great work." : ratio >= 0.5 ? "Good progress." : "Worth another go.";
+      const otherModes = ET.filter((type) => type.id !== activeType && exerciseSet?.[type.key]?.length);
+      return (
+        <div className="exercise-hub exercise-hub--mode">
+          {backToModes}
+          <section className="card exercise-summary" aria-labelledby="exercise-summary-title">
+            <span className="exercise-summary-icon" aria-hidden="true"><ListChecks size={26} /></span>
+            <h1 className="exercise-summary-title" id="exercise-summary-title">Set complete</h1>
+            <p className="exercise-summary-score">
+              <strong>{correctCount}</strong> of {answered} right
+            </p>
+            <div className="exercise-summary-track" aria-hidden="true">
+              <span className="exercise-summary-fill" style={{ "--score": ratio }} />
+            </div>
+            <p className="exercise-summary-verdict">
+              {verdict} {correctCount < answered ? "Questions you missed are saved in your mistake bank." : "You answered every question correctly."}
+            </p>
+            <div className="exercise-summary-actions">
+              <button type="button" className="btn btn-primary btn-lg" onClick={() => startSession(activeType)}>
+                <RotateCcw size={18} aria-hidden="true" /> Practise again
+              </button>
+              {correctCount < answered && (
+                <Link to="/mistakes" className="btn btn-outline btn-lg">Review mistakes</Link>
+              )}
+            </div>
+          </section>
+          {otherModes.length > 0 && (
+            <>
+              <h2 className="section-heading">Try another way</h2>
+              <div className="list-card">
+                {otherModes.slice(0, 3).map((type) => {
+                  const Icon = type.icon;
+                  return (
+                    <button key={type.id} type="button" className="list-row exercise-type-card interactive" onClick={() => startSession(type.id)}>
+                      <span className="list-row-icon"><Icon size={20} aria-hidden="true" /></span>
+                      <span className="list-row-main">
+                        <span className="list-row-title">{type.title}</span>
+                        <span className="list-row-meta">{type.desc}</span>
+                      </span>
+                      <ChevronRight size={18} className="list-row-end" aria-hidden="true" />
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+      );
+    }
+
     const handleAttempt = (attempt) => {
+      setSessionResults((prev) => [...prev, { correct: Boolean(attempt?.correct) }]);
       void recordExerciseAttempt({
         subject: activeSubject,
         unitId: Number(selectedUnitId),
@@ -135,17 +204,23 @@ export default function ExercisePage() {
     };
 
     return (
-      <div className="exercise-hub exercise-hub--mode animate-fade-in">
-        <button className="btn btn-ghost exercise-back-btn" onClick={resetToHub}>Back to Exercises</button>
-        <h2 className="exercise-mode-title">{TITLES[activeType]}</h2>
-        <div className="exercise-mode-meta">
-          <span className="badge badge-primary">{activeType === "flashcards" ? "Card" : "Question"} {currentQuestion + 1} of {questions.length}</span>
-          {currentItem?.topic && <span className="badge badge-info exercise-mode-topic-badge">{currentItem.topic}</span>}
+      <div className="exercise-hub exercise-hub--mode">
+        {backToModes}
+        <div className="exercise-session-head">
+          <h1 className="exercise-mode-title">{TITLES[activeType]}</h1>
+          <span className="exercise-session-count">{currentQuestion + 1} of {questions.length}</span>
+        </div>
+        <div className="exercise-session-track" aria-hidden="true">
+          <div className="exercise-session-fill" style={{ transform: `scaleX(${(currentQuestion + 1) / questions.length})` }} />
         </div>
         <ErrorBoundary key={questionKey} name={`exercise:${activeType}`} inline resetKeys={[questionKey]}>
           <ExComp
             question={currentItem}
-            onNext={() => { incrementExercisesDone(); setCurrentQuestion(p => p < questions.length - 1 ? p + 1 : 0); }}
+            onNext={() => {
+              incrementExercisesDone();
+              if (currentQuestion < questions.length - 1) setCurrentQuestion(currentQuestion + 1);
+              else setSessionDone(true);
+            }}
             onMistake={(m) => void saveMistake({ ...m, subject: activeSubject, questionKey })}
             onAttempt={handleAttempt}
           />
@@ -154,152 +229,119 @@ export default function ExercisePage() {
     );
   }
 
-  // Count available questions across all types if a topic is selected
-  let totalAvailable = 0;
-  if (exerciseSet) {
-    totalAvailable = ET.reduce((sum, type) => sum + (exerciseSet[type.key] ? exerciseSet[type.key].length : 0), 0);
+  // ── Topic chosen: pick a practice mode ──
+  if (selectedTopic) {
+    const isLoadingTopic = exerciseSetStatus === "loading";
+    // One clear first step: the first mode (in ET order) that has questions for this topic
+    const recommendedModeId = ET.find((type) => exerciseSet?.[type.key]?.length)?.id;
+    return (
+      <div className="exercise-hub">
+        <button
+          className="outline-back"
+          type="button"
+          onClick={() => { setSelectedUnitId(null); setSelectedTopicId(null); startSession(null); }}
+        >
+          <ArrowLeft size={16} aria-hidden="true" /> All topics
+        </button>
+        <PageHeader
+          title={selectedTopic.title}
+          description={`${group.subjects.find((item) => item.id === activeSubject)?.name || ''} · Unit ${selectedUnit.id}: ${selectedUnit.title}`}
+        />
+
+        <h2 className="section-heading">Choose how to practise</h2>
+        <p className="exercise-mode-hint">New to this topic? Start with multiple choice, then try the others.</p>
+        <ErrorBoundary name="ExerciseTypesGrid" inline>
+          <div className="list-card exercise-mode-list">
+            {ET.map((type) => {
+              const Icon = type.icon;
+              const count = exerciseSet ? (exerciseSet[type.key]?.length || 0) : null;
+              const hasContent = Boolean(count);
+              return (
+                <button
+                  key={type.id}
+                  type="button"
+                  className={`list-row exercise-type-card ${hasContent ? 'interactive' : 'empty'}`}
+                  onClick={() => hasContent && !isLoadingTopic && startSession(type.id)}
+                  disabled={!hasContent || isLoadingTopic}
+                  aria-label={`${type.title}. ${isLoadingTopic ? 'Loading' : hasContent ? `${count} questions` : 'No questions yet'}`}
+                >
+                  <span className="list-row-icon"><Icon size={20} aria-hidden="true" /></span>
+                  <span className="list-row-main">
+                    <span className="list-row-title">
+                      {type.title}
+                      {hasContent && type.id === recommendedModeId && <span className="mode-recommended">Start here</span>}
+                    </span>
+                    <span className="list-row-meta">{type.desc}</span>
+                  </span>
+                  <span className="list-row-end">
+                    {isLoadingTopic ? '…' : hasContent ? `${count} questions` : 'None yet'}
+                    {hasContent && <ChevronRight size={18} aria-hidden="true" />}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </ErrorBoundary>
+      </div>
+    );
   }
 
+  // ── Pick a subject and topic ──
   return (
-    <div className="exercise-hub animate-fade-in">
-      {/* Bento Header */}
-      <div className="exercise-page-header">
-        <div className="exercise-title-group">
-          <div className="exercise-subject-icon"><span><Target size={28} /></span></div>
-          <div>
-            <h1 className="exercise-page-title">Exercises</h1>
-            <p className="exercise-page-qual">Build deeper understanding with interactive practice</p>
-          </div>
-        </div>
-          <div className="exercise-meta-boxes">
-            <div className="meta-box">
-            <div className="meta-icon meta-icon--info">
-              <BookOpen size={18} />
-            </div>
-            <div className="meta-text">
-              <strong>{SUBJECTS.filter(s => s.available).length} Subjects</strong>
-              <span>Complete coverage</span>
-            </div>
-          </div>
-          <div className="meta-box">
-            <div className="meta-icon meta-icon--success">
-              <Activity size={18} />
-            </div>
-            <div className="meta-text">
-              <strong>{ET.length} Modes</strong>
-              <span>Varied practice</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="exercise-hub">
+      <PageHeader title="Practice" description="Pick a topic, then choose how you want to practise it." />
 
-      {/* Controls Card */}
       <ErrorBoundary name="ExerciseControls" inline resetKeys={[activeSubject]}>
-      <div className="exercise-controls-card">
-        <h3 className="section-label">1. Choose your subject</h3>
-        <div className="exercise-subject-select-wrapper">
-          <label className="sr-only" htmlFor="exercise-subject-select">Choose subject</label>
-          <select
-            id="exercise-subject-select"
-            className="exercise-subject-select"
-            value={activeSubject}
-            onChange={(event) => activateSubject(event.target.value)}
-          >
-            {SUBJECTS.map((subjectOption) => (
-              <option key={subjectOption.id} value={subjectOption.id} disabled={!subjectOption.available}>
-                {subjectOption.label}{subjectOption.available ? '' : ' (Coming soon)'}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="exercise-subject-tabs">
-          {SUBJECTS.map(s => (
-            <button key={s.id}
-              type="button"
-              className={"exercise-subject-tab" + (activeSubject === s.id ? " exercise-subject-tab--active" : "") + (!s.available ? " exercise-subject-tab--disabled" : "")}
-              onClick={() => { if (!s.available) return; activateSubject(s.id); }}
-              disabled={!s.available}
-            >
-              {s.label}{!s.available && <span className="tab-coming-soon">Coming soon</span>}
-            </button>
-          ))}
-        </div>
-        
-        <h3 className="section-label exercise-section-label">2. Select a topic</h3>
-        <div className="exercise-topic-select-wrapper">
-          <select className="exercise-topic-select"
-            aria-label="Select a topic to practise"
-            disabled={isLoadingSyllabus}
-            value={selectedUnitId && selectedTopicId ? selectedUnitId + ":" + selectedTopicId : ""}
-            onChange={e => {
-              const v = e.target.value;
-              if (!v) { setSelectedUnitId(null); setSelectedTopicId(null); return; }
-              const [u, t] = v.split(":");
-              setSelectedUnitId(Number(u)); setSelectedTopicId(Number(t)); setActiveType(null); setCurrentQuestion(0);
-            }}
-          >
-            <option value="">{isLoadingSyllabus ? "Loading topics..." : "Select a topic to practise"}</option>
-            {syllabus && syllabus.units && syllabus.units.map(unit => (
-              <optgroup key={unit.id} label={unit.code + ": " + unit.title}>
-                {unit.topics && unit.topics.map(topic => (
-                  <option key={topic.id} value={unit.id + ":" + topic.id}>
-                    {unit.code + " Topic " + topic.id + ": " + topic.title}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-        </div>
-      </div>
+        <SubjectPicker
+          groups={SUBJECT_GROUPS}
+          groupId={group.id}
+          subjectId={activeSubject}
+          onGroupChange={(item) => {
+            setGroupId(item.id);
+            if (!item.subjects.some((subject) => subject.id === activeSubject)) activateSubject(item.subjects[0].id);
+          }}
+          onSubjectChange={activateSubject}
+        />
       </ErrorBoundary>
 
-      {/* Types Grid */}
-      <div className="exercise-types-section animate-fade-in exercise-types-section--delayed">
-        <div className="exercise-types-header">
-          <h3 className="section-label">3. Pick a practice mode</h3>
-          {selectedUnitId && selectedTopicId && (
-            exerciseSetStatus === "loading" ? (
-               <span className="badge badge-primary">Loading content...</span>
-            ) : (
-               <span className="badge exercise-availability-badge">
-                 {totalAvailable} total questions available
-               </span>
-            )
-          )}
-        </div>
+      {isLoadingSyllabus && <p className="exercise-status">Loading topics…</p>}
 
-        <ErrorBoundary name="ExerciseTypesGrid" inline>
-        <div className="exercise-types-grid">
-          {ET.map((type, i) => {
-            const Icon = type.icon;
-            const count = exerciseSet ? (exerciseSet[type.key] ? exerciseSet[type.key].length : 0) : null;
-            const isLoadingTopic = exerciseSetStatus === "loading";
-            const hasContent = count !== null && count > 0;
-            return (
-              <button
-                key={type.id}
-                type="button"
-                className={`exercise-type-card ${hasContent ? 'interactive' : 'empty'}`}
-                style={{ animationDelay: i * 0.05 + "s", animationFillMode: 'both' }}
-                onClick={() => hasContent && !isLoadingTopic && setActiveType(type.id)}
-                disabled={!hasContent || isLoadingTopic}
-                aria-label={`${type.title}. ${isLoadingTopic ? 'Loading content' : count !== null ? `${count} items available` : 'No items available'}`}
-              >
-                <div className="exercise-type-header">
-                  <div className={`exercise-type-icon ${type.toneClass}`}><Icon size={22} /></div>
-                  <div className="exercise-type-title-group">
-                    <h3>{type.title}</h3>
-                    <span className={`type-badge ${isLoadingTopic ? 'loading' : hasContent ? 'ready' : 'empty'}`}>
-                      {isLoadingTopic ? "..." : count !== null ? `${count} items` : "None"}
+      <div className="exercise-units">
+        {(syllabus?.units || []).map((unit) => (
+          <section key={unit.id} className="outline-unit" aria-labelledby={`ex-unit-${unit.id}`}>
+            <div className="outline-unit-head">
+              <h2 className="outline-unit-title" id={`ex-unit-${unit.id}`}>
+                <span className="outline-unit-number">Unit {unit.id}</span>
+                {unit.title}
+              </h2>
+            </div>
+            <div className="list-card">
+              {unit.topics.map((topic) => {
+                const available = availableTopicKeys.has(`${unit.id}:${topic.id}`);
+                return (
+                  <button
+                    key={topic.id}
+                    type="button"
+                    className="list-row exercise-topic-row"
+                    disabled={!available}
+                    onClick={() => {
+                      setSelectedUnitId(Number(unit.id) || unit.id);
+                      setSelectedTopicId(Number(topic.id) || topic.id);
+                      startSession(null);
+                    }}
+                  >
+                    <span className="outline-topic-number" aria-hidden="true">{topic.id}</span>
+                    <span className="list-row-main">
+                      <span className="list-row-title">{topic.title}</span>
+                      <span className="list-row-meta">{available ? `${topic.subtopics.length} subtopics` : 'Questions coming soon'}</span>
                     </span>
-                  </div>
-                </div>
-                <p>{type.desc}</p>
-              </button>
-            );
-          })}
-        </div>
-        </ErrorBoundary>
+                    {available && <ChevronRight size={18} className="list-row-end" aria-hidden="true" />}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        ))}
       </div>
     </div>
   );
