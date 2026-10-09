@@ -73,7 +73,7 @@ export const note_olevel_biology_12_12_1 = {
           ['Oxygen required?', 'Yes', 'No'],
           ['Products (animals)', 'CO₂ + H₂O', 'Lactic acid'],
           ['Products (yeast/plants)', 'CO₂ + H₂O', 'Ethanol + CO₂'],
-          ['Energy (ATP) released', 'Large amount (~38 ATP)', 'Small amount (~2 ATP)'],
+          ['Energy (ATP) released', 'Large amount (yield varies)', 'Small amount (~2 ATP)'],
           ['Location in cell', 'Mitochondria', 'Cytoplasm'],
           ['Duration of use', 'Long-term, sustainable', 'Short-term only']
         ]
@@ -129,7 +129,7 @@ export const note_olevel_biology_12_12_1 = {
   <rect x="340" y="115" width="200" height="80" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="440" y="135" text-anchor="middle" font-weight="bold" fill="#14532d">AEROBIC</text>
   <text x="440" y="152" text-anchor="middle" fill="#14532d" font-size="11">CO₂ + H₂O</text>
-  <text x="440" y="168" text-anchor="middle" fill="#14532d" font-size="11">~38 ATP released</text>
+  <text x="440" y="168" text-anchor="middle" fill="#14532d" font-size="11">More ATP released</text>
   <text x="440" y="184" text-anchor="middle" fill="#14532d" font-size="11">In mitochondria</text>
 
   <!-- Oxygen debt arrow -->
@@ -150,7 +150,7 @@ export const note_olevel_biology_12_12_1 = {
     {
       id: 'sum-1',
       type: 'summary',
-      data: { text: 'Anaerobic respiration releases energy from glucose WITHOUT oxygen. In animals: glucose → lactic acid. In yeast: glucose → ethanol + CO₂. Produces only ~2 ATP vs ~38 ATP aerobically. Oxygen debt is the extra oxygen needed after exercise to remove lactic acid. Used in fermentation (bread, beer, wine).' }
+      data: { text: 'Anaerobic respiration releases energy from glucose WITHOUT oxygen. In animals: glucose → lactic acid. In yeast: glucose → ethanol + CO₂. Fermentation yields a net 2 ATP per glucose, much less than aerobic respiration; the aerobic total is not a fixed 38 ATP. Oxygen debt is the extra oxygen needed after exercise to remove lactic acid. Used in fermentation (bread, beer, wine).' }
     }
   ],
   recall: {

@@ -48,7 +48,7 @@ export const note_olevel_physics_3_2_1 = {
       type: 'svg',
       data: {
         caption: 'Ray refracting twice through a glass block — note lateral displacement of the emergent ray',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" width="440" height="320">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 333" width="440" height="320">
   <defs>
     <marker id="ah21" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag21" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>

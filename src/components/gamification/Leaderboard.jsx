@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Trophy, Star, TrendingUp, BookOpen, Target, FileText, Flame, Medal } from 'lucide-react';
+import { Star, BookOpen, Target, FileText, Flame, Medal } from 'lucide-react';
 import { useReadProgressSummary } from '../../hooks/useNoteReadStatus.js';
 import { useActivityRefresh } from '../../hooks/useActivityRefresh.js';
 import { api, callQuery, getClient } from '../../convex-client.js';
@@ -107,152 +107,70 @@ export default function Leaderboard() {
     const xpInLevel = stats.xp - currentLevel.min;
     const xpRange = nextLevel ? nextLevel.min - currentLevel.min : 1;
     const levelProgress = nextLevel ? Math.min(100, Math.round((xpInLevel / xpRange) * 100)) : 100;
-    const topThree = [leaderboard.rows[1], leaderboard.rows[0], leaderboard.rows[2]].filter(Boolean);
     const currentRowOutsideTop = leaderboard.currentRow
         && !leaderboard.rows.some((row) => row.userId === leaderboard.currentRow.userId);
 
+    const renderRow = (row) => (
+        <li
+            key={row.userId}
+            className={`lb-row ${row.userId === leaderboard.currentUserId ? 'lb-row-self' : ''}`}
+        >
+            <div className="lb-rank">
+                {row.rank <= 3
+                    ? <Medal size={18} className={`rank-${['gold', 'silver', 'bronze'][row.rank - 1]}`} aria-label={`Rank ${row.rank}`} />
+                    : <span className="rank-number">#{row.rank}</span>}
+            </div>
+            <div className="lb-avatar" aria-hidden="true">{row.avatar}</div>
+            <div className="lb-name">
+                <strong>{row.name}</strong>
+                <div className="lb-meta">{row.mastery}% mastery · {row.streak} day streak · {row.notesSaved} notes</div>
+            </div>
+            <div className="lb-score"><strong>{row.score}</strong><span> pts</span></div>
+        </li>
+    );
+
     return (
-        <div className="leaderboard">
+        <section className="leaderboard" aria-labelledby="leaderboard-title">
             <div className="leaderboard-header">
-                <Trophy size={20} />
-                <h3>Your Rank</h3>
+                <h2 className="progress-card-title" id="leaderboard-title">Level and rank</h2>
             </div>
 
             <div className="xp-level-card">
-                <div className="xp-level-badge">
-                    <Star size={20} />
-                    <span>Lvl {currentLevel.level}</span>
+                <div className="xp-level-badge" aria-hidden="true">
+                    <Star size={18} />
+                    <span>{currentLevel.level}</span>
                 </div>
                 <div className="xp-level-info">
-                    <div className="xp-level-name">{currentLevel.name}</div>
-                    <div className="xp-bar-wrap">
-                        <div className="xp-bar-fill" style={{ width: `${levelProgress}%` }} />
+                    <div className="xp-level-name">Level {currentLevel.level} · {currentLevel.name}</div>
+                    <div className="xp-bar-wrap" aria-hidden="true">
+                        <div className="xp-bar-fill" style={{ transform: `scaleX(${levelProgress / 100})` }} />
                     </div>
                     <div className="xp-bar-label">
                         {stats.xp} XP
-                        {nextLevel
-                            ? ` / ${nextLevel.min} XP for Level ${nextLevel.level}`
-                            : ' — Max Level!'}
+                        {nextLevel ? ` · ${nextLevel.min - stats.xp} XP to ${nextLevel.name}` : ' · Top level reached'}
                     </div>
                 </div>
             </div>
 
-            <div className="xp-stats-grid">
-                <div className="xp-stat-item">
-                    <div className="xp-stat-icon xp-stat-icon--notes">
-                        <BookOpen size={16} />
-                    </div>
-                    <div className="xp-stat-val">{stats.notesRead}</div>
-                    <div className="xp-stat-label">
-                        Notes
-                        <span className="xp-earn">+{stats.notesRead * 10} XP</span>
-                    </div>
-                </div>
-                <div className="xp-stat-item">
-                    <div className="xp-stat-icon xp-stat-icon--exercises">
-                        <Target size={16} />
-                    </div>
-                    <div className="xp-stat-val">{stats.exercisesDone}</div>
-                    <div className="xp-stat-label">
-                        Exercises
-                        <span className="xp-earn">+{stats.exercisesDone * 5} XP</span>
-                    </div>
-                </div>
-                <div className="xp-stat-item">
-                    <div className="xp-stat-icon xp-stat-icon--papers">
-                        <FileText size={16} />
-                    </div>
-                    <div className="xp-stat-val">{stats.papersViewed}</div>
-                    <div className="xp-stat-label">
-                        Papers
-                        <span className="xp-earn">+{stats.papersViewed * 3} XP</span>
-                    </div>
-                </div>
-                <div className="xp-stat-item">
-                    <div className="xp-stat-icon xp-stat-icon--streak">
-                        <Flame size={16} />
-                    </div>
-                    <div className="xp-stat-val">{stats.streak}</div>
-                    <div className="xp-stat-label">
-                        Streak
-                        <span className="xp-earn">+{stats.streak * 20} XP</span>
-                    </div>
-                </div>
-            </div>
-
-            {nextLevel && (
-                <div className="xp-next-level">
-                    <TrendingUp size={14} />
-                    <span>{nextLevel.min - stats.xp} XP to reach <strong>{nextLevel.name}</strong></span>
-                </div>
-            )}
+            <p className="xp-explainer">
+                <span><BookOpen size={14} aria-hidden="true" /> Note +10</span>
+                <span><Target size={14} aria-hidden="true" /> Exercise +5</span>
+                <span><FileText size={14} aria-hidden="true" /> Paper +3</span>
+                <span><Flame size={14} aria-hidden="true" /> Streak day +20</span>
+            </p>
 
             {leaderboardState === 'ready' && leaderboard.rows.length > 0 ? (
-                <>
-                    <div className="podium">
-                        {topThree.map((row) => (
-                            <div key={row.userId} className={`podium-place place-${row.rank}`}>
-                                <div className="podium-avatar">{row.avatar}</div>
-                                <div className="podium-name">{row.name}</div>
-                                <div className="podium-score">{row.score} pts</div>
-                                <div className="podium-bar">
-                                    <span>#{row.rank}</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="leaderboard-table">
-                        {leaderboard.rows.map((row) => (
-                            <div
-                                key={row.userId}
-                                className={`lb-row ${row.userId === leaderboard.currentUserId ? 'lb-row-self' : ''}`}
-                            >
-                                <div className="lb-rank">
-                                    {row.rank === 1 ? <Medal size={18} className="rank-gold" /> :
-                                        row.rank === 2 ? <Medal size={18} className="rank-silver" /> :
-                                            row.rank === 3 ? <Medal size={18} className="rank-bronze" /> :
-                                                <span className="rank-number">#{row.rank}</span>}
-                                </div>
-                                <div className="lb-avatar">{row.avatar}</div>
-                                <div className="lb-name">
-                                    <div>
-                                        <strong>{row.name}</strong>
-                                        <div className="lb-meta">{row.mastery}% mastery • {row.streak} day streak • {row.notesSaved} notes • {row.attempts || 0} attempts</div>
-                                    </div>
-                                </div>
-                                <div className="lb-score">
-                                    <strong>{row.score}</strong>
-                                </div>
-                            </div>
-                        ))}
-
-                        {currentRowOutsideTop && (
-                            <div className="lb-row lb-row-self">
-                                <div className="lb-rank">
-                                    <span className="rank-number">#{leaderboard.currentRow.rank}</span>
-                                </div>
-                                <div className="lb-avatar">{leaderboard.currentRow.avatar}</div>
-                                <div className="lb-name">
-                                    <div>
-                                        <strong>{leaderboard.currentRow.name}</strong>
-                                        <div className="lb-meta">{leaderboard.currentRow.mastery}% mastery • {leaderboard.currentRow.streak} day streak • {leaderboard.currentRow.notesSaved} notes • {leaderboard.currentRow.attempts || 0} attempts</div>
-                                    </div>
-                                </div>
-                                <div className="lb-score">
-                                    <strong>{leaderboard.currentRow.score}</strong>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </>
+                <ol className="leaderboard-table">
+                    {leaderboard.rows.map(renderRow)}
+                    {currentRowOutsideTop && renderRow(leaderboard.currentRow)}
+                </ol>
             ) : (
-                <div className="leaderboard-coming-soon">
-                    <Trophy size={36} className="lb-coming-icon" />
-                    <p>{leaderboardState === 'loading' ? 'Loading leaderboard...' : 'Leaderboard will appear once shared student data is available.'}</p>
-                    <span>Your personal XP card above is already live.</span>
-                </div>
+                <p className="leaderboard-coming-soon">
+                    {leaderboardState === 'loading'
+                        ? 'Loading rankings…'
+                        : 'Rankings appear here once classmates’ progress is shared.'}
+                </p>
             )}
-        </div>
+        </section>
     );
 }

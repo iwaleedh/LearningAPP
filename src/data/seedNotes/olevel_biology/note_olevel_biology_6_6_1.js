@@ -35,7 +35,7 @@ export const note_olevel_biology_6_6_1 = {
 
   <!-- Cuticle -->
   <rect x="60" y="35" width="340" height="6" rx="0" fill="#d97706" opacity="0.4"/>
-  <text x="420" y="41" font-size="9" fill="#92400e">Waxy cuticle</text>
+  <text x="420" y="26" font-size="9" fill="#92400e">Waxy cuticle</text>
   <line x1="400" y1="39" x2="412" y2="39" stroke="#92400e" stroke-width="1"/>
 
   <!-- Palisade mesophyll -->
@@ -101,7 +101,7 @@ export const note_olevel_biology_6_6_1 = {
 
   <!-- Cuticle lower -->
   <rect x="60" y="247" width="340" height="5" rx="0" fill="#d97706" opacity="0.3"/>
-  <text x="420" y="254" font-size="9" fill="#92400e">Waxy cuticle</text>
+  <text x="420" y="274" font-size="9" fill="#92400e">Waxy cuticle</text>
 
   <!-- Arrows and labels on left -->
   <text x="420" y="45" font-size="9" fill="#ca8a04">Upper epidermis</text>

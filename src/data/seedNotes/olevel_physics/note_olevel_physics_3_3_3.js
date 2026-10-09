@@ -48,7 +48,7 @@ export const note_olevel_physics_3_3_3 = {
       type: 'svg',
       data: {
         caption: 'Ultrasound pulse emitted by probe, reflected at tissue boundary and detected back at probe',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 210" width="480" height="210">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-65 0 545 221" width="480" height="210">
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <defs>
     <marker id="ahU" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">

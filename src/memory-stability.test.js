@@ -9,40 +9,10 @@ const srcRoot = __dirname; // this file lives in src/
 
 // ── M1: Timer leak prevention ─────────────────────────────────────────────────
 
-test('M1a: ShareDialog.jsx tracks setTimeout via copyTimerRef', () => {
-    const src = readFileSync(join(srcRoot, 'components', 'annotation', 'ShareDialog.jsx'), 'utf8');
-    assert.ok(src.includes('copyTimerRef'), 'ShareDialog should have copyTimerRef');
-    assert.ok(src.includes('clearTimeout(copyTimerRef.current)'), 'ShareDialog should clear timeout on unmount');
-});
-
 test('M1b: FlashcardExercise.jsx tracks setTimeout via nextTimerRef', () => {
     const src = readFileSync(join(srcRoot, 'components', 'exercises', 'FlashcardExercise.jsx'), 'utf8');
     assert.ok(src.includes('nextTimerRef'), 'FlashcardExercise should have nextTimerRef');
     assert.ok(src.includes('clearTimeout(nextTimerRef.current)'), 'FlashcardExercise should clear timeout on unmount');
-});
-
-// ── M3: BroadcastChannel cleanup ──────────────────────────────────────────────
-
-test('M3a: LiveClassPage.jsx calls closeSyncChannel in both student and teacher cleanup paths', () => {
-    const src = readFileSync(join(srcRoot, 'pages', 'LiveClassPage.jsx'), 'utf8');
-    const count = (src.match(/closeSyncChannel\(\)/g) || []).length;
-    assert.ok(count >= 2, `closeSyncChannel() should appear ≥ 2 times (found ${count})`);
-});
-
-test('M3b: LiveClassPage.jsx sets unmountedRef.current = true in cleanup', () => {
-    const src = readFileSync(join(srcRoot, 'pages', 'LiveClassPage.jsx'), 'utf8');
-    const count = (src.match(/unmountedRef\.current\s*=\s*true/g) || []).length;
-    assert.ok(count >= 2, `unmountedRef.current = true should appear ≥ 2 times (found ${count})`);
-});
-
-test('M3c: localLiveClassStore.js exports closeSyncChannel function', () => {
-    const src = readFileSync(join(srcRoot, 'services', 'liveclass', 'localLiveClassStore.js'), 'utf8');
-    assert.ok(src.includes('export function closeSyncChannel'), 'localLiveClassStore should export closeSyncChannel');
-});
-
-test('M3d: localLiveClassStore.js registers beforeunload to close sync channel', () => {
-    const src = readFileSync(join(srcRoot, 'services', 'liveclass', 'localLiveClassStore.js'), 'utf8');
-    assert.ok(src.includes('beforeunload'), 'localLiveClassStore should register a beforeunload handler');
 });
 
 // ── M4: Callback arrays ──────────────────────────────────────────────────────
@@ -138,10 +108,10 @@ test('R4f: ChapterPage.jsx uses ErrorBoundary for unit sections', () => {
     assert.ok(src.includes('ChapterUnit'), 'ChapterPage should have named boundary for units');
 });
 
-test('R4g: ProgressPage.jsx uses ErrorBoundary for ring chart and chapter progress', () => {
+test('R4g: ProgressPage.jsx uses ErrorBoundary for the weekly summary and subject progress', () => {
     const src = readFileSync(join(srcRoot, 'pages', 'ProgressPage.jsx'), 'utf8');
-    assert.ok(src.includes('ProgressRing'), 'ProgressPage should have boundary for ring chart');
-    assert.ok(src.includes('ChapterProgress'), 'ProgressPage should have boundary for chapter progress');
+    assert.ok(src.includes('name="ProgressWeek"'), 'ProgressPage should have boundary for the weekly summary');
+    assert.ok(src.includes('name="SubjectProgress"'), 'ProgressPage should have boundary for subject progress');
 });
 
 test('R4h: ExercisePage.jsx uses ErrorBoundary for controls and types grid', () => {

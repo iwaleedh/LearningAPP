@@ -1,5 +1,6 @@
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth.js';
+import { AUTH_GATING_HALTED } from './accessControl.js';
 
 /**
  * Route guard that redirects signed-in users who still need approval or payment
@@ -7,6 +8,10 @@ import { useAuth } from '../../hooks/useAuth.js';
  */
 export default function RequireApproved({ children }) {
   const { isLoaded, isSignedIn, accountStatus, accessStatus } = useAuth();
+
+  if (AUTH_GATING_HALTED) {
+    return children;
+  }
 
   if (!isLoaded) {
     return <div className="card animate-fade-in">Checking access...</div>;

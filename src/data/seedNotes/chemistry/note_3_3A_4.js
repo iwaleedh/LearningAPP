@@ -12,6 +12,21 @@ export const note_chemistry_3_3A_4 = {
             data: { text: 'Evaluate experimental methods and suggest improvements; understand sources of error (systematic and random); calculate percentage error and percentage uncertainty; assess accuracy, precision, reliability and validity.' },
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Quantify uncertainty and distinguish it from bias",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Absolute uncertainty has the same unit as a measurement; percentage uncertainty is absolute uncertainty divided by measured value, multiplied by 100. Use the uncertainty specified for the apparatus or question. A titre is a difference between two burette readings, so a worst-case estimate adds the two reading uncertainties. A mass measured by difference has the same two-reading issue.<br/><br/>For multiplication or division, percentage uncertainties can be added as an approximate worst-case estimate at this level. A systematic error biases results in one direction and is not removed by repeating. Random variation may be reduced by averaging suitable repeated results. Accuracy describes closeness to a reference value; precision describes repeatability or resolution."
+  }
+},
+{
             id: 'h-errors',
             type: 'heading',
             data: { text: 'Types of Error', level: 2 },
@@ -228,31 +243,89 @@ export const note_chemistry_3_3A_4 = {
           },
           terms: []
         },
-        {
-            id: 'summary',
-            type: 'summary',
-            data: {
-                text: 'Errors are either random (reduced by repeating) or systematic (not reduced by repeating). Accuracy = closeness to true value; precision = closeness of repeats. % error = |experimental − accepted| / accepted × 100. % uncertainty = absolute uncertainty / measured value × 100. Evaluate methods by identifying the largest uncertainty source, stating its direction of effect, and suggesting specific improvements.'
-            },
-        },
-    ],
+
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "A burette has uncertainty ±0.05 cm³ per reading. A 25.00 cm³ titre has estimated uncertainty ±0.10 cm³, giving 0.10/25.00 × 100 = <strong>0.40%</strong>. If a measured mass is 1.20 g with ±0.01 g uncertainty, its percentage uncertainty is 0.83%. A calculated ratio involving these measurements has an approximate combined worst-case percentage uncertainty of 1.23%."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not automatically use half a scale division when an apparatus tolerance is stated. More repeats do not correct an uncalibrated instrument or consistently lost gas."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How is percentage uncertainty calculated?",
+        "checked": false
+      },
+      {
+        "text": "Why can a titre involve two reading uncertainties?",
+        "checked": false
+      },
+      {
+        "text": "What is the difference between accuracy and precision?",
+        "checked": false
+      },
+      {
+        "text": "Will repeats remove systematic heat loss?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Absolute uncertainty has the same unit as a measurement; percentage uncertainty is absolute uncertainty divided by measured value, multiplied by 100. Use the uncertainty specified for the apparatus or question. A titre is a difference between two burette readings, so a worst-case estimate adds the two reading uncertainties. A mass measured by difference has the same two-reading issue."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'cue-1', blockId: 'callout-key-terms', prompt: 'Define accuracy vs precision, and reliability vs validity.' },
-            { id: 'cue-error-types', blockId: 'table-random-systematic', prompt: 'State the difference between random and systematic errors in terms of predictability, effect on results, and how to reduce them.' },
-            { id: 'cue-2', blockId: 'eq-pct-error', prompt: 'State the formula for percentage error. Does a negative answer matter?' },
-            { id: 'cue-3', blockId: 'eq-pct-uncert', prompt: 'State the formula for percentage uncertainty.' },
-            { id: 'cue-4', blockId: 'callout-we1', prompt: 'Why must you multiply the absolute uncertainty of a burette reading by 2 when calculating the percentage uncertainty of a titre?' },
-            { id: 'cue-measure-size', blockId: 'callout-we2', prompt: 'What effect does using a LARGER measurement (e.g. 25cm³ titre instead of 10cm³) have on the percentage uncertainty?' },
-            { id: 'cue-combine', blockId: 'callout-we3', prompt: 'How do you calculate the TOTAL percentage uncertainty for an experiment involving multiple measurements (e.g., mass and titre)?' },
-            { id: 'cue-eval-strategies', blockId: 'table-improve-general', prompt: 'State four general strategies to improve experimental accuracy/precision.' },
-            { id: 'cue-errors-titre', blockId: 'table-errors-titration', prompt: 'In a titration, what is the effect on the titre volume if your burette jet contains an air bubble that releases during the titration?' },
-            { id: 'cue-errors-mass', blockId: 'table-errors-mass', prompt: 'In a mass measurement, what is the effect of weighing a completely hot/warm object?' }
-        ],
-        summaryText: 'Random vs Systematic: Random = unpredictable, affects precision, fix by repeating. Systematic = predictable offset, affects accuracy, fix by calibrating. % Error = |Exp - True| / True × 100. % Uncertainty = (Uncertainty / Measurement) × 100. *Burettes require ×2 uncertainty* because you read them twice. Larger measurements = lower % uncertainty. Total % Uncertainty = Sum of all % uncertainties. Common Errors: Air bubble (titre too high), Hot object on balance (convection lifts pan, reading too low).',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How is percentage uncertainty calculated?",
+      "answer": "Absolute uncertainty divided by measured value, multiplied by 100."
     },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why can a titre involve two reading uncertainties?",
+      "answer": "It is obtained from final minus initial burette reading."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What is the difference between accuracy and precision?",
+      "answer": "Accuracy is closeness to a reference or true value; precision concerns repeatability or measurement resolution."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Will repeats remove systematic heat loss?",
+      "answer": "No. Repetition alone does not remove a bias affecting each trial in the same direction."
+    }
+  ],
+  "summaryText": "Absolute uncertainty has the same unit as a measurement; percentage uncertainty is absolute uncertainty divided by measured value, multiplied by 100. Use the uncertainty specified for the apparatus or question. A titre is a difference between two burette readings, so a worst-case estimate adds the two reading uncertainties. A mass measured by difference has the same two-reading issue.",
+  "ready": true
+},
     evidence: [
         {
             id: 'ev-1',
@@ -262,5 +335,5 @@ export const note_chemistry_3_3A_4 = {
             source: 'Pearson Edexcel',
             tags: ['practical skills', 'evaluation', 'uncertainty']
         }
-    ]
+    , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

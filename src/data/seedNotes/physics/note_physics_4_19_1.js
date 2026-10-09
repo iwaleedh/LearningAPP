@@ -24,7 +24,7 @@ export const note_physics_4_19_1 = {
       id: 'svg-energy-formulae',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 350 150" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="150" fill="#0f172a" rx="10"/><text x="175" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1E3A8A">Energy Stored (W)</text><text x="175" y="75" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 Q V</text><text x="175" y="105" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 C V&sup2;</text><text x="175" y="135" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 Q&sup2; / C</text></svg>',
+        svg: `<svg viewBox="0 0 350 150" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="150" fill="#0f172a" rx="10"/><text x="175" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1E3A8A">Energy Stored (W)</text><text x="175" y="75" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 Q V</text><text x="175" y="105" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 C V&#178;</text><text x="175" y="135" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 Q&#178; / C</text></svg>`,
         caption: 'Energy Formulas'
       }
     },

@@ -25,7 +25,7 @@ export const note_physics_4_21_1 = {
       id: 'svg-faradays-law',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg"><rect width="360" height="140" fill="#3d1212" rx="10"/><text x="180" y="60" font-family="Times New Roman" font-size="32" font-style="italic" font-weight="bold" text-anchor="middle" fill="#991B1B">&epsilon; = &#8722; N (&Delta;&Phi; / &Delta;t)</text><text x="180" y="95" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Induced EMF &propto; Rate of change of flux linkage</text><text x="180" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#B91C1C">Negative sign denotes Lenz\'s Law</text></svg>',
+        svg: `<svg viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg"><rect width="360" height="140" fill="#3d1212" rx="10"/><text x="180" y="60" font-family="Times New Roman" font-size="32" font-style="italic" font-weight="bold" text-anchor="middle" fill="#991B1B">&#949; = &#8722; N (&#916;&#934; / &#916;t)</text><text x="180" y="95" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Induced EMF &#8733; Rate of change of flux linkage</text><text x="180" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#B91C1C">Negative sign denotes Lenz's Law</text></svg>`,
         caption: 'Faraday\'s Law Formula'
       },
       terms: []

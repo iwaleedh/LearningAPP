@@ -4,7 +4,7 @@
 
 /* ---- Badge System ---- */
 .badge-system {
-    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint-soft) 100%);
+    background: var(--color-surface);
     border-radius: var(--radius-2xl);
     padding: var(--space-6);
     border: 1px solid var(--color-border);
@@ -29,7 +29,7 @@
 
 .badge-progress {
     font-size: var(--font-size-sm);
-    color: var(--color-text-tertiary);
+    color: var(--color-text-secondary);
     background: var(--color-bg-tertiary);
     padding: 2px 10px;
     border-radius: var(--radius-full);
@@ -37,7 +37,7 @@
 }
 
 .badge-toast {
-    background: linear-gradient(135deg, var(--color-success), var(--color-success-dark, #16a34a));
+    background: var(--color-success);
     color: white;
     padding: var(--space-3) var(--space-4);
     border-radius: var(--radius-lg);
@@ -65,9 +65,8 @@
 }
 
 .badge-card.earned {
-    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint) 100%);
-    border-left: 3px solid var(--color-primary);
-    box-shadow: 0 4px 12px -2px rgba(0,0,0,0.03);
+    background: var(--color-surface);
+    border-color: var(--color-primary-300);
 }
 
 .badge-card.earned:hover {
@@ -100,13 +99,13 @@
 
 .badge-desc {
     font-size: var(--font-size-xs);
-    color: var(--color-text-tertiary);
+    color: var(--color-text-secondary);
     line-height: var(--line-height-snug);
 }
 
 /* ---- Streak Tracker ---- */
 .streak-tracker {
-    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint-soft) 100%);
+    background: var(--color-surface);
     border-radius: var(--radius-2xl);
     padding: var(--space-6);
     border: 1px solid var(--color-border);
@@ -259,16 +258,16 @@
 }
 
 .heatmap-cell.intensity-1 {
-    background: rgba(99, 102, 241, 0.4);
+    background: rgba(139, 30, 63, 0.4);
 }
 
 .heatmap-cell.intensity-2 {
-    background: rgba(99, 102, 241, 0.8);
+    background: rgba(139, 30, 63, 0.8);
 }
 
 .heatmap-cell.intensity-3 {
-    background: rgba(99, 102, 241, 1);
-    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.18);
+    background: rgba(139, 30, 63, 1);
+    box-shadow: 0 0 0 1px rgba(139, 30, 63, 0.18);
 }
 
 .heatmap-legend {
@@ -288,7 +287,7 @@
 
 /* ---- Leaderboard ---- */
 .leaderboard {
-    background: linear-gradient(135deg, var(--color-surface) 0%, var(--surface-tint-soft) 100%);
+    background: var(--color-surface);
     border-radius: var(--radius-2xl);
     padding: var(--space-6);
     border: 1px solid var(--color-border);
@@ -329,7 +328,7 @@
 }
 
 .lb-tab.active {
-    background: var(--color-primary);
+    background: var(--color-brand);
     color: white;
     border-color: var(--color-primary);
 }
@@ -377,17 +376,17 @@
 
 .place-1 .podium-bar {
     height: 80px;
-    background: linear-gradient(180deg, #fbbf24, #f59e0b);
+    background: #f2b544;
 }
 
 .place-2 .podium-bar {
     height: 60px;
-    background: linear-gradient(180deg, #cbd5e1, #94a3b8);
+    background: #b8aeb3;
 }
 
 .place-3 .podium-bar {
     height: 40px;
-    background: linear-gradient(180deg, #fdba74, #f97316);
+    background: #d98b5f;
 }
 
 .podium-bar svg,
@@ -444,8 +443,8 @@
 }
 
 .lb-row-self {
-    background: rgba(99, 102, 241, 0.08);
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: rgba(139, 30, 63, 0.08);
+    border: 1px solid rgba(139, 30, 63, 0.2);
 }
 
 .lb-rank {
@@ -493,7 +492,7 @@
 
 .lb-you {
     font-size: var(--font-size-xs);
-    background: var(--color-primary);
+    background: var(--color-brand);
     color: white;
     padding: 1px 8px;
     border-radius: var(--radius-full);
@@ -563,7 +562,7 @@
     display: flex;
     align-items: center;
     gap: var(--space-4);
-    background: linear-gradient(135deg, var(--color-primary), #4f46e5);
+    background: var(--color-brand);
     border-radius: var(--radius-xl);
     padding: var(--space-4) var(--space-5);
     margin-bottom: var(--space-5);
@@ -718,4 +717,349 @@
 
 .animate-slide-up {
     animation: slideUp 0.4s ease-out;
+}
+
+/* Month labels live inside each week column so they always sit over the right week */
+.heatmap-month,
+.heatmap-month-spacer {
+    display: block;
+    height: 14px;
+    margin-bottom: 2px;
+    font-size: 0.6875rem;
+    line-height: 14px;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.heatmap-col {
+    width: 13px;
+}
+
+.heatmap-cell.is-future {
+    visibility: hidden;
+}
+
+.flame-icon {
+    color: var(--color-accent);
+}
+
+/* Earned badges use the system's tinted icon tile; locked ones stay quiet */
+.badge-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--color-bg-secondary);
+}
+
+.badge-icon.is-earned {
+    background: var(--color-primary-100);
+    color: var(--color-primary);
+}
+
+.achievement-info {
+    min-width: 0;
+}
+
+.badge-card.locked {
+    filter: none;
+    opacity: 0.7;
+}
+
+/* =====================================================================
+   Progress page cards: one heading style, no decorative headers
+   ===================================================================== */
+.streak-tracker,
+.badge-system,
+.leaderboard {
+    border: 1px solid var(--color-border-light);
+    border-radius: 16px;
+    box-shadow: none;
+}
+
+.streak-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-2);
+    margin-bottom: var(--space-5);
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.streak-flame {
+    align-items: baseline;
+    gap: var(--space-2);
+}
+
+.streak-flame .flame-icon {
+    align-self: center;
+    animation: none;
+}
+
+.streak-count {
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+}
+
+.streak-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.streak-substats {
+    margin: 0;
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+}
+
+.badge-header,
+.leaderboard-header {
+    justify-content: space-between;
+    margin-bottom: var(--space-4);
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.badge-progress {
+    background: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+.badge-earned-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-5);
+    margin: 0 0 var(--space-5);
+    padding: 0;
+    list-style: none;
+}
+
+.badge-earned {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+.badge-earned .badge-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+}
+
+.badge-next-title {
+    margin: 0 0 var(--space-2);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-tertiary);
+}
+
+.badge-next-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.badge-next-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.badge-next-item:last-child {
+    border-bottom: none;
+}
+
+.badge-next-item .badge-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+}
+
+.badge-next-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+.badge-next-track {
+    display: block;
+    height: 4px;
+    margin-top: var(--space-1);
+    border-radius: var(--radius-full);
+    background: var(--color-track);
+    overflow: hidden;
+}
+
+.badge-next-track span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--color-primary);
+    transform-origin: left center;
+}
+
+.badge-next-count {
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    font-variant-numeric: tabular-nums;
+}
+
+.badge-toggle {
+    margin-top: var(--space-3);
+    padding-left: 0;
+    color: var(--color-primary);
+}
+
+.badge-toggle svg {
+    transition: transform var(--transition-fast);
+}
+
+.badge-toggle svg.is-flipped {
+    transform: rotate(180deg);
+}
+
+.badge-system .badge-grid {
+    margin-top: var(--space-3);
+}
+
+.badge-toast {
+    background: var(--color-success-light);
+    color: var(--color-success-dark);
+    border: 1px solid color-mix(in srgb, var(--color-success) 40%, transparent);
+    box-shadow: none;
+}
+
+/* Level card: quieter, fills via transform */
+.xp-level-card {
+    margin-bottom: var(--space-3);
+}
+
+.xp-level-badge {
+    flex-direction: row;
+    min-width: 0;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-lg);
+}
+
+.xp-level-name {
+    font-size: var(--font-size-base);
+}
+
+.xp-bar-fill {
+    width: 100%;
+    transform-origin: left center;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.xp-explainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+    margin: 0 0 var(--space-4);
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+.xp-explainer span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.xp-explainer svg {
+    color: var(--color-text-tertiary);
+}
+
+.leaderboard-table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lb-row-self {
+    background: var(--color-primary-50);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 35%, transparent);
+}
+
+.lb-name {
+    flex: 1;
+    min-width: 0;
+}
+
+.lb-score span {
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary);
+}
+
+.leaderboard-coming-soon {
+    display: block;
+    margin: 0;
+    padding: var(--space-4);
+    border-radius: 12px;
+    background: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    text-align: left;
+}
+
+@media (max-width: 599px) {
+    .streak-tracker,
+    .badge-system,
+    .leaderboard {
+        padding: var(--space-5) var(--space-4);
+    }
+}
+
+/* Heatmap: larger cells that fill the streak card; the 44px hit areas may spill, so don't clip */
+.streak-tracker {
+    --cell: 16px;
+    --cell-gap: 4px;
+}
+
+.streak-tracker .heatmap-container {
+    overflow: visible;
+}
+
+.streak-tracker .heatmap-body {
+    gap: 8px;
+}
+
+.streak-tracker .heatmap-days,
+.streak-tracker .heatmap-grid,
+.streak-tracker .heatmap-col {
+    gap: var(--cell-gap);
+}
+
+.streak-tracker .heatmap-days span:not(.heatmap-month-spacer) {
+    height: var(--cell);
+}
+
+.streak-tracker .heatmap-col {
+    width: var(--cell);
+}
+
+.streak-tracker .heatmap-grid .heatmap-cell {
+    width: var(--cell);
+    height: var(--cell);
+    border-radius: 4px;
+}
+
+.streak-tracker .heatmap-legend {
+    margin-top: var(--space-3);
 }

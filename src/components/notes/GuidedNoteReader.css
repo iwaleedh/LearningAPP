@@ -1,0 +1,74 @@
+/* A quiet reading surface. Brand and theme tokens come from the app. */
+.note-reading-mode { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: var(--space-4) var(--space-5); border-bottom: 1px solid var(--color-border); }
+.note-reading-mode button { min-height: 44px; }
+.guided-reader { width: 100%; max-width: 64ch; min-width: 0; margin: 0 auto; padding: var(--space-6) var(--space-6) var(--space-8); color: var(--color-text); font-size: 1.125rem; line-height: 1.8; overflow-wrap: break-word; }
+.note-page .guided-reader h2 { font-family: 'Patrick Hand', cursive; font-size: 1.75rem; line-height: 1.3; margin: 0 0 var(--space-3); }
+.guided-reader h3 { font-size: 1.125rem; line-height: 1.4; margin: 0 0 var(--space-3); }
+.guided-reader p { margin: 0 0 var(--space-4); }
+.lesson-intro { padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-border); }
+.lesson-help, .lesson-pause { color: var(--color-text-secondary); font-size: 1rem; }
+.lesson-progress { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2); margin: var(--space-5) 0 var(--space-6); font-size: .875rem; font-variant-numeric: tabular-nums; }
+.lesson-progress progress { display: block; appearance: auto; accent-color: var(--color-primary); width: 100%; height: .5rem; border: 0; }
+.lesson-progress progress::-webkit-progress-bar { background: var(--color-border); border-radius: var(--radius-full); }
+.lesson-progress progress::-webkit-progress-value { background: var(--color-primary); border-radius: var(--radius-full); }
+.lesson-progress progress::-moz-progress-bar { background: var(--color-primary); border-radius: var(--radius-full); }
+.lesson-step { min-width: 0; }
+.lesson-words { margin-top: var(--space-5); font-size: 1rem; }
+.lesson-words summary { min-height: 44px; padding: var(--space-2) 0; cursor: pointer; color: var(--color-primary); }
+.lesson-words summary:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
+.lesson-words dl { margin: var(--space-3) 0 0; }
+.lesson-words dl > div + div { margin-top: var(--space-4); }
+.lesson-words dt { font-weight: 700; }
+.lesson-words dd { margin: var(--space-1) 0 0; }
+.lesson-step > h2:focus { outline: none; }
+.lesson-step > h2:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 4px; }
+.note-page .guided-reader .nb-root { padding: 0; margin: 0; max-width: 100%; font-size: inherit; line-height: inherit; gap: var(--space-5); }
+.note-page .guided-reader .nb-paragraph, .note-page .guided-reader .nb-list, .note-page .guided-reader .nb-callout-body, .note-page .guided-reader .nb-summary p { font-size: inherit; line-height: inherit; }
+.note-page .guided-reader .nb-callout, .note-page .guided-reader .nb-summary, .note-page .guided-reader .nb-equation, .note-page .guided-reader .nb-deeper { background: var(--color-bg-secondary); border: 1px solid var(--color-border); box-shadow: none; color: var(--color-text); padding: var(--space-4); }
+.note-page .guided-reader .nb-callout-worked .nb-callout-body { font-family: inherit; white-space: pre-line; font-size: inherit; }
+.note-page .guided-reader .nb-callout-title { font-size: 1rem; color: var(--color-text); }
+.note-page .guided-reader .nb-list li + li { margin-top: var(--space-3); }
+.note-page .guided-reader .nb-svg-figure { padding: var(--space-2); }
+.lesson-check { margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
+.lesson-options { display: flex; flex-direction: column; gap: var(--space-3); }
+.lesson-option { width: 100%; min-height: 48px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); border-radius: 8px; padding: var(--space-3) var(--space-4); text-align: left; font: inherit; line-height: 1.5; cursor: pointer; }
+.lesson-option:hover { background: var(--color-bg-secondary); }
+.lesson-option.is-selected { border-color: var(--color-primary); background: var(--color-primary-50); }
+.guided-reader button:focus-visible, .note-reading-mode button:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
+.lesson-feedback { padding: var(--space-4); background: var(--color-bg-secondary); border-radius: 8px; }
+.lesson-feedback p:last-child { margin-bottom: 0; }
+.lesson-actions { display: flex; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
+.lesson-actions .btn { min-height: 48px; white-space: normal; }
+.lesson-pause { margin-top: var(--space-4) !important; }
+.lesson-finished { padding: var(--space-5) 0; }
+.lesson-finished > svg { color: var(--color-primary); margin-bottom: var(--space-4); }
+.note-page--guided .note-footer-nav { margin-top: 0; }
+@media (max-width: 599px) {
+    .guided-reader { padding: var(--space-5) var(--space-4) var(--space-8); font-size: 1.0625rem; }
+    .note-page .guided-reader h2 { font-size: 1.5rem; }
+    .note-reading-mode { padding: var(--space-3) var(--space-4); }
+    .note-reading-mode .btn { flex: 1; white-space: normal; }
+    .lesson-actions .btn { flex: 1; padding: var(--space-3); }
+}
+.lesson-finished:focus { outline: none; }
+.lesson-finished h2 { margin: 0 0 var(--space-2); }
+.lesson-finished p { margin: 0 0 var(--space-5); color: var(--color-text-secondary); }
+.lesson-finished-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+@media (max-width: 599px) {
+    .lesson-finished-actions .btn { width: 100%; }
+}
+
+/* Reading-format toggle: one segmented control at every size */
+.note-reading-mode { border-bottom: 1px solid var(--color-border-light); }
+.note-mode-toggle--inline { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+.note-mode-toggle--inline .segmented-option { min-height: 40px; }
+
+/* Quick-check feedback carries the result, not just the selection */
+.lesson-option { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.lesson-option.is-correct { border-color: var(--color-success); background: var(--color-success-light); }
+.lesson-option.is-correct svg { color: var(--color-success); }
+.lesson-option.is-wrong { border-color: color-mix(in srgb, var(--color-warning) 60%, transparent); background: var(--color-warning-light); }
+.lesson-option.is-wrong svg { color: var(--color-warning); }
+.lesson-feedback.is-correct { background: var(--color-success-light); }
+.lesson-feedback.is-correct strong { color: var(--color-success); }
+.lesson-feedback.is-wrong { background: var(--color-warning-light); }

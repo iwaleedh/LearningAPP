@@ -20,7 +20,7 @@ export const chemistryDefinitions = {
     'Empirical formula': 'The simplest whole-number ratio of atoms of each element in a compound. Example: C₂H₄ has empirical formula CH₂.',
     'Molecular formula': 'The actual number of atoms of each element in one molecule of a compound. Example: C₂H₄ (ethene) has Mᵣ = 28.',
     'Formula unit': 'The simplest repeating unit used to describe the composition of an ionic compound. Example: the formula unit of sodium chloride is NaCl, not a discrete molecule.',
-    'Mole': 'The amount of substance containing exactly 6.022 × 10²³ specified elementary entities (atoms, molecules, ions, etc.). Symbol: mol. The Avogadro constant Nₐ = 6.022 × 10²³ mol⁻¹.',
+    'Mole': 'The amount of substance containing exactly 6.02214076 × 10²³ specified elementary entities (atoms, molecules, ions, etc.). Symbol: mol. The Avogadro constant Nₐ = 6.02214076 × 10²³ mol⁻¹ exactly; use the rounded value supplied in the exam.',
     'Electronegativity': 'The ability of an atom to attract the bonding pair of electrons towards itself in a covalent bond. Increases across a period and up a group.',
     'Enthalpy': 'The heat content of a system at constant pressure. Changes in enthalpy (ΔH) tell us whether a reaction is exothermic (ΔH < 0) or endothermic (ΔH > 0).',
     'Catalyst': 'A substance that increases the rate of a chemical reaction without being consumed in the overall process. Works by providing an alternative reaction pathway with lower activation energy.',

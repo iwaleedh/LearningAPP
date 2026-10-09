@@ -39,8 +39,8 @@ export const note_olevel_physics_1_3_3 = {
       id: 'svg-float',
       type: 'svg',
       data: {
-        svg: `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="250" fill="#1c3a64" rx="10"/>
+        svg: `<svg viewBox="0 0 440 263" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="440" height="263" fill="#1c3a64" rx="10"/>
   <text x="220" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Floating vs Sinking: Force Comparison</text>
   <!-- Water background -->
   <rect x="30" y="110" width="180" height="110" fill="#0c4a6e" rx="0"/>
@@ -69,9 +69,9 @@ export const note_olevel_physics_1_3_3 = {
   <line x1="320" y1="205" x2="320" y2="230" stroke="#ef4444" stroke-width="2.5"/>
   <polygon points="320,230 316,220 324,220" fill="#ef4444"/>
   <text x="335" y="228" font-size="10" fill="#ef4444">Weight (bigger)</text>
-  <text x="320" y="235" text-anchor="middle" font-size="11" fill="#991b1b" font-weight="bold">SINKS (ρ &gt; ρ_water)</text>
+  <text x="320" y="252" text-anchor="middle" font-size="11" fill="#991b1b" font-weight="bold">SINKS (ρ &gt; ρ_water)</text>
   <!-- Title labels -->
-  <text x="120" y="68" text-anchor="middle" font-size="10" fill="#374151"></text>
+  <text x="120" y="68" text-anchor="middle" font-size="10" fill="#374151"/>
 </svg>`,
         caption: 'Left: upthrust = weight → floats. Right: weight > upthrust → sinks.',
       },

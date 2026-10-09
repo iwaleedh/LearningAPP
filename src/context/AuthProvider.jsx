@@ -15,6 +15,7 @@ import { ConvexProviderWithClerk } from 'convex/react-clerk';
 import AuthContext from './AuthContext';
 import { api } from '../../convex/_generated/api.js';
 import AccessWindowModal from '../components/auth/AccessWindowModal.jsx';
+import { AUTH_GATING_HALTED } from '../components/auth/accessControl.js';
 import {
   finalizeAuthenticatedAccess,
   getClient,
@@ -386,15 +387,17 @@ function AuthContextProvider({ children }) {
 
   const value = useMemo(() => {
     const profile = isSignedIn && clerkUser ? resolveClerkProfile(clerkUser) : null;
-    const resolvedRole = isAdminUser ? 'admin' : role;
+    const resolvedRole = AUTH_GATING_HALTED ? 'admin' : (isAdminUser ? 'admin' : role);
     const userId = isSignedIn && clerkUser ? clerkUser.id : getCurrentUserId();
     const username = dbUser?.username || profile?.username || getCurrentUsername() || 'Anonymous';
     const avatarUrl = isSignedIn && clerkUser ? clerkUser.imageUrl : null;
-    const isAccessReady = !isLoaded
-      ? false
-      : !isSignedIn
-        ? syncedAccessKey === 'signed-out'
-        : syncedAccessKey === expectedAccessKey;
+    const isAccessReady = AUTH_GATING_HALTED
+      ? true
+      : !isLoaded
+        ? false
+        : !isSignedIn
+          ? syncedAccessKey === 'signed-out'
+          : syncedAccessKey === expectedAccessKey;
 
     return {
       clerkUser: clerkUser ?? null,
@@ -404,12 +407,12 @@ function AuthContextProvider({ children }) {
       // D7: True while the auth sync is retrying after a post-signup race.
       // UI components can use this to show a "Completing sign-in…" spinner.
       isRegistrationPending,
-      isLoaded,
-      isSignedIn: !!isSignedIn,
+      isLoaded: AUTH_GATING_HALTED ? true : isLoaded,
+      isSignedIn: AUTH_GATING_HALTED ? true : !!isSignedIn,
       role: resolvedRole,
-      accountStatus,
-      accessStatus,
-      accessGrantKind,
+      accountStatus: AUTH_GATING_HALTED ? 'approved' : accountStatus,
+      accessStatus: AUTH_GATING_HALTED ? 'active' : accessStatus,
+      accessGrantKind: AUTH_GATING_HALTED ? 'unlimited' : accessGrantKind,
       accessExpiresAt,
       accessDurationMonths,
       accessWindowStartedAt,
@@ -418,7 +421,7 @@ function AuthContextProvider({ children }) {
       hasUsedTrial,
       firstSignInAt,
       lastSignInAt,
-      isAdmin: isAdminUser,
+      isAdmin: AUTH_GATING_HALTED ? true : isAdminUser,
       userId,
       username,
       avatarUrl,
@@ -516,11 +519,11 @@ function AnonymousAuthContextProvider({ children }) {
     debugAuthEnabled: DEV_AUTH_ENABLED,
     isAccessReady: true,
     isLoaded: true,
-    isSignedIn: Boolean(devSession),
-    role: devSession?.role || 'student',
-    accountStatus: devSession ? 'approved' : null,
-    accessStatus: devSession ? 'active' : null,
-    accessGrantKind: devSession ? 'unlimited' : null,
+    isSignedIn: AUTH_GATING_HALTED ? true : Boolean(devSession),
+    role: AUTH_GATING_HALTED ? 'admin' : (devSession?.role || 'student'),
+    accountStatus: AUTH_GATING_HALTED ? 'approved' : (devSession ? 'approved' : null),
+    accessStatus: AUTH_GATING_HALTED ? 'active' : (devSession ? 'active' : null),
+    accessGrantKind: AUTH_GATING_HALTED ? 'unlimited' : (devSession ? 'unlimited' : null),
     accessExpiresAt: null,
     accessDurationMonths: null,
     accessWindowStartedAt: null,
@@ -529,7 +532,7 @@ function AnonymousAuthContextProvider({ children }) {
     hasUsedTrial: false,
     firstSignInAt: null,
     lastSignInAt: null,
-    isAdmin: devSession?.role === 'admin',
+    isAdmin: AUTH_GATING_HALTED ? true : (devSession?.role === 'admin'),
     userId: devSession?.userId || getCurrentUserId(),
     username: devSession?.username || getCurrentUsername() || 'Anonymous',
     avatarUrl: null,

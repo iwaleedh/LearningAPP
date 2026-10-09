@@ -1,12 +1,14 @@
 import { useEffect, useState, lazy, Suspense, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool, TrendingUp, BookOpen } from 'lucide-react';
+import { FileQuestion, Clock, Download, ChevronDown, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool, TrendingUp, BookOpen, Ellipsis, BarChart3 } from 'lucide-react';
 import { loadPastPaperSubject, subjectPaperCounts } from '../data/pastPapers/index.js';
 import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
 import { incrementPapersViewed } from '../services/activityStore.js';
 import { recordPastPaperActivity } from '../services/studyAttemptService.js';
 import { api, callQuery, getClient } from '../convex-client.js';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
+import PageHeader from '../components/common/PageHeader.jsx';
+import SubjectPicker from '../components/common/SubjectPicker.jsx';
 import './Pages.css';
 
 const PerformanceChart = lazy(() => import('../components/pastpapers/PerformanceChart'));
@@ -15,67 +17,67 @@ const EMPTY_LIST = [];
 // Subject configuration
 const subjects = [
     {
-        id: 'chemistry', name: 'AL Chemistry', icon: Beaker, color: '#10b981',
+        id: 'chemistry', name: 'AL Chemistry', icon: Beaker, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'physics', name: 'AL Physics', icon: Atom, color: '#8b5cf6',
+        id: 'physics', name: 'AL Physics', icon: Atom, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'biology', name: 'AL Biology', icon: Dna, color: '#3b82f6',
+        id: 'biology', name: 'AL Biology', icon: Dna, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'mathematics', name: 'AL Mathematics', icon: Calculator, color: '#f59e0b',
+        id: 'mathematics', name: 'AL Mathematics', icon: Calculator, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'business', name: 'AL Business', icon: FileText, color: '#ec4899',
+        id: 'business', name: 'AL Business', icon: FileText, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'economics', name: 'AL Economics', icon: FileText, color: '#14b8a6',
+        id: 'economics', name: 'AL Economics', icon: FileText, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'accounting', name: 'AL Accounting', icon: FileQuestion, color: '#f97316',
+        id: 'accounting', name: 'AL Accounting', icon: FileQuestion, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'cae', name: 'CAE (C1)', icon: FileText, color: '#3b82f6',
+        id: 'cae', name: 'C1 Advanced', icon: FileText, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'cpe', name: 'CPE (C2)', icon: FileText, color: '#0ea5e9',
+        id: 'cpe', name: 'C2 Proficiency', icon: FileText, color: 'var(--color-primary)',
         isOLevel: false,
     },
     {
-        id: 'olevel-chemistry', name: 'O Level Chemistry', icon: Beaker, color: '#059669',
+        id: 'olevel-chemistry', name: 'IGCSE Chemistry', icon: Beaker, color: 'var(--color-primary)',
         isOLevel: true,
     },
     {
-        id: 'olevel-physics', name: 'O Level Physics', icon: Atom, color: '#1d4ed8',
+        id: 'olevel-physics', name: 'IGCSE Physics', icon: Atom, color: 'var(--color-primary)',
         isOLevel: true,
     },
     {
-        id: 'olevel-biology', name: 'O Level Biology', icon: Dna, color: '#2563eb',
+        id: 'olevel-biology', name: 'IGCSE Biology', icon: Dna, color: 'var(--color-primary)',
         isOLevel: true,
     },
     {
-        id: 'olevel-mathematics', name: 'O Level Mathematics', icon: Calculator, color: '#d97706',
+        id: 'olevel-mathematics', name: 'IGCSE Mathematics', icon: Calculator, color: 'var(--color-primary)',
         isOLevel: true,
     },
     {
-        id: 'olevel-business', name: 'O Level Business', icon: FileText, color: '#be185d',
+        id: 'olevel-business', name: 'IGCSE Business', icon: FileText, color: 'var(--color-primary)',
         isOLevel: true,
     },
     {
-        id: 'olevel-accounting', name: 'O Level Accounting', icon: BookOpen, color: '#65a30d',
+        id: 'olevel-accounting', name: 'IGCSE Accounting', icon: BookOpen, color: 'var(--color-primary)',
         isOLevel: true,
     },
     {
-        id: 'olevel-economics', name: 'O Level Economics', icon: TrendingUp, color: '#0891b2',
+        id: 'olevel-economics', name: 'IGCSE Economics', icon: TrendingUp, color: 'var(--color-primary)',
         isOLevel: true,
     },
 ];
@@ -116,10 +118,10 @@ function RecordAttemptModal({ paper, onClose, onSave, saving }) {
             <div className="attempt-modal card">
                 <div className="attempt-modal-header">
                     <div>
-                        <h3 id="attempt-modal-title">Record Past Paper Attempt</h3>
+                        <h3 id="attempt-modal-title">Log your score</h3>
                         <p>{paper.unit} • {paper.unitName}</p>
                     </div>
-                    <button type="button" className="btn btn-ghost btn-sm" onClick={onClose} disabled={saving} aria-label="Close record attempt dialog">
+                    <button type="button" className="btn btn-ghost btn-sm" onClick={onClose} disabled={saving} aria-label="Close">
                         <X size={14} />
                     </button>
                 </div>
@@ -139,7 +141,7 @@ function RecordAttemptModal({ paper, onClose, onSave, saving }) {
                     </label>
 
                     <label className="attempt-field">
-                        <span>Time Spent (minutes)</span>
+                        <span>Time spent (minutes)</span>
                         <input
                             className="input"
                             type="number"
@@ -177,7 +179,7 @@ function RecordAttemptModal({ paper, onClose, onSave, saving }) {
                         })}
                         disabled={saving || !isScoreValid || !isDurationValid}
                     >
-                        {saving ? 'Saving…' : 'Save Attempt'}
+                        {saving ? 'Saving…' : 'Save score'}
                     </button>
                 </div>
             </div>
@@ -242,13 +244,13 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false, subj
 
     return (
         <button
-            className={`btn btn-sm pastpaper-action-btn ${status === 'success' ? 'btn-success' : status === 'error' ? 'btn-ghost' : 'btn-primary'}`}
+            className="paper-more-item"
             onClick={handleDownload}
             disabled={!url}
-            title={!url ? 'Coming soon' : `${label} PDF`}
+            title={!url ? 'Not available yet' : `${label} (PDF)`}
         >
-            <Icon size={14} />
-            {status === 'success' ? 'Downloaded!' : status === 'error' ? 'Failed' : label}
+            <Icon size={16} aria-hidden="true" />
+            {status === 'success' ? 'Downloaded' : status === 'error' ? 'Download failed, try again' : label}
         </button>
     );
 }
@@ -281,128 +283,107 @@ function ViewPdfButton({ paper, type, label, subjectId }) {
 
     return (
         <button
-            className="btn btn-sm btn-outline pastpaper-action-btn"
+            className={`btn btn-sm btn-outline paper-view-btn${type === 'question' ? ' paper-view-btn--main' : ''}`}
             onClick={handleView}
             disabled={!url}
-            title={!url ? 'Coming soon' : `Open ${label} in new tab`}
+            title={!url ? 'Not available yet' : `Open the ${label.toLowerCase()} in a new tab`}
         >
-            <Eye size={14} />
+            {type === 'question' ? <Eye size={16} aria-hidden="true" /> : <FileText size={16} aria-hidden="true" />}
             {label}
         </button>
     );
 }
 
-// Past paper card component - grouped by year/month
-function ExamSessionCard({ year, month, papers, isOLevel = false, subjectId, onRecordAttempt }) {
-    const [expanded, setExpanded] = useState(false);
-    const [expandedPaperId, setExpandedPaperId] = useState(null);
+function PaperRow({ paper, isOLevel, subjectId, onRecordAttempt }) {
+    const [moreOpen, setMoreOpen] = useState(false);
     const navigate = useNavigate();
+    const moreId = `paper-more-${paper.id}`.replace(/[^a-zA-Z0-9-]/g, '-');
+
+    return (
+        <li className="paper-row">
+            <div className="paper-row-main">
+                <div className="paper-row-tags">
+                    <span className="paper-row-code">{paper.unit}</span>
+                    {paper.type && <span className={`badge ${getPaperTypeBadge(paper.type)}`}>{paper.type}</span>}
+                </div>
+                <p className="paper-row-title">{paper.unitName}</p>
+                <p className="paper-row-meta">
+                    <Clock size={13} aria-hidden="true" /> {paper.duration} · {paper.totalMarks} marks
+                </p>
+            </div>
+            <div className="paper-row-actions">
+                <ViewPdfButton paper={paper} type="question" label="Question paper" subjectId={subjectId} />
+                <ViewPdfButton paper={paper} type="marking" label="Mark scheme" subjectId={subjectId} />
+                <button
+                    type="button"
+                    className="btn btn-ghost btn-icon paper-more-btn"
+                    aria-expanded={moreOpen}
+                    aria-controls={moreId}
+                    aria-label={`More options for ${paper.unit} ${paper.unitName}`}
+                    onClick={() => setMoreOpen((value) => !value)}
+                >
+                    <Ellipsis size={18} aria-hidden="true" />
+                </button>
+            </div>
+            {moreOpen && (
+                <div className="paper-more" id={moreId}>
+                    <DownloadButton paper={paper} type="question" label="Download paper" icon={Download} isOLevel={isOLevel} subjectId={subjectId} />
+                    <DownloadButton paper={paper} type="marking" label="Download mark scheme" icon={Download} isOLevel={isOLevel} subjectId={subjectId} />
+                    {paper.questionPaperUrl && (
+                        <button className="paper-more-item" onClick={() => navigate(`/annotate/${paper.id}`)}>
+                            <PenTool size={16} aria-hidden="true" /> Annotate on screen
+                        </button>
+                    )}
+                    <button className="paper-more-item" onClick={() => onRecordAttempt?.(paper)}>
+                        <TrendingUp size={16} aria-hidden="true" /> Log your score
+                    </button>
+                </div>
+            )}
+        </li>
+    );
+}
+
+// One exam session (e.g. "January 2026"), collapsible; the newest session starts open
+function ExamSessionCard({ year, month, papers, isOLevel = false, subjectId, onRecordAttempt, defaultExpanded = false }) {
+    const [expanded, setExpanded] = useState(defaultExpanded);
     const sessionId = `pastpaper-session-${year}-${String(month).toLowerCase()}`.replace(/[^a-z0-9-]/g, '-');
 
     return (
-        <div className="past-paper-card card">
-            {/* Year/Month Main Header */}
-            <button
-                type="button"
-                className="past-paper-session-header"
-                onClick={() => setExpanded(!expanded)}
-                aria-expanded={expanded}
-                aria-controls={sessionId}
-            >
-                <div className="past-paper-session-main">
-                    <span className="past-paper-year">{year}</span>
-                    <span className="past-paper-month">{month}</span>
-                    <span className="past-paper-count">{papers.length} papers</span>
-                </div>
-                <div className="past-paper-expand">
-                    {expanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-                </div>
-            </button>
-
-            {/* Papers List (shown when expanded) */}
+        <section className={`paper-session ${expanded ? 'is-open' : ''}`}>
+            <h2 className="paper-session-heading">
+                <button
+                    type="button"
+                    className="paper-session-head"
+                    onClick={() => setExpanded(!expanded)}
+                    aria-expanded={expanded}
+                    aria-controls={sessionId}
+                >
+                    <span className="paper-session-title">{month} {year}</span>
+                    <span className="paper-session-count">{papers.length} {papers.length === 1 ? 'paper' : 'papers'}</span>
+                    <ChevronDown size={18} className="paper-session-chevron" aria-hidden="true" />
+                </button>
+            </h2>
             {expanded && (
-                <div className="past-paper-papers-list" id={sessionId}>
+                <ul className="list-card paper-list" id={sessionId}>
                     {papers.map((paper) => (
-                        <div key={paper.id} className="past-paper-item">
-                            <button
-                                type="button"
-                                className={`past-paper-item-header ${expandedPaperId === paper.id ? 'expanded' : ''}`}
-                                onClick={() => setExpandedPaperId(expandedPaperId === paper.id ? null : paper.id)}
-                                aria-expanded={expandedPaperId === paper.id}
-                                aria-controls={`pastpaper-item-${paper.id}`}
-                            >
-                                <div className="past-paper-item-info">
-                                    <div className="past-paper-unit">
-                                        <span className="unit-badge">{paper.unit}</span>
-                                        <span className={`badge ${getPaperTypeBadge(paper.type)}`}>{paper.type}</span>
-                                    </div>
-                                    <p className="past-paper-unit-name">{paper.unitName}</p>
-                                    <p className="past-paper-meta">
-                                        <Clock size={12} /> {paper.duration} · {paper.totalMarks} marks
-                                    </p>
-                                </div>
-                                <div className="past-paper-expand">
-                                    {expandedPaperId === paper.id ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                </div>
-                            </button>
-
-                            {/* Paper Actions (shown when paper is expanded) */}
-                            {expandedPaperId === paper.id && (
-                                <div className="past-paper-item-actions" id={`pastpaper-item-${paper.id}`}>
-                                    <ViewPdfButton
-                                        paper={paper}
-                                        type="question"
-                                        label="View Question Paper"
-                                        subjectId={subjectId}
-                                    />
-                                    <DownloadButton
-                                        paper={paper}
-                                        type="question"
-                                        label="Download QP"
-                                        icon={Download}
-                                        isOLevel={isOLevel}
-                                        subjectId={subjectId}
-                                    />
-                                    <ViewPdfButton
-                                        paper={paper}
-                                        type="marking"
-                                        label="View Marking Scheme"
-                                        subjectId={subjectId}
-                                    />
-                                    <DownloadButton
-                                        paper={paper}
-                                        type="marking"
-                                        label="Download MS"
-                                        icon={Download}
-                                        isOLevel={isOLevel}
-                                        subjectId={subjectId}
-                                    />
-                                    {paper.questionPaperUrl && (
-                                        <button
-                                            className="btn btn-sm btn-primary pastpaper-action-btn"
-                                            onClick={() => navigate(`/annotate/${paper.id}`)}
-                                            title="Open in annotation mode"
-                                        >
-                                            <PenTool size={14} />
-                                            Do it Live
-                                        </button>
-                                    )}
-                                    <button
-                                        className="btn btn-sm btn-secondary pastpaper-action-btn"
-                                        onClick={() => onRecordAttempt?.(paper)}
-                                        title="Record a completed paper score"
-                                    >
-                                        <TrendingUp size={14} />
-                                        Log Attempt
-                                    </button>
-                                </div>
-                            )}
-                        </div>
+                        <PaperRow key={paper.id} paper={paper} isOLevel={isOLevel} subjectId={subjectId} onRecordAttempt={onRecordAttempt} />
                     ))}
-                </div>
+                </ul>
             )}
-        </div>
+        </section>
     );
+}
+
+const PAPER_GROUPS = [
+    { id: 'alevel', label: 'A Level' },
+    { id: 'igcse', label: 'IGCSE' },
+    { id: 'english', label: 'English' },
+];
+
+function paperGroupOf(subjectId = '') {
+    if (subjectId.startsWith('olevel')) return 'igcse';
+    if (subjectId === 'cae' || subjectId === 'cpe') return 'english';
+    return 'alevel';
 }
 
 export default function PastPapersPage() {
@@ -595,103 +576,75 @@ export default function PastPapersPage() {
         setShowPerformance(true);
     };
 
-    return (
-        <div className="pastpaper-hub animate-fade-in">
-            {/* Bento Header */}
-            <div className="pastpaper-page-header">
-                <div className="pastpaper-title-group">
-                    <div className="pastpaper-subject-icon">
-                        <FileQuestion size={28} />
-                    </div>
-                    <div>
-                        <h1 className="pastpaper-page-title">Past Papers</h1>
-                        <p className="pastpaper-page-qual">
-                            View and download real exam papers with marking schemes — {isLoadingSubject
-                                ? `Loading papers… (${subjectPaperCounts[activeSubject] ?? 0} available)`
-                                : `${subjectPapers.length} papers available`}
-                        </p>
-                    </div>
-                </div>
-            </div>
+    const activePaperGroup = paperGroupOf(activeSubject);
+    const paperSubjectGroups = PAPER_GROUPS.map((group) => ({
+        ...group,
+        subjects: subjects
+            .filter((subject) => paperGroupOf(subject.id) === group.id)
+            .map((subject) => ({
+                id: subject.id,
+                name: subject.name.replace(/^(AL|IGCSE) /, ''),
+                count: subjectDataById[subject.id]?.papers.length ?? subjectPaperCounts[subject.id] ?? null,
+            })),
+    }));
 
-            {/* Subject Tabs */}
-            <div className="pastpaper-subject-select-wrapper">
-                <label className="sr-only" htmlFor="pastpaper-subject-select">Choose past paper subject</label>
-                <select
-                    id="pastpaper-subject-select"
-                    className="pastpaper-subject-select"
-                    value={activeSubject}
-                    onChange={(event) => handleSubjectChange(event.target.value)}
-                    aria-label="Choose past paper subject"
-                >
-                    {subjects.map((subject) => (
-                        <option key={subject.id} value={subject.id}>{subject.name}</option>
-                    ))}
-                </select>
-            </div>
-            <div className="pastpaper-subject-buttons">
-                {subjects.map(subject => {
-                    const Icon = subject.icon;
-                    const isActive = activeSubject === subject.id;
-                    return (
-                        <button
-                            type="button"
-                            key={subject.id}
-                            className={`pastpaper-subject-btn ${isActive ? 'active' : ''}`}
-                            onClick={() => handleSubjectChange(subject.id)}
-                            onMouseEnter={() => handleSubjectPrefetch(subject.id)}
-                            onFocus={() => handleSubjectPrefetch(subject.id)}
-                            style={{
-                                '--subject-accent': subject.color,
-                                '--subject-accent-soft': `${subject.color}15`,
-                            }}
-                        >
-                            <Icon size={20} />
-                            <span>{subject.name}</span>
-                            <span className="pastpaper-subject-count">
-                                {subjectDataById[subject.id]?.papers.length ?? subjectPaperCounts[subject.id] ?? '…'}
-                            </span>
-                        </button>
-                    );
-                })}
-            </div>
+    return (
+        <div className="pastpaper-hub">
+            <PageHeader
+                title="Past papers"
+                description={isLoadingSubject
+                    ? 'Real exam papers with mark schemes. Loading…'
+                    : 'Real exam papers with mark schemes, newest session first.'}
+            />
+
+            <SubjectPicker
+                groups={paperSubjectGroups}
+                groupId={activePaperGroup}
+                subjectId={activeSubject}
+                onGroupChange={(group) => {
+                    const first = subjects.find((subject) => paperGroupOf(subject.id) === group.id);
+                    if (first && paperGroupOf(activeSubject) !== group.id) handleSubjectChange(first.id);
+                }}
+                onSubjectChange={handleSubjectChange}
+                onSubjectIntent={handleSubjectPrefetch}
+            />
 
             {/* Filters */}
             <div className="pastpaper-filter-bar">
                 <select
-                    className="input pastpaper-filter-select"
+                    className="select pastpaper-filter-select"
                     value={filterYear}
                     onChange={e => handleYearChange(e.target.value)}
                     disabled={isLoadingSubject}
                     aria-label="Filter papers by year"
                 >
-                    <option value="all">All Years</option>
+                    <option value="all">All years</option>
                     {subjectYears.map(year => (
                         <option key={year} value={year}>{year}</option>
                     ))}
                 </select>
 
                 <select
-                    className="input pastpaper-filter-select"
+                    className="select pastpaper-filter-select"
                     value={filterMonth}
                     onChange={e => setFilterMonth(e.target.value)}
                     disabled={filterYear === 'all' || isLoadingSubject}
-                    aria-label="Filter papers by month"
+                    aria-label="Filter papers by exam session"
                 >
-                    <option value="all">All Months</option>
+                    <option value="all">All sessions</option>
                     {availableMonths.map(month => (
                         <option key={month} value={month}>{month}</option>
                     ))}
                 </select>
 
                 <select
-                    className="input pastpaper-filter-select-wide"
+                    className="select pastpaper-filter-select-wide"
                     value={filterUnit}
                     onChange={e => setFilterUnit(e.target.value)}
                     disabled={isLoadingSubject}
                     aria-label="Filter papers by unit"
                 >
-                    <option value="all">All Units</option>
+                    <option value="all">All units</option>
                     {subjectUnits.map(unit => (
                         <option key={unit.code} value={unit.code}>
                             {unit.code} – {unit.name.length > 30 ? unit.name.substring(0, 30) + '…' : unit.name}
@@ -701,20 +654,21 @@ export default function PastPapersPage() {
 
                 <button
                     type="button"
-                    className={`btn ${showPerformance ? 'btn-primary' : 'btn-ghost'}`}
+                    className="btn btn-outline pastpaper-analytics-btn"
                     onClick={() => setShowPerformance(!showPerformance)}
                     aria-expanded={showPerformance}
+                    aria-pressed={showPerformance}
                 >
-                    <FileText size={16} /> Analytics
+                    <BarChart3 size={16} aria-hidden="true" /> Your scores
                 </button>
             </div>
 
             {/* Performance Chart */}
             {showPerformance && (
-                <Suspense fallback={<div className="card animate-fade-in">Loading analytics...</div>}>
+                <Suspense fallback={<div className="card">Loading your scores…</div>}>
                     <ErrorBoundary name="PerformanceChart" inline>
                     {attemptsState === 'loading' ? (
-                        <div className="card animate-fade-in">Loading past paper analytics...</div>
+                        <div className="card">Loading your scores…</div>
                     ) : (
                         <PerformanceChart attempts={attempts} />
                     )}
@@ -737,11 +691,11 @@ export default function PastPapersPage() {
                         <div className="empty-state-icon">
                             <X size={36} />
                         </div>
-                        <h3>Could not load papers</h3>
-                        <p>Try switching subjects or refreshing the page.</p>
+                        <h3>Could not load these papers</h3>
+                        <p>Check your connection, then pick the subject again or refresh the page.</p>
                     </div>
                 ) : groupedPapersArray.length > 0 ? (
-                    groupedPapersArray.map((session) => (
+                    groupedPapersArray.map((session, sessionIndex) => (
                         <ErrorBoundary key={`eb-${session.year}-${session.month}`} name={`ExamSession:${session.year}-${session.month}`} inline>
                         <ExamSessionCard
                             key={`${session.year}-${session.month}`}
@@ -751,6 +705,7 @@ export default function PastPapersPage() {
                             isOLevel={activeSubjectData?.isOLevel || subjectConfig?.isOLevel || false}
                             subjectId={activeSubject}
                             onRecordAttempt={setAttemptPaper}
+                            defaultExpanded={sessionIndex === 0}
                         />
                         </ErrorBoundary>
                     ))
@@ -759,8 +714,8 @@ export default function PastPapersPage() {
                         <div className="empty-state-icon">
                             <FileQuestion size={36} />
                         </div>
-                        <h3>No papers found</h3>
-                        <p>Try adjusting your filters</p>
+                        <h3>No papers match these filters</h3>
+                        <p>Try a different year, session or unit.</p>
                     </div>
                 )}
             </div>

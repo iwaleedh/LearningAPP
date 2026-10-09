@@ -58,8 +58,8 @@ export const note_olevel_biology_9_9_4 = {
       type: 'svg',
       data: {
         caption: 'Cross-section of a coronary artery showing plaque build-up and narrowing of the lumen',
-        svg: `<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="460" height="260" fill="#0f172a" rx="10"/>
+        svg: `<svg viewBox="-8 0 531 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <rect width="531" height="260" fill="#0f172a" rx="10"/>
   <text x="230" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Atherosclerosis — Plaque Build-up in an Artery</text>
 
   <!-- HEALTHY ARTERY (left) -->

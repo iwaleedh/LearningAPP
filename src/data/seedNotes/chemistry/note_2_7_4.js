@@ -12,6 +12,21 @@ export const note_chemistry_2_7_4 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Solubility is a balance of interactions",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Dissolving requires separating solute particles, disrupting some solvent–solvent interactions and forming solute–solvent interactions. “Like dissolves like” is a useful first guide, not a universal law. Non-polar solutes often dissolve in non-polar solvents; small polar molecules can interact with water through dipoles or hydrogen bonds.<br/><br/>For an ionic solid, the lattice must be disrupted and the ions become hydrated. Water’s oxygen end points towards cations; its hydrogen ends point towards anions. The energy balance and entropy change determine whether dissolution is favourable. Ionic charge alone does not guarantee high water solubility, and temperature effects depend on the particular dissolution process."
+  }
+},
+{
             id: 'callout-rule',
             type: 'callout',
             data: {
@@ -66,18 +81,89 @@ export const note_chemistry_2_7_4 = {
             data: { text: 'Non-polar substances, such as iodine (I₂) or alkanes, dissolve well in non-polar solvents like hexane. This is because the London forces that form between the solute and the solvent are of similar strength to the London forces broken in the pure solute and pure solvent.' },
             terms: []
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Iodine is much more soluble in a suitable non-polar organic solvent than in water because interactions with the organic solvent better compensate for the interactions disrupted. AgCl remains poorly soluble in water despite being ionic. These two examples show why particle type is a guide but not a complete prediction."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not explain the hydration of ions as covalent-bond formation. Do not say every hot solvent dissolves more of every solute; use the stated data or dissolution enthalpy when supplied."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What three interaction changes occur during dissolution?",
+        "checked": false
+      },
+      {
+        "text": "Which end of water points towards a cation?",
+        "checked": false
+      },
+      {
+        "text": "Why is “ionic means soluble” unreliable?",
+        "checked": false
+      },
+      {
+        "text": "What does “like dissolves like” mean?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Dissolving requires separating solute particles, disrupting some solvent–solvent interactions and forming solute–solvent interactions. “Like dissolves like” is a useful first guide, not a universal law. Non-polar solutes often dissolve in non-polar solvents; small polar molecules can interact with water through dipoles or hydrogen bonds."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-rule', prompt: 'State the general rule for determining if a substance will dissolve in a given solvent.' },
-            { id: 'c2', blockId: 'table-water', prompt: 'Explain why ethanol is highly soluble in water, but chloroethane is insoluble, even though both have polar bonds.' },
-            { id: 'c3', blockId: 'table-water', prompt: 'Explain in terms of intermolecular forces why alkanes do not dissolve in water.' },
-            { id: 'c4', blockId: 'p-chain', prompt: 'Describe and explain the trend in solubility of straight-chain alcohols in water as the carbon chain gets longer.' }
-        ],
-        summaryText: '"Like dissolves like". Water is highly polar and forms H-bonds. To dissolve in water, a solute must either be ionic (hydration) or capable of forming H-bonds (like the –OH in alcohols). Adding a long non-polar hydrocarbon chain to an alcohol reduces its solubility by disrupting water\'s H-bond network. Non-polar substances (alkanes, halogens) dissolve in non-polar solvents via London forces.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What three interaction changes occur during dissolution?",
+      "answer": "Solute–solute and some solvent–solvent attractions are disrupted, and solute–solvent attractions form."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Which end of water points towards a cation?",
+      "answer": "The partially negative oxygen end."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is “ionic means soluble” unreliable?",
+      "answer": "Hydration and entropy must compensate for lattice disruption; some ionic solids such as AgCl are poorly soluble."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What does “like dissolves like” mean?",
+      "answer": "Solutes often dissolve in solvents with compatible types of intermolecular interactions, but it is a guideline rather than a rule without exceptions."
+    }
+  ],
+  "summaryText": "Dissolving requires separating solute particles, disrupting some solvent–solvent interactions and forming solute–solvent interactions. “Like dissolves like” is a useful first guide, not a universal law. Non-polar solutes often dissolve in non-polar solvents; small polar molecules can interact with water through dipoles or hydrogen bonds.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_7_4;

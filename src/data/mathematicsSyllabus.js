@@ -1,5 +1,5 @@
 export const mathematicsSyllabus = {
-    qualification: 'AL Mathematics',
+    qualification: 'Pearson Edexcel International A Level Mathematics',
     source: 'international-a-level-maths-spec.pdf (Issue 3, April 2019)',
     notes: 'Includes compulsory pure units and IAL Mathematics optional route units.',
     units: [
@@ -92,30 +92,48 @@ export const mathematicsSyllabus = {
                     "id": 5,
                     "title": "Exponentials & Logarithms",
                     "subtopics": [
-                        "Exponential functions", "e", "Logarithmic functions", "Laws of logarithms",
-                        "Exponential equations", "Exponential growth and decay", "Modelling"
+                        "Exponential functions",
+                        "Logarithms and y = ln x",
+                        "Laws of logarithms",
+                        "Solving exponential and logarithmic equations",
+                        "Exponential growth and decay",
+                        "Modelling with logarithms (linearising data)",
+                        "Change of base and harder equations",
                     ]
                 },
                 {
                     "id": 6,
                     "title": "Trigonometry",
-                    "subtopics": ["Simple identities", "Linear", "Quadratic", "Strategy for trigonometric equations"]
+                    "subtopics": [
+                        "Simple identities",
+                        "Solving trigonometric equations",
+                        "Reciprocal trigonometric functions",
+                        "Addition and double angle formulae",
+                    ]
                 },
                 {
                     "id": 7,
                     "title": "Differentiation",
                     "subtopics": [
-                        "Increasing and decreasing functions", "Stationary points and turning points",
-                        "Second order derivatives", "Concave and convex functions", "Points of inflection",
-                        "Sketching gradient functions", "Modelling with differentiation (optimisation)"
+                        "Standard derivatives (eˣ, ln x and trig)",
+                        "Chain rule",
+                        "Product rule",
+                        "Quotient rule",
+                        "Implicit and parametric differentiation",
+                        "Connected rates of change",
+                        "Stationary points and optimisation",
                     ]
                 },
                 {
                     "id": 8,
                     "title": "Integration",
                     "subtopics": [
-                        "Definite integration", "Fundamental theorem of calculus", "Area under a curve",
-                        "Area between 2 curves", "Area between a curve and a line", "Trapezium rule numerical integration"
+                        "Standard integrals",
+                        "Integration by substitution",
+                        "Integration by parts",
+                        "Integration using partial fractions",
+                        "Area under and between curves",
+                        "Trapezium rule",
                     ]
                 }
             ]
@@ -163,8 +181,11 @@ export const mathematicsSyllabus = {
                     "id": 5,
                     "title": "Integration",
                     "subtopics": [
-                        "Integrating other functions", "Reverse chain rule", "Integrating f(x)f'(x)",
-                        "Integrating with trigonometric identities", "Integration by substitution"
+                        "Integrating other functions",
+                        "Reverse chain rule",
+                        "Integrating f′(x)/f(x)",
+                        "Integrating with trigonometric identities",
+                        "Integration by substitution",
                     ]
                 },
                 {
@@ -191,21 +212,31 @@ export const mathematicsSyllabus = {
                     "id": 2,
                     "title": "Algebra & Functions",
                     "subtopics": [
-                        "Linear denominators", "Squared linear denominators",
-                        "Improper algebraic fractions", "Combinations"
+                        "Linear denominators",
+                        "Squared linear denominators",
+                        "Improper algebraic fractions",
+                        "Irreducible quadratic factors",
                     ]
                 },
                 {
                     "id": 3,
-                    "title": "Coordinate Geometry",
+                    "title": "Parametric Equations",
                     "subtopics": [
-                        "Basics", "Sketching graphs", "Eliminating the parameter", "Modelling"
+                        "Parametric equations basics",
+                        "Sketching parametric curves",
+                        "Area under a parametric curve",
+                        "Tangents and normals to parametric curves",
                     ]
                 },
                 {
                     "id": 4,
                     "title": "Binomial Expansion",
-                    "subtopics": ["General binomial expansion", "Multiple", "Subtleties", "Modelling"]
+                    "subtopics": [
+                        "General binomial expansion",
+                        "Validity of the expansion",
+                        "Partial fractions then binomial expansion",
+                        "Approximations using binomial expansion",
+                    ]
                 },
                 {
                     "id": 5,
@@ -216,18 +247,30 @@ export const mathematicsSyllabus = {
                     "id": 6,
                     "title": "Integration",
                     "subtopics": [
-                        "Integration by parts", "Harder substitution", "Integration using partial fractions",
-                        "Separation of variables", "Solving and interpreting differential equations",
-                        "General solutions", "Particular solutions", "Modelling", "Integration decision making",
-                        "Integration as the limit of a sum", "Parametric integration"
+                        "Integration by parts",
+                        "Repeated and cyclic integration by parts",
+                        "Integration using partial fractions",
+                        "Integrating with trigonometric identities",
+                        "Integration by substitution",
+                        "Area under a parametric curve",
+                        "Volumes of revolution about the x-axis",
+                        "Volumes of revolution about the y-axis",
+                        "Trapezium rule and accuracy",
+                        "Separation of variables",
+                        "Modelling with differential equations",
                     ]
                 },
                 {
                     "id": 7,
                     "title": "Vectors",
                     "subtopics": [
-                        "Basic vectors", "Vector addition", "Magnitude and direction", "Position vectors",
-                        "Vectors in 3 dimensions", "Problem solving using vectors", "Problem solving using 3D vectors"
+                        "3D vectors, magnitude and unit vectors",
+                        "Scalar product and angles",
+                        "Vector equation of a line",
+                        "Intersecting, parallel and skew lines",
+                        "Equations of a plane",
+                        "Angles and intersections with planes",
+                        "Problem solving using 3D vectors",
                     ]
                 }
             ]
@@ -240,7 +283,11 @@ export const mathematicsSyllabus = {
                 {
                     "id": 1,
                     "title": "Mathematical Models in Mechanics",
-                    "subtopics": ["Particle and rigid-body assumptions", "Idealised mechanics modelling terms", "Types of force"]
+                    "subtopics": [
+                        "Particle and rigid-body assumptions",
+                        "SI units and derived units",
+                        "Types of force",
+                    ]
                 },
                 {
                     "id": 2,
@@ -284,28 +331,51 @@ export const mathematicsSyllabus = {
                 },
                 {
                     "id": 2,
-                    "title": "Probability",
-                    "subtopics": ["Calculating Probabilities and Events", "Venn Diagrams and Sets", "Tree Diagrams", "Probability Formulae"]
+                    "title": "Representation and Summary of Data",
+                    "subtopics": [
+                        "Frequency distributions, histograms and stem-and-leaf",
+                        "Mean, median and mode",
+                        "Variance, standard deviation and IQR",
+                    ]
                 },
                 {
                     "id": 3,
-                    "title": "Statistical Distributions",
-                    "subtopics": ["Discrete Probability Distributions", "The Binomial Distribution"]
+                    "title": "Probability",
+                    "subtopics": [
+                        "Basic probability and Venn diagrams",
+                        "Conditional probability and independence",
+                        "Probability formulae",
+                    ]
                 },
                 {
                     "id": 4,
-                    "title": "The Normal Distribution",
-                    "subtopics": ["The Normal Distribution", "Standard Normal Distribution", "Normal Approximation of Binomial"]
+                    "title": "Correlation and Regression",
+                    "subtopics": [
+                        "Scatter diagrams",
+                        "Product moment correlation coefficient",
+                        "Least squares regression line",
+                    ]
                 },
                 {
                     "id": 5,
-                    "title": "Correlation and Regression",
-                    "subtopics": ["Correlation and Regression", "PMCC and Non-Linear Regression"]
+                    "title": "Discrete Random Variables",
+                    "subtopics": [
+                        "Discrete random variables",
+                        "Expected value and variance",
+                    ]
                 },
                 {
                     "id": 6,
+                    "title": "The Normal Distribution",
+                    "subtopics": [
+                        "The normal distribution",
+                        "Using Z-tables",
+                    ]
+                },
+                {
+                    "id": 7,
                     "title": "Hypothesis Testing",
-                    "subtopics": ["Hypothesis Testing for Proportion", "Hypothesis Testing for Mean", "Hypothesis Testing for Correlation"]
+                    "subtopics": ["Hypothesis testing for correlation"]
                 }
             ]
         }

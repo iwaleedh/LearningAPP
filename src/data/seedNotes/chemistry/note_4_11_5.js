@@ -15,6 +15,21 @@ export const note_chemistry_4_11_5 = {
     },
     // ── CALCULATING THE RATE CONSTANT ──────────────────────────────────────
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Derive rate-constant units instead of memorising them",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Rearrange k = rate divided by the concentration terms. If rate is in mol dm⁻³ s⁻¹ and concentration in mol dm⁻³, a total order r gives units (mol dm⁻³)¹⁻ʳ s⁻¹. Zero-order k therefore has rate units; first-order k has s⁻¹; second-order k has dm³ mol⁻¹ s⁻¹; third-order k has dm⁶ mol⁻² s⁻¹.<br/><br/>At fixed temperature and for the same pathway, changing reactant concentrations changes rate but not k. Raising temperature usually changes k. A catalyst supplies a different pathway and can alter the rate law; do not treat it simply as changing reactant concentrations."
+  }
+},
+{
       id: 'h-calc',
       type: 'heading',
       data: { text: 'Calculating the value of k', level: 2 },
@@ -99,36 +114,91 @@ export const note_chemistry_4_11_5 = {
         text: "Rearrange the rate equation to isolate k, then substitute mol dm\u207b\u00b3 s\u207b\u00b9 for Rate and mol dm\u207b\u00b3 for each [concentration]. Cancel and flip negative indices in denominator to positive in numerator."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For rate = k[A][B] and rate = 6.0 × 10⁻⁴ mol dm⁻³ s⁻¹ when [A] = 0.20 and [B] = 0.10 mol dm⁻³: k = (6.0 × 10⁻⁴)/(0.20 × 0.10) = <strong>0.030 dm³ mol⁻¹ s⁻¹</strong>. Write the unit division explicitly: (mol dm⁻³ s⁻¹)/(mol² dm⁻⁶) = dm³ mol⁻¹ s⁻¹."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Units of k depend on the rate definition and concentration units. Do not quote s⁻¹ for every rate constant, or claim k increases because concentration increased at fixed temperature."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What are k’s units for a first-order concentration rate law?",
+        "checked": false
+      },
+      {
+        "text": "What are k’s units for total order two?",
+        "checked": false
+      },
+      {
+        "text": "How are k’s units found?",
+        "checked": false
+      },
+      {
+        "text": "Does changing [A] at fixed temperature normally change k?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Rearrange k = rate divided by the concentration terms. If rate is in mol dm⁻³ s⁻¹ and concentration in mol dm⁻³, a total order r gives units (mol dm⁻³)¹⁻ʳ s⁻¹. Zero-order k therefore has rate units; first-order k has s⁻¹; second-order k has dm³ mol⁻¹ s⁻¹; third-order k has dm⁶ mol⁻² s⁻¹."
+  }
+}
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'list-calc',
-        prompt: 'Does it matter which experiment run/row from a data table you pick to calculate the value of the rate constant (k)?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'bloom-units-example',
-        prompt: 'What are the standard units for the Rate of a reaction?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'table-cheat-sheet',
-        prompt: 'Without doing the calculation, state the units of the rate constant (k) for an overall FIRST order reaction.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'table-cheat-sheet',
-        prompt: 'Without doing the calculation, state the units of the rate constant (k) for an overall SECOND order reaction.'
-      }
-    ],
-    summaryText: 'To find the value of k, substitute the data from any one experimental test into the deduced rate equation. The mathematical units of k change depending on the overall order of the reaction. Substitute mol dm⁻³ s⁻¹ for Rate and mol dm⁻³ for each concentration, cancel terms, and bring the denominator indices up by flipping their signs.',
-    ready: false
-  },
-  evidence: []
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What are k’s units for a first-order concentration rate law?",
+      "answer": "s⁻¹ when rate is measured in mol dm⁻³ s⁻¹."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What are k’s units for total order two?",
+      "answer": "dm³ mol⁻¹ s⁻¹ with the stated concentration and rate units."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How are k’s units found?",
+      "answer": "Divide the units of rate by the units of the full concentration product."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does changing [A] at fixed temperature normally change k?",
+      "answer": "No. It changes rate through the concentration terms for the same reaction pathway."
+    }
+  ],
+  "summaryText": "Rearrange k = rate divided by the concentration terms. If rate is in mol dm⁻³ s⁻¹ and concentration in mol dm⁻³, a total order r gives units (mol dm⁻³)¹⁻ʳ s⁻¹. Zero-order k therefore has rate units; first-order k has s⁻¹; second-order k has dm³ mol⁻¹ s⁻¹; third-order k has dm⁶ mol⁻² s⁻¹.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 
 export default note_chemistry_4_11_5;

@@ -200,8 +200,8 @@ export const note_chemistry_1_5_4 = {
 
   <!-- Stability bar -->
   <rect x="20" y="170" width="560" height="40" rx="4" fill="#78350f" stroke="#fcd34d" stroke-width="1"/>
-  <text x="300" y="187" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Stability order:  1° &lt; 2° &lt; 3°</text>
-  <text x="300" y="202" text-anchor="middle" font-size="10" fill="#92400e">More alkyl groups → more charge spreading → lower energy → more stable</text>
+  <text x="300" y="187" text-anchor="middle" font-size="11" font-weight="700" fill="#f8fafc" style="fill:#f8fafc">Stability order:  1° &lt; 2° &lt; 3°</text>
+  <text x="300" y="202" text-anchor="middle" font-size="10" fill="#f8fafc" style="fill:#f8fafc">More alkyl groups → more charge spreading → lower energy → more stable</text>
 </svg>`
       },
       terms: []
@@ -305,65 +305,65 @@ export const note_chemistry_1_5_4 = {
   <rect x="10" y="158" width="620" height="133" rx="5" fill="#3d1212" stroke="#fca5a5" stroke-width="1.2"/>
 
   <!-- Headers -->
-  <text x="22" y="35" class="hd" fill="#15803d" text-anchor="start">Path B (MAJOR) &#x2014; H&#x207a; adds to C1 (CH&#x2082; end, more H&#x2019;s)</text>
+  <text x="22" y="35" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Path B (MAJOR) &#x2014; H&#x207a; adds to C1 (CH&#x2082; end, more H&#x2019;s)</text>
   <text x="22" y="178" class="hd" fill="#dc2626" text-anchor="start">Path A (minor) &#x2014; H&#x207a; adds to C2 (CH end, fewer H&#x2019;s)</text>
 
   <!-- ROW 1: PATH B at y=90 -->
-  <text x="55" y="93" class="atm" text-anchor="middle">CH&#x2082;</text>
+  <text x="55" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2082;</text>
   <line x1="68" y1="86" x2="84" y2="86" class="bnd"/>
   <line x1="68" y1="93" x2="84" y2="93" class="bnd"/>
-  <text x="97" y="93" class="atm" text-anchor="middle">CH</text>
+  <text x="97" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH</text>
   <line x1="106" y1="90" x2="120" y2="90" class="bnd"/>
-  <text x="133" y="93" class="atm" text-anchor="middle">CH&#x2083;</text>
-  <text x="157" y="93" class="lbl" text-anchor="middle">+</text>
+  <text x="133" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2083;</text>
+  <text x="157" y="93" class="lbl" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
   <text x="173" y="82" class="dim" text-anchor="middle">&#x3b4;+</text>
-  <text x="173" y="93" class="atm" text-anchor="middle">H</text>
+  <text x="173" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <line x1="180" y1="90" x2="193" y2="90" class="bnd"/>
   <text x="200" y="82" class="dim" text-anchor="middle">&#x3b4;&#x2212;</text>
-  <text x="200" y="93" class="atm" text-anchor="middle">X</text>
+  <text x="200" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">X</text>
   <!-- Curly arrow: from C1 end of pi bond, arcs up to H -->
   <path d="M 67 84 Q 112 50 170 88" class="cur" marker-end="url(#ca-prop)"/>
   <!-- Reaction arrow -->
   <line x1="216" y1="90" x2="254" y2="90" class="rxn" marker-end="url(#ah-prop)"/>
   <!-- Intermediate: CH3-CH(+)-CH3 (secondary) -->
-  <text x="272" y="93" class="atm" text-anchor="middle">CH&#x2083;</text>
+  <text x="272" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2083;</text>
   <line x1="284" y1="90" x2="298" y2="90" class="bnd"/>
-  <text x="309" y="93" class="atm" text-anchor="middle">CH</text>
+  <text x="309" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH</text>
   <text x="319" y="78" class="chg" text-anchor="start">+</text>
   <line x1="319" y1="90" x2="333" y2="90" class="bnd"/>
-  <text x="344" y="93" class="atm" text-anchor="middle">CH&#x2083;</text>
+  <text x="344" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2083;</text>
   <text x="309" y="112" class="dim" text-anchor="middle">secondary (2&#xb0;)</text>
-  <text x="363" y="91" class="lbl" text-anchor="start">+ X&#x207b;</text>
+  <text x="363" y="91" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+ X&#x207b;</text>
   <line x1="393" y1="90" x2="425" y2="90" class="rxn" marker-end="url(#ah-prop)"/>
-  <text x="431" y="89" fill="#15803d" font-size="13" font-weight="700" text-anchor="start">2-halopropane</text>
-  <text x="444" y="107" fill="#15803d" font-size="11" font-weight="600" text-anchor="start">MAJOR product &#x2713;</text>
+  <text x="431" y="89" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="start" style="fill:#f8fafc">2-halopropane</text>
+  <text x="444" y="107" fill="#f8fafc" font-size="11" font-weight="600" text-anchor="start" style="fill:#f8fafc">MAJOR product &#x2713;</text>
 
   <!-- ROW 2: PATH A at y=235 -->
-  <text x="55" y="238" class="atm" text-anchor="middle">CH&#x2082;</text>
+  <text x="55" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2082;</text>
   <line x1="68" y1="231" x2="84" y2="231" class="bnd"/>
   <line x1="68" y1="238" x2="84" y2="238" class="bnd"/>
-  <text x="97" y="238" class="atm" text-anchor="middle">CH</text>
+  <text x="97" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH</text>
   <line x1="106" y1="235" x2="120" y2="235" class="bnd"/>
-  <text x="133" y="238" class="atm" text-anchor="middle">CH&#x2083;</text>
-  <text x="157" y="238" class="lbl" text-anchor="middle">+</text>
+  <text x="133" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2083;</text>
+  <text x="157" y="238" class="lbl" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
   <text x="173" y="227" class="dim" text-anchor="middle">&#x3b4;+</text>
-  <text x="173" y="238" class="atm" text-anchor="middle">H</text>
+  <text x="173" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <line x1="180" y1="235" x2="193" y2="235" class="bnd"/>
   <text x="200" y="227" class="dim" text-anchor="middle">&#x3b4;&#x2212;</text>
-  <text x="200" y="238" class="atm" text-anchor="middle">X</text>
+  <text x="200" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">X</text>
   <!-- Curly arrow: from C2 end of pi bond, arcs down to H -->
   <path d="M 84 240 Q 128 268 170 238" class="cur" marker-end="url(#ca-prop)"/>
   <!-- Reaction arrow -->
   <line x1="216" y1="235" x2="254" y2="235" class="rxn" marker-end="url(#ah-prop)"/>
   <!-- Intermediate: (+)CH2-CH2-CH3 (primary) -->
   <text x="261" y="222" class="chg" text-anchor="start">+</text>
-  <text x="272" y="238" class="atm" text-anchor="middle">CH&#x2082;</text>
+  <text x="272" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2082;</text>
   <line x1="284" y1="235" x2="298" y2="235" class="bnd"/>
-  <text x="311" y="238" class="atm" text-anchor="middle">CH&#x2082;</text>
+  <text x="311" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2082;</text>
   <line x1="322" y1="235" x2="336" y2="235" class="bnd"/>
-  <text x="349" y="238" class="atm" text-anchor="middle">CH&#x2083;</text>
+  <text x="349" y="238" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH&#x2083;</text>
   <text x="311" y="258" class="dim" text-anchor="middle">primary (1&#xb0;)</text>
-  <text x="367" y="236" class="lbl" text-anchor="start">+ X&#x207b;</text>
+  <text x="367" y="236" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+ X&#x207b;</text>
   <line x1="393" y1="235" x2="425" y2="235" class="rxn" marker-end="url(#ah-prop)"/>
   <text x="431" y="234" fill="#dc2626" font-size="13" font-weight="700" text-anchor="start">1-halopropane</text>
   <text x="458" y="252" fill="#dc2626" font-size="11" font-weight="600" text-anchor="start">minor product</text>

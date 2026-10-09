@@ -1,3 +1,5 @@
+> Historical audit: the live classroom feature has been removed from the application.
+
 # Live Classroom — Comprehensive Audit Report
 
 **Date:** 4 April 2026  

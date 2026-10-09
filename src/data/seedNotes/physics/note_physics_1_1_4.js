@@ -75,7 +75,7 @@ export const note_physics_1_1_4 = {
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is a significant figure? How many s.f. should a result be quoted to?' },
     { id: 'cue-2', blockId: 'para-4', prompt: 'List five features of a well-drawn physics graph' },
-    { id: 'cue-3', blockId: 'para-8', prompt: 'How do you calculate the percentage difference between an experimental and theoretical value?' }
+    { id: 'cue-3', blockId: 'callout-pct', prompt: 'How do you calculate the percentage difference between an experimental and theoretical value?' }
   ], summaryText: '', ready: true },
   evidence: [],
   mentions: []

@@ -17,7 +17,7 @@ export const note_olevel_chemistry_7_7_3 = {
       data: {
         caption: 'General trend of oxides across the Periodic Table. Metals form basic oxides, non-metals form acidic oxides, and elements near the boundary often form amphoteric oxides.',
         svg: `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="var(--color-surface)" />
+  <rect width="100%" height="100%" fill="var(--color-surface)"/>
 
   <text x="300" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Period 3 Oxides Trend</text>
 
@@ -53,7 +53,7 @@ export const note_olevel_chemistry_7_7_3 = {
   <text x="115" y="145" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Metals, react with acids)</text>
 
   <text x="220" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#a855f7" text-anchor="middle">Amphoteric</text>
-  <text x="220" y="145" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Reacts with both)</text>
+  <text x="220" y="167" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Reacts with both)</text>
 
   <text x="395" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">Acidic Oxides</text>
   <text x="395" y="145" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Non-metals, react with alkalis)</text>

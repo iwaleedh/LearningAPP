@@ -31,23 +31,28 @@ self.addEventListener('activate', (event) => {
 // ── Fetch: Network-first for code modules, offline fallback for navigation ──
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
-    const isCodeModule = url.pathname.endsWith('.js') || url.pathname.endsWith('.css');
+    const isCodeModule = event.request.method === 'GET'
+        && url.origin === self.location.origin
+        && (url.pathname.endsWith('.js') || url.pathname.endsWith('.css'));
 
     if (isCodeModule) {
         event.respondWith(
             fetch(event.request)
                 .then((response) => {
                     // Cache the fresh version
-                    const clone = response.clone();
-                    caches.open(CODE_CACHE).then((cache) => {
-                        cache.put(event.request, clone);
-                        // Optional size trim (e.g., limit LRU) could be placed here
-                    });
+                    if (response.ok) {
+                        const clone = response.clone();
+                        event.waitUntil(
+                            caches.open(CODE_CACHE)
+                                .then((cache) => cache.put(event.request, clone))
+                                .catch(() => {})
+                        );
+                    }
                     return response;
                 })
-                .catch(() => {
+                .catch(async () => {
                     // Fallback to cache if network fails
-                    return caches.match(event.request);
+                    return (await caches.match(event.request)) || Response.error();
                 })
         );
         return;
@@ -56,8 +61,8 @@ self.addEventListener('fetch', (event) => {
     // For HTML navigation requests, fall back to offline.html on network failure
     if (event.request.mode === 'navigate') {
         event.respondWith(
-            fetch(event.request).catch(() =>
-                caches.match(OFFLINE_PAGE)
+            fetch(event.request).catch(async () =>
+                (await caches.match(OFFLINE_PAGE)) || Response.error()
             )
         );
     }

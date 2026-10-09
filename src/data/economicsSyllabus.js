@@ -1,5 +1,5 @@
 export const economicsSyllabus = {
-    qualification: 'AL Economics',
+    qualification: 'Pearson Edexcel International A Level Economics',
     source: 'International-A-Level-Economics-spec.pdf (Issue 2, June 2018)',
     units: [
         {

@@ -136,7 +136,7 @@ export const note_business_4_18_1 = {
       data: {
         style: 'tip',
         title: "Examiner Tip",
-        text: "Offshoring = shift production to a company-owned facility abroad (full control, repatriate profits). Outsourcing = contract work to external supplier (cost savings, less control). A business can outsource domestically OR offshore domestically-operated facilities. The distinction hinges on ownership and location."
+        text: "Offshoring = moving an activity abroad; it may remain in-house or use an external provider. Outsourcing = contracting an external provider; that provider may be domestic or abroad. A company-owned overseas factory is offshoring only. Contracting an overseas supplier is both. Location distinguishes offshoring; the use of an external provider distinguishes outsourcing."
       }
     },
     {

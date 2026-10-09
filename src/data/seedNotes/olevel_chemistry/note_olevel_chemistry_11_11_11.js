@@ -49,8 +49,8 @@ export const note_olevel_chemistry_11_11_11 = {
       type: 'svg',
       data: {
         caption: 'Addition vs Condensation Polymerisation basics',
-        svg: `<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="var(--color-surface)" />
+        svg: `<svg viewBox="0 0 646 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)"/>
 
   <!-- Addition Polymerisation -->
   <text x="20" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">Addition Polymerisation (e.g., Ethene → Poly(ethene))</text>
@@ -122,7 +122,7 @@ export const note_olevel_chemistry_11_11_11 = {
   </g>
 
   <g transform="translate(170, 180)">
-    <text x="-15" y="22" font-family="var(--font-mono)" font-size="20" fill="var(--color-text)">+</text>
+    <text x="-30" y="46" font-family="var(--font-mono)" font-size="20" fill="var(--color-text)">+</text>
     <!-- Diol Block -->
     <rect x="0" y="0" width="80" height="30" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
     <text x="40" y="18" font-family="var(--font-sans)" font-size="12" fill="#1e40af" text-anchor="middle">Diol</text>
@@ -159,7 +159,7 @@ export const note_olevel_chemistry_11_11_11 = {
 
   <!-- Water loss highlight box -->
   <path d="M 125 170 Q 150 150, 170 170" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,2"/>
-  <text x="145" y="145" font-family="var(--font-sans)" font-size="12" fill="#d97706" text-anchor="middle">H₂O removed</text>
+  <text x="145" y="165" font-family="var(--font-sans)" font-size="12" fill="#d97706" text-anchor="middle">H₂O removed</text>
 
   <defs>
     <marker id="arrow" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">

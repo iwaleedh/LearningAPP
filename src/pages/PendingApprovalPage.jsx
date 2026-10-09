@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api.js';
 import { useAuth } from '../hooks/useAuth.js';
 import { useFeatureFlags } from '../hooks/useFeatureFlags.js';
+import { AUTH_GATING_HALTED } from '../components/auth/accessControl.js';
+import BrandMark from '../components/common/BrandMark.jsx';
 import {
   Clock, CheckCircle, Upload, FileText, AlertCircle, Loader,
 } from 'lucide-react';
@@ -337,14 +339,18 @@ export default function PendingApprovalPage() {
   const isLegacyApprovalState = accountStatus === 'pending';
   const needsPayment = accountStatus === 'approved' && accessStatus === 'selection_required';
 
-  // Auto-redirect when access is active
+  // Auto-redirect when access is active or auth gating is halted
   useEffect(() => {
-    if (accessStatus === 'active') navigate('/', { replace: true });
+    if (AUTH_GATING_HALTED || accessStatus === 'active') navigate('/', { replace: true });
   }, [accessStatus, navigate]);
 
   useEffect(() => {
     if (isSignedIn === false) navigate('/', { replace: true });
   }, [isSignedIn, navigate]);
+
+  if (AUTH_GATING_HALTED) {
+    return <Navigate to="/" replace />;
+  }
 
   const isBlocked = accountStatus === 'blocked';
 
@@ -370,7 +376,7 @@ export default function PendingApprovalPage() {
             <span className="pending-status-text">Blocked</span>
           </div>
           <button className="btn btn-secondary pending-signout" onClick={signOut}>
-            Sign Out
+            Sign out
           </button>
         </div>
       </div>
@@ -402,7 +408,7 @@ export default function PendingApprovalPage() {
       <div className="payment-page-card card">
         {/* Header */}
         <div className="payment-header">
-          <div className="payment-header-icon">📚</div>
+          <div className="payment-header-icon"><BrandMark size={44} /></div>
           <div>
             <h1 className="payment-title">{headerTitle}</h1>
             <p className="payment-subtitle">{headerSubtitle}</p>

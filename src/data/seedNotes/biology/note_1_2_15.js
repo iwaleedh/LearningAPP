@@ -69,15 +69,6 @@ export const note_biology_1_2_15 = {
         "title": "CFTR Explanation Step-by-Step",
         "text": "A mutated CFTR channel cannot pump chloride ions out of the cell. As a result, the water potential outside doesn't lower, so water does not leave the cells by osmosis, resulting in thick, sticky mucus."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "key",
-        "title": "CFTR Explanation Step-by-Step",
-        "text": "A mutated CFTR channel cannot pump chloride ions out of the cell. As a result, the water potential outside doesn't lower, so water does not leave the cells by osmosis, resulting in thick, sticky mucus."
-      }
     }
   ],
   "recall": {

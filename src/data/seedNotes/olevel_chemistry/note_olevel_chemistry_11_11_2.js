@@ -39,7 +39,7 @@ export const note_olevel_chemistry_11_11_2 = {
       type: 'svg',
       data: {
         caption: 'Bromine Water Test Result',
-        svg: `<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 540 251" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Alkane Test Tube -->

@@ -16,7 +16,6 @@ test('protected content modules use approved-account guards', () => {
   const flashcards = readLocal('./flashcards.ts');
   const assets = readLocal('./assets.ts');
   const attempts = readLocal('./studyAttempts.ts');
-  const liveclass = readLocal('./liveclass.ts');
   const authHelpers = readLocal('./authHelpers.ts');
 
   assert.match(authHelpers, /export async function requireApprovedAuthenticatedUserId\(/);
@@ -25,5 +24,4 @@ test('protected content modules use approved-account guards', () => {
   assert.match(flashcards, /requireApprovedAuthenticatedUserId|requireApprovedMatchingUserId/);
   assert.match(assets, /requireApprovedAuthenticatedUserId|requireApprovedMatchingUserId/);
   assert.match(attempts, /requireApprovedAuthenticatedUserId/);
-  assert.match(liveclass, /requireApprovedAuthenticatedUserId|requireApprovedMatchingUserId/);
 });

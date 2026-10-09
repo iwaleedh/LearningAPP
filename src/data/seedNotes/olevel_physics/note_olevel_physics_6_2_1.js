@@ -39,8 +39,8 @@ export const note_olevel_physics_6_2_1 = {
   <text x="163" y="87" font-size="9" fill="#1d4ed8">violet</text>
   <text x="415" y="87" font-size="9" fill="#dc2626">red</text>
   <!-- Galaxy spectrum (redshifted) -->
-  <text x="30" y="125" font-size="10" fill="#1e293b">Galaxy spectrum</text>
-  <text x="30" y="138" font-size="9" fill="#94a3b8">(receding source)</text>
+  <text x="30" y="96" font-size="10" fill="#1e293b">Galaxy spectrum</text>
+  <text x="30" y="109" font-size="9" fill="#94a3b8">(receding source)</text>
   <rect x="160" y="115" width="280" height="30" fill="url(#spec-red)" rx="3"/>
   <!-- Dark absorption lines (shifted right) -->
   <line x1="255" y1="115" x2="255" y2="145" stroke="black" stroke-width="2.5"/>

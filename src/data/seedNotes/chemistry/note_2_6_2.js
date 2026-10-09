@@ -12,6 +12,21 @@ export const note_chemistry_2_6_2 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Read ΔH and activation energy from different arrows",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "An enthalpy level diagram compares the enthalpy of reactants and products. A reaction profile also shows the energy barrier along a reaction pathway. The vertical axis is enthalpy or energy; the horizontal axis is reaction progress, not elapsed time. ΔH is the difference between product and reactant levels. Activation energy is the rise from a starting level to the top of the barrier.<br/><br/>For an exothermic reaction, products are lower and ΔH is negative. For an endothermic reaction, products are higher and ΔH is positive. A catalyst supplies another pathway with a lower barrier, but does not change the reactant or product levels, ΔH, or the equilibrium constant at a fixed temperature."
+  }
+},
+{
             id: 'h-diagrams',
             type: 'heading',
             data: { text: 'Enthalpy Level Diagrams (Reaction Profiles)', level: 2 },
@@ -67,17 +82,89 @@ export const note_chemistry_2_6_2 = {
             },
             terms: []
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "On a profile, reactants are at 40 kJ mol⁻¹, products at 10 and the peak at 100. ΔH = 10 − 40 = <strong>−30 kJ mol⁻¹</strong>. Forward Eₐ = 100 − 40 = <strong>60 kJ mol⁻¹</strong>. Reverse Eₐ = 100 − 10 = <strong>90 kJ mol⁻¹</strong>. Notice Eₐ(forward) − Eₐ(reverse) = ΔH."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not label the arrow from reactants to products as activation energy. Not every enthalpy level diagram needs a curved energy barrier: include one when a reaction profile or activation energy is requested."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How is ΔH read from an energy profile?",
+        "checked": false
+      },
+      {
+        "text": "What does the horizontal axis represent?",
+        "checked": false
+      },
+      {
+        "text": "How does a catalyst alter the diagram?",
+        "checked": false
+      },
+      {
+        "text": "For levels 40 → peak 100 → products 10, what is reverse Eₐ?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "An enthalpy level diagram compares the enthalpy of reactants and products. A reaction profile also shows the energy barrier along a reaction pathway. The vertical axis is enthalpy or energy; the horizontal axis is reaction progress, not elapsed time. ΔH is the difference between product and reactant levels. Activation energy is the rise from a starting level to the top of the barrier."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'table-diagrams', prompt: 'Describe the relative heights of reactants and products on an enthalpy level diagram for an exothermic reaction. Which way does the ΔH arrow point?' },
-            { id: 'c2', blockId: 'callout-ea', prompt: 'Define activation energy (Ea) and describe how it is shown on an enthalpy level diagram.' },
-            { id: 'c3', blockId: 'callout-drawing', prompt: 'Draw an enthalpy profile for an endothermic reaction, clearly labelling the axes, reactants, products, ΔH, and Ea.' }
-        ],
-        summaryText: 'Enthalpy diagram shows energy vs reaction progress. Exothermic: reactants higher than products, ΔH arrow points down (–). Endothermic: reactants lower than products, ΔH arrow points up (+). Activation Energy (Ea) = minimum energy to start reaction, shown as upward arrow from reactants to peak curve.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How is ΔH read from an energy profile?",
+      "answer": "Product energy minus reactant energy; it is negative when products are lower."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What does the horizontal axis represent?",
+      "answer": "Reaction progress or pathway, not time."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How does a catalyst alter the diagram?",
+      "answer": "It provides a lower-energy pathway while leaving reactant and product energies unchanged."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "For levels 40 → peak 100 → products 10, what is reverse Eₐ?",
+      "answer": "100 − 10 = 90 kJ mol⁻¹."
+    }
+  ],
+  "summaryText": "An enthalpy level diagram compares the enthalpy of reactants and products. A reaction profile also shows the energy barrier along a reaction pathway. The vertical axis is enthalpy or energy; the horizontal axis is reaction progress, not elapsed time. ΔH is the difference between product and reactant levels. Activation energy is the rise from a starting level to the top of the barrier.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_6_2;

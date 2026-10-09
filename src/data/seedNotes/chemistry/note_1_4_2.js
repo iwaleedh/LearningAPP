@@ -5,7 +5,22 @@
 export const note_chemistry_1_4_2 = {
   blocks: [
     { id: 'objective', type: 'objective', data: { text: 'Understand structural isomerism. Draw and name structural isomers. Distinguish between chain isomers, positional isomers, and functional group isomers.' } },
-    { id: 'h-def', type: 'heading', data: { text: 'What is Structural Isomerism?', level: 2 } },
+    {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Check that two structures really are isomers",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Structural isomers have the same molecular formula but different connectivity: atoms are bonded in a different order. Chain isomerism changes the carbon skeleton; position isomerism changes the location of a functional group or substituent; functional-group isomerism changes the functional group. Rotating or flipping a drawing does not create a new structural isomer.<br/><br/>To enumerate alkane isomers, begin with the straight chain, then shorten the parent chain and add the remaining carbons as branches. Check whether each new drawing duplicates an earlier one after renumbering. Confirm the total atom count and that every carbon has four bonds."
+  }
+},
+{ id: 'h-def', type: 'heading', data: { text: 'What is Structural Isomerism?', level: 2 } },
     { id: 'callout-def', type: 'callout', data: {
       style: 'key', title: 'Definition: Structural Isomers',
       text: '<strong>Structural isomers</strong> are compounds with the same <strong>molecular formula</strong> but different <strong>structural formulae</strong> — the atoms are connected in a different order or arrangement.<br/><br/>They have different IUPAC names, different physical properties (bp, mp, solubility), and may have different chemical properties.'
@@ -33,17 +48,88 @@ export const note_chemistry_1_4_2 = {
         text: "Students often draw the same isomer twice simply by bending the carbon chain. Always find the longest continuous chain and name the molecule to check if two drawn structures are actually identical."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "C₅H₁₂ has three structural isomers: <strong>pentane</strong>, <strong>2-methylbutane</strong> and <strong>2,2-dimethylpropane</strong>. “3-methylbutane” is the same connectivity as 2-methylbutane, seen from the opposite end. Butan-1-ol and butan-2-ol are position isomers; ethanol and methoxymethane are functional-group isomers with formula C₂H₆O."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Same empirical formula is insufficient: substances must have the same molecular formula to be structural isomers. Two conformations linked by rotation around a single bond are not different structural isomers."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define structural isomerism.",
+        "checked": false
+      },
+      {
+        "text": "How many alkane structural isomers have formula C₅H₁₂?",
+        "checked": false
+      },
+      {
+        "text": "Why is 3-methylbutane not a fourth isomer?",
+        "checked": false
+      },
+      {
+        "text": "What type of isomerism relates ethanol and methoxymethane?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Structural isomers have the same molecular formula but different connectivity: atoms are bonded in a different order. Chain isomerism changes the carbon skeleton; position isomerism changes the location of a functional group or substituent; functional-group isomerism changes the functional group. Rotating or flipping a drawing does not create a new structural isomer."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'c1', blockId: 'callout-def', prompt: 'Define structural isomers. What do they have in common and how do they differ?' },
-      { id: 'c2', blockId: 'svg-isomer-types', prompt: 'State and define the three types of structural isomerism, giving one example of each.' },
-      { id: 'c3', blockId: 'callout-example-c5h12', prompt: 'Draw and name all three structural isomers of C₅H₁₂. Explain why their boiling points differ.' },
-      { id: 'c4', blockId: 'callout-drawing-tips', prompt: 'What are three key tips to remember when drawing structural isomers in an exam?' }
-    ],
-    summaryText: 'Structural isomers: same molecular formula, different structural arrangement. Three types: chain (different branching), positional (FG in different position on same chain), functional group (different FG entirely). More branching → lower bp (weaker London forces). Check IUPAC names to avoid duplicate structures.',
-    ready: false
-  },
-  evidence: [], mentions: []
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define structural isomerism.",
+      "answer": "The same molecular formula with different connectivity of atoms."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How many alkane structural isomers have formula C₅H₁₂?",
+      "answer": "Three: pentane, 2-methylbutane and 2,2-dimethylpropane."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is 3-methylbutane not a fourth isomer?",
+      "answer": "Renumbering from the opposite end gives 2-methylbutane; the connectivity has not changed."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What type of isomerism relates ethanol and methoxymethane?",
+      "answer": "Functional-group isomerism: both are C₂H₆O, but one is an alcohol and the other an ether."
+    }
+  ],
+  "summaryText": "Structural isomers have the same molecular formula but different connectivity: atoms are bonded in a different order. Chain isomerism changes the carbon skeleton; position isomerism changes the location of a functional group or substituent; functional-group isomerism changes the functional group. Rotating or flipping a drawing does not create a new structural isomer.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}], mentions: []
 };

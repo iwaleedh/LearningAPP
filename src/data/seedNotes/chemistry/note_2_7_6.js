@@ -12,6 +12,21 @@ export const note_chemistry_2_7_6 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Find waters of crystallisation from a mole ratio",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Water of crystallisation is water present in a fixed stoichiometric ratio within a crystalline hydrate. A hydrate’s molar mass includes its water. On controlled heating, some hydrates lose water to form an anhydrous solid. Determine the water lost from the mass difference, convert both water and remaining salt to moles, then calculate the simplest ratio.<br/><br/>Heat, cool and weigh repeatedly to constant mass when suitable for the substance. Cooling before weighing avoids unreliable hot-balance readings. Incomplete drying leaves too much apparent anhydrous salt and too little calculated water; overheating may decompose the salt and invalidate the calculation. Use a desiccator where needed to limit rehydration."
+  }
+},
+{
             id: 'h-hydration',
             type: 'heading',
             data: { text: 'Hydration of Ions', level: 2 },
@@ -55,18 +70,89 @@ export const note_chemistry_2_7_6 = {
             },
             terms: []
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "An illustrative CuSO₄ hydrate sample of 2.50 g leaves 1.60 g anhydrous CuSO₄. Water lost = 0.90 g. n(H₂O) = 0.90/18.0 = 0.050 mol; n(CuSO₄) = 1.60/159.6 = 0.0100 mol. Ratio ≈ 5:1, giving <strong>CuSO₄·5H₂O</strong>. Use the mass of anhydrous salt, not the starting hydrate, in the CuSO₄ mole calculation."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "A lower mass does not always prove that only water was lost. Check that the hydrate can be dehydrated without decomposition. Do not round an uncertain mole ratio before considering the measurement precision."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is water of crystallisation?",
+        "checked": false
+      },
+      {
+        "text": "How is its mole ratio found?",
+        "checked": false
+      },
+      {
+        "text": "Why repeat heating to constant mass?",
+        "checked": false
+      },
+      {
+        "text": "How does incomplete drying affect the calculated water ratio?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Water of crystallisation is water present in a fixed stoichiometric ratio within a crystalline hydrate. A hydrate’s molar mass includes its water. On controlled heating, some hydrates lose water to form an anhydrous solid. Determine the water lost from the mass difference, convert both water and remaining salt to moles, then calculate the simplest ratio."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'p-hydration', prompt: 'Describe how a sodium chloride lattice dissolves in water, mentioning the specific partial charges on the water molecules.' },
-            { id: 'c2', blockId: 'callout-crystallisation', prompt: 'Define "water of crystallisation".' },
-            { id: 'c3', blockId: 'p-example', prompt: 'What is the difference between a hydrated salt and an anhydrous salt?' },
-            { id: 'c4', blockId: 'callout-formula', prompt: 'What does the formula MgSO₄·7H₂O indicate about the composition of the solid?' }
-        ],
-        summaryText: 'When ionic compounds dissolve in water, they become hydrated ions (surrounded by polar water molecules). When crystallising, some salts trap water molecules within their solid lattice (water of crystallisation). A salt with water is "hydrated"; heated to remove the water it becomes "anhydrous". Example formula: CuSO₄·5H₂O.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is water of crystallisation?",
+      "answer": "Water incorporated in a fixed mole ratio in the crystal structure of a hydrate."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How is its mole ratio found?",
+      "answer": "Convert mass lost to moles of water and remaining anhydrous salt to moles, then divide to get the ratio."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why repeat heating to constant mass?",
+      "answer": "To check that further heating no longer removes a measurable amount of water under the chosen conditions."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "How does incomplete drying affect the calculated water ratio?",
+      "answer": "The apparent salt mass is too large and water loss too small, so the calculated waters-per-salt ratio is too low."
+    }
+  ],
+  "summaryText": "Water of crystallisation is water present in a fixed stoichiometric ratio within a crystalline hydrate. A hydrate’s molar mass includes its water. On controlled heating, some hydrates lose water to form an anhydrous solid. Determine the water lost from the mass difference, convert both water and remaining salt to moles, then calculate the simplest ratio.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_7_6;

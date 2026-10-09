@@ -83,7 +83,7 @@ export const note_olevel_physics_4_4_1 = {
       type: 'svg',
       data: {
         caption: 'Fleming\'s Left-Hand Rule — thumb=Force, index=Field, middle=Current',
-        svg: `<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+        svg: `<svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Hand outline (stylised) -->
   <!-- Palm -->
   <rect x="120" y="110" width="80" height="70" rx="15" fill="#44370a" stroke="#d97706" stroke-width="2"/>
@@ -106,10 +106,10 @@ export const note_olevel_physics_4_4_1 = {
   <text x="195" y="85" fill="#d97706" font-weight="bold">F —</text>
   <text x="195" y="100" fill="#d97706">Force</text>
   <!-- 3 arrows showing directions -->
-  <text x="25" y="190" fill="#374151" font-size="10">↑ Field (B) &nbsp;&nbsp; → Force (F) &nbsp;&nbsp; ⊙ Current (I) out of page</text>
+  <text x="25" y="232" fill="#374151" font-size="10">↑ Field (B) &#160;&#160; → Force (F) &#160;&#160; ⊙ Current (I) out of page</text>
   <rect x="5" y="178" width="330" height="35" rx="5" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="15" y="193" fill="#374151" font-size="9">Example: B upward, I out of page → Force to the RIGHT</text>
-  <text x="15" y="208" fill="#374151" font-size="9">Use left hand: first↑ (B), middle⊙ (I) → thumb points right (F)</text>
+  <text x="15" y="193" fill="#374151" font-size="9" style="fill: #f8fafc;">Example: B upward, I out of page → Force to the RIGHT</text>
+  <text x="15" y="208" fill="#374151" font-size="9" style="fill: #f8fafc;">Use left hand: first↑ (B), middle⊙ (I) → thumb points right (F)</text>
 </svg>`,
       },
     },

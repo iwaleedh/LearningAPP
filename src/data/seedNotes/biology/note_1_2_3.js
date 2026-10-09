@@ -68,15 +68,6 @@ export const note_biology_1_2_3 = {
         "title": "Defining Fluid Mosaic",
         "text": "The 'fluid' part refers to the ability of phospholipids and some proteins to move laterally within their layers. 'Mosaic' refers to the random scattering of different proteins embedded in the bilayer."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "key",
-        "title": "Defining Fluid Mosaic",
-        "text": "The 'fluid' part refers to the ability of phospholipids and some proteins to move laterally within their layers. 'Mosaic' refers to the random scattering of different proteins embedded in the bilayer."
-      }
     }
   ],
   "recall": {

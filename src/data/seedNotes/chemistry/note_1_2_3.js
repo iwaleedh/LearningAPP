@@ -12,12 +12,27 @@ export const note_chemistry_1_2_3 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Use the orbital model without overstating the analogy",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "An orbital is a quantum state described by a wavefunction; its squared magnitude gives a probability density for finding an electron. The boundary shapes used in school diagrams enclose a chosen fraction of that probability, often around 90–95%, rather than marking a wall. An electron is not assigned a fixed planetary path. The uncertainty principle limits simultaneous position and momentum precision; it should not be described as ordinary measurement carelessness.<br/><br/>A shell is labelled by principal quantum number n. Subshells contain orbitals: s has one, p has three and d has five. Each orbital holds at most two electrons with opposite spins. Fill lower-energy orbitals first, occupy equivalent orbitals singly before pairing, and use the appropriate ordering for the element or ion. For transition-metal ions, 4s electrons are removed before 3d."
+  }
+},
+{
       id: 'callout-heisenberg',
       type: 'callout',
       data: {
         style: 'key',
         title: 'Orbits vs Orbitals — The Heisenberg Uncertainty Principle',
-        text: '<strong>Classical orbit model (GCSE — incorrect at atomic scale):</strong><br/>At GCSE, electrons are often pictured in fixed circular orbits like planets around the sun. This is fundamentally wrong.<br/><br/><strong>Why definite orbits are impossible:</strong><br/>The <strong>Heisenberg Uncertainty Principle</strong> states that it is impossible to know, simultaneously, both the exact <em>position</em> and the <em>momentum</em> (velocity × mass) of an electron. To plot a definite orbital path you need both — so no definite path exists for an electron.<br/><br/><strong>Instead: Atomic Orbitals (probability regions)</strong><br/>An <strong>orbital</strong> is a three-dimensional region of space around the nucleus where there is a high probability (~95%) of finding an electron at any given instant. It has a defined shape, size and energy — but no fixed path.<br/><br/><strong>Key distinctions:</strong><br/>• <em>Orbit</em> — definite circular/elliptical path (like a planet) → does NOT apply to electrons<br/>• <em>Orbital</em> — probability region with defined shape and energy → correct model for electrons<br/>• Each orbital holds a maximum of <strong>2 electrons</strong> with opposite spins (Pauli Exclusion Principle)<br/><br/><em>If you wanted 100% certainty, the orbital would have to be the size of the universe — in practice we define orbitals as regions containing 95% of the electron probability.</em>'
+        text: "Electrons are described by orbitals rather than fixed planetary paths. An orbital has an associated probability density. School boundary diagrams usually enclose a chosen fraction of that probability, often about 90–95%; there is no sharp wall. The uncertainty principle limits simultaneous precision in position and momentum. Each orbital can hold at most two electrons with opposite spins. See the worked electron-configuration example below."
       },
       terms: ['Heisenberg Uncertainty Principle', 'Orbital']
     },
@@ -71,7 +86,7 @@ export const note_chemistry_1_2_3 = {
       id: 'svg-orbital-shapes',
       type: 'svg',
       data: {
-        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" font-family="Arial,sans-serif"><text x="280" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2937">Shapes of Atomic Orbitals</text><g transform="translate(70,108)"><circle cx="0" cy="0" r="32" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="62" text-anchor="middle" font-weight="bold" font-size="12" fill="#374151">1s</text><text x="0" y="61" text-anchor="middle" font-size="10" fill="#6b7280">sphere</text></g><g transform="translate(190,108)"><circle cx="0" cy="0" r="46" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/><circle cx="0" cy="0" r="20" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="76" text-anchor="middle" font-weight="bold" font-size="12" fill="#374151">2s</text><text x="0" y="74" text-anchor="middle" font-size="10" fill="#6b7280">larger sphere + node</text></g><line x1="253" y1="36" x2="253" y2="188" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="5,3"/><text x="405" y="35" text-anchor="middle" font-size="11" fill="#6b7280">3 p orbitals — mutually perpendicular</text><g transform="translate(315,108)"><ellipse cx="-27" cy="0" rx="26" ry="17" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/><ellipse cx="27" cy="0" rx="26" ry="17" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="32" text-anchor="middle" font-weight="bold" font-size="11" fill="#374151">px</text><text x="0" y="44" text-anchor="middle" font-size="9" fill="#6b7280">along x-axis</text></g><g transform="translate(420,108)"><ellipse cx="0" cy="-27" rx="17" ry="26" fill="#065f46" stroke="#10b981" stroke-width="1.5"/><ellipse cx="0" cy="27" rx="17" ry="26" fill="#065f46" stroke="#10b981" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="76" text-anchor="middle" font-weight="bold" font-size="11" fill="#374151">py</text><text x="0" y="88" text-anchor="middle" font-size="9" fill="#6b7280">along y-axis</text></g><g transform="translate(505,108)"><ellipse cx="0" cy="-27" rx="16" ry="26" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/><ellipse cx="0" cy="27" rx="16" ry="26" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="76" text-anchor="middle" font-weight="bold" font-size="11" fill="#374151">pz</text><text x="0" y="88" text-anchor="middle" font-size="9" fill="#6b7280">along z-axis</text></g></svg>',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 222" font-family="Arial,sans-serif"><text x="280" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2937">Shapes of Atomic Orbitals</text><g transform="translate(70,108)"><circle cx="0" cy="0" r="32" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="62" text-anchor="middle" font-weight="bold" font-size="12" fill="#374151">1s</text><text x="0" y="80" text-anchor="middle" font-size="10" fill="#6b7280">sphere</text></g><g transform="translate(190,108)"><circle cx="0" cy="0" r="46" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/><circle cx="0" cy="0" r="20" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="76" text-anchor="middle" font-weight="bold" font-size="12" fill="#374151">2s</text><text x="0" y="94" text-anchor="middle" font-size="10" fill="#6b7280">larger sphere + node</text></g><line x1="253" y1="36" x2="253" y2="188" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="5,3"/><text x="405" y="35" text-anchor="middle" font-size="11" fill="#6b7280">3 p orbitals — mutually perpendicular</text><g transform="translate(315,108)"><ellipse cx="-27" cy="0" rx="26" ry="17" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/><ellipse cx="27" cy="0" rx="26" ry="17" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="32" text-anchor="middle" font-weight="bold" font-size="11" fill="#374151">px</text><text x="0" y="44" text-anchor="middle" font-size="9" fill="#6b7280">along x-axis</text></g><g transform="translate(420,108)"><ellipse cx="0" cy="-27" rx="17" ry="26" fill="#065f46" stroke="#10b981" stroke-width="1.5"/><ellipse cx="0" cy="27" rx="17" ry="26" fill="#065f46" stroke="#10b981" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="76" text-anchor="middle" font-weight="bold" font-size="11" fill="#374151">py</text><text x="0" y="88" text-anchor="middle" font-size="9" fill="#6b7280">along y-axis</text></g><g transform="translate(505,108)"><ellipse cx="0" cy="-27" rx="16" ry="26" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/><ellipse cx="0" cy="27" rx="16" ry="26" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="#374151"/><text x="0" y="76" text-anchor="middle" font-weight="bold" font-size="11" fill="#374151">pz</text><text x="0" y="88" text-anchor="middle" font-size="9" fill="#6b7280">along z-axis</text></g></svg>`,
         caption: 'Shapes of s and p orbitals. s orbitals are spherical; p orbitals are dumbbell-shaped with two lobes. You must be able to draw and describe these shapes.'
       },
       terms: []
@@ -81,7 +96,7 @@ export const note_chemistry_1_2_3 = {
       type: 'svg',
       data: {
         caption: 'Orbital energy level diagram. Key point: 4s lies at a LOWER energy than 3d during filling (Aufbau order), so 4s fills first. Within each level, s is always lower in energy than p because s electrons can penetrate closer to the nucleus.',
-        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 310" font-family="Arial,sans-serif"><text x="250" y="17" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Orbital Energy Levels and Aufbau Filling Order</text><line x1="44" y1="30" x2="44" y2="288" stroke="#9ca3af" stroke-width="1.5"/><polygon points="44,28 39,40 49,40" fill="#9ca3af"/><text x="24" y="170" text-anchor="middle" font-size="10" fill="#6b7280" transform="rotate(-90,24,170)">Energy (increasing upward)</text><line x1="60" y1="280" x2="150" y2="280" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="284" fill="#3b82f6" font-weight="bold">1s</text><text x="235" y="284" fill="#6b7280" font-size="9">fills 1st</text><line x1="60" y1="254" x2="150" y2="254" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="258" fill="#3b82f6" font-weight="bold">2s</text><text x="235" y="258" fill="#6b7280" font-size="9">penetrates closer to nucleus -- lower than 2p</text><line x1="60" y1="236" x2="97" y2="236" stroke="#10b981" stroke-width="2.5"/><line x1="104" y1="236" x2="141" y2="236" stroke="#10b981" stroke-width="2.5"/><line x1="148" y1="236" x2="185" y2="236" stroke="#10b981" stroke-width="2.5"/><text x="193" y="240" fill="#10b981" font-weight="bold">2p</text><text x="235" y="240" fill="#6b7280" font-size="9">3 degenerate orbitals</text><line x1="60" y1="210" x2="150" y2="210" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="214" fill="#3b82f6" font-weight="bold">3s</text><line x1="60" y1="192" x2="97" y2="192" stroke="#10b981" stroke-width="2.5"/><line x1="104" y1="192" x2="141" y2="192" stroke="#10b981" stroke-width="2.5"/><line x1="148" y1="192" x2="185" y2="192" stroke="#10b981" stroke-width="2.5"/><text x="193" y="196" fill="#10b981" font-weight="bold">3p</text><rect x="55" y="163" width="168" height="17" rx="3" fill="#44370a" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/><line x1="60" y1="172" x2="150" y2="172" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="176" fill="#3b82f6" font-weight="bold">4s</text><text x="232" y="176" fill="#b45309" font-size="9" font-weight="bold">fills BEFORE 3d</text><line x1="60" y1="151" x2="90" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="96" y1="151" x2="126" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="132" y1="151" x2="162" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="168" y1="151" x2="198" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="204" y1="151" x2="234" y2="151" stroke="#f59e0b" stroke-width="2.5"/><text x="242" y="155" fill="#f59e0b" font-weight="bold">3d</text><text x="285" y="155" fill="#6b7280" font-size="9">5 orbitals -- fills after 4s</text><line x1="60" y1="130" x2="97" y2="130" stroke="#10b981" stroke-width="2.5"/><line x1="104" y1="130" x2="141" y2="130" stroke="#10b981" stroke-width="2.5"/><line x1="148" y1="130" x2="185" y2="130" stroke="#10b981" stroke-width="2.5"/><text x="193" y="134" fill="#10b981" font-weight="bold">4p</text><text x="235" y="134" fill="#6b7280" font-size="9">fills after 3d</text><text x="56" y="300" fill="#374151" font-size="9" font-weight="bold">Filling order: 1s to 2s to 2p to 3s to 3p to 4s to 3d to 4p</text><line x1="56" y1="307" x2="80" y2="307" stroke="#3b82f6" stroke-width="2.5"/><text x="84" y="310" fill="#374151" font-size="8">s orbital</text><line x1="135" y1="307" x2="159" y2="307" stroke="#10b981" stroke-width="2.5"/><text x="163" y="310" fill="#374151" font-size="8">p orbitals</text><line x1="222" y1="307" x2="246" y2="307" stroke="#f59e0b" stroke-width="2.5"/><text x="250" y="310" fill="#374151" font-size="8">d orbitals</text></svg>'
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 310" font-family="Arial,sans-serif"><text x="250" y="17" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Orbital Energy Levels and Aufbau Filling Order</text><line x1="44" y1="30" x2="44" y2="288" stroke="#9ca3af" stroke-width="1.5"/><polygon points="44,28 39,40 49,40" fill="#9ca3af"/><text x="24" y="170" text-anchor="middle" font-size="10" fill="#6b7280" transform="rotate(-90,24,170)">Energy (increasing upward)</text><line x1="60" y1="280" x2="150" y2="280" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="284" fill="#3b82f6" font-weight="bold">1s</text><text x="235" y="284" fill="#6b7280" font-size="9">fills 1st</text><line x1="60" y1="254" x2="150" y2="254" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="258" fill="#3b82f6" font-weight="bold">2s</text><text x="235" y="258" fill="#6b7280" font-size="9">penetrates closer to nucleus -- lower than 2p</text><line x1="60" y1="236" x2="97" y2="236" stroke="#10b981" stroke-width="2.5"/><line x1="104" y1="236" x2="141" y2="236" stroke="#10b981" stroke-width="2.5"/><line x1="148" y1="236" x2="185" y2="236" stroke="#10b981" stroke-width="2.5"/><text x="193" y="240" fill="#0f172a" font-weight="bold" style="fill:#0f172a">2p</text><text x="235" y="240" fill="#6b7280" font-size="9">3 degenerate orbitals</text><line x1="60" y1="210" x2="150" y2="210" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="214" fill="#3b82f6" font-weight="bold">3s</text><line x1="60" y1="192" x2="97" y2="192" stroke="#10b981" stroke-width="2.5"/><line x1="104" y1="192" x2="141" y2="192" stroke="#10b981" stroke-width="2.5"/><line x1="148" y1="192" x2="185" y2="192" stroke="#10b981" stroke-width="2.5"/><text x="193" y="196" fill="#0f172a" font-weight="bold" style="fill:#0f172a">3p</text><rect x="55" y="163" width="168" height="17" rx="3" fill="#44370a" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/><line x1="60" y1="172" x2="150" y2="172" stroke="#3b82f6" stroke-width="2.5"/><text x="158" y="176" fill="#3b82f6" font-weight="bold">4s</text><text x="232" y="176" fill="#b45309" font-size="9" font-weight="bold">fills BEFORE 3d</text><line x1="60" y1="151" x2="90" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="96" y1="151" x2="126" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="132" y1="151" x2="162" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="168" y1="151" x2="198" y2="151" stroke="#f59e0b" stroke-width="2.5"/><line x1="204" y1="151" x2="234" y2="151" stroke="#f59e0b" stroke-width="2.5"/><text x="242" y="155" fill="#0f172a" font-weight="bold" style="fill:#0f172a">3d</text><text x="285" y="155" fill="#6b7280" font-size="9">5 orbitals -- fills after 4s</text><line x1="60" y1="130" x2="97" y2="130" stroke="#10b981" stroke-width="2.5"/><line x1="104" y1="130" x2="141" y2="130" stroke="#10b981" stroke-width="2.5"/><line x1="148" y1="130" x2="185" y2="130" stroke="#10b981" stroke-width="2.5"/><text x="193" y="134" fill="#0f172a" font-weight="bold" style="fill:#0f172a">4p</text><text x="235" y="134" fill="#6b7280" font-size="9">fills after 3d</text><text x="56" y="300" fill="#374151" font-size="9" font-weight="bold">Filling order: 1s to 2s to 2p to 3s to 3p to 4s to 3d to 4p</text><line x1="56" y1="307" x2="80" y2="307" stroke="#3b82f6" stroke-width="2.5"/><text x="84" y="310" fill="#374151" font-size="8">s orbital</text><line x1="135" y1="307" x2="159" y2="307" stroke="#10b981" stroke-width="2.5"/><text x="163" y="310" fill="#374151" font-size="8">p orbitals</text><line x1="222" y1="307" x2="246" y2="307" stroke="#f59e0b" stroke-width="2.5"/><text x="250" y="310" fill="#374151" font-size="8">d orbitals</text></svg>`
       },
       terms: []
     },
@@ -99,7 +114,7 @@ export const note_chemistry_1_2_3 = {
       id: 'svg-box-notation',
       type: 'svg',
       data: {
-        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 190" font-family="Arial,sans-serif"><text x="280" y="16" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Orbital Box Diagrams — Filling Rules in Action</text><text x="12" y="44" font-size="11" fill="#374151">Element</text><text x="98" y="44" text-anchor="middle" font-size="11" fill="#374151">1s</text><text x="151" y="44" text-anchor="middle" font-size="11" fill="#374151">2s</text><text x="220" y="44" text-anchor="middle" font-size="10" fill="#374151">2px</text><text x="270" y="44" text-anchor="middle" font-size="10" fill="#374151">2py</text><text x="320" y="44" text-anchor="middle" font-size="10" fill="#374151">2pz</text><text x="390" y="44" font-size="10" fill="#374151">Notes</text><line x1="8" y1="48" x2="552" y2="48" stroke="#d1d5db" stroke-width="1"/><text x="12" y="78" font-size="12" fill="#374151">O (Z=8)</text><rect x="81" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="92" y="76" font-size="15" fill="#2563eb">↑</text><text x="102" y="76" font-size="15" fill="#dc2626">↓</text><rect x="134" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="145" y="76" font-size="15" fill="#2563eb">↑</text><text x="155" y="76" font-size="15" fill="#dc2626">↓</text><rect x="203" y="58" width="34" height="26" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" rx="2"/><text x="214" y="76" font-size="15" fill="#2563eb">↑</text><text x="224" y="76" font-size="15" fill="#dc2626">↓</text><rect x="253" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="264" y="76" font-size="15" fill="#2563eb">↑</text><rect x="303" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="314" y="76" font-size="15" fill="#2563eb">↑</text><text x="350" y="74" font-size="10" fill="#374151">2p4: pair 1st, singly fill rest (Hund)</text><text x="12" y="118" font-size="12" fill="#374151">F (Z=9)</text><rect x="81" y="98" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="92" y="116" font-size="15" fill="#2563eb">↑</text><text x="102" y="116" font-size="15" fill="#dc2626">↓</text><rect x="134" y="98" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="145" y="116" font-size="15" fill="#2563eb">↑</text><text x="155" y="116" font-size="15" fill="#dc2626">↓</text><rect x="203" y="98" width="34" height="26" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" rx="2"/><text x="214" y="116" font-size="15" fill="#2563eb">↑</text><text x="224" y="116" font-size="15" fill="#dc2626">↓</text><rect x="253" y="98" width="34" height="26" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" rx="2"/><text x="264" y="116" font-size="15" fill="#2563eb">↑</text><text x="274" y="116" font-size="15" fill="#dc2626">↓</text><rect x="303" y="98" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="314" y="116" font-size="15" fill="#2563eb">↑</text><text x="350" y="114" font-size="10" fill="#374151">2p5: 2 paired, 1 unpaired</text><text x="12" y="158" font-size="12" fill="#374151">Ne (Z=10)</text><rect x="81" y="138" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="92" y="156" font-size="15" fill="#2563eb">↑</text><text x="102" y="156" font-size="15" fill="#dc2626">↓</text><rect x="134" y="138" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="145" y="156" font-size="15" fill="#2563eb">↑</text><text x="155" y="156" font-size="15" fill="#dc2626">↓</text><rect x="203" y="138" width="34" height="26" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5" rx="2"/><text x="214" y="156" font-size="15" fill="#2563eb">↑</text><text x="224" y="156" font-size="15" fill="#dc2626">↓</text><rect x="253" y="138" width="34" height="26" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5" rx="2"/><text x="264" y="156" font-size="15" fill="#2563eb">↑</text><text x="274" y="156" font-size="15" fill="#dc2626">↓</text><rect x="303" y="138" width="34" height="26" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5" rx="2"/><text x="314" y="156" font-size="15" fill="#2563eb">↑</text><text x="324" y="156" font-size="15" fill="#dc2626">↓</text><text x="350" y="154" font-size="10" fill="#374151">2p6: full (noble gas core)</text><line x1="8" y1="170" x2="552" y2="170" stroke="#d1d5db" stroke-width="1"/><text x="12" y="183" font-size="9" fill="#6b7280">Yellow = paired (Pauli: must be opposite spins). Green = full subshell. Blue arrows = spin-up; red = spin-down.</text></svg>',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 190" font-family="Arial,sans-serif"><text x="280" y="16" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Orbital Box Diagrams — Filling Rules in Action</text><text x="12" y="44" font-size="11" fill="#374151">Element</text><text x="98" y="44" text-anchor="middle" font-size="11" fill="#374151">1s</text><text x="151" y="44" text-anchor="middle" font-size="11" fill="#374151">2s</text><text x="220" y="44" text-anchor="middle" font-size="10" fill="#374151">2px</text><text x="270" y="44" text-anchor="middle" font-size="10" fill="#374151">2py</text><text x="320" y="44" text-anchor="middle" font-size="10" fill="#374151">2pz</text><text x="390" y="44" font-size="10" fill="#374151">Notes</text><line x1="8" y1="48" x2="552" y2="48" stroke="#d1d5db" stroke-width="1"/><text x="12" y="78" font-size="12" fill="#374151">O (Z=8)</text><rect x="81" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="92" y="76" font-size="15" fill="#2563eb">↑</text><text x="102" y="76" font-size="15" fill="#dc2626">↓</text><rect x="134" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="145" y="76" font-size="15" fill="#2563eb">↑</text><text x="155" y="76" font-size="15" fill="#dc2626">↓</text><rect x="203" y="58" width="34" height="26" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" rx="2"/><text x="214" y="76" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↑</text><text x="224" y="76" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↓</text><rect x="253" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="264" y="76" font-size="15" fill="#2563eb">↑</text><rect x="303" y="58" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="314" y="76" font-size="15" fill="#2563eb">↑</text><text x="350" y="74" font-size="10" fill="#374151">2p4: pair 1st, singly fill rest (Hund)</text><text x="12" y="118" font-size="12" fill="#374151">F (Z=9)</text><rect x="81" y="98" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="92" y="116" font-size="15" fill="#2563eb">↑</text><text x="102" y="116" font-size="15" fill="#dc2626">↓</text><rect x="134" y="98" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="145" y="116" font-size="15" fill="#2563eb">↑</text><text x="155" y="116" font-size="15" fill="#dc2626">↓</text><rect x="203" y="98" width="34" height="26" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" rx="2"/><text x="214" y="116" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↑</text><text x="224" y="116" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↓</text><rect x="253" y="98" width="34" height="26" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" rx="2"/><text x="264" y="116" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↑</text><text x="274" y="116" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↓</text><rect x="303" y="98" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="314" y="116" font-size="15" fill="#2563eb">↑</text><text x="350" y="114" font-size="10" fill="#374151">2p5: 2 paired, 1 unpaired</text><text x="12" y="158" font-size="12" fill="#374151">Ne (Z=10)</text><rect x="81" y="138" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="92" y="156" font-size="15" fill="#2563eb">↑</text><text x="102" y="156" font-size="15" fill="#dc2626">↓</text><rect x="134" y="138" width="34" height="26" fill="none" stroke="#9ca3af" stroke-width="1.2" rx="2"/><text x="145" y="156" font-size="15" fill="#2563eb">↑</text><text x="155" y="156" font-size="15" fill="#dc2626">↓</text><rect x="203" y="138" width="34" height="26" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5" rx="2"/><text x="214" y="156" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↑</text><text x="224" y="156" font-size="15" fill="#dc2626">↓</text><rect x="253" y="138" width="34" height="26" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5" rx="2"/><text x="264" y="156" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↑</text><text x="274" y="156" font-size="15" fill="#dc2626">↓</text><rect x="303" y="138" width="34" height="26" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5" rx="2"/><text x="314" y="156" font-size="15" fill="#f8fafc" style="fill:#f8fafc">↑</text><text x="324" y="156" font-size="15" fill="#dc2626">↓</text><text x="350" y="154" font-size="10" fill="#374151">2p6: full (noble gas core)</text><line x1="8" y1="170" x2="552" y2="170" stroke="#d1d5db" stroke-width="1"/><text x="12" y="183" font-size="9" fill="#6b7280">Yellow = paired (Pauli: must be opposite spins). Green = full subshell. Blue arrows = spin-up; red = spin-down.</text></svg>`,
         caption: 'Orbital box diagrams for O, F and Ne demonstrating Hund rule (singly fill before pairing) and Pauli exclusion principle (opposite spins when paired).'
       },
       terms: []
@@ -254,7 +269,7 @@ export const note_chemistry_1_2_3 = {
       type: 'svg',
       data: {
         caption: 'Blocks of the periodic table — colour-coded by which subshell the outermost electron occupies.',
-        svg: `<svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+        svg: `<svg viewBox="-55 0 575 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- s-block column header -->
   <rect x="10" y="10" width="90" height="28" rx="4" fill="#3b82f6"/>
   <text x="55" y="28" text-anchor="middle" fill="#1e293b" font-weight="bold">s-block</text>
@@ -262,23 +277,23 @@ export const note_chemistry_1_2_3 = {
 
   <!-- d-block column header -->
   <rect x="170" y="10" width="160" height="28" rx="4" fill="#78350f"/>
-  <text x="250" y="28" text-anchor="middle" fill="#1e293b" font-weight="bold">d-block</text>
-  <text x="250" y="38" text-anchor="middle" fill="#78350f" font-size="9">Transition metals (Period 4+)</text>
+  <text x="250" y="28" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">d-block</text>
+  <text x="250" y="38" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Transition metals (Period 4+)</text>
 
   <!-- p-block column header -->
   <rect x="390" y="10" width="120" height="28" rx="4" fill="#14532d"/>
-  <text x="450" y="28" text-anchor="middle" fill="#1e293b" font-weight="bold">p-block</text>
-  <text x="450" y="38" text-anchor="middle" fill="#0a2e1a" font-size="9">Groups 3–8</text>
+  <text x="450" y="28" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">p-block</text>
+  <text x="450" y="38" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Groups 3–8</text>
 
   <!-- Period 1 -->
-  <text x="5" y="68" fill="#64748b" font-size="9">Period 1</text>
+  <text x="-48" y="68" fill="#64748b" font-size="9">Period 1</text>
   <rect x="10" y="55" width="40" height="22" rx="3" fill="#60a5fa"/>
   <text x="30" y="70" text-anchor="middle" fill="#1e293b">H</text>
   <rect x="430" y="55" width="40" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="450" y="70" text-anchor="middle" fill="#1e293b">He</text>
+  <text x="450" y="70" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">He</text>
 
   <!-- Period 2 -->
-  <text x="5" y="97" fill="#64748b" font-size="9">Period 2</text>
+  <text x="-48" y="97" fill="#64748b" font-size="9">Period 2</text>
   <rect x="10" y="84" width="40" height="22" rx="3" fill="#60a5fa"/>
   <text x="30" y="99" text-anchor="middle" fill="#1e293b">Li</text>
   <rect x="55" y="84" width="40" height="22" rx="3" fill="#60a5fa"/>
@@ -286,18 +301,18 @@ export const note_chemistry_1_2_3 = {
   <rect x="170" y="84" width="160" height="22" rx="3" fill="#1e293b" stroke="#d1d5db"/>
   <text x="250" y="99" text-anchor="middle" fill="#9ca3af" font-size="9">— no d-block in Period 2 —</text>
   <rect x="390" y="84" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="400" y="99" text-anchor="middle" fill="#1e293b">B</text>
+  <text x="400" y="99" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">B</text>
   <rect x="415" y="84" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="425" y="99" text-anchor="middle" fill="#1e293b">C</text>
+  <text x="425" y="99" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">C</text>
   <rect x="440" y="84" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="450" y="99" text-anchor="middle" fill="#1e293b">N</text>
+  <text x="450" y="99" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">N</text>
   <rect x="465" y="84" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="475" y="99" text-anchor="middle" fill="#1e293b">O</text>
+  <text x="475" y="99" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
   <rect x="490" y="84" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="500" y="99" text-anchor="middle" fill="#1e293b">Ne</text>
+  <text x="500" y="99" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Ne</text>
 
   <!-- Period 3 -->
-  <text x="5" y="126" fill="#64748b" font-size="9">Period 3</text>
+  <text x="-48" y="126" fill="#64748b" font-size="9">Period 3</text>
   <rect x="10" y="113" width="40" height="22" rx="3" fill="#60a5fa"/>
   <text x="30" y="128" text-anchor="middle" fill="#1e293b">Na</text>
   <rect x="55" y="113" width="40" height="22" rx="3" fill="#60a5fa"/>
@@ -305,34 +320,34 @@ export const note_chemistry_1_2_3 = {
   <rect x="170" y="113" width="160" height="22" rx="3" fill="#1e293b" stroke="#d1d5db"/>
   <text x="250" y="128" text-anchor="middle" fill="#9ca3af" font-size="9">— no d-block in Period 3 —</text>
   <rect x="390" y="113" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="400" y="128" text-anchor="middle" fill="#1e293b">Al</text>
+  <text x="400" y="128" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Al</text>
   <rect x="415" y="113" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="425" y="128" text-anchor="middle" fill="#1e293b">Si</text>
+  <text x="425" y="128" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Si</text>
   <rect x="440" y="113" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="450" y="128" text-anchor="middle" fill="#1e293b">P</text>
+  <text x="450" y="128" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">P</text>
   <rect x="465" y="113" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="475" y="128" text-anchor="middle" fill="#1e293b">Cl</text>
+  <text x="475" y="128" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl</text>
   <rect x="490" y="113" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="500" y="128" text-anchor="middle" fill="#1e293b">Ar</text>
+  <text x="500" y="128" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Ar</text>
 
   <!-- Period 4 -->
-  <text x="5" y="155" fill="#64748b" font-size="9">Period 4</text>
+  <text x="-48" y="155" fill="#64748b" font-size="9">Period 4</text>
   <rect x="10" y="142" width="40" height="22" rx="3" fill="#60a5fa"/>
   <text x="30" y="157" text-anchor="middle" fill="#1e293b">K</text>
   <rect x="55" y="142" width="40" height="22" rx="3" fill="#60a5fa"/>
   <text x="75" y="157" text-anchor="middle" fill="#1e293b">Ca</text>
   <rect x="170" y="142" width="160" height="22" rx="3" fill="#78350f"/>
-  <text x="250" y="157" text-anchor="middle" fill="#1e293b" font-weight="bold">Sc → Zn (3d filling)</text>
+  <text x="250" y="157" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Sc → Zn (3d filling)</text>
   <rect x="390" y="142" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="400" y="157" text-anchor="middle" fill="#1e293b">Ga</text>
+  <text x="400" y="157" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Ga</text>
   <rect x="415" y="142" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="425" y="157" text-anchor="middle" fill="#1e293b">As</text>
+  <text x="425" y="157" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">As</text>
   <rect x="440" y="142" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="450" y="157" text-anchor="middle" fill="#1e293b">Br</text>
+  <text x="450" y="157" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Br</text>
   <rect x="465" y="142" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="475" y="157" text-anchor="middle" fill="#1e293b">Se</text>
+  <text x="475" y="157" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Se</text>
   <rect x="490" y="142" width="20" height="22" rx="3" fill="#0a4a1a"/>
-  <text x="500" y="157" text-anchor="middle" fill="#1e293b">Kr</text>
+  <text x="500" y="157" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Kr</text>
 
   <!-- Legend -->
   <rect x="10" y="178" width="12" height="12" rx="2" fill="#60a5fa"/>
@@ -411,32 +426,89 @@ export const note_chemistry_1_2_3 = {
       },
       terms: []
     },
-    {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Heisenberg Uncertainty Principle: cannot simultaneously know position and momentum of an electron → no definite orbits → orbitals are 3D probability regions (~95%). Shell capacity: 2n². Subshells: s (1 orbital, max 2e), p (3, max 6e), d (5, max 10e), f (7, max 14e). Aufbau order: 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p. Hund\'s rule: singly fill before pairing; Pauli: max 2e per orbital with opposite spins. Exceptions: Cr = [Ar] 3d⁵ 4s¹; Cu = [Ar] 3d¹⁰ 4s¹. Abbreviated notation: replace inner noble gas core with [Ar], [Ne] etc. Ion configs: transition metals lose 4s electrons FIRST — Fe²⁺ = [Ar] 3d⁶; Fe³⁺ = [Ar] 3d⁵; Cu²⁺ = [Ar] 3d⁹. Periodic table blocks: s (Gps 1–2), p (Gps 3–8), d (transition metals, Period 4+). Outer p-block config shortcut: (period)s² (period)p^(group−2).'
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Nitrogen has seven electrons: <strong>1s² 2s² 2p³</strong>. The three 2p electrons occupy separate p orbitals with parallel spins, rather than pairing two in one orbital first. Fe is [Ar]3d⁶4s², while Fe²⁺ is [Ar]3d⁶: remove two 4s electrons. Counting total electrons is a final check."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "An orbital is not a sharply bounded container, and “100% probability would require an orbital the size of the universe” is not a useful definition. Do not assume orbital-energy ordering is identical for neutral atoms and their ions."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How many orbitals are in s, p and d subshells?",
+        "checked": false
       },
-      terms: []
-    }
+      {
+        "text": "How are nitrogen’s 2p³ electrons arranged?",
+        "checked": false
+      },
+      {
+        "text": "What does an orbital boundary diagram represent?",
+        "checked": false
+      },
+      {
+        "text": "Which electrons are removed first to form Fe²⁺?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "An orbital is a quantum state described by a wavefunction; its squared magnitude gives a probability density for finding an electron. The boundary shapes used in school diagrams enclose a chosen fraction of that probability, often around 90–95%, rather than marking a wall. An electron is not assigned a fixed planetary path. The uncertainty principle limits simultaneous position and momentum precision; it should not be described as ordinary measurement carelessness."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'c1', blockId: 'table-subshells', prompt: 'How many orbitals are in a p subshell? What is the maximum number of electrons it can hold?' },
-      { id: 'c2', blockId: 'callout-filling', prompt: 'State the electron filling order up to 4p. Which fills first: 4s or 3d?' },
-      { id: 'c3', blockId: 'callout-exceptions', prompt: 'Write the full electronic configuration of chromium (Z = 24) and explain why it is anomalous.' },
-      { id: 'c4', blockId: 'callout-pq-ec1', prompt: 'Write the full spdf configuration of zinc (Z = 30), showing why 4s fills before 3d.' },
-      { id: 'c5', blockId: 'callout-pq-ec3', prompt: 'Write the full configuration of Fe (Z = 26). Is it an exception to Aufbau? Explain.' },
-      { id: 'c6', blockId: 'callout-filling', prompt: 'State the three rules for filling orbitals. What does the Pauli exclusion principle say about electrons sharing an orbital?' },
-      { id: 'c7', blockId: 'callout-4s3d-transition', prompt: 'Write electron configurations of K (Z=19), Ca (Z=20) and Sc (Z=21). Why does 4s fill before 3d?' },
-      { id: 'c8', blockId: 'callout-outer-ec', prompt: 'Arsenic is in Group 5, Period 4. Use group and period numbers to determine its outer electronic configuration. Draw the box notation for the 4p subshell.' },
-      { id: 'c9', blockId: 'callout-heisenberg', prompt: 'Explain the difference between an orbit and an orbital. Why can electrons not have definite orbits around the nucleus? State the Heisenberg Uncertainty Principle.' }
-    ],
-    summaryText: 'Heisenberg UP: cannot simultaneously know an electron\'s position and momentum → no definite orbits → orbitals are probability regions (~95%) with defined shape and energy. Shells n=1,2,3 contain subshells (s×1, p×3, d×5, f×7 orbitals). At each level, s is lower energy than p (s electrons penetrate closer to nucleus). Three filling rules: (1) Aufbau — 1s→2s→2p→3s→3p→4s→3d→4p. (2) Hund — singly fill before pairing. (3) Pauli — max 2 per orbital, opposite spins. GCSE 2-8-8 breaks down at Z>18 — K fills 4s not 3d. Exceptions: Cr ([Ar]3d⁵4s¹), Cu ([Ar]3d¹⁰4s¹). Blocks: s (Groups 1–2), p (Groups 3–8), d (transition metals, Period 4+). Outer config shortcut (p-block): (period)s² (period)p^(group-2). Example: As (Group 5, Period 4) = 4s² 4p³.',
-    ready: true
-  },
-  evidence: []
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How many orbitals are in s, p and d subshells?",
+      "answer": "One, three and five respectively, with capacities of 2, 6 and 10 electrons."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How are nitrogen’s 2p³ electrons arranged?",
+      "answer": "One in each of the three equivalent p orbitals, with parallel spins before pairing."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What does an orbital boundary diagram represent?",
+      "answer": "A region enclosing a chosen fraction of the electron probability density, not a solid boundary or fixed path."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Which electrons are removed first to form Fe²⁺?",
+      "answer": "The two 4s electrons, leaving [Ar]3d⁶."
+    }
+  ],
+  "summaryText": "An orbital is a quantum state described by a wavefunction; its squared magnitude gives a probability density for finding an electron. The boundary shapes used in school diagrams enclose a chosen fraction of that probability, often around 90–95%, rather than marking a wall. An electron is not assigned a fixed planetary path. The uncertainty principle limits simultaneous position and momentum precision; it should not be described as ordinary measurement carelessness.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_1_2_3;

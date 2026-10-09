@@ -16,7 +16,7 @@ export const note_olevel_chemistry_9_9_3 = {
       type: 'svg',
       data: {
         caption: 'The Reactivity Series of metals, showing reaction tendencies with water and acids.',
-        svg: `<svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 532 380" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Title -->

@@ -64,7 +64,7 @@ export const note_physics_4_17_0 = {
   <line x1="200" y1="145" x2="257" y2="50" stroke="#3b82f6" stroke-width="2.5"/>
   <path d="M 240 145 A 40 40 0 0 0 224 108" fill="none" stroke="#f59e0b" stroke-width="2"/>
   <text x="248" y="115" font-family="Arial" font-size="16" fill="#f59e0b" font-weight="bold">θ</text>
-  <text x="305" y="100" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">s (arc length)</text>
+  <text x="280" y="43" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">s (arc length)</text>
   <text x="20" y="36" font-family="Arial" font-size="15" fill="#1e293b" font-weight="bold">θ = s/r (radians)</text>
   <text x="345" y="60" font-family="Arial" font-size="13" fill="#334155" font-weight="bold">Key angles:</text>
   <text x="345" y="82" font-family="Arial" font-size="12" fill="#475569">360° = 2π rad</text>

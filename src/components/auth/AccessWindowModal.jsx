@@ -116,13 +116,13 @@ export default function AccessWindowModal({
         <div className="access-window-footer">
           {isSelectionMode ? (
             <button type="button" className="btn btn-ghost access-window-signout" disabled={busy} onClick={onSignOut}>
-              <LogOut size={16} /> Sign Out
+              <LogOut size={16} /> Sign out
             </button>
           ) : (
             <>
               <button type="button" className="btn btn-secondary" onClick={onClose}>Continue</button>
               <button type="button" className="btn btn-ghost access-window-signout" onClick={onSignOut}>
-                <LogOut size={16} /> Sign Out
+                <LogOut size={16} /> Sign out
               </button>
             </>
           )}

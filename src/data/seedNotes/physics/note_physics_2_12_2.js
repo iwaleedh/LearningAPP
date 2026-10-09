@@ -28,9 +28,9 @@ export const note_physics_2_12_2 = {
       id: "enr-svg-standing",
       type: "svg",
       data: {
-        svg: `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;border-radius:10px;font-family:sans-serif;">
+        svg: `<svg viewBox="0 -40 520 320" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;border-radius:10px;font-family:sans-serif;"><rect x="0" y="-40" width="520" height="40" fill="#fff"/>
   <!-- Title -->
-  <text x="260" y="22" fill="#1e293b" font-size="13" font-weight="bold" text-anchor="middle">Harmonics on a Stretched String</text>
+
 
   <!-- === ROW 1: Fundamental f₁ === -->
   <text x="10" y="60" fill="#94a3b8" font-size="11">1st harmonic (f₁)</text>
@@ -57,14 +57,14 @@ export const note_physics_2_12_2 = {
   <!-- Two half-loops -->
   <path d="M60 163 Q155 128 250 163 Q345 198 440 163" stroke="#34d399" stroke-width="2.5" fill="none"/>
   <!-- Nodes -->
-  <circle cx="60"  cy="163" r="5" fill="none" stroke="#f472b6" stroke-width="2"/>
+  <circle cx="60" cy="163" r="5" fill="none" stroke="#f472b6" stroke-width="2"/>
   <circle cx="250" cy="163" r="5" fill="none" stroke="#f472b6" stroke-width="2"/>
   <circle cx="440" cy="163" r="5" fill="none" stroke="#f472b6" stroke-width="2"/>
   <!-- Antinodes -->
   <circle cx="155" cy="136" r="5" fill="#34d399" stroke="none"/>
   <circle cx="345" cy="190" r="5" fill="#34d399" stroke="none"/>
   <!-- Labels -->
-  <text x="57"  y="181" fill="#f472b6" font-size="10" text-anchor="middle">N</text>
+  <text x="57" y="181" fill="#f472b6" font-size="10" text-anchor="middle">N</text>
   <text x="250" y="181" fill="#f472b6" font-size="10" text-anchor="middle">N</text>
   <text x="443" y="181" fill="#f472b6" font-size="10" text-anchor="middle">N</text>
   <text x="155" y="124" fill="#34d399" font-size="10" text-anchor="middle">A</text>
@@ -77,7 +77,7 @@ export const note_physics_2_12_2 = {
   <!-- Three half-loops -->
   <path d="M60 249 Q113 224 167 249 Q220 274 273 249 Q327 224 380 249 Q406 262 440 249" stroke="#fb923c" stroke-width="2.5" fill="none"/>
   <!-- Nodes -->
-  <circle cx="60"  cy="249" r="4" fill="none" stroke="#f472b6" stroke-width="2"/>
+  <circle cx="60" cy="249" r="4" fill="none" stroke="#f472b6" stroke-width="2"/>
   <circle cx="167" cy="249" r="4" fill="none" stroke="#f472b6" stroke-width="2"/>
   <circle cx="273" cy="249" r="4" fill="none" stroke="#f472b6" stroke-width="2"/>
   <circle cx="380" cy="249" r="4" fill="none" stroke="#f472b6" stroke-width="2"/>
@@ -90,10 +90,10 @@ export const note_physics_2_12_2 = {
 
   <!-- Arrow markers -->
   <defs>
-    <marker id="arr"  markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#78350f"/></marker>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#78350f"/></marker>
     <marker id="arrL" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M0,0 L6,3 L0,6 Z" fill="#78350f"/></marker>
   </defs>
-</svg>`,
+<text x="260" y="-12" fill="#0f172a" font-size="13" font-weight="bold" text-anchor="middle" style="fill: #0f172a;">Harmonics on a Stretched String</text></svg>`,
         caption: "Harmonics on a stretched string"
       },
       terms: []

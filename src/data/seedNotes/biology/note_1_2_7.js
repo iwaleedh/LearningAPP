@@ -62,15 +62,6 @@ export const note_biology_1_2_7 = {
         "title": "Peptide Bond Formation",
         "text": "Always specify that a peptide bond is formed by a condensation reaction between the amine group (-NH2) of one amino acid and the carboxyl group (-COOH) of another, releasing a molecule of water."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "key",
-        "title": "Peptide Bond Formation",
-        "text": "Always specify that a peptide bond is formed by a condensation reaction between the amine group (-NH2) of one amino acid and the carboxyl group (-COOH) of another, releasing a molecule of water."
-      }
     }
   ],
   "recall": {

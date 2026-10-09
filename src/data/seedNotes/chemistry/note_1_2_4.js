@@ -271,10 +271,10 @@ export const note_chemistry_1_2_4 = {
   <rect x="8" y="8" width="292" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="8" y="8" width="292" height="28" rx="8" fill="#3b82f6" fill-opacity="0.5"/>
   <rect x="8" y="26" width="292" height="10" fill="#3b82f6" fill-opacity="0.5"/>
-  <text x="154" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Three Factors Controlling IE₁</text>
+  <text x="154" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Three Factors Controlling IE₁</text>
   <circle cx="154" cy="160" r="30" fill="#1e293b" opacity="1"/>
-  <text x="154" y="156" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e293b">Nucleus</text>
-  <text x="154" y="168" text-anchor="middle" font-size="8" fill="#1e293b">Z protons</text>
+  <text x="154" y="156" text-anchor="middle" font-size="9" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Nucleus</text>
+  <text x="154" y="168" text-anchor="middle" font-size="8" fill="#f8fafc" style="fill:#f8fafc">Z protons</text>
   <circle cx="154" cy="160" r="60" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
   <circle cx="154" cy="160" r="85" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
   <circle cx="154" cy="75" r="6" fill="#ef4444"/>
@@ -286,66 +286,66 @@ export const note_chemistry_1_2_4 = {
   </defs>
   <line x1="154" y1="130" x2="154" y2="100" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/>
   <rect x="16" y="46" width="116" height="46" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="74" y="60" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">① Nuclear charge (Z)</text>
-  <text x="74" y="73" text-anchor="middle" font-size="9" fill="#374151">Higher Z → stronger</text>
-  <text x="74" y="85" text-anchor="middle" font-size="9" fill="#374151">pull on electrons → ↑IE</text>
+  <text x="74" y="60" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">① Nuclear charge (Z)</text>
+  <text x="74" y="73" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Higher Z → stronger</text>
+  <text x="74" y="85" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">pull on electrons → ↑IE</text>
   <line x1="132" y1="79" x2="148" y2="120" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr-dn)"/>
   <rect x="16" y="200" width="116" height="44" rx="5" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
   <text x="74" y="214" text-anchor="middle" font-size="10" font-weight="bold" fill="#dc2626">② Atomic radius (r)</text>
-  <text x="74" y="227" text-anchor="middle" font-size="9" fill="#374151">Larger r → e⁻ further</text>
-  <text x="74" y="239" text-anchor="middle" font-size="9" fill="#374151">from nucleus → ↓IE</text>
+  <text x="74" y="227" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Larger r → e⁻ further</text>
+  <text x="74" y="239" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">from nucleus → ↓IE</text>
   <line x1="132" y1="222" x2="148" y2="200" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr-up)"/>
   <rect x="172" y="200" width="120" height="44" rx="5" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
-  <text x="232" y="214" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">③ Shielding</text>
-  <text x="232" y="227" text-anchor="middle" font-size="9" fill="#374151">Inner e⁻ shield outer</text>
-  <text x="232" y="239" text-anchor="middle" font-size="9" fill="#374151">e⁻ from nucleus → ↓IE</text>
+  <text x="232" y="214" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">③ Shielding</text>
+  <text x="232" y="227" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Inner e⁻ shield outer</text>
+  <text x="232" y="239" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">e⁻ from nucleus → ↓IE</text>
   <line x1="210" y1="207" x2="183" y2="192" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr-dn)"/>
   <rect x="62" y="265" width="184" height="20" rx="4" fill="#44370a"/>
-  <text x="154" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#92400e">Going down a group: r↑ and shielding↑ dominate over Z↑</text>
+  <text x="154" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Going down a group: r↑ and shielding↑ dominate over Z↑</text>
   <rect x="316" y="8" width="296" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="316" y="8" width="296" height="28" rx="8" fill="#ef4444" fill-opacity="0.4"/>
   <rect x="316" y="26" width="296" height="10" fill="#ef4444" fill-opacity="0.4"/>
-  <text x="464" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">IE₁ Trend Down Group 1</text>
-  <text x="324" y="52" font-size="10" fill="#374151" font-weight="bold">Element</text>
-  <text x="394" y="52" text-anchor="middle" font-size="10" fill="#374151" font-weight="bold">IE₁ / kJ mol⁻¹</text>
-  <text x="510" y="52" font-size="10" fill="#374151" font-weight="bold">Reason for ↓</text>
+  <text x="464" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">IE₁ Trend Down Group 1</text>
+  <text x="324" y="52" font-size="10" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Element</text>
+  <text x="394" y="52" text-anchor="middle" font-size="10" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">IE₁ / kJ mol⁻¹</text>
+  <text x="510" y="52" font-size="10" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Reason for ↓</text>
   <line x1="324" y1="56" x2="604" y2="56" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="324" y="58" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
-  <text x="338" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Li</text>
-  <text x="394" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">520</text>
+  <text x="338" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Li</text>
+  <text x="394" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">520</text>
   <rect x="360" y="64" width="104" height="12" rx="2" fill="#3b82f6" opacity="0.55"/>
-  <text x="480" y="75" font-size="9" fill="#374151">2 shells, r small</text>
+  <text x="480" y="75" font-size="9" fill="#f8fafc" style="fill:#f8fafc">2 shells, r small</text>
   <line x1="324" y1="86" x2="604" y2="86" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="88" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
-  <text x="338" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Na</text>
-  <text x="394" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">496</text>
+  <text x="338" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Na</text>
+  <text x="394" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">496</text>
   <rect x="360" y="94" width="99" height="12" rx="2" fill="#3b82f6" opacity="0.43"/>
-  <text x="480" y="105" font-size="9" fill="#374151">3 shells, n=3</text>
+  <text x="480" y="105" font-size="9" fill="#f8fafc" style="fill:#f8fafc">3 shells, n=3</text>
   <line x1="324" y1="116" x2="604" y2="116" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="118" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
-  <text x="338" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">K</text>
-  <text x="394" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">419</text>
+  <text x="338" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">K</text>
+  <text x="394" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">419</text>
   <rect x="360" y="124" width="84" height="12" rx="2" fill="#3b82f6" opacity="0.36"/>
-  <text x="480" y="135" font-size="9" fill="#374151">4 shells, more shielding</text>
+  <text x="480" y="135" font-size="9" fill="#f8fafc" style="fill:#f8fafc">4 shells, more shielding</text>
   <line x1="324" y1="146" x2="604" y2="146" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="148" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
-  <text x="338" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Rb</text>
-  <text x="394" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">403</text>
+  <text x="338" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Rb</text>
+  <text x="394" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">403</text>
   <rect x="360" y="154" width="81" height="12" rx="2" fill="#3b82f6" opacity="0.32"/>
-  <text x="480" y="165" font-size="9" fill="#374151">5 shells, r larger</text>
+  <text x="480" y="165" font-size="9" fill="#f8fafc" style="fill:#f8fafc">5 shells, r larger</text>
   <line x1="324" y1="176" x2="604" y2="176" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="178" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
-  <text x="338" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Cs</text>
-  <text x="394" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">376</text>
+  <text x="338" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Cs</text>
+  <text x="394" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">376</text>
   <rect x="360" y="184" width="75" height="12" rx="2" fill="#3b82f6" opacity="0.26"/>
-  <text x="480" y="195" font-size="9" fill="#374151">6 shells, r largest</text>
+  <text x="480" y="195" font-size="9" fill="#f8fafc" style="fill:#f8fafc">6 shells, r largest</text>
   <line x1="324" y1="206" x2="604" y2="206" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="360" y="224" font-size="9" fill="#374151">← bar width ∝ IE₁ value</text>
+  <text x="360" y="224" font-size="9" fill="#f8fafc" style="fill:#f8fafc">← bar width ∝ IE₁ value</text>
   <rect x="324" y="234" width="272" height="56" rx="6" fill="#3d1212" stroke="#ef4444" stroke-width="1"/>
   <text x="460" y="250" text-anchor="middle" font-size="10" font-weight="bold" fill="#dc2626">Why IE₁ decreases down Group 1:</text>
-  <text x="336" y="264" font-size="9" fill="#374151">• Each period adds a new shell → r increases</text>
-  <text x="336" y="277" font-size="9" fill="#374151">• More inner shells → greater shielding</text>
-  <text x="336" y="290" font-size="9" fill="#374151">• These effects outweigh the increase in Z</text>
+  <text x="336" y="264" font-size="9" fill="#f8fafc" style="fill:#f8fafc">• Each period adds a new shell → r increases</text>
+  <text x="336" y="277" font-size="9" fill="#f8fafc" style="fill:#f8fafc">• More inner shells → greater shielding</text>
+  <text x="336" y="290" font-size="9" fill="#f8fafc" style="fill:#f8fafc">• These effects outweigh the increase in Z</text>
 </svg>`
       },
       terms: []

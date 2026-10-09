@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Pen, Highlighter, Type, Square, Circle, Minus, Eraser, MousePointer2,
-    Undo2, Redo2, Trash2, Save, Download, X, ChevronLeft, ChevronRight, Share2, Radio } from 'lucide-react';
-import FontPicker from '../liveclass/FontPicker.jsx';
-import { DEFAULT_TEXT_FONT, getLiveClassFontLabel } from '../liveclass/fontDefaults.js';
+    Undo2, Redo2, Trash2, Save, Download, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import FontPicker from './FontPicker.jsx';
+import { DEFAULT_TEXT_FONT, getFontLabel } from './fontDefaults.js';
 
 const PRESET_COLORS = [
     { value: '#ef4444', label: 'Red', swatchClass: 'annotate-color-swatch--red' },
@@ -40,14 +40,13 @@ export default function AnnotationToolbar({
     saveStatus, dirty,
     paperTitle, currentPage, pageCount,
     onPrevPage, onNextPage,
-    activeSession, participantCount, pendingInviteCount, onShareOpen,
 }) {
     const [showFontPicker, setShowFontPicker] = useState(false);
     const saveLabel = saveStatus === 'saving' ? 'Saving…'
         : saveStatus === 'saved' ? 'Saved ✓'
         : dirty ? 'Save*'
         : 'Save';
-    const selectedFontLabel = getLiveClassFontLabel(toolOptions.fontFamily || DEFAULT_TEXT_FONT.fontFamily);
+    const selectedFontLabel = getFontLabel(toolOptions.fontFamily || DEFAULT_TEXT_FONT.fontFamily);
 
     return (
         <div className="annotate-toolbar">
@@ -125,7 +124,7 @@ export default function AnnotationToolbar({
 
                 <div className="annotate-toolbar-divider" />
 
-                <div className="lc-toolbar-popover-wrap">
+                <div className="annotation-toolbar-popover-wrap">
                     <button
                         className={`btn btn-sm annotate-font-trigger ${showFontPicker ? 'annotate-font-trigger--active' : ''}`}
                         onClick={() => setShowFontPicker((value) => !value)}
@@ -177,23 +176,6 @@ export default function AnnotationToolbar({
                 <button className="btn btn-sm btn-ghost" onClick={onExport} title="Export annotated PDF">
                     <Download size={14} />
                     <span>Export</span>
-                </button>
-
-                <div className="annotate-toolbar-divider" />
-
-                {/* Share / Live Session button */}
-                <button
-                    className={`btn btn-sm annotate-live-btn${activeSession ? ' annotate-live-btn--active' : ''}`}
-                    onClick={onShareOpen}
-                    title={activeSession ? 'Live session active — Open share panel' : 'Start or join a live session'}
-                >
-                    {activeSession ? <Radio size={14} /> : <Share2 size={14} />}
-                    <span>{activeSession ? 'Live' : 'Share'}</span>
-                    {(pendingInviteCount > 0 || (activeSession && participantCount > 1)) && (
-                        <span className="annotate-invite-badge">
-                            {pendingInviteCount > 0 ? pendingInviteCount : participantCount}
-                        </span>
-                    )}
                 </button>
             </div>
         </div>

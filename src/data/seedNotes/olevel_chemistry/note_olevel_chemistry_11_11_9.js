@@ -187,13 +187,13 @@ export const note_olevel_chemistry_11_11_9 = {
         <text x="0" y="40" class="label">Water</text>
 
         <!-- small visual to show where water came from -->
-        <text x="-50" y="-120" class="label" fill="#8e44ad" font-size="12">H and OH combine</text>
+        <text x="-50" y="-142" class="label" fill="#8e44ad" font-size="12">H and OH combine</text>
         <path d="M-60,-105 C-60,-80 -90,-20 -90,0" fill="none" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
     </g>
 
     <defs>
         <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="#8e44ad" />
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#8e44ad"/>
         </marker>
     </defs>
 </svg>`

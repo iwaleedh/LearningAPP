@@ -58,7 +58,7 @@ export const note_olevel_physics_3_2_4 = {
   <!-- Object (beyond 2F) at x=70 -->
   <line x1="70" y1="140" x2="70" y2="75" stroke="#f59e0b" stroke-width="2.5"/>
   <polygon points="70,75 65,88 75,88" fill="#f59e0b"/>
-  <text x="55" y="70" fill="#f59e0b" font-weight="bold">O</text>
+  <text x="55" y="88" fill="#f59e0b" font-weight="bold">O</text>
   <!-- Ray 1 (parallel → through F) BLUE -->
   <line x1="70" y1="75" x2="280" y2="75" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#ah24)"/>
   <line x1="280" y1="75" x2="460" y2="175" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#ah24)"/>

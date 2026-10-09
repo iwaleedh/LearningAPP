@@ -253,10 +253,13 @@ export default function FlashcardsPage() {
                     <div className="empty-state-icon flashcard-empty-icon">
                         <Layers size={40} />
                     </div>
-                    <h3>No Flashcards Yet</h3>
+                    <h3>Your personal deck is empty</h3>
                     <p>
-                        Flashcards are generated from your saved notes. Start reading and saving notes to build your deck.
+                        Cards you save from notes collect here. Every topic in Practice also has a ready-made flashcard set you can start right now.
                     </p>
+                    <Link to="/exercises" className="btn btn-primary">
+                        Practise with topic flashcards <ArrowRight size={18} aria-hidden="true" />
+                    </Link>
                 </div>
             </div>
         );

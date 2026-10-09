@@ -16,7 +16,7 @@ export const note_olevel_chemistry_9_9_4 = {
       type: 'svg',
       data: {
         caption: 'Metals with a larger atomic radius (like Potassium) have weaker attraction between the nucleus and outer electrons, making them easier to lose, and therefore more reactive.',
-        svg: `<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 574 250" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Lithium Atom -->

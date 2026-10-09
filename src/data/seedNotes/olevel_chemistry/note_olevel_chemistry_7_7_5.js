@@ -44,7 +44,7 @@ export const note_olevel_chemistry_7_7_5 = {
       data: {
         caption: 'Steps to prepare an insoluble salt: Mix solutions, Filter to collect precipitate, then Wash and Dry.',
         svg: `<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="var(--color-surface)" />
+  <rect width="100%" height="100%" fill="var(--color-surface)"/>
 
   <!-- Step 1: Mix -->
   <text x="100" y="20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">1. Mix</text>
@@ -70,7 +70,7 @@ export const note_olevel_chemistry_7_7_5 = {
   <text x="100" y="170" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Insoluble salt precipitates</text>
 
   <!-- Arrow -->
-  <path d="M 180 100 L 220 100" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <path d="M 180 100 L 220 100" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)"/>
 
   <!-- Step 2: Filter -->
   <text x="300" y="20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">2. Filter</text>
@@ -91,13 +91,13 @@ export const note_olevel_chemistry_7_7_5 = {
   <text x="350" y="160" font-family="var(--font-sans)" font-size="10" fill="#64748b">Filtrate (discard)</text>
 
   <!-- Arrow -->
-  <path d="M 380 100 L 420 100" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <path d="M 380 100 L 420 100" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)"/>
 
   <!-- Step 3: Wash & Dry -->
   <text x="500" y="20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">3. Wash &amp; Dry</text>
 
   <!-- Filter paper open -->
-  <ellipse cx="500" cy="100" rx="40" ry="20" fill="#0f172a" stroke="#cbd5e1" stroke-width="1.5" />
+  <ellipse cx="500" cy="100" rx="40" ry="20" fill="#0f172a" stroke="#cbd5e1" stroke-width="1.5"/>
   
   <!-- Solid lumps -->
   <circle cx="490" cy="95" r="4" fill="#94a3b8"/>
@@ -106,7 +106,7 @@ export const note_olevel_chemistry_7_7_5 = {
   <circle cx="495" cy="102" r="3" fill="#94a3b8"/>
 
   <text x="500" y="140" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Wash with distilled water</text>
-  <text x="500" y="155" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Dry in oven or air</text>
+  <text x="500" y="178" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Dry in oven or air</text>
 
   <defs>
     <marker id="arrow-head" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">

@@ -272,6 +272,8 @@ export default defineSchema({
     .index("by_assetId", ["assetId"])
     .index("by_noteId", ["noteId"]),
 
+  // Archived collaboration tables: retained for existing records only.
+  // Classroom APIs, routes, realtime subscriptions, and cleanup cron were removed.
   liveSessions: defineTable({
     hostUserId: v.string(),
     paperId: v.string(),
@@ -472,7 +474,7 @@ export default defineSchema({
 
   // ── Feature Flags ───────────────────────────────────────────────
   featureFlags: defineTable({
-    key: v.string(),          // e.g. "flashcards", "pastPapers", "liveClass"
+    key: v.string(),          // e.g. "flashcards", "pastPapers", "notes"
     enabled: v.boolean(),
     label: v.string(),        // display name
     description: v.string(),

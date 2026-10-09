@@ -351,7 +351,7 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                 {submitted ? (
                     <>
                         <button className="btn btn-secondary" onClick={handleReset}>
-                            <RotateCcw size={16} /> Try Again
+                            <RotateCcw size={16} /> Try again
                         </button>
                         <button className="btn btn-primary btn-lg" onClick={() => {
                             const wrong = results && Object.entries(results)
@@ -391,7 +391,7 @@ export default function DragDropExercise({ question, onNext, onMistake, onAttemp
                         onClick={handleSubmit}
                         disabled={!allPlaced}
                     >
-                        Check Answers
+                        Check answers
                     </button>
                 )}
             </div>

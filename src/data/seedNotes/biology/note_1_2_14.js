@@ -54,7 +54,7 @@ export const note_biology_1_2_14 = {
         "id": "svg-diag-1-2-14-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='40' width='60' height='30' fill='#1c3a64' stroke='#3182ce'/><text x='65' y='60' font-weight='bold'>A U G</text><rect x='120' y='40' width='60' height='30' fill='#0e4a56' stroke='#38a169'/><text x='135' y='60' font-weight='bold'>C C G</text><rect x='180' y='40' width='60' height='30' fill='#3d1212' stroke='#e53e3e'/><text x='195' y='60' font-weight='bold'>U A A</text><text x='65' y='90' font-size='10'>Codon 1</text><text x='135' y='90' font-size='10'>Codon 2</text><text x='195' y='90' font-size='10'>Codon 3</text><text x='55' y='20' font-size='10'>(Non-Overlapping & Degenerate)</text></svg>",
+            "svg": `<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='40' width='60' height='30' fill='#1c3a64' stroke='#3182ce'/><text x='65' y='60' font-weight='bold'>A U G</text><rect x='120' y='40' width='60' height='30' fill='#0e4a56' stroke='#38a169'/><text x='135' y='60' font-weight='bold'>C C G</text><rect x='180' y='40' width='60' height='30' fill='#3d1212' stroke='#e53e3e'/><text x='195' y='60' font-weight='bold'>U A A</text><text x='65' y='90' font-size='10'>Codon 1</text><text x='135' y='90' font-size='10'>Codon 2</text><text x='195' y='90' font-size='10'>Codon 3</text><text x='55' y='20' font-size='10'>(Non-Overlapping &amp; Degenerate)</text></svg>`,
             "caption": "The Triplet Code"
         }
     },
@@ -65,15 +65,6 @@ export const note_biology_1_2_14 = {
             "svg": "<svg viewBox='0 0 400 150' xmlns='http://www.w3.org/2000/svg'><text x='20' y='40' font-size='12'>Normal: ... A T G / G G C / A A A ...</text><polyline points='110,50 110,70 140,70' fill='none' stroke='#e53e3e' stroke-width='2' marker-end='url(#arrow)'/><text x='150' y='75' font-size='10' fill='#c53030'>Deletion of 'T'</text><text x='20' y='110' font-size='12'>Mutant: ... A G G / G C A / A A ...</text><text x='20' y='140' font-size='10' font-weight='bold'>Effect: Entire reading frame shifts downstream!</text></svg>",
             "caption": "Frameshift Mutation"
         }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Genetic Code Vocab",
-        "text": "Use the term 'degenerate' to explain that multiple codons can code for the same amino acid, and 'non-overlapping' to state each base is read only once. Remember that insertions/deletions cause a frameshift."
-      }
     }  ,
     {
       "id": "callout-injected-0",

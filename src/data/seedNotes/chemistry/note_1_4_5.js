@@ -5,7 +5,22 @@
 export const note_chemistry_1_4_5 = {
   blocks: [
     { id: 'objective', type: 'objective', data: { text: 'Describe the mechanism of free radical substitution (FRS) of alkanes with halogens. Write equations for all three stages: initiation, propagation, and termination. Know the role of UV light and half-curly arrows.' } },
-    { id: 'h-overview', type: 'heading', data: { text: 'Overview: Free Radical Substitution', level: 2 } },
+    {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Track radicals through each stage",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A radical is a species with an unpaired electron. In alkane chlorination, ultraviolet light initiates homolytic fission of Cl–Cl: each chlorine atom takes one electron. Propagation steps consume one radical and produce another, maintaining the chain. Termination combines two radicals to form a non-radical product.<br/><br/>Use a single-headed curly arrow to show movement of one electron, unlike the full-headed curly arrows used for electron pairs. Substitution replaces a hydrogen by chlorine. Further substitution and reaction at different carbon positions can produce mixtures; this limits the value of radical substitution for making one pure organic product."
+  }
+},
+{ id: 'h-overview', type: 'heading', data: { text: 'Overview: Free Radical Substitution', level: 2 } },
     { id: 'svg-overview', type: 'svg', data: {
       caption: 'Free radical substitution of methane — three stages in order',
       svg: `<svg viewBox="0 0 580 175" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="2" y="2" width="173" height="171" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/><rect x="203" y="2" width="173" height="171" rx="8" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1.5"/><rect x="404" y="2" width="173" height="171" rx="8" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.5"/><text x="88" y="22" text-anchor="middle" font-weight="bold" fill="#1d4ed8" font-size="13">1. INITIATION</text><text x="289" y="22" text-anchor="middle" font-weight="bold" fill="#15803d" font-size="13">2. PROPAGATION</text><text x="490" y="22" text-anchor="middle" font-weight="bold" fill="#92400e" font-size="13">3. TERMINATION</text><text x="88" y="40" text-anchor="middle" fill="#374151" font-size="10">UV light required</text><text x="289" y="40" text-anchor="middle" fill="#374151" font-size="10">Two alternating steps; chain process</text><text x="490" y="40" text-anchor="middle" fill="#374151" font-size="10">Any two radicals combine</text><text x="10" y="65" font-family="monospace" fill="#1d4ed8" font-size="11">Cl₂ →(UV) 2 Cl•</text><text x="10" y="85" fill="#374151" font-size="10">Homolytic fission of Cl–Cl;</text><text x="10" y="98" fill="#374151" font-size="10">each Cl gets 1 electron.</text><text x="10" y="112" fill="#374151" font-size="10">Forms 2 chlorine radicals.</text><text x="10" y="130" fill="#64748b" font-size="10">Half-curly arrows show</text><text x="10" y="143" fill="#64748b" font-size="10">movement of ONE electron.</text><text x="10" y="157" fill="#1d4ed8" font-size="10">Must say: UV light needed.</text><text x="210" y="62" font-family="monospace" fill="#15803d" font-size="10">Step1: Cl• + CH₄ → HCl + CH₃•</text><text x="210" y="79" fill="#374151" font-size="10">Cl• abstracts an H from CH₄;</text><text x="210" y="92" fill="#374151" font-size="10">HCl formed + methyl radical.</text><text x="210" y="112" font-family="monospace" fill="#15803d" font-size="10">Step2: CH₃• + Cl₂ → CH₃Cl + Cl•</text><text x="210" y="129" fill="#374151" font-size="10">Methyl radical attacks Cl₂;</text><text x="210" y="142" fill="#374151" font-size="10">CH₃Cl formed + Cl• regenerated.</text><text x="210" y="158" fill="#15803d" font-size="10">Cycle repeats → lots of CH₃Cl.</text><text x="412" y="62" font-family="monospace" fill="#92400e" font-size="10">Cl• + Cl• → Cl₂</text><text x="412" y="78" font-family="monospace" fill="#92400e" font-size="10">CH₃• + CH₃• → C₂H₆</text><text x="412" y="94" font-family="monospace" fill="#92400e" font-size="10">CH₃• + Cl• → CH₃Cl</text><text x="412" y="116" fill="#374151" font-size="10">Two radicals combine;</text><text x="412" y="129" fill="#374151" font-size="10">no new radical formed.</text><text x="412" y="143" fill="#374151" font-size="10">Chain reaction stops.</text><text x="412" y="158" fill="#dc2626" font-size="10">C₂H₆ = unexpected by-product!</text><path d="M 178 85 L 200 85" stroke="#374151" stroke-width="2" marker-end="url(#arr)"/><path d="M 379 85 L 401 85" stroke="#374151" stroke-width="2" marker-end="url(#arr)"/><defs><marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#374151"/></marker></defs></svg>`
@@ -41,18 +56,88 @@ export const note_chemistry_1_4_5 = {
         text: "In propagation steps, the radical produced in step 1 must be a reactant in step 2. You must show the radical dot (\u2022) clearly on the correct atom or fragment (e.g. \u2022CH\u2083, not CH\u2083\u2022 if the C holds the unpaired electron)."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Methane chlorination: initiation Cl₂ → 2Cl• (UV). Propagation 1: Cl• + CH₄ → HCl + CH₃•. Propagation 2: CH₃• + Cl₂ → CH₃Cl + Cl•. Termination examples include Cl• + Cl• → Cl₂, CH₃• + Cl• → CH₃Cl and CH₃• + CH₃• → C₂H₆. The regenerated Cl• in propagation explains the chain reaction."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "A propagation step must regenerate a radical. UV is an energy source for initiation, not a catalyst. Radical recombination forming ethane explains a minor by-product; it is not part of the overall substitution equation."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is homolytic fission?",
+        "checked": false
+      },
+      {
+        "text": "What is the purpose of ultraviolet light?",
+        "checked": false
+      },
+      {
+        "text": "Why is the mechanism a chain reaction?",
+        "checked": false
+      },
+      {
+        "text": "Why can ethane appear among the products?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A radical is a species with an unpaired electron. In alkane chlorination, ultraviolet light initiates homolytic fission of Cl–Cl: each chlorine atom takes one electron. Propagation steps consume one radical and produce another, maintaining the chain. Termination combines two radicals to form a non-radical product."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'c1', blockId: 'callout-init', prompt: 'Describe the initiation step of FRS of methane with Cl₂. What type of bond breaking occurs and what does a half-curly arrow show?' },
-      { id: 'c2', blockId: 'callout-prop', prompt: 'Write the two propagation steps for the chlorination of methane with Cl₂.' },
-      { id: 'c3', blockId: 'callout-term', prompt: 'Write three possible termination steps for the chlorination of methane. What unexpected product commonly forms?' },
-      { id: 'c4', blockId: 'callout-exam-trick', prompt: 'Explain why much more chloromethane is formed during propagation than in the termination step.' },
-      { id: 'c5', blockId: 'callout-further', prompt: 'Why does FRS give a mixture of products? How does this limit its usefulness as a synthesis route?' }
-    ],
-    summaryText: 'FRS = H replaced by halogen in alkane; requires UV light. Initiation: UV → homolytic fission Cl₂ → 2Cl• (half-curly arrows). Propagation: Cl• + CH₄ → HCl + CH₃•; then CH₃• + Cl₂ → CH₃Cl + Cl• (chain repeats). Termination: two radicals combine, chain stops (gives unexpected products like C₂H₆). Most product comes from propagation.',
-    ready: false
-  },
-  evidence: [], mentions: []
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is homolytic fission?",
+      "answer": "Bond breaking in which each atom takes one electron from the shared pair, forming radicals."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is the purpose of ultraviolet light?",
+      "answer": "It supplies energy to split Cl₂ homolytically during initiation."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is the mechanism a chain reaction?",
+      "answer": "Propagation regenerates a radical that can react with another methane molecule."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why can ethane appear among the products?",
+      "answer": "Two methyl radicals can combine in a termination step: CH₃• + CH₃• → C₂H₆."
+    }
+  ],
+  "summaryText": "A radical is a species with an unpaired electron. In alkane chlorination, ultraviolet light initiates homolytic fission of Cl–Cl: each chlorine atom takes one electron. Propagation steps consume one radical and produce another, maintaining the chain. Termination combines two radicals to form a non-radical product.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}], mentions: []
 };

@@ -45,7 +45,7 @@ export const note_mathematics_6_4_1 = {
       data: {
         style: 'worked',
         title: 'Worked Example: PMCC',
-        text: 'n=5, \u03a3x=25, \u03a3y=30, \u03a3xy=162, \u03a3x\u00b2=135, \u03a3y\u00b2=194\n\nS\u2093\u1da7 = 162 \u2212 (25\u00d730)/5 = 162 \u2212 150 = 12\nS\u2093\u2093 = 135 \u2212 625/5 = 135 \u2212 125 = 10\nS\u1da7\u1da7 = 194 \u2212 900/5 = 194 \u2212 180 = 14\nr = 12 / \u221a(10 \u00d7 14) = 12 / \u221a140 = 12/11.83 = 0.985 (3 s.f.)'
+        text: "Use x = 3, 4, 5, 6, 7 and y = 4, 4, 6, 8, 8.\nn = 5; Σx = 25; Σy = 30; Σxy = 162; Σx² = 135; Σy² = 196.\n\nSₓᵧ = 162 − (25 × 30)/5 = 12.\nSₓₓ = 135 − 625/5 = 10.\nSᵧᵧ = 196 − 900/5 = 16.\nr = 12 / √(10 × 16) = 12 / √160 = 0.949 (3 s.f.).\nThis indicates strong positive linear correlation. Keep the full calculator value until the final rounding."
       }
     },
     {
@@ -63,7 +63,7 @@ export const note_mathematics_6_4_1 = {
           { text: 'H\u2081: \u03c1 > 0 (positive), \u03c1 < 0 (negative), or \u03c1 \u2260 0 (two-tailed)' },
           { text: 'Calculate r from the sample data.' },
           { text: 'Compare r to the critical value from tables (depends on n and significance level).' },
-          { text: 'If |r| > critical value, reject H\u2080. Conclude there is significant linear correlation.' }
+          { text: 'For a two-tailed test, reject H₀ if |r| reaches the appropriate critical value. For a positive one-tailed test use r ≥ c; for a negative one-tailed test use r ≤ −c. The sample correlation must be in the direction specified by H₁.' }
         ]
       }
     },
@@ -87,7 +87,7 @@ export const note_mathematics_6_4_1 = {
             data: {
                 style: 'warning',
                 title: "Examiner Tip",
-                text: "When calculating the PMCC (r), use the summary statistics given in the question and show the substitution into the formula clearly. If the calculated 'r' falls outside the bounds of -1 to 1, you have definitely made an arithmetic error."
+                text: "When calculating the PMCC (r), use the summary statistics given in the question and show the substitution into the formula clearly. If the calculated 'r' falls outside the bounds of -1 to 1, check both your calculation and the supplied summary statistics: a valid PMCC cannot lie outside this range."
             },
             terms: []
         }

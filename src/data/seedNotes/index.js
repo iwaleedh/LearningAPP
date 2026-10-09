@@ -72,7 +72,12 @@ async function loadSeedNoteByKey(seedNoteKey) {
   if (!seedNoteCache.has(normalizedKey)) {
     seedNoteCache.set(
       normalizedKey,
-      seedNoteModuleLoaders[modulePath]().then((module) => getSeedNoteExport(module)),
+      seedNoteModuleLoaders[modulePath]()
+        .then((module) => getSeedNoteExport(module))
+        .catch((error) => {
+          seedNoteCache.delete(normalizedKey);
+          throw error;
+        }),
     );
   }
 

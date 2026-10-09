@@ -80,7 +80,7 @@ export const note_olevel_physics_4_4_0 = {
       type: 'svg',
       data: {
         caption: 'Solenoid magnetic field — acts like a bar magnet with N and S poles',
-        svg: `<svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
+        svg: `<svg viewBox="0 0 395 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Solenoid body -->
   <rect x="100" y="80" width="180" height="40" rx="6" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
   <!-- Coil loops -->

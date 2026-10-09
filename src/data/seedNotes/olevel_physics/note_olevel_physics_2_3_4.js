@@ -81,7 +81,7 @@ export const note_olevel_physics_2_3_4 = {
       type: 'svg',
       data: {
         caption: 'Cross-section of a vacuum flask showing heat-reducing features',
-        svg: `<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+        svg: `<svg viewBox="-5 0 375 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Outer glass wall -->
   <path d="M80,30 L80,240 Q80,270 150,270 Q220,270 220,240 L220,30 Z" fill="#1c3a64" stroke="#8898b8" stroke-width="2.5"/>
 

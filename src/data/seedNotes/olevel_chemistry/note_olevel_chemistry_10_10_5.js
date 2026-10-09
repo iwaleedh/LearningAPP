@@ -16,10 +16,10 @@ export const note_olevel_chemistry_10_10_5 = {
       type: 'svg',
       data: {
         caption: 'The greenhouse effect: short-wave solar radiation warms the Earth, which emits long-wave infrared radiation. Greenhouse gases trap some of this heat.',
-        svg: `<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 628 300" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
-  <!-- Earth & Atmosphere -->
+  <!-- Earth &amp; Atmosphere -->
   <path d="M 0 320 Q 300 180, 600 320 Z" fill="#22c55e" opacity="0.3" />
   <path d="M 0 320 Q 300 200, 600 320 Z" fill="#22c55e" opacity="0.5" />
   
@@ -50,7 +50,7 @@ export const note_olevel_chemistry_10_10_5 = {
   <circle cx="430" cy="110" r="15" fill="#0c4a6e" stroke="#3b82f6" stroke-width="2"/>
   <text x="430" y="114" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">CO₂</text>
 
-  <text x="490" y="120" font-family="var(--font-sans)" font-size="12" fill="#dc2626" font-weight="bold">Absorbed & re-emitted</text>
+  <text x="490" y="120" font-family="var(--font-sans)" font-size="12" fill="#dc2626" font-weight="bold">Absorbed &amp; re-emitted</text>
   <text x="490" y="135" font-family="var(--font-sans)" font-size="12" fill="#dc2626">back to Earth</text>
   <text x="490" y="150" font-family="var(--font-sans)" font-size="12" fill="#dc2626">(traps heat)</text>
 

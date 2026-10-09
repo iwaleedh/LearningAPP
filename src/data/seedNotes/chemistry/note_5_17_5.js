@@ -105,8 +105,8 @@ export const note_chemistry_5_17_5 = {
   <line x1="30" y1="200" x2="125" y2="200" stroke="#475569" stroke-width="2"/>
   <text x="12" y="175" text-anchor="middle" font-size="9" fill="#64748b">d</text>
   <path d="M 148 170 L 185 170" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowRight)"/>
-  <text x="166" y="163" text-anchor="middle" font-size="9" fill="#94a3b8">6 ligands</text>
-  <text x="166" y="177" text-anchor="middle" font-size="9" fill="#94a3b8">coordinate</text>
+  <text x="166" y="163" text-anchor="middle" font-size="9" fill="#0f172a" style="fill:#0f172a">6 ligands</text>
+  <text x="166" y="177" text-anchor="middle" font-size="9" fill="#0f172a" style="fill:#0f172a">coordinate</text>
   <text x="310" y="50" text-anchor="middle" fill="#475569">In complex</text>
   <text x="310" y="63" text-anchor="middle" font-size="9" fill="#64748b">(orbitals split into 2 groups)</text>
   <text x="210" y="110" font-size="10" fill="#dc2626" font-weight="bold">eᵍ (2 orbitals — point at ligands)</text>
@@ -115,7 +115,7 @@ export const note_chemistry_5_17_5 = {
   <path d="M 395 128 L 395 210" stroke="#1d4ed8" stroke-width="2" marker-start="url(#arrowUp)" marker-end="url(#arrowDown)"/>
   <text x="407" y="175" font-size="12" font-weight="bold" fill="#1d4ed8">Δ</text>
   <path d="M 310 215 Q 310 165 310 128" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowRight2)"/>
-  <text x="325" y="178" font-size="9" fill="#f59e0b">hν</text>
+  <text x="325" y="178" font-size="9" fill="#0f172a" style="fill:#0f172a">hν</text>
   <text x="207" y="225" font-size="10" fill="#16a34a" font-weight="bold">t₂ᵍ (3 orbitals — point between ligands)</text>
   <line x1="240" y1="205" x2="380" y2="205" stroke="#16a34a" stroke-width="2.5"/>
   <line x1="240" y1="222" x2="380" y2="222" stroke="#16a34a" stroke-width="2.5"/>

@@ -11,7 +11,7 @@ export const note_business_3_15_6 = {
       { text: '**High Turnover Cons:** High recruitment costs, loss of expertise, low team morale, reduced productivity during onboarding.' },
       { text: '**High Turnover Pros:** Brings in "fresh blood" and new ideas, easy way to reduce workforce size if demand drops.' }
     ] } },
-    { id: 'h-2', type: 'heading', data: { text: 'Absenteeism', level: 2 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Absenteeism', level: 2 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'Absenteeism measures the rate at which staff are absent from work. Persistent, unscheduled absenteeism disrupts production schedules, forces the use of expensive agency cover, and stresses the remaining workforce.' } },
     { id: 'call-3', type: 'callout', data: { style: 'key', title: 'Absenteeism Formula', text: 'Absenteeism Rate (%) = (Number of staff absent ÷ Total number of staff) × 100 \nOR (Total days lost to absence ÷ Total possible working days) × 100' } },
     { id: 'tbl-1', type: 'comparisonTable', data: {

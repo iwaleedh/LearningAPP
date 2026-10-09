@@ -136,7 +136,7 @@ export default function FillBlankExercise({ question, onNext, onMistake, onAttem
                         {allCorrect ? (
                             <>
                                 <CheckCircle size={22} />
-                                <span>All correct! 🎉</span>
+                                <span>All correct!</span>
                             </>
                         ) : (
                             <>
@@ -148,7 +148,7 @@ export default function FillBlankExercise({ question, onNext, onMistake, onAttem
 
                     {!showRationale && question.rationale && (
                         <button className="btn btn-ghost btn-sm" onClick={() => setShowRationale(true)}>
-                            <Lightbulb size={14} /> Show Explanation
+                            <Lightbulb size={14} /> Show explanation
                         </button>
                     )}
 
@@ -165,11 +165,11 @@ export default function FillBlankExercise({ question, onNext, onMistake, onAttem
                         onClick={handleSubmit}
                         disabled={answers.some(a => a.trim() === '')}
                     >
-                        Check Answers
+                        Check answers
                     </button>
                 ) : (
                     <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                        Next Question <ArrowRight size={18} />
+                        Next question <ArrowRight size={18} />
                     </button>
                 )}
             </div>

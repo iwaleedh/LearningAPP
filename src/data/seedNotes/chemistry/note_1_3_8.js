@@ -12,6 +12,21 @@ export const note_chemistry_1_3_8 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Interpret bond length and bond enthalpy carefully",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Bond length is the equilibrium distance between the nuclei of two bonded atoms. Bond enthalpy is the enthalpy needed to break one mole of a specified covalent bond in the gas phase by homolytic fission. Breaking bonds is endothermic; making the same bonds releases energy.<br/><br/>For bonds between the same pair of elements, a higher bond order normally means a shorter and stronger bond: C≡C is shorter and stronger than C=C, which is shorter and stronger than C–C. For a related series such as C–Cl, C–Br and C–I, larger halogen atoms generally give longer, weaker bonds. Mean bond enthalpies are averages over different compounds, so calculated reaction enthalpies are estimates. Rate also depends on mechanism and activation energy; it is not determined by one bond enthalpy alone."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'Bond Order, Length and Enthalpy', level: 2 },
@@ -22,7 +37,7 @@ export const note_chemistry_1_3_8 = {
       type: 'svg',
       data: {
         caption: 'As bond order increases (single → double → triple), bond length decreases and bond enthalpy increases. More shared electron pairs → stronger attraction between nuclei → shorter, harder-to-break bond.',
-        svg: `<svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="0 0 718 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
 
   <!-- LEFT: Bond length bar chart (shorter = longer bar for inverse) -->
   <rect x="5" y="5" width="320" height="270" rx="10" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
@@ -105,20 +120,90 @@ export const note_chemistry_1_3_8 = {
       },
       terms: ['Mean bond enthalpy', 'Endothermic', 'Exothermic']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For H₂(g) + Cl₂(g) → 2HCl(g), use illustrative bond enthalpies H–H = 436, Cl–Cl = 243 and H–Cl = 432 kJ mol⁻¹. Bonds broken: 436 + 243 = 679. Bonds formed: 2 × 432 = 864. Thus ΔH ≈ 679 − 864 = <strong>−185 kJ mol⁻¹</strong> for the equation as written. The factor of two is essential."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not reverse “broken minus formed”. Bond breaking absorbs energy and bond formation releases it. Use gas-phase bond data and account for every bond in the balanced equation."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why is bond breaking endothermic?",
+        "checked": false
+      },
+      {
+        "text": "State the bond-enthalpy calculation rule.",
+        "checked": false
+      },
+      {
+        "text": "How does bond order affect C–C bond length?",
+        "checked": false
+      },
+      {
+        "text": "Why is a result using mean bond enthalpies only approximate?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Bond length is the equilibrium distance between the nuclei of two bonded atoms. Bond enthalpy is the enthalpy needed to break one mole of a specified covalent bond in the gas phase by homolytic fission. Breaking bonds is endothermic; making the same bonds releases energy."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Bond order: single < double < triple. As bond order increases: length decreases (154→134→120 pm), enthalpy increases (347→614→839 kJ mol⁻¹). Reason: more shared pairs → stronger e⁻ attraction → shorter, stronger bond. Bond enthalpy values are mean values. Bond breaking = endothermic; formation = exothermic.',
-    cues: [
-      { id: 'c1', blockId: 'svg-bond-data', prompt: 'State the bond lengths and enthalpies for C–C, C=C and C≡C. What trend do you observe?' },
-      { id: 'c2', blockId: 'key-trend', prompt: 'Explain why a C≡C bond is shorter and stronger than a C–C bond.' },
-      { id: 'c3', blockId: 'tip-average', prompt: 'Why are bond enthalpy values described as "mean" values? When would comparing C–H in different molecules give slightly different results?' },
-      { id: 'c4', blockId: 'tip-average', prompt: 'State the sign convention for bond enthalpy in bond breaking vs bond forming, and write the equation to estimate ΔH°rxn from mean bond enthalpies.' },
-      { id: 'c5', blockId: 'key-trend', prompt: 'Using bond data, predict whether C=O or C–O would be shorter. Justify with reference to shared electron pairs.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why is bond breaking endothermic?",
+      "answer": "Energy must be supplied to overcome the attraction holding the bonded atoms together."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "State the bond-enthalpy calculation rule.",
+      "answer": "Approximate reaction enthalpy = sum of bond enthalpies for bonds broken minus sum for bonds formed."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How does bond order affect C–C bond length?",
+      "answer": "For the same two elements, higher bond order generally gives a shorter bond: triple shorter than double shorter than single."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why is a result using mean bond enthalpies only approximate?",
+      "answer": "Mean values average a bond over different molecular environments; actual bond enthalpies depend on the compound."
+    }
+  ],
+  "summaryText": "Bond length is the equilibrium distance between the nuclei of two bonded atoms. Bond enthalpy is the enthalpy needed to break one mole of a specified covalent bond in the gas phase by homolytic fission. Breaking bonds is endothermic; making the same bonds releases energy.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

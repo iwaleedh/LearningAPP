@@ -33,7 +33,7 @@ export const note_olevel_maths_core_3_2_2 = {
       type: 'svg',
       data: {
         caption: 'Parallel lines y = 2x + 4 and y = 2x − 1 — same slope, different y-intercepts',
-        svg: `<svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+        svg: `<svg viewBox="0 -15 226 215" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <defs>
     <marker id="a5" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
       <path d="M0,0 L0,6 L7,3 z" fill="#555"/>

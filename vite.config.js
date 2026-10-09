@@ -98,7 +98,7 @@ export default defineConfig(() => ({
       // Basic CSP to catch injection issues in development
       'Content-Security-Policy': [
         "default-src 'self'",
-        "script-src 'self' 'unsafe-inline' 'unsafe-eval'",  // unsafe-eval needed by Vite HMR
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.clerk.accounts.dev https://*.clerk.com https://challenges.cloudflare.com",  // unsafe-eval needed by Vite HMR, Clerk scripts for auth
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
         "font-src 'self' https://fonts.gstatic.com",
         "img-src 'self' data: blob: https:",

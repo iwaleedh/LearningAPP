@@ -1,5 +1,5 @@
 export const caeSyllabus = {
-    qualification: 'CAE (C1 Advanced)',
+    qualification: 'Cambridge English C1 Advanced',
     source: 'Cambridge English C1 Advanced Handbook (2024)',
     units: [
         {

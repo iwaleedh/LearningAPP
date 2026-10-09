@@ -74,15 +74,6 @@ export const note_biology_1_2_13 = {
         "title": "Translation vs Transcription",
         "text": "Do not mix these up. Transcription happens in the nucleus to produce mRNA. Translation happens at the ribosomes where tRNA brings specific amino acids with matching anticodons."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "tip",
-        "title": "Translation vs Transcription",
-        "text": "Do not mix these up. Transcription happens in the nucleus to produce mRNA. Translation happens at the ribosomes where tRNA brings specific amino acids with matching anticodons."
-      }
     }
   ],
   "recall": {

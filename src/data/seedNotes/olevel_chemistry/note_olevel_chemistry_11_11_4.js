@@ -42,7 +42,7 @@ export const note_olevel_chemistry_11_11_4 = {
       type: 'svg',
       data: {
         caption: 'Fractional Distillation of Crude Oil',
-        svg: `<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 640 450" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Furnace & Pipe -->

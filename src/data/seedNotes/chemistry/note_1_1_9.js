@@ -1,3 +1,5 @@
+import { chemistryFoundations } from '../../guidedLessons/chemistryFoundations.js';
+
 /**
  * Seed note: Chemistry · Unit 1 · Topic 1 · Subtopic 9
  * "Equations from test-tube observations"
@@ -5,6 +7,7 @@
  * Updated with flame test, halide identification and decomposition content from video analysis.
  */
 export const note_chemistry_1_1_9 = {
+  guidedLesson: chemistryFoundations['chemistry:1:1:9'],
   blocks: [
     {
       id: 'objective',
@@ -143,8 +146,8 @@ export const note_chemistry_1_1_9 = {
   <text x="110" y="50" text-anchor="middle" font-weight="bold" fill="#1565c0">BEFORE</text>
   <!-- solution -->
   <rect x="25" y="100" width="170" height="85" rx="4" fill="#1c3a64" stroke="none"/>
-  <text x="110" y="145" text-anchor="middle" fill="#1565c0" font-size="12">AgNO₃(aq)</text>
-  <text x="110" y="162" text-anchor="middle" fill="#546e7a" font-size="11">colourless</text>
+  <text x="110" y="145" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">AgNO₃(aq)</text>
+  <text x="110" y="162" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">colourless</text>
   <!-- copper wire before -->
   <rect x="100" y="65" width="8" height="90" rx="3" fill="#b87333"/>
   <text x="130" y="90" fill="#b87333" font-size="11">Cu wire</text>
@@ -157,8 +160,8 @@ export const note_chemistry_1_1_9 = {
   <text x="370" y="50" text-anchor="middle" font-weight="bold" fill="#1565c0">AFTER</text>
   <!-- blue solution -->
   <rect x="285" y="100" width="170" height="85" rx="4" fill="#1c3a64" stroke="none"/>
-  <text x="370" y="145" text-anchor="middle" fill="#1565c0" font-size="12">Cu(NO₃)₂(aq)</text>
-  <text x="370" y="162" text-anchor="middle" fill="#1565c0" font-size="11">BLUE solution</text>
+  <text x="370" y="145" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">Cu(NO₃)₂(aq)</text>
+  <text x="370" y="162" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">BLUE solution</text>
   <!-- copper wire with silver deposit -->
   <rect x="360" y="65" width="8" height="90" rx="3" fill="#b87333"/>
   <!-- silver deposit blobs -->
@@ -166,8 +169,8 @@ export const note_chemistry_1_1_9 = {
   <ellipse cx="370" cy="95" rx="6" ry="3.5" fill="#1e293b"/>
   <ellipse cx="356" cy="110" rx="8" ry="4" fill="#bdbdbd"/>
   <ellipse cx="368" cy="125" rx="5" ry="3" fill="#1e293b"/>
-  <text x="390" y="88" fill="#757575" font-size="11">Ag(s)</text>
-  <text x="390" y="102" fill="#757575" font-size="11">deposit</text>
+  <text x="390" y="88" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Ag(s)</text>
+  <text x="390" y="102" fill="#f8fafc" font-size="11" style="fill:#f8fafc">deposit</text>
 </svg>`
       },
       terms: []

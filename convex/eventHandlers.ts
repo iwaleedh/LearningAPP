@@ -25,9 +25,7 @@ type HandlerFn = (ctx: any, payload: Record<string, any>) => Promise<void>;
 const TOPIC_HANDLERS: Record<string, HandlerFn[]> = {
   [EVENT_TOPICS.NOTE_UPDATED]: [handleNoteUpdated],
   [EVENT_TOPICS.NOTE_DELETED]: [handleNoteDeleted],
-  [EVENT_TOPICS.SESSION_ENDED]: [handleSessionEnded],
   [EVENT_TOPICS.USER_REGISTERED]: [handleUserRegistered],
-  [EVENT_TOPICS.CLASS_ENDED]: [handleClassEnded],
 };
 
 // ── Main processor: picks up pending events and dispatches ──────────
@@ -105,18 +103,6 @@ async function handleNoteDeleted(
   });
 }
 
-// ── Handler: session:ended ──────────────────────────────────────────
-// Fan-out: archive strokes and notify participants
-async function handleSessionEnded(
-  ctx: any,
-  payload: Record<string, any>
-) {
-  await ctx.runMutation(internal.eventHandlers.logEvent, {
-    topic: "session:ended",
-    message: `Session ${payload.sessionId ?? "unknown"} ended by host ${payload.hostUserId ?? "unknown"}`,
-  });
-}
-
 // ── Handler: user:registered ────────────────────────────────────────
 // Fan-out: initialise default settings for new user
 async function handleUserRegistered(
@@ -126,17 +112,6 @@ async function handleUserRegistered(
   await ctx.runMutation(internal.eventHandlers.logEvent, {
     topic: "user:registered",
     message: `New user registered: ${payload.username ?? "unknown"} (${payload.userId ?? "unknown"})`,
-  });
-}
-
-// ── Handler: class:ended ────────────────────────────────────────────
-async function handleClassEnded(
-  ctx: any,
-  payload: Record<string, any>
-) {
-  await ctx.runMutation(internal.eventHandlers.logEvent, {
-    topic: "class:ended",
-    message: `Live class ${payload.classId ?? "unknown"} ended by ${payload.hostUserId ?? "unknown"}`,
   });
 }
 

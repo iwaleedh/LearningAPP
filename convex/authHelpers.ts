@@ -114,7 +114,7 @@ export function resolveAdminEnvList(
 // S4 fix: Dev-only defaults are used ONLY when env vars are absent AND
 // the runtime is not production.  In production the list will be empty
 // (effectively disabling admin access) until properly configured.
-const ADMIN_EMAILS: string[] = resolveAdminEnvList("ADMIN_EMAILS", ["iwaleedh@gmail.com"]);
+const ADMIN_EMAILS: string[] = resolveAdminEnvList("ADMIN_EMAILS", ["iwaleedh@gmail.com", "ibrahim.waleed@qad.gov.mv"]);
 const ADMIN_USERNAMES: string[] = resolveAdminEnvList("ADMIN_USERNAMES", ["admin"]);
 
 export function isAdminEmail(email: string | undefined | null): boolean {
@@ -272,19 +272,6 @@ export async function requireApprovedAccount(ctx: PublicCtx): Promise<void> {
   }
 }
 
-function hasHostUserId(value: unknown): value is { hostUserId: string } {
-  return typeof value === "object" && value !== null && "hostUserId" in value;
-}
-
-function isLiveClassSession(value: unknown): value is { hostUserId: string; backgroundType: string } {
-  return (
-    typeof value === "object" &&
-    value !== null &&
-    "hostUserId" in value &&
-    "backgroundType" in value
-  );
-}
-
 function deriveUsernameFromIdentity(identity: {
   preferredUsername?: string;
   nickname?: string;
@@ -410,70 +397,4 @@ export async function requireMatchingUserId(ctx: PublicCtx, claimedUserId?: stri
     throw new Error("Not authorized to act as another user.");
   }
   return currentUserId;
-}
-
-export async function getHostedSessionByStringId(ctx: PublicCtx, sessionId: string) {
-  return await ctx.db.get(sessionId as any);
-}
-
-export async function getSessionParticipant(ctx: PublicCtx, sessionId: string, userId: string) {
-  return await ctx.db
-    .query("sessionParticipants")
-    .withIndex("by_session", (q) => q.eq("sessionId", sessionId))
-    .filter((q) => q.eq(q.field("userId"), userId))
-    .first();
-}
-
-export async function requireHostedSessionHostOrTeacher(ctx: PublicCtx, sessionId: string) {
-  const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
-  const session = await getHostedSessionByStringId(ctx, sessionId);
-  if (!session || !hasHostUserId(session)) {
-    throw new Error("Session not found.");
-  }
-
-  // S7 fix: A teacher must be the HOST of THIS specific session, not merely any teacher.
-  // The previous check `isTeacherUserId(ctx, currentUserId)` allowed any teacher to
-  // access, modify, or drop into any active session system-wide (privilege escalation).
-  if (session.hostUserId === currentUserId) {
-    return { currentUserId, session };
-  }
-
-  // Admins retain override access (for support/moderation purposes only).
-  if (await isAdmin(ctx)) {
-    return { currentUserId, session };
-  }
-
-  throw new Error("Only the session host or an admin can perform this action.");
-}
-
-export async function requireHostedSessionAccess(ctx: PublicCtx, sessionId: string) {
-  const currentUserId = await requireApprovedAuthenticatedUserId(ctx);
-  const session = await getHostedSessionByStringId(ctx, sessionId);
-  if (!session || !hasHostUserId(session)) {
-    throw new Error("Session not found.");
-  }
-
-  if (session.hostUserId === currentUserId) {
-    return { currentUserId, session, participant: null };
-  }
-
-  const participant = await getSessionParticipant(ctx, sessionId, currentUserId);
-  if (participant) {
-    return { currentUserId, session, participant };
-  }
-
-  throw new Error("You do not have access to this session.");
-}
-
-export async function requireLiveClassInviteAuthority(ctx: PublicCtx, sessionId: string) {
-  const session = await getHostedSessionByStringId(ctx, sessionId);
-  if (!session || !hasHostUserId(session)) {
-    throw new Error("Session not found.");
-  }
-
-  if (isLiveClassSession(session)) {
-    return await requireHostedSessionHostOrTeacher(ctx, sessionId);
-  }
-
-  return await requireHostedSessionAccess(ctx, sessionId);
 }

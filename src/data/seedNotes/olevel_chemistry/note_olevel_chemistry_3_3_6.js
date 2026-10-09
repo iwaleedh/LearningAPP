@@ -39,7 +39,7 @@ export const note_olevel_chemistry_3_3_6 = {
       type: 'svg',
       data: {
         caption: 'The stoichiometry map: Mass A → Moles A → Moles B → Mass B',
-        svg: `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 652 180" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="var(--color-primary)"/>
@@ -64,7 +64,7 @@ export const note_olevel_chemistry_3_3_6 = {
     <!-- Arrow 2 -->
     <path d="M270 30 L330 30" stroke="var(--color-primary)" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
     <text x="300" y="10" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary)" text-anchor="middle">× ratio</text>
-    <text x="300" y="25" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">(from Eq.)</text>
+    <text x="300" y="50" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">(from Eq.)</text>
 
     <!-- Box 3: Moles of B -->
     <rect x="340" y="0" width="100" height="60" rx="8" fill="#4a1040" stroke="#0284c7" stroke-width="2"/>

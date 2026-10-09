@@ -67,7 +67,7 @@ export const note_olevel_biology_17_17_2 = {
       type: 'svg',
       data: {
         caption: 'Overview of transcription (nucleus) and translation (ribosome)',
-        svg: `<svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+        svg: `<svg viewBox="0 -40 520 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12"><rect x="0" y="-40" width="520" height="40" fill="#0f172a"/>
   <rect width="520" height="260" fill="#0f172a" rx="8"/>
   <!-- Nucleus region -->
   <ellipse cx="130" cy="130" rx="115" ry="100" fill="#1c3a64" stroke="#1e88e5" stroke-width="2" stroke-dasharray="6"/>
@@ -113,8 +113,8 @@ export const note_olevel_biology_17_17_2 = {
   <text x="450" y="100" text-anchor="middle" fill="#555" font-size="9">Growing chain</text>
   <!-- Translation label -->
   <text x="400" y="215" text-anchor="middle" fill="#6a1b9a" font-size="11" font-weight="bold">TRANSLATION</text>
-  <text x="10" y="15" fill="#333" font-size="12" font-weight="bold">Protein Synthesis: Transcription → Translation</text>
-</svg>`
+
+<text x="260" y="-12" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" style="fill: #f8fafc;">Protein Synthesis: Transcription → Translation</text></svg>`
       }
     },
     {

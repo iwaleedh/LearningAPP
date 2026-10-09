@@ -44,7 +44,7 @@ class Parser {
   }
 
   skipWhitespace() {
-    while (this.pos < this.expr.length && this.expr[this.pos] === ' ') this.pos++;
+    while (this.pos < this.expr.length && /\s/.test(this.expr[this.pos])) this.pos++;
   }
 
   // Grammar: expr = term (('+' | '-') term)*
@@ -58,32 +58,31 @@ class Parser {
     return result;
   }
 
-  // term = power (('*' | '/') power)*   (implicit multiplication: 2x, 3sin(x))
+  // term = unary (('*' | '/') unary)* (implicit multiplication: 2x, 3sin(x))
   parseTerm() {
-    let result = this.parsePower();
+    let result = this.parseUnary();
     while (true) {
-      if (this.consume('*')) result *= this.parsePower();
+      if (this.consume('*')) result *= this.parseUnary();
       else if (this.consume('/')) {
-        const d = this.parsePower();
-        // Division by zero: return Infinity (IEEE 754) rather than NaN.
-        // plotFunction already filters !isFinite(y) so Infinity is silently dropped.
-        result = d === 0 ? Infinity : result / d;
+        const d = this.parseUnary();
+        // Preserve IEEE 754 signs and NaN; plotFunction filters nonfinite results.
+        result /= d;
       }
       // Implicit multiplication: digit/variable followed by letter or '('
       else if (this.pos < this.expr.length) {
         const ch = this.expr[this.pos];
         if (ch === '(' || (ch >= 'a' && ch <= 'z')) {
           // Only if we just consumed a number/variable/close-paren
-          result *= this.parsePower();
+          result *= this.parseUnary();
         } else break;
       } else break;
     }
     return result;
   }
 
-  // power = unary ('^' unary)*
+  // power = atom ('^' unary)? — right associative, above unary minus.
   parsePower() {
-    let base = this.parseUnary();
+    let base = this.parseAtom();
     if (this.consume('^')) {
       const exp = this.parseUnary();
       base = Math.pow(base, exp);
@@ -91,11 +90,11 @@ class Parser {
     return base;
   }
 
-  // unary = ('-')* atom
+  // unary = ('-' | '+') unary | power
   parseUnary() {
     if (this.consume('-')) return -this.parseUnary();
     if (this.consume('+')) return this.parseUnary();
-    return this.parseAtom();
+    return this.parsePower();
   }
 
   // atom = number | '(' expr ')' | function(expr) | variable | constant
@@ -105,18 +104,16 @@ class Parser {
     // Parenthesized expression
     if (this.consume('(')) {
       const val = this.parseExpr();
-      this.consume(')');
+      if (!this.consume(')')) throw new Error('Missing closing parenthesis');
       return val;
     }
 
     // Number literal
     if ((this.expr[this.pos] >= '0' && this.expr[this.pos] <= '9') || this.expr[this.pos] === '.') {
-      let numStr = '';
-      while (this.pos < this.expr.length &&
-             ((this.expr[this.pos] >= '0' && this.expr[this.pos] <= '9') || this.expr[this.pos] === '.')) {
-        numStr += this.expr[this.pos++];
-      }
-      return parseFloat(numStr);
+      const literal = this.expr.slice(this.pos).match(/^(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?/);
+      if (!literal) throw new Error('Invalid number');
+      this.pos += literal[0].length;
+      return Number(literal[0]);
     }
 
     // Identifier: variable, constant, or function
@@ -130,15 +127,15 @@ class Parser {
       if (name === 'x') return this.x;
 
       // Known function
-      if (FUNCS[name]) {
-        this.consume('(');
+      if (Object.hasOwn(FUNCS, name)) {
+        if (!this.consume('(')) throw new Error('Missing function parenthesis');
         const arg = this.parseExpr();
-        this.consume(')');
+        if (!this.consume(')')) throw new Error('Missing closing parenthesis');
         return FUNCS[name](arg);
       }
 
       // Known constant
-      if (CONSTS[name] !== undefined) return CONSTS[name];
+      if (Object.hasOwn(CONSTS, name)) return CONSTS[name];
 
       return NaN; // unknown identifier
     }
@@ -156,7 +153,8 @@ class Parser {
 export function evaluateMathExpr(expr, x) {
   try {
     const parser = new Parser(expr.toLowerCase().trim(), x);
-    return parser.parseExpr();
+    const result = parser.parseExpr();
+    return parser.peek() === '' ? result : NaN;
   } catch {
     return NaN;
   }
@@ -171,6 +169,8 @@ export function evaluateMathExpr(expr, x) {
  * @returns {{ x: number, y: number }[]}
  */
 export function plotFunction(expr, xMin, xMax, steps = 200) {
+  if (!Number.isFinite(xMin) || !Number.isFinite(xMax)
+      || !Number.isSafeInteger(steps) || steps <= 0) return [];
   const points = [];
   const dx = (xMax - xMin) / steps;
   for (let i = 0; i <= steps; i++) {

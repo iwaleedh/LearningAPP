@@ -57,7 +57,7 @@ export const note_chemistry_5_20_5 = {
       id: 'svg-distillation-apparatus',
       type: 'svg',
       data: {
-        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 300' style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
+        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 440 319" style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
   <text x='110' y='24' font-size='13' font-weight='bold' fill='#1e3a5f'>Simple Distillation Apparatus</text>
   <text x='80' y='39' font-size='9' fill='#6b7280'>vapour travels along condenser and is collected as distillate in a separate flask</text>
   <!-- Round-bottom flask (left) -->
@@ -80,11 +80,11 @@ export const note_chemistry_5_20_5 = {
   <!-- Water in arrow (bottom/right of condenser) -->
   <line x1='328' y1='219' x2='352' y2='219' stroke='#0ea5e9' stroke-width='1.5'/>
   <polygon points='344,215 352,219 344,223' fill='#0ea5e9'/>
-  <text x='354' y='223' font-size='9' fill='#0ea5e9'>water in</text>
+  <text x='354' y='223' font-size='9' fill="#0f172a" style="fill:#0f172a">water in</text>
   <!-- Water out arrow (top/left of condenser) -->
   <line x1='150' y1='148' x2='130' y2='136' stroke='#0ea5e9' stroke-width='1.5'/>
   <polygon points='138,132 130,136 138,140' fill='#0ea5e9'/>
-  <text x='88' y='131' font-size='9' fill='#0ea5e9'>water out</text>
+  <text x='88' y='131' font-size='9' fill="#0f172a" style="fill:#0f172a">water out</text>
   <!-- Condenser label -->
   <text x='200' y='162' font-size='9' fill='#374151' transform='rotate(21,200,162)'>Liebig condenser (water-cooled)</text>
   <!-- Adaptor to collection flask -->
@@ -94,8 +94,8 @@ export const note_chemistry_5_20_5 = {
   <text x='348' y='298' font-size='9' fill='#15803d'>collecting flask</text>
   <text x='362' y='308' font-size='9' fill='#15803d'>(distillate)</text>
   <!-- Flask labels -->
-  <text x='28' y='205' font-size='9' fill='#1d4ed8'>reaction</text>
-  <text x='30' y='216' font-size='9' fill='#1d4ed8'>mixture</text>
+  <text x='28' y='205' font-size='9' fill="#f8fafc" style="fill:#f8fafc">reaction</text>
+  <text x='30' y='216' font-size='9' fill="#f8fafc" style="fill:#f8fafc">mixture</text>
   <text x='46' y='266' font-size='10' fill='#dc2626'>▲ heat</text>
   <!-- Vapour arrow -->
   <text x='108' y='145' font-size='9' fill='#1d4ed8'>→ vapour</text>
@@ -149,7 +149,7 @@ export const note_chemistry_5_20_5 = {
       id: 'svg-reflux-apparatus',
       type: 'svg',
       data: {
-        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 370' style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
+        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 331 370" style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
   <text x='62' y='22' font-size='13' font-weight='bold' fill='#1e3a5f'>Reflux Apparatus</text>
   <text x='30' y='38' font-size='9' fill='#6b7280'>vapour condenses in vertical condenser and drips back into reaction flask</text>
   <!-- Round-bottom flask -->
@@ -162,7 +162,7 @@ export const note_chemistry_5_20_5 = {
   <circle cx='135' cy='300' r='3' fill='#6b7280'/>
   <circle cx='150' cy='306' r='3' fill='#6b7280'/>
   <circle cx='164' cy='298' r='3' fill='#6b7280'/>
-  <text x='80' y='330' font-size='8' fill='#6b7280'>anti-bumping granules</text>
+  <text x='80' y='330' font-size='8' fill="#f8fafc" style="fill:#f8fafc">anti-bumping granules</text>
   <!-- Condenser outer jacket (vertical, dashed) -->
   <rect x='132' y='62' width='36' height='186' rx='4' fill='none' stroke='#93c5fd' stroke-width='1.2' stroke-dasharray='5,3'/>
   <!-- Inner condenser tube -->
@@ -170,21 +170,21 @@ export const note_chemistry_5_20_5 = {
   <!-- Water in at bottom of outer jacket -->
   <line x1='132' y1='215' x2='105' y2='215' stroke='#0ea5e9' stroke-width='1.5'/>
   <polygon points='114,211 105,215 114,219' fill='#0ea5e9'/>
-  <text x='32' y='218' font-size='9' fill='#0ea5e9'>cold water in</text>
+  <text x='32' y='218' font-size='9' fill="#0f172a" style="fill:#0f172a">cold water in</text>
   <!-- Water out at top of outer jacket -->
   <line x1='168' y1='95' x2='195' y2='95' stroke='#0ea5e9' stroke-width='1.5'/>
   <polygon points='187,91 195,95 187,99' fill='#0ea5e9'/>
-  <text x='197' y='98' font-size='9' fill='#0ea5e9'>water out</text>
+  <text x='197' y='98' font-size='9' fill="#0f172a" style="fill:#0f172a">water out</text>
   <!-- Vapour arrow (up inside condenser) -->
-  <text x='133' y='170' font-size='9' fill='#1d4ed8'>↑ vapour</text>
+  <text x='133' y='170' font-size='9' fill="#f8fafc" style="fill:#f8fafc">↑ vapour</text>
   <!-- Condensate arrow (down) -->
   <text x='133' y='200' font-size='9' fill='#059669'>↓ condensate</text>
-  <text x='120' y='246' font-size='9' fill='#059669'>returns to flask</text>
+  <text x='120' y='246' font-size='9' fill="#f8fafc" style="fill:#f8fafc">returns to flask</text>
   <!-- Condenser label -->
   <text x='194' y='155' font-size='9' fill='#374151'>vertical</text>
   <text x='188' y='166' font-size='9' fill='#374151'>condenser</text>
   <!-- Flask label -->
-  <text x='95' y='282' font-size='9' fill='#1d4ed8'>reaction flask</text>
+  <text x='95' y='282' font-size='9' fill="#f8fafc" style="fill:#f8fafc">reaction flask</text>
   <text x='108' y='353' font-size='10' fill='#dc2626'>▲ water bath / mantle</text>
 </svg>`,
         caption: 'Reflux apparatus: condenser is vertical — vapour condenses and returns to the reaction flask. Cold water flows in at bottom, out at top (counter-current). Anti-bumping granules prevent violent boiling.'
@@ -273,29 +273,29 @@ export const note_chemistry_5_20_5 = {
       id: 'svg-steam-distillation',
       type: 'svg',
       data: {
-        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 260' style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
+        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 460 274" style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
   <text x='140' y='22' font-size='13' font-weight='bold' fill='#1e3a5f'>Steam Distillation</text>
   <!-- Steam generator flask (left) -->
   <ellipse cx='55' cy='165' rx='40' ry='30' fill='#44370a' stroke='#ca8a04' stroke-width='2'/>
-  <text x='22' y='200' font-size='9' fill='#ca8a04'>steam</text>
-  <text x='18' y='210' font-size='9' fill='#ca8a04'>generator</text>
-  <text x='26' y='220' font-size='9' fill='#ca8a04'>(heated)</text>
+  <text x='22' y='200' font-size='9' fill="#0f172a" style="fill:#0f172a">steam</text>
+  <text x='18' y='210' font-size='9' fill="#0f172a" style="fill:#0f172a">generator</text>
+  <text x='26' y='220' font-size='9' fill="#0f172a" style="fill:#0f172a">(heated)</text>
   <!-- Steam pipe right into reaction flask -->
   <line x1='95' y1='160' x2='168' y2='160' stroke='#ca8a04' stroke-width='2' stroke-dasharray='5,2'/>
   <polygon points='160,156 168,160 160,164' fill='#ca8a04'/>
-  <text x='100' y='153' font-size='9' fill='#ca8a04'>steam →</text>
+  <text x='100' y='153' font-size='9' fill="#0f172a" style="fill:#0f172a">steam →</text>
   <!-- Reaction flask (centre) containing immiscible layers -->
   <ellipse cx='215' cy='170' rx='52' ry='38' fill='#2d2d72' stroke='#4338ca' stroke-width='2'/>
   <!-- Two liquid layers inside -->
   <ellipse cx='215' cy='163' rx='43' ry='12' fill='#0c4a6e' opacity='0.85'/>
-  <text x='186' y='166' font-size='8' fill='#0369a1'>organic layer</text>
+  <text x='186' y='166' font-size='8' fill="#f8fafc" style="fill:#f8fafc">organic layer</text>
   <ellipse cx='215' cy='182' rx='43' ry='13' fill='#0a3020' opacity='0.85'/>
-  <text x='192' y='186' font-size='8' fill='#15803d'>water layer</text>
+  <text x='192' y='186' font-size='8' fill="#f8fafc" style="fill:#f8fafc">water layer</text>
   <!-- Agitation bubbles from steam -->
   <circle cx='200' cy='150' r='3' fill='none' stroke='#1d4ed8' stroke-width='1.2'/>
   <circle cx='218' cy='144' r='4' fill='none' stroke='#1d4ed8' stroke-width='1.2'/>
   <circle cx='233' cy='148' r='3' fill='none' stroke='#1d4ed8' stroke-width='1.2'/>
-  <text x='192' y='140' font-size='8' fill='#1d4ed8'>agitation</text>
+  <text x='192' y='140' font-size='8' fill="#f8fafc" style="fill:#f8fafc">agitation</text>
   <!-- Reaction flask neck and still head -->
   <line x1='215' y1='133' x2='272' y2='133' stroke='#4338ca' stroke-width='2'/>
   <!-- Condenser (angled right-down) -->
@@ -311,8 +311,8 @@ export const note_chemistry_5_20_5 = {
   <text x='368' y='263' font-size='9' fill='#16a34a'>sep. funnel)</text>
   <!-- Key callout box -->
   <rect x='80' y='55' width='230' height='38' rx='4' fill='#78350f' stroke='#f59e0b' stroke-width='1'/>
-  <text x='90' y='71' font-size='10' fill='#92400e'>Key: organic liquid distils at temperature</text>
-  <text x='90' y='85' font-size='10' fill='#92400e' font-weight='bold'>LOWER than its own boiling point</text>
+  <text x='90' y='71' font-size='10' fill="#f8fafc" style="fill:#f8fafc">Key: organic liquid distils at temperature</text>
+  <text x='90' y='85' font-size='10' fill="#f8fafc" font-weight='bold' style="fill:#f8fafc">LOWER than its own boiling point</text>
 </svg>`,
         caption: 'Steam distillation: steam bubbled through immiscible mixture → agitation causes evaporation at temperature below the organic compound\'s normal boiling point. Distillate collected then separated in a separating funnel.'
       }

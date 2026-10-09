@@ -12,6 +12,21 @@ export const note_chemistry_2_7_1 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Hydrogen bonding needs a donor and an acceptor",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A hydrogen-bond donor has hydrogen covalently bonded to N, O or F. An acceptor supplies a suitable lone pair on N, O or F. Draw a hydrogen bond as a dashed line from the partially positive H on the donor to the acceptor atom’s lone pair, and distinguish it from the donor’s covalent bond.<br/><br/>Hydrogen bonding explains unusually high boiling temperatures relative to comparable molecules and contributes to the solubility of small alcohols in water. As an alcohol’s hydrocarbon chain grows, its non-polar portion becomes more significant and water solubility generally decreases. Hydrogen bonds can form between different substances as well as between identical molecules."
+  }
+},
+{
             id: 'h-hbond',
             type: 'heading',
             data: { text: 'Hydrogen Bonding', level: 2 },
@@ -73,20 +88,89 @@ export const note_chemistry_2_7_1 = {
             },
             terms: ['Intermolecular force']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Ethanol both donates and accepts hydrogen bonds. Propanone cannot donate one because it has no O–H or N–H bond, but its carbonyl oxygen can accept hydrogen bonds from water. Therefore “cannot hydrogen-bond to itself” does not mean “cannot hydrogen-bond with water”."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not draw the hydrogen bond between two oxygen nuclei without the hydrogen, or between an H bonded to carbon and an oxygen as the standard A-Level hydrogen-bond example."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is a hydrogen-bond donor?",
+        "checked": false
+      },
+      {
+        "text": "What is an acceptor?",
+        "checked": false
+      },
+      {
+        "text": "Can propanone hydrogen-bond with water?",
+        "checked": false
+      },
+      {
+        "text": "Why does alcohol water solubility generally decrease as the chain grows?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A hydrogen-bond donor has hydrogen covalently bonded to N, O or F. An acceptor supplies a suitable lone pair on N, O or F. Draw a hydrogen bond as a dashed line from the partially positive H on the donor to the acceptor atom’s lone pair, and distinguish it from the donor’s covalent bond."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-conditions', prompt: 'State the two requirements for a hydrogen bond to form.' },
-            { id: 'c2', blockId: 'callout-conditions', prompt: 'Which three specific elements can participate in hydrogen bonding when bonded to hydrogen?' },
-            { id: 'c3', blockId: 'list-drawing', prompt: 'List 3 essential features that must be included when drawing a diagram of hydrogen bonding between two molecules.' },
-            { id: 'c4', blockId: 'callout-examples', prompt: 'Explain why hydrogen sulfide (H₂S) does not form hydrogen bonds, whereas water (H₂O) does.' },
-            { id: 'c5', blockId: 'callout-examples', prompt: 'Name the only fluorine-containing compound capable of forming hydrogen bonds. Why are there no others?' },
-            { id: 'c6', blockId: 'callout-glucose', prompt: 'Identify the three types of intermolecular forces that exist between glucose molecules, explaining what parts of the molecule are responsible for each.' }
-        ],
-        summaryText: 'Hydrogen bonding requires H covalently bonded to N, O, or F, and a lone pair on N, O, or F on a neighbour. When drawing: show δ+/δ–, lone pairs, dashed line, and 180° angle around H. Examples include water, ammonia, alcohols, and HF (the only fluorine compound to do so). Large molecules like glucose have all three types of IM forces acting simultaneously.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is a hydrogen-bond donor?",
+      "answer": "A species with hydrogen bonded to N, O or F that can supply the partially positive hydrogen."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is an acceptor?",
+      "answer": "A suitable lone pair, usually on N, O or F, that interacts with the donor hydrogen."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Can propanone hydrogen-bond with water?",
+      "answer": "Yes. Its oxygen can accept a hydrogen bond from water, although propanone cannot hydrogen-bond to itself in the same way."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why does alcohol water solubility generally decrease as the chain grows?",
+      "answer": "The growing non-polar hydrocarbon portion increasingly outweighs the hydrophilic effect of the O–H group."
+    }
+  ],
+  "summaryText": "A hydrogen-bond donor has hydrogen covalently bonded to N, O or F. An acceptor supplies a suitable lone pair on N, O or F. Draw a hydrogen bond as a dashed line from the partially positive H on the donor to the acceptor atom’s lone pair, and distinguish it from the donor’s covalent bond.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_7_1;

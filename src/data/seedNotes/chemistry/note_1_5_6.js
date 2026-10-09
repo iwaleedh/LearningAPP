@@ -150,8 +150,8 @@ export const note_chemistry_1_5_6 = {
 
   <!-- DIOL BOX (top) -->
   <rect x="125" y="8" width="310" height="38" rx="7" fill="#0a2e1a" stroke="#059669" stroke-width="1.5"/>
-  <text x="280" y="24" text-anchor="middle" font-weight="bold" fill="#065f46" font-size="12">Diol  (mild oxidation)</text>
-  <text x="280" y="40" text-anchor="middle" fill="#065f46" font-size="11">R–CH(OH)–CH(OH)–R′</text>
+  <text x="280" y="24" text-anchor="middle" font-weight="bold" fill="#f8fafc" font-size="12" style="fill:#f8fafc">Diol  (mild oxidation)</text>
+  <text x="280" y="40" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">R–CH(OH)–CH(OH)–R′</text>
 
   <!-- ARROW: alkene ↑ diol (upward) -->
   <line x1="280" y1="84" x2="280" y2="48" stroke="#555" stroke-width="1.5" marker-end="url(#kmno4-arr)"/>
@@ -160,8 +160,8 @@ export const note_chemistry_1_5_6 = {
 
   <!-- ALKENE BOX (centre) -->
   <rect x="170" y="86" width="220" height="44" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
-  <text x="280" y="104" text-anchor="middle" font-weight="bold" fill="#1e3a8a" font-size="13">Alkene</text>
-  <text x="280" y="121" text-anchor="middle" fill="#1e3a8a" font-size="11">R–CH=CH–R′</text>
+  <text x="280" y="104" text-anchor="middle" font-weight="bold" fill="#f8fafc" font-size="13" style="fill:#f8fafc">Alkene</text>
+  <text x="280" y="121" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">R–CH=CH–R′</text>
 
   <!-- ARROW: alkene ↓ cleavage (downward) -->
   <line x1="280" y1="130" x2="280" y2="162" stroke="#555" stroke-width="1.5" marker-end="url(#kmno4-arr)"/>
@@ -170,23 +170,23 @@ export const note_chemistry_1_5_6 = {
 
   <!-- CLEAVAGE PRODUCTS BOX (bottom) -->
   <rect x="8" y="165" width="544" height="71" rx="8" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="280" y="181" text-anchor="middle" font-weight="bold" fill="#7f1d1d" font-size="11">Oxidative Cleavage Products</text>
+  <text x="280" y="181" text-anchor="middle" font-weight="bold" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Oxidative Cleavage Products</text>
 
   <!-- Column dividers -->
   <line x1="190" y1="188" x2="190" y2="232" stroke="#fca5a5" stroke-width="1" stroke-dasharray="4"/>
   <line x1="370" y1="188" x2="370" y2="232" stroke="#fca5a5" stroke-width="1" stroke-dasharray="4"/>
 
   <!-- Column 1: =CH₂ -->
-  <text x="99" y="200" text-anchor="middle" fill="#555" font-size="10">=CH₂ · 2 H atoms</text>
-  <text x="99" y="218" text-anchor="middle" fill="#111" font-size="12" font-weight="bold">CO₂ + H₂O</text>
+  <text x="99" y="200" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">=CH₂ · 2 H atoms</text>
+  <text x="99" y="218" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">CO₂ + H₂O</text>
 
   <!-- Column 2: =CHR -->
-  <text x="280" y="200" text-anchor="middle" fill="#555" font-size="10">=CHR · 1 H atom</text>
-  <text x="280" y="218" text-anchor="middle" fill="#111" font-size="12" font-weight="bold">RCOOH</text>
+  <text x="280" y="200" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">=CHR · 1 H atom</text>
+  <text x="280" y="218" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">RCOOH</text>
 
   <!-- Column 3: =CR₂ -->
-  <text x="461" y="200" text-anchor="middle" fill="#555" font-size="10">=CR₂ · 0 H atoms</text>
-  <text x="461" y="218" text-anchor="middle" fill="#111" font-size="12" font-weight="bold">RCOR′  (ketone)</text>
+  <text x="461" y="200" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">=CR₂ · 0 H atoms</text>
+  <text x="461" y="218" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">RCOR′  (ketone)</text>
 </svg>`,
         caption: 'Summary: cold dilute KMnO₄ → diol (mild); hot concentrated KMnO₄ → oxidative cleavage with products determined by H count on each C=C carbon'
       }

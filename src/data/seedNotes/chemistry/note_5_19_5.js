@@ -8,6 +8,21 @@ export const note_chemistry_5_19_5 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Use pH to decide an amino acid’s charge",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "An amino acid contains an acidic carboxyl group and a basic amino group. In a common neutral aqueous form, proton transfer gives a zwitterion containing NH₃⁺ and COO⁻ groups. It has internal positive and negative charges but zero overall charge. This contributes to strong ionic attractions in solid amino acids and relatively high melting temperatures.<br/><br/>At low pH, the carboxylate is protonated and the amino group remains NH₃⁺, giving an overall cation. At high pH, the amino group loses a proton and the carboxyl group remains COO⁻, giving an overall anion. The isoelectric point is the pH where the mean net charge is zero; it is not universally pH 7."
+  }
+},
+{
       id: 'h-amino-acid-structure',
       type: 'heading',
       data: { text: 'Amino Acid Structure and Zwitterion Formation', level: 2 }
@@ -292,13 +307,6 @@ export const note_chemistry_5_19_5 = {
       terms: []
     },
     {
-      id: 'summary-zwitterions',
-      type: 'summary',
-      data: {
-        text: 'Amino acids form zwitterions (⁺H₃N−CHR−COO⁻) in neutral solution via internal proton transfer. Charge varies with pH: low pH → +1 charge; neutral pH → zwitterion (0); high pH → −1 charge. Isoelectric point (pI) is the pH where net charge = 0. Low pI → amino acid is more acidic; high pI → more basic; at pI → zwitterion. Amino acids are amphoteric — they form salts with both acids and bases (e.g., glutamic acid + NaOH → sodium glutamate/MSG). In electrophoresis: pH < pI → move to cathode; pH > pI → move to anode; pH = pI → no movement. Most amino acids are chiral — the α-carbon bonds to 4 different groups; glycine (R = H) is the only non-chiral amino acid. Equal amounts of enantiomers give a racemic mixture with no net rotation of polarised light.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -307,19 +315,89 @@ export const note_chemistry_5_19_5 = {
         text: "Draw tyrosine zwitterion: H\u2083N\u207a\u2212CHR(C\u2086H\u2084\u2212OH)\u2212COO\u207b (charge on N and O from carboxyl, NOT on phenol). Identify R = C\u2086H\u2084\u2212OH with phenolic \u2212OH group separate. Draw two enantiomers (non-superimposable mirror images) with wedge/dash bonds at chiral center. Common exam mistake: students place charge on phenol \u2212OH instead of carboxyl."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For glycine: acidic conditions favour H₃N⁺CH₂COOH (net +1); near its isoelectric region, H₃N⁺CH₂COO⁻ (net 0); alkaline conditions favour H₂NCH₂COO⁻ (net −1). Glycine is achiral because its central carbon has two identical H atoms. Many other amino acids have four different groups at that carbon."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Zero net charge does not mean no charges within the molecule. Do not draw every amino acid as an uncharged NH₂/COOH structure regardless of solution pH."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is a zwitterion?",
+        "checked": false
+      },
+      {
+        "text": "What is glycine’s overall charge in strongly acidic conditions?",
+        "checked": false
+      },
+      {
+        "text": "What is its overall charge in strongly alkaline conditions?",
+        "checked": false
+      },
+      {
+        "text": "Why is glycine not chiral?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "An amino acid contains an acidic carboxyl group and a basic amino group. In a common neutral aqueous form, proton transfer gives a zwitterion containing NH₃⁺ and COO⁻ groups. It has internal positive and negative charges but zero overall charge. This contributes to strong ionic attractions in solid amino acids and relatively high melting temperatures."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'p-structure-2', prompt: 'What is a zwitterion, and why do amino acids form them in solution?' },
-      { id: 'cue-2', blockId: 'eq-ph-states', prompt: 'Write the ionic forms of an amino acid at low, neutral, and high pH.' },
-      { id: 'cue-3', blockId: 'callout-pi-interpretation', prompt: 'What does a low isoelectric point vs a high isoelectric point tell you about an amino acid?' },
-      { id: 'cue-4', blockId: 'list-chirality', prompt: 'Why are most amino acids optically active? Which amino acid is the exception and why?' },
-      { id: 'cue-5', blockId: 'p-electrophoresis-2', prompt: 'Explain how amino acids move during electrophoresis at different pH values.' }
-    ],
-    summaryText: 'Zwitterion: ⁺H₃N−CHR−COO⁻ (charge 0 at pI). Low pH: ⁺charge (+1); high pH: −charge (−1). Low pI → acidic; high pI → basic; at pI → zwitterion. Amphoteric → forms salts with acids/bases (MSG). Most amino acids chiral (α-C has 4 different groups); glycine NOT chiral (R = H, has 2 identical H). Racemic mixture: equal enantiomers → no rotation.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is a zwitterion?",
+      "answer": "A species with both positive and negative internal charges but zero overall charge."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is glycine’s overall charge in strongly acidic conditions?",
+      "answer": "+1 in the form H₃N⁺CH₂COOH."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What is its overall charge in strongly alkaline conditions?",
+      "answer": "−1 in the form H₂NCH₂COO⁻."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why is glycine not chiral?",
+      "answer": "Its central carbon has two identical hydrogen substituents."
+    }
+  ],
+  "summaryText": "An amino acid contains an acidic carboxyl group and a basic amino group. In a common neutral aqueous form, proton transfer gives a zwitterion containing NH₃⁺ and COO⁻ groups. It has internal positive and negative charges but zero overall charge. This contributes to strong ionic attractions in solid amino acids and relatively high melting temperatures.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -329,5 +407,5 @@ export const note_chemistry_5_19_5 = {
       source: 'chemguide.co.uk — amino acids and zwitterions',
       tags: ['amino acid', 'zwitterion', 'isoelectric', 'pH', 'electrophoresis', 'charge']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

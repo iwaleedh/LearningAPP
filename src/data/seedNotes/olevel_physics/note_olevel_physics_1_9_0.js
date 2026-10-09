@@ -37,9 +37,9 @@ export const note_olevel_physics_1_9_0 = {
       id: 'svg-pressure',
       type: 'svg',
       data: {
-        svg: `<svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+        svg: `<svg viewBox="0 -40 380 240" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif"><rect x="0" y="-40" width="380" height="40" fill="#0f172a"/>
   <rect width="380" height="200" fill="#0a2e1a" rx="10"/>
-  <text x="190" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Same Force, Different Area → Different Pressure</text>
+
   <!-- Left: Small area (nail/knife) -->
   <rect x="30" y="100" width="120" height="60" fill="#1e293b" stroke="#e5e7eb" rx="5"/>
   <text x="90" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Small Area (nail)</text>
@@ -72,7 +72,7 @@ export const note_olevel_physics_1_9_0 = {
   <text x="285" y="140" text-anchor="middle" font-size="9" fill="#16a34a">A = 0.5 m²</text>
   <text x="285" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#16a34a">P = 100 Pa</text>
   <text x="285" y="168" text-anchor="middle" font-size="9" fill="#16a34a">Low pressure</text>
-</svg>`,
+<text x="190" y="-12" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d" style="fill: #f8fafc;">Same Force, Different Area → Different Pressure</text></svg>`,
         caption: 'Same 50 N force — nail (small area) → very high pressure; snowshoe (large area) → very low pressure.',
       },
     },

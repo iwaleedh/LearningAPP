@@ -213,6 +213,6 @@ mark.user-highlight:hover {
 }
 ::highlight(user-highlight-yellow) { background-color: rgba(250, 204, 21, 0.4); }
 ::highlight(user-highlight-green) { background-color: rgba(74, 222, 128, 0.4); }
-::highlight(user-highlight-blue) { background-color: rgba(96, 165, 250, 0.4); }
+::highlight(user-highlight-blue) { background-color: rgba(139, 30, 63, 0.4); }
 ::highlight(user-highlight-pink) { background-color: rgba(244, 114, 182, 0.4); }
 ::highlight(user-highlight-orange) { background-color: rgba(251, 146, 60, 0.4); }

@@ -12,6 +12,21 @@ export const note_chemistry_1_3_2 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Shared pairs, lone pairs and coordinate bonds",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A covalent bond is the electrostatic attraction between a shared pair of electrons and the nuclei of the bonded atoms. Each single bond contains one shared pair; double and triple bonds contain two and three shared pairs. A lone pair belongs to one atom and is not used in a bond.<br/><br/>Count the total valence electrons before drawing a dot-and-cross diagram. Place shared pairs between nuclei, then add lone pairs. Hydrogen normally has two electrons in its shell; carbon, nitrogen and oxygen usually achieve eight in these examples. In a coordinate bond, both electrons in the shared pair were donated by the same atom. Once formed, the bond is a covalent bond; its origin does not make it intrinsically weaker."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'Covalent Bond Formation', level: 2 },
@@ -212,20 +227,90 @@ export const note_chemistry_1_3_2 = {
       },
       terms: ['Dative covalent bond', 'Coordinate bond']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "In NH₃, nitrogen contributes five outer electrons. Three form shared pairs with three hydrogen electrons, leaving one lone pair on nitrogen. In NH₄⁺, this lone pair is donated to H⁺. Draw four N–H bonds, enclose the whole ion in brackets and show the + charge. All four N–H bonds in ammonium are equivalent after formation."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Dots and crosses show where electrons came from, not charge. A line represents a pair of electrons, not one electron. Do not omit lone pairs when a question requests a full outer-shell diagram."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define a covalent bond.",
+        "checked": false
+      },
+      {
+        "text": "How many bonding and lone pairs surround nitrogen in NH₃?",
+        "checked": false
+      },
+      {
+        "text": "What makes a coordinate bond different at formation?",
+        "checked": false
+      },
+      {
+        "text": "What changes when NH₃ reacts with H⁺ to form NH₄⁺?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A covalent bond is the electrostatic attraction between a shared pair of electrons and the nuclei of the bonded atoms. Each single bond contains one shared pair; double and triple bonds contain two and three shared pairs. A lone pair belongs to one atom and is not used in a bond."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Covalent bond = electrostatic attraction of shared e⁻ pair to both nuclei. Single (1 pair), double (2 pairs), triple (3 pairs). More pairs → shorter, stronger bond. H₂O: 2 bonds + 2 lone pairs; NH₃: 3 bonds + 1 lone pair; CO₂: 2 double bonds, linear. Dative bond: both electrons from one atom.',
-    cues: [
-      { id: 'c1', blockId: 'key-def', prompt: 'Define a covalent bond precisely. How does bond order (1, 2, 3) affect bond length and bond enthalpy?' },
-      { id: 'c2', blockId: 'svg-dotcross', prompt: 'How many bonding pairs and lone pairs does each atom have in: H₂O, NH₃, CO₂, N₂?' },
-      { id: 'c3', blockId: 'svg-dotcross', prompt: 'Describe the difference between O₂ (double bond) and N₂ (triple bond) in a dot-and-cross diagram.' },
-      { id: 'c4', blockId: 'svg-bondtypes', prompt: 'Compare single, double and triple bonds in terms of length, bond enthalpy and rotation.' },
-      { id: 'c5', blockId: 'tip-dative', prompt: 'What is a dative covalent bond? Give one example and explain which atom donates both electrons.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define a covalent bond.",
+      "answer": "The electrostatic attraction between a shared pair of electrons and the nuclei of the bonded atoms."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How many bonding and lone pairs surround nitrogen in NH₃?",
+      "answer": "Three bonding pairs and one lone pair."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What makes a coordinate bond different at formation?",
+      "answer": "Both electrons in the shared pair are supplied by the same donor atom."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What changes when NH₃ reacts with H⁺ to form NH₄⁺?",
+      "answer": "Nitrogen donates its lone pair to H⁺, producing a fourth N–H bond; the whole ammonium ion has charge +1."
+    }
+  ],
+  "summaryText": "A covalent bond is the electrostatic attraction between a shared pair of electrons and the nuclei of the bonded atoms. Each single bond contains one shared pair; double and triple bonds contain two and three shared pairs. A lone pair belongs to one atom and is not used in a bond.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

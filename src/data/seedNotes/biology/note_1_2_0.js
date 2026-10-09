@@ -81,15 +81,6 @@ export const note_biology_1_2_0 = {
         "title": "Fick's Law",
         "text": "Remember that the Rate of diffusion is proportional to (Surface Area x Concentration difference) / Thickness of membrane. Always specify 'concentration difference', not just 'concentration'."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Fick's Law",
-        "text": "Remember that the Rate of diffusion is proportional to (Surface Area x Concentration difference) / Thickness of membrane. Always specify 'concentration difference', not just 'concentration'."
-      }
     }
   ],
   "recall": {

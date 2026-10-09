@@ -12,6 +12,21 @@ export const note_chemistry_2_6_5 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Core Practical 2: connect two measurements by Hess’s law",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Hess’s law allows an indirect reaction enthalpy to be found from routes with identical initial and final states. A useful calorimetry investigation compares magnesium and magnesium oxide reacting separately with excess hydrochloric acid. Measure each temperature change under controlled conditions, find q and divide by the amount of Mg or MgO reacting. Use a lid, stir, account for the total solution mass and estimate the temperature rise by extrapolating a temperature–time graph.<br/><br/>Combine the measured equations algebraically. Reversing an equation changes the sign of ΔH; multiplying it changes ΔH by the same factor. State assumptions about density, heat capacity, completion of reaction and heat absorbed by apparatus. Compare uncertainty with systematic heat loss rather than describing every disagreement as “human error”."
+  }
+},
+{
             id: 'h-hess',
             type: 'heading',
             data: { text: 'Hess\'s Law', level: 2 },
@@ -31,7 +46,7 @@ export const note_chemistry_2_6_5 = {
             id: 'svg-hess-cycle',
             type: 'svg',
             data: {
-                svg: '<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11"><defs><marker id="hess-a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0,1 8,4 0,7" fill="#3b82f6"/></marker><marker id="hess-b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0,1 8,4 0,7" fill="#0ea5e9"/></marker></defs><text x="210" y="12" text-anchor="middle" fill="#374151" font-size="11" font-weight="bold">Hess\'s Law — Two Routes, Same Enthalpy Change</text><rect x="28" y="18" width="108" height="36" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.5"/><text x="82" y="34" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">Reactants</text><text x="82" y="48" text-anchor="middle" fill="#1d4ed8" font-size="10">(A)</text><rect x="286" y="18" width="108" height="36" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.5"/><text x="340" y="34" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">Products</text><text x="340" y="48" text-anchor="middle" fill="#15803d" font-size="10">(B)</text><rect x="160" y="152" width="100" height="38" rx="5" fill="#2d1b69" stroke="#d8b4fe" stroke-width="1.5"/><text x="210" y="168" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">Shared</text><text x="210" y="182" text-anchor="middle" fill="#1d4ed8" font-size="10">intermediates (C)</text><line x1="138" y1="36" x2="284" y2="36" stroke="#3b82f6" stroke-width="2" marker-end="url(#hess-a)"/><text x="211" y="30" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold">\u0394H = ? (Route 1, direct)</text><line x1="96" y1="54" x2="188" y2="150" stroke="#0ea5e9" stroke-width="2" marker-end="url(#hess-b)"/><text x="120" y="108" text-anchor="middle" fill="#0ea5e9" font-size="11" font-weight="bold" transform="rotate(44,120,108)">\u0394H\u2082</text><line x1="234" y1="152" x2="328" y2="56" stroke="#0ea5e9" stroke-width="2" marker-end="url(#hess-a)"/><text x="300" y="108" text-anchor="middle" fill="#0ea5e9" font-size="11" font-weight="bold" transform="rotate(-44,300,108)">\u0394H\u2083</text><text x="210" y="104" text-anchor="middle" fill="#6b7280" font-size="10" font-style="italic">Route 2 (indirect)</text><rect x="56" y="199" width="308" height="18" rx="3" fill="#0a2e1a" stroke="#86efac"/><text x="210" y="212" text-anchor="middle" fill="#15803d" font-size="11" font-weight="bold">By Hess\'s Law: \u0394H = \u0394H\u2082 + \u0394H\u2083</text></svg>',
+                svg: `<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11"><defs><marker id="hess-a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0,1 8,4 0,7" fill="#3b82f6"/></marker><marker id="hess-b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0,1 8,4 0,7" fill="#0ea5e9"/></marker></defs><text x="210" y="12" text-anchor="middle" fill="#374151" font-size="11" font-weight="bold">Hess's Law — Two Routes, Same Enthalpy Change</text><rect x="28" y="18" width="108" height="36" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.5"/><text x="82" y="34" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Reactants</text><text x="82" y="48" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">(A)</text><rect x="286" y="18" width="108" height="36" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.5"/><text x="340" y="34" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Products</text><text x="340" y="48" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">(B)</text><rect x="160" y="152" width="100" height="38" rx="5" fill="#2d1b69" stroke="#d8b4fe" stroke-width="1.5"/><text x="210" y="168" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Shared</text><text x="210" y="182" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">intermediates (C)</text><line x1="138" y1="36" x2="284" y2="36" stroke="#3b82f6" stroke-width="2" marker-end="url(#hess-a)"/><text x="211" y="30" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold">ΔH = ? (Route 1, direct)</text><line x1="96" y1="54" x2="188" y2="150" stroke="#0ea5e9" stroke-width="2" marker-end="url(#hess-b)"/><text x="120" y="108" text-anchor="middle" fill="#0ea5e9" font-size="11" font-weight="bold" transform="rotate(44,120,108)">ΔH₂</text><line x1="234" y1="152" x2="328" y2="56" stroke="#0ea5e9" stroke-width="2" marker-end="url(#hess-a)"/><text x="300" y="108" text-anchor="middle" fill="#0ea5e9" font-size="11" font-weight="bold" transform="rotate(-44,300,108)">ΔH₃</text><text x="210" y="104" text-anchor="middle" fill="#6b7280" font-size="10" font-style="italic">Route 2 (indirect)</text><rect x="56" y="199" width="308" height="18" rx="3" fill="#0a2e1a" stroke="#86efac"/><text x="210" y="212" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="bold" style="fill:#f8fafc">By Hess's Law: ΔH = ΔH₂ + ΔH₃</text></svg>`,
                 caption: 'Hess\'s Law cycle: the direct route (A → B, ΔH) gives the same enthalpy change as the indirect route via shared intermediates C (ΔH₂ + ΔH₃). This works because energy is conserved — if it were not true, you could create energy from nothing.'
             },
             terms: []
@@ -126,19 +141,89 @@ export const note_chemistry_2_6_5 = {
             },
             terms: []
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Let A: Mg + 2HCl → MgCl₂ + H₂, ΔH₁ = −467 kJ mol⁻¹; B: MgO + 2HCl → MgCl₂ + H₂O, ΔH₂ = −151; and C: H₂ + ½O₂ → H₂O, ΔH₃ = −286 (illustrative data). A + C − B gives Mg + ½O₂ → MgO. Thus ΔH = ΔH₁ + ΔH₃ − ΔH₂ = −467 − 286 + 151 = <strong>−602 kJ mol⁻¹</strong>. Cancel matching species to verify the cycle."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Never memorise a sign pattern without checking the equations. Make sure HCl is in excess and use the actual amount of solid reacting. This is the Hess’s law component required for Core Practical 2, beyond a standalone neutralisation measurement."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What happens to ΔH when an equation is reversed?",
+        "checked": false
+      },
+      {
+        "text": "Why must Hess routes share the same initial and final states?",
+        "checked": false
+      },
+      {
+        "text": "How are Mg and MgO calorimetry measurements combined in the example?",
+        "checked": false
+      },
+      {
+        "text": "What is a better evaluation than “human error”?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Hess’s law allows an indirect reaction enthalpy to be found from routes with identical initial and final states. A useful calorimetry investigation compares magnesium and magnesium oxide reacting separately with excess hydrochloric acid. Measure each temperature change under controlled conditions, find q and divide by the amount of Mg or MgO reacting. Use a lid, stir, account for the total solution mass and estimate the temperature rise by extrapolating a temperature–time graph."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-hess', prompt: 'State Hess\'s Law.' },
-            { id: 'c2', blockId: 'p-cycles', prompt: 'Why is Hess\'s Law useful in chemistry?' },
-            { id: 'c3', blockId: 'callout-formation', prompt: 'State the formula for calculating the enthalpy of reaction (ΔᵣH) when given enthalpy of FORMATION data for reactants and products.' },
-            { id: 'c4', blockId: 'callout-combustion', prompt: 'State the formula for calculating the enthalpy of reaction (ΔᵣH) when given enthalpy of COMBUSTION data for reactants and products.' },
-            { id: 'c5', blockId: 'callout-decomp', prompt: 'Describe how a Hess cycle is constructed to find the enthalpy of thermal decomposition of CaCO₃ using its reaction with HCl.' }
-        ],
-        summaryText: 'Hess\'s Law: total enthalpy change is independent of the route. Useful for impossible direct reactions (e.g. hydration, decomposition, formation of large carbons). Formation cycle: elements at bottom (arrows UP), ΔH = Σ(Prod) – Σ(React). Combustion cycle: oxides at bottom (arrows DOWN), ΔH = Σ(React) – Σ(Prod). Hydration/Decomp cycles use common products (dissolved ions or reaction with acid) at the bottom.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What happens to ΔH when an equation is reversed?",
+      "answer": "Its sign reverses; multiplying an equation also multiplies its enthalpy change by the same factor."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why must Hess routes share the same initial and final states?",
+      "answer": "Enthalpy is a state function, so route independence applies only when those states and conditions match."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How are Mg and MgO calorimetry measurements combined in the example?",
+      "answer": "Add the Mg reaction and hydrogen combustion, then subtract the MgO reaction. The remaining equation forms MgO from its elements."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What is a better evaluation than “human error”?",
+      "answer": "Identify a specific source, explain its effect on ΔT or reacting amount, and propose a targeted improvement."
+    }
+  ],
+  "summaryText": "Hess’s law allows an indirect reaction enthalpy to be found from routes with identical initial and final states. A useful calorimetry investigation compares magnesium and magnesium oxide reacting separately with excess hydrochloric acid. Measure each temperature change under controlled conditions, find q and divide by the amount of Mg or MgO reacting. Use a lid, stir, account for the total solution mass and estimate the temperature rise by extrapolating a temperature–time graph.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_6_5;

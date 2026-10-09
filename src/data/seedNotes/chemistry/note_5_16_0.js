@@ -53,7 +53,7 @@ export const note_chemistry_5_16_0 = {
       data: {
         svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <rect width="420" height="200" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="210" y="20" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Metal–Solution Equilibrium</text>
+  <text x="210" y="20" text-anchor="middle" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Metal–Solution Equilibrium</text>
   <rect x="20" y="35" width="90" height="130" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
   <text x="65" y="97" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Metal</text>
   <text x="65" y="113" text-anchor="middle" fill="#1e293b" font-size="11">M(s)</text>
@@ -63,21 +63,21 @@ export const note_chemistry_5_16_0 = {
   <text x="118" y="112" fill="#3b82f6" font-size="15" font-weight="bold">e⁻</text>
   <text x="112" y="148" fill="#2563eb" font-size="9">build-up</text>
   <rect x="160" y="35" width="240" height="130" rx="6" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="280" y="58" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Solution</text>
+  <text x="280" y="58" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Solution</text>
   <circle cx="230" cy="95" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
-  <text x="230" y="100" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
+  <text x="230" y="100" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">M⁺</text>
   <circle cx="285" cy="120" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
-  <text x="285" y="125" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
+  <text x="285" y="125" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">M⁺</text>
   <circle cx="345" cy="90" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
-  <text x="345" y="95" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
+  <text x="345" y="95" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">M⁺</text>
   <path d="M155,75 Q143,55 132,62" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#ra)"/>
   <text x="94" y="50" fill="#ef4444" font-weight="bold" font-size="10">oxidation</text>
-  <text x="90" y="62" fill="#ef4444" font-size="10">M → M⁺ + e⁻</text>
+  <text x="30" y="190" fill="#ef4444" font-size="10">M → M⁺ + e⁻</text>
   <path d="M155,125 Q143,140 132,133" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#ga)"/>
   <text x="88" y="155" fill="#16a34a" font-weight="bold" font-size="10">reduction</text>
   <text x="88" y="167" fill="#16a34a" font-size="10">M⁺ + e⁻ → M</text>
-  <text x="280" y="155" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="10">Dynamic equilibrium</text>
-  <text x="280" y="168" text-anchor="middle" fill="#3b82f6" font-size="9">rate(fwd) = rate(rev)</text>
+  <text x="280" y="155" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="10" style="fill:#f8fafc">Dynamic equilibrium</text>
+  <text x="280" y="168" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">rate(fwd) = rate(rev)</text>
   <defs>
     <marker id="ra" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ef4444"/></marker>
     <marker id="ga" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
@@ -322,23 +322,23 @@ export const note_chemistry_5_16_0 = {
       data: {
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <rect width="400" height="220" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Electrochemical Series — Key Rules</text>
+  <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Electrochemical Series — Key Rules</text>
   <rect x="20" y="35" width="360" height="145" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
   <text x="40" y="56" fill="#dc2626" font-size="11" font-weight="bold">Most negative E° (top)</text>
-  <text x="40" y="72" fill="#374151" font-size="10">Li⁺ + e⁻ ⇌  Li          E° = −3.04 V</text>
-  <text x="40" y="87" fill="#374151" font-size="10">Mg²⁺ + 2e⁻ ⇌ Mg        E° = −2.37 V</text>
-  <text x="40" y="102" fill="#374151" font-size="10">Zn²⁺ + 2e⁻ ⇌ Zn        E° = −0.76 V</text>
+  <text x="40" y="72" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Li⁺ + e⁻ ⇌  Li          E° = −3.04 V</text>
+  <text x="40" y="87" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Mg²⁺ + 2e⁻ ⇌ Mg        E° = −2.37 V</text>
+  <text x="40" y="102" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Zn²⁺ + 2e⁻ ⇌ Zn        E° = −0.76 V</text>
   <text x="40" y="117" fill="#6b7280" font-size="10">2H⁺ + 2e⁻ ⇌ H₂         E° =  0.00 V  ← SHE reference</text>
-  <text x="40" y="132" fill="#374151" font-size="10">Cu²⁺ + 2e⁻ ⇌ Cu        E° = +0.34 V</text>
-  <text x="40" y="147" fill="#374151" font-size="10">Ag⁺ + e⁻ ⇌ Ag           E° = +0.80 V</text>
-  <text x="40" y="162" fill="#0369a1" font-size="11" font-weight="bold">Most positive E° (bottom)</text>
+  <text x="40" y="132" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Cu²⁺ + 2e⁻ ⇌ Cu        E° = +0.34 V</text>
+  <text x="40" y="147" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Ag⁺ + e⁻ ⇌ Ag           E° = +0.80 V</text>
+  <text x="40" y="162" fill="#f8fafc" font-size="11" font-weight="bold" style="fill:#f8fafc">Most positive E° (bottom)</text>
   <path d="M360,40 L360,175" stroke="#e2e8f0" stroke-width="1"/>
   <text x="378" y="56" fill="#dc2626" font-size="10" text-anchor="middle" transform="rotate(-90,378,100)">Strongest reducing agents →</text>
   <line x1="375" y1="45" x2="375" y2="100" stroke="#dc2626" stroke-width="2" marker-end="url(#da)"/>
   <line x1="375" y1="175" x2="375" y2="120" stroke="#2563eb" stroke-width="2" marker-end="url(#db)"/>
   <text x="315" y="40" fill="#dc2626" font-size="9">TOP-RIGHT</text>
   <text x="310" y="50" fill="#dc2626" font-size="9">= best reducer</text>
-  <text x="310" y="178" fill="#2563eb" font-size="9">BOTTOM-LEFT</text>
+  <text x="310" y="178" fill="#f8fafc" font-size="9" style="fill:#f8fafc">BOTTOM-LEFT</text>
   <text x="310" y="188" fill="#2563eb" font-size="9">= best oxidiser</text>
   <defs>
     <marker id="da" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/></marker>

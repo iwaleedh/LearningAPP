@@ -84,7 +84,7 @@ export const note_physics_4_17_1 = {
       data: {
         style: 'worked',
         title: 'Worked Example: ISS Orbit',
-        text: 'ISS orbit: r = 6.78 × 10⁶ m (400 km altitude + Earth radius 6380 km). Speed v = 7660 m/s.\n\na = v²/r = 7660² / 6.78×10⁶ = 8.66 m/s²\n\nThis <strong>centripetal acceleration</strong> is provided by gravity (g = 8.66 m/s² at that altitude). Astronauts feel weightless because they are in freefall — both them and the station accelerate toward Earth at the same rate.'
+        text: 'ISS orbit: r = 6.78 × 10⁶ m (400 km altitude + Earth radius 6380 km). Speed v = 7660 m/s.\n\na = v²/r = 7660² / (6.78 × 10⁶) = 8.66 m/s²\n\nThis <strong>centripetal acceleration</strong> is provided by gravity (g = 8.66 m/s² at that altitude). Astronauts feel weightless because they are in freefall — both them and the station accelerate toward Earth at the same rate.'
       }
     },
     {

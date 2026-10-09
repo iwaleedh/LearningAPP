@@ -82,15 +82,6 @@ export const note_chemistry_2_9_7 = {
         "title": "Industrial Compromises",
         "text": "For exothermic reversible reactions, lower temperatures offer a high theoretical yield but a very slow rate of reaction. A 'compromise temperature' balances a viable rate of production with a reasonable yield."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "key",
-        "title": "Industrial Compromises",
-        "text": "For exothermic reversible reactions, lower temperatures offer a high theoretical yield but a very slow rate of reaction. A 'compromise temperature' balances a viable rate of production with a reasonable yield."
-      }
     }
     ],
     recall: {

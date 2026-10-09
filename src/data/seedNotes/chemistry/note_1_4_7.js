@@ -5,7 +5,22 @@
 export const note_chemistry_1_4_7 = {
   blocks: [
     { id: 'obj', type: 'objective', data: { text: 'Understand the formulae and structures of alkanes and cycloalkanes. Relate their physical properties and reactivity to their bonding and structure.' } },
-    { id: 'h-alkanes', type: 'heading', data: { text: 'Alkanes', level: 2 } },
+    {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Use a general formula only after checking the structure",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "An acyclic saturated alkane has general formula CₙH₂ₙ₊₂. Joining the ends to make one saturated ring removes two hydrogen atoms, giving a monocyclic cycloalkane CₙH₂ₙ. An acyclic alkene with one C=C bond also has CₙH₂ₙ. Therefore a molecular formula alone cannot distinguish a cycloalkane from an alkene.<br/><br/>Each carbon has four bonds. In a skeletal formula, unlabelled line ends and corners represent carbon atoms, and hydrogens attached to carbon are implied. A double bond contributes two towards a carbon’s valency. General formulae describe a specified class; extra rings or double bonds require adjustment."
+  }
+},
+{ id: 'h-alkanes', type: 'heading', data: { text: 'Alkanes', level: 2 } },
     { id: 'callout-alkane-formula', type: 'callout', data: {
       style: 'key', title: 'General Formula for Alkanes',
       text: 'Straight-chain and branched alkanes fit the general formula <strong>C<sub>n</sub>H<sub>2n+2</sub></strong>.'
@@ -40,17 +55,88 @@ export const note_chemistry_1_4_7 = {
         text: "Remember that cycloalkanes have the general formula C\u2099H\u2082\u2099 \u2014 which is the same as straight-chain alkenes \u2014 whereas straight-chain alkanes are C\u2099H\u2082\u2099\u208a\u2082."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For six carbons: hexane is <strong>C₆H₁₄</strong>, cyclohexane is <strong>C₆H₁₂</strong>, and hex-1-ene is also <strong>C₆H₁₂</strong>. Calculate Mᵣ(hexane) using C = 12.0 and H = 1.0: 6 × 12.0 + 14 × 1.0 = <strong>86.0</strong>. Bromine-water observations can help distinguish an alkene from a cycloalkane under appropriate test conditions."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "CₙH₂ₙ does not prove the presence of a double bond. Check whether the structure is cyclic. Do not apply CₙH₂ₙ₊₂ to a compound containing oxygen or multiple rings without considering its class."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Give the general formula for an acyclic saturated alkane.",
+        "checked": false
+      },
+      {
+        "text": "Give the formula of cyclohexane.",
+        "checked": false
+      },
+      {
+        "text": "Why can C₆H₁₂ represent more than one class?",
+        "checked": false
+      },
+      {
+        "text": "How do you count carbons in a skeletal formula?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "An acyclic saturated alkane has general formula CₙH₂ₙ₊₂. Joining the ends to make one saturated ring removes two hydrogen atoms, giving a monocyclic cycloalkane CₙH₂ₙ. An acyclic alkene with one C=C bond also has CₙH₂ₙ. Therefore a molecular formula alone cannot distinguish a cycloalkane from an alkene."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'c1', blockId: 'callout-cyclo-formula', prompt: 'State the general formulae for alkanes and cycloalkanes. Why do cycloalkanes have two fewer H atoms than the corresponding alkane?' },
-      { id: 'c2', blockId: 'svg-bp-factors', prompt: 'Explain why branched alkanes typically have lower boiling points than their straight-chain isomers.' },
-      { id: 'c3', blockId: 'svg-bp-factors', prompt: 'Why do cycloalkanes generally have higher boiling points than the corresponding straight-chain alkane?' },
-      { id: 'c4', blockId: 'svg-reactivity', prompt: 'Explain why cyclopropane is much more reactive than larger cycloalkanes or straight-chain alkanes.' }
-    ],
-    summaryText: 'Alkanes (CₙH₂ₙ₊₂) and cycloalkanes (CₙH₂ₙ) are saturated, non-polar hydrocarbons. BP increases with chain length (stronger London forces), decreases with branching (less surface contact). Cycloalkanes: ~10–20 K higher BP than open-chain isomers (better packing). Alkanes unreactive (non-polar, strong C–H/C–C bonds). Cyclopropane reactive (60° ring strain weakens bonds).',
-    ready: false
-  },
-  evidence: [], mentions: []
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Give the general formula for an acyclic saturated alkane.",
+      "answer": "CₙH₂ₙ₊₂."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Give the formula of cyclohexane.",
+      "answer": "C₆H₁₂; one ring reduces the hydrogen count by two relative to hexane."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why can C₆H₁₂ represent more than one class?",
+      "answer": "It can be a monocyclic cycloalkane or an acyclic alkene containing one double bond."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "How do you count carbons in a skeletal formula?",
+      "answer": "Count every unlabelled line end and corner; add any explicitly labelled carbon atoms."
+    }
+  ],
+  "summaryText": "An acyclic saturated alkane has general formula CₙH₂ₙ₊₂. Joining the ends to make one saturated ring removes two hydrogen atoms, giving a monocyclic cycloalkane CₙH₂ₙ. An acyclic alkene with one C=C bond also has CₙH₂ₙ. Therefore a molecular formula alone cannot distinguish a cycloalkane from an alkene.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}], mentions: []
 };

@@ -1,25 +1,25 @@
 export const note_business_3_16_1 = {
   pdfPath: '/notes/business/wbs13-16.pdf',
   blocks: [
-    { type: 'objective', data: { text: 'Evaluate how the size of an organisation impacts the speed and efficiency of implementing change.' } },
-    { type: 'heading', data: { text: 'Size and Agility', level: 2 } },
-    { type: 'paragraph', data: { text: 'The size of a business profoundly impacts how quickly it can implement change. Generally, as organisations grow, they tend to become more complex, formal, and bureaucratic, which can significantly slow down the speed of change.' } },
-    { type: 'callout', data: { style: 'key', title: 'The Speed vs Size Trade-off', text: 'Small businesses can pivot rapidly because they have fewer layers of management and less complex logistics. Large multinationals take longer to enact change due to complex supply chains, multiple stakeholders, and extensive hierarchies.' } },
-    { type: 'heading', data: { text: 'Impact of Large Size on Change', level: 3 } },
-    { type: 'list', data: { style: 'bullet', items: [
+    { id: 'base-objective-1', type: 'objective', data: { text: 'Evaluate how the size of an organisation impacts the speed and efficiency of implementing change.' } },
+    { id: 'base-heading-2', type: 'heading', data: { text: 'Size and Agility', level: 2 } },
+    { id: 'base-paragraph-3', type: 'paragraph', data: { text: 'The size of a business profoundly impacts how quickly it can implement change. Generally, as organisations grow, they tend to become more complex, formal, and bureaucratic, which can significantly slow down the speed of change.' } },
+    { id: 'base-callout-4', type: 'callout', data: { style: 'key', title: 'The Speed vs Size Trade-off', text: 'Small businesses can pivot rapidly because they have fewer layers of management and less complex logistics. Large multinationals take longer to enact change due to complex supply chains, multiple stakeholders, and extensive hierarchies.' } },
+    { id: 'base-heading-5', type: 'heading', data: { text: 'Impact of Large Size on Change', level: 3 } },
+    { id: 'base-list-6', type: 'list', data: { style: 'bullet', items: [
       { text: '<b>Complex Hierarchies:</b> Multiple layers of middle management slow down communication and decision-making.' },
       { text: '<b>Silo Mentality:</b> Large departments may work in isolation, making cross-functional changes difficult.' },
       { text: '<b>Economies of Scale:</b> Whilst beneficial for costs, massive operations mean that even small changes require significant capital and logistical restructuring.' },
       { text: '<b>Stakeholder Influence:</b> More shareholders and stakeholders mean more consensus is required before a change can be authorised.' }
     ]}},
-    { type: 'heading', data: { text: 'Impact of Small Size on Change', level: 3 } },
-    { type: 'list', data: { style: 'bullet', items: [
+    { id: 'base-heading-7', type: 'heading', data: { text: 'Impact of Small Size on Change', level: 3 } },
+    { id: 'base-list-8', type: 'list', data: { style: 'bullet', items: [
       { text: '<b>Rapid Execution:</b> Proximity between the leadership and workforce allows immediate implementation.' },
       { text: '<b>Flexibility:</b> Less capital tied up in rigid operations, making it easier to shift models or products.' },
       { text: '<b>Resource Constraints:</b> While fast, small businesses might lack the financial or human resources to implement large-scale systemic changes.' }
     ]}},
-    { type: 'callout', data: { style: 'worked', title: 'Case Example', text: 'A small tech startup can change its entire software architecture over a weekend. A global retail bank might take two years to roll out a new IT infrastructure across all its branches due to testing, training, and logistical scale.' } },
-    { type: 'comparisonTable', data: {
+    { id: 'base-callout-9', type: 'callout', data: { style: 'worked', title: 'Case Example', text: 'A small tech startup can change its entire software architecture over a weekend. A global retail bank might take two years to roll out a new IT infrastructure across all its branches due to testing, training, and logistical scale.' } },
+    { id: 'base-comparisonTable-10', type: 'comparisonTable', data: {
       caption: 'Change Speed: Small vs Large Businesses',
       headers: ['Factor', 'Small Business', 'Large Business'],
       rows: [
@@ -29,8 +29,8 @@ export const note_business_3_16_1 = {
         ['Implementation Time', 'Days to weeks', 'Months to years']
       ]
     }},
-    { type: 'callout', data: { style: 'warning', title: 'Watch Out', text: 'Do not assume large size always means change is impossible. Large tech firms (like Google) often divide into smaller autonomous units (agile teams) precisely to maintain the change speed of a small business.' } },
-    { type: 'summary', data: { text: 'Organisation size inversely affects change speed. Small businesses are agile but resource-limited, whereas massive corporations have vast resources but suffer from bureaucratic inertia that slows change.' } },
+    { id: 'base-callout-11', type: 'callout', data: { style: 'warning', title: 'Watch Out', text: 'Do not assume large size always means change is impossible. Large tech firms (like Google) often divide into smaller autonomous units (agile teams) precisely to maintain the change speed of a small business.' } },
+    { id: 'base-summary-12', type: 'summary', data: { text: 'Organisation size inversely affects change speed. Small businesses are agile but resource-limited, whereas massive corporations have vast resources but suffer from bureaucratic inertia that slows change.' } },
     { id: 'enr-h-pace', type: 'heading', data: { text: 'Pace of Change', level: 2 } },
     { id: 'enr-p-pace', type: 'paragraph', data: { text: 'Finding the right pace for change is as critical as the change itself. An organisation\'s size is a key determinant of what pace is feasible — get it wrong in either direction and the programme fails.' } },
     { id: 'enr-list-pace', type: 'list', data: { style: 'bullet', items: [

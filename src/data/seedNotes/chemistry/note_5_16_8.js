@@ -1,7 +1,22 @@
 export const note_chemistry_5_16_8 = {
   blocks: [
     { type: 'objective', id: 'obj-1', data: { text: 'Understand Core Practical 12: construct electrochemical cells using metal/metal-ion half-cells and inert electrode half-cells; measure electrode potentials using a high-resistance voltmeter; apply E°cell = E°(right) − E°(left) to calculate and verify cell EMF; interpret results and sources of error. Master PPQ-style calculations involving electrode potential and concentration.' } },
-    { type: 'heading', id: 'h-cp12', data: { text: 'Core Practical 12: Measuring Standard Electrode Potential', level: 2 } },
+    {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Core Practical 12: investigate a cell and evaluate its emf",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Build a cell from two suitable half-cells, connect them through a salt bridge and measure their potential difference with a high-resistance voltmeter. The salt bridge completes the ionic circuit while the wire carries electrons. Use suitable inert electrodes when a half-cell contains no conducting metal phase. Record electrode identities, concentrations, temperature, polarity and emf.<br/><br/>Comparisons with standard electrode-potential data require attention to conditions. Non-standard concentrations, contaminated electrodes, poor salt-bridge contact and drawing appreciable current can affect the measured voltage. Directly combining two tabulated potentials predicts their standard cell emf; an individual electrode potential cannot be measured in isolation and needs a reference electrode. A standard hydrogen electrode is the zero reference, but it is not the only cell arrangement used in the core investigation."
+  }
+},
+{ type: 'heading', id: 'h-cp12', data: { text: 'Core Practical 12: Investigating Electrochemical Cells', level: 2 } },
     { type: 'paragraph', id: 'p-cp12-intro', data: { text: 'CP12 involves constructing galvanic cells (e.g. Zn/Cu, Zn/Fe, Fe/Cu, Zn/Ag, Cu/Ag) and measuring their cell potentials using a high-resistance voltmeter. Aim: determine electrode potentials experimentally and verify E°cell = E°(right, reduction) − E°(left, oxidation). Multiple combinations of metal/solution pairs are tested.' } },
     { type: 'heading', id: 'h-cp12-apparatus', data: { text: 'Apparatus & Reagents', level: 2 } },
     { type: 'list', id: 'list-cp12-apparatus', data: { style: 'bullet', items: [
@@ -41,25 +56,25 @@ export const note_chemistry_5_16_8 = {
   <rect x='80' y='60' width='14' height='110' rx='3' fill='#78350f' stroke='#92400e' stroke-width='1.5'/>
   <text x='87' y='55' font-size='10' font-weight='bold' fill='#92400e' text-anchor='middle'>Cu</text>
   <text x='87' y='44' font-size='8' fill='#374151' text-anchor='middle'>electrode</text>
-  <text x='95' y='135' font-size='9' font-weight='bold' fill='#1d4ed8' text-anchor='middle'>CuSO₄(aq)</text>
-  <text x='95' y='148' font-size='8' fill='#374151' text-anchor='middle'>1 mol dm⁻³, 298 K</text>
-  <text x='95' y='195' font-size='8' fill='#dc2626' font-weight='bold' text-anchor='middle'>OXIDATION (left)</text>
+  <text x='95' y='135' font-size='9' font-weight='bold' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">CuSO₄(aq)</text>
+  <text x='95' y='148' font-size='8' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">1 mol dm⁻³, 298 K</text>
+  <text x='95' y='195' font-size='8' fill="#f8fafc" font-weight='bold' text-anchor='middle' style="fill:#f8fafc">OXIDATION (left)</text>
   <!-- RIGHT BEAKER: Ag/AgNO3 -->
   <rect x='340' y='90' width='130' height='120' rx='4' fill='#0f172a' stroke='#6b7280' stroke-width='1.5'/>
   <rect x='400' y='60' width='14' height='110' rx='3' fill='#1e293b' stroke='#374151' stroke-width='2'/>
   <text x='407' y='55' font-size='10' font-weight='bold' fill='#374151' text-anchor='middle'>Ag</text>
   <text x='407' y='44' font-size='8' fill='#374151' text-anchor='middle'>electrode</text>
-  <text x='405' y='135' font-size='9' font-weight='bold' fill='#374151' text-anchor='middle'>AgNO₃(aq)</text>
-  <text x='405' y='148' font-size='8' fill='#374151' text-anchor='middle'>1 mol dm⁻³, 298 K</text>
+  <text x='405' y='135' font-size='9' font-weight='bold' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">AgNO₃(aq)</text>
+  <text x='405' y='148' font-size='8' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">1 mol dm⁻³, 298 K</text>
   <text x='405' y='195' font-size='8' fill='#16a34a' font-weight='bold' text-anchor='middle'>REDUCTION (right)</text>
   <!-- Salt bridge -->
   <rect x='175' y='95' width='150' height='22' rx='10' fill='#44370a' stroke='#ca8a04' stroke-width='1.5'/>
-  <text x='250' y='107' font-size='9' font-weight='bold' fill='#78350f' text-anchor='middle'>SALT BRIDGE</text>
+  <text x='250' y='107' font-size='9' font-weight='bold' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">SALT BRIDGE</text>
   <text x='250' y='124' font-size='8' fill='#374151' text-anchor='middle'>filter paper in saturated KNO₃</text>
   <!-- Voltmeter -->
   <rect x='190' y='28' width='120' height='36' rx='8' fill='#1e293b' stroke='#374151' stroke-width='2'/>
-  <text x='250' y='44' font-size='11' font-weight='bold' fill='#374151' text-anchor='middle'>VOLTMETER</text>
-  <text x='250' y='57' font-size='9' fill='#374151' text-anchor='middle'>high resistance ≥10 MΩ</text>
+  <text x='250' y='44' font-size='11' font-weight='bold' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">VOLTMETER</text>
+  <text x='250' y='57' font-size='9' fill="#f8fafc" text-anchor='middle' style="fill:#f8fafc">high resistance ≥10 MΩ</text>
   <!-- Wires -->
   <line x1='87' y1='60' x2='87' y2='32' stroke='#374151' stroke-width='1.5'/>
   <line x1='87' y1='32' x2='190' y2='46' stroke='#374151' stroke-width='1.5'/>
@@ -249,7 +264,7 @@ export const note_chemistry_5_16_8 = {
       data: {
         style: 'worked',
         title: 'PPQ Oct 2019 Part iv: Calculate Concentration of V³⁺ in Solution',
-        text: 'Given: E°(V³⁺/V²⁺) = −0.26 V; E(V) = −0.32 V (measured); [V²⁺] = 1.00 mol dm⁻³ (standard); Nernst-style equation provided:\n   E(V) = E°(V) + 0.059 × log[V³⁺]\n(since [V²⁺] = 1 mol dm⁻³, log part simplifies to log[V³⁺])\n\nSubstitute known values:\n   −0.32 = −0.26 + 0.059 × log[V³⁺]\n\nRearrange — isolate the log term:\n   −0.32 + 0.26 = 0.059 × log[V³⁺]\n   −0.06 = 0.059 × log[V³⁺]\n   log[V³⁺] = −0.06 / 0.059 = −1.0169\n\nFind concentration:\n   [V³⁺] = 10^(−1.0169) = 0.0962 mol dm⁻³\n\nAnswer: [V³⁺] ≈ 0.0962 mol dm⁻³ (or 0.096 mol dm⁻³ to 2 s.f.)\n\nKey mark: the negative sign on E(V) must be included; losing the sign loses the mark.' 
+        text: 'Given: E°(V³⁺/V²⁺) = −0.26 V; E(V) = −0.32 V (measured); [V²⁺] = 1.00 mol dm⁻³ (standard); Nernst-style equation provided:\n   E(V) = E°(V) + 0.059 × log[V³⁺]\n(since [V²⁺] = 1 mol dm⁻³, log part simplifies to log[V³⁺])\n\nSubstitute known values:\n   −0.32 = −0.26 + 0.059 × log[V³⁺]\n\nRearrange — isolate the log term:\n   −0.32 + 0.26 = 0.059 × log[V³⁺]\n   −0.06 = 0.059 × log[V³⁺]\n   log[V³⁺] = −0.06 / 0.059 = −1.0169\n\nFind concentration:\n   [V³⁺] = 10^(−1.0169) = 0.0962 mol dm⁻³\n\nAnswer: [V³⁺] ≈ 0.0962 mol dm⁻³ (or 0.096 mol dm⁻³ to 2 s.f.)\n\nKey mark: the negative sign on E(V) must be included; losing the sign loses the mark.'
       }
     },
     // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
@@ -263,18 +278,88 @@ export const note_chemistry_5_16_8 = {
       },
       terms: []
     },
-    { type: 'summary', id: 'summary-1', data: { text: 'CP12: Clean metals with sandpaper → 50 cm³ solutions → salt bridge (saturated KNO₃ NOT KCl/KOH) → high-resistance voltmeter (≥10 MΩ) → record EMF. E°cell = E°(right, reduction) − E°(left, oxidation). Negative reading: swap connections. Standard conditions: 1 mol dm⁻³, 298 K. Two ions same element: Pt electrode. | CP13a: Crush tablets → weigh by difference → dissolve in H₂SO₄ → filter into volumetric flask + washings → make up to mark → pipette 25 cm³ → titrate with KMnO₄ (self-indicator; endpoint = permanent pale pink). Ratio MnO₄⁻:Fe²⁺ = 1:5. Error: wrong acid → use H₂SO₄ only. | CP13b: IO₃⁻ + 5I⁻ + 6H⁺ → 3I₂ + 3H₂O; then I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻. Add starch at pale yellow → blue-black → colourless endpoint. Ratio IO₃⁻:I₂:S₂O₃²⁻ = 1:3:6.' } },
+
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For an illustrative Zn/Zn²⁺ and Cu²⁺/Cu cell, standard data predict 0.34 − (−0.76) = <strong>1.10 V</strong>. A measured 1.04 V is 0.06 V below this prediction. Check concentrations, temperature and electrode condition before attributing the difference to instrument uncertainty. Reversing voltmeter leads reverses the sign of the reading; it does not reverse the spontaneous chemistry."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not say the salt bridge conducts electrons. A high-resistance voltmeter limits current and helps measure an emf close to the open-circuit value. The practical concerns investigating electrochemical cells, not only memorising the hydrogen electrode."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is the purpose of a salt bridge?",
+        "checked": false
+      },
+      {
+        "text": "Why use a high-resistance voltmeter?",
+        "checked": false
+      },
+      {
+        "text": "Why can a measured emf differ from a standard prediction?",
+        "checked": false
+      },
+      {
+        "text": "Can a single electrode’s potential be measured by itself?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Build a cell from two suitable half-cells, connect them through a salt bridge and measure their potential difference with a high-resistance voltmeter. The salt bridge completes the ionic circuit while the wire carries electrons. Use suitable inert electrodes when a half-cell contains no conducting metal phase. Record electrode identities, concentrations, temperature, polarity and emf."
+  }
+}
   ],
-  recall: { enabled: true, cues: [
-    { id: 'cue-1', blockId: 'list-cp12', prompt: 'Why must metal strips be cleaned with sandpaper before use in CP12? What does this step address?' },
-    { id: 'cue-2', blockId: 'callout-key-1', prompt: 'Why must the voltmeter have a resistance of ≥10 MΩ in CP12? What happens if it does not?' },
-    { id: 'cue-3', blockId: 'callout-salt-bridge-choice', prompt: 'Why is KNO₃ used for the salt bridge in CP12, and not KCl or KOH? Give a specific reason for each.' },
-    { id: 'cue-4', blockId: 'callout-ppq-cp12-ev', prompt: 'In the Oct 2019 PPQ, E°cell = +0.44 V and E°(Zn) = −0.76 V (zinc is oxidised). Calculate E(V³⁺/V²⁺). Show the equation used.' },
-    { id: 'cue-5', blockId: 'callout-ppq-cp12-conc', prompt: 'Using E°(V) = −0.26 V and E(V) = −0.32 V with the equation E = E° + 0.059 log[V³⁺], calculate [V³⁺]. Show all steps.' },
-    { id: 'cue-6', blockId: 'callout-ppq-cp12-setup', prompt: 'In the Oct 2019 PPQ cell with V³⁺/V²⁺ in one half-cell: what type of electrode is used and why? What is the salt bridge made of and why not KOH?' },
-    { id: 'cue-7', blockId: 'callout-cp13a-indicator', prompt: 'Explain why KMnO₄ needs no separate indicator. Describe (a) what you observe during titration, (b) the exact colour change at the endpoint, and (c) what to do if the colour fades.' },
-    { id: 'cue-8', blockId: 'callout-cp13a-acid', prompt: 'Why must H₂SO₄ be used (not HCl, not HNO₃) as the acid in the CP13a KMnO₄ titration? Give the specific reason for excluding each of the other two acids.' },
-    { id: 'cue-9', blockId: 'callout-cp13b-eqns', prompt: 'For the iodine/thiosulfate titration: write both reactions and state all three mole ratios (IO₃⁻:I₂, I₂:S₂O₃²⁻, IO₃⁻:S₂O₃²⁻). Why is starch added at pale yellow and not at the start?' }
-  ], summaryText: 'CP12: clean metals with sandpaper → 50 cm³ each solution → zinc/copper (or other metal pairs) in beakers → salt bridge = filter paper in saturated KNO₃ (NOT KCl — precipitates AgCl; NOT KOH — precipitates metal hydroxides) → high-resistance voltmeter (≥10 MΩ, prevents current distorting concentrations) → record EMF. Negative reading → swap electrode connections. Standard conditions: 1 mol dm⁻³, 298 K. E°cell = E°(right, reduction) − E°(left, oxidation). If two ions of same element: use inert Pt electrode. PPQ Oct 2019 vanadium: E(V³⁺/V²⁺) = E°cell + E°(Zn) = 0.44 − 0.76 = −0.32 V; log[V³⁺] = (−0.32 + 0.26)/0.059 = −1.017; [V³⁺] = 0.0962 mol dm⁻³. | CP13a: KMnO₄ self-indicating (endpoint = permanent pale pink); mole ratio 1:5; use H₂SO₄ only; standard solution by weighing by difference; scale up from aliquot volume to flask volume. | CP13b: IO₃⁻:I₂:S₂O₃²⁻ = 1:3:6; add starch at pale yellow (NOT start); endpoint = blue-black → colourless.', ready: false },
-  evidence: [ { id: 'ev-1', title: 'Core Practicals 12 and 13', detail: 'CP12 electrode potential measurement, CP13 redox titration, sources of error, improvements.', year: '2024', source: 'chemguide.co.uk', tags: ['core practicals', 'CP12', 'CP13', 'electrode potential', 'redox titration'] } ],
+  recall: {
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is the purpose of a salt bridge?",
+      "answer": "To permit ion movement between half-cells and maintain electrical neutrality."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why use a high-resistance voltmeter?",
+      "answer": "It draws little current, so the measured potential difference is closer to the open-circuit emf."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why can a measured emf differ from a standard prediction?",
+      "answer": "Conditions such as concentrations and temperature may be non-standard, and electrode or apparatus issues can affect the reading."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Can a single electrode’s potential be measured by itself?",
+      "answer": "No. A potential difference must be measured against another electrode or a reference."
+    }
+  ],
+  "summaryText": "Build a cell from two suitable half-cells, connect them through a salt bridge and measure their potential difference with a high-resistance voltmeter. The salt bridge completes the ionic circuit while the wire carries electrons. Use suitable inert electrodes when a half-cell contains no conducting metal phase. Record electrode identities, concentrations, temperature, polarity and emf.",
+  "ready": true
+},
+  evidence: [ { id: 'ev-1', title: 'Core Practicals 12 and 13', detail: 'CP12 electrode potential measurement, CP13 redox titration, sources of error, improvements.', year: '2024', source: 'chemguide.co.uk', tags: ['core practicals', 'CP12', 'CP13', 'electrode potential', 'redox titration'] } , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
 };

@@ -12,6 +12,21 @@ export const note_chemistry_2_8_8 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Core Practicals 3 and 4: standardise, then use the concentration",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A standard solution has an accurately known concentration. For a suitable solid acid, weigh accurately, dissolve fully, transfer quantitatively to a volumetric flask with rinsings, make up to the mark at an appropriate temperature and mix thoroughly. Use its known amount and the balanced reaction to determine the concentration of sodium hydroxide by titration. This is the Core Practical 4 context. A standardised alkali can then determine hydrochloric acid concentration in Core Practical 3.<br/><br/>Rinse the pipette with the solution it will deliver and the burette with the titrant; rinse the conical flask with distilled water. Extra water in the flask changes concentration but not the moles already pipetted, so it does not change the ideal titre. Remove air from the burette tip, read the meniscus at eye level and add titrant dropwise near the endpoint."
+  }
+},
+{
             id: 'h-standard',
             type: 'heading',
             data: { text: 'Making a Standard Solution (Core Practical 4)', level: 2 },
@@ -159,26 +174,89 @@ export const note_chemistry_2_8_8 = {
             },
             terms: ['Uncertainty', 'Percentage uncertainty']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "An illustrative standard diprotic acid H₂A has concentration 0.0500 mol dm⁻³. A 25.0 cm³ aliquot reacts with 24.80 cm³ NaOH: H₂A + 2NaOH → Na₂A + 2H₂O. Acid amount = 0.0500 × 0.0250 = 0.00125 mol; alkali amount = 0.00250 mol. c(NaOH) = 0.00250/0.02480 = <strong>0.1008 mol dm⁻³</strong> (about 0.101 to three significant figures). Use the acid’s actual stoichiometry."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not use c₁V₁ = c₂V₂ without checking the mole ratio. A rough titre guides the endpoint; use suitable concordant accurate titres for the mean and follow the stated concordance criterion."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is a standard solution?",
+        "checked": false
+      },
+      {
+        "text": "What is the purpose of Core Practical 4?",
+        "checked": false
+      },
+      {
+        "text": "Why does distilled water in the conical flask not change the ideal titre?",
+        "checked": false
+      },
+      {
+        "text": "Why is a 1:1 concentration-volume shortcut wrong for H₂A and NaOH?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A standard solution has an accurately known concentration. For a suitable solid acid, weigh accurately, dissolve fully, transfer quantitatively to a volumetric flask with rinsings, make up to the mark at an appropriate temperature and mix thoroughly. Use its known amount and the balanced reaction to determine the concentration of sodium hydroxide by titration. This is the Core Practical 4 context. A standardised alkali can then determine hydrochloric acid concentration in Core Practical 3."
+  }
+}
+  ],
     recall: {
-      enabled: true,
-      cues: [
-        { id: 'c-primary1', blockId: 'table-primary-standard', prompt: 'List 4 essential requirements for a chemical to be suitable as a primary standard.' },
-        { id: 'c-primary2', blockId: 'callout-standard-examples', prompt: 'Why is Sodium Hydroxide (NaOH) completely unsuitable to be used as a primary standard?' },
-        { id: 'c1', blockId: 'list-standard', prompt: 'After transferring dissolved solid from a beaker into a volumetric flask, what crucial step must you take with the beaker and glass rod to ensure accuracy?' },
-        { id: 'c2', blockId: 'list-standard', prompt: 'What must you do after making the volumetric flask up to the mark to ensure the concentration is uniform?' },
-        { id: 'c3', blockId: 'callout-concordant', prompt: 'What are "concordant titres" and how are they used differently from a "rough titre"?' },
-        { id: 'c4', blockId: 'callout-rinsing', prompt: 'Why must a burette be rinsed with the titrant solution after being washed with deionized water, whereas a conical flask is ONLY rinsed with deionized water?' },
-        { id: 'c5', blockId: 'p-indicators', prompt: 'Why is Universal Indicator unsuitable for an acid-base titration? Give an example of a suitable indicator.' },
-        { id: 'c6', blockId: 'table-errors', prompt: 'Define a "Systematic Error" and give an example.' },
-        { id: 'c7', blockId: 'p-precision-accuracy', prompt: 'Distinguish between accuracy and precision.' },
-        { id: 'c8', blockId: 'callout-uncertainty', prompt: 'A student uses a balance with a reading uncertainty of ±0.005 g. They measure the mass by difference (measuring the boat, then boat+solid). What is the total mass uncertainty?' },
-        { id: 'c9', blockId: 'callout-cp3', prompt: 'What is the exact colour change for the phenolphthalein indicator at the end-point when titrating HCl with NaOH (NaOH in burette)?' },
-        { id: 'c10', blockId: 'callout-uncertainty', prompt: 'Why is a 250 cm³ volumetric flask preferred over a 250 cm³ measuring cylinder when preparing a standard solution?' }
-      ],
-      summaryText: 'Standard solution: accurate mass dissolved, transferred with ALL washings, made to mark, inverted to mix. Primary Standards MUST be: high purity, stable, soluble, high Mr, and non-hygroscopic (NaOH is too hygroscopic). Titration: apparatus properly rinsed; phenolphthalein changes colourless to pale pink. Calculate mean titre ONLY from concordant results (within 0.1-0.2 cm³). Do not use rough titres in the mean. Precision vs Accuracy differentiates grouping vs correctness.',
-      ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is a standard solution?",
+      "answer": "A solution with an accurately known concentration."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is the purpose of Core Practical 4?",
+      "answer": "Use a standard solution made from a solid acid to determine sodium hydroxide concentration by titration."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why does distilled water in the conical flask not change the ideal titre?",
+      "answer": "It dilutes the aliquot without changing its moles of analyte."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why is a 1:1 concentration-volume shortcut wrong for H₂A and NaOH?",
+      "answer": "The balanced equation requires two moles of NaOH per mole of the diprotic acid."
+    }
+  ],
+  "summaryText": "A standard solution has an accurately known concentration. For a suitable solid acid, weigh accurately, dissolve fully, transfer quantitatively to a volumetric flask with rinsings, make up to the mark at an appropriate temperature and mix thoroughly. Use its known amount and the balanced reaction to determine the concentration of sodium hydroxide by titration. This is the Core Practical 4 context. A standardised alkali can then determine hydrochloric acid concentration in Core Practical 3.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_8_8;

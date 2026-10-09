@@ -93,6 +93,16 @@ export const note_chemistry_2_10_1 = {
             type: 'paragraph',
             data: { text: 'Water itself can also act as the nucleophile to hydrolyse halogenoalkanes, but the reaction is much slower because water is a poor nucleophile compared to the fully negative OH⁻ ion. Aqueous silver nitrate (AgNO₃) is often added to the reaction with water so that the rate of hydrolysis can be timed and compared easily.' },
             terms: []
+        },
+        {
+            id: 'callout-hydroxide-solvent',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Why Use an Ethanol/Water Solvent?',
+                text: 'Halogenoalkanes are insoluble in water, while hydroxide ions (from NaOH or KOH) need water to dissolve. A mixture of ethanol and water dissolves <strong>both</strong> reactants, so they can meet and react in a single phase. The water also keeps conditions <em>aqueous</em>, which favours <strong>nucleophilic substitution</strong> to give an alcohol; hydroxide in pure ethanol (ethanolic conditions) favours <strong>elimination</strong> to give an alkene instead.'
+            },
+            terms: []
         }
     ],
     recall: {

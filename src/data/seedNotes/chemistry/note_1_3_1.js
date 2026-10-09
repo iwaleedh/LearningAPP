@@ -12,6 +12,21 @@ export const note_chemistry_1_3_1 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Explain each ionic property from the lattice",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Ionic compounds have a regular three-dimensional arrangement of positive and negative ions. Many strong electrostatic attractions must be overcome to melt the lattice, so melting temperatures are usually high. A solid does not conduct because its ions are held in fixed positions. When molten, or dissolved in water if soluble, ions move and carry charge.<br/><br/>Ionic crystals are brittle: a displaced layer can place like charges beside one another, causing repulsion and the crystal to fracture. Dissolving is different from melting. Polar water molecules can surround ions and form ion–dipole attractions, but the balance of lattice disruption, hydration and entropy determines solubility. Some ionic substances, including AgCl and BaSO₄, are poorly soluble in water."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'The Giant Ionic Lattice', level: 2 },
@@ -22,14 +37,14 @@ export const note_chemistry_1_3_1 = {
       type: 'svg',
       data: {
         caption: 'NaCl lattice (left): 6:6 coordination — each Na⁺ surrounded by 6 Cl⁻ and vice versa. CsCl lattice (right): 8:8 coordination — Cs⁺ at centre of cube of 8 Cl⁻.',
-        svg: `<svg viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="0 -16 680 336" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- NaCl side header -->
   <text x="170" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">NaCl — Rock Salt Structure (6:6)</text>
 
   <!-- NaCl lattice grid 4×4 alternating -->
   <!-- Row 0: Na Cl Na Cl -->
-  <circle cx="60"  cy="55" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="60"  y="59" text-anchor="middle" fill="white" font-size="9">Na⁺</text>
+  <circle cx="60" cy="55" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="60" y="59" text-anchor="middle" fill="white" font-size="9">Na⁺</text>
   <circle cx="120" cy="55" r="19" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="120" y="59" text-anchor="middle" fill="white" font-size="9">Cl⁻</text>
   <circle cx="180" cy="55" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
@@ -37,8 +52,8 @@ export const note_chemistry_1_3_1 = {
   <circle cx="240" cy="55" r="19" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="240" y="59" text-anchor="middle" fill="white" font-size="9">Cl⁻</text>
   <!-- Row 1: Cl Na Cl Na -->
-  <circle cx="60"  cy="120" r="19" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="60"  y="124" text-anchor="middle" fill="white" font-size="9">Cl⁻</text>
+  <circle cx="60" cy="120" r="19" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="60" y="124" text-anchor="middle" fill="white" font-size="9">Cl⁻</text>
   <circle cx="120" cy="120" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="120" y="124" text-anchor="middle" fill="white" font-size="9">Na⁺</text>
   <circle cx="180" cy="120" r="19" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
@@ -46,8 +61,8 @@ export const note_chemistry_1_3_1 = {
   <circle cx="240" cy="120" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="240" y="124" text-anchor="middle" fill="white" font-size="9">Na⁺</text>
   <!-- Row 2: Na Cl Na Cl -->
-  <circle cx="60"  cy="185" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="60"  y="189" text-anchor="middle" fill="white" font-size="9">Na⁺</text>
+  <circle cx="60" cy="185" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="60" y="189" text-anchor="middle" fill="white" font-size="9">Na⁺</text>
   <circle cx="120" cy="185" r="19" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="120" y="189" text-anchor="middle" fill="white" font-size="9">Cl⁻</text>
   <circle cx="180" cy="185" r="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
@@ -78,7 +93,7 @@ export const note_chemistry_1_3_1 = {
   <text x="42" y="259" fill="#1e40af" font-size="10">Na⁺ (smaller, r=102 pm)</text>
   <circle cx="30" cy="275" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="44" y="279" fill="#991b1b" font-size="10">Cl⁻ (larger, r=181 pm)</text>
-  <text x="150" y="258" text-anchor="middle" fill="#374151" font-size="10">Co-ord number = 6</text>
+  <text x="150" y="295" text-anchor="middle" fill="#374151" font-size="10">Co-ord number = 6</text>
   <text x="150" y="272" text-anchor="middle" fill="#374151" font-size="10">Empirical formula NaCl (1:1 ratio)</text>
 
   <!-- Divider -->
@@ -101,17 +116,17 @@ export const note_chemistry_1_3_1 = {
   <line x1="485" y1="50" x2="485" y2="160" stroke="#64748b" stroke-width="1.5"/>
   <line x1="395" y1="160" x2="485" y2="160" stroke="#64748b" stroke-width="1.5"/>
   <!-- 8 Cl- at corners -->
-  <circle cx="355" cy="80"  r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
-  <text x="355" cy="84" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
-  <circle cx="445" cy="80"  r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="355" cy="80" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
+  <text x="355" cy="84" text-anchor="middle" fill="#0f172a" font-size="8" style="fill:#0f172a">Cl⁻</text>
+  <circle cx="445" cy="80" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="445" y="84" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
   <circle cx="355" cy="190" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="355" y="194" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
   <circle cx="445" cy="190" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="445" y="194" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
-  <circle cx="395" cy="50"  r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="395" cy="50" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
   <text x="395" y="54" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
-  <circle cx="485" cy="50"  r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="485" cy="50" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="485" y="54" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
   <circle cx="395" cy="160" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
   <text x="395" y="164" text-anchor="middle" fill="white" font-size="8">Cl⁻</text>
@@ -207,20 +222,90 @@ export const note_chemistry_1_3_1 = {
       },
       terms: ['Charge density']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Compare NaCl(s), NaCl(l) and NaCl(aq). The solid contains ions but they cannot move, so it does not conduct. The molten salt conducts by movement of Na⁺ and Cl⁻. Aqueous NaCl also conducts because hydrated Na⁺ and Cl⁻ ions move through the solution. Melting changes mobility, not the existence of ions."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not say an ionic solid has no charged particles, or that every ionic compound dissolves in water. Both statements are false."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why is the melting point of an ionic compound usually high?",
+        "checked": false
+      },
+      {
+        "text": "Why does solid NaCl not conduct?",
+        "checked": false
+      },
+      {
+        "text": "Why are ionic crystals brittle?",
+        "checked": false
+      },
+      {
+        "text": "Does ionic bonding guarantee water solubility?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Ionic compounds have a regular three-dimensional arrangement of positive and negative ions. Many strong electrostatic attractions must be overcome to melt the lattice, so melting temperatures are usually high. A solid does not conduct because its ions are held in fixed positions. When molten, or dissolved in water if soluble, ions move and carry charge."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Giant ionic lattice: 3D array of alternating cations and anions. NaCl: 6:6 coordination (rock salt). CsCl: 8:8 coordination (radius ratio 92%). Properties: high m.p. (many strong forces), brittle (layer shift → like charges adjacent → repulsion), conducts only when molten/dissolved (ions must be free). Higher charge → higher m.p. (MgO 2852°C vs NaCl 801°C).',
-    cues: [
-      { id: 'c1', blockId: 'svg-lattice', prompt: 'Distinguish between the NaCl and CsCl structures. What co-ordination number does each have, and why are they different?' },
-      { id: 'c2', blockId: 'key-nacl', prompt: 'How does radius ratio determine co-ordination number? Why does NaCl have 6:6 while CsCl has 8:8?' },
-      { id: 'c3', blockId: 'svg-props', prompt: 'Explain brittleness and high melting point of ionic compounds in terms of lattice structure.' },
-      { id: 'c4', blockId: 'svg-props', prompt: 'Why does NaCl not conduct electricity as a solid but does when molten or dissolved?' },
-      { id: 'c5', blockId: 'tip-charge', prompt: 'Why does MgO have a much higher melting point than NaCl? What two factors determine ionic bond strength?' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why is the melting point of an ionic compound usually high?",
+      "answer": "A large amount of energy is needed to overcome strong electrostatic attractions between oppositely charged ions throughout the lattice."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why does solid NaCl not conduct?",
+      "answer": "Its charged ions are fixed in lattice positions and cannot move to carry current."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why are ionic crystals brittle?",
+      "answer": "When layers shift, like charges can become adjacent; repulsion causes the crystal to split."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does ionic bonding guarantee water solubility?",
+      "answer": "No. Solubility depends on the balance of lattice disruption, hydration and entropy; AgCl and BaSO₄ are poorly soluble."
+    }
+  ],
+  "summaryText": "Ionic compounds have a regular three-dimensional arrangement of positive and negative ions. Many strong electrostatic attractions must be overcome to melt the lattice, so melting temperatures are usually high. A solid does not conduct because its ions are held in fixed positions. When molten, or dissolved in water if soluble, ions move and carry charge.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

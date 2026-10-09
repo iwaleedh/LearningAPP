@@ -85,46 +85,46 @@ export const note_chemistry_2_8_3 = {
   <text x="280" y="16" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">Group 1 Periodic Trends</text>
   <!-- IE₁ panel -->
   <rect x="0" y="22" width="268" height="210" rx="6" fill="#1c3a64" stroke="#93c5fd" stroke-width="1"/>
-  <text x="134" y="40" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">First Ionisation Energy</text>
-  <text x="134" y="53" text-anchor="middle" fill="#64748b" font-size="10">decreases down Group 1</text>
+  <text x="134" y="40" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">First Ionisation Energy</text>
+  <text x="134" y="53" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">decreases down Group 1</text>
   <!-- IE₁ bar chart -->
   <!-- Li: 519, Na: 494, K: 418, Rb: 402, Cs: 376 — max 519, scale to 130px -->
-  <rect x="25"  y="${20+22+(130 - Math.round(519*130/519))}" width="28" height="${Math.round(519*130/519)}" fill="#3b82f6" rx="2"/>
-  <text x="39"  y="210" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Li</text>
+  <rect x="25"  y="42" width="28" height="130" fill="#3b82f6" rx="2"/>
+  <text x="39"  y="210" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Li</text>
   <text x="39"  y="75"  text-anchor="middle" fill="#1e40af" font-size="9">519</text>
-  <rect x="73"  y="${20+22+(130 - Math.round(494*130/519))}" width="28" height="${Math.round(494*130/519)}" fill="#3b82f6" rx="2"/>
-  <text x="87"  y="210" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Na</text>
+  <rect x="73"  y="48" width="28" height="124" fill="#3b82f6" rx="2"/>
+  <text x="87"  y="210" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Na</text>
   <text x="87"  y="81"  text-anchor="middle" fill="#1e40af" font-size="9">494</text>
-  <rect x="121" y="${20+22+(130 - Math.round(418*130/519))}" width="28" height="${Math.round(418*130/519)}" fill="#3b82f6" rx="2"/>
-  <text x="135" y="210" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">K</text>
+  <rect x="121" y="67" width="28" height="105" fill="#3b82f6" rx="2"/>
+  <text x="135" y="210" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">K</text>
   <text x="135" y="101" text-anchor="middle" fill="#1e40af" font-size="9">418</text>
-  <rect x="169" y="${20+22+(130 - Math.round(402*130/519))}" width="28" height="${Math.round(402*130/519)}" fill="#3b82f6" rx="2"/>
-  <text x="183" y="210" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Rb</text>
+  <rect x="169" y="71" width="28" height="101" fill="#3b82f6" rx="2"/>
+  <text x="183" y="210" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Rb</text>
   <text x="183" y="104" text-anchor="middle" fill="#1e40af" font-size="9">402</text>
-  <rect x="217" y="${20+22+(130 - Math.round(376*130/519))}" width="28" height="${Math.round(376*130/519)}" fill="#3b82f6" rx="2"/>
-  <text x="231" y="210" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Cs</text>
+  <rect x="217" y="78" width="28" height="94" fill="#3b82f6" rx="2"/>
+  <text x="231" y="210" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Cs</text>
   <text x="231" y="111" text-anchor="middle" fill="#1e40af" font-size="9">376</text>
-  <text x="134" y="225" text-anchor="middle" fill="#64748b" font-size="9">kJ mol⁻¹</text>
+  <text x="134" y="225" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">kJ mol⁻¹</text>
   <!-- Atomic radius panel -->
   <rect x="290" y="22" width="268" height="210" rx="6" fill="#0a2e1a" stroke="#86efac" stroke-width="1"/>
-  <text x="424" y="40" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">Atomic Radius (pm)</text>
+  <text x="424" y="40" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Atomic Radius (pm)</text>
   <text x="424" y="53" text-anchor="middle" fill="#64748b" font-size="10">increases down Group 1</text>
   <!-- Radii: Li=152, Na=186, K=227, Rb=248, Cs=265 — scale circles by value -->
-  <circle cx="335" cy="150" r="${Math.round(152*28/265)}" fill="#22c55e" opacity="0.7"/>
-  <text x="335" y="195" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">Li</text>
-  <text x="335" y="208" text-anchor="middle" fill="#15803d" font-size="9">152 pm</text>
-  <circle cx="380" cy="148" r="${Math.round(186*28/265)}" fill="#22c55e" opacity="0.7"/>
-  <text x="380" y="195" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">Na</text>
-  <text x="380" y="208" text-anchor="middle" fill="#15803d" font-size="9">186 pm</text>
-  <circle cx="424" cy="145" r="${Math.round(227*28/265)}" fill="#22c55e" opacity="0.7"/>
-  <text x="424" y="195" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">K</text>
-  <text x="424" y="208" text-anchor="middle" fill="#15803d" font-size="9">227 pm</text>
-  <circle cx="468" cy="143" r="${Math.round(248*28/265)}" fill="#22c55e" opacity="0.7"/>
-  <text x="468" y="195" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">Rb</text>
-  <text x="468" y="208" text-anchor="middle" fill="#15803d" font-size="9">248 pm</text>
-  <circle cx="516" cy="141" r="${Math.round(265*28/265)}" fill="#22c55e" opacity="0.7"/>
-  <text x="516" y="195" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">Cs</text>
-  <text x="516" y="208" text-anchor="middle" fill="#15803d" font-size="9">265 pm</text>
+  <circle cx="335" cy="150" r="16" fill="#22c55e" opacity="0.7"/>
+  <text x="335" y="195" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Li</text>
+  <text x="335" y="208" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">152 pm</text>
+  <circle cx="380" cy="148" r="20" fill="#22c55e" opacity="0.7"/>
+  <text x="380" y="195" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Na</text>
+  <text x="380" y="208" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">186 pm</text>
+  <circle cx="424" cy="145" r="24" fill="#22c55e" opacity="0.7"/>
+  <text x="424" y="195" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">K</text>
+  <text x="424" y="208" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">227 pm</text>
+  <circle cx="468" cy="143" r="26" fill="#22c55e" opacity="0.7"/>
+  <text x="468" y="195" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Rb</text>
+  <text x="468" y="208" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">248 pm</text>
+  <circle cx="516" cy="141" r="28" fill="#22c55e" opacity="0.7"/>
+  <text x="516" y="195" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Cs</text>
+  <text x="516" y="208" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">265 pm</text>
 </svg>`
             },
             terms: []
@@ -230,32 +230,32 @@ export const note_chemistry_2_8_3 = {
   <text x="14" y="108" fill="#94a3b8" font-size="9" transform="rotate(-90,14,108)">Down group →</text>
   <!-- Li row -->
   <rect x="45" y="28" width="60" height="28" rx="4" fill="#1e3a8a"/>
-  <text x="75" y="47" text-anchor="middle" fill="#1e40af" font-weight="bold">Li</text>
+  <text x="75" y="47" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Li</text>
   <rect x="115" y="28" width="160" height="28" rx="4" fill="#3b82f6"/>
   <text x="195" y="47" text-anchor="middle" fill="#1e293b" font-size="10">Simple oxide Li₂O (O²⁻)</text>
   <rect x="285" y="28" width="270" height="28" rx="4" fill="#1e293b"/>
   <text x="420" y="47" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <!-- Na row -->
   <rect x="45" y="62" width="60" height="28" rx="4" fill="#1e3a8a"/>
-  <text x="75" y="81" text-anchor="middle" fill="#1e40af" font-weight="bold">Na</text>
+  <text x="75" y="81" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Na</text>
   <rect x="115" y="62" width="160" height="28" rx="4" fill="#3b82f6"/>
   <text x="195" y="81" text-anchor="middle" fill="#1e293b" font-size="10">Li₂O-type (limited O₂)</text>
   <rect x="285" y="62" width="120" height="28" rx="4" fill="#1d4ed8"/>
-  <text x="345" y="81" text-anchor="middle" fill="#1e293b" font-size="10">Peroxide Na₂O₂</text>
+  <text x="345" y="81" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Peroxide Na₂O₂</text>
   <rect x="415" y="62" width="140" height="28" rx="4" fill="#1e293b"/>
   <text x="485" y="81" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <!-- K row -->
   <rect x="45" y="96" width="60" height="28" rx="4" fill="#1e3a8a"/>
-  <text x="75" y="115" text-anchor="middle" fill="#1e40af" font-weight="bold">K</text>
+  <text x="75" y="115" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">K</text>
   <rect x="115" y="96" width="160" height="28" rx="4" fill="#1e293b"/>
   <text x="195" y="115" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <rect x="285" y="96" width="120" height="28" rx="4" fill="#1d4ed8"/>
-  <text x="345" y="115" text-anchor="middle" fill="#1e293b" font-size="10">Peroxide K₂O₂</text>
+  <text x="345" y="115" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Peroxide K₂O₂</text>
   <rect x="415" y="96" width="140" height="28" rx="4" fill="#dc2626"/>
   <text x="485" y="115" text-anchor="middle" fill="#1e293b" font-size="10">Superoxide KO₂ (O₂⁻)</text>
   <!-- Rb/Cs row -->
   <rect x="45" y="130" width="60" height="28" rx="4" fill="#1e3a8a"/>
-  <text x="75" y="149" text-anchor="middle" fill="#1e40af" font-weight="bold">Rb, Cs</text>
+  <text x="75" y="149" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Rb, Cs</text>
   <rect x="115" y="130" width="160" height="28" rx="4" fill="#1e293b"/>
   <text x="195" y="149" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <rect x="285" y="130" width="120" height="28" rx="4" fill="#1e293b"/>
@@ -493,27 +493,27 @@ export const note_chemistry_2_8_3 = {
   <rect x="10" y="24" width="95" height="75" rx="8" fill="#dc2626"/>
   <text x="57" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔴</text>
   <text x="57" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Li</text>
-  <text x="57" y="91" text-anchor="middle" fill="#7f1d1d" font-size="9">Crimson Red</text>
+  <text x="57" y="91" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Crimson Red</text>
   <!-- Na -->
   <rect x="115" y="24" width="95" height="75" rx="8" fill="#78350f"/>
-  <text x="162" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🟡</text>
-  <text x="162" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Na</text>
-  <text x="162" y="91" text-anchor="middle" fill="#78350f" font-size="9">Yellow-Orange</text>
+  <text x="162" y="55" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="24" style="fill:#f8fafc">🟡</text>
+  <text x="162" y="76" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="13" style="fill:#f8fafc">Na</text>
+  <text x="162" y="91" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Yellow-Orange</text>
   <!-- K -->
   <rect x="220" y="24" width="95" height="75" rx="8" fill="#1d4ed8"/>
-  <text x="267" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔮</text>
-  <text x="267" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">K</text>
-  <text x="267" y="91" text-anchor="middle" fill="#2d1b69" font-size="9">Lilac</text>
+  <text x="267" y="55" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="24" style="fill:#f8fafc">🔮</text>
+  <text x="267" y="76" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="13" style="fill:#f8fafc">K</text>
+  <text x="267" y="91" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Lilac</text>
   <!-- Rb -->
   <rect x="325" y="24" width="95" height="75" rx="8" fill="#b91c1c"/>
-  <text x="372" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🟣</text>
-  <text x="372" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Rb</text>
-  <text x="372" y="91" text-anchor="middle" fill="#7f1d1d" font-size="9">Red-Violet</text>
+  <text x="372" y="55" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="24" style="fill:#f8fafc">🟣</text>
+  <text x="372" y="76" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="13" style="fill:#f8fafc">Rb</text>
+  <text x="372" y="91" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Red-Violet</text>
   <!-- Cs -->
   <rect x="430" y="24" width="95" height="75" rx="8" fill="#1d4ed8"/>
-  <text x="477" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔵</text>
-  <text x="477" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Cs</text>
-  <text x="477" y="91" text-anchor="middle" fill="#1e3a8a" font-size="9">Blue-Violet</text>
+  <text x="477" y="55" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="24" style="fill:#f8fafc">🔵</text>
+  <text x="477" y="76" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="13" style="fill:#f8fafc">Cs</text>
+  <text x="477" y="91" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Blue-Violet</text>
   <text x="280" y="122" text-anchor="middle" fill="#64748b" font-size="9">* K: use cobalt-blue glass to see lilac when Na contamination is present</text>
 </svg>`
             },

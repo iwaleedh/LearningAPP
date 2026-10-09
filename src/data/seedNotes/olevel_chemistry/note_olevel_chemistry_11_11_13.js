@@ -16,7 +16,7 @@ export const note_olevel_chemistry_11_11_13 = {
       type: 'svg',
       data: {
         caption: 'Structure of thermosoftening plastics (left) compared to thermosetting plastics with cross-links (right).',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 636 254">
     <defs>
         <style>
             .chain { fill: none; stroke: var(--color-primary); stroke-width: 8; stroke-linecap: round; }

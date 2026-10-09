@@ -192,23 +192,23 @@ export const note_chemistry_2_8_4 = {
   </defs>
   <text x="240" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e293b">Group 2 + O₂ → Oxide Products</text>
   <rect x="20" y="40" width="100" height="36" rx="8" fill="#2d2f72" stroke="#60a5fa"/>
-  <text x="70" y="59" text-anchor="middle" fill="#3730a3" font-weight="bold">Be, Mg, Ca</text>
+  <text x="70" y="59" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Be, Mg, Ca</text>
   <rect x="20" y="100" width="100" height="36" rx="8" fill="#4a1040" stroke="#f472b6"/>
-  <text x="70" y="122" text-anchor="middle" fill="#9d174d" font-weight="bold">Sr, Ba</text>
+  <text x="70" y="122" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Sr, Ba</text>
   <line x1="120" y1="58" x2="170" y2="58" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ox-arr)"/>
   <line x1="120" y1="118" x2="170" y2="118" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ox-arr)"/>
   <text x="145" y="51" text-anchor="middle" fill="#6b7280" font-size="10">+ O₂</text>
   <text x="145" y="111" text-anchor="middle" fill="#6b7280" font-size="10">+ O₂</text>
   <rect x="170" y="40" width="140" height="36" rx="8" fill="#0a2e1a" stroke="#34d399"/>
-  <text x="240" y="58" text-anchor="middle" fill="#065f46" font-weight="bold">Simple oxide only — XO</text>
-  <text x="240" y="70" text-anchor="middle" fill="#065f46" font-size="10">e.g. MgO, CaO (white solids)</text>
+  <text x="240" y="58" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Simple oxide only — XO</text>
+  <text x="240" y="70" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">e.g. MgO, CaO (white solids)</text>
   <rect x="170" y="100" width="140" height="36" rx="8" fill="#78350f" stroke="#fbbf24"/>
-  <text x="240" y="116" text-anchor="middle" fill="#92400e" font-weight="bold">XO + Peroxide XO₂</text>
-  <text x="240" y="128" text-anchor="middle" fill="#92400e" font-size="10">BaO₂; SrO₂ (high p O₂)</text>
+  <text x="240" y="116" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">XO + Peroxide XO₂</text>
+  <text x="240" y="128" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">BaO₂; SrO₂ (high p O₂)</text>
   <rect x="20" y="158" width="440" height="44" rx="8" fill="#0f172a" stroke="#cbd5e1"/>
-  <text x="240" y="174" text-anchor="middle" fill="#334155" font-weight="bold" font-size="11">Explanation (polarisation)</text>
-  <text x="240" y="188" text-anchor="middle" fill="#475569" font-size="10">Small Be²⁺–Ca²⁺: high charge density → polarise O₂²⁻ strongly → break O–O bond → only XO stable</text>
-  <text x="240" y="198" text-anchor="middle" fill="#475569" font-size="10">Large Sr²⁺/Ba²⁺: low charge density → cannot break O–O bond → peroxide stable</text>
+  <text x="240" y="174" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Explanation (polarisation)</text>
+  <text x="240" y="188" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Small Be²⁺–Ca²⁺: high charge density → polarise O₂²⁻ strongly → break O–O bond → only XO stable</text>
+  <text x="240" y="198" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Large Sr²⁺/Ba²⁺: low charge density → cannot break O–O bond → peroxide stable</text>
 </svg>`
             },
             terms: []
@@ -298,7 +298,7 @@ export const note_chemistry_2_8_4 = {
   <circle cx="350" cy="158" r="4" fill="#dc2626"/>
   <rect x="260" y="24" width="130" height="40" rx="6" fill="#1e293b" stroke="#e5e7eb"/>
   <line x1="268" y1="36" x2="295" y2="36" stroke="#2563eb" stroke-width="2.5"/>
-  <text x="300" y="39" fill="#2563eb" font-size="11" font-weight="bold">Hydroxides ↑</text>
+  <text x="300" y="39" fill="#f8fafc" font-size="11" font-weight="bold" style="fill:#f8fafc">Hydroxides ↑</text>
   <line x1="268" y1="52" x2="295" y2="52" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,4"/>
   <text x="300" y="55" fill="#dc2626" font-size="11" font-weight="bold">Sulfates ↓</text>
 </svg>`
@@ -382,22 +382,22 @@ export const note_chemistry_2_8_4 = {
   </defs>
   <text x="115" y="18" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">Small Mg²⁺ — High polarising power</text>
   <circle cx="55" cy="88" r="18" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="55" y="85" text-anchor="middle" fill="#7f1d1d" font-weight="bold">Mg²⁺</text>
-  <text x="55" y="98" text-anchor="middle" fill="#7f1d1d" font-size="9">small</text>
+  <text x="55" y="85" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Mg²⁺</text>
+  <text x="55" y="98" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">small</text>
   <ellipse cx="145" cy="88" rx="52" ry="28" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="145" y="85" text-anchor="middle" fill="#1e40af" font-weight="bold">CO₃²⁻</text>
-  <text x="145" y="98" text-anchor="middle" fill="#1e40af" font-size="9">distorted</text>
+  <text x="145" y="85" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">CO₃²⁻</text>
+  <text x="145" y="98" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">distorted</text>
   <line x1="73" y1="88" x2="93" y2="88" stroke="#dc2626" stroke-width="2" marker-end="url(#pol-red)"/>
   <text x="115" y="148" text-anchor="middle" fill="#dc2626" font-size="10">C–O bonds weakened → decomposes at</text>
   <text x="115" y="160" text-anchor="middle" fill="#dc2626" font-size="10">LOW temperature → low thermal stability</text>
   <line x1="240" y1="10" x2="240" y2="185" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="365" y="18" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">Large Ba²⁺ — Low polarising power</text>
   <circle cx="285" cy="88" r="34" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
-  <text x="285" y="85" text-anchor="middle" fill="#78350f" font-weight="bold">Ba²⁺</text>
-  <text x="285" y="98" text-anchor="middle" fill="#78350f" font-size="9">large</text>
+  <text x="285" y="85" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Ba²⁺</text>
+  <text x="285" y="98" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">large</text>
   <circle cx="400" cy="88" r="30" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="400" y="85" text-anchor="middle" fill="#1e40af" font-weight="bold">CO₃²⁻</text>
-  <text x="400" y="98" text-anchor="middle" fill="#1e40af" font-size="9">undistorted</text>
+  <text x="400" y="85" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">CO₃²⁻</text>
+  <text x="400" y="98" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">undistorted</text>
   <line x1="319" y1="88" x2="370" y2="88" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#pol-amber)"/>
   <text x="365" y="148" text-anchor="middle" fill="#059669" font-size="10">C–O bonds intact → needs HIGH temperature</text>
   <text x="365" y="160" text-anchor="middle" fill="#059669" font-size="10">to decompose → high thermal stability</text>
@@ -465,30 +465,30 @@ export const note_chemistry_2_8_4 = {
   </defs>
   <text x="118" y="24" text-anchor="middle" fill="#1e293b" font-weight="bold">Gas phase — monomer (linear)</text>
   <circle cx="42" cy="88" r="20" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="42" y="93" text-anchor="middle" fill="#14532d" font-weight="bold">Cl</text>
+  <text x="42" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Cl</text>
   <line x1="62" y1="88" x2="90" y2="88" stroke="#1e293b" stroke-width="2.5"/>
   <circle cx="110" cy="88" r="16" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="110" y="93" text-anchor="middle" fill="#78350f" font-weight="bold">Be</text>
+  <text x="110" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Be</text>
   <line x1="126" y1="88" x2="154" y2="88" stroke="#1e293b" stroke-width="2.5"/>
   <circle cx="174" cy="88" r="20" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="174" y="93" text-anchor="middle" fill="#14532d" font-weight="bold">Cl</text>
+  <text x="174" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Cl</text>
   <text x="118" y="122" text-anchor="middle" fill="#374151" font-size="10">Bond angle 180° — sp hybridised</text>
   <text x="118" y="136" text-anchor="middle" fill="#dc2626" font-size="10">Be has 2 EMPTY orbitals (electron deficient)</text>
   <line x1="240" y1="18" x2="240" y2="165" stroke="#e5e7eb" stroke-width="1.5"/>
   <text x="362" y="24" text-anchor="middle" fill="#1e293b" font-weight="bold">Solid — polymer chain (dative bonds)</text>
   <circle cx="258" cy="88" r="18" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="258" y="93" text-anchor="middle" fill="#14532d" font-weight="bold">Cl</text>
+  <text x="258" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Cl</text>
   <line x1="276" y1="88" x2="296" y2="88" stroke="#1e293b" stroke-width="2.5"/>
   <circle cx="308" cy="88" r="14" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="308" y="93" text-anchor="middle" fill="#78350f" font-weight="bold">Be</text>
+  <text x="308" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Be</text>
   <line x1="322" y1="88" x2="340" y2="88" stroke="#1e293b" stroke-width="2.5"/>
   <circle cx="354" cy="88" r="18" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="354" y="93" text-anchor="middle" fill="#14532d" font-weight="bold">Cl</text>
+  <text x="354" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Cl</text>
   <line x1="372" y1="88" x2="392" y2="88" stroke="#1e293b" stroke-width="2.5"/>
   <circle cx="404" cy="88" r="14" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="404" y="93" text-anchor="middle" fill="#78350f" font-weight="bold">Be</text>
+  <text x="404" y="93" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Be</text>
   <circle cx="331" cy="58" r="14" fill="#0a3020" stroke="#16a34a" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="331" y="63" text-anchor="middle" fill="#14532d" font-size="10">Cl</text>
+  <text x="331" y="63" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Cl</text>
   <line x1="325" y1="65" x2="313" y2="80" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#be-arr)"/>
   <line x1="337" y1="65" x2="399" y2="80" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#be-arr)"/>
   <text x="362" y="135" text-anchor="middle" fill="#1d4ed8" font-size="10">Dashed arrows = dative bonds</text>
@@ -532,17 +532,17 @@ export const note_chemistry_2_8_4 = {
     </marker>
   </defs>
   <rect x="165" y="55" width="150" height="48" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="240" y="74" text-anchor="middle" fill="#0f172a" font-weight="bold">Be(OH)₂(s)</text>
+  <text x="240" y="74" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Be(OH)₂(s)</text>
   <text x="240" y="90" text-anchor="middle" fill="#64748b" font-size="10">white precipitate</text>
   <text x="240" y="100" text-anchor="middle" fill="#64748b" font-size="10">(amphoteric)</text>
   <rect x="8" y="60" width="128" height="40" rx="8" fill="#3d1212" stroke="#fca5a5"/>
-  <text x="72" y="78" text-anchor="middle" fill="#991b1b" font-weight="bold">Be²⁺(aq) + salts</text>
-  <text x="72" y="91" text-anchor="middle" fill="#991b1b" font-size="10">add H⁺ → dissolves</text>
+  <text x="72" y="78" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Be²⁺(aq) + salts</text>
+  <text x="72" y="91" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">add H⁺ → dissolves</text>
   <line x1="164" y1="79" x2="138" y2="79" stroke="#dc2626" stroke-width="2" marker-end="url(#amp-red)"/>
   <text x="152" y="68" text-anchor="middle" fill="#dc2626" font-size="9">+ acid (H⁺)</text>
   <rect x="344" y="60" width="128" height="40" rx="8" fill="#0a2e1a" stroke="#6ee7b7"/>
-  <text x="408" y="78" text-anchor="middle" fill="#065f46" font-weight="bold">[Be(OH)₄]²⁻(aq)</text>
-  <text x="408" y="91" text-anchor="middle" fill="#065f46" font-size="10">add OH⁻ → dissolves</text>
+  <text x="408" y="78" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">[Be(OH)₄]²⁻(aq)</text>
+  <text x="408" y="91" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">add OH⁻ → dissolves</text>
   <line x1="315" y1="79" x2="342" y2="79" stroke="#16a34a" stroke-width="2" marker-end="url(#amp-grn)"/>
   <text x="329" y="68" text-anchor="middle" fill="#16a34a" font-size="9">+ base (OH⁻)</text>
   <text x="240" y="138" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">AMPHOTERIC: dissolves in both acid and excess alkali</text>

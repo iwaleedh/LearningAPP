@@ -45,7 +45,7 @@ export const note_olevel_maths_core_4_2_1 = {
       id: 'svg-quads',
       type: 'svg',
       data: {
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 210" width="560" height="210">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 231" width="560" height="210">
   <style>
     text { font-family: sans-serif; font-size: 10px; fill: #374151; }
     .name { font-weight: 700; fill: #3b82f6; font-size: 11px; }

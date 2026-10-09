@@ -48,7 +48,7 @@ export const note_olevel_chemistry_11_11_8 = {
       type: 'svg',
       data: {
         caption: 'Experimental setup for the fermentation of glucose to produce ethanol and carbon dioxide.',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-76 0 579 300">
     <defs>
         <style>
             .glass { fill: rgba(255,255,255,0.1); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }

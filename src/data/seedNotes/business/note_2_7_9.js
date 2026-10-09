@@ -11,7 +11,7 @@ export const note_business_2_7_9 = {
       { text: '**Adverse (A):** A difference that is bad for the business. E.g., Actual revenue is *lower* than budgeted, or actual costs are *higher* than budgeted.' }
     ]}},
     { id: 'call-1', type: 'callout', data: { style: 'worked', title: 'Example Analysis', text: '<p>A business budgets £5,000 for raw materials, but due to a shortage, supplier prices rise, and they actually spend £6,000.</p><ul>\n<li>Variance = £6,000 - £5,000 = £1,000</li>\n<li>Classification: £1,000 **Adverse** (because higher costs hurt profit).</li>\n</ul>' } },
-    { id: 'h-2', type: 'heading', data: { text: 'Responding to Variances', level: 3 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Responding to Variances', level: 3 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'Management must investigate significant variances to take corrective action:' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
       { text: 'Causes of Adverse Cost Variances: Supplier price hikes, staff overtime due to inefficiencies, or high stock wastage.' },

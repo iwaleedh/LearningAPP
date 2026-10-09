@@ -40,8 +40,6 @@ src/
     ExercisePage.jsx
     MistakeBankPage.jsx
     SettingsPage.jsx
-    TeacherDashboard.jsx
-    AdvancedPage.jsx   ← Lazy loaded
     Pages.css          ← Page-level CSS (chapter layout, note toolbar, etc.)
 
   components/
@@ -61,8 +59,6 @@ src/
       StickyNotes.jsx
     pastpapers/
       TimedExam.jsx
-    advanced/
-      AdvancedFeatures.jsx
 
   context/
     ThemeContext.jsx    ← { theme, setTheme }
@@ -122,8 +118,6 @@ src/
 | `/progress` | ProgressPage | Confidence scores + analytics |
 | `/mistakes` | MistakeBankPage | Error tracking |
 | `/settings` | SettingsPage | Theme, preferences |
-| `/teacher` | TeacherDashboard | Class overview |
-| `/advanced` | AdvancedPage | Advanced features (lazy) |
 
 ---
 
@@ -585,5 +579,9 @@ All 12 subtopic seed notes are complete:
 - **CSS:** Do not use inline Tailwind classes. Use CSS variables and existing utility classes.
 - **Superscripts/subscripts in text:** Use Unicode directly in strings: ₂ ⁻¹ etc. or `<sup>`/`<sub>` in html fields.
 - **No Redux:** All state is local (useState) or IndexedDB (noteStore). No global state library.
-- **Lazy loading:** `NotePage` and `AdvancedPage` are lazy-loaded via `React.lazy()`.
+- **Lazy loading:** `NotePage` and subject pages are lazy-loaded via `React.lazy()`.
 - **ThemeProvider:** Wraps entire app. Use `useTheme()` hook to read `{ theme, setTheme }`.
+
+## Subject-only scope
+
+Live classes, shared sessions, invitations, teacher dashboards, and infrastructure demonstration pages have been removed. PDF annotation is private. Legacy Convex collaboration tables remain archived to preserve existing records; there are no active classroom APIs. The remaining Convex backend has not yet been migrated to Netlify.

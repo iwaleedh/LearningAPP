@@ -198,7 +198,7 @@ export const note_olevel_chemistry_2_2_12 = {
       data: {
         style: 'tip',
         title: 'Exam Tip',
-        text: 'When explaining electrical conductivity in metals, always state: "delocalised electrons are free to move and carry charge." For malleability, always say "layers of positive ions can slide over each other" — do not say "atoms slide."<br/><br/>Mercury is a liquid metal at room temperature — it still has metallic bonding, just weaker attractions between Hg²⁺ ions and delocalised electrons.'
+        text: 'When explaining electrical conductivity in metals, always state: "delocalised electrons are free to move and carry charge." For malleability, always say "layers of positive ions can slide over each other" — do not say "atoms slide."<br/><br/>Mercury is a liquid metal at room temperature — it still has metallic bonding, but the bonding between mercury atoms is unusually weak. Do not identify the positive metal cores in this model with separate Hg²⁺ ions in a mercury(II) compound.'
       }
     },
     {

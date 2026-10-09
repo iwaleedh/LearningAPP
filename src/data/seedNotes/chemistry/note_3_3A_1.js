@@ -6,6 +6,21 @@ export const note_chemistry_3_3A_1 = {
       data: { text: 'Write a detailed practical plan including aim, hypothesis, method, variables, risk assessment and required apparatus; apply risk control to practical chemistry.' },
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Turn a practical plan into a reproducible investigation",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A plan should identify the independent variable, a measurable dependent variable and controls with reasons. Specify the quantity or range to change, how measurements will be made and how results will be processed. Include repeats and a method for identifying anomalous results. Choose apparatus to suit the required precision rather than merely naming laboratory equipment.<br/><br/>A risk assessment separates a hazard (a chemical or process capable of harm) from risk (the likelihood and severity in the proposed method). Link a control to each hazard. For example, a water bath can avoid a naked flame when warming flammable mixtures. State a relevant treatment for generated gases or corrosive splashes according to the laboratory procedure."
+  }
+},
+{
       id: 'h-planning',
       type: 'heading',
       data: { text: 'Planning a Practical — Structure', level: 2 },
@@ -134,7 +149,7 @@ export const note_chemistry_3_3A_1 = {
       type: 'svg',
       data: {
         caption: 'Using a volumetric flask to prepare a standard solution. The bottom of the meniscus must sit exactly on the graduation mark at eye level.',
-        svg: '<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="flaskLiq" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#bfdbfe"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs><rect width="400" height="320" fill="transparent" rx="10"/><g transform="translate(120, 30)"><path d="M -18 20 L -18 120 C -50 140, -70 180, -70 230 C -70 280, -35 290, 0 290 C 35 290, 70 280, 70 230 C 70 180, 50 140, 18 120 L 18 20 Z" fill="#f8fafc" stroke="#64748b" stroke-width="4" stroke-linejoin="round"/><path d="M -15 100 L -15 120 C -48 140, -66 180, -66 230 C -66 280, -35 285, 0 285 C 35 285, 66 280, 66 230 C 66 180, 48 140, 15 120 L 15 100 Z" fill="url(#flaskLiq)" opacity="0.6"/><path d="M -15 100 Q 0 110 15 100" fill="none" stroke="#1d4ed8" stroke-width="2"/><line x1="-30" y1="100" x2="30" y2="100" stroke="#ef4444" stroke-width="2"/><text x="130" y="105" font-family="sans-serif" font-size="14" fill="#b91c1c" text-anchor="middle">Graduation mark</text><line x1="40" y1="100" x2="80" y2="100" stroke="#b91c1c" stroke-width="1"/><text x="0" y="220" font-family="sans-serif" font-size="20" fill="#94a3b8" font-weight="bold" text-anchor="middle">250 cm³</text><path d="M -20 0 L 20 0 L 18 20 L -18 20 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="3"/><rect x="-25" y="-15" width="50" height="15" rx="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3"/></g><g transform="translate(250, 150)"><path d="M 0 0 C -20 -10, -20 -30, 0 -40 C 30 -20, 30 0, 0 0" fill="none" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="-20" r="5" fill="#333"/><text x="30" y="-15" font-family="sans-serif" font-size="14" fill="#333">Eye level viewing</text></g></svg>'
+        svg: `<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="flaskLiq" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#bfdbfe"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs><rect width="400" height="320" fill="transparent" rx="10"/><g transform="translate(120, 30)"><path d="M -18 20 L -18 120 C -50 140, -70 180, -70 230 C -70 280, -35 290, 0 290 C 35 290, 70 280, 70 230 C 70 180, 50 140, 18 120 L 18 20 Z" fill="#f8fafc" stroke="#64748b" stroke-width="4" stroke-linejoin="round"/><path d="M -15 100 L -15 120 C -48 140, -66 180, -66 230 C -66 280, -35 285, 0 285 C 35 285, 66 280, 66 230 C 66 180, 48 140, 15 120 L 15 100 Z" fill="url(#flaskLiq)" opacity="0.6"/><path d="M -15 100 Q 0 110 15 100" fill="none" stroke="#1d4ed8" stroke-width="2"/><line x1="-30" y1="100" x2="30" y2="100" stroke="#ef4444" stroke-width="2"/><text x="145" y="82" font-family="sans-serif" font-size="14" fill="#b91c1c" text-anchor="middle">Graduation mark</text><line x1="40" y1="100" x2="80" y2="100" stroke="#b91c1c" stroke-width="1"/><text x="0" y="220" font-family="sans-serif" font-size="20" fill="#0f172a" font-weight="bold" text-anchor="middle" style="fill:#0f172a">250 cm³</text><path d="M -20 0 L 20 0 L 18 20 L -18 20 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="3"/><rect x="-25" y="-15" width="50" height="15" rx="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3"/></g><g transform="translate(250, 150)"><path d="M 0 0 C -20 -10, -20 -30, 0 -40 C 30 -20, 30 0, 0 0" fill="none" stroke="#64748b" stroke-width="2"/><circle cx="0" cy="-20" r="5" fill="#333"/><text x="30" y="-15" font-family="sans-serif" font-size="14" fill="#333">Eye level viewing</text></g></svg>`
       }
     },
     {
@@ -181,12 +196,6 @@ export const note_chemistry_3_3A_1 = {
       terms: []
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: { text: 'A practical plan must include: aim, hypothesis, variables (independent/dependent/control), apparatus (with precision), step-by-step method (numbered, specific), risk assessment (hazard → control), results table, and repeats. Control variables ensure a fair test. Standard solutions: calculate mass → dissolve → transfer quantitatively → make up to mark in volumetric flask.' },
-    },
-
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -204,20 +213,90 @@ export const note_chemistry_3_3A_1 = {
         text: "Saying 'wear goggles' or 'be careful' scores zero. Instead, write: 'Corrosive HCl (hazard) \u2192 wear nitrile gloves and safety goggles' (specific control). Link each hazard to a specific, actionable control measure."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "To compare how acid concentration affects CaCO₃ reaction rate, use equal carbonate mass, comparable chip size, fixed acid volume, controlled temperature and excess acid throughout. Change acid concentration over a stated range. Measure gas volume against time, then compare initial tangent gradients. Repeats assess variability. Confirm the syringe capacity can contain the expected gas volume."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "“Keep everything else the same” is insufficient: name the controls and explain their effects. If acid becomes limiting at one concentration, final gas volume changes and the comparison no longer isolates rate in the intended way."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What makes a control variable useful?",
+        "checked": false
+      },
+      {
+        "text": "How are hazard and risk different?",
+        "checked": false
+      },
+      {
+        "text": "Why repeat the investigation?",
+        "checked": false
+      },
+      {
+        "text": "Why check gas-syringe capacity in advance?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A plan should identify the independent variable, a measurable dependent variable and controls with reasons. Specify the quantity or range to change, how measurements will be made and how results will be processed. Include repeats and a method for identifying anomalous results. Choose apparatus to suit the required precision rather than merely naming laboratory equipment."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'list-plan-structure', prompt: 'List the 8 components that should appear in a full practical plan.' },
-      { id: 'cue-2', blockId: 'table-variables', prompt: 'Define independent, dependent and control variables with an example.' },
-      { id: 'cue-3', blockId: 'callout-worked', prompt: 'Outline the key steps in planning a titration to find the concentration of an unknown acid.' },
-      { id: 'cue-4', blockId: 'list-standard', prompt: 'Describe how to prepare a standard solution in a volumetric flask.' },
-      { id: 'cue-5', blockId: 'callout-tip', prompt: 'What makes a risk assessment specific enough to gain full marks?' },
-    ],
-    summaryText: 'Plan: aim, hypothesis, variables (IV/DV/CV), apparatus+precision, numbered method, risk assessment, results table, repeats. Standard solution: calculate mass → dissolve → transfer to volumetric flask → make to mark. Risk: name hazard + specific control measure.',
-    ready: false,
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What makes a control variable useful?",
+      "answer": "It is held constant for a stated reason so the independent variable’s effect can be isolated."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How are hazard and risk different?",
+      "answer": "Hazard is the source of potential harm; risk considers its likelihood and severity in the particular procedure."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why repeat the investigation?",
+      "answer": "To assess random variation, identify anomalies and obtain a more reliable estimate."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why check gas-syringe capacity in advance?",
+      "answer": "To ensure the expected product volume can be collected and measured without exceeding the apparatus range."
+    }
+  ],
+  "summaryText": "A plan should identify the independent variable, a measurable dependent variable and controls with reasons. Specify the quantity or range to change, how measurements will be made and how results will be processed. Include repeats and a method for identifying anomalous results. Choose apparatus to suit the required precision rather than merely naming laboratory equipment.",
+  "ready": true
+},
   evidence: [
     { id: 'ev-1', title: 'Edexcel WCH13 Specification', detail: 'Practical planning and risk control are core assessed skills in WCH13.', year: '2018', source: 'Pearson Edexcel', tags: ['practical planning', 'risk assessment', 'WCH13'] },
-  ],
+{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
 };

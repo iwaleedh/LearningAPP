@@ -54,7 +54,7 @@ export const note_olevel_biology_3_3_2 = {
   <rect x="245" y="185" width="6" height="20" fill="#2d1b69"/>
 
   <!-- Carrier protein -->
-  <ellipse cx="250" cy="130" rx="22" ry="50" fill="#1d4ed8" opacity="0.8" rx="6"/>
+  <ellipse cx="250" cy="130" rx="22" ry="50" fill="#1d4ed8" opacity="0.8"/>
   <text x="250" y="134" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Carrier</text>
   <text x="250" y="145" text-anchor="middle" font-size="9" fill="#1e293b">protein</text>
 

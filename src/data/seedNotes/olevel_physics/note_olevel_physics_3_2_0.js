@@ -52,7 +52,7 @@ export const note_olevel_physics_3_2_0 = {
   <line x1="240" y1="230" x2="254" y2="230" stroke="#94a3b8"/>
   <line x1="240" y1="250" x2="254" y2="250" stroke="#94a3b8"/>
   <line x1="240" y1="270" x2="254" y2="270" stroke="#94a3b8"/>
-  <text x="248" y="295" fill="#1e40af" font-size="10">Mirror</text>
+  <text x="248" y="273" fill="#1e40af" font-size="10">Mirror</text>
   <line x1="120" y1="80" x2="120" y2="240" stroke="#f59e0b" stroke-width="3"/>
   <text x="105" y="76" fill="#f59e0b" font-weight="bold">O</text>
   <line x1="360" y1="80" x2="360" y2="240" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 3"/>

@@ -53,7 +53,7 @@ export const note_olevel_chemistry_5_5_1 = {
       type: 'svg',
       data: {
         caption: 'A simple calorimeter (polystyrene cup) used to measure temperature changes (ΔT) for reactions in solution, like neutralisation or displacement.',
-        svg: `<svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="-49 0 549 350" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Liquid Gradient -->
     <linearGradient id="liquid-cal" x1="0%" y1="0%" x2="0%" y2="100%">

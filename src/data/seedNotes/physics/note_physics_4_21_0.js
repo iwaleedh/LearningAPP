@@ -28,7 +28,7 @@ export const note_physics_4_21_0 = {
       id: 'svg-flux-equation',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="120" fill="#0a2e1a" rx="10"/><text x="175" y="50" font-family="Times New Roman" font-size="32" font-style="italic" font-weight="bold" text-anchor="middle" fill="#065F46">&Phi; = B A</text><text x="175" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Flux (Weber, Wb) = Flux Density (T) &times; Area (m&sup2;)</text></svg>',
+        svg: `<svg viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="120" fill="#0a2e1a" rx="10"/><text x="175" y="50" font-family="Times New Roman" font-size="32" font-style="italic" font-weight="bold" text-anchor="middle" fill="#065F46">&#934; = B A</text><text x="175" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Flux (Weber, Wb) = Flux Density (T) &#215; Area (m&#178;)</text></svg>`,
         caption: 'Magnetic Flux Formula'
       },
       terms: []

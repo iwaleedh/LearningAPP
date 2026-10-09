@@ -110,7 +110,7 @@ export const note_olevel_maths_core_3_2_1 = {
       type: 'svg',
       data: {
         caption: 'Horizontal line y = 3 and vertical line x = −2 on a coordinate grid',
-        svg: `<svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+        svg: `<svg viewBox="0 -15 211 195" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <defs>
     <marker id="a4" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
       <path d="M0,0 L0,6 L7,3 z" fill="#555"/>

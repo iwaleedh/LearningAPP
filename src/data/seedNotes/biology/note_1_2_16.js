@@ -69,15 +69,6 @@ export const note_biology_1_2_16 = {
         "title": "Sex Linkage",
         "text": "Sex linkage usually refers to genes on the X chromosome. Emphasize that males (XY) only have one copy, so they only need one recessive allele to express the condition, making them more vulnerable."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Sex Linkage",
-        "text": "Sex linkage usually refers to genes on the X chromosome. Emphasize that males (XY) only have one copy, so they only need one recessive allele to express the condition, making them more vulnerable."
-      }
     }
   ],
   "recall": {

@@ -59,65 +59,65 @@ export const note_chemistry_2_8_11 = {
   <rect x="271" y="0" width="421" height="160" rx="7" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
 
   <!-- Zone headers -->
-  <text x="87"  y="16" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">Ionic OH⁻ → Basic</text>
-  <text x="220" y="16" text-anchor="middle" fill="#6b21a8" font-weight="bold" font-size="12">Amphoteric</text>
-  <text x="481" y="16" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="12">Covalent –OH → Acidic</text>
+  <text x="87"  y="16" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Ionic OH⁻ → Basic</text>
+  <text x="220" y="16" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Amphoteric</text>
+  <text x="481" y="16" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Covalent –OH → Acidic</text>
 
   <!-- Element boxes: Na -->
   <rect x="16"  y="30" width="66" height="80" rx="5" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="49"  y="52" text-anchor="middle" fill="#1e3a8a" font-weight="bold" font-size="14">Na</text>
-  <text x="49"  y="68" text-anchor="middle" fill="#1e3a8a" font-size="10">NaOH</text>
-  <text x="49"  y="82" text-anchor="middle" fill="#1e3a8a" font-size="9">Ionic OH⁻</text>
-  <text x="49"  y="96" text-anchor="middle" fill="#1e3a8a" font-size="9">pH ~14</text>
-  <text x="49" y="108" text-anchor="middle" fill="#2563eb" font-size="9" font-weight="bold">Strong base</text>
+  <text x="49"  y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">Na</text>
+  <text x="49"  y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">NaOH</text>
+  <text x="49"  y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Ionic OH⁻</text>
+  <text x="49"  y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">pH ~14</text>
+  <text x="49" y="108" text-anchor="middle" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">Strong base</text>
 
   <!-- Mg -->
   <rect x="96"  y="30" width="66" height="80" rx="5" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="129" y="52" text-anchor="middle" fill="#1e3a8a" font-weight="bold" font-size="14">Mg</text>
-  <text x="129" y="68" text-anchor="middle" fill="#1e3a8a" font-size="10">Mg(OH)₂</text>
-  <text x="129" y="82" text-anchor="middle" fill="#1e3a8a" font-size="9">Ionic OH⁻</text>
-  <text x="129" y="96" text-anchor="middle" fill="#1e3a8a" font-size="9">slightly soluble</text>
-  <text x="129" y="108" text-anchor="middle" fill="#2563eb" font-size="9" font-weight="bold">Weak base</text>
+  <text x="129" y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">Mg</text>
+  <text x="129" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Mg(OH)₂</text>
+  <text x="129" y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Ionic OH⁻</text>
+  <text x="129" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">slightly soluble</text>
+  <text x="129" y="108" text-anchor="middle" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">Weak base</text>
 
   <!-- Al -->
   <rect x="183" y="30" width="74" height="80" rx="5" fill="#2d1b69" stroke="#a855f7" stroke-width="1.5"/>
-  <text x="220" y="52" text-anchor="middle" fill="#6b21a8" font-weight="bold" font-size="14">Al</text>
-  <text x="220" y="68" text-anchor="middle" fill="#6b21a8" font-size="10">Al(OH)₃</text>
-  <text x="220" y="82" text-anchor="middle" fill="#6b21a8" font-size="9">Complex/uncertain</text>
-  <text x="220" y="96" text-anchor="middle" fill="#6b21a8" font-size="9">acid + base</text>
-  <text x="220" y="108" text-anchor="middle" fill="#6b21a8" font-size="9" font-weight="bold">Amphoteric</text>
+  <text x="220" y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">Al</text>
+  <text x="220" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Al(OH)₃</text>
+  <text x="220" y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Complex/uncertain</text>
+  <text x="220" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">acid + base</text>
+  <text x="220" y="108" text-anchor="middle" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">Amphoteric</text>
 
   <!-- Si -->
   <rect x="280" y="30" width="80" height="80" rx="5" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
-  <text x="320" y="52" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="14">Si</text>
-  <text x="320" y="68" text-anchor="middle" fill="#78350f" font-size="10">Si(OH)₄</text>
-  <text x="320" y="82" text-anchor="middle" fill="#78350f" font-size="9">Covalent –OH</text>
-  <text x="320" y="96" text-anchor="middle" fill="#78350f" font-size="9">No Si=O bonds</text>
+  <text x="320" y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">Si</text>
+  <text x="320" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Si(OH)₄</text>
+  <text x="320" y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Covalent –OH</text>
+  <text x="320" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">No Si=O bonds</text>
   <text x="320" y="108" text-anchor="middle" fill="#d97706" font-size="9" font-weight="bold">Very weak acid</text>
 
   <!-- P -->
   <rect x="368" y="30" width="80" height="80" rx="5" fill="#532407" stroke="#ea580c" stroke-width="1.5"/>
-  <text x="408" y="52" text-anchor="middle" fill="#7c2d12" font-weight="bold" font-size="14">P</text>
-  <text x="408" y="68" text-anchor="middle" fill="#7c2d12" font-size="10">H₃PO₄</text>
-  <text x="408" y="82" text-anchor="middle" fill="#7c2d12" font-size="9">1 P=O bond</text>
-  <text x="408" y="96" text-anchor="middle" fill="#7c2d12" font-size="9">pKₐ ≈ 2.15</text>
+  <text x="408" y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">P</text>
+  <text x="408" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">H₃PO₄</text>
+  <text x="408" y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">1 P=O bond</text>
+  <text x="408" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">pKₐ ≈ 2.15</text>
   <text x="408" y="108" text-anchor="middle" fill="#ea580c" font-size="9" font-weight="bold">Weak acid</text>
 
   <!-- S -->
   <rect x="456" y="30" width="80" height="80" rx="5" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="496" y="52" text-anchor="middle" fill="#991b1b" font-weight="bold" font-size="14">S</text>
-  <text x="496" y="68" text-anchor="middle" fill="#991b1b" font-size="10">H₂SO₄</text>
-  <text x="496" y="82" text-anchor="middle" fill="#991b1b" font-size="9">2 S=O bonds</text>
-  <text x="496" y="96" text-anchor="middle" fill="#991b1b" font-size="9">pKₐ ≈ −3</text>
-  <text x="496" y="108" text-anchor="middle" fill="#ef4444" font-size="9" font-weight="bold">Strong acid</text>
+  <text x="496" y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">S</text>
+  <text x="496" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">H₂SO₄</text>
+  <text x="496" y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">2 S=O bonds</text>
+  <text x="496" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">pKₐ ≈ −3</text>
+  <text x="496" y="108" text-anchor="middle" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">Strong acid</text>
 
   <!-- Cl -->
   <rect x="544" y="30" width="140" height="80" rx="5" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
-  <text x="614" y="52" text-anchor="middle" fill="#7f1d1d" font-weight="bold" font-size="14">Cl</text>
-  <text x="614" y="68" text-anchor="middle" fill="#7f1d1d" font-size="10">HClO₄</text>
-  <text x="614" y="82" text-anchor="middle" fill="#7f1d1d" font-size="9">3 Cl=O bonds</text>
-  <text x="614" y="96" text-anchor="middle" fill="#7f1d1d" font-size="9">pKₐ ≈ −10</text>
-  <text x="614" y="108" text-anchor="middle" fill="#dc2626" font-size="9" font-weight="bold">Very strong acid</text>
+  <text x="614" y="52" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">Cl</text>
+  <text x="614" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">HClO₄</text>
+  <text x="614" y="82" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">3 Cl=O bonds</text>
+  <text x="614" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">pKₐ ≈ −10</text>
+  <text x="614" y="108" text-anchor="middle" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">Very strong acid</text>
 
   <!-- Increasing acidity arrow at bottom -->
   <defs>
@@ -126,8 +126,8 @@ export const note_chemistry_2_8_11 = {
     </marker>
   </defs>
   <line x1="25" y1="148" x2="680" y2="148" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arro)"/>
-  <text x="25"  y="158" fill="#1e40af" font-size="9" font-weight="bold">← More basic</text>
-  <text x="560" y="158" fill="#dc2626" font-size="9" font-weight="bold">More acidic →</text>
+  <text x="25"  y="158" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">← More basic</text>
+  <text x="560" y="158" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">More acidic →</text>
 </svg>`
       }
     },
@@ -236,8 +236,8 @@ export const note_chemistry_2_8_11 = {
         svg: `<svg viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Central Al(OH)₃ box -->
   <rect x="230" y="90" width="160" height="60" rx="8" fill="#2d1b69" stroke="#a855f7" stroke-width="2"/>
-  <text x="310" y="115" text-anchor="middle" fill="#6b21a8" font-weight="bold" font-size="14">Al(OH)₃</text>
-  <text x="310" y="133" text-anchor="middle" fill="#6b21a8" font-size="11">White precipitate</text>
+  <text x="310" y="115" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="14" style="fill:#f8fafc">Al(OH)₃</text>
+  <text x="310" y="133" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">White precipitate</text>
 
   <!-- TOP BRANCH: + HCl (acid) -->
   <rect x="10"  y="10" width="160" height="50" rx="7" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
@@ -245,8 +245,8 @@ export const note_chemistry_2_8_11 = {
   <text x="90"  y="50" text-anchor="middle" fill="#dc2626" font-size="10">Base behaviour</text>
 
   <rect x="450" y="10" width="160" height="50" rx="7" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="530" y="32" text-anchor="middle" fill="#7f1d1d" font-weight="bold" font-size="12">AlCl₃(aq) + 3H₂O</text>
-  <text x="530" y="50" text-anchor="middle" fill="#7f1d1d" font-size="10">Salt formed</text>
+  <text x="530" y="32" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">AlCl₃(aq) + 3H₂O</text>
+  <text x="530" y="50" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Salt formed</text>
 
   <!-- arrows top -->
   <line x1="170" y1="35"  x2="228" y2="100" stroke="#ef4444" stroke-width="1.8" stroke-dasharray="5,3"/>
@@ -255,13 +255,13 @@ export const note_chemistry_2_8_11 = {
 
   <!-- BOTTOM BRANCH: + NaOH (alkali) -->
   <rect x="10"  y="180" width="160" height="50" rx="7" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="90"  y="202" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">+ NaOH (alkali)</text>
-  <text x="90"  y="220" text-anchor="middle" fill="#1e40af" font-size="10">Acid behaviour</text>
+  <text x="90"  y="202" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">+ NaOH (alkali)</text>
+  <text x="90"  y="220" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Acid behaviour</text>
 
   <rect x="450" y="180" width="160" height="50" rx="7" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="530" y="200" text-anchor="middle" fill="#1e3a8a" font-weight="bold" font-size="12">NaAl(OH)₄(aq)</text>
-  <text x="530" y="218" text-anchor="middle" fill="#1e3a8a" font-size="9">sodium tetrahydroxo-</text>
-  <text x="530" y="229" text-anchor="middle" fill="#1e3a8a" font-size="9">aluminate</text>
+  <text x="530" y="200" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">NaAl(OH)₄(aq)</text>
+  <text x="530" y="218" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">sodium tetrahydroxo-</text>
+  <text x="530" y="229" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">aluminate</text>
 
   <!-- arrows bottom -->
   <line x1="170" y1="205" x2="228" y2="145" stroke="#3b82f6" stroke-width="1.8" stroke-dasharray="5,3"/>
@@ -319,35 +319,35 @@ export const note_chemistry_2_8_11 = {
 
   <!-- ── Si(OH)4 ── central Si, 4 OH groups, no =O -->
   <circle cx="78"  cy="130" r="16" fill="#1e293b" stroke="#4b5563" stroke-width="2"/>
-  <text x="78"  y="135" text-anchor="middle" fill="#111827" font-weight="bold" font-size="11">Si</text>
+  <text x="78"  y="135" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Si</text>
   <!-- 4 OH groups: top, left, right, bottom -->
   <line x1="78" y1="114" x2="78" y2="90" stroke="#374151" stroke-width="1.8"/>
   <circle cx="78"  cy="82"  r="9"  fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="78"  y="86"  text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="78"  y="86"  text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="78" y1="73"  x2="78" y2="60"  stroke="#374151" stroke-width="1.5"/>
   <circle cx="78"  cy="53"  r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="78"  y="57"  text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="78"  y="57"  text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <line x1="62" y1="130" x2="34" y2="130" stroke="#374151" stroke-width="1.8"/>
   <circle cx="26"  cy="130" r="9"  fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="26"  y="134" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="26"  y="134" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="17" y1="130" x2="6"  y2="130" stroke="#374151" stroke-width="1.5"/>
   <circle cx="4"   cy="130" r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="4"   y="134" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="4"   y="134" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <line x1="94" y1="130" x2="122" y2="130" stroke="#374151" stroke-width="1.8"/>
   <circle cx="130" cy="130" r="9"  fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="130" y="134" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="130" y="134" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="139" y1="130" x2="150" y2="130" stroke="#374151" stroke-width="1.5"/>
   <circle cx="152" cy="130" r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="152" y="134" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="152" y="134" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <line x1="78" y1="146" x2="78" y2="168" stroke="#374151" stroke-width="1.8"/>
   <circle cx="78"  cy="176" r="9"  fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="78"  y="180" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="78"  y="180" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="78" y1="185" x2="78" y2="196" stroke="#374151" stroke-width="1.5"/>
   <circle cx="78"  cy="200" r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="78"  y="204" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="78"  y="204" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <text x="78"  y="225" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="bold">0 oxo (=O) groups</text>
   <text x="78"  y="238" text-anchor="middle" fill="#d97706" font-size="9">Very weak acid</text>
@@ -358,37 +358,37 @@ export const note_chemistry_2_8_11 = {
 
   <!-- ── H₃PO₄ ── P, 3 OH, 1 =O (top) -->
   <circle cx="230" cy="130" r="16" fill="#532407" stroke="#c2410c" stroke-width="2"/>
-  <text x="230" y="135" text-anchor="middle" fill="#7c2d12" font-weight="bold" font-size="11">P</text>
+  <text x="230" y="135" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">P</text>
   <!-- top =O double bond -->
   <line x1="227" y1="114" x2="227" y2="82" stroke="#374151" stroke-width="2.2"/>
   <line x1="233" y1="114" x2="233" y2="82" stroke="#374151" stroke-width="2.2"/>
   <circle cx="230" cy="74" r="9" fill="#78350f" stroke="#d97706" stroke-width="1.8"/>
-  <text x="230" y="78" text-anchor="middle" fill="#78350f" font-size="9">O</text>
+  <text x="230" y="78" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <text x="246" y="95" fill="#d97706" font-size="8">=O</text>
 
   <!-- left OH -->
   <line x1="214" y1="124" x2="186" y2="112" stroke="#374151" stroke-width="1.8"/>
   <circle cx="178" cy="108" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="178" y="112" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="178" y="112" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="170" y1="104" x2="162" y2="96" stroke="#374151" stroke-width="1.5"/>
   <circle cx="157" cy="92" r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="157" y="96" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="157" y="96" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <!-- right OH -->
   <line x1="245" y1="124" x2="273" y2="112" stroke="#374151" stroke-width="1.8"/>
   <circle cx="281" cy="108" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="281" y="112" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="281" y="112" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="289" y1="104" x2="297" y2="96" stroke="#374151" stroke-width="1.5"/>
   <circle cx="302" cy="92" r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="302" y="96" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="302" y="96" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <!-- bottom OH -->
   <line x1="230" y1="146" x2="230" y2="168" stroke="#374151" stroke-width="1.8"/>
   <circle cx="230" cy="176" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="230" y="180" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="230" y="180" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="230" y1="185" x2="230" y2="196" stroke="#374151" stroke-width="1.5"/>
   <circle cx="230" cy="200" r="7"  fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="230" y="204" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="230" y="204" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <text x="230" y="225" text-anchor="middle" fill="#ea580c" font-size="10" font-weight="bold">1 oxo (=O) group</text>
   <text x="230" y="238" text-anchor="middle" fill="#ea580c" font-size="9">Weak acid</text>
@@ -399,33 +399,33 @@ export const note_chemistry_2_8_11 = {
 
   <!-- ── H₂SO₄ ── S, 2 OH, 2 =O -->
   <circle cx="410" cy="130" r="16" fill="#44370a" stroke="#a16207" stroke-width="2"/>
-  <text x="410" y="135" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="11">S</text>
+  <text x="410" y="135" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">S</text>
   <!-- top-left =O -->
   <line x1="395" y1="118" x2="371" y2="94" stroke="#374151" stroke-width="2.2"/>
   <line x1="400" y1="113" x2="376" y2="90" stroke="#374151" stroke-width="2.2"/>
   <circle cx="365" cy="85" r="9" fill="#78350f" stroke="#d97706" stroke-width="1.8"/>
-  <text x="365" y="89" text-anchor="middle" fill="#78350f" font-size="9">O</text>
+  <text x="365" y="89" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <text x="350" y="104" fill="#d97706" font-size="8">=O</text>
   <!-- top-right =O -->
   <line x1="424" y1="118" x2="448" y2="94" stroke="#374151" stroke-width="2.2"/>
   <line x1="420" y1="114" x2="444" y2="90" stroke="#374151" stroke-width="2.2"/>
   <circle cx="454" cy="85" r="9" fill="#78350f" stroke="#d97706" stroke-width="1.8"/>
-  <text x="454" y="89" text-anchor="middle" fill="#78350f" font-size="9">O</text>
+  <text x="454" y="89" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <text x="462" y="104" fill="#d97706" font-size="8">=O</text>
   <!-- left OH -->
   <line x1="398" y1="143" x2="374" y2="163" stroke="#374151" stroke-width="1.8"/>
   <circle cx="366" cy="170" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="366" y="174" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="366" y="174" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="357" y1="168" x2="348" y2="180" stroke="#374151" stroke-width="1.5"/>
   <circle cx="344" cy="185" r="7" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="344" y="189" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="344" y="189" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
   <!-- right OH -->
   <line x1="422" y1="143" x2="446" y2="163" stroke="#374151" stroke-width="1.8"/>
   <circle cx="454" cy="170" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="454" y="174" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="454" y="174" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="463" y1="168" x2="472" y2="180" stroke="#374151" stroke-width="1.5"/>
   <circle cx="476" cy="185" r="7" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="476" y="189" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="476" y="189" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <text x="410" y="225" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="bold">2 oxo (=O) groups</text>
   <text x="410" y="238" text-anchor="middle" fill="#ef4444" font-size="9">Strong acid (1st H)</text>
@@ -436,29 +436,29 @@ export const note_chemistry_2_8_11 = {
 
   <!-- ── HClO₄ ── Cl, 1 OH, 3 =O -->
   <circle cx="590" cy="130" r="16" fill="#0a3020" stroke="#059669" stroke-width="2"/>
-  <text x="590" y="135" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="11">Cl</text>
+  <text x="590" y="135" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Cl</text>
   <!-- top =O -->
   <line x1="587" y1="114" x2="587" y2="84" stroke="#374151" stroke-width="2.2"/>
   <line x1="593" y1="114" x2="593" y2="84" stroke="#374151" stroke-width="2.2"/>
   <circle cx="590" cy="76" r="9" fill="#78350f" stroke="#d97706" stroke-width="1.8"/>
-  <text x="590" y="80" text-anchor="middle" fill="#78350f" font-size="9">O</text>
+  <text x="590" y="80" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <!-- left =O -->
   <line x1="574" y1="122" x2="548" y2="102" stroke="#374151" stroke-width="2.2"/>
   <line x1="578" y1="117" x2="552" y2="97" stroke="#374151" stroke-width="2.2"/>
   <circle cx="543" cy="92" r="9" fill="#78350f" stroke="#d97706" stroke-width="1.8"/>
-  <text x="543" y="96" text-anchor="middle" fill="#78350f" font-size="9">O</text>
+  <text x="543" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <!-- right =O -->
   <line x1="606" y1="122" x2="632" y2="102" stroke="#374151" stroke-width="2.2"/>
   <line x1="602" y1="117" x2="628" y2="97" stroke="#374151" stroke-width="2.2"/>
   <circle cx="637" cy="92" r="9" fill="#78350f" stroke="#d97706" stroke-width="1.8"/>
-  <text x="637" y="96" text-anchor="middle" fill="#78350f" font-size="9">O</text>
+  <text x="637" y="96" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <!-- bottom OH -->
   <line x1="590" y1="146" x2="590" y2="168" stroke="#374151" stroke-width="1.8"/>
   <circle cx="590" cy="178" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="590" y="182" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
+  <text x="590" y="182" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">O</text>
   <line x1="590" y1="187" x2="590" y2="198" stroke="#374151" stroke-width="1.5"/>
   <circle cx="590" cy="204" r="7" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="590" y="208" text-anchor="middle" fill="#1e40af" font-size="8">H</text>
+  <text x="590" y="208" text-anchor="middle" fill="#f8fafc" font-size="8" style="fill:#f8fafc">H</text>
 
   <text x="590" y="225" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="bold">3 oxo (=O) groups</text>
   <text x="590" y="238" text-anchor="middle" fill="#dc2626" font-size="9">Very strong acid</text>
@@ -566,33 +566,33 @@ export const note_chemistry_2_8_11 = {
 
   <!-- Central Cl -->
   <circle cx="130" cy="120" r="18" fill="#0a3020" stroke="#059669" stroke-width="2"/>
-  <text x="130" y="125" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="12">Cl</text>
+  <text x="130" y="125" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Cl</text>
 
   <!-- Top double bond O -->
   <line x1="127" y1="102" x2="127" y2="74" stroke="#374151" stroke-width="2.5"/>
   <line x1="133" y1="102" x2="133" y2="74" stroke="#374151" stroke-width="2.5"/>
   <circle cx="130" cy="64"  r="14" fill="#78350f" stroke="#d97706" stroke-width="2"/>
-  <text x="130" y="68" text-anchor="middle" fill="#78350f" font-size="10">O</text>
+  <text x="130" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="150" y="85"  fill="#374151" font-size="10">=O</text>
 
   <!-- Left double bond O -->
   <line x1="112" y1="113" x2="79"  y2="98"  stroke="#374151" stroke-width="2.5"/>
   <line x1="115" y1="108" x2="82"  y2="93"  stroke="#374151" stroke-width="2.5"/>
   <circle cx="70"  cy="88"  r="14" fill="#78350f" stroke="#d97706" stroke-width="2"/>
-  <text x="70" y="92" text-anchor="middle" fill="#78350f" font-size="10">O</text>
+  <text x="70" y="92" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="55" y="108" fill="#374151" font-size="10">=O</text>
 
   <!-- Right double bond O -->
   <line x1="148" y1="113" x2="181" y2="98"  stroke="#374151" stroke-width="2.5"/>
   <line x1="145" y1="108" x2="178" y2="93"  stroke="#374151" stroke-width="2.5"/>
   <circle cx="190" cy="88"  r="14" fill="#78350f" stroke="#d97706" stroke-width="2"/>
-  <text x="190" y="92" text-anchor="middle" fill="#78350f" font-size="10">O</text>
+  <text x="190" y="92" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="200" y="108" fill="#374151" font-size="10">=O</text>
 
   <!-- Bottom single bond O⁻ -->
   <line x1="130" y1="138" x2="130" y2="162" stroke="#374151" stroke-width="2"/>
   <circle cx="130" cy="174" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
-  <text x="130" y="178" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
+  <text x="130" y="178" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="148" y="178" fill="#dc2626" font-size="11" font-weight="bold">⁻</text>
   <text x="130" y="202" text-anchor="middle" fill="#dc2626" font-size="9">Single bond;</text>
   <text x="130" y="214" text-anchor="middle" fill="#dc2626" font-size="9">charge on 1 O</text>
@@ -606,28 +606,28 @@ export const note_chemistry_2_8_11 = {
   <text x="440" y="34" text-anchor="middle" fill="#6b7280" font-size="10">(actual ClO₄⁻ in solution)</text>
 
   <circle cx="440" cy="120" r="18" fill="#0a3020" stroke="#059669" stroke-width="2"/>
-  <text x="440" y="125" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="12">Cl</text>
+  <text x="440" y="125" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Cl</text>
 
   <!-- Four identical bonds (dashed: between single and double) -->
   <!-- Top O -->
   <line x1="440" y1="102" x2="440" y2="74" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="440" cy="64"  r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
-  <text x="440" y="68" text-anchor="middle" fill="#312e81" font-size="10">O</text>
+  <text x="440" y="68" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="458" y="62" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
   <!-- Left O -->
   <line x1="425" y1="112" x2="394" y2="96"  stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="382" cy="88"  r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
-  <text x="382" y="92" text-anchor="middle" fill="#312e81" font-size="10">O</text>
+  <text x="382" y="92" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="363" y="88" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
   <!-- Right O -->
   <line x1="455" y1="112" x2="486" y2="96"  stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="498" cy="88"  r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
-  <text x="498" y="92" text-anchor="middle" fill="#312e81" font-size="10">O</text>
+  <text x="498" y="92" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="514" y="88" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
   <!-- Bottom O -->
   <line x1="440" y1="138" x2="440" y2="162" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="440" cy="174" r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
-  <text x="440" y="178" text-anchor="middle" fill="#312e81" font-size="10">O</text>
+  <text x="440" y="178" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">O</text>
   <text x="458" y="178" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
 
   <text x="440" y="202" text-anchor="middle" fill="#4338ca" font-size="10" font-weight="bold">All 4 bonds identical (1.46 Å)</text>
@@ -677,25 +677,25 @@ export const note_chemistry_2_8_11 = {
 
   <!-- Step 1 -->
   <rect x="10" y="10" width="190" height="60" rx="7" fill="#1c3a64" stroke="#0ea5e9" stroke-width="1.5"/>
-  <text x="105" y="34" text-anchor="middle" fill="#0c4a6e" font-weight="bold" font-size="11">Step 1: Oxyacid loses H⁺</text>
-  <text x="105" y="50" text-anchor="middle" fill="#0c4a6e" font-size="10">R–O–H → R–O⁻ + H⁺</text>
-  <text x="105" y="63" text-anchor="middle" fill="#0c4a6e" font-size="9">Negative charge on O</text>
+  <text x="105" y="34" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Step 1: Oxyacid loses H⁺</text>
+  <text x="105" y="50" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">R–O–H → R–O⁻ + H⁺</text>
+  <text x="105" y="63" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Negative charge on O</text>
 
   <line x1="200" y1="40" x2="230" y2="40" stroke="#4b5563" stroke-width="1.5" marker-end="url(#flarr)"/>
 
   <!-- Step 2 -->
   <rect x="232" y="10" width="190" height="60" rx="7" fill="#1c3a64" stroke="#0ea5e9" stroke-width="1.5"/>
-  <text x="327" y="30" text-anchor="middle" fill="#0c4a6e" font-weight="bold" font-size="11">Step 2: Is charge</text>
-  <text x="327" y="45" text-anchor="middle" fill="#0c4a6e" font-weight="bold" font-size="11">delocalised?</text>
-  <text x="327" y="62" text-anchor="middle" fill="#0c4a6e" font-size="9">Are there =O bonds to spread it?</text>
+  <text x="327" y="30" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Step 2: Is charge</text>
+  <text x="327" y="45" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">delocalised?</text>
+  <text x="327" y="62" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Are there =O bonds to spread it?</text>
 
   <!-- YES branch (right) -->
   <line x1="422" y1="40" x2="452" y2="40" stroke="#059669" stroke-width="1.5" marker-end="url(#flarr)"/>
   <text x="437" y="35" text-anchor="middle" fill="#059669" font-size="9">YES</text>
 
   <rect x="454" y="10" width="170" height="60" rx="7" fill="#0a2e1a" stroke="#059669" stroke-width="1.8"/>
-  <text x="539" y="30" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="11">Anion is STABLE</text>
-  <text x="539" y="46" text-anchor="middle" fill="#065f46" font-size="10">Charge spread over multiple O</text>
+  <text x="539" y="30" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Anion is STABLE</text>
+  <text x="539" y="46" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Charge spread over multiple O</text>
   <text x="539" y="60" text-anchor="middle" fill="#059669" font-size="9">→ STRONG acid</text>
 
   <!-- NO branch (down) -->
@@ -703,41 +703,41 @@ export const note_chemistry_2_8_11 = {
   <text x="335" y="90" fill="#ef4444" font-size="9">NO</text>
 
   <rect x="232" y="102" width="190" height="60" rx="7" fill="#3d1212" stroke="#ef4444" stroke-width="1.8"/>
-  <text x="327" y="124" text-anchor="middle" fill="#991b1b" font-weight="bold" font-size="11">Anion is UNSTABLE</text>
-  <text x="327" y="140" text-anchor="middle" fill="#991b1b" font-size="10">Charge on 1 O only</text>
+  <text x="327" y="124" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Anion is UNSTABLE</text>
+  <text x="327" y="140" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Charge on 1 O only</text>
   <text x="327" y="155" text-anchor="middle" fill="#ef4444" font-size="9">→ WEAK acid</text>
 
   <!-- EXAMPLES BOX -->
   <rect x="10" y="185" width="620" height="108" rx="8" fill="#0f172a" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="320" y="205" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">Examples: Number of =O bonds and acid strength</text>
+  <text x="320" y="205" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Examples: Number of =O bonds and acid strength</text>
 
   <!-- Si row -->
   <rect x="25"  y="212" width="130" height="72" rx="5" fill="#44370a" stroke="#d97706" stroke-width="1.2"/>
-  <text x="90"  y="228" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="11">Si(OH)₄</text>
-  <text x="90"  y="243" text-anchor="middle" fill="#78350f" font-size="10">0 Si=O bonds</text>
-  <text x="90"  y="258" text-anchor="middle" fill="#78350f" font-size="9">Charge on 1 O</text>
+  <text x="90"  y="228" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">Si(OH)₄</text>
+  <text x="90"  y="243" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">0 Si=O bonds</text>
+  <text x="90"  y="258" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Charge on 1 O</text>
   <text x="90"  y="272" text-anchor="middle" fill="#d97706" font-size="9" font-weight="bold">Very weak (pKₐ ~9.9)</text>
 
   <!-- P row -->
   <rect x="168" y="212" width="130" height="72" rx="5" fill="#532407" stroke="#ea580c" stroke-width="1.2"/>
-  <text x="233" y="228" text-anchor="middle" fill="#7c2d12" font-weight="bold" font-size="11">H₃PO₄</text>
-  <text x="233" y="243" text-anchor="middle" fill="#7c2d12" font-size="10">1 P=O bond</text>
-  <text x="233" y="258" text-anchor="middle" fill="#7c2d12" font-size="9">Charge over 2 O</text>
+  <text x="233" y="228" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">H₃PO₄</text>
+  <text x="233" y="243" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">1 P=O bond</text>
+  <text x="233" y="258" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Charge over 2 O</text>
   <text x="233" y="272" text-anchor="middle" fill="#ea580c" font-size="9" font-weight="bold">Weak (pKₐ ≈ 2.15)</text>
 
   <!-- S row -->
   <rect x="311" y="212" width="130" height="72" rx="5" fill="#3d1212" stroke="#ef4444" stroke-width="1.2"/>
-  <text x="376" y="228" text-anchor="middle" fill="#991b1b" font-weight="bold" font-size="11">H₂SO₄</text>
-  <text x="376" y="243" text-anchor="middle" fill="#991b1b" font-size="10">2 S=O bonds</text>
-  <text x="376" y="258" text-anchor="middle" fill="#991b1b" font-size="9">Charge over 3 O (HSO₄⁻)</text>
+  <text x="376" y="228" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">H₂SO₄</text>
+  <text x="376" y="243" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">2 S=O bonds</text>
+  <text x="376" y="258" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Charge over 3 O (HSO₄⁻)</text>
   <text x="376" y="272" text-anchor="middle" fill="#ef4444" font-size="9" font-weight="bold">Strong (pKₐ ≈ −3)</text>
 
   <!-- Cl row -->
   <rect x="454" y="212" width="168" height="72" rx="5" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="538" y="228" text-anchor="middle" fill="#7f1d1d" font-weight="bold" font-size="11">HClO₄</text>
-  <text x="538" y="243" text-anchor="middle" fill="#7f1d1d" font-size="10">3 Cl=O bonds</text>
-  <text x="538" y="258" text-anchor="middle" fill="#7f1d1d" font-size="9">Charge over ALL 4 O (ClO₄⁻)</text>
-  <text x="538" y="272" text-anchor="middle" fill="#dc2626" font-size="9" font-weight="bold">V. strong (pKₐ ≈ −10)</text>
+  <text x="538" y="228" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">HClO₄</text>
+  <text x="538" y="243" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">3 Cl=O bonds</text>
+  <text x="538" y="258" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">Charge over ALL 4 O (ClO₄⁻)</text>
+  <text x="538" y="272" text-anchor="middle" fill="#f8fafc" font-size="9" font-weight="bold" style="fill:#f8fafc">V. strong (pKₐ ≈ −10)</text>
 </svg>`
       }
     },

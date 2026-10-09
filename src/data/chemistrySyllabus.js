@@ -1,5 +1,5 @@
 export const chemistrySyllabus = {
-    qualification: 'AL Chemistry',
+    qualification: 'Pearson Edexcel International A Level Chemistry',
     source: 'International-A-Level-Chemistry-Spec.pdf',
     units: [
         {
@@ -54,7 +54,7 @@ export const chemistrySyllabus = {
                         'Bond length and bond strength',
                         'Comparing types of structure',
                         'Intermolecular forces',
-                        'Core Practical 2: enthalpy change by calorimetry',
+                        'Calorimetry: preparation for Unit 2',
                     ],
                 },
                 {
@@ -87,7 +87,7 @@ export const chemistrySyllabus = {
                         "Markovnikov's rule and identifying C=C",
                         'Addition polymerisation',
                         'Oxidation of alkenes',
-                        'Core Practical 4: Preparation of 1-bromobutane',
+                        'Further practical: preparation of 1-bromobutane',
                         'Lab preparation of alkenes',
                         'Free radical addition of HBr',
                     ],
@@ -108,7 +108,7 @@ export const chemistrySyllabus = {
                         'Enthalpy level diagrams',
                         'Standard enthalpy changes (ΔH)',
                         'Measuring enthalpy changes: q = mcΔT',
-                        "Hess's Law and enthalpy cycles",
+                        "Hess's Law and Core Practical 2",
                         'Bond enthalpies and mean bond enthalpies',
                         'Bond enthalpy and reactivity',
                     ],
@@ -298,7 +298,7 @@ export const chemistrySyllabus = {
                         'Thermodynamic Feasibility from E° Values',
                         'Redox Titrations: Purpose and Principle',
                         'Fuel Cells: Energy Production via Electrochemistry',
-                        'Core Practical 12: Measuring Standard Electrode Potential',
+                        'Core Practical 12: Investigating electrochemical cells',
                         'Redox Equilibria and Electrochemistry',
                     ],
                 },

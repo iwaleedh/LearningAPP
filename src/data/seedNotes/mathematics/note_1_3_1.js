@@ -124,7 +124,7 @@ export const note_mathematics_1_3_1 = {
     recall: {
         enabled: true,
         cues: [
-            { id: 'cue-1', blockId: 'key-sohcahtoa', prompt: 'Write down the three SOHCAHTOA formulae for finding sides.' },
+            { id: 'cue-1', blockId: 'list-side', prompt: 'Write down the three SOHCAHTOA formulae for finding sides.' },
             { id: 'cue-2', blockId: 'worked-side', prompt: 'With angle 35° and hypotenuse 10 cm, find the opposite side.' },
             { id: 'cue-3', blockId: 'worked-angle', prompt: 'Adjacent = 6, hypotenuse = 10. Find angle θ.' },
             { id: 'cue-4', blockId: 'callout-warning', prompt: 'List three common mistakes when using SOHCAHTOA.' }

@@ -8,7 +8,7 @@ export const note_business_3_12_5 = {
     { id: 'call-1', type: 'callout', data: { style: 'worked', title: 'Example', text: 'The AOL-Time Warner merger severely suffered due to a massive culture clash between AOL\'s brash tech-focus and Time Warner\'s traditional media structure.' } },
     { id: 'h-3', type: 'heading', data: { text: 'Redundancies and Low Morale', level: 3 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'To achieve cost synergies, merged entities usually cut duplicate roles (e.g., keeping only one Finance Director). Widespread redundancies destroy morale and cause immense anxiety among the surviving workforce.' } },
-    { id: 'h-3', type: 'heading', data: { text: 'Financial Burdens', level: 3 } },
+    { id: 'h-3-2', type: 'heading', data: { text: 'Financial Burdens', level: 3 } },
     { id: 'p-4', type: 'paragraph', data: { text: 'Takeovers often involve paying a massive premium over the actual market value of the shares (acquisition premium). This saddles the acquirer with vast amounts of debt that can cripple cash flow.' } },
     { id: 'call-2', type: 'callout', data: { style: 'warning', title: 'Regulatory Intervention', text: 'A major inorganic move can attract the Competition and Markets Authority (CMA) which can block the merger or force the sale of constituent parts.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Inorganic growth risks include severe culture clashes, workforce panic due to redundancies, and crippling financial debts stemming from acquisition premiums.' } },

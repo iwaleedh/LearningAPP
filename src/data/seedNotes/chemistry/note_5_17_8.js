@@ -88,10 +88,10 @@ export const note_chemistry_5_17_8 = {
         svg: `<svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="background-color:var(--color-surface);border-radius:8px;">
   <rect x="50" y="30" width="140" height="60" rx="4" fill="#78350f" stroke="#FFD700" stroke-width="2" />
   <rect x="310" y="30" width="140" height="60" rx="4" fill="#7c2d12" stroke="#FF8C00" stroke-width="2" />
-  <text x="120" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">2CrO₄²⁻</text>
-  <text x="120" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">Chromate (Yellow)</text>
-  <text x="380" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Cr₂O₇²⁻ + H₂O</text>
-  <text x="380" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">Dichromate (Orange)</text>
+  <text x="120" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">2CrO₄²⁻</text>
+  <text x="120" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Chromate (Yellow)</text>
+  <text x="380" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cr₂O₇²⁻ + H₂O</text>
+  <text x="380" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Dichromate (Orange)</text>
   <path d="M200 50 L300 50" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
   <path d="M300 70 L200 70" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
   <text x="250" y="42" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">+ H⁺ (acid)</text>

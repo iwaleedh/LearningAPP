@@ -1,19 +1,22 @@
 import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { Layers3, Wrench, MoreHorizontal, Maximize2, Minimize2 } from 'lucide-react';
+import { Wrench, MoreHorizontal, Maximize2, ArrowLeft, ChevronLeft, ChevronRight, ListTree, Brain, Check, X, Loader2, FileText } from 'lucide-react';
 import { getSubjectLabel } from '../data/syllabusIndex.js';
 import { getSyllabusBySubject as getStaticSyllabusBySubject } from '../data/syllabusCatalog.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote, hasSeedNote } from '../data/seedNotes/index.js';
 import NoteReadingToolbar from '../components/notes/NoteReadingToolbar.jsx';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
+import GuidedNoteReader from '../components/notes/GuidedNoteReader.jsx';
+import { buildGuidedLesson, readLessonProgress } from '../services/notes/guidedLesson.js';
 import Highlighter from '../components/student/Highlighter.jsx';
 import StickyNotes from '../components/student/StickyNotes.jsx';
 import ExportPDF from '../components/student/ExportPDF.jsx';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
-import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
+import { useNoteReadStatus, useReadProgressSummary } from '../hooks/useNoteReadStatus.js';
 import { useSyllabus } from '../hooks/useSyllabus.js';
 import { trackNoteEvent } from '../services/observability/clientTelemetry.js';
+import { saveRecentNote } from '../services/notes/recentNote.js';
 import './Pages.css';
 import './NotePage.css';
 
@@ -135,6 +138,8 @@ function useBodyScrollLock(active) {
 const NOTE_FULLSCREEN_STORAGE_KEY = 'LT_NOTE_FULLSCREEN';
 const PAGE_CONTENT_FULLSCREEN_CLASS = 'page-content--note-fullscreen';
 const ROOT_FULLSCREEN_CLASS = 'note-fullscreen-active';
+const PHONE_READER_CLASS = 'note-reader-phone';
+const DESKTOP_READER_CLASS = 'note-reader-desktop';
 
 function readFullscreenPreference() {
     if (typeof window === 'undefined') return false;
@@ -146,11 +151,11 @@ function writeFullscreenPreference(value) {
     window.localStorage.setItem(NOTE_FULLSCREEN_STORAGE_KEY, value ? 'true' : 'false');
 }
 
-function TableOfContents({ toc, activeId, onSelect, className = '', showHeader = true }) {
+function TableOfContents({ toc, activeId, onSelect, className = '', showHeader = true, headerLabel = 'Contents' }) {
     if (!toc.length) return null;
     return (
         <nav className={`note-toc ${className}`.trim()} aria-label="Table of contents">
-            {showHeader ? <div className="note-toc-header">Contents</div> : null}
+            {showHeader ? <div className="note-toc-header">{headerLabel}</div> : null}
             <ul className="note-toc-list">
                 {toc.map((item) => (
                     <li key={item.id} className={`note-toc-item level-${item.level}`}>
@@ -168,8 +173,10 @@ function TableOfContents({ toc, activeId, onSelect, className = '', showHeader =
     );
 }
 
-function MobileTableOfContents({ toc, activeId, onSelect, onClose, returnFocusRef }) {
+function MobileTableOfContents({ toc, activeId, onSelect, onClose, returnFocusRef, topicNav = null }) {
     const containerRef = useRef(null);
+    const hasToc = toc.length > 0;
+    const [tab, setTab] = useState(hasToc ? 'page' : 'topics');
 
     useOverlayA11y({ open: true, containerRef, returnFocusRef, onClose });
 
@@ -183,7 +190,7 @@ function MobileTableOfContents({ toc, activeId, onSelect, onClose, returnFocusRe
             />
             <div
                 ref={containerRef}
-                className="note-sheet note-toc-sheet"
+                className={`note-sheet note-toc-sheet ${topicNav ? 'note-contents-sheet' : ''}`.trim()}
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="note-toc-sheet-title"
@@ -194,93 +201,107 @@ function MobileTableOfContents({ toc, activeId, onSelect, onClose, returnFocusRe
                     <h3 id="note-toc-sheet-title" className="note-sheet-title">Contents</h3>
                     <button
                         type="button"
-                        className="btn btn-ghost btn-sm"
+                        className="note-icon-btn"
                         onClick={onClose}
                         aria-label="Close table of contents"
                     >
-                        ✕
+                        <X size={20} aria-hidden="true" />
                     </button>
                 </div>
-                <TableOfContents
-                    toc={toc}
-                    activeId={activeId}
-                    showHeader={false}
-                    className="note-toc--sheet"
-                    onSelect={(blockId) => {
-                        onSelect(blockId);
-                        onClose();
-                    }}
-                />
+
+                {topicNav && hasToc ? (
+                    <div className="note-segmented" role="tablist" aria-label="Contents view">
+                        <button
+                            type="button"
+                            role="tab"
+                            aria-selected={tab === 'page'}
+                            className={`note-segmented-option ${tab === 'page' ? 'is-active' : ''}`}
+                            onClick={() => setTab('page')}
+                        >
+                            On this page
+                        </button>
+                        <button
+                            type="button"
+                            role="tab"
+                            aria-selected={tab === 'topics'}
+                            className={`note-segmented-option ${tab === 'topics' ? 'is-active' : ''}`}
+                            onClick={() => setTab('topics')}
+                        >
+                            Topics
+                        </button>
+                    </div>
+                ) : null}
+
+                {tab === 'page' && hasToc ? (
+                    <TableOfContents
+                        toc={toc}
+                        activeId={activeId}
+                        showHeader={false}
+                        className="note-toc--sheet"
+                        onSelect={(blockId) => {
+                            onSelect(blockId);
+                            onClose();
+                        }}
+                    />
+                ) : null}
+
+                {tab === 'topics' && topicNav ? (
+                    <TopicNavigator {...topicNav} onNavigate={onClose} />
+                ) : null}
             </div>
         </>
     );
 }
 
-function MobileTopicsSheet({ activeUnit, context, topicId, subtopicIndex, onClose, returnFocusRef }) {
-    const containerRef = useRef(null);
+function TopicNavigator({ activeUnit, subject, topicId, subtopicIndex, onNavigate }) {
+    const { readAtByNoteId } = useReadProgressSummary();
+    const activeLinkRef = useRef(null);
 
-    useOverlayA11y({ open: true, containerRef, returnFocusRef, onClose });
+    useEffect(() => {
+        activeLinkRef.current?.scrollIntoView({ block: 'nearest' });
+    }, []);
 
     if (!activeUnit) return null;
 
     return (
-        <>
-            <button
-                className="note-sheet-backdrop"
-                type="button"
-                onClick={onClose}
-                aria-label="Close topics"
-            />
-            <div
-                ref={containerRef}
-                className="note-sheet note-topics-sheet"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="note-topics-sheet-title"
-                tabIndex={-1}
-            >
-                <div className="note-sheet-handle" aria-hidden="true" />
-                <div className="note-sheet-header">
-                    <h3 id="note-topics-sheet-title" className="note-sheet-title">Topics</h3>
-                    <button
-                        type="button"
-                        className="btn btn-ghost btn-sm"
-                        onClick={onClose}
-                        aria-label="Close topics"
-                    >
-                        ✕
-                    </button>
-                </div>
-                <div className="note-mobile-sheet-body">
-                    {activeUnit.topics.map((topic) => {
-                        const topicIsActive = String(topic.id) === String(topicId);
+        <div className="note-topic-nav">
+            {activeUnit.topics.map((topic) => {
+                const topicIsActive = String(topic.id) === String(topicId);
+                const readCount = topic.subtopics.filter((_, idx) => readAtByNoteId[`note:${subject}:${activeUnit.id}:${topic.id}:${idx}`]).length;
 
-                        return (
-                            <section key={topic.id} className="note-mobile-topic-group">
-                                <h4 className={`note-mobile-topic-heading ${topicIsActive ? 'active' : ''}`}>
-                                    Topic {topic.id}: {topic.title}
-                                </h4>
-                                <div className="note-mobile-topic-links">
-                                    {topic.subtopics.map((sub, idx) => {
-                                        const isActive = topicIsActive && String(idx) === String(subtopicIndex);
-                                        return (
-                                            <Link
-                                                key={`${topic.id}-${idx}`}
-                                                to={`/notes/${context.subject}/${activeUnit.id}/${topic.id}/${idx}`}
-                                                className={`note-mobile-topic-link ${isActive ? 'active' : ''}`}
-                                                onClick={onClose}
-                                            >
-                                                {sub}
-                                            </Link>
-                                        );
-                                    })}
-                                </div>
-                            </section>
-                        );
-                    })}
-                </div>
-            </div>
-        </>
+                return (
+                    <details key={topic.id} className="note-topic-group" open={topicIsActive}>
+                        <summary className={`note-topic-summary ${topicIsActive ? 'is-active' : ''}`}>
+                            <span className="note-topic-summary-title">{topic.title}</span>
+                            <span className="note-topic-summary-count">{readCount}/{topic.subtopics.length}</span>
+                            <ChevronRight size={16} aria-hidden="true" className="note-topic-summary-chevron" />
+                        </summary>
+                        <ol className="note-topic-list">
+                            {topic.subtopics.map((sub, idx) => {
+                                const isActive = topicIsActive && String(idx) === String(subtopicIndex);
+                                const isRead = Boolean(readAtByNoteId[`note:${subject}:${activeUnit.id}:${topic.id}:${idx}`]);
+                                return (
+                                    <li key={`${topic.id}-${idx}`}>
+                                        <Link
+                                            ref={isActive ? activeLinkRef : undefined}
+                                            to={`/notes/${subject}/${activeUnit.id}/${topic.id}/${idx}`}
+                                            className={`note-topic-link ${isActive ? 'is-active' : ''}`}
+                                            aria-current={isActive ? 'page' : undefined}
+                                            onClick={onNavigate}
+                                        >
+                                            <span className="note-topic-link-text">{sub}</span>
+                                            {isRead ? (
+                                                <Check size={16} className="note-topic-link-read" aria-label="Read" />
+                                            ) : null}
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ol>
+                    </details>
+                );
+            })}
+        </div>
     );
 }
 
@@ -310,11 +331,11 @@ function MobileStudyToolsSheet({ noteId, chapterTitle, onClose, returnFocusRef }
                     <h3 id="note-tools-sheet-title" className="note-sheet-title">Study Tools</h3>
                     <button
                         type="button"
-                        className="btn btn-ghost btn-sm"
+                        className="note-icon-btn"
                         onClick={onClose}
                         aria-label="Close study tools"
                     >
-                        ✕
+                        <X size={20} aria-hidden="true" />
                     </button>
                 </div>
                 <div className="note-mobile-sheet-body note-mobile-sheet-body--tools">
@@ -411,8 +432,8 @@ function RecallPanel({ recall, onClose, isMobileModal = false, returnFocusRef })
                 onKeyDown={handleKeyDown}
             >
                 <div className="recall-panel-header">
-                    <span>🧠 Recall Mode</span>
-                    <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close recall mode">✕</button>
+                    <span className="recall-panel-heading"><Brain size={18} aria-hidden="true" /> Recall Mode</span>
+                    <button className="note-icon-btn" onClick={onClose} aria-label="Close recall mode"><X size={20} aria-hidden="true" /></button>
                 </div>
                 <p className="recall-empty">No recall cues for this note yet.</p>
             </div>
@@ -430,12 +451,14 @@ function RecallPanel({ recall, onClose, isMobileModal = false, returnFocusRef })
             onKeyDown={handleKeyDown}
         >
             <div className="recall-panel-header">
-                <span id="recall-panel-title">🧠 Recall Mode <span className="recall-count">{currentIdx + 1} / {cues.length}</span></span>
-                <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close recall mode">✕</button>
+                <span id="recall-panel-title" className="recall-panel-heading">
+                    <Brain size={18} aria-hidden="true" /> Recall Mode <span className="recall-count">{currentIdx + 1} of {cues.length}</span>
+                </span>
+                <button className="note-icon-btn" onClick={onClose} aria-label="Close recall mode"><X size={20} aria-hidden="true" /></button>
             </div>
 
             <div className="recall-progress-track">
-                <div className="recall-progress-fill" style={{ width: `${((currentIdx + 1) / cues.length) * 100}%` }} />
+                <div className="recall-progress-fill" style={{ transform: `scaleX(${(currentIdx + 1) / cues.length})` }} />
             </div>
 
             {cue && (
@@ -450,7 +473,7 @@ function RecallPanel({ recall, onClose, isMobileModal = false, returnFocusRef })
                         </button>
                     ) : (
                         <div className="recall-answer">
-                            <div className="recall-answer-label">💡 Recall cue {currentIdx + 1}</div>
+                            <div className="recall-answer-label">Answer</div>
                             <p className="recall-answer-text">{answer}</p>
                         </div>
                     )}
@@ -462,7 +485,7 @@ function RecallPanel({ recall, onClose, isMobileModal = false, returnFocusRef })
                     className="btn btn-secondary btn-sm"
                     onClick={movePrev}
                     disabled={currentIdx === 0}
-                >← Prev</button>
+                ><ChevronLeft size={16} aria-hidden="true" /> Prev</button>
                 <div className="recall-dots" role="tablist" aria-label="Recall cue navigation">
                     {cues.map((c, i) => (
                         <button
@@ -480,7 +503,7 @@ function RecallPanel({ recall, onClose, isMobileModal = false, returnFocusRef })
                     className="btn btn-secondary btn-sm"
                     onClick={moveNext}
                     disabled={currentIdx === cues.length - 1}
-                >Next →</button>
+                >Next <ChevronRight size={16} aria-hidden="true" /></button>
             </div>
         </div>
     );
@@ -501,12 +524,17 @@ function ReadProgressBar({ scrollRef, onScrollPct, className = '' }) {
             onScrollPct?.(next);
         };
         el.addEventListener('scroll', onScroll, { passive: true });
-        return () => el.removeEventListener('scroll', onScroll);
+        // Short notes never fire a scroll event, so measure once up front.
+        const frameId = window.requestAnimationFrame(onScroll);
+        return () => {
+            window.cancelAnimationFrame(frameId);
+            el.removeEventListener('scroll', onScroll);
+        };
     }, [scrollRef, onScrollPct]);
 
     return (
         <div className={`note-read-progress ${className}`.trim()} title={`${pct}% read`}>
-            <div className="note-read-progress-fill" style={{ width: `${pct}%` }} />
+            <div className="note-read-progress-fill" style={{ transform: `scaleX(${pct / 100})` }} />
         </div>
     );
 }
@@ -598,21 +626,18 @@ export default function NotePage() {
     const { subject, unitId, topicId, subtopicIndex } = useParams();
     const navigate = useNavigate();
     const [recallOpen, setRecallOpen] = useState(false);
-    const [tocPinnedOpen, setTocPinnedOpen] = useState(true);
+    const [readingMode, setReadingMode] = useState('guided');
+    const [requestedStep, setRequestedStep] = useState(null);
     const [tocSheetOpen, setTocSheetOpen] = useState(false);
-    const [topicSheetOpen, setTopicSheetOpen] = useState(false);
     const [toolsSheetOpen, setToolsSheetOpen] = useState(false);
-    const [openTopicId, setOpenTopicId] = useState(null);
     const [scrollPct, setScrollPct] = useState(0);
     const [fullscreenActive, setFullscreenActive] = useState(readFullscreenPreference);
     const [mobileChromeHidden, setMobileChromeHidden] = useState(false);
-    const [mobileHeaderCondensed, setMobileHeaderCondensed] = useState(false);
     const [fullscreenChecklist, setFullscreenChecklist] = useState([]);
     const scrollRef = useRef(null);
     const noteSurfaceRef = useRef(null);
     const tocButtonRef = useRef(null);
     const recallButtonRef = useRef(null);
-    const topicsButtonRef = useRef(null);
     const toolsButtonRef = useRef(null);
     const fullscreenButtonRef = useRef(null);
     const lastScrollTopRef = useRef(0);
@@ -622,6 +647,7 @@ export default function NotePage() {
     const [srAnnouncement, setSrAnnouncement] = useState('');
     const isCompactLayout = useViewportMatch('(max-width: 899px)');
     const isPhoneLayout = useViewportMatch('(max-width: 599px)');
+    const isWideLayout = useViewportMatch('(min-width: 1180px)');
     const notePageRef = useRef(null);
     const swipeStartRef = useRef(null);
     const lastTrackedNoteViewRef = useRef('');
@@ -744,32 +770,56 @@ export default function NotePage() {
 
     const { isRead, readAt, markRead, markUnread } = useNoteReadStatus(noteId);
 
-    const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);
-    const activeId = useActiveHeading(scrollRef, toc);
+    const guidedLesson = useMemo(() => buildGuidedLesson(seedNote, { title: context.subtopicTitle }), [seedNote, context.subtopicTitle]);
+    const savedLessonPosition = useMemo(() => readLessonProgress(noteId, guidedLesson.steps), [noteId, guidedLesson.steps]);
+    const currentLessonIndex = Math.min(guidedLesson.steps.length - 1, requestedStep?.noteId === noteId ? requestedStep.index : savedLessonPosition.index);
+    const changeLessonStep = useCallback((index) => {
+        setRequestedStep({ noteId, index });
+        scrollRef.current?.scrollTo({ top: 0, behavior: 'auto' });
+    }, [noteId]);
+    const toc = useMemo(() => readingMode === 'guided'
+        ? guidedLesson.steps.map(step => ({ id: step.id, text: step.title, level: 2 }))
+        : buildToc(seedNote?.blocks), [readingMode, guidedLesson.steps, seedNote]);
+    const visibleHeading = useActiveHeading(scrollRef, toc);
+    const activeId = readingMode === 'guided' ? guidedLesson.steps[currentLessonIndex]?.id : visibleHeading;
     const activeTocIndex = useMemo(() => toc.findIndex((item) => item.id === activeId), [activeId, toc]);
 
     const scrollToBlock = useCallback((blockId) => {
+        if (readingMode === 'guided') {
+            const index = guidedLesson.steps.findIndex(step => step.id === blockId || step.sourceBlockIds?.includes(blockId));
+            if (index >= 0) changeLessonStep(index);
+            return;
+        }
         const el = scrollRef.current;
         if (!el) return;
         const target = el.querySelector(`[data-block-id="${blockId}"]`);
         if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-    }, []);
+    }, [changeLessonStep, guidedLesson.steps, readingMode]);
 
     const hasNote = Boolean(seedNote);
     const hasCues = Boolean(seedNote?.recall?.cues?.length);
     const mobileFullscreenActive = fullscreenActive && isPhoneLayout;
-    const showDesktopTopicTabs = Boolean(activeUnit) && !isPhoneLayout && !fullscreenActive;
-    const showMobileTopicsTrigger = Boolean(activeUnit) && isPhoneLayout && !fullscreenActive;
-    const showInlineStudyTools = hasNote && !isPhoneLayout && !fullscreenActive;
-    const showReadProgressStrip = hasNote && !fullscreenActive;
+    const showInlineStudyTools = hasNote && !isPhoneLayout && !fullscreenActive && readingMode === 'reference';
+    const showReadProgressStrip = hasNote && !fullscreenActive && readingMode === 'reference';
 
     useEffect(() => {
         if (!hasNote || seedNoteStatus !== 'ready') return;
         if (lastTrackedNoteViewRef.current === noteId) return;
 
         lastTrackedNoteViewRef.current = noteId;
+        saveRecentNote({
+            path: `/notes/${context.subject}/${context.unitId}/${context.topicId}/${context.subtopicIndex}`,
+            noteId,
+            subject: context.subject,
+            subjectLabel: context.subjectLabel,
+            unitId: context.unitId,
+            topicId: context.topicId,
+            topicTitle: context.topicTitle,
+            topicSize: activeUnit?.topics?.find((topic) => String(topic.id) === String(context.topicId))?.subtopics?.length || 0,
+            subtopicTitle: context.subtopicTitle,
+        });
         trackNoteEvent('note_view', {
             route: `/notes/${context.subject}/${context.unitId}/${context.topicId}/${context.subtopicIndex}`,
             noteId,
@@ -780,7 +830,7 @@ export default function NotePage() {
             hasRecall: hasCues,
             layout: isPhoneLayout ? 'phone' : isCompactLayout ? 'tablet' : 'desktop',
         });
-    }, [context.subject, context.subtopicIndex, context.topicId, context.unitId, hasCues, hasNote, isCompactLayout, isPhoneLayout, noteId, seedNoteStatus]);
+    }, [activeUnit, context.subject, context.subjectLabel, context.subtopicIndex, context.subtopicTitle, context.topicId, context.topicTitle, context.unitId, hasCues, hasNote, isCompactLayout, isPhoneLayout, noteId, seedNoteStatus]);
 
     useEffect(() => {
         if (!hasNote) {
@@ -818,8 +868,8 @@ export default function NotePage() {
     }, [context.subject, context.subtopicIndex, context.topicId, context.unitId, fullscreenActive, hasNote, isPhoneLayout, noteId]);
     const showFooterNextLink = Boolean(nextSubtopicParams);
     // Include overflowMenuOpen so toolbar doesn't auto-hide while the overflow menu is open
-    const isAnySheetOpen = tocSheetOpen || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen) || overflowMenuOpen;
-    const isModalLayerOpen = (isCompactLayout && tocSheetOpen) || topicSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen);
+    const isAnySheetOpen = tocSheetOpen || toolsSheetOpen || (isPhoneLayout && recallOpen) || overflowMenuOpen;
+    const isModalLayerOpen = (isCompactLayout && tocSheetOpen) || toolsSheetOpen || (isCompactLayout && recallOpen);
 
     useBodyScrollLock(isModalLayerOpen);
 
@@ -839,6 +889,18 @@ export default function NotePage() {
             mainContent?.classList.remove(PAGE_CONTENT_FULLSCREEN_CLASS);
         };
     }, [fullscreenActive]);
+
+    useEffect(() => {
+        if (typeof document === 'undefined') return undefined;
+        const readerActive = isPhoneLayout && !fullscreenActive;
+        document.documentElement.classList.toggle(PHONE_READER_CLASS, readerActive);
+        // Wider screens: the app sidebar shrinks to an icon rail so the reading column gets the room
+        document.documentElement.classList.toggle(DESKTOP_READER_CLASS, !isPhoneLayout && !fullscreenActive);
+        return () => {
+            document.documentElement.classList.remove(PHONE_READER_CLASS);
+            document.documentElement.classList.remove(DESKTOP_READER_CLASS);
+        };
+    }, [fullscreenActive, isPhoneLayout]);
 
     useEffect(() => {
         if (!fullscreenActive || typeof document === 'undefined') return undefined;
@@ -871,12 +933,7 @@ export default function NotePage() {
     useEffect(() => {
         const frameId = window.requestAnimationFrame(() => {
             setTocSheetOpen(false);
-            setTopicSheetOpen(false);
             setToolsSheetOpen(false);
-            setOpenTopicId(null);
-            if (!isCompactLayout) {
-                setTocPinnedOpen(true);
-            }
         });
 
         return () => window.cancelAnimationFrame(frameId);
@@ -885,12 +942,9 @@ export default function NotePage() {
     useEffect(() => {
         const frameId = window.requestAnimationFrame(() => {
             setTocSheetOpen(false);
-            setTopicSheetOpen(false);
             setToolsSheetOpen(false);
-            setOpenTopicId(null);
             setOverflowMenuOpen(false);
             setMobileChromeHidden(false);
-            setMobileHeaderCondensed(false);
             setScrollPct(0);
             lastScrollTopRef.current = 0;
             scrollRef.current?.scrollTo({ top: 0, behavior: 'auto' });
@@ -937,10 +991,10 @@ export default function NotePage() {
                 const delta = nextScrollTop - previousScrollTop;
                 const isScrollingDown = delta > 0;
 
-                setMobileHeaderCondensed(nextScrollTop > 24);
+                const nearEnd = el.scrollHeight - nextScrollTop - el.clientHeight < 96;
 
-                if (mobileFullscreenActive && !isAnySheetOpen) {
-                    if (nextScrollTop <= 24) {
+                if (!isAnySheetOpen) {
+                    if (nextScrollTop <= 24 || nearEnd) {
                         setMobileChromeHidden(false);
                     } else if (isScrollingDown && delta > 12 && nextScrollTop > 48) {
                         // Require a meaningful downward movement before hiding toolbar
@@ -987,29 +1041,11 @@ export default function NotePage() {
         };
     }, [overflowMenuOpen]);
 
-    useEffect(() => {
-        const handlePointerDown = (event) => {
-            const target = event.target;
-            if (!(target instanceof HTMLElement)) return;
-            if (target.closest('.topic-tab-container')) return;
-            setOpenTopicId(null);
-        };
-
-        document.addEventListener('pointerdown', handlePointerDown);
-        return () => document.removeEventListener('pointerdown', handlePointerDown);
-    }, []);
-
     const handleTocToggle = useCallback(() => {
         setMobileChromeHidden(false);
-        if (isCompactLayout) {
-            setTopicSheetOpen(false);
-            setToolsSheetOpen(false);
-            setTocSheetOpen((value) => !value);
-            return;
-        }
-
-        setTocPinnedOpen((value) => !value);
-    }, [isCompactLayout]);
+        setToolsSheetOpen(false);
+        setTocSheetOpen((value) => !value);
+    }, []);
 
     const handleFullscreenToggle = useCallback((forcedValue) => {
         setRecallOpen(false);
@@ -1017,9 +1053,7 @@ export default function NotePage() {
         setFullscreenActive((value) => {
             const nextValue = typeof forcedValue === 'boolean' ? forcedValue : !value;
             setTocSheetOpen(false);
-            setTopicSheetOpen(false);
             setToolsSheetOpen(false);
-            setOpenTopicId(null);
             setMobileChromeHidden(false);
             if (!nextValue) {
                 if (document.fullscreenElement && document.exitFullscreen) {
@@ -1134,7 +1168,7 @@ export default function NotePage() {
         toc,
     ]);
 
-    const notePageClassName = ['note-page', 'note-page--all-subjects', 'animate-fade-in', fullscreenActive ? 'note-page--fullscreen' : '']
+    const notePageClassName = ['note-page', 'note-page--all-subjects', readingMode === 'guided' ? 'note-page--guided' : '', 'animate-fade-in', fullscreenActive ? 'note-page--fullscreen' : '']
         .filter(Boolean)
         .join(' ');
 
@@ -1143,9 +1177,7 @@ export default function NotePage() {
 
     const toolbarClassName = [
         'note-toolbar',
-        'card',
-        isPhoneLayout ? 'note-toolbar--mobile' : '',
-        isPhoneLayout && mobileHeaderCondensed ? 'note-toolbar--condensed' : '',
+        isPhoneLayout ? 'note-toolbar--mobile note-topbar' : 'note-toolbar--desktop',
     ].filter(Boolean).join(' ');
 
     const noteBodyClassName = ['note-body', fullscreenActive ? 'note-body--fullscreen' : '']
@@ -1269,207 +1301,166 @@ export default function NotePage() {
             ) : null}
 
             {/* ── Toolbar ── */}
-            {!fullscreenActive ? <div className={toolbarClassName}>
-                {/* Left: breadcrumbs */}
+            {!fullscreenActive && isPhoneLayout ? (
+                <header className={toolbarClassName}>
+                    <button
+                        type="button"
+                        className="note-icon-btn"
+                        onClick={() => navigate(`/chapters?subject=${context.subject}`)}
+                        aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
+                        title="Back to chapters"
+                    >
+                        <ArrowLeft size={22} aria-hidden="true" />
+                    </button>
+
+                    <h1 className="note-sr-only">{context.subtopicTitle || 'Note'}</h1>
+                    <button
+                        type="button"
+                        className="note-topbar-title"
+                        onClick={() => scrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })}
+                        aria-label={`${context.subtopicTitle || 'Note'}. Scroll to top`}
+                    >
+                        <span className="note-toolbar-title note-toolbar-title--compact">
+                            {context.subtopicTitle || (isLoadingSyllabus ? 'Loading topic...' : 'Untitled subtopic')}
+                        </span>
+                        <span className="note-topbar-meta">
+                            {getSubjectLabel(context.subject)}{context.topicTitle ? ` · ${context.topicTitle}` : ''}
+                        </span>
+                    </button>
+
+                    {hasNote ? (
+                        <div className="note-overflow-wrapper">
+                            <button
+                                ref={overflowButtonRef}
+                                type="button"
+                                className={`note-icon-btn ${overflowMenuOpen ? 'is-active' : ''}`}
+                                onClick={() => setOverflowMenuOpen((v) => !v)}
+                                aria-label="More actions"
+                                aria-expanded={overflowMenuOpen}
+                                aria-haspopup="menu"
+                                title="More actions"
+                            >
+                                <MoreHorizontal size={22} aria-hidden="true" />
+                            </button>
+
+                            {overflowMenuOpen && (
+                                <div className="note-overflow-menu" role="menu" aria-label="More note actions">
+                                    <button
+                                        ref={toolsButtonRef}
+                                        role="menuitem"
+                                        className="note-overflow-item"
+                                        onClick={() => {
+                                            setMobileChromeHidden(false);
+                                            setTocSheetOpen(false);
+                                            setToolsSheetOpen(true);
+                                            setOverflowMenuOpen(false);
+                                        }}
+                                    >
+                                        <Wrench size={18} aria-hidden="true" /> Study tools
+                                    </button>
+                                    <button
+                                        ref={fullscreenButtonRef}
+                                        role="menuitem"
+                                        className="note-overflow-item"
+                                        onClick={handleFullscreenToggle}
+                                        aria-label="Enter fullscreen note view"
+                                    >
+                                        <Maximize2 size={18} aria-hidden="true" /> Focus mode
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+                    ) : <span aria-hidden="true" />}
+
+                    {showReadProgressStrip && (
+                        <ReadProgressBar scrollRef={scrollRef} onScrollPct={setScrollPct} className="note-read-progress--topbar" />
+                    )}
+                </header>
+            ) : null}
+
+            {!fullscreenActive && !isPhoneLayout ? <div className={toolbarClassName}>
                 <div className="note-toolbar-left">
-                    {(!isPhoneLayout || !mobileHeaderCondensed) && (
-                        <span className="badge note-toolbar-subject-badge" title={getSubjectLabel(context.subject)}>{getSubjectLabel(context.subject)}</span>
-                    )}
-                    {!isPhoneLayout && (
-                        <span className="badge note-toolbar-unit-badge">{context.unitCode || (isLoadingSyllabus ? '...' : 'Unknown unit')}</span>
-                    )}
-                    <h2 className={`note-toolbar-title ${isPhoneLayout ? 'note-toolbar-title--compact' : ''}`.trim()}>
+                    <nav className="note-breadcrumb" aria-label="Breadcrumb">
+                        <Link to={`/chapters?subject=${context.subject}`}>{getSubjectLabel(context.subject)}</Link>
+                        {context.topicTitle ? (
+                            <>
+                                <ChevronRight size={14} aria-hidden="true" />
+                                <span>{context.topicTitle}</span>
+                            </>
+                        ) : null}
+                    </nav>
+                    <h1 className="note-toolbar-title">
                         {context.subtopicTitle || (isLoadingSyllabus ? 'Loading topic...' : 'Untitled subtopic')}
-                    </h2>
+                    </h1>
                 </div>
 
-                {/* Right: actions */}
                 <div className="note-toolbar-right">
-                    {/* Mark as Read — shown on all layouts */}
+                    {hasNote && (
+                        <div className="segmented note-mode-toggle" role="group" aria-label="Reading format">
+                            <button type="button" className="segmented-option" aria-pressed={readingMode === 'guided'} onClick={() => setReadingMode('guided')}>Lesson</button>
+                            <button type="button" className="segmented-option" aria-pressed={readingMode === 'reference'} onClick={() => setReadingMode('reference')}>Full notes</button>
+                        </div>
+                    )}
+
                     {hasNote && (
                         isRead ? (
                             <button
-                                className="btn btn-sm note-read-btn note-read-btn--done"
+                                className="btn btn-outline note-read-btn note-read-btn--done"
                                 onClick={markUnread}
-                                title={`Marked as read on ${new Date(readAt).toLocaleDateString()}\nClick to undo`}
+                                title={`Marked as read on ${new Date(readAt).toLocaleDateString()}. Click to undo.`}
                                 aria-label={`Marked as read on ${new Date(readAt).toLocaleDateString()}. Activate to mark unread.`}
                             >
-                                <span className="note-btn-icon" aria-hidden="true">✓</span>
+                                <Check size={16} aria-hidden="true" />
                                 <span className="note-read-btn-text">Read</span>
                             </button>
                         ) : (
                             <button
-                                className={`btn btn-sm note-read-btn ${scrollPct >= 80 ? 'note-read-btn--ready' : 'note-read-btn--idle'}`}
-                                onClick={scrollPct >= 80 ? markRead : undefined}
-                                title={scrollPct >= 80 ? 'Mark this note as read' : `Scroll more to unlock — ${scrollPct}% read`}
-                                disabled={scrollPct < 80}
-                                aria-label={scrollPct >= 80 ? 'Mark this note as read' : `${scrollPct}% read. Scroll more to unlock mark as read.`}
+                                className="btn btn-primary note-read-btn"
+                                onClick={markRead}
+                                aria-label="Mark this note as read"
                             >
-                                {scrollPct >= 80 ? (
-                                    <>
-                                        <span className="note-btn-icon" aria-hidden="true">✓</span>
-                                        <span className="note-read-btn-text">{isPhoneLayout ? 'Read' : 'Mark as Read'}</span>
-                                    </>
-                                ) : (
-                                    <span className="note-read-btn-text">{isPhoneLayout ? `${scrollPct}%` : `${scrollPct}% read`}</span>
-                                )}
+                                <Check size={16} aria-hidden="true" />
+                                <span className="note-read-btn-text">Mark as read</span>
                             </button>
                         )
                     )}
 
-                    {isPhoneLayout ? (
-                        /* ── Phone: Topics + Back + ⋯ overflow (max 4 buttons = 1 grid row) ── */
-                        <>
-                            {showMobileTopicsTrigger && (
-                                <button
-                                    ref={topicsButtonRef}
-                                    className={`btn btn-sm ${topicSheetOpen ? 'btn-primary' : 'btn-ghost'} note-mobile-topics-trigger`}
-                                    onClick={() => {
-                                        setMobileChromeHidden(false);
-                                        setTocSheetOpen(false);
-                                        setToolsSheetOpen(false);
-                                        setOverflowMenuOpen(false);
-                                        setTopicSheetOpen((value) => !value);
-                                    }}
-                                    title="Open topics"
-                                    aria-label="Open topics"
-                                    aria-expanded={topicSheetOpen}
-                                    aria-haspopup="dialog"
-                                >
-                                    <Layers3 size={16} aria-hidden="true" />
-                                </button>
-                            )}
-
-                            <button
-                                className="btn btn-secondary btn-sm"
-                                onClick={() => navigate(`/chapters?subject=${context.subject}`)}
-                                aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
-                                title="Back to chapters"
-                            >
-                                <span className="note-btn-icon" aria-hidden="true">←</span>
-                            </button>
-
-                            {/* ⋯ More — overflow menu with Contents, Recall, Tools, Zoom controls */}
-                            {hasNote && (
-                                <div className="note-overflow-wrapper">
-                                    <button
-                                        ref={overflowButtonRef}
-                                        className={`btn btn-sm ${overflowMenuOpen ? 'btn-primary' : 'btn-ghost'}`}
-                                        onClick={() => setOverflowMenuOpen((v) => !v)}
-                                        aria-label="More actions"
-                                        aria-expanded={overflowMenuOpen}
-                                        aria-haspopup="menu"
-                                        title="More actions"
-                                    >
-                                        <MoreHorizontal size={16} aria-hidden="true" />
-                                    </button>
-
-                                    {overflowMenuOpen && (
-                                        <div className="note-overflow-menu" role="menu" aria-label="More note actions">
-                                            {toc.length > 0 && (
-                                                <button
-                                                    ref={tocButtonRef}
-                                                    role="menuitem"
-                                                    className={`note-overflow-item ${(isCompactLayout ? tocSheetOpen : tocPinnedOpen) ? 'note-overflow-item--active' : ''}`}
-                                                    onClick={() => { handleTocToggle(); setOverflowMenuOpen(false); }}
-                                                    aria-expanded={isCompactLayout ? tocSheetOpen : tocPinnedOpen}
-                                                >
-                                                    <span aria-hidden="true">☰</span> Contents
-                                                </button>
-                                            )}
-                                            {hasCues && (
-                                                <button
-                                                    ref={recallButtonRef}
-                                                    role="menuitem"
-                                                    className={`note-overflow-item ${recallOpen ? 'note-overflow-item--active' : ''}`}
-                                                    onClick={() => { setRecallOpen((v) => !v); setOverflowMenuOpen(false); }}
-                                                    aria-expanded={recallOpen}
-                                                >
-                                                    <span aria-hidden="true">🧠</span> Recall
-                                                </button>
-                                            )}
-                                            <button
-                                                ref={toolsButtonRef}
-                                                role="menuitem"
-                                                className={`note-overflow-item ${toolsSheetOpen ? 'note-overflow-item--active' : ''}`}
-                                                onClick={() => {
-                                                    setMobileChromeHidden(false);
-                                                    setTocSheetOpen(false);
-                                                    setTopicSheetOpen(false);
-                                                    setToolsSheetOpen(true);
-                                                    setOverflowMenuOpen(false);
-                                                }}
-                                            >
-                                                <Wrench size={14} aria-hidden="true" /> Study Tools
-                                            </button>
-                                            <button
-                                                ref={fullscreenButtonRef}
-                                                role="menuitem"
-                                                className="note-overflow-item note-overflow-fullscreen"
-                                                onClick={handleFullscreenToggle}
-                                                aria-label="Enter fullscreen note view"
-                                            >
-                                                <Maximize2 size={14} aria-hidden="true" />
-                                                Fullscreen
-                                            </button>
-                                        </div>
-                                    )}
-                                </div>
-                            )}
-                        </>
-                    ) : (
-                        /* ── Desktop / tablet: ToC + Recall + Back ── */
-                        <>
-                            <button
-                                ref={fullscreenButtonRef}
-                                className="btn btn-sm btn-ghost"
-                                onClick={handleFullscreenToggle}
-                                title="Enter fullscreen note view"
-                                aria-label="Enter fullscreen note view"
-                                aria-keyshortcuts="F"
-                            >
-                                <Maximize2 size={16} aria-hidden="true" />
-                                <span className="note-btn-label">Fullscreen</span>
-                            </button>
-                            {hasNote && toc.length > 0 && (
-                                <button
-                                    ref={tocButtonRef}
-                                    className={`btn btn-sm ${(isCompactLayout ? tocSheetOpen : tocPinnedOpen) ? 'btn-primary' : 'btn-ghost'}`}
-                                    onClick={handleTocToggle}
-                                    title="Toggle table of contents"
-                                    aria-label="Toggle table of contents"
-                                    aria-expanded={isCompactLayout ? tocSheetOpen : tocPinnedOpen}
-                                    aria-haspopup={isCompactLayout ? 'dialog' : undefined}
-                                >
-                                    <span className="note-btn-icon" aria-hidden="true">☰</span>
-                                    <span className="note-btn-label">Contents</span>
-                                </button>
-                            )}
-
-                            {hasNote && hasCues && (
-                                <button
-                                    ref={recallButtonRef}
-                                    className={`btn btn-sm ${recallOpen ? 'btn-primary' : 'btn-ghost'}`}
-                                    onClick={() => setRecallOpen((v) => !v)}
-                                    title="Toggle recall mode"
-                                    aria-label="Toggle recall mode"
-                                    aria-expanded={recallOpen}
-                                >
-                                    <span className="note-btn-icon" aria-hidden="true">🧠</span>
-                                    <span className="note-btn-label">Recall</span>
-                                </button>
-                            )}
-
-                            <button
-                                className="btn btn-secondary btn-sm"
-                                onClick={() => navigate(`/chapters?subject=${context.subject}`)}
-                                aria-label={`Back to ${getSubjectLabel(context.subject)} chapters`}
-                            >
-                                <span className="note-btn-icon" aria-hidden="true">←</span>
-                                <span className="note-btn-label">Chapters</span>
-                            </button>
-                        </>
+                    {hasNote && isCompactLayout && (
+                        <button
+                            ref={tocButtonRef}
+                            className={`btn ${tocSheetOpen ? 'btn-secondary' : 'btn-ghost'}`}
+                            onClick={handleTocToggle}
+                            aria-haspopup="dialog"
+                            aria-expanded={tocSheetOpen}
+                        >
+                            <ListTree size={16} aria-hidden="true" />
+                            <span className="note-btn-label">Contents</span>
+                        </button>
                     )}
+
+                    {hasNote && hasCues && (
+                        <button
+                            ref={recallButtonRef}
+                            className={`btn ${recallOpen ? 'btn-secondary' : 'btn-ghost'}`}
+                            onClick={() => setRecallOpen((v) => !v)}
+                            aria-label="Toggle recall mode"
+                            aria-expanded={recallOpen}
+                        >
+                            <Brain size={16} aria-hidden="true" />
+                            <span className="note-btn-label">Recall</span>
+                        </button>
+                    )}
+
+                    <button
+                        ref={fullscreenButtonRef}
+                        className="btn btn-ghost btn-icon"
+                        onClick={handleFullscreenToggle}
+                        title="Focus mode (F)"
+                        aria-label="Enter fullscreen note view"
+                        aria-keyshortcuts="F"
+                    >
+                        <Maximize2 size={18} aria-hidden="true" />
+                    </button>
                 </div>
             </div> : null}
 
@@ -1487,58 +1478,8 @@ export default function NotePage() {
             />
 
             {/* ── Read progress bar ── */}
-            {showReadProgressStrip && (
+            {showReadProgressStrip && !isPhoneLayout && (
                 <ReadProgressBar scrollRef={scrollRef} onScrollPct={setScrollPct} />
-            )}
-
-            {/* ── Topic Tabs Navigation ── */}
-            {showDesktopTopicTabs && (
-                <div className="note-topics-tabs">
-                    {activeUnit.topics.map((topic) => (
-                        <div
-                            key={topic.id}
-                            className={`topic-tab-container ${String(topic.id) === String(topicId) ? 'active' : ''}`}
-                        >
-                            <button
-                                className="topic-tab"
-                                type="button"
-                                aria-haspopup="menu"
-                                aria-expanded={openTopicId === topic.id}
-                                onClick={() => setOpenTopicId((current) => (current === topic.id ? null : topic.id))}
-                            >
-                                Topic {topic.id}: {topic.title}
-                                <span className="topic-tab-caret">▼</span>
-                            </button>
-                            <div className={`topic-subtopics-dropdown ${openTopicId === topic.id ? 'topic-subtopics-dropdown--open' : ''}`} role="menu" aria-label={`Subtopics for topic ${topic.id}`}>
-                                {topic.subtopics.map((sub, idx) => {
-                                    const isActive = String(topic.id) === String(topicId) && String(idx) === String(subtopicIndex);
-                                    return (
-                                        <Link
-                                            key={idx}
-                                            to={`/notes/${context.subject}/${activeUnit.id}/${topic.id}/${idx}`}
-                                            className={`dropdown-item ${isActive ? 'active' : ''}`}
-                                            role="menuitem"
-                                            onClick={() => setOpenTopicId(null)}
-                                        >
-                                            {sub}
-                                        </Link>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            )}
-
-            {showMobileTopicsTrigger && topicSheetOpen && (
-                <MobileTopicsSheet
-                    activeUnit={activeUnit}
-                    context={context}
-                    topicId={topicId}
-                    subtopicIndex={subtopicIndex}
-                    onClose={() => setTopicSheetOpen(false)}
-                    returnFocusRef={topicsButtonRef}
-                />
             )}
 
             {hasNote && isPhoneLayout && toolsSheetOpen && (
@@ -1550,22 +1491,37 @@ export default function NotePage() {
                 />
             )}
 
-            {hasNote && toc.length > 0 && isCompactLayout && tocSheetOpen && (
+            {hasNote && (toc.length > 0 || isPhoneLayout) && isCompactLayout && tocSheetOpen && (
                 <MobileTableOfContents
                     toc={toc}
                     activeId={activeId}
                     onSelect={scrollToBlock}
                     onClose={() => setTocSheetOpen(false)}
                     returnFocusRef={tocButtonRef}
+                    topicNav={isCompactLayout ? {
+                        activeUnit,
+                        subject: context.subject,
+                        topicId,
+                        subtopicIndex,
+                    } : null}
                 />
             )}
 
             {/* ── Main content row ── */}
             <div className={noteBodyClassName}>
 
-                {/* ToC sidebar */}
-                {hasNote && toc.length > 0 && !isCompactLayout && !fullscreenActive && tocPinnedOpen && (
-                    <TableOfContents toc={toc} activeId={activeId} onSelect={scrollToBlock} />
+                {/* Left rail: the course outline */}
+                {hasNote && isWideLayout && !fullscreenActive && activeUnit && (
+                    <aside className="note-outline-rail" aria-label="Course outline">
+                        <p className="note-rail-heading">Unit {activeUnit.id}: {activeUnit.title}</p>
+                        <TopicNavigator
+                            activeUnit={activeUnit}
+                            subject={context.subject}
+                            topicId={topicId}
+                            subtopicIndex={subtopicIndex}
+                            onNavigate={() => {}}
+                        />
+                    </aside>
                 )}
 
                 {/* Notes scrollable area */}
@@ -1578,7 +1534,7 @@ export default function NotePage() {
                         onTouchStart={fullscreenActive ? handleScrollTouchStart : undefined}
                         onTouchEnd={fullscreenActive ? handleScrollTouchEnd : undefined}
                     >
-                        {fullscreenActive && (
+                        {fullscreenActive && readingMode === 'reference' && (
                             <ReadProgressBar
                                 scrollRef={scrollRef}
                                 onScrollPct={setScrollPct}
@@ -1586,48 +1542,93 @@ export default function NotePage() {
                             />
                         )}
 
-                        {showInlineStudyTools && (
-                            <ErrorBoundary name="StudyTools" inline>
-                                <div className="note-study-tools note-study-tools--inline">
-                                    <div className="student-tools-bar">
-                                        <Highlighter chapterId={noteId} contentSelector=".note-study-content" />
-                                        <div className="divider" aria-hidden="true" />
-                                        <ExportPDF chapterId={noteId} chapterTitle={context.subtopicTitle || context.topicTitle || 'Chapter'} />
-                                    </div>
-                                    <StickyNotes chapterId={noteId} />
-                                </div>
-                            </ErrorBoundary>
-                        )}
-
                         <ErrorBoundary name="NoteContent" inline resetKeys={[noteId]}>
+                            {(isPhoneLayout || fullscreenActive) && <div className="note-reading-mode" role="group" aria-label="Reading format">
+                                <div className="segmented note-mode-toggle note-mode-toggle--inline">
+                                    <button type="button" className="segmented-option" aria-pressed={readingMode === 'guided'} onClick={() => setReadingMode('guided')}>Lesson</button>
+                                    <button type="button" className="segmented-option" aria-pressed={readingMode === 'reference'} onClick={() => setReadingMode('reference')}>Full notes</button>
+                                </div>
+                            </div>}
                             <div className="note-study-content chapter-body">
-                                <NoteBlockRenderer blocks={seedNote.blocks} />
+                                {readingMode === 'guided' ? <GuidedNoteReader
+                                    key={noteId}
+                                    lesson={guidedLesson}
+                                    noteId={noteId}
+                                    subject={context.subject}
+                                    currentIndex={Math.max(0, currentLessonIndex)}
+                                    onStepChange={changeLessonStep}
+                                    onFinish={markRead}
+                                    isRead={isRead}
+                                    nextNote={nextSubtopicParams && activeUnit ? {
+                                        title: nextSubtopicParams.title,
+                                        to: `/notes/${context.subject}/${activeUnit.id}/${nextSubtopicParams.topicId}/${nextSubtopicParams.subtopicIndex}`,
+                                    } : null}
+                                /> : <NoteBlockRenderer blocks={seedNote.blocks} />}
                             </div>
                         </ErrorBoundary>
 
-                        {showFooterNextLink && (
+                        {(showFooterNextLink || isPhoneLayout) && (
                             <div className="note-footer-nav">
-                                <Link
-                                    to={`/notes/${context.subject}/${activeUnit.id}/${nextSubtopicParams.topicId}/${nextSubtopicParams.subtopicIndex}`}
-                                    className="btn-next-subtopic"
-                                >
-                                    <span>Next Subtopic</span>
-                                    <strong>{nextSubtopicParams.title} ➔</strong>
-                                </Link>
+                                {isPhoneLayout && (
+                                    <button
+                                        type="button"
+                                        className={`note-finish-btn ${isRead ? 'is-done' : ''}`}
+                                        onClick={isRead ? markUnread : markRead}
+                                        aria-label={isRead ? 'Marked as read. Activate to mark unread.' : 'Mark this note as read'}
+                                    >
+                                        <Check size={18} aria-hidden="true" />
+                                        {isRead ? 'Read · tap to undo' : 'Mark as read'}
+                                    </button>
+                                )}
+                                {showFooterNextLink && (
+                                    <Link
+                                        to={`/notes/${context.subject}/${activeUnit.id}/${nextSubtopicParams.topicId}/${nextSubtopicParams.subtopicIndex}`}
+                                        className="btn-next-subtopic"
+                                    >
+                                        <span>Next subtopic</span>
+                                        <strong>{nextSubtopicParams.title} <ChevronRight size={18} aria-hidden="true" /></strong>
+                                    </Link>
+                                )}
                             </div>
                         )}
                         <ScrollToTopButton scrollRef={scrollRef} scrollPct={scrollPct} />
                     </div>
                 )}
 
-                {/* Recall panel (right column) */}
-                {hasNote && recallOpen && !isPhoneLayout && !fullscreenActive && (
+                {/* Right rail: Recall when open, otherwise "on this page" and study tools */}
+                {hasNote && recallOpen && !isCompactLayout && !fullscreenActive && (
                     <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
                         <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} returnFocusRef={recallButtonRef} />
                     </ErrorBoundary>
                 )}
 
-                {hasNote && recallOpen && isPhoneLayout && !fullscreenActive && (
+                {hasNote && !recallOpen && !isCompactLayout && !fullscreenActive && (
+                    <aside className="note-side-rail" aria-label="Note tools">
+                        {toc.length > 0 && (
+                            <TableOfContents
+                                toc={toc}
+                                activeId={activeId}
+                                onSelect={scrollToBlock}
+                                className="note-toc--rail"
+                                headerLabel={readingMode === 'guided' ? 'Lesson steps' : 'On this page'}
+                            />
+                        )}
+                        {showInlineStudyTools && (
+                            <ErrorBoundary name="StudyTools" inline>
+                                <div className="note-study-tools note-study-tools--rail">
+                                    <p className="note-rail-heading">Study tools</p>
+                                    <div className="student-tools-bar">
+                                        <Highlighter chapterId={noteId} contentSelector=".note-study-content" />
+                                        <ExportPDF chapterId={noteId} chapterTitle={context.subtopicTitle || context.topicTitle || 'Chapter'} />
+                                    </div>
+                                    <StickyNotes chapterId={noteId} />
+                                </div>
+                            </ErrorBoundary>
+                        )}
+                    </aside>
+                )}
+
+                {hasNote && recallOpen && isCompactLayout && !fullscreenActive && (
                     <ErrorBoundary name="RecallPanel" inline resetKeys={[seedNote?.recall]}>
                         <RecallPanel
                             recall={seedNote.recall}
@@ -1641,7 +1642,7 @@ export default function NotePage() {
                 {/* No note fallback */}
                 {!hasNote && seedNoteStatus === 'loading' && (
                     <div className="note-empty">
-                        <span>⏳</span>
+                        <Loader2 size={40} className="note-empty-icon note-empty-icon--spin" aria-hidden="true" />
                         <p className="note-empty-title">Loading note...</p>
                         <p className="note-empty-sub">Fetching this seed note now.</p>
                     </div>
@@ -1649,12 +1650,64 @@ export default function NotePage() {
 
                 {!hasNote && seedNoteStatus !== 'loading' && (
                     <div className="note-empty">
-                        <span>📝</span>
+                        <FileText size={40} className="note-empty-icon" aria-hidden="true" />
                         <p className="note-empty-title">No notes yet</p>
                         <p className="note-empty-sub">Notes for this subtopic haven't been added yet.</p>
                     </div>
                 )}
             </div>
+
+            {isPhoneLayout && !fullscreenActive && hasNote && (
+                <nav
+                    className={`note-bottombar ${mobileChromeHidden && !isAnySheetOpen ? 'is-hidden' : ''}`}
+                    aria-label="Note navigation"
+                >
+                    <button
+                        type="button"
+                        className="note-bottombar-btn"
+                        onClick={() => void navigateToNote(previousSubtopicParams)}
+                        disabled={!previousSubtopicParams}
+                        aria-label={previousSubtopicParams ? `Previous note: ${previousSubtopicParams.title}` : 'No previous note'}
+                    >
+                        <ChevronLeft size={22} aria-hidden="true" />
+                        <span>Prev</span>
+                    </button>
+                    <button
+                        ref={tocButtonRef}
+                        type="button"
+                        className={`note-bottombar-btn ${tocSheetOpen ? 'is-active' : ''}`}
+                        onClick={handleTocToggle}
+                        aria-haspopup="dialog"
+                        aria-expanded={tocSheetOpen}
+                    >
+                        <ListTree size={22} aria-hidden="true" />
+                        <span>Contents</span>
+                    </button>
+                    {hasCues && (
+                        <button
+                            ref={recallButtonRef}
+                            type="button"
+                            className={`note-bottombar-btn ${recallOpen ? 'is-active' : ''}`}
+                            onClick={() => setRecallOpen((v) => !v)}
+                            aria-haspopup="dialog"
+                            aria-expanded={recallOpen}
+                        >
+                            <Brain size={22} aria-hidden="true" />
+                            <span>Recall</span>
+                        </button>
+                    )}
+                    <button
+                        type="button"
+                        className="note-bottombar-btn"
+                        onClick={() => void navigateToNote(nextSubtopicParams)}
+                        disabled={!nextSubtopicParams}
+                        aria-label={nextSubtopicParams ? `Next note: ${nextSubtopicParams.title}` : 'No next note'}
+                    >
+                        <ChevronRight size={22} aria-hidden="true" />
+                        <span>Next</span>
+                    </button>
+                </nav>
+            )}
         </div>
     );
 }

@@ -84,3 +84,7 @@ The deployment workflow also installs Playwright browsers and reruns the full su
 ## Flaky Tests
 
 Follow [flaky-test-triage.md](flaky-test-triage.md). Do not silently skip or delete unstable tests.
+
+## Subject-only regression coverage
+
+`tests/e2e/subject-only.spec.js` checks study navigation on phones and desktops and the missing-page screen for retired classroom and infrastructure routes. `convex/featureFlags.test.ts` checks that legacy enabled classroom flags cannot restore the removed feature.

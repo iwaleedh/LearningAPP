@@ -8,39 +8,39 @@ export const note_chemistry_5_16_2 = {
       data: {
         svg: `<svg viewBox="0 0 400 330" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <rect width="400" height="330" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#0f172a">Standard Hydrogen Electrode (SHE)</text>
+  <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#f8fafc" style="fill:#f8fafc">Standard Hydrogen Electrode (SHE)</text>
   <rect x="130" y="35" width="60" height="38" fill="#44370a" stroke="#ca8a04" stroke-width="2" rx="5"/>
-  <text x="160" y="51" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="11">H₂ gas</text>
-  <text x="160" y="65" text-anchor="middle" fill="#92400e" font-size="10">100 kPa</text>
+  <text x="160" y="51" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="11" style="fill:#f8fafc">H₂ gas</text>
+  <text x="160" y="65" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">100 kPa</text>
   <line x1="160" y1="73" x2="160" y2="108" stroke="#ca8a04" stroke-width="2.5" stroke-dasharray="4,2"/>
   <path d="M75,110 L75,275 L325,275 L325,110" fill="none" stroke="#64748b" stroke-width="2.5" rx="4"/>
   <rect x="76" y="165" width="248" height="109" fill="#1e3a8a" opacity="0.75"/>
-  <text x="200" y="215" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="12">H⁺(aq) — 1 mol dm⁻³</text>
-  <text x="200" y="245" text-anchor="middle" fill="#2563eb" font-size="11">Temperature: 298 K</text>
+  <text x="200" y="215" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">H⁺(aq) — 1 mol dm⁻³</text>
+  <text x="200" y="280" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Temperature: 298 K</text>
   <rect x="148" y="108" width="24" height="115" fill="#9ca3af" stroke="#374151" stroke-width="1.5" rx="3"/>
-  <text x="185" y="135" fill="#374151" font-size="10">Pt wire electrode</text>
+  <text x="185" y="135" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Pt wire electrode</text>
   <line x1="182" y1="132" x2="174" y2="140" stroke="#374151" stroke-width="1"/>
   <rect x="136" y="218" width="48" height="14" fill="#111827" rx="3" stroke="#000" stroke-width="1"/>
-  <text x="196" y="229" fill="#111827" font-size="10">Pt black (platinum black)</text>
-  <text x="196" y="241" fill="#6b7280" font-size="9">→ porous, large surface area</text>
+  <text x="196" y="229" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Pt black (platinum black)</text>
+  <text x="196" y="241" fill="#f8fafc" font-size="9" style="fill:#f8fafc">→ porous, large surface area</text>
   <line x1="194" y1="226" x2="186" y2="226" stroke="#111827" stroke-width="1"/>
   <circle cx="148" cy="253" r="5" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
   <circle cx="165" cy="262" r="4" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
   <circle cx="180" cy="250" r="6" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
   <circle cx="145" cy="268" r="4" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
-  <text x="270" y="255" fill="#0369a1" font-size="10" font-style="italic">H₂ bubbles ⇑</text>
+  <text x="270" y="255" fill="#f8fafc" font-size="10" font-style="italic" style="fill:#f8fafc">H₂ bubbles ⇑</text>
   <rect x="20" y="155" width="50" height="80" rx="5" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="45" y="170" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="9">Standard</text>
-  <text x="45" y="182" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="9">Conditions</text>
-  <text x="45" y="196" text-anchor="middle" fill="#166534" font-size="9">T = 298 K</text>
-  <text x="45" y="208" text-anchor="middle" fill="#166534" font-size="9">P = 100 kPa</text>
-  <text x="45" y="220" text-anchor="middle" fill="#166534" font-size="9">[H⁺]=1 M</text>
+  <text x="45" y="170" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="9" style="fill:#f8fafc">Standard</text>
+  <text x="45" y="182" text-anchor="middle" fill="#f8fafc" font-weight="bold" font-size="9" style="fill:#f8fafc">Conditions</text>
+  <text x="45" y="196" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">T = 298 K</text>
+  <text x="45" y="208" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">P = 100 kPa</text>
+  <text x="45" y="220" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">[H⁺]=1 M</text>
   <text x="45" y="232" text-anchor="middle" fill="#059669" font-size="9">E° = 0.00 V</text>
   <line x1="70" y1="200" x2="75" y2="200" stroke="#16a34a" stroke-width="1"/>
   <line x1="160" y1="108" x2="160" y2="100" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="255" y="100" fill="#1d4ed8" font-size="10">→ To voltmeter / external circuit</text>
+  <text x="255" y="100" fill="#f8fafc" font-size="10" style="fill:#f8fafc">→ To voltmeter / external circuit</text>
   <line x1="253" y1="98" x2="195" y2="105" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="200" y="298" text-anchor="middle" fill="#0f172a" font-size="11">2H⁺(aq) + 2e⁻ ⇌ H₂(g) &nbsp; E° = 0.00 V</text>
+  <text x="200" y="298" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">2H⁺(aq) + 2e⁻ ⇌ H₂(g) &#160; E° = 0.00 V</text>
   <text x="200" y="315" text-anchor="middle" fill="#6b7280" font-size="9">Equilibrium rapidly established on platinum black surface</text>
 </svg>`,
         caption: 'Standard Hydrogen Electrode: labelled diagram showing all key components and standard conditions',

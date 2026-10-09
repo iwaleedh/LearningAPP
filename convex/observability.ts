@@ -218,11 +218,6 @@ export const runProcessEventQueueCron = internalAction({
   handler: async (ctx) => runObservedCronJob(ctx, "process event queue", () => ctx.runAction(anyInternal.eventHandlers.processEventQueue, {})),
 });
 
-export const runCleanupEndedSessionsCron = internalAction({
-  args: {},
-  handler: async (ctx) => runObservedCronJob(ctx, "cleanup ended sessions", () => ctx.runMutation(anyInternal.sessions.cleanupEndedSessions, {})),
-});
-
 export const runCleanupOldEventsCron = internalAction({
   args: {},
   handler: async (ctx) => runObservedCronJob(ctx, "cleanup old events", () => ctx.runMutation(anyInternal.eventBus.cleanupOldEvents, {

@@ -129,7 +129,7 @@ export const note_olevel_chemistry_11_11_12 = {
       type: 'svg',
       data: {
         caption: 'Formation of nylon (a polyamide) via condensation polymerisation, showing the amide linkage.',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 267">
     <defs>
         <style>
             .bond { stroke: var(--color-text); stroke-width: 2; }
@@ -167,7 +167,7 @@ export const note_olevel_chemistry_11_11_12 = {
 
     <!-- Dicarboxylic acid monomer -->
     <g transform="translate(300, 80)">
-        <text x="50" y="-30" class="label">Dicarboxylic Acid</text>
+        <text x="50" y="-54" class="label">Dicarboxylic Acid</text>
         
         <text x="-25" y="0" class="atom-text water-group">HO</text>
         <line x1="-5" y1="0" x2="5" y2="0" class="bond"/>

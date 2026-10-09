@@ -117,7 +117,7 @@ export const note_chemistry_6_6A_2 = {
             'Reversible equilibrium: adding AgNO₃ (precipitates SCN⁻) fades the red colour; adding more SCN⁻ intensifies it',
             'Fe²⁺ does NOT give blood-red colour with SCN⁻ (important distinction)'
         ] } },
-        { type: 'svg', id: 'svg-carbonate-reactions', data: { caption: 'Reaction of Carbonate ions with 2+ vs 3+ Hexaaqua Ions', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="100%" height="auto"><defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" /></marker></defs><style>text{font-family:sans-serif;font-size:14px;fill:#1e293b;text-anchor:middle;} .box{fill:none;stroke:#cbd5e1;stroke-width:2;} .lbl{font-size:12px;fill:#64748b;} .title{font-size:16px;font-weight:bold;fill:#4338ca;} .col-ppt{fill:#10b981;font-weight:bold;} .col-gas{fill:#3b82f6;font-weight:bold;}</style><rect x="10" y="10" width="580" height="105" rx="6" class="box" /><text x="300" y="30" class="title">M³⁺ Ions (Highly Acidic)</text><text x="120" y="65">2[M(H₂O)₆]³⁺ (aq)</text><text x="210" y="65" font-weight="bold">+</text><text x="260" y="65">3CO₃²⁻ (aq)</text><path d="M 310 60 L 350 60" stroke="#64748b" stroke-width="2" marker-end="url(#arr2)" /><text x="440" y="55" class="col-ppt">2[M(H₂O)₃(OH)₃]↓</text><text x="440" y="75" class="lbl">Hydroxide Precipitate</text><text x="510" y="55" font-weight="bold">+</text><text x="545" y="55" class="col-gas">3CO₂↑</text><text x="545" y="75" class="lbl">Effervescence</text><rect x="10" y="125" width="580" height="105" rx="6" class="box" /><text x="300" y="145" class="title">M²⁺ Ions (Less Acidic)</text><text x="120" y="180">[M(H₂O)₆]²⁺ (aq)</text><text x="210" y="180" font-weight="bold">+</text><text x="260" y="180">CO₃²⁻ (aq)</text><path d="M 310 175 L 350 175" stroke="#64748b" stroke-width="2" marker-end="url(#arr2)" /><text x="440" y="170" class="col-ppt">MCO₃↓</text><text x="440" y="190" class="lbl">Carbonate Precipitate</text><text x="510" y="170" font-weight="bold">+</text><text x="545" y="170" fill="#64748b">6H₂O</text><text x="545" y="190" class="lbl">No Gas</text></svg>' } },
+        { type: 'svg', id: 'svg-carbonate-reactions', data: { caption: 'Reaction of Carbonate ions with 2+ vs 3+ Hexaaqua Ions', svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="100%" height="auto"><defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" /></marker></defs><style>text{font-family:sans-serif;font-size:14px;fill:#1e293b;text-anchor:middle;} .box{fill:none;stroke:#cbd5e1;stroke-width:2;} .lbl{font-size:12px;fill:#64748b;} .title{font-size:16px;font-weight:bold;fill:#4338ca;} .col-ppt{fill:#10b981;font-weight:bold;} .col-gas{fill:#3b82f6;font-weight:bold;}</style><rect x="10" y="10" width="580" height="105" rx="6" class="box" /><text x="300" y="30" class="title">M³⁺ Ions (Highly Acidic)</text><text x="120" y="65">2[M(H₂O)₆]³⁺ (aq)</text><text x="210" y="65" font-weight="bold">+</text><text x="260" y="65">3CO₃²⁻ (aq)</text><path d="M 310 60 L 350 60" stroke="#64748b" stroke-width="2" marker-end="url(#arr2)" /><text x="440" y="55" class="col-ppt" fill="#0f172a" style="fill:#0f172a">2[M(H₂O)₃(OH)₃]↓</text><text x="440" y="75" class="lbl">Hydroxide Precipitate</text><text x="510" y="55" font-weight="bold">+</text><text x="545" y="55" class="col-gas">3CO₂↑</text><text x="545" y="75" class="lbl">Effervescence</text><rect x="10" y="125" width="580" height="105" rx="6" class="box" /><text x="300" y="145" class="title">M²⁺ Ions (Less Acidic)</text><text x="120" y="180">[M(H₂O)₆]²⁺ (aq)</text><text x="210" y="180" font-weight="bold">+</text><text x="260" y="180">CO₃²⁻ (aq)</text><path d="M 310 175 L 350 175" stroke="#64748b" stroke-width="2" marker-end="url(#arr2)" /><text x="440" y="170" class="col-ppt" fill="#0f172a" style="fill:#0f172a">MCO₃↓</text><text x="440" y="190" class="lbl">Carbonate Precipitate</text><text x="510" y="170" font-weight="bold">+</text><text x="545" y="170" fill="#64748b">6H₂O</text><text x="545" y="190" class="lbl">No Gas</text></svg>` } },
         { type: 'svg', id: 'svg-scn-test', data: { caption: 'Iron(III) Thiocyanate Complex Formation', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 130" width="100%" height="auto"><defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" /></marker><marker id="arr-rev-L" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 10 0 L 0 5 L 10 10 z" fill="#64748b" /></marker><marker id="arr-rev-R" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" /></marker></defs><style>text{font-family:sans-serif;font-size:16px;fill:#1e293b;text-anchor:middle;} .eq{stroke:#64748b;stroke-width:2;} .lbl{font-size:12px;fill:#64748b;} .charge{font-weight:bold;fill:#ef4444;}</style><g transform="translate(130, 50)"><rect x="-70" y="-30" width="140" height="40" fill="#fef08a" rx="4" /><text x="0" y="-5">[Fe(H₂O)₆]<tspan class="charge" dy="-10" font-size="12px">3+</tspan></text><text x="0" y="30" class="lbl">Yellow-brown ppt/soln</text></g><text x="230" y="45" font-weight="bold">+</text><g transform="translate(280, 50)"><text x="0" y="-5">SCN<tspan class="charge" dy="-10" font-size="12px">-</tspan></text><text x="0" y="30" class="lbl">Thiocyanate</text></g><path class="eq" d="M 325 35 L 365 35" marker-end="url(#arr-rev-R)" /><path class="eq" d="M 365 45 L 325 45" marker-end="url(#arr-rev-L)" /><g transform="translate(450, 50)"><rect x="-70" y="-30" width="140" height="40" fill="#f87171" rx="4" /><text x="0" y="-5" fill="#7f1d1d" font-weight="bold">[Fe(SCN)(H₂O)₅]<tspan class="charge" dy="-10" font-size="12px">2+</tspan></text><text x="0" y="30" class="lbl">Blood-red solution</text></g></svg>' } },
         {
             type: 'svg',
@@ -129,19 +129,19 @@ export const note_chemistry_6_6A_2 = {
     <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#555"/></marker>
   </defs>
   <rect x="230" y="10" width="220" height="36" rx="6" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="340" y="26" text-anchor="middle" font-weight="bold" fill="#4338ca">Unknown solution</text>
-  <text x="340" y="40" text-anchor="middle" fill="#4338ca">Add excess NaOH</text>
+  <text x="340" y="26" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Unknown solution</text>
+  <text x="340" y="40" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Add excess NaOH</text>
   <line x1="340" y1="46" x2="340" y2="70" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Precipitate dissolves box -->
   <rect x="430" y="70" width="220" height="44" rx="6" fill="#0a2e1a" stroke="#059669" stroke-width="1.5"/>
-  <text x="540" y="88" text-anchor="middle" font-weight="bold" fill="#065f46">Ppt dissolves in</text>
-  <text x="540" y="102" text-anchor="middle" fill="#065f46">excess NaOH</text>
+  <text x="540" y="88" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Ppt dissolves in</text>
+  <text x="540" y="102" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">excess NaOH</text>
 
   <!-- No dissolve box -->
   <rect x="30" y="70" width="220" height="44" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="140" y="88" text-anchor="middle" font-weight="bold" fill="#991b1b">Ppt does NOT</text>
-  <text x="140" y="102" text-anchor="middle" fill="#991b1b">dissolve in excess NaOH</text>
+  <text x="140" y="88" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Ppt does NOT</text>
+  <text x="140" y="102" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">dissolve in excess NaOH</text>
 
   <line x1="310" y1="65" x2="160" y2="70" stroke="#555" marker-end="url(#arr)"/>
   <line x1="370" y1="65" x2="520" y2="70" stroke="#555" marker-end="url(#arr)"/>
@@ -150,45 +150,45 @@ export const note_chemistry_6_6A_2 = {
 
   <!-- Amphoteric: Cr / Zn / Al -->
   <rect x="430" y="132" width="220" height="56" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.2"/>
-  <text x="540" y="150" text-anchor="middle" font-weight="bold" fill="#166534">Amphoteric:</text>
-  <text x="540" y="164" text-anchor="middle" fill="#166534">Cr³⁺ (green ppt → green soln)</text>
-  <text x="540" y="178" text-anchor="middle" fill="#166534">Zn²⁺ / Al³⁺ (white ppt → colourless)</text>
+  <text x="540" y="150" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Amphoteric:</text>
+  <text x="540" y="164" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cr³⁺ (green ppt → green soln)</text>
+  <text x="540" y="178" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Zn²⁺ / Al³⁺ (white ppt → colourless)</text>
   <line x1="540" y1="114" x2="540" y2="132" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Non-dissolve ions -->
   <rect x="30" y="132" width="220" height="70" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.2"/>
-  <text x="140" y="150" text-anchor="middle" font-weight="bold" fill="#92400e">Check ppt colour:</text>
-  <text x="140" y="164" text-anchor="middle" fill="#92400e">Green = Fe²⁺ or Ni²⁺ or Cr³⁺</text>
-  <text x="140" y="178" text-anchor="middle" fill="#92400e">Orange-brown = Fe³⁺</text>
-  <text x="140" y="192" text-anchor="middle" fill="#92400e">Blue = Co²⁺; Pale blue = Cu²⁺</text>
+  <text x="140" y="150" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Check ppt colour:</text>
+  <text x="140" y="164" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Green = Fe²⁺ or Ni²⁺ or Cr³⁺</text>
+  <text x="140" y="178" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Orange-brown = Fe³⁺</text>
+  <text x="140" y="192" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Blue = Co²⁺; Pale blue = Cu²⁺</text>
   <text x="140" y="206" text-anchor="middle" fill="#92400e">Pink = Mn²⁺ or Co²⁺</text>
   <line x1="140" y1="114" x2="140" y2="132" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Confirm with NH₃ -->
   <rect x="30" y="220" width="220" height="44" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="140" y="238" text-anchor="middle" font-weight="bold" fill="#4c1d95">Confirm: add excess NH₃</text>
-  <text x="140" y="252" text-anchor="middle" fill="#4c1d95">(does ppt dissolve?)</text>
+  <text x="140" y="238" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Confirm: add excess NH₃</text>
+  <text x="140" y="252" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">(does ppt dissolve?)</text>
   <line x1="140" y1="202" x2="140" y2="220" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- NH3 outcomes -->
   <rect x="30" y="282" width="220" height="80" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.2"/>
-  <text x="140" y="300" text-anchor="middle" font-weight="bold" fill="#4c1d95">NH₃ dissolves:</text>
-  <text x="140" y="314" text-anchor="middle" fill="#4c1d95">Cu²⁺ → deep blue [Cu(NH₃)₄]²⁺</text>
-  <text x="140" y="328" text-anchor="middle" fill="#4c1d95">Co²⁺ → yellow [Co(NH₃)₆]²⁺</text>
-  <text x="140" y="342" text-anchor="middle" fill="#4c1d95">Ni²⁺ → deep blue [Ni(NH₃)₆]²⁺</text>
-  <text x="140" y="356" text-anchor="middle" fill="#4c1d95">NH₃ no change: Fe²⁺, Fe³⁺, Mn²⁺</text>
+  <text x="140" y="300" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">NH₃ dissolves:</text>
+  <text x="140" y="314" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cu²⁺ → deep blue [Cu(NH₃)₄]²⁺</text>
+  <text x="140" y="328" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Co²⁺ → yellow [Co(NH₃)₆]²⁺</text>
+  <text x="140" y="342" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Ni²⁺ → deep blue [Ni(NH₃)₆]²⁺</text>
+  <text x="140" y="356" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">NH₃ no change: Fe²⁺, Fe³⁺, Mn²⁺</text>
   <line x1="140" y1="264" x2="140" y2="282" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- SCN- test -->
   <rect x="230" y="390" width="220" height="44" rx="6" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
-  <text x="340" y="408" text-anchor="middle" font-weight="bold" fill="#831843">If Fe³⁺ suspected:</text>
-  <text x="340" y="422" text-anchor="middle" fill="#831843">Add SCN⁻ → blood-red confirms Fe³⁺</text>
+  <text x="340" y="408" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">If Fe³⁺ suspected:</text>
+  <text x="340" y="422" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Add SCN⁻ → blood-red confirms Fe³⁺</text>
 
   <!-- Na₂CO₃ test -->
   <rect x="230" y="450" width="220" height="54" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.2"/>
-  <text x="340" y="468" text-anchor="middle" font-weight="bold" fill="#713f12">Na₂CO₃ test:</text>
-  <text x="340" y="482" text-anchor="middle" fill="#713f12">3+ → hydroxide ppt + CO₂ gas</text>
-  <text x="340" y="496" text-anchor="middle" fill="#713f12">2+ → carbonate ppt, no gas</text>
+  <text x="340" y="468" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Na₂CO₃ test:</text>
+  <text x="340" y="482" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">3+ → hydroxide ppt + CO₂ gas</text>
+  <text x="340" y="496" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">2+ → carbonate ppt, no gas</text>
 </svg>`
             }
         },

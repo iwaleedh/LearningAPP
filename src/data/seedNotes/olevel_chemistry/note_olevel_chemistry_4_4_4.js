@@ -25,7 +25,7 @@ export const note_olevel_chemistry_4_4_4 = {
       type: 'svg',
       data: {
         caption: 'Microscopic view of half-equations: Reduction happening at the cathode and Oxidation at the anode.',
-        svg: `<svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="-22 0 537 280" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="cathode" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8"/>

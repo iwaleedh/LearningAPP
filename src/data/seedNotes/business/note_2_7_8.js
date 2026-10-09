@@ -12,7 +12,7 @@ export const note_business_2_7_8 = {
         ['Profit Budget', 'Calculated based on the sales and expenditure budgets (Sales - Expenditure).', 'Sets the overall financial target for the year and acts as a measure of success.']
       ]
     }},
-    { id: 'h-2', type: 'heading', data: { text: 'Approaches to Budgeting', level: 3 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Approaches to Budgeting', level: 3 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
       { text: '**Historical Budgeting:** Setting budgets based on the previous year\'s figures, maybe adding a percentage for inflation. It is quick but assumes the market hasn\'t fundamentally changed.' },
       { text: '**Zero-Based Budgeting:** Every department starts with a budget of zero. Managers must justify every penny they request with a business case. This is time-consuming but prevents "budget slack" and wasted resources.' }

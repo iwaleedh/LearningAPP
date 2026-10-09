@@ -8,6 +8,21 @@ export const note_chemistry_4_13_0 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Build Kc from equilibrium concentrations",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "For aA + bB ⇌ cC + dD, the concentration expression is [C]ᶜ[D]ᵈ/[A]ᵃ[B]ᵇ for the species included in the equilibrium model. Use equilibrium concentrations, not initial concentrations. Raise each concentration to its stoichiometric coefficient. Pure solids and pure liquids are omitted from the appropriate heterogeneous expression because their activities are effectively constant.<br/><br/>In A-Level concentration notation, units are derived from the net concentration power. Temperature changes K; concentration and pressure changes can alter the equilibrium composition without changing K at that temperature. A catalyst does not change K. State the equation direction: reversing the equation gives the reciprocal equilibrium constant."
+  }
+},
+{
       id: 'h-intro',
       type: 'heading',
       data: { text: 'The Equilibrium Constant Expression (Kc)', level: 2 }
@@ -195,13 +210,6 @@ export const note_chemistry_4_13_0 = {
       terms: []
     },
     {
-      id: 'summary-kc',
-      type: 'summary',
-      data: {
-        text: 'Kc = [products]^stoich / [reactants]^stoich. For homogeneous systems, all species are included. For heterogeneous systems, omit pure solids and pure liquids. Units depend on Δn. Kc is independent of initial concentrations and catalysts, but depends on temperature.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -219,44 +227,89 @@ export const note_chemistry_4_13_0 = {
         text: "Kc is constant at a given temperature and does NOT change when you alter concentration, pressure, or add a catalyst. The position of equilibrium shifts to restore Qc = Kc, but Kc itself remains unchanged. Only temperature changes K."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For H₂(g) + I₂(g) ⇌ 2HI(g), equilibrium concentrations are 0.20, 0.10 and 0.40 mol dm⁻³ respectively. Kc = 0.40²/(0.20 × 0.10) = <strong>8.0</strong>. Concentration powers cancel, so Kc has no units in this treatment. Reversing the equation gives Kc = 1/8.0 = 0.125."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not insert moles directly unless volume factors cancel after proper substitution. Do not infer reaction speed from a large K value; K describes equilibrium composition."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Which concentrations belong in Kc?",
+        "checked": false
+      },
+      {
+        "text": "How do coefficients appear in the expression?",
+        "checked": false
+      },
+      {
+        "text": "What happens to K when the equation is reversed?",
+        "checked": false
+      },
+      {
+        "text": "Can a catalyst increase Kc at fixed temperature?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "For aA + bB ⇌ cC + dD, the concentration expression is [C]ᶜ[D]ᵈ/[A]ᵃ[B]ᵇ for the species included in the equilibrium model. Use equilibrium concentrations, not initial concentrations. Raise each concentration to its stoichiometric coefficient. Pure solids and pure liquids are omitted from the appropriate heterogeneous expression because their activities are effectively constant."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'eq-kc-general',
-        prompt: 'What is the general form of the equilibrium constant expression Kc for aA + bB ⇌ cC + dD?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-hetero',
-        prompt: 'Why are pure solids and pure liquids omitted from Kc expressions?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-units',
-        prompt: 'How do you determine the units of Kc?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'ex-hetero-1',
-        prompt: 'Write the Kc expression for CaCO₃(s) ⇌ CaO(s) + CO₂(g).'
-      },
-      {
-        id: 'cue-ester',
-        blockId: 'ex-homo-3',
-        prompt: 'Write the Kc expression for the esterification of ethanoic acid and ethanol. Does it have units?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-rule',
-        prompt: 'What is included and what is omitted from Kc expressions in heterogeneous systems?'
-      }
-    ],
-    summaryText: 'Kc = [products]^stoichiometric coefficient / [reactants]^stoichiometric coefficient. Omit pure solids and pure liquids. Units = (mol dm⁻³)^Δn where Δn = moles of products − moles of reactants.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Which concentrations belong in Kc?",
+      "answer": "Equilibrium concentrations."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How do coefficients appear in the expression?",
+      "answer": "As powers of the corresponding concentrations."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What happens to K when the equation is reversed?",
+      "answer": "It becomes its reciprocal."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Can a catalyst increase Kc at fixed temperature?",
+      "answer": "No. It changes the rate of reaching equilibrium, not the equilibrium constant."
+    }
+  ],
+  "summaryText": "For aA + bB ⇌ cC + dD, the concentration expression is [C]ᶜ[D]ᵈ/[A]ᵃ[B]ᵇ for the species included in the equilibrium model. Use equilibrium concentrations, not initial concentrations. Raise each concentration to its stoichiometric coefficient. Pure solids and pure liquids are omitted from the appropriate heterogeneous expression because their activities are effectively constant.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -266,5 +319,5 @@ export const note_chemistry_4_13_0 = {
       source: 'A-Level Chemistry Specification (WCH14)',
       tags: ['equilibrium', 'Kc', 'homogeneous', 'heterogeneous']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

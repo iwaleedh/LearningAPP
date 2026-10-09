@@ -113,8 +113,8 @@ export const note_chemistry_4_15_6 = {
 
   <!-- Box: both O and Cl pull electrons from C -->
   <rect x="14" y="148" width="330" height="38" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="24" y="166" font-size="12" fill="#92400e">Both O and Cl are δ− → both pull electron density from C</text>
-  <text x="24" y="182" font-size="12" fill="#92400e">→ C is more δ+ than in aldehydes/ketones → MORE reactive</text>
+  <text x="24" y="166" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Both O and Cl are δ− → both pull electron density from C</text>
+  <text x="24" y="182" font-size="12" fill="#f8fafc" style="fill:#f8fafc">→ C is more δ+ than in aldehydes/ketones → MORE reactive</text>
 </svg>`,
         caption: 'Acyl chloride electrophilic carbon. Both O and Cl are electronegative, making the C so electron-deficient it is readily attacked by any nucleophile with a lone pair.'
       }
@@ -175,59 +175,59 @@ export const note_chemistry_4_15_6 = {
 
   <!-- ── STEP 1: Addition ── -->
   <rect x="8" y="30" width="634" height="120" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="20" y="50" font-weight="bold" font-size="13" fill="#1e40af">Step 1 — Addition  (Nu attacks C; tetrahedral intermediate forms)</text>
-  <text x="20" y="63" font-size="11" fill="#6b7280">Lone pair on Nu → attacks δ+ C of C=O · C=O π-electrons pushed onto O · O becomes O⁻ · Nu becomes Nu⁺</text>
+  <text x="20" y="50" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Step 1 — Addition  (Nu attacks C; tetrahedral intermediate forms)</text>
+  <text x="20" y="63" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Lone pair on Nu → attacks δ+ C of C=O · C=O π-electrons pushed onto O · O becomes O⁻ · Nu becomes Nu⁺</text>
   <!-- Reactants box -->
   <rect x="18" y="72" width="190" height="64" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="113" y="95" text-anchor="middle" font-size="13" fill="#374151">R–C(=O)–Cl</text>
-  <text x="113" y="111" text-anchor="middle" font-size="11" fill="#2563eb">C is strongly δ+</text>
-  <text x="113" y="128" text-anchor="middle" font-size="13" fill="#374151">+  :Nu–H</text>
+  <text x="113" y="95" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">R–C(=O)–Cl</text>
+  <text x="113" y="111" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">C is strongly δ+</text>
+  <text x="113" y="128" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">+  :Nu–H</text>
   <!-- Curly arrow: Nu attacks C -->
   <path d="M 172 126 Q 222 90 232 90" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-ae)"/>
-  <text x="237" y="104" font-size="21" text-anchor="middle" fill="#374151">→</text>
+  <text x="237" y="104" font-size="21" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
   <!-- Intermediate box -->
   <rect x="258" y="72" width="216" height="64" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="366" y="92" text-anchor="middle" font-weight="bold" font-size="12" fill="#1d4ed8">Tetrahedral Intermediate</text>
-  <text x="366" y="111" text-anchor="middle" font-size="13" fill="#374151">R–C(O⁻)(Cl)(Nu⁺H)</text>
-  <text x="366" y="128" text-anchor="middle" font-size="11" fill="#6b7280">O is −ve  ·  Nu is +ve</text>
+  <text x="366" y="92" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Tetrahedral Intermediate</text>
+  <text x="366" y="111" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">R–C(O⁻)(Cl)(Nu⁺H)</text>
+  <text x="366" y="128" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">O is −ve  ·  Nu is +ve</text>
 
   <!-- ── STEP 2: Elimination A ── -->
   <rect x="8" y="162" width="634" height="120" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="20" y="182" font-weight="bold" font-size="13" fill="#15803d">Step 2 — Elimination A  (C=O reforms; Cl⁻ leaves)</text>
+  <text x="20" y="182" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Step 2 — Elimination A  (C=O reforms; Cl⁻ leaves)</text>
   <text x="20" y="195" font-size="11" fill="#6b7280">O⁻ lone pair reforms C=O double bond · C–Cl electrons pushed entirely onto Cl → Cl⁻ departs as an ion</text>
   <!-- Intermediate box -->
   <rect x="18" y="204" width="200" height="64" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="118" y="226" text-anchor="middle" font-size="12" fill="#374151">R–C(O⁻)(Cl)(Nu⁺H)</text>
-  <text x="118" y="244" text-anchor="middle" font-size="11" fill="#15803d">O⁻ lone pair → reforms C=O</text>
+  <text x="118" y="226" text-anchor="middle" font-size="12" fill="#f8fafc" style="fill:#f8fafc">R–C(O⁻)(Cl)(Nu⁺H)</text>
+  <text x="118" y="244" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">O⁻ lone pair → reforms C=O</text>
   <text x="118" y="261" text-anchor="middle" font-size="11" fill="#6b7280">(tetrahedral → planar)</text>
-  <text x="253" y="237" font-size="21" text-anchor="middle" fill="#374151">→</text>
+  <text x="253" y="237" font-size="21" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
   <!-- After step 2 box -->
   <rect x="270" y="204" width="232" height="64" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="386" y="224" text-anchor="middle" font-weight="bold" font-size="12" fill="#15803d">After Step 2</text>
-  <text x="386" y="244" text-anchor="middle" font-size="13" fill="#374151">R–C(=O)–Nu⁺H  +  Cl⁻</text>
+  <text x="386" y="224" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">After Step 2</text>
+  <text x="386" y="244" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">R–C(=O)–Nu⁺H  +  Cl⁻</text>
   <text x="386" y="261" text-anchor="middle" font-size="11" fill="#6b7280">Nu still +ve (H not yet removed)</text>
 
   <!-- ── STEP 3: Elimination B ── -->
   <rect x="8" y="294" width="634" height="120" rx="8" fill="#532407" stroke="#d97706" stroke-width="1.5"/>
-  <text x="20" y="314" font-weight="bold" font-size="13" fill="#b45309">Step 3 — Elimination B  (Cl⁻ removes H⁺ from Nu; HCl forms)</text>
-  <text x="20" y="327" font-size="11" fill="#6b7280">Cl⁻ uses lone pair to remove H⁺ from Nu⁺H → HCl produced · positive charge on Nu cancelled</text>
+  <text x="20" y="314" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Step 3 — Elimination B  (Cl⁻ removes H⁺ from Nu; HCl forms)</text>
+  <text x="20" y="327" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ uses lone pair to remove H⁺ from Nu⁺H → HCl produced · positive charge on Nu cancelled</text>
   <!-- Before deprotonation box -->
   <rect x="18" y="336" width="216" height="64" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="126" y="358" text-anchor="middle" font-size="12" fill="#374151">R–C(=O)–Nu⁺H  +  Cl⁻</text>
-  <text x="126" y="376" text-anchor="middle" font-size="11" fill="#b45309">Cl⁻ removes H⁺ from Nu⁺H</text>
+  <text x="126" y="358" text-anchor="middle" font-size="12" fill="#f8fafc" style="fill:#f8fafc">R–C(=O)–Nu⁺H  +  Cl⁻</text>
+  <text x="126" y="376" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ removes H⁺ from Nu⁺H</text>
   <text x="126" y="393" text-anchor="middle" font-size="11" fill="#6b7280">(lone pair on Cl attacks H)</text>
   <!-- Curly arrow: Cl⁻ → H -->
   <path d="M 180 354 Q 210 338 222 338" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-ae)"/>
-  <text x="266" y="368" font-size="21" text-anchor="middle" fill="#374151">→</text>
+  <text x="266" y="368" font-size="21" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
   <!-- Final products box -->
   <rect x="286" y="336" width="210" height="64" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="391" y="358" text-anchor="middle" font-weight="bold" font-size="13" fill="#b45309">Final Products</text>
-  <text x="391" y="378" text-anchor="middle" font-size="13" fill="#374151">R–CO–Nu  +  HCl↑</text>
-  <text x="391" y="393" text-anchor="middle" font-size="11" fill="#6b7280">Nu replaces Cl · HCl always formed</text>
+  <text x="391" y="358" text-anchor="middle" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Final Products</text>
+  <text x="391" y="378" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">R–CO–Nu  +  HCl↑</text>
+  <text x="391" y="393" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Nu replaces Cl · HCl always formed</text>
 
   <!-- Summary strip -->
   <rect x="8" y="424" width="634" height="34" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
-  <text x="325" y="439" text-anchor="middle" font-size="12" fill="#374151" font-weight="bold">Overall: R–COCl  +  Nu–H  →  R–CO–Nu  +  HCl</text>
+  <text x="325" y="439" text-anchor="middle" font-size="12" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Overall: R–COCl  +  Nu–H  →  R–CO–Nu  +  HCl</text>
   <text x="325" y="454" text-anchor="middle" font-size="11" fill="#6b7280">Nu = H₂O → RCOOH  ·  ROH → ester  ·  NH₃ → amide  ·  R′NH₂ → N-substituted amide</text>
 </svg>`,
         caption: 'General addition/elimination mechanism for acyl chlorides — 3 steps. Step 1 (Addition): Nu lone pair attacks δ+ C → tetrahedral intermediate (O⁻, Cl, Nu⁺H all on C). Step 2 (Elimination A): O⁻ reforms C=O → Cl⁻ leaves. Step 3 (Elimination B): Cl⁻ removes H⁺ from Nu⁺ → HCl is released, neutral product forms. HCl is ALWAYS a co-product. AQA requires this mechanism; Edexcel IAL does not.'
@@ -295,29 +295,29 @@ export const note_chemistry_4_15_6 = {
 
   <!-- ── STEP 1: Addition ── -->
   <rect x="8" y="26" width="634" height="122" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="20" y="44" font-weight="bold" font-size="13" fill="#1e40af">Step 1 — Addition  (H₂O attacks δ+ C → tetrahedral intermediate)</text>
+  <text x="20" y="44" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Step 1 — Addition  (H₂O attacks δ+ C → tetrahedral intermediate)</text>
 
   <!-- Ethanoyl chloride label -->
-  <text x="22" y="68" font-size="12" fill="#6b7280" text-anchor="start">ethanoyl chloride</text>
+  <text x="22" y="68" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">ethanoyl chloride</text>
   <!-- CH₃–C(=O)–Cl drawn as text + bond paths -->
-  <text x="30" y="93" font-size="15" fill="#374151" text-anchor="start">CH₃</text>
+  <text x="30" y="93" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃</text>
   <line x1="65" y1="88" x2="90" y2="88" stroke="#374151" stroke-width="2"/>
-  <text x="92" y="93" font-size="15" fill="#374151" text-anchor="start">C</text>
-  <text x="95" y="78" font-size="11" fill="#2563eb" text-anchor="start">δ+</text>
+  <text x="92" y="93" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">C</text>
+  <text x="95" y="78" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">δ+</text>
   <!-- C=O double bond (diagonal up) -->
   <line x1="102" y1="84" x2="118" y2="67" stroke="#374151" stroke-width="2"/>
   <line x1="105" y1="87" x2="121" y2="70" stroke="#374151" stroke-width="2"/>
-  <text x="122" y="66" font-size="15" fill="#374151" text-anchor="start">O</text>
+  <text x="122" y="66" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">O</text>
   <!-- C–Cl bond (diagonal down) -->
   <line x1="102" y1="92" x2="118" y2="109" stroke="#374151" stroke-width="2"/>
-  <text x="120" y="116" font-size="15" fill="#1d4ed8" text-anchor="start">Cl</text>
+  <text x="120" y="116" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Cl</text>
 
   <!-- + -->
-  <text x="152" y="93" font-size="18" fill="#374151" text-anchor="middle">+</text>
+  <text x="152" y="93" font-size="18" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">+</text>
 
   <!-- H₂O with lone pair dots -->
-  <text x="172" y="68" font-size="12" fill="#6b7280" text-anchor="start">nucleophile (H₂O)</text>
-  <text x="165" y="93" font-size="15" fill="#374151" text-anchor="start">H₂O</text>
+  <text x="172" y="68" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">nucleophile (H₂O)</text>
+  <text x="165" y="93" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">H₂O</text>
   <!-- lone pair dots on O -->
   <circle cx="170" cy="73" r="1.8" fill="#374151"/>
   <circle cx="178" cy="73" r="1.8" fill="#374151"/>
@@ -326,60 +326,60 @@ export const note_chemistry_4_15_6 = {
   <path d="M 173 78 Q 120 60 105 82" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-aw)"/>
 
   <!-- Arrow → -->
-  <text x="232" y="93" font-size="20" text-anchor="middle" fill="#374151">→</text>
+  <text x="232" y="93" font-size="20" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
 
   <!-- Tetrahedral intermediate -->
-  <text x="255" y="55" font-size="12" fill="#6b7280" text-anchor="start">tetrahedral intermediate</text>
+  <text x="255" y="55" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">tetrahedral intermediate</text>
   <rect x="250" y="62" width="220" height="70" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="360" y="84" text-anchor="middle" font-size="14" fill="#374151">CH₃</text>
-  <text x="360" y="102" text-anchor="middle" font-size="13" fill="#374151">  |</text>
-  <text x="360" y="118" text-anchor="middle" font-size="14" fill="#374151">C(O⁻)(Cl)(OH₂⁺)</text>
-  <text x="360" y="129" text-anchor="middle" font-size="11" fill="#1d4ed8">C now tetrahedral  ·  O is −ve  ·  H₂O becomes +ve</text>
+  <text x="360" y="84" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">CH₃</text>
+  <text x="360" y="102" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">  |</text>
+  <text x="360" y="118" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">C(O⁻)(Cl)(OH₂⁺)</text>
+  <text x="360" y="129" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">C now tetrahedral  ·  O is −ve  ·  H₂O becomes +ve</text>
 
   <!-- Exam note -->
-  <text x="488" y="80" font-size="11" fill="#6b7280" text-anchor="start">* Only one lone pair</text>
-  <text x="488" y="94" font-size="11" fill="#6b7280" text-anchor="start">of H₂O shown</text>
-  <text x="488" y="108" font-size="11" fill="#6b7280" text-anchor="start">(exam convention)</text>
+  <text x="488" y="80" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">* Only one lone pair</text>
+  <text x="488" y="94" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">of H₂O shown</text>
+  <text x="488" y="108" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">(exam convention)</text>
 
   <!-- ── STEP 2: C=O reforms, Cl⁻ leaves ── -->
   <rect x="8" y="158" width="634" height="122" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="20" y="176" font-weight="bold" font-size="13" fill="#15803d">Step 2 — Elimination A  (C=O reforms; Cl⁻ leaves)</text>
+  <text x="20" y="176" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Step 2 — Elimination A  (C=O reforms; Cl⁻ leaves)</text>
   <text x="20" y="190" font-size="11" fill="#6b7280">O⁻ lone pair pushes back to reform C=O  ·  C–Cl bond electrons shift entirely onto Cl → Cl⁻ departs</text>
 
   <rect x="18" y="198" width="205" height="68" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="120" y="220" text-anchor="middle" font-size="13" fill="#374151">CH₃–C(O⁻)(Cl)(OH₂⁺)</text>
-  <text x="120" y="238" text-anchor="middle" font-size="11" fill="#15803d">O⁻ lone pair → C=O reforms</text>
-  <text x="120" y="255" text-anchor="middle" font-size="11" fill="#1d4ed8">C–Cl electrons → Cl⁻ leaves</text>
+  <text x="120" y="220" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(O⁻)(Cl)(OH₂⁺)</text>
+  <text x="120" y="238" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">O⁻ lone pair → C=O reforms</text>
+  <text x="120" y="255" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">C–Cl electrons → Cl⁻ leaves</text>
 
-  <text x="258" y="234" font-size="20" text-anchor="middle" fill="#374151">→</text>
+  <text x="258" y="234" font-size="20" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
 
   <rect x="275" y="198" width="240" height="68" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="395" y="220" text-anchor="middle" font-weight="bold" font-size="12" fill="#15803d">After Step 2</text>
-  <text x="395" y="240" text-anchor="middle" font-size="14" fill="#374151">CH₃–C(=O)–OH₂⁺  +  Cl⁻</text>
+  <text x="395" y="220" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">After Step 2</text>
+  <text x="395" y="240" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(=O)–OH₂⁺  +  Cl⁻</text>
   <text x="395" y="258" text-anchor="middle" font-size="11" fill="#6b7280">H₂O still attached  ·  carries + charge</text>
 
   <!-- ── STEP 3: Cl⁻ removes H⁺ → HCl ── -->
   <rect x="8" y="290" width="634" height="130" rx="8" fill="#532407" stroke="#d97706" stroke-width="1.5"/>
-  <text x="20" y="308" font-weight="bold" font-size="13" fill="#b45309">Step 3 — Elimination B  (Cl⁻ removes H⁺ → HCl; ethanoic acid forms)</text>
-  <text x="20" y="322" font-size="11" fill="#6b7280">Cl⁻ lone pair attacks H on the +ve OH₂  ·  H–O bond pair stays on O  ·  HCl leaves  ·  positive charge cancelled</text>
+  <text x="20" y="308" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Step 3 — Elimination B  (Cl⁻ removes H⁺ → HCl; ethanoic acid forms)</text>
+  <text x="20" y="322" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ lone pair attacks H on the +ve OH₂  ·  H–O bond pair stays on O  ·  HCl leaves  ·  positive charge cancelled</text>
 
   <rect x="18" y="330" width="218" height="68" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="127" y="352" text-anchor="middle" font-size="13" fill="#374151">CH₃–C(=O)–OH₂⁺  +  Cl⁻</text>
+  <text x="127" y="352" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(=O)–OH₂⁺  +  Cl⁻</text>
   <!-- curly arrow: Cl⁻ → H on OH₂⁺ -->
   <path d="M 212 370 Q 230 348 222 348" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-aw)"/>
-  <text x="127" y="370" text-anchor="middle" font-size="11" fill="#b45309">Cl⁻ removes H⁺ from OH₂⁺</text>
+  <text x="127" y="370" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ removes H⁺ from OH₂⁺</text>
   <text x="127" y="394" text-anchor="middle" font-size="11" fill="#6b7280">(lone pair on Cl attacks H)</text>
 
-  <text x="272" y="366" font-size="20" text-anchor="middle" fill="#374151">→</text>
+  <text x="272" y="366" font-size="20" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
 
   <rect x="288" y="330" width="222" height="68" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="399" y="352" text-anchor="middle" font-weight="bold" font-size="12" fill="#b45309">Products</text>
-  <text x="399" y="372" text-anchor="middle" font-size="14" fill="#374151">CH₃COOH  +  HCl↑</text>
-  <text x="399" y="390" text-anchor="middle" font-size="11" fill="#6b7280">ethanoic acid  +  HCl (misty fumes)</text>
+  <text x="399" y="352" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Products</text>
+  <text x="399" y="372" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">CH₃COOH  +  HCl↑</text>
+  <text x="399" y="390" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">ethanoic acid  +  HCl (misty fumes)</text>
 
   <!-- Summary strip -->
   <rect x="8" y="430" width="634" height="42" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
-  <text x="325" y="446" text-anchor="middle" font-size="12" fill="#374151" font-weight="bold">CH₃COCl + H₂O  →  CH₃COOH + HCl↑</text>
+  <text x="325" y="446" text-anchor="middle" font-size="12" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">CH₃COCl + H₂O  →  CH₃COOH + HCl↑</text>
   <text x="325" y="463" text-anchor="middle" font-size="11" fill="#6b7280">Reaction is vigorous and exothermic  ·  HCl gives misty white fumes  ·  same 3-step pattern for all acyl chloride + nucleophile reactions</text>
 </svg>`,
         caption: 'Addition/elimination mechanism for ethanoyl chloride + water. Step 1: H₂O lone pair attacks δ+ C → tetrahedral intermediate (O⁻ on carbonyl O; OH₂⁺ on attacking O). Step 2: O⁻ reforms C=O; Cl⁻ is expelled. Step 3: Cl⁻ removes H⁺ from OH₂⁺ → HCl; ethanoic acid + HCl are the products. Exam note: only one of the two lone pairs on O in H₂O is drawn (convention to avoid clutter).'
@@ -441,30 +441,30 @@ export const note_chemistry_4_15_6 = {
 
   <!-- ── STEP 1: Addition ── -->
   <rect x="8" y="26" width="634" height="122" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="20" y="44" font-weight="bold" font-size="13" fill="#1e40af" text-anchor="start">Step 1 — Addition  (ethanol O attacks δ+ C → tetrahedral intermediate)</text>
+  <text x="20" y="44" font-weight="bold" font-size="13" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Step 1 — Addition  (ethanol O attacks δ+ C → tetrahedral intermediate)</text>
 
   <!-- ethanoyl chloride -->
-  <text x="22" y="64" font-size="12" fill="#6b7280" text-anchor="start">ethanoyl chloride</text>
-  <text x="30" y="90" font-size="15" fill="#374151" text-anchor="start">CH₃</text>
+  <text x="22" y="64" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">ethanoyl chloride</text>
+  <text x="30" y="90" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃</text>
   <line x1="65" y1="85" x2="90" y2="85" stroke="#374151" stroke-width="2"/>
-  <text x="92" y="90" font-size="15" fill="#374151" text-anchor="start">C</text>
-  <text x="95" y="76" font-size="11" fill="#2563eb" text-anchor="start">δ+</text>
+  <text x="92" y="90" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">C</text>
+  <text x="95" y="76" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">δ+</text>
   <!-- C=O -->
   <line x1="102" y1="81" x2="118" y2="64" stroke="#374151" stroke-width="2"/>
   <line x1="105" y1="84" x2="121" y2="67" stroke="#374151" stroke-width="2"/>
-  <text x="122" y="63" font-size="15" fill="#374151" text-anchor="start">O</text>
+  <text x="122" y="63" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">O</text>
   <!-- C-Cl -->
   <line x1="102" y1="89" x2="118" y2="106" stroke="#374151" stroke-width="2"/>
-  <text x="120" y="113" font-size="15" fill="#1d4ed8" text-anchor="start">Cl</text>
+  <text x="120" y="113" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Cl</text>
 
   <!-- + -->
-  <text x="152" y="90" font-size="18" fill="#374151" text-anchor="middle">+</text>
+  <text x="152" y="90" font-size="18" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">+</text>
 
   <!-- ethanol with lone pair -->
-  <text x="165" y="64" font-size="12" fill="#6b7280" text-anchor="start">nucleophile (ethanol)</text>
-  <text x="165" y="90" font-size="15" fill="#374151" text-anchor="start">CH₃CH₂</text>
-  <text x="212" y="90" font-size="15" fill="#374151" text-anchor="start">O</text>
-  <text x="224" y="90" font-size="15" fill="#374151" text-anchor="start">–H</text>
+  <text x="165" y="64" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">nucleophile (ethanol)</text>
+  <text x="165" y="90" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃CH₂</text>
+  <text x="221" y="90" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">O</text>
+  <text x="234" y="90" font-size="15" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">–H</text>
   <!-- lone pair dots on O of ethanol -->
   <circle cx="215" cy="72" r="1.8" fill="#374151"/>
   <circle cx="223" cy="72" r="1.8" fill="#374151"/>
@@ -473,59 +473,59 @@ export const note_chemistry_4_15_6 = {
   <path d="M 218 78 Q 160 60 105 80" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-alc)"/>
 
   <!-- Arrow → -->
-  <text x="256" y="90" font-size="20" text-anchor="middle" fill="#374151">→</text>
+  <text x="262" y="90" font-size="20" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
 
   <!-- Tetrahedral intermediate -->
-  <text x="270" y="52" font-size="12" fill="#6b7280" text-anchor="start">tetrahedral intermediate</text>
+  <text x="270" y="59" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">tetrahedral intermediate</text>
   <rect x="268" y="60" width="242" height="72" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="389" y="82" text-anchor="middle" font-size="14" fill="#374151">CH₃</text>
-  <text x="389" y="100" text-anchor="middle" font-size="13" fill="#374151">  |</text>
-  <text x="389" y="116" text-anchor="middle" font-size="13" fill="#374151">C(O⁻)(Cl)(OCH₂CH₃·H⁺)</text>
-  <text x="389" y="128" text-anchor="middle" font-size="11" fill="#1d4ed8">carbonyl O = O⁻  ·  ethanol O = +ve  ·  Cl still bonded</text>
+  <text x="389" y="82" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">CH₃</text>
+  <text x="389" y="100" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">  |</text>
+  <text x="389" y="116" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">C(O⁻)(Cl)(OCH₂CH₃·H⁺)</text>
+  <text x="389" y="128" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">carbonyl O = O⁻  ·  ethanol O = +ve  ·  Cl still bonded</text>
 
   <!-- exam note -->
-  <text x="522" y="76" font-size="11" fill="#6b7280" text-anchor="start">* Only one lone pair</text>
-  <text x="522" y="90" font-size="11" fill="#6b7280" text-anchor="start">of ethanol O shown</text>
-  <text x="522" y="104" font-size="11" fill="#6b7280" text-anchor="start">(exam convention)</text>
+  <text x="522" y="76" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">* Only one lone pair</text>
+  <text x="522" y="90" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">of ethanol O shown</text>
+  <text x="522" y="104" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">(exam convention)</text>
 
   <!-- ── STEP 2: C=O reforms, Cl⁻ leaves ── -->
   <rect x="8" y="158" width="634" height="122" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="20" y="176" font-weight="bold" font-size="13" fill="#15803d" text-anchor="start">Step 2 — Elimination A  (C=O reforms; Cl⁻ leaves)</text>
+  <text x="20" y="176" font-weight="bold" font-size="13" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Step 2 — Elimination A  (C=O reforms; Cl⁻ leaves)</text>
   <text x="20" y="190" font-size="11" fill="#6b7280" text-anchor="start">O⁻ lone pair reforms C=O  ·  C–Cl electrons shift entirely onto Cl → Cl⁻ departs</text>
 
   <rect x="18" y="198" width="214" height="68" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="125" y="220" text-anchor="middle" font-size="12" fill="#374151">CH₃–C(O⁻)(Cl)(OCH₂CH₃·H⁺)</text>
-  <text x="125" y="238" text-anchor="middle" font-size="11" fill="#15803d">O⁻ lone pair → reforms C=O</text>
-  <text x="125" y="255" text-anchor="middle" font-size="11" fill="#1d4ed8">C–Cl electrons → Cl⁻ leaves</text>
+  <text x="125" y="220" text-anchor="middle" font-size="12" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(O⁻)(Cl)(OCH₂CH₃·H⁺)</text>
+  <text x="125" y="238" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">O⁻ lone pair → reforms C=O</text>
+  <text x="125" y="255" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">C–Cl electrons → Cl⁻ leaves</text>
 
-  <text x="264" y="234" font-size="20" text-anchor="middle" fill="#374151">→</text>
+  <text x="264" y="234" font-size="20" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
 
   <rect x="280" y="198" width="242" height="68" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="401" y="220" text-anchor="middle" font-weight="bold" font-size="12" fill="#15803d">After Step 2</text>
-  <text x="401" y="240" text-anchor="middle" font-size="13" fill="#374151">CH₃–C(=O)–OCH₂CH₃·H⁺  +  Cl⁻</text>
+  <text x="401" y="220" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">After Step 2</text>
+  <text x="401" y="240" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(=O)–OCH₂CH₃·H⁺  +  Cl⁻</text>
   <text x="401" y="258" text-anchor="middle" font-size="11" fill="#6b7280">ethanol O still +ve  ·  H not yet removed</text>
 
   <!-- ── STEP 3: Cl⁻ removes H⁺ ── -->
   <rect x="8" y="290" width="634" height="130" rx="8" fill="#532407" stroke="#d97706" stroke-width="1.5"/>
-  <text x="20" y="308" font-weight="bold" font-size="13" fill="#b45309" text-anchor="start">Step 3 — Elimination B  (Cl⁻ removes H⁺ from O⁺; HCl forms; ester product)</text>
-  <text x="20" y="322" font-size="11" fill="#6b7280" text-anchor="start">Cl⁻ lone pair attacks H on ethanol O⁺  ·  H–O bond pair stays on O  ·  HCl leaves  ·  +ve charge cancelled</text>
+  <text x="20" y="308" font-weight="bold" font-size="13" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Step 3 — Elimination B  (Cl⁻ removes H⁺ from O⁺; HCl forms; ester product)</text>
+  <text x="20" y="322" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Cl⁻ lone pair attacks H on ethanol O⁺  ·  H–O bond pair stays on O  ·  HCl leaves  ·  +ve charge cancelled</text>
 
   <rect x="18" y="330" width="228" height="68" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
-  <text x="132" y="352" text-anchor="middle" font-size="12" fill="#374151">CH₃–C(=O)–OCH₂CH₃·H⁺  +  Cl⁻</text>
+  <text x="132" y="352" text-anchor="middle" font-size="12" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(=O)–OCH₂CH₃·H⁺  +  Cl⁻</text>
   <path d="M 220 348 Q 240 330 232 330" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-alc)"/>
-  <text x="132" y="370" text-anchor="middle" font-size="11" fill="#b45309">Cl⁻ removes H⁺ from O⁺</text>
+  <text x="132" y="370" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ removes H⁺ from O⁺</text>
   <text x="132" y="387" text-anchor="middle" font-size="11" fill="#6b7280">(lone pair on Cl attacks H)</text>
 
-  <text x="286" y="366" font-size="20" text-anchor="middle" fill="#374151">→</text>
+  <text x="286" y="366" font-size="20" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">→</text>
 
   <rect x="300" y="330" width="230" height="68" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="415" y="352" text-anchor="middle" font-weight="bold" font-size="12" fill="#b45309">Products</text>
-  <text x="415" y="372" text-anchor="middle" font-size="14" fill="#374151">CH₃COOCH₂CH₃  +  HCl↑</text>
-  <text x="415" y="390" text-anchor="middle" font-size="11" fill="#6b7280">ethyl ethanoate  +  HCl (misty fumes)</text>
+  <text x="415" y="352" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Products</text>
+  <text x="415" y="372" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">CH₃COOCH₂CH₃  +  HCl↑</text>
+  <text x="415" y="390" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">ethyl ethanoate  +  HCl (misty fumes)</text>
 
   <!-- Summary strip -->
   <rect x="8" y="430" width="634" height="42" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
-  <text x="325" y="446" text-anchor="middle" font-size="12" fill="#374151" font-weight="bold">CH₃COCl + CH₃CH₂OH  →  CH₃COOCH₂CH₃ + HCl↑</text>
+  <text x="325" y="446" text-anchor="middle" font-size="12" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">CH₃COCl + CH₃CH₂OH  →  CH₃COOCH₂CH₃ + HCl↑</text>
   <text x="325" y="463" text-anchor="middle" font-size="11" fill="#6b7280">Identical 3-step pattern to water mechanism  ·  only the alkyl group on O changes  ·  product is an ester not a carboxylic acid</text>
 </svg>`,
         caption: 'Addition/elimination mechanism for ethanoyl chloride + ethanol. Step 1: ethanol O lone pair attacks δ+ C → tetrahedral intermediate (carbonyl O becomes O⁻; ethanol O becomes OCH₂CH₃·H⁺ — positive charge). Step 2: O⁻ reforms C=O; Cl⁻ is expelled. Step 3: Cl⁻ removes H⁺ from the +ve ethanol O → HCl; ethyl ethanoate forms. Only one lone pair on the ethanol O is shown (exam convention). Pattern is IDENTICAL to water mechanism — only the alkyl group differs.'
@@ -599,50 +599,50 @@ export const note_chemistry_4_15_6 = {
 
   <!-- Step 1: Addition -->
   <rect x="10" y="10" width="630" height="120" rx="8" fill="#1c3a64" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="20" y="32" font-size="12" font-weight="bold" fill="#1D4ED8">Step 1 — Addition (nucleophilic attack)</text>
-  <text x="25" y="56" font-size="12" fill="#111827">CH₃COCl  +  :NH₃</text>
+  <text x="20" y="32" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Step 1 — Addition (nucleophilic attack)</text>
+  <text x="25" y="56" font-size="12" fill="#f8fafc" style="fill:#f8fafc">CH₃COCl  +  :NH₃</text>
   <path d="M120 51 Q145 36 165 51" stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#ah-amm)"/>
-  <text x="174" y="56" font-size="12" fill="#374151">→</text>
-  <text x="192" y="56" font-size="12" fill="#111827">CH₃–C(O⁻)(Cl)(N⁺H₃)  [tetrahedral intermediate]</text>
-  <text x="25" y="76" font-size="10.5" fill="#2563EB">N lone pair of NH₃ attacks δ+ carbon of C=O; π-electrons of C=O shift onto O → O⁻; N becomes N⁺H₃ (positive formal charge)</text>
-  <text x="25" y="94" font-size="10.5" fill="#6B7280">Tetrahedral intermediate: CH₃–C(O⁻)(Cl)(N⁺H₃) — sp³ carbon, four groups bonded to central C</text>
-  <text x="25" y="112" font-size="10" fill="#6B7280">[Identical pattern to H₂O/alcohol — but N donates the lone pair, not O; intermediate has N⁺H₃ not O⁺H₂]</text>
+  <text x="174" y="56" font-size="12" fill="#f8fafc" style="fill:#f8fafc">→</text>
+  <text x="192" y="56" font-size="12" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(O⁻)(Cl)(N⁺H₃)  [tetrahedral intermediate]</text>
+  <text x="25" y="76" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">N lone pair of NH₃ attacks δ+ carbon of C=O; π-electrons of C=O shift onto O → O⁻; N becomes N⁺H₃ (positive formal charge)</text>
+  <text x="25" y="94" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Tetrahedral intermediate: CH₃–C(O⁻)(Cl)(N⁺H₃) — sp³ carbon, four groups bonded to central C</text>
+  <text x="25" y="112" font-size="10" fill="#f8fafc" style="fill:#f8fafc">[Identical pattern to H₂O/alcohol — but N donates the lone pair, not O; intermediate has N⁺H₃ not O⁺H₂]</text>
 
   <!-- Step 2: Elimination A -->
   <rect x="10" y="140" width="630" height="92" rx="8" fill="#0a2e1a" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="20" y="162" font-size="12" font-weight="bold" fill="#15803D">Step 2 — Elimination A (Cl⁻ leaves)</text>
-  <text x="25" y="184" font-size="12" fill="#111827">CH₃–C(O⁻)(Cl)(N⁺H₃)</text>
+  <text x="20" y="162" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Step 2 — Elimination A (Cl⁻ leaves)</text>
+  <text x="25" y="184" font-size="12" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(O⁻)(Cl)(N⁺H₃)</text>
   <path d="M148 180 Q165 166 182 180" stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#ah-amm)"/>
-  <text x="190" y="184" font-size="12" fill="#374151">→</text>
-  <text x="204" y="184" font-size="12" fill="#111827">CH₃–C(=O)–N⁺H₃  +  Cl⁻</text>
-  <text x="25" y="204" font-size="10.5" fill="#15803D">O⁻ lone pair reforms C=O double bond; electrons in C–Cl bond pushed entirely onto Cl → Cl⁻ departs</text>
+  <text x="190" y="184" font-size="12" fill="#f8fafc" style="fill:#f8fafc">→</text>
+  <text x="204" y="184" font-size="12" fill="#f8fafc" style="fill:#f8fafc">CH₃–C(=O)–N⁺H₃  +  Cl⁻</text>
+  <text x="25" y="204" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">O⁻ lone pair reforms C=O double bond; electrons in C–Cl bond pushed entirely onto Cl → Cl⁻ departs</text>
   <text x="25" y="222" font-size="10.5" fill="#DC2626">⚠ Cl does NOT leave in Step 1 — it leaves here in Step 2 (a common exam mistake!)</text>
 
   <!-- Step 3: Two Variants -->
   <rect x="10" y="242" width="630" height="200" rx="8" fill="#532407" stroke="#F97316" stroke-width="1.5"/>
-  <text x="20" y="264" font-size="12" font-weight="bold" fill="#C2410C">Step 3 — Elimination B: two possible routes (unique to NH₃)</text>
+  <text x="20" y="264" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Step 3 — Elimination B: two possible routes (unique to NH₃)</text>
   <line x1="330" y1="272" x2="330" y2="432" stroke="#F97316" stroke-width="1" stroke-dasharray="5,3"/>
   <!-- Route 3a -->
-  <text x="25" y="286" font-size="11" font-weight="bold" fill="#92400E">Route 3a — Cl⁻ removes H⁺:</text>
-  <text x="25" y="304" font-size="11" fill="#111827">Cl⁻  +  CH₃–C(=O)–N⁺H₃</text>
-  <text x="25" y="322" font-size="11" fill="#374151">→  CH₃CONH₂  +  HCl</text>
-  <text x="25" y="340" font-size="11" fill="#374151">then immediately:  HCl  +  NH₃  →  NH₄Cl</text>
-  <text x="25" y="368" font-size="10" fill="#92400E">Cl⁻ uses lone pair to abstract H⁺ from N⁺H₃;</text>
-  <text x="25" y="382" font-size="10" fill="#92400E">HCl escapes but instantly reacts with excess NH₃ in solution</text>
+  <text x="25" y="286" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Route 3a — Cl⁻ removes H⁺:</text>
+  <text x="25" y="304" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Cl⁻  +  CH₃–C(=O)–N⁺H₃</text>
+  <text x="25" y="322" font-size="11" fill="#f8fafc" style="fill:#f8fafc">→  CH₃CONH₂  +  HCl</text>
+  <text x="25" y="340" font-size="11" fill="#f8fafc" style="fill:#f8fafc">then immediately:  HCl  +  NH₃  →  NH₄Cl</text>
+  <text x="25" y="368" font-size="10" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ uses lone pair to abstract H⁺ from N⁺H₃;</text>
+  <text x="25" y="382" font-size="10" fill="#f8fafc" style="fill:#f8fafc">HCl escapes but instantly reacts with excess NH₃ in solution</text>
   <!-- Route 3b -->
-  <text x="342" y="286" font-size="11" font-weight="bold" fill="#92400E">Route 3b — NH₃ removes H⁺:</text>
-  <text x="342" y="304" font-size="11" fill="#111827">NH₃  +  CH₃–C(=O)–N⁺H₃  +  Cl⁻</text>
-  <text x="342" y="322" font-size="11" fill="#374151">→  CH₃CONH₂  +  NH₄⁺  +  Cl⁻</text>
-  <text x="342" y="340" font-size="11" fill="#374151">→  CH₃CONH₂  +  NH₄Cl</text>
-  <text x="342" y="368" font-size="10" fill="#92400E">An NH₃ molecule directly removes H⁺ from N⁺H₃;</text>
-  <text x="342" y="382" font-size="10" fill="#92400E">NH₄⁺ formed pairs with Cl⁻ already present → NH₄Cl</text>
+  <text x="342" y="286" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Route 3b — NH₃ removes H⁺:</text>
+  <text x="342" y="304" font-size="11" fill="#f8fafc" style="fill:#f8fafc">NH₃  +  CH₃–C(=O)–N⁺H₃  +  Cl⁻</text>
+  <text x="342" y="322" font-size="11" fill="#f8fafc" style="fill:#f8fafc">→  CH₃CONH₂  +  NH₄⁺  +  Cl⁻</text>
+  <text x="342" y="340" font-size="11" fill="#f8fafc" style="fill:#f8fafc">→  CH₃CONH₂  +  NH₄Cl</text>
+  <text x="342" y="368" font-size="10" fill="#f8fafc" style="fill:#f8fafc">An NH₃ molecule directly removes H⁺ from N⁺H₃;</text>
+  <text x="342" y="382" font-size="10" fill="#f8fafc" style="fill:#f8fafc">NH₄⁺ formed pairs with Cl⁻ already present → NH₄Cl</text>
   <!-- Note spanning both -->
-  <text x="18" y="424" font-size="10" font-style="italic" fill="#C2410C">Both routes give identical products — in practice both occur simultaneously. Unlike water/alcohol reactions, NO free HCl gas is observed.</text>
+  <text x="18" y="424" font-size="10" font-style="italic" fill="#f8fafc" style="fill:#f8fafc">Both routes give identical products — in practice both occur simultaneously. Unlike water/alcohol reactions, NO free HCl gas is observed.</text>
 
   <!-- Summary -->
   <rect x="10" y="452" width="630" height="48" rx="8" fill="#2d1b69" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="20" y="471" font-size="12" font-weight="bold" fill="#5B21B6">Overall (2 mol NH₃ required):</text>
-  <text x="25" y="490" font-size="13" fill="#111827">CH₃COCl  +  2NH₃  →  CH₃CONH₂  +  NH₄Cl</text>
+  <text x="20" y="471" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Overall (2 mol NH₃ required):</text>
+  <text x="25" y="490" font-size="13" fill="#f8fafc" style="fill:#f8fafc">CH₃COCl  +  2NH₃  →  CH₃CONH₂  +  NH₄Cl</text>
 </svg>`,
         caption: 'Full 3-step mechanism for ethanoyl chloride + ammonia. Step 3 has two possible routes — both give ethanamide and ammonium chloride. No free HCl is observed (unlike water/alcohol reactions), as all HCl is consumed by excess NH₃ → NH₄Cl.'
       }
@@ -714,50 +714,50 @@ export const note_chemistry_4_15_6 = {
 
   <!-- Step 1: Addition -->
   <rect x="10" y="10" width="630" height="118" rx="8" fill="#1c3a64" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="20" y="32" font-size="12" font-weight="bold" fill="#1D4ED8" text-anchor="start">Step 1 — Addition (nucleophilic attack)</text>
-  <text x="25" y="56" font-size="12" fill="#111827" text-anchor="start">CH₃COCl  +  :NH₂(CH₂CH₃)</text>
+  <text x="20" y="32" font-size="12" font-weight="bold" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Step 1 — Addition (nucleophilic attack)</text>
+  <text x="25" y="56" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃COCl  +  :NH₂(CH₂CH₃)</text>
   <path d="M138 51 Q160 36 178 51" stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#ah-am2)"/>
-  <text x="188" y="56" font-size="12" fill="#374151" text-anchor="start">→</text>
-  <text x="202" y="56" font-size="12" fill="#111827" text-anchor="start">CH₃–C(O⁻)(Cl)(N⁺H·CH₂CH₃)  [tetrahedral intermediate]</text>
-  <text x="25" y="76" font-size="10.5" fill="#2563EB" text-anchor="start">N lone pair of ethylamine attacks δ+ C of C=O; π-electrons of C=O shift onto O → O⁻; N becomes N⁺H (positive formal charge)</text>
-  <text x="25" y="94" font-size="10.5" fill="#6B7280" text-anchor="start">Tetrahedral intermediate: sp³ central C bonded to O⁻, Cl, CH₃, and N⁺H(CH₂CH₃)</text>
-  <text x="25" y="112" font-size="10" fill="#6B7280" text-anchor="start">[Identical to NH₃ pattern — R group on N makes no difference to the mechanism steps]</text>
+  <text x="188" y="56" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">→</text>
+  <text x="202" y="56" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃–C(O⁻)(Cl)(N⁺H·CH₂CH₃)  [tetrahedral intermediate]</text>
+  <text x="25" y="76" font-size="10.5" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">N lone pair of ethylamine attacks δ+ C of C=O; π-electrons of C=O shift onto O → O⁻; N becomes N⁺H (positive formal charge)</text>
+  <text x="25" y="94" font-size="10.5" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Tetrahedral intermediate: sp³ central C bonded to O⁻, Cl, CH₃, and N⁺H(CH₂CH₃)</text>
+  <text x="25" y="112" font-size="10" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">[Identical to NH₃ pattern — R group on N makes no difference to the mechanism steps]</text>
 
   <!-- Step 2: Elimination A -->
   <rect x="10" y="138" width="630" height="90" rx="8" fill="#0a2e1a" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="20" y="160" font-size="12" font-weight="bold" fill="#15803D" text-anchor="start">Step 2 — Elimination A (Cl⁻ leaves)</text>
-  <text x="25" y="182" font-size="12" fill="#111827" text-anchor="start">CH₃–C(O⁻)(Cl)(N⁺H·CH₂CH₃)</text>
+  <text x="20" y="160" font-size="12" font-weight="bold" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Step 2 — Elimination A (Cl⁻ leaves)</text>
+  <text x="25" y="182" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃–C(O⁻)(Cl)(N⁺H·CH₂CH₃)</text>
   <path d="M168 178 Q185 164 200 178" stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#ah-am2)"/>
-  <text x="210" y="182" font-size="12" fill="#374151" text-anchor="start">→</text>
-  <text x="224" y="182" font-size="12" fill="#111827" text-anchor="start">CH₃–C(=O)–N⁺H(CH₂CH₃)  +  Cl⁻</text>
-  <text x="25" y="202" font-size="10.5" fill="#15803D" text-anchor="start">O⁻ lone pair reforms C=O double bond; electrons in C–Cl bond pushed entirely onto Cl → Cl⁻ departs</text>
+  <text x="210" y="182" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">→</text>
+  <text x="224" y="182" font-size="12" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃–C(=O)–N⁺H(CH₂CH₃)  +  Cl⁻</text>
+  <text x="25" y="202" font-size="10.5" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">O⁻ lone pair reforms C=O double bond; electrons in C–Cl bond pushed entirely onto Cl → Cl⁻ departs</text>
   <text x="25" y="220" font-size="10.5" fill="#DC2626" text-anchor="start">⚠ Cl does NOT leave in Step 1 — it leaves here in Step 2</text>
 
   <!-- Step 3: Two Variants -->
   <rect x="10" y="238" width="630" height="202" rx="8" fill="#532407" stroke="#F97316" stroke-width="1.5"/>
-  <text x="20" y="260" font-size="12" font-weight="bold" fill="#C2410C" text-anchor="start">Step 3 — Elimination B: two possible routes (same as NH₃ pattern)</text>
+  <text x="20" y="260" font-size="12" font-weight="bold" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Step 3 — Elimination B: two possible routes (same as NH₃ pattern)</text>
   <line x1="330" y1="268" x2="330" y2="430" stroke="#F97316" stroke-width="1" stroke-dasharray="5,3"/>
   <!-- Route 3a -->
-  <text x="25" y="282" font-size="11" font-weight="bold" fill="#92400E" text-anchor="start">Route 3a — Cl⁻ removes H⁺:</text>
-  <text x="25" y="300" font-size="11" fill="#111827" text-anchor="start">Cl⁻  +  CH₃–C(=O)–N⁺H(CH₂CH₃)</text>
-  <text x="25" y="318" font-size="11" fill="#374151" text-anchor="start">→  CH₃CONHCH₂CH₃  +  HCl</text>
-  <text x="25" y="336" font-size="11" fill="#374151" text-anchor="start">then:  HCl  +  CH₃CH₂NH₂  →  [CH₃CH₂NH₃]⁺Cl⁻</text>
-  <text x="25" y="362" font-size="10" fill="#92400E" text-anchor="start">Cl⁻ abstracts H⁺ from N⁺H; HCl immediately</text>
-  <text x="25" y="376" font-size="10" fill="#92400E" text-anchor="start">neutralised by excess amine → alkylammonium chloride</text>
+  <text x="25" y="282" font-size="11" font-weight="bold" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Route 3a — Cl⁻ removes H⁺:</text>
+  <text x="25" y="300" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Cl⁻  +  CH₃–C(=O)–N⁺H(CH₂CH₃)</text>
+  <text x="25" y="318" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">→  CH₃CONHCH₂CH₃  +  HCl</text>
+  <text x="25" y="336" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">then:  HCl  +  CH₃CH₂NH₂  →  [CH₃CH₂NH₃]⁺Cl⁻</text>
+  <text x="25" y="362" font-size="10" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Cl⁻ abstracts H⁺ from N⁺H; HCl immediately</text>
+  <text x="25" y="376" font-size="10" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">neutralised by excess amine → alkylammonium chloride</text>
   <!-- Route 3b -->
-  <text x="342" y="282" font-size="11" font-weight="bold" fill="#92400E" text-anchor="start">Route 3b — amine removes H⁺:</text>
-  <text x="342" y="300" font-size="11" fill="#111827" text-anchor="start">CH₃CH₂NH₂  +  N⁺H(CH₂CH₃)–C(=O)CH₃  +  Cl⁻</text>
-  <text x="342" y="318" font-size="11" fill="#374151" text-anchor="start">→  CH₃CONHCH₂CH₃  +  [CH₃CH₂NH₃]⁺  +  Cl⁻</text>
-  <text x="342" y="336" font-size="11" fill="#374151" text-anchor="start">→  CH₃CONHCH₂CH₃  +  [CH₃CH₂NH₃]Cl</text>
-  <text x="342" y="362" font-size="10" fill="#92400E" text-anchor="start">Amine molecule directly removes H⁺ from N⁺H;</text>
-  <text x="342" y="376" font-size="10" fill="#92400E" text-anchor="start">[RNH₃]⁺ + Cl⁻ → alkylammonium chloride salt</text>
+  <text x="342" y="282" font-size="11" font-weight="bold" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Route 3b — amine removes H⁺:</text>
+  <text x="342" y="300" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃CH₂NH₂  +  N⁺H(CH₂CH₃)–C(=O)CH₃  +  Cl⁻</text>
+  <text x="342" y="318" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">→  CH₃CONHCH₂CH₃  +  [CH₃CH₂NH₃]⁺  +  Cl⁻</text>
+  <text x="342" y="336" font-size="11" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">→  CH₃CONHCH₂CH₃  +  [CH₃CH₂NH₃]Cl</text>
+  <text x="342" y="362" font-size="10" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Amine molecule directly removes H⁺ from N⁺H;</text>
+  <text x="342" y="376" font-size="10" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">[RNH₃]⁺ + Cl⁻ → alkylammonium chloride salt</text>
   <!-- Note spanning both -->
-  <text x="18" y="428" font-size="10" font-style="italic" fill="#C2410C" text-anchor="start">Both routes identical in pattern to the NH₃ mechanism; R group on N has no effect on the mechanism steps.</text>
+  <text x="18" y="428" font-size="10" font-style="italic" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Both routes identical in pattern to the NH₃ mechanism; R group on N has no effect on the mechanism steps.</text>
 
   <!-- Summary -->
   <rect x="10" y="450" width="630" height="50" rx="8" fill="#2d1b69" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="20" y="469" font-size="12" font-weight="bold" fill="#5B21B6" text-anchor="start">Overall (2 mol amine required):</text>
-  <text x="25" y="489" font-size="13" fill="#111827" text-anchor="start">CH₃COCl  +  2CH₃CH₂NH₂  →  CH₃CONHCH₂CH₃  +  [CH₃CH₂NH₃]Cl</text>
+  <text x="20" y="469" font-size="12" font-weight="bold" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Overall (2 mol amine required):</text>
+  <text x="25" y="489" font-size="13" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">CH₃COCl  +  2CH₃CH₂NH₂  →  CH₃CONHCH₂CH₃  +  [CH₃CH₂NH₃]Cl</text>
 </svg>`,
         caption: 'Full 3-step mechanism for ethanoyl chloride + ethylamine (primary amine). Pattern is identical to the NH₃ mechanism — the R group on nitrogen makes no difference to the steps. Two Step 3 routes; no free HCl observed; products are N-ethylethanamide + ethylammonium chloride.'
       }
@@ -1136,15 +1136,15 @@ export const note_chemistry_4_15_6 = {
 
   <!-- Triglyceride box -->
   <rect x="10" y="36" width="200" height="195" rx="8" fill="#44370a" stroke="#d97706" stroke-width="2"/>
-  <text x="110" y="58" text-anchor="middle" font-weight="bold" font-size="12" fill="#92400e">Triglyceride (triester)</text>
+  <text x="110" y="58" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Triglyceride (triester)</text>
   <!-- Glycerol backbone -->
-  <text x="26" y="84" font-size="11" fill="#374151">CH₂–O–CO–(fatty acid 1)</text>
+  <text x="26" y="84" font-size="11" fill="#f8fafc" style="fill:#f8fafc">CH₂–O–CO–(fatty acid 1)</text>
   <line x1="26" y1="90" x2="26" y2="112" stroke="#374151" stroke-width="1.5"/>
-  <text x="26" y="126" font-size="11" fill="#374151">CH –O–CO–(fatty acid 2)</text>
+  <text x="26" y="126" font-size="11" fill="#f8fafc" style="fill:#f8fafc">CH –O–CO–(fatty acid 2)</text>
   <line x1="26" y1="132" x2="26" y2="154" stroke="#374151" stroke-width="1.5"/>
-  <text x="26" y="168" font-size="11" fill="#374151">CH₂–O–CO–(fatty acid 3)</text>
-  <text x="42" y="205" font-size="11" fill="#1d4ed8">↑ ↑ ↑ three ester bonds</text>
-  <text x="42" y="220" font-size="11" fill="#374151">(glycerol backbone)</text>
+  <text x="26" y="168" font-size="11" fill="#f8fafc" style="fill:#f8fafc">CH₂–O–CO–(fatty acid 3)</text>
+  <text x="42" y="205" font-size="11" fill="#f8fafc" style="fill:#f8fafc">↑ ↑ ↑ three ester bonds</text>
+  <text x="42" y="220" font-size="11" fill="#f8fafc" style="fill:#f8fafc">(glycerol backbone)</text>
 
   <!-- + 3 NaOH -->
   <text x="220" y="147" font-size="22" fill="#374151">+</text>
@@ -1158,27 +1158,27 @@ export const note_chemistry_4_15_6 = {
 
   <!-- Products box left -->
   <rect x="338" y="36" width="120" height="90" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
-  <text x="398" y="58" text-anchor="middle" font-weight="bold" font-size="12" fill="#15803d">Glycerol</text>
-  <text x="348" y="78" font-size="11" fill="#374151">CH₂–OH</text>
-  <text x="348" y="94" font-size="11" fill="#374151">CH –OH</text>
-  <text x="348" y="110" font-size="11" fill="#374151">CH₂–OH</text>
-  <text x="348" y="126" font-size="10" fill="#15803d">(propane-1,2,3-triol)</text>
+  <text x="398" y="58" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Glycerol</text>
+  <text x="348" y="78" font-size="11" fill="#f8fafc" style="fill:#f8fafc">CH₂–OH</text>
+  <text x="348" y="94" font-size="11" fill="#f8fafc" style="fill:#f8fafc">CH –OH</text>
+  <text x="348" y="110" font-size="11" fill="#f8fafc" style="fill:#f8fafc">CH₂–OH</text>
+  <text x="348" y="126" font-size="10" fill="#f8fafc" style="fill:#f8fafc">(propane-1,2,3-triol)</text>
 
   <!-- + -->
   <text x="464" y="90" font-size="20" fill="#374151">+</text>
 
   <!-- Products box right -->
   <rect x="478" y="36" width="128" height="105" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
-  <text x="542" y="56" text-anchor="middle" font-weight="bold" font-size="12" fill="#1d4ed8">3 Soaps</text>
-  <text x="488" y="76" font-size="11" fill="#374151">R₁–COO⁻Na⁺</text>
-  <text x="488" y="94" font-size="11" fill="#374151">R₂–COO⁻Na⁺</text>
-  <text x="488" y="112" font-size="11" fill="#374151">R₃–COO⁻Na⁺</text>
-  <text x="482" y="132" font-size="10" fill="#1d4ed8">(carboxylate salts)</text>
+  <text x="542" y="56" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">3 Soaps</text>
+  <text x="488" y="76" font-size="11" fill="#f8fafc" style="fill:#f8fafc">R₁–COO⁻Na⁺</text>
+  <text x="488" y="94" font-size="11" fill="#f8fafc" style="fill:#f8fafc">R₂–COO⁻Na⁺</text>
+  <text x="488" y="112" font-size="11" fill="#f8fafc" style="fill:#f8fafc">R₃–COO⁻Na⁺</text>
+  <text x="482" y="132" font-size="10" fill="#f8fafc" style="fill:#f8fafc">(carboxylate salts)</text>
 
   <!-- Key notes -->
   <rect x="10" y="240" width="596" height="38" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="20" y="257" font-size="11" fill="#92400e">• Each ester bond is hydrolysed by one NaOH molecule → 3 NaOH for a triglyceride</text>
-  <text x="20" y="272" font-size="11" fill="#92400e">• Glycerol is ALWAYS the alcohol product (same regardless of the fat used)  •  Carboxylate salts = soaps</text>
+  <text x="20" y="257" font-size="11" fill="#f8fafc" style="fill:#f8fafc">• Each ester bond is hydrolysed by one NaOH molecule → 3 NaOH for a triglyceride</text>
+  <text x="20" y="272" font-size="11" fill="#f8fafc" style="fill:#f8fafc">• Glycerol is ALWAYS the alcohol product (same regardless of the fat used)  •  Carboxylate salts = soaps</text>
 </svg>`,
         caption: 'Saponification: alkaline hydrolysis of a triglyceride by 3 mol NaOH → glycerol (propane-1,2,3-triol) + 3 carboxylate salts (soaps). You are not required to know specific triglyceride names — know the process and products.'
       }
@@ -1222,32 +1222,32 @@ export const note_chemistry_4_15_6 = {
 
   <!-- Terephthalic acid -->
   <rect x="10" y="56" width="280" height="80" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
-  <text x="150" y="76" text-anchor="middle" font-weight="bold" font-size="12" fill="#1d4ed8">Terephthalic acid (dicarboxylic acid)</text>
-  <text x="22" y="106" font-size="13" fill="#dc2626">HOOC</text>
+  <text x="150" y="76" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Terephthalic acid (dicarboxylic acid)</text>
+  <text x="22" y="106" font-size="13" fill="#f8fafc" style="fill:#f8fafc">HOOC</text>
   <!-- benzene ring simplified -->
   <line x1="60" y1="101" x2="76" y2="101" stroke="#374151" stroke-width="2"/>
   <rect x="76" y="88" width="46" height="26" rx="4" fill="none" stroke="#374151" stroke-width="2"/>
-  <text x="99" y="106" text-anchor="middle" font-size="11" fill="#374151">⬡</text>
+  <text x="99" y="106" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">⬡</text>
   <line x1="122" y1="101" x2="138" y2="101" stroke="#374151" stroke-width="2"/>
-  <text x="140" y="106" font-size="13" fill="#dc2626">COOH</text>
-  <text x="22" y="126" font-size="10" fill="#6b7280">Two –COOH groups (one on each side)</text>
+  <text x="140" y="106" font-size="13" fill="#f8fafc" style="fill:#f8fafc">COOH</text>
+  <text x="22" y="126" font-size="10" fill="#f8fafc" style="fill:#f8fafc">Two –COOH groups (one on each side)</text>
 
   <!-- + -->
   <text x="298" y="100" font-size="26" fill="#374151">+</text>
 
   <!-- Ethane-1,2-diol -->
   <rect x="318" y="56" width="200" height="80" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
-  <text x="418" y="76" text-anchor="middle" font-weight="bold" font-size="12" fill="#15803d">Ethane-1,2-diol (diol)</text>
-  <text x="330" y="106" font-size="13" fill="#374151">HO–CH₂–CH₂–OH</text>
+  <text x="418" y="76" text-anchor="middle" font-weight="bold" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Ethane-1,2-diol (diol)</text>
+  <text x="330" y="106" font-size="13" fill="#f8fafc" style="fill:#f8fafc">HO–CH₂–CH₂–OH</text>
   <text x="330" y="126" font-size="10" fill="#6b7280">Two –OH groups (one on each end)</text>
 
   <!-- ── CONDENSATION ── -->
   <text x="10" y="162" font-weight="bold" font-size="13" fill="#374151">Step 2 — Bond Formation (×n times)</text>
 
   <rect x="10" y="172" width="500" height="60" rx="8" fill="#532407" stroke="#d97706" stroke-width="2"/>
-  <text x="22" y="195" font-size="12" fill="#374151">–COOH  +  HO–  →  –COO–  +  H₂O</text>
-  <text x="22" y="214" font-size="11" fill="#92400e">Each junction: one ester bond formed, one water molecule lost (condensation)</text>
-  <text x="22" y="228" font-size="11" fill="#92400e">Repeat alternating: diacid – ester – diol – ester – diacid – ester – diol ...</text>
+  <text x="22" y="195" font-size="12" fill="#f8fafc" style="fill:#f8fafc">–COOH  +  HO–  →  –COO–  +  H₂O</text>
+  <text x="22" y="214" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Each junction: one ester bond formed, one water molecule lost (condensation)</text>
+  <text x="22" y="228" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Repeat alternating: diacid – ester – diol – ester – diacid – ester – diol ...</text>
 
   <!-- Arrow -->
   <text x="10" y="260" font-weight="bold" font-size="13" fill="#374151">Step 3 — Repeat Unit of PET</text>
@@ -1257,26 +1257,26 @@ export const note_chemistry_4_15_6 = {
   <!-- Extension bond left -->
   <line x1="28" y1="310" x2="52" y2="310" stroke="#374151" stroke-width="2.5"/>
   <!-- C=O left -->
-  <text x="54" y="329" font-size="13" fill="#374151">O</text>
+  <text x="54" y="329" font-size="13" fill="#f8fafc" style="fill:#f8fafc">O</text>
   <line x1="62" y1="305" x2="62" y2="295" stroke="#374151" stroke-width="2.5"/>
   <line x1="62" y1="305" x2="62" y2="296" stroke="#374151" stroke-width="2.5"/>
   <!-- draw it as text for simplicity -->
-  <text x="54" y="315" font-size="13" fill="#374151">–C(=O)–</text>
+  <text x="54" y="315" font-size="13" fill="#f8fafc" style="fill:#f8fafc">–C(=O)–</text>
   <!-- benzene -->
-  <text x="102" y="315" font-size="13" fill="#374151">⬡</text>
+  <text x="102" y="315" font-size="13" fill="#f8fafc" style="fill:#f8fafc">⬡</text>
   <!-- –CO– other side -->
-  <text x="120" y="315" font-size="13" fill="#374151">–(O=)C–O–CH₂–CH₂–O–</text>
+  <text x="120" y="315" font-size="13" fill="#f8fafc" style="fill:#f8fafc">–(O=)C–O–CH₂–CH₂–O–</text>
 
   <line x1="282" y1="310" x2="305" y2="310" stroke="#374151" stroke-width="2.5"/>
   <!-- bracket -->
-  <text x="308" y="315" font-size="20" fill="#1d4ed8">[       ]</text>
-  <text x="358" y="302" font-size="13" fill="#1d4ed8">n</text>
+  <text x="308" y="315" font-size="20" fill="#f8fafc" style="fill:#f8fafc">[       ]</text>
+  <text x="358" y="302" font-size="13" fill="#f8fafc" style="fill:#f8fafc">n</text>
 
-  <text x="20" y="340" font-size="11" fill="#5b21b6">Each repeat unit contains TWO ester bonds (–COO–). Brackets + n = polymer.</text>
+  <text x="20" y="340" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Each repeat unit contains TWO ester bonds (–COO–). Brackets + n = polymer.</text>
 
   <!-- Note row -->
   <rect x="10" y="358" width="600" height="18" rx="4" fill="#3d1212"/>
-  <text x="20" y="371" font-size="10.5" fill="#991b1b">Terephthalic acid has a benzene ring — don't be put off. Only FUNCTIONAL GROUPS react; the middle section is irrelevant to the reaction.</text>
+  <text x="20" y="371" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Terephthalic acid has a benzene ring — don't be put off. Only FUNCTIONAL GROUPS react; the middle section is irrelevant to the reaction.</text>
 </svg>`,
         caption: 'PET polyester formation by condensation polymerisation. Terephthalic acid (diacid) + ethane-1,2-diol (diol) → repeating ester bonds + water. The only parts that react are the functional groups (–COOH and –OH).'
       }

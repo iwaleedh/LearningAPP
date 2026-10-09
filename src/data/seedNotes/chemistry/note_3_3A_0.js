@@ -6,6 +6,21 @@ export const note_chemistry_3_3A_0 = {
       data: { text: 'Describe the apparatus, methods and techniques used in the core practicals from WCH11 (Units 1–2); explain the purpose of each step in standard laboratory procedures.' },
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Connect practical methods to the correct core investigations",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Unit 3 assesses practical reasoning from Units 1 and 2, including the ability to adapt techniques to an unfamiliar context. Keep the aim of a core investigation distinct from a technique used within it. Calorimetry is a technique; Core Practical 2 uses enthalpy measurements and Hess’s law. Standard-solution preparation and titration form Core Practical 4, while Core Practical 3 uses titration to find hydrochloric acid concentration.<br/><br/>For each technique, learn what is measured, what assumptions are made and how a specific error affects the result. Gas collection requires a sealed, suitable apparatus; volumetric work requires quantitative transfer and appropriate rinsing; organic-liquid purification requires separation, drying and a suitable collection method. Practical marks often depend on explaining the purpose rather than reciting a memorised sequence."
+  }
+},
+{
       id: 'h-intro',
       type: 'heading',
       data: { text: 'WCH13 — Practical Skills Overview', level: 2 },
@@ -86,8 +101,8 @@ export const note_chemistry_3_3A_0 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Core Practical 2: Enthalpy of Neutralisation / Displacement',
-        text: 'Aim: Measure the temperature change when an acid reacts with a base (or a metal with a salt solution) and calculate the enthalpy change using q = mcΔT.',
+        title: 'Core Practical 2: Calorimetry and Hess’s Law',
+        text: 'Aim: Measure suitable reaction enthalpies by calorimetry and combine them using Hess’s law to determine an indirect enthalpy change. A standalone neutralisation or displacement measurement illustrates the technique, but does not include the full Hess investigation.',
       },
     },
     {
@@ -113,7 +128,7 @@ export const note_chemistry_3_3A_0 = {
         caption: 'CP2 — Sources of error and improvements',
         headers: ['Source of error', 'Effect', 'Improvement'],
         rows: [
-          ['Heat loss to surroundings', 'ΔT measured too small → ΔH too small', 'Use polystyrene cup + lid; lag the cup; extrapolate cooling curve to find true T_max'],
+          ['Heat loss to surroundings', 'ΔT underestimated → exothermic ΔH less negative', 'Use polystyrene cup + lid; lag the cup; extrapolate cooling curve to find true T_max'],
           ['Not using a lid', 'Heat lost by evaporation', 'Always use a lid with a hole for thermometer'],
           ['Thermometer reading error', 'ΔT inaccurate', 'Use a calibrated digital thermometer; record to 0.1 °C'],
           ['Assuming c = 4.18 J g⁻¹ K⁻¹ for all solutions', 'Error in q calculation', 'Acceptable for dilute aqueous solutions; note as assumption'],
@@ -202,12 +217,6 @@ export const note_chemistry_3_3A_0 = {
       terms: []
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: { text: 'CP1 (Mg + HCl → H₂): gas syringe measures H₂ volume → molar volume ≈ 24 dm³ mol⁻¹. Errors: gas escape, oxide layer, syringe friction. CP2 (calorimetry): q = mcΔT in polystyrene cup → ΔH = −q/moles. Errors: heat loss, no lid. Key techniques: pipette (±0.06 cm³), burette (±0.05 cm³/reading), analytical balance (±0.001 g), gas syringe (±0.5 cm³).' },
-    },
-
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -225,20 +234,90 @@ export const note_chemistry_3_3A_0 = {
         text: "In CP1, examiners expect you to state explicitly that HCl must be in excess. Without this, not all Mg reacts, causing systematic underestimation of the molar volume. Check that the Mg dissolves completely \u2014 this confirms excess HCl."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "If gas escapes before sealing a molar-volume experiment, measured V is too small while the calculated reacting amount can remain unchanged: Vₘ = V/n is therefore too low. If a gas syringe initially contains air and that uncorrected volume is included, V can instead be too high. State the direction of each specific error, rather than treating all gas-collection problems identically."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "For exothermic calorimetry, say “ΔH is less negative” or “its magnitude is too small”, not simply “ΔH is too small”. An experiment description must include the Hess combination when it claims to represent Core Practical 2."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why is calorimetry alone not the full description of Core Practical 2?",
+        "checked": false
+      },
+      {
+        "text": "How does a gas leak affect a calculated molar volume?",
+        "checked": false
+      },
+      {
+        "text": "Why rinse a burette with its titrant?",
+        "checked": false
+      },
+      {
+        "text": "How should heat-loss bias in an exothermic result be described?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Unit 3 assesses practical reasoning from Units 1 and 2, including the ability to adapt techniques to an unfamiliar context. Keep the aim of a core investigation distinct from a technique used within it. Calorimetry is a technique; Core Practical 2 uses enthalpy measurements and Hess’s law. Standard-solution preparation and titration form Core Practical 4, while Core Practical 3 uses titration to find hydrochloric acid concentration."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'list-cp1-method', prompt: 'Describe the method for CP1 (molar volume of H₂). What must be ensured about the HCl?' },
-      { id: 'cue-2', blockId: 'table-cp1-errors', prompt: 'State two sources of error in CP1 and how to reduce each.' },
-      { id: 'cue-3', blockId: 'list-cp2-method', prompt: 'Describe the key steps in CP2 (enthalpy by calorimetry). What formula is used?' },
-      { id: 'cue-4', blockId: 'table-apparatus', prompt: 'State the precision of a burette, pipette and analytical balance.' },
-      { id: 'cue-5', blockId: 'table-techniques', prompt: 'Why is a water bath used instead of a Bunsen burner for organic reactions?' },
-    ],
-    summaryText: 'CP1: Mg+HCl→H₂; gas syringe; molar volume ≈24 dm³ mol⁻¹; errors: gas escape, oxide layer. CP2: q=mcΔT; polystyrene cup; ΔH=−q/n; errors: heat loss. Burette ±0.05 cm³; pipette ±0.06 cm³; balance ±0.001 g.',
-    ready: false,
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why is calorimetry alone not the full description of Core Practical 2?",
+      "answer": "The core investigation determines an enthalpy change using Hess’s law as well as measured heat changes."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How does a gas leak affect a calculated molar volume?",
+      "answer": "If reacting amount is unchanged, measured volume is too low and V/n is too low."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why rinse a burette with its titrant?",
+      "answer": "To avoid residual water diluting the titrant and changing its actual concentration."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "How should heat-loss bias in an exothermic result be described?",
+      "answer": "The temperature rise and released-heat magnitude are underestimated, so calculated ΔH is usually less negative."
+    }
+  ],
+  "summaryText": "Unit 3 assesses practical reasoning from Units 1 and 2, including the ability to adapt techniques to an unfamiliar context. Keep the aim of a core investigation distinct from a technique used within it. Calorimetry is a technique; Core Practical 2 uses enthalpy measurements and Hess’s law. Standard-solution preparation and titration form Core Practical 4, while Core Practical 3 uses titration to find hydrochloric acid concentration.",
+  "ready": true
+},
   evidence: [
     { id: 'ev-1', title: 'Edexcel WCH13 Specification', detail: 'WCH13 assesses practical skills from WCH11 and WCH12 core practicals.', year: '2018', source: 'Pearson Edexcel', tags: ['core practicals', 'WCH13', 'practical methods'] },
-  ],
+{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
 };

@@ -38,40 +38,13 @@ function read(relPath) {
     return readFileSync(abs, 'utf8');
 }
 
-function countMatches(src, pattern) {
-    return (src.match(pattern) || []).length;
-}
-
 // ═══════════════════════════════════════════════════════════════════════════════
 console.log('\n🔍 M1 — Timer Leak Prevention\n');
-
-const shareDialog = read('components/annotation/ShareDialog.jsx');
-if (shareDialog) {
-    check('ShareDialog has copyTimerRef',                shareDialog.includes('copyTimerRef'));
-    check('ShareDialog clearTimeout in cleanup',         shareDialog.includes('clearTimeout(copyTimerRef.current)'));
-}
 
 const flashcardEx = read('components/exercises/FlashcardExercise.jsx');
 if (flashcardEx) {
     check('FlashcardExercise has nextTimerRef',          flashcardEx.includes('nextTimerRef'));
     check('FlashcardExercise clearTimeout in cleanup',   flashcardEx.includes('clearTimeout(nextTimerRef.current)'));
-}
-
-// ═══════════════════════════════════════════════════════════════════════════════
-console.log('\n🔍 M3 — BroadcastChannel Cleanup\n');
-
-const liveClass = read('pages/LiveClassPage.jsx');
-if (liveClass) {
-    check('closeSyncChannel() in ≥2 cleanup paths',     countMatches(liveClass, /closeSyncChannel\(\)/g) >= 2,
-          `found ${countMatches(liveClass, /closeSyncChannel\(\)/g)}`);
-    check('unmountedRef.current = true in ≥2 paths',    countMatches(liveClass, /unmountedRef\.current\s*=\s*true/g) >= 2);
-    check('bc.close() in ≥2 cleanup paths',             countMatches(liveClass, /bc\.close\(\)/g) >= 2);
-}
-
-const localStore = read('services/liveclass/localLiveClassStore.js');
-if (localStore) {
-    check('closeSyncChannel export exists',              localStore.includes('export function closeSyncChannel'));
-    check('beforeunload handler registered',             localStore.includes('beforeunload'));
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════

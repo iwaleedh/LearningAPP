@@ -71,7 +71,7 @@ export const note_olevel_biology_19_19_3 = {
   <text x="340" y="200" font-size="10" fill="#059669">Assimilation</text>
   <!-- Decomposition: plants → ammonium -->
   <line x1="320" y1="150" x2="200" y2="278" stroke="#b45309" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#n4)"/>
-  <text x="220" y="230" font-size="10" fill="#b45309">Decomposition</text>
+  <text x="170" y="253" font-size="10" fill="#b45309">Decomposition</text>
   <!-- Denitrification: nitrates → N2 -->
   <line x1="260" y1="200" x2="260" y2="77" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#n5)"/>
   <text x="268" y="150" font-size="10" fill="#ef4444">Denitrification</text>

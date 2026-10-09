@@ -19,7 +19,7 @@
 }
 
 .note-page--all-subjects {
-    --lt-topic-body-font: 'Kalam', cursive;
+    --lt-topic-body-font: var(--font-sans);
     --lt-topic-title-font: 'Patrick Hand', cursive;
 }
 
@@ -35,17 +35,9 @@
 }
 
 .note-page--all-subjects .note-toolbar-title,
-.note-page--all-subjects .topic-tab,
-.note-page--all-subjects .topic-subtopics-dropdown .dropdown-item,
-.note-page--all-subjects .note-toc-header,
-.note-page--all-subjects .note-toc-link,
-.note-page--all-subjects .recall-panel-header,
-.note-page--all-subjects .recall-prompt,
 .note-page--all-subjects .note-empty-title,
 .note-page--all-subjects .btn-next-subtopic strong,
 .note-page--all-subjects .note-study-content .nb-heading,
-.note-page--all-subjects .note-study-content .nb-objective-label,
-.note-page--all-subjects .note-study-content .nb-summary-label,
 .note-page--all-subjects .note-study-content .nb-callout-title {
     font-family: var(--lt-topic-title-font);
 }
@@ -72,15 +64,6 @@
     min-width: 0;
 }
 
-.note-toolbar--condensed {
-    gap: var(--space-2);
-    padding-block: var(--space-2);
-}
-
-.note-toolbar--overlay {
-    box-shadow: var(--shadow-lg);
-}
-
 .note-toolbar-left {
     display: flex;
     align-items: center;
@@ -93,10 +76,7 @@
     font-size: var(--font-size-base);
     font-weight: 700;
     margin: 0 0 0 var(--space-2);
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-text);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -177,7 +157,6 @@
     color: var(--color-success-dark);
     border: 1px solid rgba(16, 185, 129, 0.28);
     cursor: pointer;
-    animation: note-read-pulse 1.8s ease-in-out infinite;
 }
 
 .note-read-btn--ready:hover {
@@ -199,10 +178,6 @@
     border-color: rgba(239, 68, 68, 0.24);
 }
 
-@keyframes note-read-pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4); }
-    50%       { box-shadow: 0 0 0 5px rgba(52, 211, 153, 0); }
-}
 
 /* ── Read Progress Bar ────────────────────────────────────────────────────── */
 
@@ -227,9 +202,11 @@
 
 .note-read-progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+    width: 100%;
+    background: var(--color-primary);
     border-radius: 2px;
-    transition: width 0.15s ease;
+    transform-origin: left center;
+    transition: transform 0.15s ease-out;
 }
 
 /* ── Topic Tabs Navigation ────────────────────────────────────────────────── */
@@ -360,7 +337,6 @@
     background: var(--color-primary-50);
     color: var(--color-primary-dark);
     font-weight: 600;
-    border-left: 3px solid var(--color-primary);
 }
 
 /* ── Body (ToC + Note + Recall) ───────────────────────────────────────────── */
@@ -445,7 +421,6 @@
     background: var(--color-primary-50);
     color: var(--color-primary-dark);
     font-weight: 600;
-    border-right: 2px solid var(--color-primary);
 }
 
 /* ── Note Scroll Area ─────────────────────────────────────────────────────── */
@@ -669,25 +644,27 @@
     align-items: center;
     justify-content: space-between;
     padding: var(--space-3) var(--space-4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid var(--color-border-light);
     font-size: var(--font-size-sm);
     font-weight: 700;
-    color: var(--color-text-inverse);
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text);
+    background: var(--color-surface);
     flex-shrink: 0;
 }
 
-.recall-panel-header .btn-ghost {
-    color: rgba(255, 255, 255, 0.82);
+.recall-panel-heading {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
 }
-.recall-panel-header .btn-ghost:hover {
-    background: rgba(255, 255, 255, 0.18);
-    color: var(--color-text-inverse);
+
+.recall-panel-heading svg {
+    color: var(--color-primary);
 }
 
 .recall-count {
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--color-text-secondary);
     font-size: var(--font-size-xs);
     margin-left: var(--space-2);
 }
@@ -700,8 +677,10 @@
 
 .recall-progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
-    transition: width 0.3s ease;
+    width: 100%;
+    background: var(--color-primary);
+    transform-origin: left center;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .recall-empty {
@@ -728,8 +707,7 @@
     margin: 0;
     padding: var(--space-4);
     background: var(--color-primary-50);
-    border-left: 3px solid var(--color-primary);
-    border-radius: 0 10px 10px 0;
+    border-radius: 12px;
 }
 
 .recall-reveal-btn {
@@ -739,7 +717,7 @@
 
 .recall-answer {
     background: var(--color-success-light);
-    border: 1px solid var(--color-success);
+    border: 1px solid color-mix(in srgb, var(--color-success) 35%, transparent);
     border-radius: 10px;
     padding: var(--space-4);
     display: flex;
@@ -749,7 +727,7 @@
 }
 
 @keyframes recall-answer-in {
-    from { opacity: 0; transform: translateY(6px); }
+    from { opacity: 0.4; transform: translateY(4px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
@@ -766,6 +744,12 @@
     color: var(--color-text);
     margin: 0;
     line-height: 1.6;
+}
+
+.recall-nav .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
 }
 
 .recall-nav {
@@ -800,8 +784,10 @@
     min-height: 28px;
 }
 
-.recall-dot:hover    { transform: scale(1.3); }
-.recall-dot.active   { background: var(--color-primary); transform: scale(1.2); }
+@media (hover: hover) {
+    .recall-dot:hover { background: var(--color-text-tertiary); }
+}
+.recall-dot.active   { background: var(--color-primary); }
 .recall-dot.done     { background: var(--color-success); }
 
 /* ── Scroll To Top Button ─────────────────────────────────────────────────── */
@@ -875,47 +861,6 @@
 
 .note-mobile-sheet-body--tools {
     gap: var(--space-3);
-}
-
-.note-mobile-topic-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-}
-
-.note-mobile-topic-heading {
-    margin: 0;
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-}
-
-.note-mobile-topic-heading.active {
-    color: var(--color-primary-dark);
-}
-
-.note-mobile-topic-links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-}
-
-.note-mobile-topic-link {
-    display: flex;
-    align-items: center;
-    min-height: var(--touch-min);
-    padding: var(--space-2) var(--space-3);
-    border-radius: 12px;
-    border: 1px solid var(--color-border);
-    text-decoration: none;
-    color: var(--color-text);
-    background: var(--color-surface);
-}
-
-.note-mobile-topic-link.active {
-    border-color: var(--color-primary);
-    background: var(--color-primary-50);
-    color: var(--color-primary-dark);
-    font-weight: 600;
 }
 
 .note-mobile-tool-block {
@@ -1007,8 +952,22 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
-.note-empty span {
-    font-size: 3rem;
+.note-empty-icon {
+    color: var(--color-text-tertiary);
+}
+
+.note-empty-icon--spin {
+    animation: note-empty-spin 1.2s linear infinite;
+}
+
+@keyframes note-empty-spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .note-empty-icon--spin {
+        animation: none;
+    }
 }
 
 .note-empty-title {
@@ -1108,113 +1067,6 @@
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-    .note-toolbar {
-        position: sticky;
-        top: calc(var(--header-height) + max(var(--space-2), env(safe-area-inset-top)));
-        z-index: var(--z-popover);
-        padding: var(--space-3);
-        gap: var(--space-3);
-        margin: var(--space-2);
-        margin-bottom: 0;
-        border-radius: 12px;
-        background: color-mix(in srgb, var(--color-surface) 92%, transparent);
-        -webkit-backdrop-filter: blur(14px);
-        backdrop-filter: blur(14px);
-        box-shadow: var(--shadow-lg);
-    }
-
-    .note-page--fullscreen .note-toolbar--overlay {
-        position: fixed;
-        left: max(var(--space-2), env(safe-area-inset-left));
-        right: max(var(--space-2), env(safe-area-inset-right));
-        top: calc(var(--header-height) + max(var(--space-2), env(safe-area-inset-top)));
-        margin: 0;
-        padding: var(--space-2);
-        gap: var(--space-2);
-        background: color-mix(in srgb, var(--color-surface) 90%, transparent);
-        -webkit-backdrop-filter: blur(16px);
-        backdrop-filter: blur(16px);
-        z-index: var(--z-popover);
-    }
-
-    .note-toolbar-left {
-        gap: var(--space-2);
-        width: 100%;
-        align-items: center;
-    }
-
-    .note-toolbar-title {
-        font-size: 0.95rem;
-        max-width: none;
-        flex-basis: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-left: 0;
-        line-height: 1.3;
-    }
-
-    .note-toolbar-title--compact {
-        font-size: 0.92rem;
-    }
-
-    .note-toolbar--condensed .note-toolbar-title {
-        font-size: 0.88rem;
-    }
-
-    /* Condensed: collapse the title row so only the button row remains */
-    .note-toolbar--condensed .note-toolbar-left {
-        display: none;
-    }
-
-    .note-toolbar--condensed .note-toolbar-right {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    /* Fullscreen overlay: always single-row — title is redundant while reading */
-    .note-page--fullscreen .note-toolbar--overlay .note-toolbar-left {
-        display: none;
-    }
-
-    .note-toolbar-unit-badge {
-        display: none;
-    }
-
-    .note-toolbar-right {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        align-items: stretch;
-        gap: var(--space-2);
-    }
-
-    .note-page--fullscreen .note-toolbar-right {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 6px;
-    }
-
-    .note-toolbar-right .btn-sm {
-        width: 100%;
-        min-height: var(--touch-min);
-        min-width: var(--touch-min);
-        padding: var(--space-2);
-        border-radius: 12px;
-    }
-
-    .note-toolbar-right .btn-sm .note-btn-label {
-        display: none;
-    }
-
-    .note-toolbar-right .note-read-btn {
-        padding-inline: var(--space-3);
-    }
-
-    .note-toolbar-right {
-        justify-content: stretch;
-    }
-
     .note-page--fullscreen .note-body {
         margin: 0;
         padding-top: calc(var(--touch-min) + var(--space-7));
@@ -1349,7 +1201,7 @@
         visibility: hidden;
         pointer-events: none;
         transform: none;
-        transition: max-height 0.2s ease, margin-top 0.2s ease, opacity 0.2s ease;
+        transition: opacity 0.2s ease;
     }
 
     .topic-subtopics-dropdown--open {
@@ -1392,7 +1244,7 @@
 
 .note-overflow-menu {
     position: absolute;
-    bottom: calc(100% + 6px);
+    top: calc(100% + 6px);
     right: 0;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -1404,16 +1256,15 @@
     padding: var(--space-1) 0;
     z-index: calc(var(--z-popover) + 1);
     overflow: hidden;
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
-    background: color-mix(in srgb, var(--color-surface) 96%, transparent);
+    background: var(--color-surface);
 }
 
 .note-overflow-item {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-3);
     padding: 0 var(--space-4);
+    font-family: var(--font-sans);
     font-size: var(--font-size-sm);
     font-weight: 500;
     color: var(--color-text);
@@ -1430,9 +1281,6 @@
     background: var(--color-bg-secondary);
 }
 
-.note-overflow-item + .note-overflow-item {
-    border-top: 1px solid var(--color-border-light);
-}
 
 .note-overflow-item--active {
     color: var(--color-primary-dark);
@@ -1566,4 +1414,712 @@
         bottom: calc(max(var(--space-2), env(safe-area-inset-bottom)) + 56px);
         padding: var(--space-2);
     }
+}
+
+/* ── Shared icon button ───────────────────────────────────────────────────── */
+
+.note-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--touch-min);
+    height: var(--touch-min);
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background: none;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.note-icon-btn.is-active,
+.note-icon-btn:active {
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
+}
+
+@media (hover: hover) {
+    .note-icon-btn:hover {
+        background: var(--color-bg-secondary);
+        color: var(--color-text);
+    }
+}
+
+.note-icon-btn:focus-visible,
+.note-topbar-title:focus-visible,
+.note-bottombar-btn:focus-visible,
+.note-segmented-option:focus-visible,
+.note-topic-summary:focus-visible,
+.note-topic-link:focus-visible,
+.note-finish-btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ── Contents sheet: "On this page" + "Topics" ────────────────────────────── */
+
+.note-contents-sheet {
+    height: min(80dvh, 42rem);
+}
+
+.note-contents-sheet .note-toc--sheet,
+.note-topic-nav {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.note-segmented {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin: var(--space-3) var(--space-4) var(--space-1);
+    padding: 4px;
+    border-radius: 12px;
+    background: var(--color-bg-secondary);
+    flex-shrink: 0;
+}
+
+.note-segmented-option {
+    min-height: 40px;
+    border: none;
+    border-radius: 9px;
+    background: none;
+    color: var(--color-text-secondary);
+    font: 600 0.875rem/1 var(--font-sans);
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.note-segmented-option.is-active {
+    background: var(--color-surface);
+    color: var(--color-text);
+    box-shadow: 0 1px 3px rgba(2, 6, 23, 0.14);
+}
+
+.note-toc--sheet .note-toc-link {
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    white-space: normal;
+    padding-block: var(--space-2);
+}
+
+.note-toc--sheet .note-toc-link.active {
+    border-right: none;
+}
+
+.note-topic-nav {
+    padding: var(--space-2) var(--space-2) var(--space-4);
+}
+
+.note-topic-group + .note-topic-group {
+    border-top: 1px solid var(--color-border-light);
+}
+
+.note-topic-summary {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 52px;
+    padding: var(--space-2) var(--space-3);
+    border-radius: 10px;
+    list-style: none;
+    cursor: pointer;
+    font: 600 0.9375rem/1.35 var(--font-sans);
+    color: var(--color-text);
+}
+
+.note-topic-summary::-webkit-details-marker {
+    display: none;
+}
+
+.note-topic-summary.is-active {
+    color: var(--color-primary);
+}
+
+.note-topic-summary-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.note-topic-summary-count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    font-variant-numeric: tabular-nums;
+}
+
+.note-topic-summary-chevron {
+    flex-shrink: 0;
+    color: var(--color-text-secondary);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.note-topic-group[open] > .note-topic-summary .note-topic-summary-chevron {
+    transform: rotate(90deg);
+}
+
+.note-topic-list {
+    list-style: none;
+    margin: 0 0 var(--space-2);
+    padding: 0;
+}
+
+.note-topic-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--touch-min);
+    padding: var(--space-2) var(--space-3) var(--space-2) var(--space-5);
+    border-radius: 10px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font: 400 0.9375rem/1.35 var(--font-sans);
+}
+
+.note-topic-link-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.note-topic-link.is-active {
+    background: var(--color-primary-50);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.note-topic-link-read {
+    flex-shrink: 0;
+    color: var(--color-success);
+}
+
+/* ── Phone reading layout ─────────────────────────────────────────────────── */
+/* One slim top bar, full-bleed text, and a thumb-reach bottom bar that steps
+   aside while reading and returns on scroll-up or at the end of the note. */
+
+@keyframes note-fade-in {
+    from { opacity: 0; }
+}
+
+@media (max-width: 599px) {
+    html.note-reader-phone .app-header {
+        display: none;
+    }
+
+    html.note-reader-phone .page-content {
+        padding: 0;
+        max-width: none;
+    }
+
+    .note-page:not(.note-page--fullscreen) {
+        position: relative;
+        height: 100dvh;
+    }
+
+    /* Opacity only: a lingering transform would trap the fixed-position sheets */
+    .note-page.animate-fade-in {
+        animation: note-fade-in 0.24s ease-out both;
+    }
+
+    .note-topbar {
+        position: relative;
+        display: grid;
+        grid-template-columns: var(--touch-min) minmax(0, 1fr) var(--touch-min);
+        align-items: center;
+        gap: var(--space-1);
+        margin: 0;
+        padding: max(var(--space-1), env(safe-area-inset-top)) var(--space-1) var(--space-1);
+        border-radius: 0;
+        border-bottom: 1px solid var(--color-border-light);
+        background: var(--color-bg);
+        flex-shrink: 0;
+        z-index: 5;
+    }
+
+    .note-topbar-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+        min-width: 0;
+        padding: var(--space-1) var(--space-2);
+        border: none;
+        border-radius: 10px;
+        background: none;
+        color: inherit;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .note-topbar .note-toolbar-title {
+        max-width: 100%;
+        margin: 0;
+        font-size: 1.125rem;
+        line-height: 1.2;
+        color: var(--color-text);
+    }
+
+    .note-topbar-meta {
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font: 500 0.75rem/1.3 var(--font-sans);
+        color: var(--color-text-secondary);
+    }
+
+    .note-read-progress--topbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 2px;
+        margin: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .note-read-progress--topbar .note-read-progress-fill {
+        background: var(--color-primary);
+        border-radius: 0;
+    }
+
+    .note-topbar .note-overflow-menu {
+        min-width: 13rem;
+    }
+
+    .note-page:not(.note-page--fullscreen) .note-body {
+        margin: 0;
+        gap: 0;
+    }
+
+    .note-page:not(.note-page--fullscreen) .note-scroll-area {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background: var(--color-bg);
+        padding-bottom: calc(64px + env(safe-area-inset-bottom));
+        overscroll-behavior-y: contain;
+        scroll-padding-top: var(--space-4);
+    }
+
+    .note-page:not(.note-page--fullscreen) .note-scroll-top-btn {
+        display: none;
+    }
+
+    /* Reading surface */
+    .note-page .nb-root {
+        padding: 1.25rem 1.25rem 1.5rem;
+        gap: 1rem;
+        font-size: 1rem;
+        line-height: 1.72;
+    }
+
+    .note-page .nb-h2 {
+        font-size: 1.5rem;
+        margin-top: 1.25rem;
+    }
+
+    .note-page .nb-h3 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .note-page .nb-callout-body,
+    .note-page .nb-objective p,
+    .note-page .nb-summary p {
+        font-size: 0.9375rem;
+    }
+
+    .note-page .nb-callout-worked .nb-callout-body {
+        font-size: 0.8125rem;
+    }
+
+    .note-page .nb-svg-figure {
+        border: none;
+        padding: var(--space-2) 0;
+        background: transparent;
+    }
+
+    /* End of note: finish + continue */
+    .note-page:not(.note-page--fullscreen) .note-footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3);
+        margin: 0 1.25rem 1.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--color-border-light);
+    }
+
+    .note-finish-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        min-height: 48px;
+        border: 1px solid var(--color-border);
+        border-radius: 14px;
+        background: var(--color-surface);
+        color: var(--color-text);
+        font: 600 0.9375rem/1 var(--font-sans);
+        cursor: pointer;
+        transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .note-finish-btn.is-done {
+        background: var(--color-success-light);
+        border-color: color-mix(in srgb, var(--color-success) 35%, transparent);
+        color: var(--color-success);
+    }
+
+    .note-page .btn-next-subtopic {
+        width: 100%;
+        align-items: flex-start;
+        box-shadow: none;
+        border-radius: 14px;
+    }
+
+    .note-page .btn-next-subtopic span {
+        color: var(--color-text-secondary);
+    }
+
+    .note-page .btn-next-subtopic strong {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-1);
+        font-size: 1.125rem;
+        line-height: 1.3;
+    }
+
+    /* Bottom bar */
+    .note-bottombar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 6;
+        display: flex;
+        gap: var(--space-1);
+        padding: var(--space-1) var(--space-2) max(var(--space-1), env(safe-area-inset-bottom));
+        border-top: 1px solid var(--color-border-light);
+        background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+        -webkit-backdrop-filter: blur(16px) saturate(1.3);
+        backdrop-filter: blur(16px) saturate(1.3);
+        transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+    }
+
+    .note-bottombar.is-hidden {
+        transform: translateY(calc(100% + 1px));
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .note-bottombar-btn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        min-height: 52px;
+        padding: 0;
+        border: none;
+        border-radius: 12px;
+        background: none;
+        color: var(--color-text-secondary);
+        font: 600 0.6875rem/1.1 var(--font-sans);
+        cursor: pointer;
+        transition: color var(--transition-fast), background var(--transition-fast);
+    }
+
+    .note-bottombar-btn:active:not(:disabled) {
+        background: var(--color-bg-secondary);
+    }
+
+    .note-bottombar-btn.is-active {
+        color: var(--color-primary);
+    }
+
+    .note-bottombar-btn:disabled {
+        opacity: 0.35;
+        cursor: default;
+    }
+
+    /* Sheets sit above the bottom bar */
+    .note-sheet {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+    }
+
+    .note-sheet-header {
+        padding: 0 var(--space-2) var(--space-2) var(--space-4);
+    }
+
+    .note-sheet-title {
+        margin: 0;
+        font: 700 1.0625rem/1.3 var(--font-sans);
+    }
+
+    .recall-prompt {
+        font-size: 1rem;
+    }
+
+    /* Recall on phones is a full-screen dialog, not the 300px inline panel */
+    .recall-panel.recall-panel--modal {
+        height: 100dvh;
+        width: auto;
+        border-radius: 0;
+        background: var(--color-bg);
+    }
+
+    .recall-panel--modal .recall-cue-card {
+        padding: 1.25rem;
+    }
+
+    .recall-panel--modal .recall-nav {
+        padding: var(--space-3) var(--space-4) max(var(--space-3), env(safe-area-inset-bottom));
+        background: var(--color-bg);
+    }
+
+    .recall-panel--modal .recall-nav .btn {
+        min-height: var(--touch-min);
+        padding-inline: var(--space-4);
+    }
+
+    .recall-panel--modal .recall-dots {
+        gap: 0;
+    }
+
+    /* Small visible dot, full 32px tap area */
+    .recall-panel--modal .recall-dot {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        border-radius: 50%;
+        background: transparent;
+        position: relative;
+    }
+
+    .recall-panel--modal .recall-dot::after {
+        content: '';
+        position: absolute;
+        inset: 11px;
+        border-radius: 50%;
+        background: var(--color-border);
+        transition: background var(--transition-fast), inset var(--transition-fast);
+    }
+
+    .recall-panel--modal .recall-dot.done::after {
+        background: var(--color-success);
+    }
+
+    .recall-panel--modal .recall-dot.active::after {
+        inset: 9px;
+        background: var(--color-primary);
+    }
+
+    .recall-panel--modal .recall-answer-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 599px) and (prefers-reduced-motion: reduce) {
+    .note-bottombar,
+    .note-page.animate-fade-in {
+        transition: none;
+        animation: none;
+    }
+}
+
+/* ── Desktop reading layout: outline | reading column | on this page ─────── */
+
+@media (min-width: 600px) {
+    .note-toolbar--desktop {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: var(--space-4);
+        flex-wrap: wrap;
+        margin: 0 0 var(--space-5);
+        padding: 0 0 var(--space-4);
+        border: none;
+        border-bottom: 1px solid var(--color-border-light);
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .note-toolbar--desktop .note-toolbar-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-1);
+        min-width: 0;
+    }
+
+    .note-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font: 500 0.8125rem/1.3 var(--font-sans);
+        color: var(--color-text-secondary);
+    }
+
+    .note-breadcrumb a {
+        color: var(--color-text-secondary);
+        text-decoration: none;
+    }
+
+    .note-breadcrumb a:hover {
+        color: var(--color-primary);
+    }
+
+    .note-toolbar--desktop .note-toolbar-title {
+        margin: 0;
+        max-width: none;
+        font-size: 1.75rem;
+        line-height: 1.15;
+        white-space: normal;
+        color: var(--color-text);
+    }
+
+    .note-toolbar--desktop .note-toolbar-right {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        flex-wrap: wrap;
+    }
+
+    .note-page:not(.note-page--fullscreen) .note-body {
+        margin: 0;
+        gap: var(--space-6);
+    }
+
+    .note-page:not(.note-page--fullscreen) .note-scroll-area {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .note-page:not(.note-page--fullscreen) .nb-root {
+        max-width: 700px;
+        padding: var(--space-2) 0 var(--space-8);
+    }
+
+    .note-rail-heading {
+        margin: 0 0 var(--space-2);
+        padding: 0 var(--space-3);
+        font: 600 0.8125rem/1.3 var(--font-sans);
+        color: var(--color-text-secondary);
+    }
+
+    .note-outline-rail {
+        width: 240px;
+        flex-shrink: 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding-right: var(--space-1);
+    }
+
+    .note-outline-rail .note-topic-nav {
+        padding: 0;
+    }
+
+    .note-outline-rail .note-topic-summary {
+        min-height: 44px;
+        font-size: 0.875rem;
+    }
+
+    .note-outline-rail .note-topic-link {
+        min-height: 36px;
+        padding: 6px var(--space-2) 6px var(--space-4);
+        font-size: 0.875rem;
+    }
+
+    .note-side-rail {
+        width: 208px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-6);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .note-toc.note-toc--rail {
+        width: auto;
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .note-toc--rail .note-toc-header {
+        margin: 0;
+        padding: 0 var(--space-3) var(--space-2);
+        border: none;
+        font: 600 0.8125rem/1.3 var(--font-sans);
+        text-transform: none;
+        letter-spacing: 0;
+        color: var(--color-text-secondary);
+    }
+
+    .note-toc--rail .note-toc-item.level-2,
+    .note-toc--rail .note-toc-item.level-3 {
+        padding-left: 0;
+    }
+
+    .note-toc--rail .note-toc-link {
+        padding: 6px var(--space-3);
+        border-radius: 8px;
+        font: 400 0.875rem/1.35 var(--font-sans);
+        white-space: normal;
+    }
+
+    .note-toc--rail .note-toc-link.active {
+        background: var(--color-primary-50);
+        color: var(--color-primary);
+        font-weight: 600;
+    }
+
+    .note-study-tools.note-study-tools--rail {
+        max-width: none;
+        margin: 0;
+        padding: var(--space-4) 0 0;
+        border-top: 1px solid var(--color-border-light);
+    }
+
+    .note-study-tools--rail .student-tools-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-1);
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .note-page .recall-panel {
+        width: 280px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .note-toolbar--desktop .note-btn-label {
+        display: none;
+    }
+}
+
+/* Recall as a dialog always fills the screen (the 320px inline panel height must not apply) */
+.recall-panel.recall-panel--modal {
+    height: 100dvh;
+    width: auto;
+    border-radius: 0;
 }

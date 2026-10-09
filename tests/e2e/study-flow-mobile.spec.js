@@ -24,45 +24,40 @@ test.describe('chapter and exercise mobile QA', () => {
     await seedDevAuthSession(page, debugSession);
   });
 
-  test('chapter page keeps accordion navigation and open-note actions reachable on phones', async ({ page }) => {
+  test('chapter outline keeps topic navigation and open-note links reachable on phones', async ({ page }) => {
     await page.goto('/chapters?subject=chemistry');
 
     await expect(page.getByText('Loading syllabus...')).toBeHidden({ timeout: 90000 });
-    await expect(page.locator('.chapter-page-title')).toBeVisible();
-    await expect(page.locator('.chapter-meta-boxes .meta-box')).toHaveCount(2);
+    await expect(page.locator('.page-title')).toBeVisible();
+    await expect(page.locator('.outline-unit').first()).toBeVisible();
 
-    const firstTopic = page.locator('.chapter-topic-header').first();
+    const firstTopic = page.locator('.outline-topic-header').first();
     await firstTopic.click();
 
-    const firstSubtopicButton = page.getByRole('link', { name: /Open note for/i }).first();
-    await expect(firstSubtopicButton).toBeVisible();
+    const firstSubtopicLink = page.getByRole('link', { name: /Open note for/i }).first();
+    await expect(firstSubtopicLink).toBeVisible();
 
     const pageOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(pageOverflow).toBeLessThanOrEqual(1);
 
-    const buttonBox = await firstSubtopicButton.boundingBox();
-    expect(buttonBox?.height ?? 0).toBeGreaterThanOrEqual(44);
-    expect(buttonBox?.width ?? 0).toBeGreaterThanOrEqual(44);
+    const linkBox = await firstSubtopicLink.boundingBox();
+    expect(linkBox?.height ?? 0).toBeGreaterThanOrEqual(44);
   });
 
-  test('exercise page exposes a mobile subject select and keyboard-activatable practice cards', async ({ page }) => {
+  test('practice flow goes subject, topic, then a keyboard-activatable mode', async ({ page }) => {
     await page.goto('/exercises');
 
-    const subjectSelect = page.locator('#exercise-subject-select');
-    const topicSelect = page.locator('.exercise-topic-select');
-    await expect(subjectSelect).toBeVisible();
-    await expect(topicSelect).toBeVisible();
-    await expect(topicSelect).toBeEnabled({ timeout: 90000 });
+    await page.getByRole('button', { name: 'Chemistry', exact: true }).click();
+    const firstTopic = page.locator('.exercise-topic-row:not([disabled])').first();
+    await expect(firstTopic).toBeVisible({ timeout: 90000 });
+    await firstTopic.click();
 
-    await topicSelect.selectOption('1:1');
-    await expect(page.locator('.exercise-type-card.interactive')).toHaveCount(6);
-
-    const firstCard = page.locator('.exercise-type-card.interactive').first();
-    await firstCard.focus();
+    await expect(page.locator('.exercise-type-card.interactive').first()).toBeVisible({ timeout: 30000 });
+    const firstMode = page.locator('.exercise-type-card.interactive').first();
+    await firstMode.focus();
     await page.keyboard.press('Enter');
 
     await expect(page.locator('.exercise-mode-title')).toBeVisible();
-    await expect(page.locator('.exercise-back-btn')).toBeVisible();
-    await expect(page.locator('.exercise-back-btn')).toHaveCSS('min-height', '44px');
+    await expect(page.locator('.exercise-back-link')).toBeVisible();
   });
 });

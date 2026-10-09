@@ -81,15 +81,6 @@ export const note_biology_1_2_11 = {
         "title": "Nucleotide Components",
         "text": "A DNA mononucleotide strictly has a deoxyribose sugar, a phosphate group, and a nitrogenous base. Phosphodiester bonds form between the sugar and phosphate to create the sugar-phosphate backbone."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "key",
-        "title": "Nucleotide Components",
-        "text": "A DNA mononucleotide strictly has a deoxyribose sugar, a phosphate group, and a nitrogenous base. Phosphodiester bonds form between the sugar and phosphate to create the sugar-phosphate backbone."
-      }
     }
   ],
   "recall": {

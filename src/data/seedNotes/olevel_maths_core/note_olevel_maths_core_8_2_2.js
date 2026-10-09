@@ -36,10 +36,10 @@ export const note_olevel_maths_core_8_2_2 = {
   <circle cx="245" cy="110" r="75" fill="#1e3a8a" fill-opacity="0.7" stroke="#3b82f6" stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="105" y="90"  text-anchor="middle" fill="#ef4444" font-weight="bold" font-size="14">A</text>
-  <text x="95"  y="108" text-anchor="middle" fill="#374151" font-size="12">Football</text>
+  <text x="105" y="90" text-anchor="middle" fill="#ef4444" font-weight="bold" font-size="14" style="font-size: 12px;">A: Football</text>
 
-  <text x="295" y="90"  text-anchor="middle" fill="#3b82f6" font-weight="bold" font-size="14">B</text>
+
+  <text x="295" y="90" text-anchor="middle" fill="#3b82f6" font-weight="bold" font-size="14">B</text>
   <text x="305" y="108" text-anchor="middle" fill="#374151" font-size="12">Tennis</text>
 
   <!-- Numbers in regions -->
@@ -50,13 +50,13 @@ export const note_olevel_maths_core_8_2_2 = {
   <!-- B only (right region) -->
   <text x="280" y="118" text-anchor="middle" fill="#3b82f6" font-size="22" font-weight="bold">14</text>
   <!-- Outside both (corners) -->
-  <text x="45"  y="185" text-anchor="middle" fill="#9ca3af" font-size="18" font-weight="bold">6</text>
+  <text x="45" y="185" text-anchor="middle" fill="#9ca3af" font-size="18" font-weight="bold">6</text>
 
   <!-- Region annotation labels -->
   <text x="120" y="150" text-anchor="middle" fill="#9ca3af" font-size="10">only A</text>
   <text x="200" y="150" text-anchor="middle" fill="#9ca3af" font-size="10">A∩B</text>
   <text x="280" y="150" text-anchor="middle" fill="#9ca3af" font-size="10">only B</text>
-  <text x="45"  y="198" text-anchor="middle" fill="#9ca3af" font-size="10">neither</text>
+  <text x="45" y="198" text-anchor="middle" fill="#9ca3af" font-size="10">neither</text>
 </svg>`,
       },
     },

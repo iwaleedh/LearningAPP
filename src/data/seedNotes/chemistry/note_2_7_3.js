@@ -12,6 +12,21 @@ export const note_chemistry_2_7_3 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Make fair boiling-point comparisons",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Compare substances of similar size before attributing a boiling-point difference to a different force. All molecules experience London forces, so a large non-polar molecule can boil above a much smaller polar one. Among similar-sized molecules, hydrogen bonding often gives a substantial additional attraction. For alkane isomers, electron counts are the same and molecular contact provides the explanation.<br/><br/>Melting is more sensitive than boiling to molecular symmetry and packing in a crystal. A compact, symmetrical molecule may pack well and have a comparatively high melting point even if its boiling point is lower than a less-branched isomer. Therefore a branching explanation for boiling should not be applied mechanically to melting."
+  }
+},
+{
             id: 'callout-vap',
             type: 'callout',
             data: {
@@ -86,19 +101,89 @@ export const note_chemistry_2_7_3 = {
             },
             terms: ['Hydrogen halide']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For two C₅H₁₂ isomers, pentane has more intermolecular contact than 2,2-dimethylpropane and generally the higher boiling point. For ethanol and its ether isomer, similar formulae make hydrogen bonding the decisive extra interaction in ethanol. In both comparisons, name the particles and the relevant intermolecular attraction."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not rank every alcohol above every alkane. Size, shape and all attractions matter. Avoid treating melting and boiling as interchangeable measures of intermolecular strength."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why compare similar-sized molecules when discussing force type?",
+        "checked": false
+      },
+      {
+        "text": "Why does branching often lower alkane boiling points?",
+        "checked": false
+      },
+      {
+        "text": "Why can melting-point trends be less regular?",
+        "checked": false
+      },
+      {
+        "text": "What is the final link in a boiling-point explanation?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Compare substances of similar size before attributing a boiling-point difference to a different force. All molecules experience London forces, so a large non-polar molecule can boil above a much smaller polar one. Among similar-sized molecules, hydrogen bonding often gives a substantial additional attraction. For alkane isomers, electron counts are the same and molecular contact provides the explanation."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-vap', prompt: 'Define enthalpy of vaporisation and explain what it provides a direct measure of.' },
-            { id: 'c2', blockId: 'p-alkanes', prompt: 'Explain why the boiling point of alkanes increases as the carbon chain gets longer.' },
-            { id: 'c3', blockId: 'callout-branching', prompt: 'Which has a higher boiling point: pentane or 2,2-dimethylpropane? Explain your answer.' },
-            { id: 'c4', blockId: 'table-groups', prompt: 'Place the following in order of increasing boiling point (assuming similar molar mass): an alkane, a carboxylic acid, an alcohol, a ketone. Give reasons.' },
-            { id: 'c5', blockId: 'callout-halides', prompt: 'Explain the trend in boiling points of the hydrogen halides from HCl to HI.' }
-        ],
-        summaryText: 'Enthalpy of vaporisation directly measures IM force strength. Alkanes: longer chain = more electrons = stronger London forces = higher BP. Branching lowers BP due to less surface area contact. Functional groups: Alkane < Ketone < Alcohol < Carboxylic acid. Hydrogen halides: HF is highest (H-bonds), then BP drops for HCl but steadily increases to HI because increasing London forces (more electrons) outweigh decreasing permanent dipoles.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why compare similar-sized molecules when discussing force type?",
+      "answer": "Size and polarisability also change London forces and can outweigh a simple difference in force category."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why does branching often lower alkane boiling points?",
+      "answer": "It reduces surface contact between molecules of the same formula."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why can melting-point trends be less regular?",
+      "answer": "Crystal packing and molecular symmetry affect melting as well as intermolecular attractions."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What is the final link in a boiling-point explanation?",
+      "answer": "Stronger attractions require more energy to separate molecules, giving a higher boiling temperature."
+    }
+  ],
+  "summaryText": "Compare substances of similar size before attributing a boiling-point difference to a different force. All molecules experience London forces, so a large non-polar molecule can boil above a much smaller polar one. Among similar-sized molecules, hydrogen bonding often gives a substantial additional attraction. For alkane isomers, electron counts are the same and molecular contact provides the explanation.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_7_3;

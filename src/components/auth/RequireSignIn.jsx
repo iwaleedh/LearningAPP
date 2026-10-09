@@ -1,6 +1,6 @@
 import { Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth.js';
-import { buildProtectedRouteState } from './accessControl.js';
+import { buildProtectedRouteState, AUTH_GATING_HALTED } from './accessControl.js';
 
 export default function RequireSignIn({
   children,
@@ -9,6 +9,10 @@ export default function RequireSignIn({
 }) {
   const { canSignIn, isLoaded, isSignedIn } = useAuth();
   const location = useLocation();
+
+  if (AUTH_GATING_HALTED) {
+    return children;
+  }
 
   if (!isLoaded) {
     return <div className="card animate-fade-in">Checking access...</div>;

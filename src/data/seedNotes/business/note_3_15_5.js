@@ -11,7 +11,7 @@ export const note_business_3_15_5 = {
       { text: '**Higher Profit Margins:** If prices are maintained while unit cost falls, profit margins expand.' },
       { text: '**Wage Demands:** Increases in productivity often justify higher employee wages without driving up overall costs.' }
     ] } },
-    { id: 'h-2', type: 'heading', data: { text: 'Unit Labour Cost', level: 2 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Unit Labour Cost', level: 2 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'Unit labour cost is another vital metric that highlights the wage expense required to produce a single item.' } },
     { id: 'call-2', type: 'callout', data: { style: 'key', title: 'Formula', text: 'Unit Labour Cost = Total Labour Costs ÷ Total Output' } },
     { id: 'tbl-1', type: 'comparisonTable', data: {

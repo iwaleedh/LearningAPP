@@ -12,7 +12,7 @@ export const note_business_3_12_7 = {
       {text: 'The business runs out of cash to pay daily liabilities and collapses into insolvency, despite being profitable on paper.'}
     ] } },
     { id: 'call-1', type: 'callout', data: { style: 'warning', title: 'Fatal Flaw', text: 'Profitable businesses can, and do, go bankrupt due to overtrading. Cash flow is the immediate reality; profit is merely a theoretical calculation.' } },
-    { id: 'h-2', type: 'heading', data: { text: 'Communication and Organisational Issues', level: 3 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Communication and Organisational Issues', level: 3 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'Rapid growth dramatically stretches the span of control and deepens the organisational hierarchy.' } },
     { id: 'p-4', type: 'paragraph', data: { text: 'As new layers of management are quickly added to cope with output, messages become distorted (the "Chinese whispers" effect). Fast decision-making becomes impossible as requests must pass through numerous bureaucratic committees.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Growing too fast can trigger lethal cash-flow shortages (overtrading) and paralyse decision-making through bloated communication channels.' } },

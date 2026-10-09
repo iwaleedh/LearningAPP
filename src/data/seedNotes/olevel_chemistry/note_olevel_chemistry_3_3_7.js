@@ -46,7 +46,7 @@ export const note_olevel_chemistry_3_3_7 = {
     <!-- Labels -->
     <!-- Top: moles (n) -->
     <text x="0" y="55" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">n</text>
-    <text x="0" y="70" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
+    <text x="0" y="82" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
 
     <!-- Bottom Left: concentration (c) -->
     <text x="-50" y="130" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">c</text>
@@ -54,7 +54,7 @@ export const note_olevel_chemistry_3_3_7 = {
 
     <!-- Bottom Right: volume (V) -->
     <text x="50" y="130" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">V</text>
-    <text x="50" y="145" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(dm³)</text>
+    <text x="50" y="157" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(dm³)</text>
 
     <!-- Operators -->
     <text x="0" y="130" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="#db2777" text-anchor="middle">×</text>

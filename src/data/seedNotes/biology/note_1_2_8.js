@@ -68,15 +68,6 @@ export const note_biology_1_2_8 = {
         "title": "Tertiary Bonds",
         "text": "When listing bonds maintaining tertiary structure, be specific: state hydrogen bonds, ionic bonds, and disulfide bridges (which only form between cysteine R-groups)."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "tip",
-        "title": "Tertiary Bonds",
-        "text": "When listing bonds maintaining tertiary structure, be specific: state hydrogen bonds, ionic bonds, and disulfide bridges (which only form between cysteine R-groups)."
-      }
     }
   ],
   "recall": {

@@ -26,14 +26,16 @@ test.describe('dashboard and utility pages mobile QA', () => {
   test('home page renders mobile dashboard cards without provider errors or overflow', async ({ page }) => {
     await page.goto('/');
 
-    await expect(page.locator('.welcome-banner')).toBeVisible();
-    await expect(page.locator('.stats-grid .stat-card')).toHaveCount(4);
-    await expect(page.locator('.actions-grid .action-card')).toHaveCount(4);
+    await expect(page.locator('.home-greeting')).toBeVisible();
+    await expect(page.locator('.continue-card')).toBeVisible();
+    await expect(page.getByRole('progressbar', { name: 'Daily note goal' })).toBeVisible();
+    await expect(page.locator('.subject-grid .subject-tile').first()).toBeVisible();
+    await expect(page.locator('.practice-list .practice-row').first()).toBeVisible();
 
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(overflow).toBeLessThanOrEqual(1);
 
-    const actionButton = page.locator('.welcome-actions .btn').first();
+    const actionButton = page.locator('.continue-card-action');
     const box = await actionButton.boundingBox();
     expect(box?.height ?? 0).toBeGreaterThanOrEqual(44);
   });
@@ -69,7 +71,7 @@ test.describe('dashboard and utility pages mobile QA', () => {
     await page.goto('/settings');
 
     await expect(page.locator('.settings-profile-card')).toBeVisible();
-    await expect(page.locator('.toggle-switch')).toBeVisible();
+    await expect(page.getByRole('group', { name: 'Theme' })).toBeVisible();
 
     const resetButton = page.getByRole('button', { name: /reset/i }).first();
     const box = await resetButton.boundingBox();

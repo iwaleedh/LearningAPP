@@ -8,6 +8,21 @@ export const note_chemistry_4_14_5 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Calculate mole changes before using the buffer ratio",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "An acidic buffer contains appreciable amounts of a weak acid HA and its conjugate base A⁻. Added H⁺ is removed mainly by A⁻; added OH⁻ is removed mainly by HA. Both components are needed, and buffer capacity is limited by their amounts. The pH changes slightly rather than remaining perfectly fixed.<br/><br/>For a buffer after mixing or adding a strong acid/base, do the stoichiometric neutralisation first. Then use pH ≈ pKa + log₁₀([A⁻]/[HA]) under the usual approximation. When both species occupy the same total volume, the concentration ratio equals the mole ratio. Dilution leaves this ratio approximately unchanged, but reduces capacity and can eventually invalidate assumptions at extreme dilution."
+  }
+},
+{
       id: 'h-buffer-def',
       type: 'heading',
       data: { text: 'What is a Buffer Solution?', level: 2 }
@@ -347,13 +362,6 @@ export const note_chemistry_4_14_5 = {
       terms: []
     },
     {
-      id: 'summary-buffer',
-      type: 'summary',
-      data: {
-        text: 'Buffer minimises (NOT prevents) pH change. Acidic buffer = weak acid + conjugate base salt. Made by direct mix or partial neutralisation with excess weak acid. Buffer action: A⁻ + H⁺ → HA (resists acid); HA + OH⁻ → A⁻ + H₂O (resists alkali). [H⁺] = Ka × [acid]/[salt]. Most effective at pH ≈ pKa ± 1. Blood pH 7.35–7.45: H₂CO₃/HCO₃⁻, ratio ≈20:1. Food buffers: pH < 4.4 or > 9 prevents microorganism growth.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -371,54 +379,89 @@ export const note_chemistry_4_14_5 = {
         text: "If acid (H\u207a) is added \u2192 A\u207b + H\u207a \u2192 HA consumes the added H\u207a. If base (OH\u207b) is added \u2192 HA + OH\u207b \u2192 A\u207b + H\u2082O consumes the base. The buffer works by having large reservoirs of BOTH HA and A\u207b to neutralise small additions of acid or base."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "A buffer initially contains 0.0200 mol HA and 0.0300 mol A⁻ with pKa = 4.76. Add 0.0050 mol HCl: A⁻ falls to 0.0250 mol and HA rises to 0.0250 mol. The ratio is 1, so <strong>pH ≈ 4.76</strong>. Using the original ratio would wrongly ignore the neutralisation."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not put the amount of added strong acid directly into Ka. If one buffer component is consumed completely, the buffer equation is no longer valid for that situation."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How does an acidic buffer remove added H⁺?",
+        "checked": false
+      },
+      {
+        "text": "What is calculated before applying the buffer equation after an addition?",
+        "checked": false
+      },
+      {
+        "text": "When does pH approximately equal pKa?",
+        "checked": false
+      },
+      {
+        "text": "Does dilution leave buffer capacity unchanged?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "An acidic buffer contains appreciable amounts of a weak acid HA and its conjugate base A⁻. Added H⁺ is removed mainly by A⁻; added OH⁻ is removed mainly by HA. Both components are needed, and buffer capacity is limited by their amounts. The pH changes slightly rather than remaining perfectly fixed."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-buffer-intro',
-        prompt: 'Give the exact exam definition of a buffer solution. What key word must you use instead of \'prevents\'?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'list-buffer-make',
-        prompt: 'What are the two ways to make an acidic buffer? Which requires excess weak acid and why?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-buffer-mechanism',
-        prompt: 'Write the two equations that show how a buffer resists addition of (a) acid and (b) alkali.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'callout-exam-type2',
-        prompt: 'In the Type 2 buffer calculation: 55 cm³ of 0.5 mol dm⁻³ CH₃COOH + 25 cm³ of 0.35 mol dm⁻³ NaOH. Walk through the steps to find pH.'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'callout-target-ph-worked',
-        prompt: 'How do you calculate the acid:salt ratio needed to make a buffer of a specific target pH?'
-      },
-      {
-        id: 'cue-6',
-        blockId: 'p-blood-buffer',
-        prompt: 'State the exact blood pH range. Which buffer system maintains it? What happens when lactic acid is produced during exercise?'
-      },
-      {
-        id: 'cue-7',
-        blockId: 'list-food-buffers',
-        prompt: 'What pH values prevent microorganism growth in food? How does protein content affect buffer capacity?'
-      },
-      {
-        id: 'cue-8',
-        blockId: 'list-alkaline-action',
-        prompt: 'What components make up an alkaline buffer? How does an ammonia/ammonium buffer react when an acid (H⁺) is added?'
-      }
-    ],
-    summaryText: 'Buffer minimises (not prevents) pH change. Acidic buffer: weak acid + conjugate base salt. Alkaline buffer: weak base + conjugate acid salt. Two exam types: acid+salt, partial neutralisation. [H⁺] = Ka × [acid]/[salt]. Blood pH 7.35–7.45: H₂CO₃/HCO₃⁻ at 20:1 ratio. Food: pH < 4.4 or > 9 prevents microbial growth. Buffer capacity increases with concentration and protein content.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How does an acidic buffer remove added H⁺?",
+      "answer": "The conjugate base reacts: A⁻ + H⁺ → HA."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is calculated before applying the buffer equation after an addition?",
+      "answer": "The neutralisation mole changes, giving the remaining HA and A⁻."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "When does pH approximately equal pKa?",
+      "answer": "When conjugate base and weak acid have equal concentrations."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does dilution leave buffer capacity unchanged?",
+      "answer": "No. The pH ratio may change little, but fewer buffer species per unit volume reduce capacity."
+    }
+  ],
+  "summaryText": "An acidic buffer contains appreciable amounts of a weak acid HA and its conjugate base A⁻. Added H⁺ is removed mainly by A⁻; added OH⁻ is removed mainly by HA. Both components are needed, and buffer capacity is limited by their amounts. The pH changes slightly rather than remaining perfectly fixed.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -428,5 +471,5 @@ export const note_chemistry_4_14_5 = {
       source: 'A-Level Chemistry Specification (WCH14)',
       tags: ['buffer', 'Henderson-Hasselbalch', 'pH regulation', 'blood pH']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

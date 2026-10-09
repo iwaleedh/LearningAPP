@@ -539,12 +539,6 @@ export async function importGuestDataToAccount() {
     }
     importInProgress = true;
 
-    const [notes, flashcards, assets] = await Promise.all([
-        getAllGuestNotes(),
-        getAllGuestFlashcards(),
-        getAllGuestNoteAssets(),
-    ]);
-
     const result = {
         notesImported: 0,
         flashcardsImported: 0,
@@ -553,6 +547,12 @@ export async function importGuestDataToAccount() {
     };
 
     try {
+        const [notes, flashcards, assets] = await Promise.all([
+            getAllGuestNotes(),
+            getAllGuestFlashcards(),
+            getAllGuestNoteAssets(),
+        ]);
+
         for (const note of notes) {
             try {
                 const normalizedNote = normalizeNoteDocument(note);

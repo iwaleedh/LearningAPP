@@ -10,7 +10,15 @@ export function normalizeDraftValue(value, maxChars) {
 }
 
 function readInitialDraft(key, initialValue) {
-    return readDraftFromStorage(localStorage, key, initialValue);
+    return readDraftFromStorage(getDraftStorage(), key, initialValue);
+}
+
+function getDraftStorage() {
+    try {
+        return localStorage;
+    } catch {
+        return null;
+    }
 }
 
 export function readDraftFromStorage(storage, key, initialValue) {
@@ -50,12 +58,8 @@ export default function useDraftAutosave({
     const dirtyRef = useRef(false);
     const valueRef = useRef(value);
 
-    useEffect(() => {
-        valueRef.current = value;
-    }, [value]);
-
     const saveNow = useCallback((nextValue) => {
-        const result = writeDraftToStorage(localStorage, key, nextValue);
+        const result = writeDraftToStorage(getDraftStorage(), key, nextValue);
         if (result.ok) {
             setLastSavedAt(new Date());
             setStatus(nextValue ? 'saved' : 'idle');
@@ -75,15 +79,13 @@ export default function useDraftAutosave({
     }, [saveNow]);
 
     const setValue = useCallback((nextValue) => {
-        setValueState((prev) => {
-            const resolved = typeof nextValue === 'function' ? nextValue(prev) : nextValue;
-            const normalized = normalizeDraftValue(resolved, maxChars);
-
-            dirtyRef.current = true;
-            setStatus(normalized ? 'saving' : 'idle');
-            setError('');
-            return normalized;
-        });
+        const resolved = typeof nextValue === 'function' ? nextValue(valueRef.current) : nextValue;
+        const normalized = normalizeDraftValue(resolved, maxChars);
+        valueRef.current = normalized;
+        dirtyRef.current = true;
+        setValueState(normalized);
+        setStatus(normalized ? 'saving' : 'idle');
+        setError('');
     }, [maxChars]);
 
     const clear = useCallback(() => {
@@ -99,6 +101,7 @@ export default function useDraftAutosave({
         }
 
         dirtyRef.current = false;
+        valueRef.current = '';
         setValueState('');
         setStatus('idle');
         setLastSavedAt(null);
@@ -134,6 +137,7 @@ export default function useDraftAutosave({
             window.removeEventListener('beforeunload', flush);
             document.removeEventListener('visibilitychange', onVisibilityChange);
             if (timerRef.current) clearTimeout(timerRef.current);
+            flush();
         };
     }, [flush]);
 

@@ -48,7 +48,7 @@ export const note_olevel_chemistry_10_10_2 = {
   <text x="340" y="44" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">2. Sedimentation</text>
   <text x="340" y="155" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Alum added.</text>
   <text x="340" y="167" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Particles coagulate</text>
-  <text x="340" y="179" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">& sink</text>
+  <text x="340" y="179" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">&amp; sink</text>
 
   <!-- Pipe 2 to 3 -->
   <path d="M 380 70 L 440 70" fill="none" stroke="#64748b" stroke-width="8" />
@@ -67,7 +67,7 @@ export const note_olevel_chemistry_10_10_2 = {
 
   <rect x="435" y="20" width="80" height="20" rx="4" fill="#3b82f6" />
   <text x="475" y="34" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">3. Filtration</text>
-  <text x="475" y="185" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Sand & gravel</text>
+  <text x="475" y="185" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Sand &amp; gravel</text>
   <text x="475" y="197" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">remove fine</text>
   <text x="475" y="209" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">particles</text>
 
@@ -84,7 +84,7 @@ export const note_olevel_chemistry_10_10_2 = {
   <rect x="550" y="10" width="80" height="20" rx="4" fill="#3b82f6" />
   <text x="590" y="24" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4. Chlorination</text>
   <text x="590" y="222" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Kills bacteria</text>
-  <text x="590" y="234" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">(& fluoridation)</text>
+  <text x="590" y="234" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">(&amp; fluoridation)</text>
 
   <!-- Final Pipe to Homes -->
   <path d="M 620 180 L 680 180" fill="none" stroke="#64748b" stroke-width="8" marker-end="url(#arrow-head-pipe)" />

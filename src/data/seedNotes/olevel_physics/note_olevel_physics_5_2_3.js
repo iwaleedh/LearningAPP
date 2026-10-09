@@ -8,8 +8,8 @@ export const note_olevel_physics_5_2_3 = {
     { id: 'eq-fission', type: 'equation', data: { html: '<sup>235</sup><sub>92</sub>U + <sup>1</sup><sub>0</sub>n &rarr; <sup>141</sup><sub>56</sub>Ba + <sup>92</sup><sub>36</sub>Kr + 3<sup>1</sup><sub>0</sub>n + energy', caption: 'One possible fission reaction: U-235 splits into Ba-141 and Kr-92, releasing 3 neutrons and energy' } },
     { id: 'h-chain', type: 'heading', data: { text: 'Chain Reaction', level: 2 } },
     { id: 'para-chain', type: 'paragraph', data: { text: 'The neutrons released in fission can be absorbed by other U-235 nuclei, triggering further fission events. This is a <strong>chain reaction</strong>. If each fission produces on average one new fission event, the reaction is controlled (as in a nuclear reactor). If more than one new event is triggered per fission, the reaction accelerates exponentially — this is uncontrolled fission, as in a nuclear bomb.' } },
-    { id: 'svg-chain', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" width="480" height="260">
-  <rect width="480" height="260" fill="#532407" rx="8"/>
+    { id: 'svg-chain', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 260" width="480" height="260">
+  <rect width="494" height="260" fill="#532407" rx="8"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Nuclear Fission Chain Reaction</text>
   <!-- First nucleus -->
   <circle cx="60" cy="130" r="18" fill="#78350f" stroke="#d97706" stroke-width="2"/>

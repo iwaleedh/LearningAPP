@@ -21,7 +21,7 @@ export const note_physics_5_29_2 = {
       "id": "svg-<strong>fusion</strong>-process",
       "type": "svg",
       "data": {
-        "svg": "<svg viewBox=\"0 0 400 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"100\" cy=\"80\" r=\"15\" fill=\"#F87171\"/><circle cx=\"100\" cy=\"120\" r=\"15\" fill=\"#34D399\"/><path d=\"M 120 100 L 200 100\" stroke=\"#94A3B8\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"100\" r=\"25\" fill=\"#60A5FA\"/><text x=\"230\" y=\"100\" text-anchor=\"middle\" fill=\"white\" font-size=\"12\">He-4</text><path d=\"M 260 100 L 320 100\" stroke=\"#F59E0B\" stroke-width=\"2\"/><text x=\"350\" y=\"105\" fill=\"#F59E0B\" font-weight=\"bold\">Energy</text></svg>",
+        "svg": `<svg viewBox="0 0 413 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto"><circle cx="100" cy="80" r="15" fill="#F87171"/><circle cx="100" cy="120" r="15" fill="#34D399"/><path d="M 120 100 L 200 100" stroke="#94A3B8" stroke-width="2"/><circle cx="230" cy="100" r="25" fill="#60A5FA"/><text x="230" y="100" text-anchor="middle" fill="white" font-size="12">He-4</text><path d="M 260 100 L 320 100" stroke="#F59E0B" stroke-width="2"/><text x="350" y="105" fill="#F59E0B" font-weight="bold">Energy</text></svg>`,
         "caption": "Nuclear <strong>Fusion</strong> Process",
         "terms": []
       }

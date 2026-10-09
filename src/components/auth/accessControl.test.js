@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 import {
   buildAccessNotice,
   buildProtectedRouteState,
-  canAccessLocalLiveClassAsGuest,
   getLocationPath,
   resolvePostAuthRedirect,
   sanitizeRedirectPath,
@@ -11,41 +10,35 @@ import {
 
 test('getLocationPath preserves pathname, search, and hash', () => {
   assert.equal(
-    getLocationPath({ pathname: '/live/abc', search: '?tab=chat', hash: '#latest' }),
-    '/live/abc?tab=chat#latest'
+    getLocationPath({ pathname: '/notes', search: '?subject=chemistry', hash: '#latest' }),
+    '/notes?subject=chemistry#latest'
   );
 });
 
 test('sanitizeRedirectPath only allows in-app paths', () => {
-  assert.equal(sanitizeRedirectPath('/teacher/monitor?tab=live#current'), '/teacher/monitor?tab=live#current');
+  assert.equal(sanitizeRedirectPath('/progress?subject=chemistry#current'), '/progress?subject=chemistry#current');
   assert.equal(sanitizeRedirectPath('https://example.com/teacher', '/settings'), '/settings');
   assert.equal(sanitizeRedirectPath('//example.com/teacher', '/settings'), '/settings');
   assert.equal(sanitizeRedirectPath('javascript:alert(1)', '/settings'), '/settings');
 });
 
-test('canAccessLocalLiveClassAsGuest only allows local live routes when sign-in is unavailable', () => {
-  assert.equal(canAccessLocalLiveClassAsGuest('/live/local_1774966423787_tx2vhb', { canSignIn: false }), true);
-  assert.equal(canAccessLocalLiveClassAsGuest('/live/session-42', { canSignIn: false }), false);
-  assert.equal(canAccessLocalLiveClassAsGuest('/live/local_1774966423787_tx2vhb', { canSignIn: true }), false);
-});
-
 test('buildProtectedRouteState captures the requested page and access details', () => {
   const state = buildProtectedRouteState(
-    { pathname: '/teacher', search: '?tab=live', hash: '#queue' },
+    { pathname: '/admin', search: '?tab=users', hash: '#queue' },
     {
-      reason: 'monitor live teacher sessions',
+      reason: 'manage accounts',
       accessRequired: 'role',
-      requiredRoles: ['teacher'],
+      requiredRoles: ['admin'],
       deniedRole: 'student',
     }
   );
 
   assert.deepEqual(state, {
     focusSection: 'profile',
-    from: '/teacher?tab=live#queue',
+    from: '/admin?tab=users#queue',
     accessRequired: 'role',
-    accessReason: 'monitor live teacher sessions',
-    requiredRoles: ['teacher'],
+    accessReason: 'manage accounts',
+    requiredRoles: ['admin'],
     deniedRole: 'student',
   });
 });
@@ -54,26 +47,26 @@ test('buildAccessNotice describes sign-in requirements and role limits', () => {
   assert.deepEqual(
     buildAccessNotice({
       accessRequired: 'auth',
-      accessReason: 'join a live class',
+      accessReason: 'study subjects',
       canSignIn: true,
     }),
     {
       title: 'Sign-In Required',
-      body: 'You need to sign in to join a live class.',
+      body: 'You need to sign in to study subjects.',
     }
   );
 
   assert.deepEqual(
     buildAccessNotice({
       accessRequired: 'role',
-      accessReason: 'view student live notes',
+      accessReason: 'manage accounts',
       deniedRole: 'student',
-      requiredRoles: ['teacher'],
+      requiredRoles: ['admin'],
       role: 'student',
     }),
     {
       title: 'Access Limited',
-      body: 'This account is currently student. teacher access is required to view student live notes.',
+      body: 'This account is currently student. admin access is required to manage accounts.',
     }
   );
 });
@@ -82,10 +75,10 @@ test('resolvePostAuthRedirect only resumes auth-blocked requests', () => {
   assert.equal(
     resolvePostAuthRedirect({
       accessRequired: 'auth',
-      fromPath: '/live/session-42',
+      fromPath: '/chapters?subject=chemistry',
       fallback: '/settings',
     }),
-    '/live/session-42'
+    '/chapters?subject=chemistry'
   );
 
   assert.equal(

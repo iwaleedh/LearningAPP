@@ -60,7 +60,7 @@ export const note_olevel_physics_4_4_8 = {
 
   <!-- Armature (horizontal bar, pivots left) -->
   <rect x="210" y="80" width="80" height="14" rx="3" fill="#1e293b" stroke="#374151" stroke-width="2"/>
-  <text x="230" y="72" fill="#374151" font-weight="bold">Armature</text>
+  <text x="230" y="54" fill="#374151" font-weight="bold">Armature</text>
   <!-- Pivot point -->
   <circle cx="218" cy="87" r="5" fill="#374151"/>
   <text x="212" y="74" fill="#6b7280">pivot</text>

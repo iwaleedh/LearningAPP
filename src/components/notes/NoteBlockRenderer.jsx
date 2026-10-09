@@ -4,128 +4,17 @@
  * equation, comparisonTable, objective, summary, callout, svg, quote, code.
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useId } from 'react';
 import DOMPurify from 'dompurify';
+import { Target, Square, SquareCheck, NotebookPen, Lightbulb, PencilLine, MessageCircle, TriangleAlert, Search, Cog, Microscope, Scale, Brain } from 'lucide-react';
 import ErrorBoundary from '../ErrorBoundary';
 import './NoteBlockRenderer.css';
+import { prepareSvgMarkup } from './svgMarkup.js';
 
 // Sanitize HTML strings before rendering — defence-in-depth against XSS
 const safe = (html) => DOMPurify.sanitize(html ?? '');
-// SVG sanitization: allow SVG-specific tags/attrs but strip scripts & event handlers
-const safeSvg = (svg, label) => DOMPurify.sanitize(enhanceSvgMarkup(svg ?? '', label), {
-    USE_PROFILES: { svg: true, svgFilters: true },
-    ADD_ATTR: ['role', 'aria-label', 'aria-labelledby', 'focusable', 'preserveAspectRatio', 'class'],
-});
-
 function stripHtml(value) {
     return (value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
-function escapeAttribute(value) {
-    return value
-        .replace(/&/g, '&amp;')
-        .replace(/"/g, '&quot;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-}
-
-function parseSvgMetrics(svg = '') {
-    const viewBoxMatch = svg.match(/viewBox=["']([^"']+)["']/i);
-    const viewBoxParts = viewBoxMatch?.[1]?.trim().split(/\s+/).map(Number) || [];
-    const viewBoxWidth = Number.isFinite(viewBoxParts[2]) ? viewBoxParts[2] : 0;
-    const viewBoxHeight = Number.isFinite(viewBoxParts[3]) ? viewBoxParts[3] : 0;
-    const textCount = (svg.match(/<text\b/gi) || []).length + (svg.match(/<tspan\b/gi) || []).length;
-    const inlineFontSizes = [...svg.matchAll(/font-size=["']([0-9.]+)/gi)].map((match) => Number.parseFloat(match[1]));
-    const styleFontSizes = [...svg.matchAll(/font-size\s*:\s*([0-9.]+)px/gi)].map((match) => Number.parseFloat(match[1]));
-    const fontSizes = [...inlineFontSizes, ...styleFontSizes].filter((size) => Number.isFinite(size));
-    const minFontSize = fontSizes.length ? Math.min(...fontSizes) : null;
-    const isWide = viewBoxWidth > 400;
-    const isDense = textCount >= 26
-        || (viewBoxWidth >= 600 && textCount >= 14 && minFontSize !== null && minFontSize <= 11)
-        || (viewBoxHeight >= 420 && textCount >= 10);
-
-    return {
-        viewBoxWidth,
-        viewBoxHeight,
-        textCount,
-        minFontSize,
-        isWide,
-        isDense,
-    };
-}
-
-function normalizeSvgFontSizes(svg = '', minimum = 10) {
-    let nextSvg = svg.replace(/font-size=(['"])([0-9.]+)(px)?\1/gi, (match, quote, size, unit = '') => {
-        const parsed = Number.parseFloat(size);
-        if (!Number.isFinite(parsed) || parsed >= minimum) return match;
-        const normalized = Number.isInteger(minimum) ? String(minimum) : minimum.toFixed(1).replace(/\.0$/, '');
-        return `font-size=${quote}${normalized}${unit}${quote}`;
-    });
-
-    nextSvg = nextSvg.replace(/font-size\s*:\s*([0-9.]+)px/gi, (match, size) => {
-        const parsed = Number.parseFloat(size);
-        if (!Number.isFinite(parsed) || parsed >= minimum) return match;
-        const normalized = Number.isInteger(minimum) ? String(minimum) : minimum.toFixed(1).replace(/\.0$/, '');
-        return `font-size:${normalized}px`;
-    });
-
-    return nextSvg;
-}
-
-function padSvgViewBox(svg = '') {
-    return svg.replace(/viewBox=(['"])([^"']+)\1/i, (match, quote, rawViewBox) => {
-        const parts = rawViewBox.trim().split(/\s+/).map(Number);
-        if (parts.length !== 4 || parts.some((value) => !Number.isFinite(value))) return match;
-
-        const [x, y, width, height] = parts;
-        const marginX = Math.max(6, Math.min(18, width * 0.03));
-        const marginY = Math.max(6, Math.min(18, height * 0.04));
-        const padded = [
-            Number((x - marginX).toFixed(2)),
-            Number((y - marginY).toFixed(2)),
-            Number((width + marginX * 2).toFixed(2)),
-            Number((height + marginY * 2).toFixed(2)),
-        ];
-
-        return `viewBox=${quote}${padded.join(' ')}${quote}`;
-    });
-}
-
-function enhanceSvgMarkup(svg = '', label = '') {
-    if (!svg.includes('<svg')) return svg;
-
-    const fallbackLabel = stripHtml(label) || 'Chemistry diagram';
-    const escapedLabel = escapeAttribute(fallbackLabel);
-    let nextSvg = normalizeSvgFontSizes(svg, 10);
-    nextSvg = padSvgViewBox(nextSvg);
-
-    nextSvg = nextSvg.replace(/<svg\b([^>]*)>/i, (match, attrs) => {
-        let updatedAttrs = attrs;
-
-        if (!/\bclass=/.test(updatedAttrs)) {
-            updatedAttrs += ' class="nb-inline-svg"';
-        } else {
-            updatedAttrs = updatedAttrs.replace(/class=(['"])(.*?)\1/i, (classMatch, quote, classNames) => {
-                if (classNames.includes('nb-inline-svg')) return classMatch;
-                return `class=${quote}${classNames} nb-inline-svg${quote}`;
-            });
-        }
-
-        if (!/\brole=/.test(updatedAttrs)) updatedAttrs += ' role="img"';
-        if (!/\baria-label=/.test(updatedAttrs) && !/\baria-labelledby=/.test(updatedAttrs)) {
-            updatedAttrs += ` aria-label="${escapedLabel}"`;
-        }
-        if (!/\bfocusable=/.test(updatedAttrs)) updatedAttrs += ' focusable="false"';
-        if (!/\bpreserveAspectRatio=/.test(updatedAttrs)) updatedAttrs += ' preserveAspectRatio="xMidYMid meet"';
-
-        return `<svg${updatedAttrs}>`;
-    });
-
-    if (!/<title[\s>]/i.test(nextSvg)) {
-        nextSvg = nextSvg.replace(/<svg\b[^>]*>/i, (openTag) => `${openTag}<title>${escapedLabel}</title>`);
-    }
-
-    return nextSvg;
 }
 
 // ── Individual block renderers ─────────────────────────────────────────────
@@ -133,7 +22,7 @@ function enhanceSvgMarkup(svg = '', label = '') {
 function ObjectiveBlock({ data }) {
     return (
         <div className="nb-objective">
-            <span className="nb-objective-label">🎯 Learning Objective</span>
+            <span className="nb-objective-label"><Target size={14} aria-hidden="true" /> Learning objective</span>
             <p dangerouslySetInnerHTML={{ __html: safe(data.text) }} />
         </div>
     );
@@ -193,7 +82,7 @@ function ChecklistBlock({ data }) {
                     aria-checked={checked[i]}
                     tabIndex={0}
                 >
-                    <span className="nb-checkbox">{checked[i] ? '✅' : '☐'}</span>
+                    <span className="nb-checkbox" aria-hidden="true">{checked[i] ? <SquareCheck size={20} /> : <Square size={20} />}</span>
                     <span dangerouslySetInnerHTML={{ __html: safe(typeof item === 'object' ? item.text : item) }} />
                 </li>
             ))}
@@ -341,7 +230,7 @@ function ComparisonTableBlock({ data }) {
 function SummaryBlock({ data }) {
     return (
         <div className="nb-summary">
-            <span className="nb-summary-label">📝 Summary</span>
+            <span className="nb-summary-label"><NotebookPen size={14} aria-hidden="true" /> Summary</span>
             <p dangerouslySetInnerHTML={{ __html: safe(data.text) }} />
         </div>
     );
@@ -350,19 +239,21 @@ function SummaryBlock({ data }) {
 function CalloutBlock({ data }) {
     const style = data.style || 'key';
     const styleMap = {
-        key: { icon: '💡', cls: 'nb-callout-key' },
-        worked: { icon: '✏️', cls: 'nb-callout-worked' },
-        tip: { icon: '💬', cls: 'nb-callout-tip' },
-        warning: { icon: '⚠️', cls: 'nb-callout-warning' },
+        key: { Icon: Lightbulb, cls: 'nb-callout-key' },
+        worked: { Icon: PencilLine, cls: 'nb-callout-worked' },
+        tip: { Icon: MessageCircle, cls: 'nb-callout-tip' },
+        warning: { Icon: TriangleAlert, cls: 'nb-callout-warning' },
     };
-    const { icon, cls } = styleMap[style] || styleMap.key;
+    const { Icon, cls } = styleMap[style] || styleMap.key;
+    // Runs of spaces mean the author lined figures up in columns (e.g. accounts layouts).
+    const isAligned = style === 'worked' && / {3,}\S/.test(data.text || '');
     // Render body as HTML so that <strong>, <em>, <br/> etc. are parsed correctly
     const bodyHtml = (data.text || '').replace(/\n/g, '<br/>');
     return (
-        <div className={`nb-callout ${cls}`}>
+        <div className={`nb-callout ${cls}${isAligned ? ' nb-callout--aligned' : ''}`}>
             {data.title && (
                 <div className="nb-callout-title">
-                    <span>{icon}</span> {data.title}
+                    <Icon size={16} aria-hidden="true" className="nb-callout-icon" /> {data.title}
                 </div>
             )}
             <div
@@ -374,23 +265,35 @@ function CalloutBlock({ data }) {
 }
 
 function SvgBlock({ data }) {
-    const metrics = useMemo(() => parseSvgMetrics(data.svg || ''), [data.svg]);
-    const svgClassName = [
-        'nb-svg-container',
-        metrics.isWide ? 'nb-svg-wide' : 'nb-svg-narrow',
-        metrics.isDense ? 'nb-svg-dense' : '',
-    ].filter(Boolean).join(' ');
-    const svgStyle = metrics.isDense && metrics.viewBoxWidth
-        ? { '--nb-svg-min-width': `${Math.min(Math.max(metrics.viewBoxWidth, 640), 920)}px` }
-        : undefined;
-    const accessibleLabel = stripHtml(data.caption) || 'Chemistry diagram';
-
+    const instanceId = useId();
+    const [enlarged, setEnlarged] = useState(false);
+    const accessibleLabel = stripHtml(data.caption) || 'Diagram';
+    const diagram = useMemo(
+        () => prepareSvgMarkup(data.svg || '', accessibleLabel, instanceId),
+        [data.svg, accessibleLabel, instanceId],
+    );
+    const svgStyle = diagram.minWidth ? { '--nb-svg-min-width': `${diagram.minWidth}px` } : undefined;
     return (
         <figure className="nb-svg-figure" aria-label={accessibleLabel}>
+            {diagram.minWidth > 0 && (
+                <div className="nb-svg-controls">
+                    <button
+                        type="button"
+                        className="btn btn-ghost btn-sm nb-svg-size-toggle"
+                        aria-pressed={enlarged}
+                        onClick={() => setEnlarged(value => !value)}
+                    >
+                        {enlarged ? 'Fit diagram to screen' : 'Enlarge diagram'}
+                    </button>
+                </div>
+            )}
             <div
-                className={svgClassName}
+                className={`nb-svg-container${enlarged ? ' nb-svg-container--enlarged' : ''}`}
                 style={svgStyle}
-                dangerouslySetInnerHTML={{ __html: safeSvg(data.svg, accessibleLabel) }}
+                tabIndex={0}
+                role="region"
+                aria-label={`${accessibleLabel}.${enlarged ? ' Scroll horizontally to see the full diagram.' : ' Fitted to screen.'}`}
+                dangerouslySetInnerHTML={{ __html: diagram.markup }}
             />
             {data.caption && <figcaption className="nb-svg-caption">{data.caption}</figcaption>}
         </figure>
@@ -416,15 +319,15 @@ function CodeBlock({ data }) {
 
 function DeeperBlock({ data }) {
     const levels = [
-        { key: 'understand', label: 'Understand', icon: '🔍', cls: 'nb-deeper-understand' },
-        { key: 'apply', label: 'Apply', icon: '⚙️', cls: 'nb-deeper-apply' },
-        { key: 'analyze', label: 'Analyse', icon: '🔬', cls: 'nb-deeper-analyze' },
-        { key: 'evaluate', label: 'Evaluate', icon: '⚖️', cls: 'nb-deeper-evaluate' },
+        { key: 'understand', label: 'Understand', icon: <Search size={14} aria-hidden="true" />, cls: 'nb-deeper-understand' },
+        { key: 'apply', label: 'Apply', icon: <Cog size={14} aria-hidden="true" />, cls: 'nb-deeper-apply' },
+        { key: 'analyze', label: 'Analyse', icon: <Microscope size={14} aria-hidden="true" />, cls: 'nb-deeper-analyze' },
+        { key: 'evaluate', label: 'Evaluate', icon: <Scale size={14} aria-hidden="true" />, cls: 'nb-deeper-evaluate' },
     ];
     return (
         <div className="nb-deeper">
             <div className="nb-deeper-header">
-                <span className="nb-deeper-icon">🧠</span>
+                <Brain size={18} aria-hidden="true" className="nb-deeper-icon" />
                 <span className="nb-deeper-title">Deeper Understanding</span>
             </div>
             <div className="nb-deeper-grid">
@@ -432,7 +335,7 @@ function DeeperBlock({ data }) {
                     data[key] ? (
                         <div key={key} className={`nb-deeper-card ${cls}`}>
                             <div className="nb-deeper-card-label">
-                                <span>{icon}</span> {label}
+                                {icon} {label}
                             </div>
                             <p className="nb-deeper-card-text">{data[key]}</p>
                         </div>

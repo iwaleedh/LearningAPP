@@ -84,7 +84,7 @@ export const note_olevel_maths_core_4_2_3 = {
     <path d="M75,120 A18,18 0 0,1 66,103" fill="none" stroke="#3b82f6" stroke-width="2"/>
     <text x="60" y="43" class="lbl" fill="#3b82f6">a</text>
     <text x="78" y="113" class="lbl" fill="#3b82f6">a</text>
-    <text x="20" y="165">a = a &nbsp;(equal)</text>
+    <text x="20" y="165">a = a &#160;(equal)</text>
   </g>
   <!-- === Panel 2: Alternate (Z) === -->
   <g transform="translate(195, 10)">
@@ -100,7 +100,7 @@ export const note_olevel_maths_core_4_2_3 = {
     <path d="M78,118 A18,18 0 0,0 63,107" fill="none" stroke="#10b981" stroke-width="2"/>
     <text x="38" y="80" class="lbl" fill="#10b981">c</text>
     <text x="74" y="106" class="lbl" fill="#10b981">c</text>
-    <text x="15" y="165">c = c &nbsp;(equal)</text>
+    <text x="15" y="165">c = c &#160;(equal)</text>
   </g>
   <!-- === Panel 3: Co-interior (C) === -->
   <g transform="translate(375, 10)">

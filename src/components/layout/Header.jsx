@@ -1,7 +1,6 @@
 import { useState, lazy, Suspense } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Menu, Search, LogIn } from 'lucide-react';
-import NotificationBell from './NotificationBell.jsx';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, Search, LogIn, BookOpen } from 'lucide-react';
 import UserMenu from '../auth/UserMenu.jsx';
 import { useAuth } from '../../hooks/useAuth.js';
 import { getLocationPath } from '../auth/accessControl.js';
@@ -10,7 +9,7 @@ import './Layout.css';
 const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
 
 export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
-    const { canSignIn, debugAuthEnabled, isSignedIn, isLoaded } = useAuth();
+    const { canSignIn, isSignedIn, isLoaded } = useAuth();
     const [authOpen, setAuthOpen] = useState(false);
     const [authReturnFocusEl, setAuthReturnFocusEl] = useState(null);
     const location = useLocation();
@@ -33,6 +32,11 @@ export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
                     <Menu size={22} aria-hidden="true" />
                 </button>
 
+                <Link to="/" className="header-brand" aria-label="Study Smart home">
+                    <span className="header-brand-mark" aria-hidden="true"><BookOpen size={18} /></span>
+                    <span className="header-brand-name">Study Smart</span>
+                </Link>
+
                 <div className="header-spacer" />
 
                 <div className="header-actions">
@@ -47,7 +51,6 @@ export default function Header({ onMenuToggle, sidebarOpen, onSearchOpen }) {
                         <kbd className="search-kbd" aria-hidden="true">⌘K</kbd>
                     </button>
 
-                    {isLoaded && isSignedIn && !debugAuthEnabled && <NotificationBell />}
 
                     {/* Auth: show UserMenu when signed in, Sign In button only when available */}
                     {isLoaded && (

@@ -12,6 +12,21 @@ export const note_chemistry_1_3_5 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Bond dipoles do not automatically make a polar molecule",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Electronegativity is an atom’s ability to attract the bonding pair of electrons in a covalent bond. A difference in electronegativity gives an unequal electron distribution: the more electronegative atom is δ− and the other is δ+. These are partial charges, not whole ionic charges.<br/><br/>To decide whether a molecule is polar, consider both its bond dipoles and its three-dimensional shape. Dipoles are vectors. In a symmetrical molecule with identical surrounding atoms, they may cancel. CO₂ has polar C=O bonds but its two equal dipoles act in opposite directions, so the molecule has no net dipole. The O–H dipoles in bent H₂O do not cancel."
+  }
+},
+{
       id: 'key-en',
       type: 'callout',
       data: {
@@ -250,20 +265,90 @@ export const note_chemistry_1_3_5 = {
       },
       terms: []
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Compare CCl₄ and CHCl₃. Both contain polar C–Cl bonds. In tetrahedral CCl₄, four identical dipoles cancel by symmetry, making the molecule non-polar. In CHCl₃, one surrounding atom is H rather than Cl; the bond dipoles no longer cancel and the molecule is polar."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "A molecule can contain polar bonds and still be non-polar. Explain cancellation using shape and symmetry rather than simply counting the number of bonds."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define electronegativity.",
+        "checked": false
+      },
+      {
+        "text": "Why is CO₂ non-polar?",
+        "checked": false
+      },
+      {
+        "text": "Why is water polar?",
+        "checked": false
+      },
+      {
+        "text": "What do δ+ and δ− mean?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Electronegativity is an atom’s ability to attract the bonding pair of electrons in a covalent bond. A difference in electronegativity gives an unequal electron distribution: the more electronegative atom is δ− and the other is δ+. These are partial charges, not whole ionic charges."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Electronegativity: ability to attract shared electrons. F most EN (3.98); increases across period, decreases down group. Polar bond: Δ(EN) > 0.5. Molecule polar if bonds are polar AND shape is asymmetric. H₂O and HCl = polar; CO₂ and CCl₄ = non-polar (bonds cancel by symmetry).',
-    cues: [
-      { id: 'c1', blockId: 'key-en', prompt: 'Define electronegativity. How does it vary across a period and down a group? What values does fluorine and oxygen have on the Pauling scale?' },
-      { id: 'c2', blockId: 'svg-en-trend', prompt: 'Explain why electronegativity increases across Period 3 from Na to Cl.' },
-      { id: 'c3', blockId: 'svg-polarity', prompt: 'Why is CO₂ a non-polar molecule even though each C=O bond is polar?' },
-      { id: 'c4', blockId: 'svg-polarity', prompt: 'Compare H₂O and CCl₄: why is H₂O polar but CCl₄ non-polar? What role does molecular shape play?' },
-      { id: 'c5', blockId: 'tip-symmetry', prompt: 'Give the systematic steps to determine if a molecule has a net dipole moment. Apply them to BF₃ and NH₃.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define electronegativity.",
+      "answer": "The ability of an atom to attract the bonding pair of electrons in a covalent bond."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why is CO₂ non-polar?",
+      "answer": "Its two equal C=O bond dipoles cancel in the linear, symmetrical molecule."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is water polar?",
+      "answer": "Its O–H bonds are polar and their dipoles do not cancel because the molecule is bent."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What do δ+ and δ− mean?",
+      "answer": "Partial positive and negative charges from unequal sharing of electrons; they are not complete ionic charges."
+    }
+  ],
+  "summaryText": "Electronegativity is an atom’s ability to attract the bonding pair of electrons in a covalent bond. A difference in electronegativity gives an unequal electron distribution: the more electronegative atom is δ− and the other is δ+. These are partial charges, not whole ionic charges.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

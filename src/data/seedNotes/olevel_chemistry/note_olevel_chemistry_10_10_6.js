@@ -28,7 +28,7 @@ export const note_olevel_chemistry_10_10_6 = {
   <circle cx="130" cy="230" r="10" fill="#1e293b" />
   <circle cx="150" cy="230" r="10" fill="#1e293b" />
   
-  <text x="100" y="255" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fossil Fuels &</text>
+  <text x="100" y="255" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fossil Fuels &amp;</text>
   <text x="100" y="270" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Vehicle Exhausts</text>
 
   <!-- Emissions -->
@@ -38,8 +38,8 @@ export const note_olevel_chemistry_10_10_6 = {
 
   <!-- Cloud -->
   <path d="M 200 80 Q 220 50, 260 60 Q 300 30, 340 50 Q 380 40, 400 70 Q 430 90, 400 110 Q 370 140, 310 120 Q 240 130, 200 100 Z" fill="#9ca3af" />
-  <text x="300" y="90" font-family="var(--font-sans)" font-size="12" fill="#1e293b" text-anchor="middle">React with H₂O & O₂</text>
-  <text x="300" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">H₂SO₄ & HNO₃</text>
+  <text x="300" y="90" font-family="var(--font-sans)" font-size="12" fill="#1e293b" text-anchor="middle">React with H₂O &amp; O₂</text>
+  <text x="300" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">H₂SO₄ &amp; HNO₃</text>
 
   <!-- Rain -->
   <g stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,4">
@@ -48,13 +48,13 @@ export const note_olevel_chemistry_10_10_6 = {
     <line x1="320" y1="120" x2="300" y2="160" />
     <line x1="360" y1="110" x2="340" y2="150" />
   </g>
-  <text x="250" y="150" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#2563eb" transform="rotate(-63 250,150)">Acid Rain (pH < 5)</text>
+  <text x="250" y="150" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#2563eb" transform="rotate(-63 250,150)">Acid Rain (pH &lt; 5)</text>
 
   <!-- Effects: Trees -->
   <path d="M 240 240 L 250 180 L 260 240 Z" fill="#84cc16" opacity="0.4"/> <!-- dead/dying tree -->
   <path d="M 230 200 L 250 180 L 270 200" fill="none" stroke="#65a30d" stroke-width="3"/>
   <text x="250" y="260" font-family="var(--font-sans)" font-size="10" fill="#65a30d" text-anchor="middle">Damages</text>
-  <text x="250" y="272" font-family="var(--font-sans)" font-size="10" fill="#65a30d" text-anchor="middle">trees & soil</text>
+  <text x="250" y="272" font-family="var(--font-sans)" font-size="10" fill="#65a30d" text-anchor="middle">trees &amp; soil</text>
 
   <!-- Effects: Lakes -->
   <path d="M 300 240 Q 340 250, 380 240 L 380 280 L 300 280 Z" fill="#1250a0" opacity="0.6"/>

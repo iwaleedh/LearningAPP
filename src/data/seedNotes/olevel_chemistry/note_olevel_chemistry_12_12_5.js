@@ -53,7 +53,7 @@ export const note_olevel_chemistry_12_12_5 = {
       type: 'svg',
       data: {
         caption: 'Apparatus for simple distillation to separate a solvent from a solution.',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-131 0 731 352">
     <defs>
         <style>
             .glass { fill: rgba(149, 165, 166, 0.1); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }

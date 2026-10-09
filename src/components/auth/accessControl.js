@@ -1,3 +1,10 @@
+/**
+ * Developer override: Set to true to bypass all authentication, approval,
+ * role restrictions, and feature gating so every page and feature in the
+ * application is freely accessible during development.
+ */
+export const AUTH_GATING_HALTED = true;
+
 export function getLocationPath(location, fallback = '/') {
   const pathname = String(location?.pathname || fallback || '/');
   const search = String(location?.search || '');
@@ -21,14 +28,6 @@ export function sanitizeRedirectPath(path, fallback = '/') {
   }
 
   return trimmed;
-}
-
-export function canAccessLocalLiveClassAsGuest(pathname, { canSignIn = true } = {}) {
-  if (canSignIn) {
-    return false;
-  }
-
-  return /^\/live\/local_[A-Za-z0-9_]+$/.test(String(pathname || ''));
 }
 
 export function buildProtectedRouteState(

@@ -11,7 +11,7 @@ export const note_business_4_20_7 = {
       { text: '<b>Lobbying:</b> Pressuring politicians to pass stricter laws.' },
       { text: '<b>Direct Action:</b> Peaceful protests or disrupting business operations (e.g., blocking supply shipments).' }
     ]}},
-    { id: 'h-2', type: 'heading', data: { text: 'Consumer Action', level: 3 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Consumer Action', level: 3 } },
     { id: 'para-3', type: 'paragraph', data: { text: 'Consumers vote with their wallets. By refusing to buy a product, they directly attack an MNCs revenue stream.' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
       { text: '<b>Boycotts:</b> Organised refusal to purchase from a specific company until policies change.' },

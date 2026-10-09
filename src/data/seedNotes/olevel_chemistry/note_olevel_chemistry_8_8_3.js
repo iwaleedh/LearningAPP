@@ -101,7 +101,7 @@ export const note_olevel_chemistry_8_8_3 = {
       data: {
         style: 'key',
         title: 'Chemical Properties',
-        text: '<strong>Reaction with metals</strong> → metal halide:<br/>2Na(s) + Cl₂(g) → 2NaCl(s)<br/>Fe(s) + 3Cl₂(g) → 2FeCl₃(s) (iron wool burns in Cl₂)<br/><br/><strong>Reaction with hydrogen</strong>:<br/>H₂(g) + Cl₂(g) → 2HCl(g) (explodes in UV with F₂; needs catalyst/heat for Br₂, I₂)<br/><br/><strong>Reaction with water</strong> (Cl₂):<br/>Cl₂(g) + H₂O(l) ⇌ HCl(aq) + HClO(aq) → bleaching action (HOCl is the active bleach)'
+        text: '<strong>Reaction with metals</strong> → metal halide:<br/>2Na(s) + Cl₂(g) → 2NaCl(s)<br/>2Fe(s) + 3Cl₂(g) → 2FeCl₃(s) (iron wool burns in Cl₂)<br/><br/><strong>Reaction with hydrogen</strong>:<br/>H₂(g) + Cl₂(g) → 2HCl(g) (hydrogen and chlorine react rapidly in bright light; hydrogen and fluorine can react explosively even in the dark; bromine needs heating and iodine forms an equilibrium mixture)<br/><br/><strong>Reaction with water</strong> (Cl₂):<br/>Cl₂(g) + H₂O(l) ⇌ HCl(aq) + HClO(aq) → bleaching action (HOCl is the active bleach)'
       }
     },
     {

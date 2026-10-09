@@ -77,8 +77,8 @@ export const note_olevel_biology_1_1_3 = {
       type: 'svg',
       data: {
         caption: 'Dichotomous key structure — branching diagram for four insects',
-        svg: `<svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="560" height="320" fill="#0a2e1a" rx="12"/>
+        svg: `<svg viewBox="0 0 589 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="589" height="320" fill="#0a2e1a" rx="12"/>
   <text x="280" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">Dichotomous Key — Four Insects</text>
   <!-- Step 1 box -->
   <rect x="180" y="44" width="200" height="38" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>

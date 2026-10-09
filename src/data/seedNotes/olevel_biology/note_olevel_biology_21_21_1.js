@@ -92,7 +92,7 @@ export const note_olevel_biology_21_21_1 = {
   <text x="342" y="283" font-size="10" fill="#b45309">Product outlet</text>
   <!-- Nutrient inlet -->
   <line x1="200" y1="50" x2="200" y2="30" stroke="#16a34a" stroke-width="2"/>
-  <text x="210" y="25" font-size="10" fill="#16a34a">Nutrients added</text>
+  <text x="210" y="47" font-size="10" fill="#16a34a">Nutrients added</text>
   <!-- Stirrer label -->
   <line x1="280" y1="180" x2="330" y2="160" stroke="#374151" stroke-width="1.5"/>
   <text x="332" y="162" font-size="10" fill="#374151">Stirrer</text>

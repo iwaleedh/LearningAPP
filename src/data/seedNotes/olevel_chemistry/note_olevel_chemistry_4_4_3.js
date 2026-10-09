@@ -51,7 +51,7 @@ export const note_olevel_chemistry_4_4_3 = {
       type: 'svg',
       data: {
         caption: 'Electrolysis of aqueous CuSO₄ with inert (graphite) electrodes. Copper metal coats the cathode, and oxygen gas is evolved at the anode.',
-        svg: `<svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="-41 0 587 350" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Liquid Gradient (Blue for CuSO4) -->
     <linearGradient id="cuso4" x1="0%" y1="0%" x2="0%" y2="100%">

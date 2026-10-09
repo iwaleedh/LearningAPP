@@ -41,7 +41,7 @@ export const note_physics_5_31_0 = {
     ] } },
     { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
       { text: "Worked Example Calculate the gravitational field strength at the Moon's surface." },
-      { text: "Given: M_Moon = 7.35 × 10²² kg, R_Moon = 1.74 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m² kg⁻². g = GM/R² = (6.67 × 10⁻¹¹ × 7.35 × 10²²) / (1.74 × 10⁶)² = 4.90 × 10¹² / 3.03 × 10¹² = 1.62 N kg⁻¹." },
+      { text: "Given: M_Moon = 7.35 × 10²² kg, R_Moon = 1.74 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m² kg⁻². g = GM/R² = (6.67 × 10⁻¹¹ × 7.35 × 10²²) / (1.74 × 10⁶)² = (4.90 × 10¹²) / (3.03 × 10¹²) = 1.62 N kg⁻¹." },
       { text: "This is about one-sixth of Earth's surface value, confirming that objects weigh six times less on the Moon." }
     ] } },
     { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Equations', text: 'Gravitational field strength: g = F/m = GM/r² (N kg⁻¹). Newton\'s law: F = GMm/r². Gravitational potential: V_g = −GM/r (J kg⁻¹; always −ve; = 0 at ∞). Relation: g = −dV_g/dr. Field lines: radially inward; closer spacing = stronger field. Surface: g = GM/R². Inside: g ∝ r. Outside: g ∝ 1/r².' } },
