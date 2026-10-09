@@ -37,7 +37,8 @@ npm run dev       # Vite dev server with HMR
 npm run build     # Production build → dist/
 npm run preview   # Preview production build
 npm run lint      # ESLint check
-npm run test      # node --test "src/**/*.test.js"
+npm run test      # Full suite: seed check, unit (src/**/*.test.js via tsx), Convex integration, Playwright e2e
+npm run test:unit # Unit tests only
 ```
 
 **Environment variables** (`.env.local`):
@@ -249,6 +250,10 @@ Subject
 }
 ```
 
+**Subtopics must be plain strings.** Pages render them directly as React children, so objects crash the page. Each subtopic title must describe the note at the same index — the note is located purely by position.
+
+`subjectNoteCounts` in [src/data/syllabusIndex.js](src/data/syllabusIndex.js) drives progress percentages and must equal each syllabus's subtopic total. [src/data/syllabusIndex.test.js](src/data/syllabusIndex.test.js) and [src/data/seedNotes.integrity.test.js](src/data/seedNotes.integrity.test.js) enforce this, plus one note per subtopic, unique block ids and valid recall cue targets.
+
 ### Subjects & unit codes
 
 | Subject | Unit codes |
@@ -264,14 +269,14 @@ Subject
 ### Note file naming convention
 
 ```
-src/data/seedNotes/{subject}/note_{subject}_{unitId}_{topicId}_{subtopicIndex}.js
+src/data/seedNotes/{subject}/note_[{subject}_]{unitId}_{topicId}_{subtopicIndex}.js
 ```
 
-Example: `note_mathematics_1_1_0.js` → Mathematics, Unit 1, Topic 1, Subtopic index 0.
+The subject prefix in the filename is optional and varies by folder (e.g. `mathematics/note_1_1_0.js`, `physics/note_physics_1_1_0.js`) — follow the existing files in that folder. Example: `mathematics/note_1_1_0.js` → Mathematics, Unit 1, Topic 1, Subtopic index 0.
 
-Named export matches filename: `export const note_mathematics_1_1_0 = { ... }`.
+The named export always includes the subject: `export const note_mathematics_1_1_0 = { ... }`.
 
-All notes are re-exported from [src/data/seedNotes/index.js](src/data/seedNotes/index.js), keyed by note ID.
+[src/data/seedNotes/index.js](src/data/seedNotes/index.js) discovers notes with `import.meta.glob` and lazy-loads them by note key — there is no manual index to update.
 
 ### Note ID format
 
@@ -285,7 +290,7 @@ Each note file exports an object:
 
 ```js
 {
-  pdfPath: '/notes/mathematics/algebra-and-functions/laws-of-indices.pdf',
+  pdfPath: '...',   // legacy metadata — not read by the app; many paths no longer exist
   blocks: [
     { id: 'obj-1',   type: 'objective',        data: { text: '<html>' } },
     { id: 'h-1',     type: 'heading',           data: { text: 'Title', level: 2 } },
@@ -295,7 +300,7 @@ Each note file exports an object:
     { id: 'eq-1',    type: 'equation',          data: { latex: '\\frac{a}{b}', caption: '' } },
     { id: 'tbl-1',   type: 'comparisonTable',   data: { caption, headers: [], rows: [[]] } },
     { id: 'svg-1',   type: 'svg',               data: { svg: '<svg>...</svg>', caption: '' } },
-    { id: 'call-1',  type: 'callout',           data: { style: 'info'|'warning'|'success'|'key'|'worked', title, text } },
+    { id: 'call-1',  type: 'callout',           data: { style: 'key'|'worked'|'tip'|'warning', title, text } },  // unknown styles render as 'key'
     { id: 'q-1',     type: 'quote',             data: { text, attribution } },
     { id: 'code-1',  type: 'code',              data: { language, code } },
     { id: 'sum-1',   type: 'summary',           data: { text } },
@@ -324,7 +329,6 @@ Each note file exports an object:
 - **Reading progress bar** — scroll-driven
 - **Breadcrumbs** — A-Level → Subject → Unit → Topic → Subtopic
 - **Previous / Next navigation** — sequential subtopic traversal
-- **PDF fallback** — iframe renders `pdfPath` when user toggles PDF view
 - **Read tracking** — `useNoteReadStatus` persists to `localStorage` (`lt_read:{noteId}`)
 
 ---
