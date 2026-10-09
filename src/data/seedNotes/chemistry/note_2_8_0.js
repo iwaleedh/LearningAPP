@@ -63,39 +63,39 @@ export const note_chemistry_2_8_0 = {
             type: 'svg',
             data: {
                 caption: 'Blast furnace: Fe₂O₃ + 3CO → 2Fe + 3CO₂ — oxygen-transfer redox reaction',
-                svg: `<svg viewBox="0 0 520 185" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="13">
+                svg: `<svg viewBox="0 -28 520 213" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="13">
   <rect width="520" height="185" rx="10" fill="#0f172a"/>
-  <text x="260" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Blast Furnace — Oxygen-Transfer Redox</text>
-  <text x="260" y="46" text-anchor="middle" font-size="14" font-weight="600" fill="#1e293b">Fe₂O₃(s)  +  3CO(g)  →  2Fe(s)  +  3CO₂(g)</text>
+  <text x="260" y="-8" text-anchor="middle" font-size="14" font-weight="700" fill="#f8fafc" style="fill:#f8fafc">Blast Furnace — Oxygen-Transfer Redox</text>
+  <text x="260" y="46" text-anchor="middle" font-size="14" font-weight="600" fill="#f8fafc" style="fill:#f8fafc">Fe₂O₃(s)  +  3CO(g)  →  2Fe(s)  +  3CO₂(g)</text>
 
   <!-- Fe₂O₃ box -->
   <rect x="15" y="62" width="145" height="68" rx="8" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/>
-  <text x="87" y="84" text-anchor="middle" font-weight="700" fill="#be185d" font-size="14">Fe₂O₃</text>
-  <text x="87" y="102" text-anchor="middle" fill="#9d174d" font-size="11">Iron(III) oxide</text>
-  <text x="87" y="117" text-anchor="middle" fill="#9d174d" font-size="11" font-weight="600">OXIDISING AGENT</text>
-  <text x="87" y="130" text-anchor="middle" fill="#9d174d" font-size="10">(gives O → is REDUCED)</text>
+  <text x="87" y="84" text-anchor="middle" font-weight="700" fill="#f8fafc" font-size="14" style="fill:#f8fafc">Fe₂O₃</text>
+  <text x="87" y="102" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Iron(III) oxide</text>
+  <text x="87" y="117" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="600" style="fill:#f8fafc">OXIDISING AGENT</text>
+  <text x="87" y="130" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">(gives O → is REDUCED)</text>
 
   <!-- CO box -->
   <rect x="180" y="62" width="145" height="68" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="252" y="84" text-anchor="middle" font-weight="700" fill="#15803d" font-size="14">CO</text>
-  <text x="252" y="102" text-anchor="middle" fill="#166534" font-size="11">Carbon monoxide</text>
-  <text x="252" y="117" text-anchor="middle" fill="#166534" font-size="11" font-weight="600">REDUCING AGENT</text>
-  <text x="252" y="130" text-anchor="middle" fill="#166534" font-size="10">(takes O → is OXIDISED)</text>
+  <text x="252" y="84" text-anchor="middle" font-weight="700" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CO</text>
+  <text x="252" y="102" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Carbon monoxide</text>
+  <text x="252" y="117" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="600" style="fill:#f8fafc">REDUCING AGENT</text>
+  <text x="252" y="130" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">(takes O → is OXIDISED)</text>
 
   <!-- Products -->
   <rect x="345" y="62" width="75" height="68" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="382" y="87" text-anchor="middle" font-weight="700" fill="#6d28d9" font-size="13">2Fe</text>
-  <text x="382" y="105" text-anchor="middle" fill="#5b21b6" font-size="11">Iron</text>
-  <text x="382" y="120" text-anchor="middle" fill="#5b21b6" font-size="11">REDUCED</text>
+  <text x="382" y="87" text-anchor="middle" font-weight="700" fill="#f8fafc" font-size="13" style="fill:#f8fafc">2Fe</text>
+  <text x="382" y="105" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Iron</text>
+  <text x="382" y="120" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">REDUCED</text>
 
   <rect x="435" y="62" width="75" height="68" rx="8" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="472" y="87" text-anchor="middle" font-weight="700" fill="#b45309" font-size="13">3CO₂</text>
-  <text x="472" y="105" text-anchor="middle" fill="#92400e" font-size="11">Carbon dioxide</text>
-  <text x="472" y="120" text-anchor="middle" fill="#92400e" font-size="11">OXIDISED</text>
+  <text x="472" y="87" text-anchor="middle" font-weight="700" fill="#f8fafc" font-size="13" style="fill:#f8fafc">3CO₂</text>
+  <text x="472" y="105" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Carbon dioxide</text>
+  <text x="472" y="120" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">OXIDISED</text>
 
   <!-- O transfer arrow -->
   <path d="M 108 62 Q 180 32 245 62" stroke="#ec4899" stroke-width="2" fill="none" stroke-dasharray="4,3" marker-end="url(#aP)"/>
-  <text x="178" y="28" text-anchor="middle" fill="#be185d" font-size="11" font-weight="600">O transferred →</text>
+  <text x="178" y="28" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="600" style="fill:#f8fafc">O transferred →</text>
 
   <defs>
     <marker id="aP" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
@@ -155,29 +155,29 @@ export const note_chemistry_2_8_0 = {
                 caption: 'Hydrogen-transfer redox: ethanol ⇌ ethanal (organic chemistry)',
                 svg: `<svg viewBox="0 0 480 135" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="13">
   <rect width="480" height="135" rx="10" fill="#0a2e1a"/>
-  <text x="240" y="22" text-anchor="middle" font-weight="700" font-size="14" fill="#14532d">Hydrogen-Transfer Redox in Organic Chemistry</text>
+  <text x="240" y="22" text-anchor="middle" font-weight="700" font-size="14" fill="#f8fafc" style="fill:#f8fafc">Hydrogen-Transfer Redox in Organic Chemistry</text>
 
   <!-- Ethanol -->
   <rect x="20" y="38" width="155" height="62" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="97" y="60" text-anchor="middle" font-weight="700" fill="#15803d" font-size="14">CH₃CH₂OH</text>
-  <text x="97" y="78" text-anchor="middle" fill="#166534" font-size="12">Ethanol</text>
-  <text x="97" y="94" text-anchor="middle" fill="#166534" font-size="11">More H atoms</text>
+  <text x="97" y="60" text-anchor="middle" font-weight="700" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CH₃CH₂OH</text>
+  <text x="97" y="78" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">Ethanol</text>
+  <text x="97" y="94" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">More H atoms</text>
 
   <!-- Ethanal -->
   <rect x="305" y="38" width="155" height="62" rx="8" fill="#532407" stroke="#ea580c" stroke-width="1.5"/>
-  <text x="382" y="60" text-anchor="middle" font-weight="700" fill="#c2410c" font-size="14">CH₃CHO</text>
-  <text x="382" y="78" text-anchor="middle" fill="#7c2d12" font-size="12">Ethanal</text>
-  <text x="382" y="94" text-anchor="middle" fill="#7c2d12" font-size="11">Fewer H atoms</text>
+  <text x="382" y="60" text-anchor="middle" font-weight="700" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CH₃CHO</text>
+  <text x="382" y="78" text-anchor="middle" fill="#f8fafc" font-size="12" style="fill:#f8fafc">Ethanal</text>
+  <text x="382" y="94" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Fewer H atoms</text>
 
   <!-- Forward arrow: oxidation -->
   <line x1="177" y1="58" x2="303" y2="58" stroke="#16a34a" stroke-width="2" marker-end="url(#aG)"/>
-  <text x="240" y="51" text-anchor="middle" fill="#15803d" font-size="11" font-weight="600">[O] oxidising agent →</text>
-  <text x="240" y="40" text-anchor="middle" fill="#15803d" font-size="10">OXIDATION (loss of H)</text>
+  <text x="240" y="51" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="600" style="fill:#f8fafc">[O] oxidising agent →</text>
+  <text x="240" y="40" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">OXIDATION (loss of H)</text>
 
   <!-- Backward arrow: reduction -->
   <line x1="303" y1="78" x2="177" y2="78" stroke="#ea580c" stroke-width="2" marker-end="url(#aO)"/>
-  <text x="240" y="96" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="600">← [H] reducing agent</text>
-  <text x="240" y="111" text-anchor="middle" fill="#c2410c" font-size="10">REDUCTION (gain of H)</text>
+  <text x="240" y="96" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="600" style="fill:#f8fafc">← [H] reducing agent</text>
+  <text x="240" y="111" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">REDUCTION (gain of H)</text>
 
   <defs>
     <marker id="aG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
@@ -223,11 +223,11 @@ export const note_chemistry_2_8_0 = {
   <!-- OIL side -->
   <rect x="20" y="25" width="200" height="120" rx="10" fill="#3d1212" stroke="#dc2626" stroke-width="2"/>
   <text x="120" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="#dc2626">OIL</text>
-  <text x="120" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#7f1d1d">Oxidation Is Loss</text>
-  <text x="120" y="92" text-anchor="middle" font-size="12" fill="#991b1b">...of electrons</text>
-  <text x="120" y="112" text-anchor="middle" font-size="11" fill="#991b1b">Electron count ↓</text>
-  <text x="120" y="130" text-anchor="middle" font-size="11" fill="#991b1b">Oxidation number ↑</text>
-  <text x="120" y="143" text-anchor="middle" font-size="11" fill="#991b1b">Species → loses e⁻</text>
+  <text x="120" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#f8fafc" style="fill:#f8fafc">Oxidation Is Loss</text>
+  <text x="120" y="92" text-anchor="middle" font-size="12" fill="#f8fafc" style="fill:#f8fafc">...of electrons</text>
+  <text x="120" y="112" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Electron count ↓</text>
+  <text x="120" y="130" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Oxidation number ↑</text>
+  <text x="120" y="143" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Species → loses e⁻</text>
 
   <!-- Divider -->
   <line x1="240" y1="25" x2="240" y2="145" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
@@ -236,14 +236,14 @@ export const note_chemistry_2_8_0 = {
   <!-- RIG side -->
   <rect x="260" y="25" width="200" height="120" rx="10" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="360" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="#16a34a">RIG</text>
-  <text x="360" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#14532d">Reduction Is Gain</text>
-  <text x="360" y="92" text-anchor="middle" font-size="12" fill="#15803d">...of electrons</text>
-  <text x="360" y="112" text-anchor="middle" font-size="11" fill="#15803d">Electron count ↑</text>
-  <text x="360" y="130" text-anchor="middle" font-size="11" fill="#15803d">Oxidation number ↓</text>
-  <text x="360" y="143" text-anchor="middle" font-size="11" fill="#15803d">Species → gains e⁻</text>
+  <text x="360" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#f8fafc" style="fill:#f8fafc">Reduction Is Gain</text>
+  <text x="360" y="92" text-anchor="middle" font-size="12" fill="#f8fafc" style="fill:#f8fafc">...of electrons</text>
+  <text x="360" y="112" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Electron count ↑</text>
+  <text x="360" y="130" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Oxidation number ↓</text>
+  <text x="360" y="143" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Species → gains e⁻</text>
 
   <!-- Electron flow label -->
-  <text x="240" y="158" text-anchor="middle" font-size="11" fill="#1e40af" font-weight="600">e⁻ flow: OXIDISED species ——→ REDUCED species</text>
+  <text x="240" y="158" text-anchor="middle" font-size="11" fill="#f8fafc" font-weight="600" style="fill:#f8fafc">e⁻ flow: OXIDISED species ——→ REDUCED species</text>
 </svg>`
             },
             terms: []
@@ -291,22 +291,22 @@ export const note_chemistry_2_8_0 = {
                 caption: 'Cu²⁺ + Mg → Cu + Mg²⁺: half-equations and identification of agents',
                 svg: `<svg viewBox="0 0 520 210" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="13">
   <rect width="520" height="210" rx="10" fill="#0f172a"/>
-  <text x="260" y="20" text-anchor="middle" font-weight="700" font-size="14" fill="#1e293b">CuO + Mg → Cu + MgO (Electron-Transfer Redox)</text>
-  <text x="260" y="42" text-anchor="middle" font-size="13" fill="#334155">Ionic equation: Cu²⁺(aq)  +  Mg(s)  →  Cu(s)  +  Mg²⁺(aq)</text>
+  <text x="260" y="20" text-anchor="middle" font-weight="700" font-size="14" fill="#f8fafc" style="fill:#f8fafc">CuO + Mg → Cu + MgO (Electron-Transfer Redox)</text>
+  <text x="260" y="42" text-anchor="middle" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Ionic equation: Cu²⁺(aq)  +  Mg(s)  →  Cu(s)  +  Mg²⁺(aq)</text>
 
   <!-- Oxidation box -->
   <rect x="20" y="60" width="225" height="80" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
-  <text x="132" y="80" text-anchor="middle" font-weight="700" fill="#92400e">Oxidation Half-Equation</text>
-  <text x="132" y="100" text-anchor="middle" fill="#78350f" font-size="14">Mg  →  Mg²⁺  +  2e⁻</text>
-  <text x="132" y="118" text-anchor="middle" fill="#92400e" font-size="11">Mg LOSES 2e⁻  →  is OXIDISED</text>
-  <text x="132" y="133" text-anchor="middle" fill="#92400e" font-size="11">∴ Mg is the REDUCING AGENT</text>
+  <text x="132" y="80" text-anchor="middle" font-weight="700" fill="#f8fafc" style="fill:#f8fafc">Oxidation Half-Equation</text>
+  <text x="132" y="100" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">Mg  →  Mg²⁺  +  2e⁻</text>
+  <text x="132" y="118" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Mg LOSES 2e⁻  →  is OXIDISED</text>
+  <text x="132" y="133" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">∴ Mg is the REDUCING AGENT</text>
 
   <!-- Reduction box -->
   <rect x="275" y="60" width="225" height="80" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="387" y="80" text-anchor="middle" font-weight="700" fill="#4c1d95">Reduction Half-Equation</text>
-  <text x="387" y="100" text-anchor="middle" fill="#4c1d95" font-size="14">Cu²⁺  +  2e⁻  →  Cu</text>
-  <text x="387" y="118" text-anchor="middle" fill="#5b21b6" font-size="11">Cu²⁺ GAINS 2e⁻  →  is REDUCED</text>
-  <text x="387" y="133" text-anchor="middle" fill="#5b21b6" font-size="11">∴ Cu²⁺ is the OXIDISING AGENT</text>
+  <text x="387" y="80" text-anchor="middle" font-weight="700" fill="#f8fafc" style="fill:#f8fafc">Reduction Half-Equation</text>
+  <text x="387" y="100" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">Cu²⁺  +  2e⁻  →  Cu</text>
+  <text x="387" y="118" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Cu²⁺ GAINS 2e⁻  →  is REDUCED</text>
+  <text x="387" y="133" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">∴ Cu²⁺ is the OXIDISING AGENT</text>
 
   <!-- Electron flow arrow -->
   <path d="M 247 100 Q 260 90 273 100" stroke="#dc2626" stroke-width="2.5" fill="none" marker-end="url(#aR)"/>
@@ -314,8 +314,8 @@ export const note_chemistry_2_8_0 = {
 
   <!-- Summary bar -->
   <rect x="20" y="155" width="480" height="44" rx="8" fill="#0c4a6e" stroke="#0284c7" stroke-width="1"/>
-  <text x="260" y="172" text-anchor="middle" fill="#0c4a6e" font-weight="600" font-size="12">Cu²⁺: +2 → 0 (reduced) | Mg: 0 → +2 (oxidised)</text>
-  <text x="260" y="190" text-anchor="middle" fill="#0369a1" font-size="11">OIL RIG: electrons flow FROM Mg (oxidised) TO Cu²⁺ (reduced)</text>
+  <text x="260" y="172" text-anchor="middle" fill="#f8fafc" font-weight="600" font-size="12" style="fill:#f8fafc">Cu²⁺: +2 → 0 (reduced) | Mg: 0 → +2 (oxidised)</text>
+  <text x="260" y="190" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">OIL RIG: electrons flow FROM Mg (oxidised) TO Cu²⁺ (reduced)</text>
 
   <defs>
     <marker id="aR" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
@@ -353,45 +353,45 @@ export const note_chemistry_2_8_0 = {
                 caption: 'Flowchart: how to identify oxidation, reduction, and agents in any reaction',
                 svg: `<svg viewBox="0 0 480 305" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
   <rect width="480" height="305" rx="10" fill="#0f172a"/>
-  <text x="240" y="20" text-anchor="middle" font-weight="700" font-size="14" fill="#1e293b">Identifying Redox — Step-by-Step</text>
+  <text x="240" y="20" text-anchor="middle" font-weight="700" font-size="14" fill="#f8fafc" style="fill:#f8fafc">Identifying Redox — Step-by-Step</text>
 
   <!-- Step 1 -->
   <rect x="140" y="32" width="200" height="38" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="240" y="49" text-anchor="middle" fill="#1e40af" font-weight="600">Step 1</text>
-  <text x="240" y="63" text-anchor="middle" fill="#1d4ed8" font-size="11">Assign oxidation numbers to all atoms</text>
+  <text x="240" y="49" text-anchor="middle" fill="#f8fafc" font-weight="600" style="fill:#f8fafc">Step 1</text>
+  <text x="240" y="63" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Assign oxidation numbers to all atoms</text>
   <line x1="240" y1="70" x2="240" y2="90" stroke="#64748b" stroke-width="1.5" marker-end="url(#aGr)"/>
 
   <!-- Step 2 -->
   <rect x="140" y="90" width="200" height="38" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="240" y="107" text-anchor="middle" fill="#1e40af" font-weight="600">Step 2</text>
-  <text x="240" y="121" text-anchor="middle" fill="#1d4ed8" font-size="11">Compare ox. numbers before and after</text>
+  <text x="240" y="107" text-anchor="middle" fill="#f8fafc" font-weight="600" style="fill:#f8fafc">Step 2</text>
+  <text x="240" y="121" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Compare ox. numbers before and after</text>
   <line x1="240" y1="128" x2="240" y2="148" stroke="#64748b" stroke-width="1.5" marker-end="url(#aGr)"/>
 
   <!-- Decision diamond -->
   <polygon points="240,148 355,180 240,212 125,180" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
-  <text x="240" y="176" text-anchor="middle" fill="#92400e" font-weight="600" font-size="12">Any change?</text>
-  <text x="240" y="194" text-anchor="middle" fill="#92400e" font-size="10">(in ox. numbers)</text>
+  <text x="240" y="176" text-anchor="middle" fill="#f8fafc" font-weight="600" font-size="12" style="fill:#f8fafc">Any change?</text>
+  <text x="240" y="194" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">(in ox. numbers)</text>
 
   <!-- YES branch -->
   <line x1="355" y1="180" x2="422" y2="180" stroke="#16a34a" stroke-width="1.5" marker-end="url(#aGn)"/>
   <text x="387" y="173" text-anchor="middle" fill="#15803d" font-size="11">YES</text>
   <rect x="424" y="158" width="50" height="44" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1"/>
-  <text x="449" y="176" text-anchor="middle" fill="#14532d" font-size="10" font-weight="700">REDOX</text>
-  <text x="449" y="192" text-anchor="middle" fill="#14532d" font-size="10">reaction</text>
+  <text x="449" y="176" text-anchor="middle" fill="#f8fafc" font-size="10" font-weight="700" style="fill:#f8fafc">REDOX</text>
+  <text x="449" y="192" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">reaction</text>
 
   <!-- NO branch -->
   <line x1="125" y1="180" x2="58" y2="180" stroke="#dc2626" stroke-width="1.5" marker-end="url(#aRd)"/>
   <text x="90" y="173" text-anchor="middle" fill="#dc2626" font-size="11">NO</text>
   <rect x="6" y="158" width="50" height="44" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1"/>
-  <text x="31" y="176" text-anchor="middle" fill="#7f1d1d" font-size="10" font-weight="700">NOT</text>
-  <text x="31" y="192" text-anchor="middle" fill="#7f1d1d" font-size="10">redox</text>
+  <text x="31" y="176" text-anchor="middle" fill="#f8fafc" font-size="10" font-weight="700" style="fill:#f8fafc">NOT</text>
+  <text x="31" y="192" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">redox</text>
 
   <!-- Step 3 -->
   <line x1="240" y1="212" x2="240" y2="232" stroke="#64748b" stroke-width="1.5" marker-end="url(#aGr)"/>
   <rect x="85" y="232" width="310" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
-  <text x="240" y="250" text-anchor="middle" fill="#1e293b" font-weight="600">Step 3: Label each species</text>
-  <text x="240" y="268" text-anchor="middle" fill="#475569" font-size="11">↑ Ox. number → OXIDISED → that species is the reducing agent</text>
-  <text x="240" y="283" text-anchor="middle" fill="#475569" font-size="11">↓ Ox. number → REDUCED → that species is the oxidising agent</text>
+  <text x="240" y="250" text-anchor="middle" fill="#f8fafc" font-weight="600" style="fill:#f8fafc">Step 3: Label each species</text>
+  <text x="240" y="268" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">↑ Ox. number → OXIDISED → that species is the reducing agent</text>
+  <text x="240" y="283" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">↓ Ox. number → REDUCED → that species is the oxidising agent</text>
 
   <defs>
     <marker id="aGr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">

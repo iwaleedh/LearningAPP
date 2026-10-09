@@ -8,6 +8,21 @@ export const note_chemistry_5_18_0 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Aromaticity explains benzene’s reaction preference",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Benzene is a planar six-carbon ring with a delocalised π system above and below the ring. The six C–C bonds have equal lengths intermediate between typical single and double bonds. It is not accurately described as three fixed isolated C=C bonds continually swapping positions. Delocalisation stabilises the ring.<br/><br/>Benzene commonly undergoes electrophilic substitution because the final product retains aromatic delocalisation. An addition product would lose that stabilisation. Mechanisms still require the relevant electrophile to be generated; bromination of benzene typically needs a suitable halogen carrier, whereas an alkene can react readily with bromine without that catalyst under test conditions."
+  }
+},
+{
       id: 'h-aromatic-aliphatic',
       type: 'heading',
       data: { text: 'Aromatic vs Aliphatic Compounds', level: 2 }
@@ -304,7 +319,7 @@ export const note_chemistry_5_18_0 = {
 
   <!-- Divider -->
   <line x1="150" y1="35" x2="150" y2="190" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="170" y="185" text-anchor="middle" font-size="10" fill="#9ca3af">vs</text>
+  <text x="170" y="185" text-anchor="middle" font-size="10" fill="#0f172a" style="fill:#0f172a">vs</text>
 
   <!-- RIGHT: Modern delocalised model -->
   <text x="255" y="38" text-anchor="middle" font-size="11" fill="#16a34a">Delocalised Model (correct)</text>
@@ -329,11 +344,11 @@ export const note_chemistry_5_18_0 = {
   <!-- Bond length annotation box -->
   <rect x="10" y="148" width="155" height="38" rx="4" fill="#3d1212" stroke="#dc2626" stroke-width="1"/>
   <text x="88" y="162" text-anchor="middle" font-size="9.5" fill="#dc2626" font-weight="bold">Kekulé: 2 bond lengths</text>
-  <text x="88" y="178" text-anchor="middle" font-size="9" fill="#374151">C=C 134 pm | C−C 154 pm</text>
+  <text x="88" y="178" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">C=C 134 pm | C−C 154 pm</text>
 
   <rect x="175" y="148" width="155" height="38" rx="4" fill="#0a2e1a" stroke="#16a34a" stroke-width="1"/>
   <text x="253" y="162" text-anchor="middle" font-size="9.5" fill="#16a34a" font-weight="bold">Actual: 1 bond length</text>
-  <text x="253" y="178" text-anchor="middle" font-size="9" fill="#374151">All C−C = 139 pm (equal)</text>
+  <text x="253" y="178" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">All C−C = 139 pm (equal)</text>
 </svg>`
       }
     },
@@ -373,13 +388,6 @@ export const note_chemistry_5_18_0 = {
       terms: []
     },
     {
-      id: 'summary-structure',
-      type: 'summary',
-      data: {
-        text: 'Benzene (C₆H₆) is an aromatic compound, unlike aliphatic compounds which lack the benzene ring. The Kekulé structure (alternating C=C and C−C) is disproved by five pieces of evidence: (1) benzene does not decolourise Br₂(aq) — it undergoes substitution, not addition; (2) only 3 isomers of dibromobenzene exist (not 4); (3) X-ray diffraction shows all C−C bonds are equal at 139 pm; (4) enthalpy of hydrogenation is −208 kJ/mol (not −360 kJ/mol); (5) IR spectrum shows no C=C peak at 1650 cm⁻¹. The modern model: 6 p orbitals overlap to form a delocalised π system above and below the ring, stabilising benzene by ~152 kJ/mol. Represented as a hexagon with a circle.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -388,20 +396,89 @@ export const note_chemistry_5_18_0 = {
         text: "Benzene's exceptional stability (\u0394H_combustion -3268 kJ/mol, more negative than predicted) arises from extended \u03c0-electron delocalisation across all 6 carbons. Each C contributes one p-orbital to the ring, creating a continuous 6-electron cloud above and below the plane. Delocalisation energy \u2248 150 kJ/mol."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "If three isolated C=C bonds released approximately −120 kJ mol⁻¹ each on hydrogenation, the naive expectation would be −360 kJ mol⁻¹. An illustrative observed benzene hydrogenation value near −208 kJ mol⁻¹ is much less exothermic. The difference, about 152 kJ mol⁻¹, indicates benzene starts from a more stable, delocalised state."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "A resonance drawing is a model, not a picture of benzene oscillating between two distinct molecules. Do not describe benzene as an ordinary alkene simply because one drawing uses alternating bonds."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why are all six benzene C–C bonds equal in length?",
+        "checked": false
+      },
+      {
+        "text": "Why is substitution generally favoured over addition?",
+        "checked": false
+      },
+      {
+        "text": "What does a less-exothermic hydrogenation than the isolated-bond estimate suggest?",
+        "checked": false
+      },
+      {
+        "text": "Does benzene readily decolourise bromine water like an alkene?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Benzene is a planar six-carbon ring with a delocalised π system above and below the ring. The six C–C bonds have equal lengths intermediate between typical single and double bonds. It is not accurately described as three fixed isolated C=C bonds continually swapping positions. Delocalisation stabilises the ring."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'callout-bromine-test', prompt: 'Why does benzene NOT decolourise bromine water? What does this tell us about the Kekulé structure?' },
-      { id: 'cue-2', blockId: 'p-isomers', prompt: 'How do the isomers of dibromobenzene disprove the Kekulé structure?' },
-      { id: 'cue-3', blockId: 'eq-hydrogenation', prompt: 'What is the measured ΔH of hydrogenation for benzene? How does it compare to the Kekulé prediction and what is the stabilisation energy?' },
-      { id: 'cue-4', blockId: 'p-ir-1', prompt: 'What does the IR spectrum of benzene show, and why does this disprove the Kekulé structure?' },
-      { id: 'cue-5', blockId: 'p-delocalised-conclusion', prompt: 'Explain how the delocalised π electron model accounts for all five pieces of evidence against Kekulé.' },
-      { id: 'cue-6', blockId: 'list-orbital-model', prompt: 'Describe the orbital model of benzene, including hybridisation and the formation of the delocalised π system.' }
-    ],
-    summaryText: 'Benzene is aromatic (contains benzene ring); benzene ≠ aliphatic. Five evidence points disprove Kekulé: (1) no addition with Br₂; (2) only 3 dibromobenzene isomers; (3) all C−C bonds equal at 139 pm; (4) ΔH(hydrogenation) = −208 not −360 kJ/mol; (5) no IR peak at 1650 cm⁻¹. Modern model: C atoms sp² hybridised, 6 p orbitals overlap sideways → delocalised π system, stabilisation energy ≈ 152 kJ/mol.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why are all six benzene C–C bonds equal in length?",
+      "answer": "The π electrons are delocalised around the ring rather than confined to three fixed double bonds."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why is substitution generally favoured over addition?",
+      "answer": "The substitution product retains aromatic delocalisation, while addition would lose it."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What does a less-exothermic hydrogenation than the isolated-bond estimate suggest?",
+      "answer": "Benzene has extra stability before reaction due to delocalisation."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does benzene readily decolourise bromine water like an alkene?",
+      "answer": "No under the usual alkene test conditions; benzene bromination requires suitable reaction conditions such as a halogen carrier."
+    }
+  ],
+  "summaryText": "Benzene is a planar six-carbon ring with a delocalised π system above and below the ring. The six C–C bonds have equal lengths intermediate between typical single and double bonds. It is not accurately described as three fixed isolated C=C bonds continually swapping positions. Delocalisation stabilises the ring.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -411,5 +488,5 @@ export const note_chemistry_5_18_0 = {
       source: 'chemguide.co.uk — benzene structure and bonding',
       tags: ['structure', 'bonding', 'delocalisation']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

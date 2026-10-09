@@ -129,7 +129,7 @@ export const note_olevel_biology_9_9_1 = {
   <!-- Pulmonary vein (lungs → left atrium) -->
   <path d="M310 55 Q330 60 330 100" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
   <text x="355" y="50" text-anchor="middle" font-size="9" fill="#1d4ed8">Pulmonary</text>
-  <text x="355" y="62" text-anchor="middle" font-size="9" fill="#1d4ed8">vein (oxy.)</text>
+  <text x="355" y="41" text-anchor="middle" font-size="9" fill="#1d4ed8">vein (oxy.)</text>
   <!-- AV valve label -->
   <text x="240" y="198" text-anchor="middle" font-size="8" fill="#7f1d1d">← AV valves →</text>
   <!-- Septum label -->

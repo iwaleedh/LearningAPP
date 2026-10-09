@@ -253,7 +253,7 @@ export const note_chemistry_4_14_2 = {
       data: {
         style: 'worked',
         title: 'Example 3: NaOH reverse calculation',
-        text: 'Q: A NaOH solution has pH = 12.50. Calculate [NaOH].\n\npH = 12.50 → [H⁺] = 10⁻¹²·⁵⁰ = 3.16 × 10⁻¹³ mol dm⁻³\n[OH⁻] = Kw ÷ [H⁺] = 10⁻¹⁴ ÷ 3.16 × 10⁻¹³ = 0.031 mol dm⁻³\n[NaOH] = [OH⁻] = <strong>0.031 mol dm⁻³</strong>'
+        text: 'Q: A NaOH solution has pH = 12.50. Calculate [NaOH].\n\npH = 12.50 → [H⁺] = 10<sup>−12.50</sup> = 3.16 × 10⁻¹³ mol dm⁻³\n[OH⁻] = Kw ÷ [H⁺] = 10⁻¹⁴ ÷ (3.16 × 10⁻¹³) = 0.031 mol dm⁻³\n[NaOH] = [OH⁻] = <strong>0.031 mol dm⁻³</strong>'
       }
     },
     {

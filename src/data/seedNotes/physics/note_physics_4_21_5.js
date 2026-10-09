@@ -16,7 +16,7 @@ export const note_physics_4_21_5 = {
       id: 'svg-transformer-structure',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg"><rect x="50" y="40" width="250" height="120" fill="none" stroke="#6B7280" stroke-width="30"/><text x="175" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#374151">Soft Iron Core</text><path d="M 20 60 Q 40 50 65 60 T 65 90 T 65 120 T 65 150 L 20 150" fill="none" stroke="#D97706" stroke-width="4"/><path d="M 330 50 Q 310 40 285 50 T 285 70 T 285 90 T 285 110 T 285 130 L 330 130" fill="none" stroke="#EF4444" stroke-width="4"/><text x="35" y="40" font-family="Arial" font-size="14" fill="#B45309">Primary (Np)</text><text x="290" y="30" font-family="Arial" font-size="14" fill="#991B1B">Secondary (Ns)</text></svg>',
+        svg: `<svg viewBox="0 0 396 200" xmlns="http://www.w3.org/2000/svg"><rect x="50" y="40" width="250" height="120" fill="none" stroke="#6B7280" stroke-width="30"/><text x="175" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#374151">Soft Iron Core</text><path d="M 20 60 Q 40 50 65 60 T 65 90 T 65 120 T 65 150 L 20 150" fill="none" stroke="#D97706" stroke-width="4"/><path d="M 330 50 Q 310 40 285 50 T 285 70 T 285 90 T 285 110 T 285 130 L 330 130" fill="none" stroke="#EF4444" stroke-width="4"/><text x="35" y="40" font-family="Arial" font-size="14" fill="#B45309">Primary (Np)</text><text x="290" y="30" font-family="Arial" font-size="14" fill="#991B1B">Secondary (Ns)</text></svg>`,
         caption: 'Transformer Structure'
       }
     },

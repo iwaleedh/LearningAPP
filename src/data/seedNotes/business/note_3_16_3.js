@@ -1,18 +1,18 @@
 export const note_business_3_16_3 = {
   pdfPath: '/notes/business/wbs13-16.pdf',
   blocks: [
-    { type: 'objective', data: { text: 'Examine the role of transformational leadership in effectively managing and driving organisational change.' } },
-    { type: 'heading', data: { text: 'What is Transformational Leadership?', level: 2 } },
-    { type: 'paragraph', data: { text: 'Transformational leadership is a leadership style where leaders encourage, inspire, and motivate employees to innovate and create changes that will help grow and shape the future success of the company. It contrasts with transactional leadership, which focuses on supervision, organisation, and performance via rewards and punishments.' } },
-    { type: 'heading', data: { text: 'Key Characteristics', level: 3 } },
-    { type: 'list', data: { style: 'bullet', items: [
+    { id: 'base-objective-1', type: 'objective', data: { text: 'Examine the role of transformational leadership in effectively managing and driving organisational change.' } },
+    { id: 'base-heading-2', type: 'heading', data: { text: 'What is Transformational Leadership?', level: 2 } },
+    { id: 'base-paragraph-3', type: 'paragraph', data: { text: 'Transformational leadership is a leadership style where leaders encourage, inspire, and motivate employees to innovate and create changes that will help grow and shape the future success of the company. It contrasts with transactional leadership, which focuses on supervision, organisation, and performance via rewards and punishments.' } },
+    { id: 'base-heading-4', type: 'heading', data: { text: 'Key Characteristics', level: 3 } },
+    { id: 'base-list-5', type: 'list', data: { style: 'bullet', items: [
       { text: '<b>Idealised Influence:</b> Acting as a strong role model (leading by example). High ethical standards.' },
       { text: '<b>Inspirational Motivation:</b> Communicating a compelling vision of the future and inspiring followers to achieve it.' },
       { text: '<b>Intellectual Stimulation:</b> Encouraging creativity, innovation, and challenging the status quo.' },
       { text: '<b>Individualised Consideration:</b> Acting as a mentor or coach, paying attention to individual employee needs for achievement and growth.' }
     ]}},
-    { type: 'callout', data: { style: 'key', title: 'Why is it crucial for change?', text: 'Change involves leading people through uncertainty. Transformational leaders reduce fear by painting a positive, clear vision of the destination, empowering employees to figure out the best way to get there.' } },
-    { type: 'comparisonTable', data: {
+    { id: 'base-callout-6', type: 'callout', data: { style: 'key', title: 'Why is it crucial for change?', text: 'Change involves leading people through uncertainty. Transformational leaders reduce fear by painting a positive, clear vision of the destination, empowering employees to figure out the best way to get there.' } },
+    { id: 'base-comparisonTable-7', type: 'comparisonTable', data: {
       caption: 'Transformational vs Transactional Leadership',
       headers: ['Feature', 'Transformational', 'Transactional'],
       rows: [
@@ -22,8 +22,8 @@ export const note_business_3_16_3 = {
         ['Employee Role', 'Innovators and collaborators', 'Executors of clear instructions']
       ]
     }},
-    { type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'When discussing a business turnaround or a major takeover, highlight how a transformational leader is essential to merge cultures and reassure anxious staff.' } },
-    { type: 'summary', data: { text: 'Transformational leadership is vital for managing corporate change. By inspiring staff, challenging the norm, and providing individual support, these leaders navigate businesses through disruptive periods towards long-term success.' } },
+    { id: 'base-callout-8', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'When discussing a business turnaround or a major takeover, highlight how a transformational leader is essential to merge cultures and reassure anxious staff.' } },
+    { id: 'base-summary-9', type: 'summary', data: { text: 'Transformational leadership is vital for managing corporate change. By inspiring staff, challenging the norm, and providing individual support, these leaders navigate businesses through disruptive periods towards long-term success.' } },
     { id: 'enr-h-real-leaders', type: 'heading', data: { text: 'Transformational Leaders in Real Organisations', level: 2 } },
     { id: 'enr-callout-satya', type: 'callout', data: { style: 'worked', title: 'Brand Example: Satya Nadella — Microsoft', text: 'When Satya Nadella became CEO of Microsoft in 2014, he inherited a deeply competitive, siloed company with a "know-it-all" culture. Nadella transformed this into a "learn-it-all" culture through all four pillars of transformational leadership: <b>Inspirational motivation</b> — cloud-first vision for Azure; <b>Idealised influence</b> — leading by intellectual curiosity and humility; <b>Intellectual stimulation</b> — challenging the Windows-only mindset and acquiring GitHub; <b>Individualised consideration</b> — empowering autonomous team structures. Microsoft\'s market capitalisation rose from ~$300bn to over $3 trillion under his leadership.' } },
     { id: 'enr-callout-tesco', type: 'callout', data: { style: 'worked', title: 'Brand Example: Dave Lewis — Tesco Turnaround (2014)', text: 'Dave Lewis joined Tesco in 2014 following a £263m accounting scandal that had destroyed customer and investor trust. His leadership was transformational: he immediately communicated radical transparency (admitting problems publicly), simplified the product range by removing 30,000 SKUs, restructured debt, and supported thousands of redundant staff through transition. He replaced complacency with accountability and purpose. Within 3 years, Tesco had returned to profitability — showing how transformational leadership can reverse even reputational crises.' } },

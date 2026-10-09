@@ -12,6 +12,21 @@ export const note_chemistry_2_7_2 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Explain water’s anomalies using its network",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Water can form an extended hydrogen-bonded network: each molecule has two O–H donors and two lone-pair acceptors. Hydrogen bonding increases the energy needed to separate molecules and contributes to its relatively high boiling temperature and heat capacity. Liquid water’s network continually reorganises.<br/><br/>Ice has an open arrangement in which water molecules are held farther apart on average than in liquid water near freezing. Ice is therefore less dense and floats. Water’s density is greatest near 4 °C, so “cooling always makes water denser” is not correct. Polarity and hydrogen bonding help water dissolve many polar substances; ion–dipole attractions help stabilise dissolved ions."
+  }
+},
+{
             id: 'h-anomalous',
             type: 'heading',
             data: { text: 'Anomalous Properties of Water', level: 2 },
@@ -49,18 +64,89 @@ export const note_chemistry_2_7_2 = {
             data: { text: 'This density anomaly is biologically crucial: ice forms on the surface of lakes and oceans, insulating the water below and allowing aquatic life to survive winter.' },
             terms: []
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "A pond freezes from the surface. The ice floats rather than sinking because its open network has a lower density. The ice layer can insulate the liquid beneath, allowing aquatic organisms to survive. The explanation concerns molecular arrangement, not water molecules becoming heavier when heated."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "The covalent O–H bonds are not broken on melting ice. It is the intermolecular arrangement that changes. Do not claim all substances dissolve well in water."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why does ice float?",
+        "checked": false
+      },
+      {
+        "text": "Why is water’s boiling temperature relatively high?",
+        "checked": false
+      },
+      {
+        "text": "What changes when ice melts?",
+        "checked": false
+      },
+      {
+        "text": "Why is “cooling always increases water density” incorrect?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Water can form an extended hydrogen-bonded network: each molecule has two O–H donors and two lone-pair acceptors. Hydrogen bonding increases the energy needed to separate molecules and contributes to its relatively high boiling temperature and heat capacity. Liquid water’s network continually reorganises."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'p-why', prompt: 'Based on molar mass alone, what state would you expect water to be in at room temperature? Why?' },
-            { id: 'c2', blockId: 'callout-temp', prompt: 'Explain why water has a much higher boiling point than hydrogen sulfide (H₂S).' },
-            { id: 'c3', blockId: 'callout-temp', prompt: 'Water, hydrogen fluoride (HF), and ammonia (NH₃) all have 10 electrons and form hydrogen bonds. Explain why water has the highest boiling point of the three.' },
-            { id: 'c4', blockId: 'callout-density', prompt: 'Why is ice less dense than liquid water? Describe the structure of ice.' }
-        ],
-        summaryText: 'Water has anomalous properties due to extensive hydrogen bonding. (1) High melting/boiling points: H-bonds require lots of energy to break compared to London forces. It boils higher than HF/NH3 because it forms 4 H-bonds per molecule compared to 2 and 1. (2) Solid ice is less dense than liquid water: in ice, H-bonds form a rigid, open tetrahedral lattice with large gaps. Melting collapses this structure, packing molecules closer together.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why does ice float?",
+      "answer": "Its open hydrogen-bonded network gives a lower density than liquid water near freezing."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why is water’s boiling temperature relatively high?",
+      "answer": "Energy is needed to overcome substantial hydrogen bonding between its molecules."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What changes when ice melts?",
+      "answer": "The ordered intermolecular network partly collapses; the water molecules remain intact."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why is “cooling always increases water density” incorrect?",
+      "answer": "Water has maximum density near 4 °C and becomes less dense as it forms ice."
+    }
+  ],
+  "summaryText": "Water can form an extended hydrogen-bonded network: each molecule has two O–H donors and two lone-pair acceptors. Hydrogen bonding increases the energy needed to separate molecules and contributes to its relatively high boiling temperature and heat capacity. Liquid water’s network continually reorganises.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_7_2;

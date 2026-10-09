@@ -12,6 +12,21 @@ export const note_chemistry_1_3_6 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Melting a molecular substance does not break its molecules",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A simple molecular substance consists of discrete molecules. Strong covalent bonds hold atoms together within each molecule; weaker intermolecular attractions act between molecules. Melting and boiling overcome intermolecular attractions, so these substances often have relatively low melting and boiling temperatures. Their covalent bonds usually remain intact during a change of state.<br/><br/>London forces act between all molecules. Polar molecules also have permanent dipole–dipole attractions; molecules with a suitable O–H, N–H or F–H group can form hydrogen bonds. A larger electron cloud is generally more polarisable and produces stronger London forces. Surface contact and molecular shape matter as well. Simple molecular substances generally do not conduct because they lack mobile charged particles."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'Simple Molecular Structure', level: 2 },
@@ -22,7 +37,7 @@ export const note_chemistry_1_3_6 = {
       type: 'svg',
       data: {
         caption: 'Simple molecular substances consist of discrete molecules with strong covalent bonds within (intramolecular) and weak intermolecular forces between molecules. When the solid melts or boils, ONLY the weak intermolecular forces are broken — the covalent bonds remain intact.',
-        svg: `<svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="-37 0 717 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Structure diagram on left -->
   <rect x="5" y="8" width="310" height="244" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
   <text x="160" y="26" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="13">Cl₂ Molecular Solid (schematic)</text>
@@ -65,9 +80,9 @@ export const note_chemistry_1_3_6 = {
   <line x1="15" y1="75" x2="48" y2="75" stroke="#1e40af" stroke-width="2"/>
   <text x="12" y="78" text-anchor="end" fill="#1e40af" font-size="9.5">strong</text>
   <text x="12" y="90" text-anchor="end" fill="#1e40af" font-size="9.5">cov. bond</text>
-  <text x="255" y="125" fill="#f97316" font-size="9.5">weak</text>
-  <text x="255" y="138" fill="#f97316" font-size="9.5">London</text>
-  <text x="255" y="151" fill="#f97316" font-size="9.5">forces</text>
+  <text x="255" y="125" fill="#0f172a" font-size="9.5" style="fill:#0f172a">weak</text>
+  <text x="255" y="138" fill="#0f172a" font-size="9.5" style="fill:#0f172a">London</text>
+  <text x="255" y="151" fill="#0f172a" font-size="9.5" style="fill:#0f172a">forces</text>
 
   <text x="160" y="220" text-anchor="middle" fill="#374151" font-size="10">Covalent bonds within molecule: ~200–900 kJ mol⁻¹</text>
   <text x="160" y="238" text-anchor="middle" fill="#374151" font-size="10">London forces between molecules: ~1–40 kJ mol⁻¹</text>
@@ -115,20 +130,90 @@ export const note_chemistry_1_3_6 = {
       },
       terms: ['London dispersion force', 'Instantaneous dipole']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Compare CH₄ and I₂. Both are non-polar molecular substances and both experience London forces. I₂ has many more electrons and a more polarisable electron cloud, so its London forces are stronger. More energy is required to separate its molecules. This does not mean the I–I covalent bond is being broken during melting."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not write “weak covalent bonds give a low boiling point”. It is the attractions between molecules that are overcome. Some molecular substances react or ionise in water, so the resulting solution can conduct."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is overcome when methane boils?",
+        "checked": false
+      },
+      {
+        "text": "Why does iodine have stronger London forces than methane?",
+        "checked": false
+      },
+      {
+        "text": "Why do pure simple molecular liquids generally not conduct?",
+        "checked": false
+      },
+      {
+        "text": "Which intermolecular force acts between all molecules?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A simple molecular substance consists of discrete molecules. Strong covalent bonds hold atoms together within each molecule; weaker intermolecular attractions act between molecules. Melting and boiling overcome intermolecular attractions, so these substances often have relatively low melting and boiling temperatures. Their covalent bonds usually remain intact during a change of state."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Simple molecular substances: discrete molecules with strong covalent bonds inside, weak IMF between. Properties: low m.p./b.p. (only IMF broken), non-conductors (no ions/free e⁻), "like dissolves like". Melting / boiling ≠ breaking covalent bonds. Trend: larger molecules → more electrons → stronger London forces → higher m.p. (F₂ < Cl₂ < Br₂ < I₂).',
-    cues: [
-      { id: 'c1', blockId: 'svg-structure', prompt: 'Explain why simple molecular substances have low melting points. Which forces are broken when Cl₂ melts?' },
-      { id: 'c2', blockId: 'key-distinction', prompt: 'Distinguish between intramolecular and intermolecular forces. Give typical energy ranges for each.' },
-      { id: 'c3', blockId: 'svg-structure', prompt: 'Why are simple molecular substances (like I₂) usually non-conductors? Under what conditions might they conduct?' },
-      { id: 'c4', blockId: 'tip-mp-trend', prompt: 'Why does melting point increase from F₂ to I₂? Explain in terms of electrons and London forces.' },
-      { id: 'c5', blockId: 'key-distinction', prompt: 'Steam consists of H₂O molecules. What bonds are broken when steam condenses to water and when water is decomposed by electrolysis? Identify each type.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is overcome when methane boils?",
+      "answer": "London forces between methane molecules; C–H covalent bonds within the molecules remain intact."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why does iodine have stronger London forces than methane?",
+      "answer": "Iodine has more electrons and a more polarisable electron cloud, giving stronger temporary dipole–induced dipole attractions."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why do pure simple molecular liquids generally not conduct?",
+      "answer": "They do not contain mobile ions or delocalised electrons."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Which intermolecular force acts between all molecules?",
+      "answer": "London dispersion forces, including in polar molecules."
+    }
+  ],
+  "summaryText": "A simple molecular substance consists of discrete molecules. Strong covalent bonds hold atoms together within each molecule; weaker intermolecular attractions act between molecules. Melting and boiling overcome intermolecular attractions, so these substances often have relatively low melting and boiling temperatures. Their covalent bonds usually remain intact during a change of state.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

@@ -46,7 +46,7 @@ export const note_olevel_maths_core_5_4_1 = {
       id: 'svg-scale',
       type: 'svg',
       data: {
-        svg: `<svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
+        svg: `<svg viewBox="0 0 480 193" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Small square -->
   <rect x="20" y="40" width="60" height="60" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <text x="50" y="115" text-anchor="middle" fill="#3b82f6">s = 4 cm</text>
@@ -64,7 +64,7 @@ export const note_olevel_maths_core_5_4_1 = {
 
   <!-- Labels under -->
   <text x="50" y="160" text-anchor="middle" fill="#374151" font-size="10">Small</text>
-  <text x="280" y="160" text-anchor="middle" fill="#374151" font-size="10">Large: Area = 64 cm² (×4), Vol = 512 cm³ (×8)</text>
+  <text x="280" y="182" text-anchor="middle" fill="#374151" font-size="10">Large: Area = 64 cm² (×4), Vol = 512 cm³ (×8)</text>
 </svg>`,
         caption: 'Scale factor k = 2: sides double, area quadruples (×4), volume octuples (×8)',
       },

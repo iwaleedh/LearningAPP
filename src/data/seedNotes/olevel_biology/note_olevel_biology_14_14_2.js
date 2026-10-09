@@ -71,7 +71,7 @@ export const note_olevel_biology_14_14_2 = {
 
   <!-- Blind spot -->
   <circle cx="330" cy="220" r="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
-  <text x="345" y="225" fill="#dc2626" font-size="10">Blind spot</text>
+  <text x="323" y="242" fill="#dc2626" font-size="10">Blind spot</text>
   <line x1="343" y1="223" x2="338" y2="222" stroke="#dc2626" stroke-width="1"/>
 
   <!-- Optic nerve -->

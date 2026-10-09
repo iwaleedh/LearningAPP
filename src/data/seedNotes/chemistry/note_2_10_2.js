@@ -12,6 +12,21 @@ export const note_chemistry_2_10_2 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Separate hydrolysis from the test that detects halide ions",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "In the aqueous silver nitrate test, ethanol helps dissolve the halogenoalkane and mix it with the aqueous reagent. Water acts as the nucleophile in hydrolysis. Released halide ions then react with Ag⁺ to form a precipitate. The precipitate is evidence for halide release; silver nitrate is not the species that replaces the halogen in the organic molecule.<br/><br/>Compare equal concentrations and volumes at the same temperature, using the same observation criterion. For comparable primary compounds, C–I is weaker than C–Br, which is weaker than C–Cl, so the iodoalkane usually releases halide most rapidly. For comparisons between primary, secondary and tertiary isomers, the reaction conditions and mechanism matter; the halogen atom alone is not the explanation."
+  }
+},
+{
             id: 'h-silvernitrate',
             type: 'heading',
             data: { text: 'The Silver Nitrate Experiment', level: 2 },
@@ -58,20 +73,89 @@ export const note_chemistry_2_10_2 = {
             data: { text: 'Notice that <em>bond polarity</em> is NOT the determining factor for the halogen rate trend. The C-Cl bond is the most polar (which should theoretically attract the nucleophile faster), but bond enthalpy (strength) completely overrides this effect. The C-I bond is non-polar but extremely weak, so it breaks the fastest.' },
             terms: ['Bond polarity']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Under controlled conditions, 1-iodobutane gives a yellow AgI precipitate sooner than 1-bromobutane gives cream AgBr, while 1-chlorobutane gives white AgCl more slowly. The delay reflects the hydrolysis rate under those conditions. Use equal halogenoalkane concentrations and a thermostatically controlled water bath for a fair comparison."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not attribute faster iodoalkane hydrolysis to a more polar C–I bond. C–I is less polar than C–Cl; weaker bond strength is the relevant explanation in this comparison."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why is ethanol added in the silver nitrate hydrolysis test?",
+        "checked": false
+      },
+      {
+        "text": "What species acts as the nucleophile?",
+        "checked": false
+      },
+      {
+        "text": "What directly forms the precipitate?",
+        "checked": false
+      },
+      {
+        "text": "Why do comparable primary iodoalkanes usually hydrolyse faster than chloroalkanes?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "In the aqueous silver nitrate test, ethanol helps dissolve the halogenoalkane and mix it with the aqueous reagent. Water acts as the nucleophile in hydrolysis. Released halide ions then react with Ag⁺ to form a precipitate. The precipitate is evidence for halide release; silver nitrate is not the species that replaces the halogen in the organic molecule."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'p-silvernitrate', prompt: 'In the experiment to compare hydrolysis rates (CP5), why is ethanol added to the mixture containing the halogenoalkane and aqueous silver nitrate?' },
-            { id: 'c1b', blockId: 'p-silvernitrate', prompt: 'Why is a water bath used instead of a Bunsen burner to heat the mixture in the CP5 hydrolysis experiment?' },
-            { id: 'c2', blockId: 'callout-precipitates', prompt: 'How do you know when hydrolysis has successfully occurred during the silver nitrate rate experiment?' },
-            { id: 'c3', blockId: 'table-trends', prompt: 'Which will hydrolyse faster: 1-chlorobutane or 1-iodobutane? Explain your reasoning.' },
-            { id: 'c4', blockId: 'table-trends', prompt: 'Which will hydrolyse faster: 1-bromobutane (primary) or 2-bromo-2-methylpropane (tertiary)?' },
-            { id: 'cue-fluoro', blockId: 'table-trends', prompt: 'Why are fluoroalkanes generally considered unreactive in nucleophilic substitution reactions?' }
-        ],
-        summaryText: 'To compare hydrolysis rates (CP5), add halogenoalkane to ethanol (solvent) and AgNO₃(aq), heated in a water bath (flammable), and time precipitate (AgX) formation. Trend 1: Iodoalkanes are fastest, then bromo, then chloro. This is entirely due to decreasing Bond Enthalpy (C-I is very weak; C-Cl is very strong). Bond polarity is irrelevant. Trend 2: Tertiary (3°) hydrolyse fastest, followed by 2°, then 1° because they use a faster SN1 mechanism.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why is ethanol added in the silver nitrate hydrolysis test?",
+      "answer": "It helps dissolve the halogenoalkane and mix it with the aqueous reagent."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What species acts as the nucleophile?",
+      "answer": "Water in the aqueous silver nitrate/ethanol hydrolysis test."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What directly forms the precipitate?",
+      "answer": "Halide ions released by hydrolysis react with silver ions."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why do comparable primary iodoalkanes usually hydrolyse faster than chloroalkanes?",
+      "answer": "The C–I bond is weaker and more readily broken under the test conditions."
+    }
+  ],
+  "summaryText": "In the aqueous silver nitrate test, ethanol helps dissolve the halogenoalkane and mix it with the aqueous reagent. Water acts as the nucleophile in hydrolysis. Released halide ions then react with Ag⁺ to form a precipitate. The precipitate is evidence for halide release; silver nitrate is not the species that replaces the halogen in the organic molecule.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_10_2;

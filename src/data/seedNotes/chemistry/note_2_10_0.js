@@ -12,6 +12,21 @@ export const note_chemistry_2_10_0 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Identify the electron-flow pattern before naming a mechanism",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "An electrophile accepts an electron pair; a nucleophile donates an electron pair. Charge is a clue, not the definition: NH₃ is a neutral nucleophile because nitrogen has a lone pair, and the δ+ carbon in a polar C–halogen bond can be attacked by a nucleophile. Full-headed curly arrows show movement of electron pairs and begin at a lone pair or bond.<br/><br/>Addition joins reactants without loss of a small molecule; substitution replaces one group by another; elimination removes groups and makes a multiple bond. Homolytic fission gives one electron to each atom and forms radicals. Heterolytic fission gives both bonding electrons to one atom and can form ions."
+  }
+},
+{
             id: 'h-types',
             type: 'heading',
             data: { text: 'Reaction Types', level: 2 },
@@ -64,18 +79,89 @@ export const note_chemistry_2_10_0 = {
             },
             terms: ['Homolytic fission', 'Heterolytic fission']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "In CH₃CH₂Br + OH⁻ → CH₃CH₂OH + Br⁻, hydroxide donates a lone pair to the carbon attached to bromine. A curly arrow starts at the oxygen lone pair and points to that carbon; a second arrow goes from the C–Br bond to Br. This is nucleophilic substitution, with no change in the carbon skeleton."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "An arrow starting at a positive charge does not show donation of an electron pair. Do not classify every negatively charged species as a radical: charge and unpaired electrons are different features."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define a nucleophile.",
+        "checked": false
+      },
+      {
+        "text": "Why can neutral NH₃ be a nucleophile?",
+        "checked": false
+      },
+      {
+        "text": "Where must a full-headed curly arrow begin?",
+        "checked": false
+      },
+      {
+        "text": "How do homolytic and heterolytic fission differ?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "An electrophile accepts an electron pair; a nucleophile donates an electron pair. Charge is a clue, not the definition: NH₃ is a neutral nucleophile because nitrogen has a lone pair, and the δ+ carbon in a polar C–halogen bond can be attacked by a nucleophile. Full-headed curly arrows show movement of electron pairs and begin at a lone pair or bond."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'table-types', prompt: 'Which type of reaction involves the removal of a small molecule to form a carbon-carbon double bond?' },
-            { id: 'c2', blockId: 'list-reagents', prompt: 'Define a "nucleophile" and give one clear example.' },
-            { id: 'c3', blockId: 'list-reagents', prompt: 'Why is the hydroxide ion (OH⁻) considered a nucleophile rather than an electrophile?' },
-            { id: 'c4', blockId: 'callout-fission', prompt: 'What type of bond breaking (fission) results in the formation of two highly reactive free radicals?' }
-        ],
-        summaryText: 'Organic reactions are classified by what happens overall: Addition (joining, forms double bonds), Elimination (removing, creates double bonds), Substitution (swapping). Oxidation is gaining oxygen/losing hydrogen, while Reduction is the reverse. Reagents are classified by how they act: Nucleophiles (electron pair DONORS, attack δ+), Electrophiles (electron pair ACCEPTORS, attack δ- or C=C). Bonds break homolytically (evenly) to form radicals, or heterolytically (unevenly) to form ions.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define a nucleophile.",
+      "answer": "An electron-pair donor."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why can neutral NH₃ be a nucleophile?",
+      "answer": "Nitrogen has a lone pair available for donation."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Where must a full-headed curly arrow begin?",
+      "answer": "At the electron pair being moved, such as a lone pair or a covalent bond."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "How do homolytic and heterolytic fission differ?",
+      "answer": "Homolytic fission splits the bonding electrons one to each atom; heterolytic fission transfers both to one atom."
+    }
+  ],
+  "summaryText": "An electrophile accepts an electron pair; a nucleophile donates an electron pair. Charge is a clue, not the definition: NH₃ is a neutral nucleophile because nitrogen has a lone pair, and the δ+ carbon in a polar C–halogen bond can be attacked by a nucleophile. Full-headed curly arrows show movement of electron pairs and begin at a lone pair or bond.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_10_0;

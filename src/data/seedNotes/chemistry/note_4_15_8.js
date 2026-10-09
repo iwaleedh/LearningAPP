@@ -87,7 +87,7 @@ export const note_chemistry_4_15_8 = {
         caption: 'NMR spectrum concept: δ axis goes from high values (left, downfield/deshielded) to 0 (right, upfield/shielded). TMS reference peak is at δ = 0.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 195" font-family="Arial,sans-serif">
   <rect width="560" height="195" fill="#0f172a" rx="8"/>
-  <text x="280" y="20" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">NMR Spectrum — Chemical Shift (δ) Axis</text>
+  <text x="280" y="20" font-size="13" fill="#f8fafc" font-weight="bold" text-anchor="middle" style="fill:#f8fafc">NMR Spectrum — Chemical Shift (δ) Axis</text>
   <!-- Y axis -->
   <line x1="52" y1="32" x2="52" y2="148" stroke="#444" stroke-width="2"/>
   <!-- Baseline -->
@@ -96,15 +96,15 @@ export const note_chemistry_4_15_8 = {
   <polygon points="520,144 520,152 528,148" fill="#444"/>
   <!-- Y axis label -->
   <text x="19" y="100" font-size="10" fill="#555" transform="rotate(-90,19,100)" text-anchor="middle">Absorption</text>
-  <text x="52" y="29" font-size="10" fill="#555">↑</text>
+  <text x="52" y="29" font-size="10" fill="#f8fafc" style="fill:#f8fafc">↑</text>
   <!-- x-axis labels: 200 left → 0 right -->
-  <text x="60" y="163" font-size="9.5" fill="#555" text-anchor="middle">200</text>
-  <text x="130" y="163" font-size="9.5" fill="#555" text-anchor="middle">160</text>
-  <text x="210" y="163" font-size="9.5" fill="#555" text-anchor="middle">120</text>
-  <text x="290" y="163" font-size="9.5" fill="#555" text-anchor="middle">80</text>
-  <text x="370" y="163" font-size="9.5" fill="#555" text-anchor="middle">40</text>
-  <text x="445" y="163" font-size="9.5" fill="#555" text-anchor="middle">5</text>
-  <text x="510" y="163" font-size="9.5" fill="#555" text-anchor="middle">0</text>
+  <text x="60" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">200</text>
+  <text x="130" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">160</text>
+  <text x="210" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">120</text>
+  <text x="290" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">80</text>
+  <text x="370" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">40</text>
+  <text x="445" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">5</text>
+  <text x="510" y="163" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">0</text>
   <!-- tick marks -->
   <line x1="130" y1="146" x2="130" y2="151" stroke="#555" stroke-width="1"/>
   <line x1="210" y1="146" x2="210" y2="151" stroke="#555" stroke-width="1"/>
@@ -113,10 +113,10 @@ export const note_chemistry_4_15_8 = {
   <line x1="445" y1="146" x2="445" y2="151" stroke="#555" stroke-width="1"/>
   <line x1="510" y1="146" x2="510" y2="151" stroke="#555" stroke-width="1"/>
   <!-- δ (ppm) label -->
-  <text x="280" y="177" font-size="11" fill="#333" text-anchor="middle">δ / ppm</text>
+  <text x="280" y="177" font-size="11" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">δ / ppm</text>
   <!-- Downfield / Upfield arrows -->
   <text x="52" y="188" font-size="10" fill="#cc3333">← Downfield (deshielded)</text>
-  <text x="370" y="188" font-size="10" fill="#3355bb">Upfield (shielded) →</text>
+  <text x="370" y="188" font-size="10" fill="#f8fafc" style="fill:#f8fafc">Upfield (shielded) →</text>
   <!-- TMS reference peak at δ≈0 -->
   <rect x="507" y="58" width="7" height="90" fill="#aaa" rx="1"/>
   <text x="510" y="53" font-size="8.5" fill="#777" text-anchor="middle">TMS</text>
@@ -132,7 +132,7 @@ export const note_chemistry_4_15_8 = {
   <text x="322" y="96" font-size="8" fill="#22aa44" text-anchor="middle">C–O</text>
   <!-- Sample peak: C-C alkane near 25 ppm -->
   <rect x="393" y="112" width="9" height="36" fill="#3355cc" rx="1"/>
-  <text x="397" y="106" font-size="8" fill="#3355cc" text-anchor="middle">C–C</text>
+  <text x="397" y="106" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">C–C</text>
 </svg>`
       }
     },
@@ -225,7 +225,7 @@ export const note_chemistry_4_15_8 = {
         caption: '¹³C NMR chemical shift map — colour-coded horizontal bars show the δ range for each type of carbon environment. δ axis runs from 0 (right) to 220 (left), following NMR convention.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" font-family="Arial,sans-serif">
   <rect width="560" height="240" fill="#0f172a" rx="8"/>
-  <text x="280" y="20" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">¹³C NMR Chemical Shift Map</text>
+  <text x="280" y="20" font-size="13" fill="#f8fafc" font-weight="bold" text-anchor="middle" style="fill:#f8fafc">¹³C NMR Chemical Shift Map</text>
   <!-- Scale: 0 ppm at x=500, 220 ppm at x=60 → scale=440/220=2px per ppm -->
   <!-- x(ppm) = 500 - ppm*2 -->
   <!-- Axis line -->
@@ -233,53 +233,53 @@ export const note_chemistry_4_15_8 = {
   <polygon points="508,206 508,214 516,210" fill="#444"/>
   <!-- Axis tick marks and labels -->
   <line x1="60" y1="208" x2="60" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="60" y="225" font-size="9.5" fill="#444" text-anchor="middle">220</text>
+  <text x="60" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">220</text>
   <line x1="140" y1="208" x2="140" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="140" y="225" font-size="9.5" fill="#444" text-anchor="middle">180</text>
+  <text x="140" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">180</text>
   <line x1="220" y1="208" x2="220" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="220" y="225" font-size="9.5" fill="#444" text-anchor="middle">140</text>
+  <text x="220" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">140</text>
   <line x1="300" y1="208" x2="300" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="300" y="225" font-size="9.5" fill="#444" text-anchor="middle">100</text>
+  <text x="300" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">100</text>
   <line x1="380" y1="208" x2="380" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="380" y="225" font-size="9.5" fill="#444" text-anchor="middle">60</text>
+  <text x="380" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">60</text>
   <line x1="460" y1="208" x2="460" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="460" y="225" font-size="9.5" fill="#444" text-anchor="middle">20</text>
+  <text x="460" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">20</text>
   <line x1="500" y1="208" x2="500" y2="214" stroke="#444" stroke-width="1.5"/>
-  <text x="500" y="225" font-size="9.5" fill="#444" text-anchor="middle">0</text>
+  <text x="500" y="225" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">0</text>
   <!-- Axis label -->
-  <text x="280" y="238" font-size="10" fill="#333" text-anchor="middle">δ / ppm →</text>
+  <text x="280" y="238" font-size="10" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">δ / ppm →</text>
   <!-- Row 1: C=O aldehyde/ketone 190-220 → x=500-190*2=120 to x=500-220*2=60 -->
   <rect x="60" y="36" width="60" height="22" fill="#e05050" rx="3"/>
   <text x="90" y="52" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">190–220</text>
-  <text x="30" y="51" font-size="9.5" fill="#333" text-anchor="middle">C=O</text>
-  <text x="30" y="63" font-size="8.5" fill="#555" text-anchor="middle">ald/ket</text>
+  <text x="30" y="51" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">C=O</text>
+  <text x="30" y="63" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">ald/ket</text>
   <!-- Row 2: COO ester/acid 160-185 → x=500-185*2=130 to x=500-160*2=180 -->
   <rect x="130" y="68" width="50" height="22" fill="#e06820" rx="3"/>
   <text x="155" y="84" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">160–185</text>
-  <text x="30" y="83" font-size="9.5" fill="#333" text-anchor="middle">COO</text>
-  <text x="30" y="95" font-size="8.5" fill="#555" text-anchor="middle">ester/acid</text>
+  <text x="30" y="83" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">COO</text>
+  <text x="30" y="95" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">ester/acid</text>
   <!-- Row 3: C=C alkene 120-140 → x=500-140*2=220 to x=500-120*2=260 -->
   <rect x="220" y="100" width="40" height="22" fill="#78350f" rx="3"/>
-  <text x="240" y="116" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">120–140</text>
-  <text x="30" y="115" font-size="9.5" fill="#333" text-anchor="middle">C=C</text>
-  <text x="30" y="127" font-size="8.5" fill="#555" text-anchor="middle">alkene</text>
+  <text x="240" y="116" font-size="9" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">120–140</text>
+  <text x="30" y="115" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">C=C</text>
+  <text x="30" y="127" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">alkene</text>
   <!-- Row 4: C-O alcohol 50-80 → x=500-80*2=340 to x=500-50*2=400 -->
   <rect x="340" y="132" width="60" height="22" fill="#22aa44" rx="3"/>
   <text x="370" y="148" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">50–80</text>
-  <text x="30" y="147" font-size="9.5" fill="#333" text-anchor="middle">C–O</text>
-  <text x="30" y="159" font-size="8.5" fill="#555" text-anchor="middle">alcohol</text>
+  <text x="30" y="147" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">C–O</text>
+  <text x="30" y="159" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">alcohol</text>
   <!-- Row 5: C-N 35-62 → x=500-62*2=376 to x=500-35*2=430 -->
   <rect x="376" y="164" width="54" height="22" fill="#6644bb" rx="3"/>
-  <text x="403" y="180" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">35–62</text>
-  <text x="30" y="179" font-size="9.5" fill="#333" text-anchor="middle">C–N</text>
+  <text x="403" y="180" font-size="9" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">35–62</text>
+  <text x="30" y="179" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">C–N</text>
   <!-- Row 6: C-C alkane 5-60 → x=500-60*2=380 to x=500-5*2=490 -->
   <rect x="380" y="196" width="110" height="0" fill="none"/>
   <rect x="380" y="187" width="110" height="0" fill="none"/>
   <!-- Actually draw it properly -->
   <rect x="380" y="188" width="110" height="17" fill="#3355cc" rx="3" opacity="0.85"/>
-  <text x="435" y="201" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">5–60</text>
-  <text x="30" y="200" font-size="9.5" fill="#333" text-anchor="middle">C–C</text>
-  <text x="30" y="212" font-size="8.5" fill="#555" text-anchor="middle">alkane</text>
+  <text x="435" y="201" font-size="9" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">5–60</text>
+  <text x="30" y="200" font-size="9.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">C–C</text>
+  <text x="30" y="212" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">alkane</text>
 </svg>`
       }
     },
@@ -382,20 +382,20 @@ export const note_chemistry_4_15_8 = {
       type: 'svg',
       data: {
         caption: 'Integration trace in ¹H NMR: the stepped line rises at each peak. The height of each step is proportional to the number of H atoms in that environment. Here the ratio is 3:2:1 (e.g. CH₃ : CH₂ : CHO).',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" font-family="Arial,sans-serif">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 245" font-family="Arial,sans-serif">
   <rect width="520" height="210" fill="#0f172a" rx="8"/>
-  <text x="260" y="20" font-size="12.5" fill="#222" font-weight="bold" text-anchor="middle">¹H NMR Integration Trace</text>
+  <text x="260" y="20" font-size="12.5" fill="#f8fafc" font-weight="bold" text-anchor="middle" style="fill:#f8fafc">¹H NMR Integration Trace</text>
   <!-- Axes -->
   <line x1="50" y1="155" x2="490" y2="155" stroke="#444" stroke-width="2"/>
   <line x1="50" y1="35" x2="50" y2="158" stroke="#444" stroke-width="2"/>
   <!-- Y label -->
   <text x="18" y="100" font-size="10" fill="#555" transform="rotate(-90,18,100)" text-anchor="middle">Absorption</text>
   <!-- x-axis ticks and label -->
-  <text x="270" y="172" font-size="10.5" fill="#333" text-anchor="middle">δ / ppm  (high →  low)</text>
+  <text x="270" y="232" font-size="10.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">δ / ppm  (high →  low)</text>
   <!-- NMR Peaks (simplified): peak A at left ~δ9, peak B middle ~δ2.5, peak C right ~δ1 -->
   <!-- Peak C (CH₃, area 3) at far right: δ≈1 -->
   <rect x="400" y="100" width="14" height="55" fill="#3355cc" rx="1"/>
-  <text x="407" y="94" font-size="9" fill="#3355cc" text-anchor="middle">δ ~1</text>
+  <text x="407" y="94" font-size="9" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">δ ~1</text>
   <!-- Peak B (CH₂, area 2) middle -->
   <rect x="260" y="110" width="14" height="45" fill="#22aa44" rx="1"/>
   <text x="267" y="104" font-size="9" fill="#22aa44" text-anchor="middle">δ ~2.5</text>
@@ -404,8 +404,7 @@ export const note_chemistry_4_15_8 = {
   <text x="107" y="119" font-size="9" fill="#e05050" text-anchor="middle">δ ~9</text>
   <!-- Integration trace line -->
   <!-- Starts at y=185, flat, rises at peak A by small step (×1), flat, rises at B (×2), flat, rises at C (×3) -->
-  <polyline points="70,185 95,185 95,175 120,175 120,175 240,175 240,157 285,157 285,157 380,157 380,127 430,127 430,127 480,127"
-    stroke="#cc6600" stroke-width="2.5" fill="none" stroke-dasharray="none"/>
+  <polyline points="70,185 95,185 95,175 120,175 120,175 240,175 240,157 285,157 285,157 380,157 380,127 430,127 430,127 480,127" stroke="#cc6600" stroke-width="2.5" fill="none" stroke-dasharray="none"/>
   <!-- Step height annotations -->
   <!-- Step at A: 175→175 to 175 (height=10) -->
   <line x1="88" y1="175" x2="88" y2="185" stroke="#cc6600" stroke-width="1" stroke-dasharray="3,2"/>
@@ -418,9 +417,9 @@ export const note_chemistry_4_15_8 = {
   <text x="436" y="144" font-size="9" fill="#cc6600" text-anchor="middle">×3</text>
   <!-- Legend -->
   <text x="260" y="200" font-size="9.5" fill="#cc6600" text-anchor="middle">Integration trace (orange stepped line) — step heights in ratio 1 : 2 : 3</text>
-  <text x="407" y="187" font-size="8.5" fill="#555" text-anchor="middle">CH₃</text>
-  <text x="267" y="187" font-size="8.5" fill="#555" text-anchor="middle">CH₂</text>
-  <text x="107" y="187" font-size="8.5" fill="#555" text-anchor="middle">CHO</text>
+  <text x="407" y="187" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">CH₃</text>
+  <text x="267" y="187" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">CH₂</text>
+  <text x="107" y="187" font-size="8.5" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">CHO</text>
 </svg>`
       }
     },
@@ -545,7 +544,7 @@ export const note_chemistry_4_15_8 = {
         caption: 'Visual representation of splitting patterns: singlet (no adjacent H), doublet (1 adjacent H), triplet (2), quartet (3), and quintet (4). Heights within each pattern reflect the relative peak ratios.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" font-family="Arial,sans-serif">
   <rect width="560" height="220" fill="#0f172a" rx="8"/>
-  <text x="280" y="18" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">¹H NMR Splitting Patterns (n+1 Rule)</text>
+  <text x="280" y="18" font-size="13" fill="#f8fafc" font-weight="bold" text-anchor="middle" style="fill:#f8fafc">¹H NMR Splitting Patterns (n+1 Rule)</text>
   <!-- Column headers and baselines -->
   <!-- Column positions at x: 50, 162, 274, 386, 498 (width 90 each) -->
   <!-- Baselines at y=175 -->
@@ -556,8 +555,8 @@ export const note_chemistry_4_15_8 = {
   <line x1="462" y1="175" x2="548" y2="175" stroke="#aaa" stroke-width="1.5"/>
   <!-- === SINGLET (n=0) centered at x=68 === -->
   <rect x="64" y="95" width="8" height="80" fill="#3355cc" rx="1"/>
-  <text x="68" y="87" font-size="9" fill="#3355cc" text-anchor="middle">1</text>
-  <text x="68" y="192" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Singlet</text>
+  <text x="68" y="87" font-size="9" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">1</text>
+  <text x="68" y="192" font-size="11" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">Singlet</text>
   <text x="68" y="204" font-size="9" fill="#666" text-anchor="middle">n = 0</text>
   <text x="68" y="215" font-size="8.5" fill="#888" text-anchor="middle">(1 peak)</text>
   <!-- === DOUBLET (n=1) centered at x=179: 2 peaks 1:1 === -->
@@ -565,7 +564,7 @@ export const note_chemistry_4_15_8 = {
   <rect x="183" y="135" width="7" height="40" fill="#22aa44" rx="1"/>
   <text x="175.5" y="129" font-size="9" fill="#22aa44" text-anchor="middle">1</text>
   <text x="186.5" y="129" font-size="9" fill="#22aa44" text-anchor="middle">1</text>
-  <text x="179" y="192" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Doublet</text>
+  <text x="179" y="192" font-size="11" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">Doublet</text>
   <text x="179" y="204" font-size="9" fill="#666" text-anchor="middle">n = 1</text>
   <text x="179" y="215" font-size="8.5" fill="#888" text-anchor="middle">(2 peaks)</text>
   <!-- === TRIPLET (n=2) centered at x=290: 3 peaks 1:2:1 === -->
@@ -575,7 +574,7 @@ export const note_chemistry_4_15_8 = {
   <text x="282.5" y="150" font-size="8" fill="#e08020" text-anchor="middle">1</text>
   <text x="292.5" y="109" font-size="8" fill="#e08020" text-anchor="middle">2</text>
   <text x="302.5" y="150" font-size="8" fill="#e08020" text-anchor="middle">1</text>
-  <text x="290" y="192" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Triplet</text>
+  <text x="290" y="192" font-size="11" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">Triplet</text>
   <text x="290" y="204" font-size="9" fill="#666" text-anchor="middle">n = 2</text>
   <text x="290" y="215" font-size="8.5" fill="#888" text-anchor="middle">(3 peaks)</text>
   <!-- === QUARTET (n=3) centered at x=400: 4 peaks 1:3:3:1 === -->
@@ -583,11 +582,11 @@ export const note_chemistry_4_15_8 = {
   <rect x="391" y="127" width="7" height="48" fill="#aa2299" rx="1"/>
   <rect x="401" y="127" width="7" height="48" fill="#aa2299" rx="1"/>
   <rect x="411" y="162" width="7" height="13" fill="#aa2299" rx="1"/>
-  <text x="384.5" y="157" font-size="8" fill="#aa2299" text-anchor="middle">1</text>
-  <text x="394.5" y="121" font-size="8" fill="#aa2299" text-anchor="middle">3</text>
-  <text x="404.5" y="121" font-size="8" fill="#aa2299" text-anchor="middle">3</text>
-  <text x="414.5" y="157" font-size="8" fill="#aa2299" text-anchor="middle">1</text>
-  <text x="400" y="192" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Quartet</text>
+  <text x="384.5" y="157" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">1</text>
+  <text x="394.5" y="121" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">3</text>
+  <text x="404.5" y="121" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">3</text>
+  <text x="414.5" y="157" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">1</text>
+  <text x="400" y="192" font-size="11" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">Quartet</text>
   <text x="400" y="204" font-size="9" fill="#666" text-anchor="middle">n = 3</text>
   <text x="400" y="215" font-size="8.5" fill="#888" text-anchor="middle">(4 peaks)</text>
   <!-- === QUINTET (n=4) centered at x=505: 5 peaks 1:4:6:4:1 === -->
@@ -601,7 +600,7 @@ export const note_chemistry_4_15_8 = {
   <text x="497" y="120" font-size="7.5" fill="#cc3333" text-anchor="middle">6</text>
   <text x="506" y="137" font-size="7.5" fill="#cc3333" text-anchor="middle">4</text>
   <text x="515" y="163" font-size="7.5" fill="#cc3333" text-anchor="middle">1</text>
-  <text x="506" y="192" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Quintet</text>
+  <text x="506" y="192" font-size="11" fill="#f8fafc" text-anchor="middle" font-weight="bold" style="fill:#f8fafc">Quintet</text>
   <text x="506" y="204" font-size="9" fill="#666" text-anchor="middle">n = 4</text>
   <text x="506" y="215" font-size="8.5" fill="#888" text-anchor="middle">(5 peaks)</text>
 </svg>`
@@ -706,40 +705,40 @@ export const note_chemistry_4_15_8 = {
         caption: 'Step-by-step strategy for determining molecular structure from ¹H NMR data.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310" font-family="Arial,sans-serif">
   <rect width="520" height="310" fill="#0f172a" rx="8"/>
-  <text x="260" y="22" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">Structure Determination from ¹H NMR — Strategy</text>
+  <text x="260" y="22" font-size="13" fill="#f8fafc" font-weight="bold" text-anchor="middle" style="fill:#f8fafc">Structure Determination from ¹H NMR — Strategy</text>
   <!-- Step boxes -->
   <!-- Step 1 -->
   <rect x="30" y="35" width="460" height="40" fill="#1c3a64" rx="6" stroke="#3355cc" stroke-width="1.5"/>
-  <text x="55" y="52" font-size="11" fill="#222" font-weight="bold">Step 1</text>
-  <text x="55" y="67" font-size="10.5" fill="#333">Count peaks → number of different H environments</text>
+  <text x="55" y="52" font-size="11" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Step 1</text>
+  <text x="55" y="67" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Count peaks → number of different H environments</text>
   <!-- Arrow -->
   <line x1="260" y1="75" x2="260" y2="88" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,88 265,88 260,95" fill="#888"/>
   <!-- Step 2 -->
   <rect x="30" y="95" width="460" height="40" fill="#0a2e1a" rx="6" stroke="#22aa44" stroke-width="1.5"/>
-  <text x="55" y="112" font-size="11" fill="#222" font-weight="bold">Step 2</text>
-  <text x="55" y="127" font-size="10.5" fill="#333">Read integration (area) → ratio of H atoms per environment → name fragments</text>
+  <text x="55" y="112" font-size="11" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Step 2</text>
+  <text x="55" y="127" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Read integration (area) → ratio of H atoms per environment → name fragments</text>
   <!-- Arrow -->
   <line x1="260" y1="135" x2="260" y2="148" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,148 265,148 260,155" fill="#888"/>
   <!-- Step 3 -->
   <rect x="30" y="155" width="460" height="40" fill="#44370a" rx="6" stroke="#e08020" stroke-width="1.5"/>
-  <text x="55" y="172" font-size="11" fill="#222" font-weight="bold">Step 3</text>
-  <text x="55" y="187" font-size="10.5" fill="#333">Check chemical shifts (δ) → match to data book → identify functional group neighbourhood</text>
+  <text x="55" y="172" font-size="11" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Step 3</text>
+  <text x="55" y="187" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Check chemical shifts (δ) → match to data book → identify functional group neighbourhood</text>
   <!-- Arrow -->
   <line x1="260" y1="195" x2="260" y2="208" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,208 265,208 260,215" fill="#888"/>
   <!-- Step 4 -->
   <rect x="30" y="215" width="460" height="40" fill="#4a1040" rx="6" stroke="#aa2299" stroke-width="1.5"/>
-  <text x="55" y="232" font-size="11" fill="#222" font-weight="bold">Step 4</text>
-  <text x="55" y="247" font-size="10.5" fill="#333">Apply n+1 rule to splitting patterns → deduce number of H on adjacent carbon</text>
+  <text x="55" y="232" font-size="11" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Step 4</text>
+  <text x="55" y="247" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Apply n+1 rule to splitting patterns → deduce number of H on adjacent carbon</text>
   <!-- Arrow -->
   <line x1="260" y1="255" x2="260" y2="268" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,268 265,268 260,275" fill="#888"/>
   <!-- Step 5 -->
   <rect x="30" y="275" width="460" height="28" fill="#3d1212" rx="6" stroke="#cc3333" stroke-width="1.5"/>
-  <text x="55" y="291" font-size="11" fill="#222" font-weight="bold">Step 5</text>
-  <text x="55" y="299" font-size="10.5" fill="#333">Assemble fragments → propose structure → verify against molecular formula ✓</text>
+  <text x="55" y="291" font-size="11" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">Step 5</text>
+  <text x="55" y="299" font-size="10.5" fill="#f8fafc" style="fill:#f8fafc">Assemble fragments → propose structure → verify against molecular formula ✓</text>
 </svg>`
       }
     },
@@ -849,7 +848,7 @@ export const note_chemistry_4_15_8 = {
       id: 'svg-nmr-guide',
       type: 'svg',
       data: {
-        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="system-ui,sans-serif"><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">¹H NMR INTERPRETATION GUIDE</text><!-- LEFT: n+1 splitting rule --><rect x="10" y="32" width="330" height="398" rx="10" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1.5"/><text x="175" y="52" text-anchor="middle" font-size="11" fill="#34d399" font-weight="700">SPLITTING PATTERNS (n+1 RULE)</text><text x="175" y="66" text-anchor="middle" font-size="9" fill="#065f46">n = number of equivalent H on adjacent carbon → n+1 peaks</text><!-- Pattern table --><rect x="22" y="74" width="306" height="24" rx="4" fill="rgba(52,211,153,0.25)"/><text x="80" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">Pattern</text><text x="175" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">n adjacent H</text><text x="290" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">Visual</text><!-- rows --><rect x="22" y="98" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="115" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">SINGLET</text><text x="175" y="115" text-anchor="middle" font-size="9" fill="#065f46">0 adjacent H</text><text x="290" y="115" text-anchor="middle" font-size="9" fill="#065f46">| (one tall peak)</text><rect x="22" y="124" width="306" height="26" rx="0" fill="rgba(52,211,153,0.05)"/><text x="80" y="141" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">DOUBLET</text><text x="175" y="141" text-anchor="middle" font-size="9" fill="#065f46">1 adjacent H</text><text x="290" y="141" text-anchor="middle" font-size="9" fill="#065f46">|| (two equal peaks)</text><rect x="22" y="150" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="167" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">TRIPLET</text><text x="175" y="167" text-anchor="middle" font-size="9" fill="#065f46">2 adjacent H</text><text x="290" y="167" text-anchor="middle" font-size="9" fill="#065f46">||| (1:2:1 ratio)</text><rect x="22" y="176" width="306" height="26" rx="0" fill="rgba(52,211,153,0.05)"/><text x="80" y="193" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">QUARTET</text><text x="175" y="193" text-anchor="middle" font-size="9" fill="#065f46">3 adjacent H</text><text x="290" y="193" text-anchor="middle" font-size="9" fill="#065f46">|||| (1:3:3:1 ratio)</text><rect x="22" y="202" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="219" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">QUINTET</text><text x="175" y="219" text-anchor="middle" font-size="9" fill="#065f46">4 adjacent H</text><text x="290" y="219" text-anchor="middle" font-size="9" fill="#065f46">||||| (1:4:6:4:1)</text><!-- Key rules for splitting --><rect x="22" y="236" width="306" height="100" rx="8" fill="rgba(52,211,153,0.12)" stroke="#34d399" stroke-width="1"/><text x="175" y="254" text-anchor="middle" font-size="9.5" fill="#34d399" font-weight="700">SPLITTING RULES</text><text x="30" y="270" font-size="8.5" fill="#065f46">• Only H on ADJACENT carbons cause splitting</text><text x="30" y="284" font-size="8.5" fill="#065f46">• OH (alcohol) and NH always show as SINGLETS</text><text x="30" y="298" font-size="8.5" fill="#065f46">• CHO (aldehyde H) = singlet at δ 9-10 ppm</text><text x="30" y="312" font-size="8.5" fill="#065f46">• Equivalent H on same C do not split each other</text><text x="30" y="326" font-size="8.5" fill="#78350f">• INTEGRATION = relative number of H in environment</text><!-- Ethanol example --><rect x="22" y="344" width="306" height="76" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="175" y="362" text-anchor="middle" font-size="9.5" fill="#2d2d72" font-weight="700">EXAMPLE: ethanol CH₃CH₂OH</text><text x="30" y="378" font-size="8.5" fill="#2d2d72">CH₃ (3H): adjacent to CH₂ (2H) → triplet at δ ~1.2</text><text x="30" y="393" font-size="8.5" fill="#2d2d72">CH₂ (2H): adjacent to CH₃ (3H) → quartet at δ ~3.7</text><text x="30" y="408" font-size="8.5" fill="#2d2d72">OH (1H): singlet at δ ~2.6 (no splitting)</text><!-- RIGHT: Chemical shift table --><rect x="360" y="32" width="330" height="398" rx="10" fill="rgba(96,165,250,0.08)" stroke="#60a5fa" stroke-width="1.5"/><text x="525" y="52" text-anchor="middle" font-size="11" fill="#60a5fa" font-weight="700">CHEMICAL SHIFT ENVIRONMENTS</text><text x="525" y="66" text-anchor="middle" font-size="9" fill="#1e3a8a">δ in ppm (downfield = deshielded = higher δ)</text><!-- shift regions --><rect x="374" y="74" width="302" height="20" rx="4" fill="rgba(96,165,250,0.25)"/><text x="450" y="87" text-anchor="middle" font-size="8" fill="#1e3a8a" font-weight="700">δ range (ppm)</text><text x="575" y="87" text-anchor="middle" font-size="8" fill="#1e3a8a" font-weight="700">Environment</text><!-- rows --><rect x="374" y="96" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="112" text-anchor="middle" font-size="9" fill="#1e293b">0 - 1</text><text x="575" y="112" text-anchor="middle" font-size="8.5" fill="#1e3a8a">R−CH₃ alkyl (near no EW groups)</text><rect x="374" y="120" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="136" text-anchor="middle" font-size="9" fill="#1e293b">1 - 2</text><text x="575" y="136" text-anchor="middle" font-size="8.5" fill="#1e3a8a">−CH₂− and −CH₃ alkyl groups</text><rect x="374" y="144" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="160" text-anchor="middle" font-size="9" fill="#1e293b">1 - 4</text><text x="575" y="160" text-anchor="middle" font-size="8.5" fill="#1e3a8a">N−H (amine), C−H near N</text><rect x="374" y="168" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="184" text-anchor="middle" font-size="9" fill="#1e293b">2 - 3</text><text x="575" y="184" text-anchor="middle" font-size="8.5" fill="#1e3a8a">R−CO−CH₃ (next to C=O)</text><rect x="374" y="192" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="208" text-anchor="middle" font-size="9" fill="#1e293b">3 - 5</text><text x="575" y="208" text-anchor="middle" font-size="8.5" fill="#1e3a8a">O−H alcohol (broad), R−CH₂Cl</text><rect x="374" y="216" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="232" text-anchor="middle" font-size="9" fill="#1e293b">6 - 8</text><text x="575" y="232" text-anchor="middle" font-size="8.5" fill="#1e3a8a">Aromatic ring H (C₆H₅−)</text><rect x="374" y="240" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="256" text-anchor="middle" font-size="9" fill="#1e293b">9 - 10</text><text x="575" y="256" text-anchor="middle" font-size="8.5" fill="#1e3a8a">CHO aldehyde H</text><rect x="374" y="264" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="280" text-anchor="middle" font-size="9" fill="#1e293b">10 - 12</text><text x="575" y="280" text-anchor="middle" font-size="8.5" fill="#1e3a8a">COOH carboxylic acid O−H</text><!-- 13C NMR --><rect x="374" y="296" width="302" height="80" rx="8" fill="rgba(251,146,60,0.12)" stroke="#fb923c" stroke-width="1"/><text x="525" y="314" text-anchor="middle" font-size="9.5" fill="#fb923c" font-weight="700">¹³C NMR — KEY DIFFERENCES</text><text x="380" y="330" font-size="8.5" fill="#532407">• No splitting (no coupling in ¹³C)</text><text x="380" y="345" font-size="8.5" fill="#532407">• Count peaks = count carbon environments</text><text x="380" y="360" font-size="8.5" fill="#532407">• δ 0-50: C−H, C−C (aliphatic)</text><text x="380" y="375" font-size="8.5" fill="#532407">• δ 100-150: C=C, aromatic or C=O (~170-220)</text><!-- Full structure ID --><rect x="374" y="384" width="302" height="38" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="525" y="400" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">FULL STRUCTURE ID: MS (Mr) + IR (groups) + NMR (environments)</text><text x="525" y="416" text-anchor="middle" font-size="8.5" fill="#2d2d72">Work systematically: degrees of unsaturation, then piece fragments together</text></svg>',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="system-ui,sans-serif"><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">¹H NMR INTERPRETATION GUIDE</text><!-- LEFT: n+1 splitting rule --><rect x="10" y="32" width="330" height="398" rx="10" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1.5"/><text x="175" y="52" text-anchor="middle" font-size="11" fill="#0f172a" font-weight="700" style="fill:#0f172a">SPLITTING PATTERNS (n+1 RULE)</text><text x="175" y="66" text-anchor="middle" font-size="9" fill="#065f46">n = number of equivalent H on adjacent carbon → n+1 peaks</text><!-- Pattern table --><rect x="22" y="74" width="306" height="24" rx="4" fill="rgba(52,211,153,0.25)"/><text x="80" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">Pattern</text><text x="175" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">n adjacent H</text><text x="290" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">Visual</text><!-- rows --><rect x="22" y="98" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="115" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">SINGLET</text><text x="175" y="115" text-anchor="middle" font-size="9" fill="#065f46">0 adjacent H</text><text x="290" y="115" text-anchor="middle" font-size="9" fill="#065f46">| (one tall peak)</text><rect x="22" y="124" width="306" height="26" rx="0" fill="rgba(52,211,153,0.05)"/><text x="80" y="141" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">DOUBLET</text><text x="175" y="141" text-anchor="middle" font-size="9" fill="#065f46">1 adjacent H</text><text x="290" y="141" text-anchor="middle" font-size="9" fill="#065f46">|| (two equal peaks)</text><rect x="22" y="150" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="167" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">TRIPLET</text><text x="175" y="167" text-anchor="middle" font-size="9" fill="#065f46">2 adjacent H</text><text x="290" y="167" text-anchor="middle" font-size="9" fill="#065f46">||| (1:2:1 ratio)</text><rect x="22" y="176" width="306" height="26" rx="0" fill="rgba(52,211,153,0.05)"/><text x="80" y="193" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">QUARTET</text><text x="175" y="193" text-anchor="middle" font-size="9" fill="#065f46">3 adjacent H</text><text x="290" y="193" text-anchor="middle" font-size="9" fill="#065f46">|||| (1:3:3:1 ratio)</text><rect x="22" y="202" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="219" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">QUINTET</text><text x="175" y="219" text-anchor="middle" font-size="9" fill="#065f46">4 adjacent H</text><text x="290" y="219" text-anchor="middle" font-size="9" fill="#065f46">||||| (1:4:6:4:1)</text><!-- Key rules for splitting --><rect x="22" y="236" width="306" height="100" rx="8" fill="rgba(52,211,153,0.12)" stroke="#34d399" stroke-width="1"/><text x="175" y="254" text-anchor="middle" font-size="9.5" fill="#0f172a" font-weight="700" style="fill:#0f172a">SPLITTING RULES</text><text x="30" y="270" font-size="8.5" fill="#065f46">• Only H on ADJACENT carbons cause splitting</text><text x="30" y="284" font-size="8.5" fill="#065f46">• OH (alcohol) and NH always show as SINGLETS</text><text x="30" y="298" font-size="8.5" fill="#065f46">• CHO (aldehyde H) = singlet at δ 9-10 ppm</text><text x="30" y="312" font-size="8.5" fill="#065f46">• Equivalent H on same C do not split each other</text><text x="30" y="326" font-size="8.5" fill="#78350f">• INTEGRATION = relative number of H in environment</text><!-- Ethanol example --><rect x="22" y="344" width="306" height="76" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="175" y="362" text-anchor="middle" font-size="9.5" fill="#2d2d72" font-weight="700">EXAMPLE: ethanol CH₃CH₂OH</text><text x="30" y="378" font-size="8.5" fill="#2d2d72">CH₃ (3H): adjacent to CH₂ (2H) → triplet at δ ~1.2</text><text x="30" y="393" font-size="8.5" fill="#2d2d72">CH₂ (2H): adjacent to CH₃ (3H) → quartet at δ ~3.7</text><text x="30" y="408" font-size="8.5" fill="#2d2d72">OH (1H): singlet at δ ~2.6 (no splitting)</text><!-- RIGHT: Chemical shift table --><rect x="360" y="32" width="330" height="398" rx="10" fill="rgba(96,165,250,0.08)" stroke="#60a5fa" stroke-width="1.5"/><text x="525" y="52" text-anchor="middle" font-size="11" fill="#0f172a" font-weight="700" style="fill:#0f172a">CHEMICAL SHIFT ENVIRONMENTS</text><text x="525" y="66" text-anchor="middle" font-size="9" fill="#1e3a8a">δ in ppm (downfield = deshielded = higher δ)</text><!-- shift regions --><rect x="374" y="74" width="302" height="20" rx="4" fill="rgba(96,165,250,0.25)"/><text x="450" y="87" text-anchor="middle" font-size="8" fill="#1e3a8a" font-weight="700">δ range (ppm)</text><text x="575" y="87" text-anchor="middle" font-size="8" fill="#1e3a8a" font-weight="700">Environment</text><!-- rows --><rect x="374" y="96" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="112" text-anchor="middle" font-size="9" fill="#1e293b">0 - 1</text><text x="575" y="112" text-anchor="middle" font-size="8.5" fill="#1e3a8a">R−CH₃ alkyl (near no EW groups)</text><rect x="374" y="120" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="136" text-anchor="middle" font-size="9" fill="#1e293b">1 - 2</text><text x="575" y="136" text-anchor="middle" font-size="8.5" fill="#1e3a8a">−CH₂− and −CH₃ alkyl groups</text><rect x="374" y="144" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="160" text-anchor="middle" font-size="9" fill="#1e293b">1 - 4</text><text x="575" y="160" text-anchor="middle" font-size="8.5" fill="#1e3a8a">N−H (amine), C−H near N</text><rect x="374" y="168" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="184" text-anchor="middle" font-size="9" fill="#1e293b">2 - 3</text><text x="575" y="184" text-anchor="middle" font-size="8.5" fill="#1e3a8a">R−CO−CH₃ (next to C=O)</text><rect x="374" y="192" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="208" text-anchor="middle" font-size="9" fill="#1e293b">3 - 5</text><text x="575" y="208" text-anchor="middle" font-size="8.5" fill="#1e3a8a">O−H alcohol (broad), R−CH₂Cl</text><rect x="374" y="216" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="232" text-anchor="middle" font-size="9" fill="#1e293b">6 - 8</text><text x="575" y="232" text-anchor="middle" font-size="8.5" fill="#1e3a8a">Aromatic ring H (C₆H₅−)</text><rect x="374" y="240" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="256" text-anchor="middle" font-size="9" fill="#1e293b">9 - 10</text><text x="575" y="256" text-anchor="middle" font-size="8.5" fill="#1e3a8a">CHO aldehyde H</text><rect x="374" y="264" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="280" text-anchor="middle" font-size="9" fill="#1e293b">10 - 12</text><text x="575" y="280" text-anchor="middle" font-size="8.5" fill="#1e3a8a">COOH carboxylic acid O−H</text><!-- 13C NMR --><rect x="374" y="296" width="302" height="80" rx="8" fill="rgba(251,146,60,0.12)" stroke="#fb923c" stroke-width="1"/><text x="525" y="314" text-anchor="middle" font-size="9.5" fill="#0f172a" font-weight="700" style="fill:#0f172a">¹³C NMR — KEY DIFFERENCES</text><text x="380" y="330" font-size="8.5" fill="#532407">• No splitting (no coupling in ¹³C)</text><text x="380" y="345" font-size="8.5" fill="#532407">• Count peaks = count carbon environments</text><text x="380" y="360" font-size="8.5" fill="#532407">• δ 0-50: C−H, C−C (aliphatic)</text><text x="380" y="375" font-size="8.5" fill="#532407">• δ 100-150: C=C, aromatic or C=O (~170-220)</text><!-- Full structure ID --><rect x="374" y="384" width="302" height="38" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="525" y="400" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">FULL STRUCTURE ID: MS (Mr) + IR (groups) + NMR (environments)</text><text x="525" y="416" text-anchor="middle" font-size="8.5" fill="#2d2d72">Work systematically: degrees of unsaturation, then piece fragments together</text></svg>`,
         caption: '¹H NMR Guide — n+1 rule determines splitting (n adjacent H → n+1 peaks). Integration gives relative H count per environment. Chemical shift (δ) reveals electronic environment. OH and NH always singlets. ¹³C NMR: one peak per unique carbon, no splitting.'
       },
       terms: []

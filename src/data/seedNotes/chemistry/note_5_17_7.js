@@ -78,7 +78,7 @@ export const note_chemistry_5_17_7 = {
   <!-- Background -->
   <rect width="520" height="170" fill="#0f172a" rx="8"/>
   <!-- Step labels -->
-  <text x="80" y="18" text-anchor="middle" font-weight="bold" fill="#5c35cc" font-size="12">Adsorption</text>
+  <text x="80" y="18" text-anchor="middle" font-weight="bold" fill="#f8fafc" font-size="12" style="fill:#f8fafc">Adsorption</text>
   <text x="260" y="18" text-anchor="middle" font-weight="bold" fill="#2e7d32" font-size="12">Reaction</text>
   <text x="435" y="18" text-anchor="middle" font-weight="bold" fill="#c0392b" font-size="12">Desorption</text>
   <!-- Metal surface - all three panels -->
@@ -90,16 +90,16 @@ export const note_chemistry_5_17_7 = {
   <text x="427" y="133" text-anchor="middle" fill="#1e293b" font-size="10">Metal surface (solid)</text>
   <!-- Panel 1: Adsorption — A and B molecules adsorbing -->
   <circle cx="55" cy="90" r="13" fill="#90caf9" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="55" y="95" text-anchor="middle" fill="#1976d2" font-weight="bold">A</text>
+  <text x="55" y="95" text-anchor="middle" fill="#0f172a" font-weight="bold" style="fill:#0f172a">A</text>
   <circle cx="100" cy="90" r="13" fill="#44370a" stroke="#f57c00" stroke-width="1.5"/>
   <text x="100" y="95" text-anchor="middle" fill="#f57c00" font-weight="bold">B</text>
   <!-- dashed bond lines to surface -->
   <line x1="55" y1="103" x2="55" y2="120" stroke="#1976d2" stroke-dasharray="3,2" stroke-width="1.5"/>
   <line x1="100" y1="103" x2="100" y2="120" stroke="#f57c00" stroke-dasharray="3,2" stroke-width="1.5"/>
-  <text x="75" y="113" text-anchor="middle" fill="#555" font-size="9">weak surface bonds</text>
+  <text x="75" y="113" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">weak surface bonds</text>
   <!-- Panel 2: Reaction — A-B bond weakens, new bond forms -->
   <circle cx="225" cy="88" r="13" fill="#90caf9" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="225" y="93" text-anchor="middle" fill="#1976d2" font-weight="bold">A</text>
+  <text x="225" y="93" text-anchor="middle" fill="#0f172a" font-weight="bold" style="fill:#0f172a">A</text>
   <circle cx="270" cy="88" r="13" fill="#44370a" stroke="#f57c00" stroke-width="1.5"/>
   <text x="270" y="93" text-anchor="middle" fill="#f57c00" font-weight="bold">B</text>
   <line x1="237" y1="88" x2="258" y2="88" stroke="#c0392b" stroke-width="2"/>
@@ -108,10 +108,10 @@ export const note_chemistry_5_17_7 = {
   <line x1="270" y1="101" x2="270" y2="120" stroke="#f57c00" stroke-dasharray="3,2" stroke-width="1.5"/>
   <!-- Panel 3: Desorption — AB product leaves -->
   <ellipse cx="427" cy="70" rx="28" ry="16" fill="#0a2e1a" stroke="#2e7d32" stroke-width="1.5"/>
-  <text x="427" y="75" text-anchor="middle" fill="#2e7d32" font-weight="bold">AB</text>
+  <text x="427" y="75" text-anchor="middle" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">AB</text>
   <line x1="427" y1="86" x2="427" y2="105" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="452" y="98" fill="#555" font-size="9">product</text>
-  <text x="452" y="108" fill="#555" font-size="9">desorbs</text>
+  <text x="452" y="98" fill="#f8fafc" font-size="9" style="fill:#f8fafc">product</text>
+  <text x="452" y="108" fill="#f8fafc" font-size="9" style="fill:#f8fafc">desorbs</text>
   <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#2e7d32"/></marker></defs>
   <!-- Arrows between panels -->
   <text x="166" y="95" font-size="18" fill="#777">→</text>
@@ -360,14 +360,14 @@ export const note_chemistry_5_17_7 = {
   <text x="215" y="235" text-anchor="middle" font-size="12">Time</text>
   <!-- Normal curve (faded/dashed) -->
   <path d="M 50 40 Q 150 40, 360 190" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="4,4"/>
-  <text x="310" y="160" fill="#999" font-size="10">Normal Reaction</text>
+  <text x="310" y="160" fill="#0f172a" font-size="10" style="fill:#0f172a">Normal Reaction</text>
   <!-- Autocatalysis curve -->
   <path d="M 50 40 C 200 40, 150 190, 360 190" fill="none" stroke="#e91e63" stroke-width="3"/>
   <text x="240" y="110" fill="#e91e63" font-size="12" font-weight="bold">Autocatalysis</text>
   <!-- Labels -->
   <text x="110" y="30" font-size="10" fill="#1976d2">Slow start</text>
   <text x="180" y="120" font-size="10" fill="#d32f2f">Rapid acceleration</text>
-  <text x="280" y="215" font-size="10" fill="#f57c00">Reactants run out</text>
+  <text x="280" y="215" font-size="10" fill="#0f172a" style="fill:#0f172a">Reactants run out</text>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>

@@ -40,7 +40,7 @@ export const note_olevel_chemistry_4_4_1 = {
       type: 'svg',
       data: {
         caption: 'Electrolysis of molten Lead(II) bromide (PbBr₂). Heating is required to keep it molten.',
-        svg: `<svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="-4 0 523 386" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Liquid Gradient -->
     <linearGradient id="molten" x1="0%" y1="0%" x2="0%" y2="100%">

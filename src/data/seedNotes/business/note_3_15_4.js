@@ -12,7 +12,7 @@ export const note_business_3_15_4 = {
       { text: '**Different Accounting Practices:** Companies might use different methods for valuing inventory or depreciating assets, complicating industry comparisons.' }
     ] } },
     { id: 'call-1', type: 'callout', data: { style: 'tip', title: 'Context is Crucial', text: 'A single ratio is meaningless in isolation. It must be compared to previous years (trend analysis) or industry averages (cross-sectional analysis) to provide value.' } },
-    { id: 'h-2', type: 'heading', data: { text: 'Need for Holistic Assessment', level: 2 } },
+    { id: 'h-2-2', type: 'heading', data: { text: 'Need for Holistic Assessment', level: 2 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'To gain a true measure of competitiveness, stakeholders should pair quantitative ratio analysis with qualitative evaluations such as SWOT analysis or PESTLE analysis. A highly profitable firm may still fail if it faces a sudden regulatory shift or high staff turnover.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Ratio analysis is restricted by its reliance on historic, potentially manipulated data, and its omission of qualitative factors like employee motivation and market changes.' } },
     { id: 'enr-callout-worked-1', type: 'callout', data: { style: 'worked', title: 'Case Study: Enron 2001', text: 'Enron 2001: all financial ratios looked healthy right up until the company collapsed. The balance sheet was fraudulently presented using special purpose vehicles to hide debt. Ratios can only be as reliable as the underlying accounts. Creative accounting makes ratio analysis misleading.' } },

@@ -123,7 +123,7 @@ export const note_olevel_maths_core_7_1_0 = {
   <text x="172" y="56" font-size="9" fill="#c2410c">C'(5,2)</text>
   <line x1="100" y1="60" x2="157" y2="98" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3,2"/>
   <polygon points="157,98 149,92 154,105" fill="#64748b"/>
-  <text x="114" y="77" font-size="9" fill="#475569">(3,−2)</text>
+  <text x="114" y="95" font-size="9" fill="#475569">(3,−2)</text>
 </svg>`,
         caption: 'Triangle ABC (blue) translated by column vector (3, −2) to give image A\'B\'C\' (orange)'
       }

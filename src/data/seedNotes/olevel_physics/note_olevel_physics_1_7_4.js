@@ -55,8 +55,8 @@ export const note_olevel_physics_1_7_4 = {
       id: 'svg-work',
       type: 'svg',
       data: {
-        svg: `<svg viewBox="0 0 380 210" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="210" fill="#532407" rx="10"/>
+        svg: `<svg viewBox="0 -1 393 211" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="393" height="211" fill="#532407" rx="10"/>
   <text x="190" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c2d12">Work Done by a Force</text>
   <!-- Ground -->
   <line x1="20" y1="170" x2="360" y2="170" stroke="#6b7280" stroke-width="2"/>

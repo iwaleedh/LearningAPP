@@ -1,4 +1,4 @@
-export const note_mathematics_6_6_2 = {
+export const note_mathematics_6_7_0 = {
   blocks: [
     {
       id: 'obj-hyp-corr',

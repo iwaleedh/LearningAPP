@@ -8,6 +8,21 @@ export const note_chemistry_4_15_0 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Separate connectivity, geometry and handedness",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Structural isomers differ in connectivity. Stereoisomers have the same connectivity but different spatial arrangements. E/Z isomerism is associated with restricted rotation and suitable groups at C=C. Optical isomerism commonly arises from a tetrahedral carbon with four different attached groups; its mirror images can be non-superimposable.<br/><br/>A molecule’s entire substituent groups must be compared, not merely the first atom attached. CH₃ and CH₂CH₃ are different even though each begins with carbon. A 1:1 mixture of a pair of enantiomers is a racemate and has no net optical rotation because equal and opposite rotations cancel. An optically inactive sample is not necessarily made of achiral molecules."
+  }
+},
+{
       id: 'h-isomer-hierarchy',
       type: 'heading',
       data: { text: 'Types of Isomers: The Full Hierarchy', level: 2 }
@@ -128,7 +143,7 @@ export const note_chemistry_4_15_0 = {
       id: 'svg-polarimeter',
       type: 'svg',
       data: {
-        svg: '<svg width="500" height="160" xmlns="http://www.w3.org/2000/svg"><defs><style>.bx{rx:6;ry:6;fill:#e0e7ff;stroke:#3b82f6;stroke-width:1.5}.lbl{font-family:Arial;font-size:11px;fill:#1f2937;text-anchor:middle}.arr{stroke:#3b82f6;stroke-width:2;marker-end:url(#ah)}.step{font-family:Arial;font-size:10px;fill:#3b82f6;font-weight:bold;text-anchor:middle}</style><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker></defs><rect class="bx" x="4" y="55" width="68" height="40"/><text class="lbl" x="38" y="72">💡 Light</text><text class="lbl" x="38" y="86">Source</text><line class="arr" x1="73" y1="75" x2="95" y2="75"/><rect class="bx" x="96" y="55" width="68" height="40"/><text class="lbl" x="130" y="72">Polariser</text><text class="lbl" x="130" y="86">(Filter 1)</text><line class="arr" x1="165" y1="75" x2="187" y2="75"/><rect x="188" y="45" width="100" height="60" rx="6" ry="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/><text class="lbl" x="238" y="68">Sample Tube</text><text class="lbl" x="238" y="82">(optically</text><text class="lbl" x="238" y="94">active?)</text><line class="arr" x1="289" y1="75" x2="311" y2="75"/><rect class="bx" x="312" y="55" width="68" height="40"/><text class="lbl" x="346" y="72">Analyser</text><text class="lbl" x="346" y="86">(Filter 2)</text><line class="arr" x1="381" y1="75" x2="403" y2="75"/><rect class="bx" x="404" y="55" width="80" height="40"/><text class="lbl" x="444" y="72">Detector</text><text class="lbl" x="444" y="86">(Angle α)</text><text class="step" x="38" y="145">¹ All planes</text><text class="step" x="130" y="145">² One plane</text><text class="step" x="238" y="145">³ Rotation?</text><text class="step" x="346" y="145">⁴ Measure α</text><text class="step" x="444" y="145">⁵ +ve or −ve</text></svg>',
+        svg: `<svg width="500" height="160" xmlns="http://www.w3.org/2000/svg"><defs><style>.bx{rx:6;ry:6;fill:#e0e7ff;stroke:#3b82f6;stroke-width:1.5}.lbl{font-family:Arial;font-size:11px;fill:#1f2937;text-anchor:middle}.arr{stroke:#3b82f6;stroke-width:2;marker-end:url(#ah)}.step{font-family:Arial;font-size:10px;fill:#3b82f6;font-weight:bold;text-anchor:middle}</style><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker></defs><rect class="bx" x="4" y="55" width="68" height="40"/><text class="lbl" x="38" y="72">💡 Light</text><text class="lbl" x="38" y="86">Source</text><line class="arr" x1="73" y1="75" x2="95" y2="75"/><rect class="bx" x="96" y="55" width="68" height="40"/><text class="lbl" x="130" y="72">Polariser</text><text class="lbl" x="130" y="86">(Filter 1)</text><line class="arr" x1="165" y1="75" x2="187" y2="75"/><rect x="188" y="45" width="100" height="60" rx="6" ry="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/><text class="lbl" x="238" y="68" fill="#f8fafc" style="fill:#f8fafc">Sample Tube</text><text class="lbl" x="238" y="82" fill="#f8fafc" style="fill:#f8fafc">(optically</text><text class="lbl" x="238" y="94" fill="#f8fafc" style="fill:#f8fafc">active?)</text><line class="arr" x1="289" y1="75" x2="311" y2="75"/><rect class="bx" x="312" y="55" width="68" height="40"/><text class="lbl" x="346" y="72">Analyser</text><text class="lbl" x="346" y="86">(Filter 2)</text><line class="arr" x1="381" y1="75" x2="403" y2="75"/><rect class="bx" x="404" y="55" width="80" height="40"/><text class="lbl" x="444" y="72">Detector</text><text class="lbl" x="444" y="86">(Angle α)</text><text class="step" x="38" y="145">¹ All planes</text><text class="step" x="130" y="145">² One plane</text><text class="step" x="238" y="145">³ Rotation?</text><text class="step" x="346" y="145">⁴ Measure α</text><text class="step" x="444" y="145">⁵ +ve or −ve</text></svg>`,
         caption: 'Polarimeter apparatus: (1) unpolarised light → (2) polariser gives plane-polarised light → (3) sample rotates plane if optically active → (4) analyser measures angle → (5) positive (+) = clockwise, negative (−) = anti-clockwise'
       }
     },
@@ -217,13 +232,6 @@ export const note_chemistry_4_15_0 = {
       terms: []
     },
     {
-      id: 'summary-chiral',
-      type: 'summary',
-      data: {
-        text: 'Chiral centre = sp³ carbon bonded to four different groups (marked C*). Enantiomers = non-superimposable mirror images (like hands). Optical isomers rotate plane-polarised light in opposite directions: (+) = clockwise, (−) = anti-clockwise. Polarimeter: light → polariser → sample → analyser → detector. Enantiomers have identical physical and chemical properties EXCEPT rotation of plane-polarised light and reactions with other chiral molecules. L/D notation (amino acids), R/S notation (other compounds) — awareness only.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -241,39 +249,89 @@ export const note_chemistry_4_15_0 = {
         text: "Wedge (\u25b2) = coming out of paper. Hash (\u22ef) = going into paper. These MUST be drawn at chiral centres to show 3D arrangement, or you cannot identify enantiomers. Students draw flat structures and miss stereochemistry entirely."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Butan-2-ol has CH₃, CH₂CH₃, H and OH attached to C-2, so that carbon is a chiral centre. Butan-1-ol has no such centre because the carbon bearing OH has two H atoms. But-2-ene has E/Z isomers but no chiral tetrahedral carbon. Use the appropriate structural test for each category."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Four bonds do not mean four different groups. A racemate’s inactivity does not show that its molecules lack chirality. Treat molecules with several stereocentres more carefully because internal symmetry may matter."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How do structural and stereoisomers differ?",
+        "checked": false
+      },
+      {
+        "text": "Why is butan-2-ol chiral at C-2?",
+        "checked": false
+      },
+      {
+        "text": "Why is a racemate optically inactive?",
+        "checked": false
+      },
+      {
+        "text": "Does a C=C guarantee E/Z isomerism?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Structural isomers differ in connectivity. Stereoisomers have the same connectivity but different spatial arrangements. E/Z isomerism is associated with restricted rotation and suitable groups at C=C. Optical isomerism commonly arises from a tetrahedral carbon with four different attached groups; its mirror images can be non-superimposable."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'list-chiral-definition',
-        prompt: 'What are the requirements for a carbon atom to be a chiral centre? What notation marks it in a diagram?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'callout-hands-analogy',
-        prompt: 'Use the hands analogy to explain what is meant by non-superimposable mirror images.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'svg-polarimeter',
-        prompt: 'Describe the five stages of the polarimeter apparatus in order.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'tbl-enantiomer-properties',
-        prompt: 'List two properties that are the SAME for both enantiomers and one property that is DIFFERENT. Explain why.'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'callout-skeletal-rings',
-        prompt: 'How do you quickly eliminate carbons that cannot be chiral centres when looking at complex skeletal ring structures like cholesterol?'
-      }
-    ],
-    summaryText: 'Optical isomers are a type of stereoisomer. Chiral centre = sp³ carbon bonded to exactly four different groups (marked C*). Enantiomers = non-superimposable mirror images. Polarimeter: source → polariser → sample → analyser → detector. Clockwise = +, anti-clockwise = −. Same physical/chemical properties EXCEPT rotation of plane-polarised light. In skeletal rings, ignore double bonds and vertices with only two lines (as they have 2 hidden Hs).',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How do structural and stereoisomers differ?",
+      "answer": "Structural isomers have different connectivity; stereoisomers have the same connectivity but a different spatial arrangement."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why is butan-2-ol chiral at C-2?",
+      "answer": "That tetrahedral carbon has four different groups: CH₃, CH₂CH₃, H and OH."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is a racemate optically inactive?",
+      "answer": "Equal quantities of two enantiomers rotate plane-polarised light equally in opposite directions, cancelling the net rotation."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does a C=C guarantee E/Z isomerism?",
+      "answer": "No. Each double-bond carbon must have two different groups."
+    }
+  ],
+  "summaryText": "Structural isomers differ in connectivity. Stereoisomers have the same connectivity but different spatial arrangements. E/Z isomerism is associated with restricted rotation and suitable groups at C=C. Optical isomerism commonly arises from a tetrahedral carbon with four different attached groups; its mirror images can be non-superimposable.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -283,5 +341,5 @@ export const note_chemistry_4_15_0 = {
       source: 'A-Level Chemistry Specification',
       tags: ['biochemistry', 'enantiomers', 'chirality']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

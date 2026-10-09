@@ -134,7 +134,7 @@ export const note_olevel_maths_core_3_1_0 = {
   <text x="70" y="27" fill="#ef4444" font-weight="bold">B(−1,4)</text>
   <!-- Point C(-2,-2): x=-2→85, y=-2→210 -->
   <circle cx="85" cy="210" r="4" fill="#10b981"/>
-  <text x="32" y="225" fill="#10b981" font-weight="bold">C(−2,−2)</text>
+  <text x="32" y="240" fill="#10b981" font-weight="bold">C(−2,−2)</text>
   <!-- Point D(3,-1): x=3→245, y=-1→180 -->
   <circle cx="245" cy="180" r="4" fill="#f59e0b"/>
   <text x="248" y="193" fill="#f59e0b" font-weight="bold">D(3,−1)</text>

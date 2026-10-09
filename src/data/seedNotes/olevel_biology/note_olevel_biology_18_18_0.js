@@ -97,7 +97,7 @@ export const note_olevel_biology_18_18_0 = {
   <!-- Axes -->
   <line x1="300" y1="160" x2="490" y2="160" stroke="#334155" stroke-width="1.5"/>
   <line x1="300" y1="40" x2="300" y2="160" stroke="#334155" stroke-width="1.5"/>
-  <text x="395" y="178" text-anchor="middle" font-size="10" fill="#334155">Blood Group</text>
+  <text x="395" y="203" text-anchor="middle" font-size="10" fill="#334155">Blood Group</text>
   <text x="280" y="105" text-anchor="middle" font-size="10" fill="#334155" transform="rotate(-90,280,105)">Frequency</text>
   <!-- Bars -->
   <rect x="315" y="90" width="30" height="70" fill="#065f46" stroke="#10b981" stroke-width="1"/>

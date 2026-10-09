@@ -8,6 +8,21 @@ export const note_chemistry_4_12_3 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Keep energy and entropy units consistent",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Assess thermodynamic feasibility from the total entropy change: ΔS(total) = ΔS(system) + ΔS(surroundings). At constant temperature, ΔS(surroundings) = −ΔH(system)/T. Use kelvin and consistent energy units. An exothermic process gives a positive surroundings entropy change because it releases heat; an endothermic process gives a negative one.<br/><br/>A negative system entropy change does not make a process impossible: a sufficiently positive surroundings contribution can compensate. Conversely, an endothermic process can be feasible if the system entropy gain is large enough. Positive total entropy indicates thermodynamic feasibility, not a fast reaction; activation barriers still affect rate."
+  }
+},
+{
       type: 'heading',
       id: 'h-entropy-intro',
       data: { text: 'What is Entropy?', level: 2 }
@@ -299,13 +314,6 @@ export const note_chemistry_4_12_3 = {
       terms: []
     },
     {
-      type: 'summary',
-      id: 'sum-total-entropy',
-      data: {
-        text: 'Spontaneity depends on total entropy: ΔS_total = ΔS_system − ΔH_system/T > 0. The surroundings\' entropy change is ΔS_surr = −ΔH_sys/T. Exothermic reactions increase surroundings entropy; endothermic reactions decrease it. At a phase transition equilibrium, ΔS_total = 0, and T determines which direction is spontaneous.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -323,64 +331,89 @@ export const note_chemistry_4_12_3 = {
         text: "A process is spontaneous if \u0394S_system + \u0394S_surroundings > 0. At constant T and P, this simplifies to \u0394G = \u0394H \u2212 T\u0394S < 0. Both approaches are equivalent."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For illustrative ΔH = −20.0 kJ mol⁻¹, ΔS(system) = −40.0 J mol⁻¹ K⁻¹ and T = 298 K: ΔS(surroundings) = −(−20000)/298 = +67.1 J mol⁻¹ K⁻¹. ΔS(total) = −40.0 + 67.1 = <strong>+27.1 J mol⁻¹ K⁻¹</strong>, so the process is thermodynamically feasible under the stated conditions."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Putting −20.0 directly into a formula expecting joules makes the surroundings term a thousand times too small. Do not use temperature in Celsius or equate feasible with rapid."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "State the surroundings entropy equation.",
+        "checked": false
+      },
+      {
+        "text": "What sign does an exothermic process give for surroundings entropy?",
+        "checked": false
+      },
+      {
+        "text": "Can ΔS(system) be negative in a feasible process?",
+        "checked": false
+      },
+      {
+        "text": "Does positive total entropy guarantee a fast reaction?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Assess thermodynamic feasibility from the total entropy change: ΔS(total) = ΔS(system) + ΔS(surroundings). At constant temperature, ΔS(surroundings) = −ΔH(system)/T. Use kelvin and consistent energy units. An exothermic process gives a positive surroundings entropy change because it releases heat; an endothermic process gives a negative one."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-0a',
-        blockId: 'list-entropy-rules',
-        prompt: 'How do changes of state and moles affect the entropy of a system?'
-      },
-      {
-        id: 'cue-0b',
-        blockId: 'table-stability',
-        prompt: 'What is the difference between thermodynamic and kinetic stability?'
-      },
-      {
-        id: 'cue-0c',
-        blockId: 'callout-entropy-sys',
-        prompt: 'State the formula for calculating the Entropy of the System.'
-      },
-      {
-        id: 'cue-0d',
-        blockId: 'co-ds-sys-worked-1',
-        prompt: 'Calculate ΔS_system for CaCO₃(s) → CaO(s) + CO₂(g) using S° values: CaCO₃=92.9, CaO=39.7, CO₂=213.7 J K⁻¹ mol⁻¹.'
-      },
-      {
-        id: 'cue-0e',
-        blockId: 'co-three-part-total-entropy',
-        prompt: 'Perform the full 3-step total entropy calculation for H₂ + ½O₂ → H₂O at 298 K (ΔH = −286 kJ mol⁻¹).'
-      },
-      {
-        id: 'cue-0f',
-        blockId: 'co-past-paper-nh4no3',
-        prompt: 'Calculate ΔS_sys, ΔS_surr, and ΔS_total for NH₄NO₃(s) → N₂O(g) + 2H₂O(g) at 433 K (ΔH = −36 kJ mol⁻¹).'
-      },
-      {
-        id: 'cue-1',
-        blockId: 'h-system-surroundings',
-        prompt: 'State the Second Law of Thermodynamics in terms of total entropy.'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'h-entropy-surroundings',
-        prompt: 'Derive and explain the formula ΔS_surroundings = −ΔH_system / T.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'h-total-entropy-calc',
-        prompt: 'Calculate ΔS_total for melting ice at 268 K, 273 K, and 278 K. Explain the results.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'h-spontaneity-entropy',
-        prompt: 'Under what temperature condition is an endothermic reaction with ΔS_system > 0 spontaneous?'
-      }
-    ],
-    summaryText: 'Entropy links to arrangements. Thermodynamic stability depends on ΔS_total, kinetic on Ea. ΔS_sys = ΣS(products) - ΣS(reactants). ΔS_total = ΔS_sys − ΔH_sys/T. Spontaneous when ΔS_total > 0. At equilibrium, ΔS_total = 0.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "State the surroundings entropy equation.",
+      "answer": "ΔS(surroundings) = −ΔH(system)/T, using absolute temperature and consistent energy units."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What sign does an exothermic process give for surroundings entropy?",
+      "answer": "Positive, because heat is released to the surroundings."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Can ΔS(system) be negative in a feasible process?",
+      "answer": "Yes, if the surroundings entropy gain is large enough to make total entropy positive."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does positive total entropy guarantee a fast reaction?",
+      "answer": "No. Kinetic barriers can make a thermodynamically feasible process slow."
+    }
+  ],
+  "summaryText": "Assess thermodynamic feasibility from the total entropy change: ΔS(total) = ΔS(system) + ΔS(surroundings). At constant temperature, ΔS(surroundings) = −ΔH(system)/T. Use kelvin and consistent energy units. An exothermic process gives a positive surroundings entropy change because it releases heat; an endothermic process gives a negative one.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -398,5 +431,5 @@ export const note_chemistry_4_12_3 = {
       source: 'A-Level Chemistry Specification',
       tags: ['spontaneity', 'temperature', 'gibbs']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

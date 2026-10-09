@@ -12,6 +12,21 @@ export const note_chemistry_2_10_5 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Control whether the aldehyde stays in the reaction mixture",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Primary alcohols can oxidise first to aldehydes and then to carboxylic acids. To obtain an aldehyde, use suitable controlled oxidant conditions and distil it as it forms, limiting further oxidation. To obtain the acid, heat under reflux with excess oxidant so the intermediate aldehyde remains in contact with it. A secondary alcohol forms a ketone; tertiary alcohols do not oxidise readily under the usual acidified dichromate conditions without breaking C–C bonds.<br/><br/>Acidified dichromate(VI) changes from orange to green on reduction to Cr³⁺. The colour change supports oxidation but does not alone identify which organic product formed. Classify an alcohol by the number of carbon groups attached to the carbon bearing OH, not the total number of carbons."
+  }
+},
+{
             id: 'h-reagent',
             type: 'heading',
             data: { text: 'The Oxidising Agent', level: 2 },
@@ -152,23 +167,89 @@ export const note_chemistry_2_10_5 = {
             },
             terms: []
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Propan-1-ol + [O] → propanal + H₂O: CH₃CH₂CH₂OH + [O] → CH₃CH₂CHO + H₂O. Further oxidation gives CH₃CH₂CHO + [O] → CH₃CH₂COOH. Propan-2-ol gives propanone: CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O. Distillation and reflux are chosen for different aims."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Reflux prevents loss of volatile material; it does not itself select an aldehyde. An aldehyde must normally be removed from the oxidising mixture to limit conversion to the acid."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How can an aldehyde be obtained from a primary alcohol?",
+        "checked": false
+      },
+      {
+        "text": "Why reflux with excess oxidant when making a carboxylic acid?",
+        "checked": false
+      },
+      {
+        "text": "What is formed by oxidation of propan-2-ol?",
+        "checked": false
+      },
+      {
+        "text": "What colour change accompanies reduction of acidified dichromate(VI)?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Primary alcohols can oxidise first to aldehydes and then to carboxylic acids. To obtain an aldehyde, use suitable controlled oxidant conditions and distil it as it forms, limiting further oxidation. To obtain the acid, heat under reflux with excess oxidant so the intermediate aldehyde remains in contact with it. A secondary alcohol forms a ketone; tertiary alcohols do not oxidise readily under the usual acidified dichromate conditions without breaking C–C bonds."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-reagent', prompt: 'State the reagent used to oxidise alcohols, and the expected colour change if oxidation is successful.' },
-            { id: 'c-cp7', blockId: 'callout-cp7', prompt: 'In Core Practical 7, what apparatus setup is used to oxidise propan-1-ol to propanal, and why?' },
-            { id: 'c-cp7-2', blockId: 'callout-cp7', prompt: 'In Core Practical 7, what apparatus setup is used to oxidise propan-1-ol fully to propanoic acid?' },
-            { id: 'c2', blockId: 'table-oxidation', prompt: 'If you want to produce an aldehyde from a primary alcohol, what specific experimental conditions must you use, and why?' },
-            { id: 'c3', blockId: 'table-oxidation', prompt: 'What is the product when a secondary alcohol is heated under reflux with acidified potassium dichromate(VI)?' },
-            { id: 'c4', blockId: 'table-oxidation', prompt: 'Explain structurally why tertiary alcohols cannot be oxidised by acidified potassium dichromate(VI).' },
-            { id: 'c5', blockId: 'callout-benedicts', prompt: 'Describe a chemical test to distinguish between propanal (an aldehyde) and propanone (a ketone), stating the reagent and observations.' },
-            { id: 'c-iodoform-1', blockId: 'callout-iodoform', prompt: 'What specific functional group does the triiodomethane (iodoform) reaction test for in alcohols? State the reagents and positive observation.' },
-            { id: 'c-iodoform-2', blockId: 'list-iodoform-alcohols', prompt: 'Ethanol is the only primary alcohol to give a positive iodoform test. Which tyoe of secondary alcohols give a positive result?' }
-        ],
-        summaryText: "Core Practical 7: Oxidation of propan-1-ol. Alcohols are oxidised using acidified potassium dichromate(VI), changing colour from ORANGE (Cr VI) to GREEN (Cr III). Primary alcohols oxidise to aldehydes (using distillation to boil it off immediately) or to carboxylic acids (heating under reflux with excess). Secondary alcohols oxidise to ketones (under reflux). Tertiary alcohols do NOT oxidise. Aldehydes can be distinguished from ketones using Benedict's (blue to brick-red ppt) or Tollens' reagent (silver mirror). The triiodomethane (iodoform) reaction (I₂ + NaOH) produces a pale yellow ppt of CHI₃ with ethanol and secondary alcohols with a methyl group.",
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How can an aldehyde be obtained from a primary alcohol?",
+      "answer": "Use controlled oxidation and distil the aldehyde as it forms to reduce further oxidation."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why reflux with excess oxidant when making a carboxylic acid?",
+      "answer": "It retains the alcohol and aldehyde so oxidation can continue to the acid."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What is formed by oxidation of propan-2-ol?",
+      "answer": "Propanone, a ketone."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What colour change accompanies reduction of acidified dichromate(VI)?",
+      "answer": "Orange to green as chromium(VI) is reduced to chromium(III)."
+    }
+  ],
+  "summaryText": "Primary alcohols can oxidise first to aldehydes and then to carboxylic acids. To obtain an aldehyde, use suitable controlled oxidant conditions and distil it as it forms, limiting further oxidation. To obtain the acid, heat under reflux with excess oxidant so the intermediate aldehyde remains in contact with it. A secondary alcohol forms a ketone; tertiary alcohols do not oxidise readily under the usual acidified dichromate conditions without breaking C–C bonds.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_10_5;

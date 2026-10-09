@@ -100,7 +100,7 @@ export const note_olevel_biology_12_12_0 = {
         rows: [
           ['Reactants (inputs)', 'Glucose + Oxygen'],
           ['Products (outputs)', 'Carbon dioxide + Water'],
-          ['Energy yield', 'High — approximately 38 ATP per glucose molecule'],
+          ['Energy yield', 'High — much more ATP per glucose than anaerobic breakdown; the exact yield varies'],
           ['Location in cell', 'Mitochondria (matrix and cristae)'],
           ['Requires oxygen?', 'Yes']
         ]

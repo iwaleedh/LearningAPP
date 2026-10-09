@@ -12,6 +12,21 @@ export const note_chemistry_1_3_3 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Metallic bonding: a property–reason chain",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A metal contains a giant lattice of positive metal ions surrounded by delocalised electrons. Metallic bonding is the electrostatic attraction between the ions and the delocalised electrons. The electrons can move through the structure, which explains electrical conductivity in both solid and liquid metals. Mobile electrons also transfer thermal energy efficiently.<br/><br/>Metals are malleable and ductile because layers of ions can slide while remaining attracted to the electron sea. Metallic bonding is not a set of directional bonds between fixed pairs of atoms. Bond strength varies with ionic charge, number of delocalised electrons and ion size, so metals do not all have high melting points. Mercury is liquid near room temperature."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'The Metallic Bond Model', level: 2 },
@@ -101,9 +116,9 @@ export const note_chemistry_1_3_3 = {
       type: 'svg',
       data: {
         caption: 'Melting point trend across Period 3 metals reflects metallic bond strength: more valence electrons and smaller ionic radius → stronger bonding → higher m.p.',
-        svg: `<svg viewBox="0 0 680 135" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="0 -28 680 163" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Bar chart Period 3 metals -->
-  <text x="340" y="16" text-anchor="middle" fill="#374151" font-weight="bold" font-size="13">Period 3 Metal Melting Points &amp; Valence Electrons</text>
+  <text x="340" y="-8" text-anchor="middle" fill="#374151" font-weight="bold" font-size="13">Period 3 Metal Melting Points &amp; Valence Electrons</text>
   <!-- Y-axis label -->
   <text x="18" y="80" text-anchor="middle" fill="#64748b" font-size="9" transform="rotate(-90,18,80)">Melting point / °C</text>
   <!-- Axis -->
@@ -113,22 +128,22 @@ export const note_chemistry_1_3_3 = {
   <!-- Bars: Na(98°C), Mg(650°C), Al(660°C) — relative heights -->
   <!-- Scale: max 660, height 90px → each °C ≈ 0.136px -->
   <!-- Na: 98°C → h≈13 -->
-  <rect x="60"  y="102" width="50" height="13" fill="#3b82f6"/>
-  <text x="85"  y="130" text-anchor="middle" fill="#374151" font-size="10">Na</text>
-  <text x="85"  y="98"  text-anchor="middle" fill="#1d4ed8" font-size="9">98°C</text>
-  <text x="85"  y="110"  text-anchor="middle" fill="white" font-size="8">1e⁻</text>
+  <rect x="60" y="102" width="50" height="13" fill="#3b82f6"/>
+  <text x="85" y="130" text-anchor="middle" fill="#374151" font-size="10">Na</text>
+  <text x="85" y="98" text-anchor="middle" fill="#1d4ed8" font-size="9">98°C</text>
+  <text x="85" y="110" text-anchor="middle" fill="white" font-size="8">1e⁻</text>
 
   <!-- Mg: 650°C → h≈88 -->
   <rect x="160" y="27" width="50" height="88" fill="#10b981"/>
   <text x="185" y="130" text-anchor="middle" fill="#374151" font-size="10">Mg</text>
-  <text x="185" y="22"  text-anchor="middle" fill="#065f46" font-size="9">650°C</text>
-  <text x="185" y="76"  text-anchor="middle" fill="white" font-size="8">2e⁻</text>
+  <text x="185" y="22" text-anchor="middle" fill="#065f46" font-size="9">650°C</text>
+  <text x="185" y="76" text-anchor="middle" fill="#0f172a" font-size="8" style="fill:#0f172a">2e⁻</text>
 
   <!-- Al: 660°C → h≈89.8 ≈ 90 -->
   <rect x="260" y="25" width="50" height="90" fill="#3b82f6"/>
   <text x="285" y="130" text-anchor="middle" fill="#374151" font-size="10">Al</text>
-  <text x="285" y="20"  text-anchor="middle" fill="#4338ca" font-size="9">660°C</text>
-  <text x="285" y="75"  text-anchor="middle" fill="white" font-size="8">3e⁻</text>
+  <text x="285" y="20" text-anchor="middle" fill="#4338ca" font-size="9">660°C</text>
+  <text x="285" y="75" text-anchor="middle" fill="white" font-size="8">3e⁻</text>
 
   <!-- Notes -->
   <rect x="360" y="22" width="300" height="90" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
@@ -151,20 +166,90 @@ export const note_chemistry_1_3_3 = {
       },
       terms: []
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Across Na, Mg and Al, the ions become smaller and more highly charged, and each atom supplies more delocalised electrons. These changes strengthen attraction between the positive ions and the electron sea. This explains the broad increase in metallic bond strength; a complete melting-point comparison must also allow for crystal structure."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not describe a metal as positive ions surrounded by negative ions. The negative charge is carried by delocalised electrons. “All metals have high melting points” is also too absolute."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define metallic bonding.",
+        "checked": false
+      },
+      {
+        "text": "Why can a solid metal conduct?",
+        "checked": false
+      },
+      {
+        "text": "Why can a metal be hammered into shape?",
+        "checked": false
+      },
+      {
+        "text": "What generally strengthens metallic bonding across Na, Mg and Al?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A metal contains a giant lattice of positive metal ions surrounded by delocalised electrons. Metallic bonding is the electrostatic attraction between the ions and the delocalised electrons. The electrons can move through the structure, which explains electrical conductivity in both solid and liquid metals. Mobile electrons also transfer thermal energy efficiently."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Metallic bond = electrostatic attraction between lattice of positive metal ions and a sea of delocalised electrons. Properties: good conductor (free e⁻), malleable (layers slide, e⁻ rearrange), high m.p. (many strong forces to break). Trend Na < Mg < Al: more valence e⁻, higher cation charge, smaller radius → stronger bonding.',
-    cues: [
-      { id: 'c1', blockId: 'svg-model', prompt: 'Define metallic bonding. What specifically forms the "sea of electrons" and where do these electrons come from?' },
-      { id: 'c2', blockId: 'svg-model', prompt: 'Explain why metals are good electrical conductors but ionic compounds in the solid state are not.' },
-      { id: 'c3', blockId: 'svg-model', prompt: 'Why are metals malleable but ionic compounds are brittle? Refer to the structure of each.' },
-      { id: 'c4', blockId: 'svg-trend', prompt: 'Why does the melting point increase from Na to Mg to Al? Give three reasons.' },
-      { id: 'c5', blockId: 'warn-metallic', prompt: 'Distinguish between metallic bonding and covalent bonding. Why is "sharing" the wrong word for metallic bonding?' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define metallic bonding.",
+      "answer": "Electrostatic attraction between positive metal ions and delocalised electrons in a giant lattice."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why can a solid metal conduct?",
+      "answer": "Delocalised electrons are mobile and carry charge through the solid."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why can a metal be hammered into shape?",
+      "answer": "Layers of ions slide while attraction to delocalised electrons continues to hold the structure together."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What generally strengthens metallic bonding across Na, Mg and Al?",
+      "answer": "Increasing ion charge, more delocalised electrons per atom and smaller ions strengthen electrostatic attraction."
+    }
+  ],
+  "summaryText": "A metal contains a giant lattice of positive metal ions surrounded by delocalised electrons. Metallic bonding is the electrostatic attraction between the ions and the delocalised electrons. The electrons can move through the structure, which explains electrical conductivity in both solid and liquid metals. Mobile electrons also transfer thermal energy efficiently.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

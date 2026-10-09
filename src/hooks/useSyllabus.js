@@ -15,11 +15,12 @@ export function useSyllabus(subject) {
     const error = errorsBySubject[subjectKey] || null;
 
     useEffect(() => {
-        if (!subjectKey || fetchedKeysRef.current.has(subjectKey)) {
+        const fetchedKeys = fetchedKeysRef.current;
+        if (!subjectKey || fetchedKeys.has(subjectKey)) {
             return undefined;
         }
 
-        fetchedKeysRef.current.add(subjectKey);
+        fetchedKeys.add(subjectKey);
         let cancelled = false;
 
         void getSyllabusBySubject(subjectKey)
@@ -38,7 +39,7 @@ export function useSyllabus(subject) {
             .catch((nextError) => {
                 if (cancelled) return;
                 // Remove from ref so the caller can retry (e.g. after offline recovery)
-                fetchedKeysRef.current.delete(subjectKey);
+                fetchedKeys.delete(subjectKey);
                 setErrorsBySubject((prev) => (
                     prev[subjectKey] ? prev : { ...prev, [subjectKey]: nextError }
                 ));
@@ -47,7 +48,7 @@ export function useSyllabus(subject) {
         return () => {
             cancelled = true;
             // Allow StrictMode remounts and future mounts to trigger a fresh fetch
-            fetchedKeysRef.current.delete(subjectKey);
+            fetchedKeys.delete(subjectKey);
         };
     }, [subjectKey]);
 

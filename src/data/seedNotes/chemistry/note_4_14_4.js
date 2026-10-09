@@ -8,6 +8,21 @@ export const note_chemistry_4_14_4 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Check a weak-acid approximation before using it",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "For a monoprotic weak acid HA, Ka = [H⁺][A⁻]/[HA]. If the acid concentration is c and its dissociation gives x mol dm⁻³ H⁺, the exact school-level expression is Ka = x²/(c − x), neglecting water’s contribution. If x is small compared with c, replace c − x by c and use [H⁺] ≈ √(Ka c). Then pH = −log₁₀[H⁺].<br/><br/>Check x/c after calculation. A rough 5% criterion is a common guide, not a universal definition of a weak acid. Very dilute solutions or comparatively large Ka can invalidate the approximation. Acid strength describes degree of dissociation; concentration describes amount per volume."
+  }
+},
+{
       id: 'h-ka-def',
       type: 'heading',
       data: { text: 'The Acid Dissociation Constant (Ka)', level: 2 }
@@ -207,13 +222,6 @@ export const note_chemistry_4_14_4 = {
       terms: []
     },
     {
-      id: 'summary-ka',
-      type: 'summary',
-      data: {
-        text: 'Ka = [H⁺][A⁻]/[HA] for weak acid HA. pKa = −log Ka. Larger Ka (lower pKa) = stronger acid. For dilute weak acids, use approximation [H⁺] ≈ √(Ka × c) if x < 5% of c. Ka × Kb = 10⁻¹⁴ at 25°C. Calculate pH from [H⁺] = 10^(−pH).'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -231,39 +239,89 @@ export const note_chemistry_4_14_4 = {
         text: "If Ka > 10\u207b\u2074 or concentration < 0.01 M, the approximation fails. You must solve the quadratic Ka = x\u00b2/(c\u2212x) without simplification. Exams test this \u2014 students blindly use \u221a(Ka\u00d7c) and get marked down."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For Ka = 1.80 × 10⁻⁵ mol dm⁻³ and c = 0.100 mol dm⁻³, [H⁺] ≈ √(1.80 × 10⁻⁶) = 1.34 × 10⁻³ mol dm⁻³. pH ≈ <strong>2.87</strong>. Dissociation fraction ≈ 0.00134/0.100 = 1.34%, supporting the approximation. If it were not small, solve the quadratic rather than forcing the shortcut."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "A weak acid is not necessarily dilute, and a concentrated weak acid can have a lower pH than a very dilute strong acid. Keep Ka and concentration units consistent."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What approximation leads to [H⁺] ≈ √(Ka c)?",
+        "checked": false
+      },
+      {
+        "text": "How can that approximation be checked?",
+        "checked": false
+      },
+      {
+        "text": "How do strength and concentration differ?",
+        "checked": false
+      },
+      {
+        "text": "What is the approximate pH for Ka = 1.80 × 10⁻⁵ and c = 0.100?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "For a monoprotic weak acid HA, Ka = [H⁺][A⁻]/[HA]. If the acid concentration is c and its dissociation gives x mol dm⁻³ H⁺, the exact school-level expression is Ka = x²/(c − x), neglecting water’s contribution. If x is small compared with c, replace c − x by c and use [H⁺] ≈ √(Ka c). Then pH = −log₁₀[H⁺]."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'eq-ka-general',
-        prompt: 'Write the expression for Ka of a weak acid HA.'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'eq-pka',
-        prompt: 'Define pKa and explain the relationship between Ka and pKa.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'ex-weak-acid-approx',
-        prompt: 'Calculate the pH of 0.1 mol dm⁻³ acetic acid (Ka = 1.8 × 10⁻⁵) using the approximation.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-approx-validity',
-        prompt: 'What is the criterion for the approximation c − x ≈ c to be valid?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'eq-ka-kb',
-        prompt: 'Give the relationship between Ka, Kb, and Kw. Calculate Kb for the conjugate base of acetic acid.'
-      }
-    ],
-    summaryText: 'Ka = [H⁺][A⁻]/[HA]. pKa = −log Ka. For weak acids, use [H⁺] ≈ √(Ka × c) if x << c. pH = −log[H⁺]. Ka × Kb = 10⁻¹⁴. Larger Ka = stronger acid; lower pKa = stronger acid.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What approximation leads to [H⁺] ≈ √(Ka c)?",
+      "answer": "The dissociated amount is small, so the remaining HA concentration is approximately the initial concentration c."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How can that approximation be checked?",
+      "answer": "Calculate [H⁺]/c; if the dissociated fraction is not small, use the full expression."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How do strength and concentration differ?",
+      "answer": "Strength concerns dissociation; concentration concerns amount dissolved per unit volume."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What is the approximate pH for Ka = 1.80 × 10⁻⁵ and c = 0.100?",
+      "answer": "About 2.87, with a dissociated fraction of about 1.34%."
+    }
+  ],
+  "summaryText": "For a monoprotic weak acid HA, Ka = [H⁺][A⁻]/[HA]. If the acid concentration is c and its dissociation gives x mol dm⁻³ H⁺, the exact school-level expression is Ka = x²/(c − x), neglecting water’s contribution. If x is small compared with c, replace c − x by c and use [H⁺] ≈ √(Ka c). Then pH = −log₁₀[H⁺].",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -273,5 +331,5 @@ export const note_chemistry_4_14_4 = {
       source: 'A-Level Chemistry Specification (WCH14)',
       tags: ['Ka', 'pKa', 'weak acid', 'dissociation constant', 'pH calculation']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

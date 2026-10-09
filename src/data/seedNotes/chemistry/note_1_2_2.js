@@ -25,24 +25,24 @@ export const note_chemistry_1_2_2 = {
         svg: `<svg viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="12">
   <!-- Stage boxes -->
   <rect x="5" y="30" width="110" height="60" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="60" y="55" text-anchor="middle" font-weight="bold" fill="#1e40af">1. Vaporisation</text>
-  <text x="60" y="72" text-anchor="middle" fill="#1e40af" font-size="10">Sample → gas</text>
+  <text x="60" y="55" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">1. Vaporisation</text>
+  <text x="60" y="72" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Sample → gas</text>
 
   <rect x="135" y="30" width="110" height="60" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="190" y="55" text-anchor="middle" font-weight="bold" fill="#5b21b6">2. Ionisation</text>
-  <text x="190" y="72" text-anchor="middle" fill="#5b21b6" font-size="10">e⁻ gun → M⁺(g)</text>
+  <text x="190" y="55" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">2. Ionisation</text>
+  <text x="190" y="72" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">e⁻ gun → M⁺(g)</text>
 
   <rect x="265" y="30" width="110" height="60" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="320" y="55" text-anchor="middle" font-weight="bold" fill="#15803d">3. Acceleration</text>
-  <text x="320" y="72" text-anchor="middle" fill="#15803d" font-size="10">Electric field</text>
+  <text x="320" y="55" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">3. Acceleration</text>
+  <text x="320" y="72" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Electric field</text>
 
   <rect x="395" y="30" width="110" height="60" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
-  <text x="450" y="55" text-anchor="middle" font-weight="bold" fill="#92400e">4. Deflection</text>
-  <text x="450" y="72" text-anchor="middle" fill="#92400e" font-size="10">Magnetic field</text>
+  <text x="450" y="55" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">4. Deflection</text>
+  <text x="450" y="72" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Magnetic field</text>
 
   <rect x="525" y="30" width="110" height="60" rx="8" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
-  <text x="580" y="55" text-anchor="middle" font-weight="bold" fill="#be185d">5. Detection</text>
-  <text x="580" y="72" text-anchor="middle" fill="#be185d" font-size="10">Current recorded</text>
+  <text x="580" y="55" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">5. Detection</text>
+  <text x="580" y="72" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Current recorded</text>
 
   <!-- Arrows -->
   <line x1="115" y1="60" x2="133" y2="60" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
@@ -378,31 +378,31 @@ export const note_chemistry_1_2_2 = {
   <rect x="8" y="8" width="172" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="8" y="8" width="172" height="28" rx="8" fill="#3b82f6" fill-opacity="0.5"/>
   <rect x="8" y="26" width="172" height="10" fill="#3b82f6" fill-opacity="0.5"/>
-  <text x="94" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#3730a3">TOF Stages</text>
+  <text x="94" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">TOF Stages</text>
   <rect x="18" y="46" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="94" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">① Vaporise</text>
-  <text x="94" y="71" text-anchor="middle" font-size="9" fill="#374151">Sample converted to gas phase</text>
+  <text x="94" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">① Vaporise</text>
+  <text x="94" y="71" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Sample converted to gas phase</text>
   <line x1="94" y1="78" x2="94" y2="90" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="90" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="94" y="103" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">② Ionise</text>
-  <text x="94" y="115" text-anchor="middle" font-size="9" fill="#374151">EI or ESI → M⁺ ions formed</text>
+  <text x="94" y="103" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">② Ionise</text>
+  <text x="94" y="115" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">EI or ESI → M⁺ ions formed</text>
   <line x1="94" y1="122" x2="94" y2="134" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="134" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="94" y="147" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">③ Accelerate</text>
-  <text x="94" y="159" text-anchor="middle" font-size="9" fill="#374151">Electric field → same KE</text>
+  <text x="94" y="147" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">③ Accelerate</text>
+  <text x="94" y="159" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Electric field → same KE</text>
   <line x1="94" y1="166" x2="94" y2="178" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="178" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="94" y="191" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">④ Drift / Deflect</text>
-  <text x="94" y="203" text-anchor="middle" font-size="9" fill="#374151">Lighter ions arrive faster</text>
+  <text x="94" y="191" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">④ Drift / Deflect</text>
+  <text x="94" y="203" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Lighter ions arrive faster</text>
   <line x1="94" y1="210" x2="94" y2="222" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="222" width="152" height="32" rx="5" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
-  <text x="94" y="235" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">⑤ Detect &amp; Process</text>
-  <text x="94" y="247" text-anchor="middle" font-size="9" fill="#374151">t → m/z → spectrum + Aᵣ</text>
+  <text x="94" y="235" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">⑤ Detect &amp; Process</text>
+  <text x="94" y="247" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">t → m/z → spectrum + Aᵣ</text>
   <line x1="188" y1="150" x2="208" y2="150" stroke="#374151" stroke-width="2.5" marker-end="url(#arr-h)"/>
   <rect x="212" y="8" width="196" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="212" y="8" width="196" height="28" rx="8" fill="#78350f" fill-opacity="0.5"/>
   <rect x="212" y="26" width="196" height="10" fill="#78350f" fill-opacity="0.5"/>
-  <text x="310" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Mass Spectrum: Neon</text>
+  <text x="310" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Mass Spectrum: Neon</text>
   <line x1="245" y1="42" x2="245" y2="202" stroke="#374151" stroke-width="1.5"/>
   <line x1="245" y1="202" x2="392" y2="202" stroke="#374151" stroke-width="1.5"/>
   <text x="243" y="200" text-anchor="end" font-size="8" fill="#6b7280">0</text>
@@ -410,41 +410,41 @@ export const note_chemistry_1_2_2 = {
   <text x="243" y="128" text-anchor="end" font-size="8" fill="#6b7280">100</text>
   <line x1="245" y1="165" x2="392" y2="165" stroke="#f1f5f9" stroke-width="1"/>
   <line x1="245" y1="128" x2="392" y2="128" stroke="#f1f5f9" stroke-width="1"/>
-  <text x="310" y="218" text-anchor="middle" font-size="9" fill="#374151">m/z</text>
+  <text x="240" y="220" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">m/z</text>
   <rect x="263" y="57" width="22" height="145" fill="#3b82f6" opacity="0.65"/>
-  <text x="274" y="52" text-anchor="middle" font-size="9" font-weight="bold" fill="#3730a3">90.5%</text>
-  <text x="274" y="214" text-anchor="middle" font-size="9" fill="#374151" font-weight="bold">20</text>
+  <text x="274" y="52" text-anchor="middle" font-size="9" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">90.5%</text>
+  <text x="274" y="214" text-anchor="middle" font-size="9" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">20</text>
   <rect x="308" y="199" width="22" height="3" fill="#3b82f6" opacity="0.65"/>
-  <text x="319" y="193" text-anchor="middle" font-size="8" fill="#3730a3">0.3%</text>
-  <text x="319" y="214" text-anchor="middle" font-size="9" fill="#374151" font-weight="bold">21</text>
+  <text x="319" y="193" text-anchor="middle" font-size="8" fill="#f8fafc" style="fill:#f8fafc">0.3%</text>
+  <text x="319" y="214" text-anchor="middle" font-size="9" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">21</text>
   <rect x="356" y="184" width="22" height="18" fill="#3b82f6" opacity="0.65"/>
-  <text x="367" y="179" text-anchor="middle" font-size="9" font-weight="bold" fill="#3730a3">9.2%</text>
-  <text x="367" y="214" text-anchor="middle" font-size="9" fill="#374151" font-weight="bold">22</text>
-  <text x="310" y="234" text-anchor="middle" font-size="9" fill="#374151">Base peak = tallest bar (m/z 20)</text>
+  <text x="367" y="179" text-anchor="middle" font-size="9" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">9.2%</text>
+  <text x="367" y="214" text-anchor="middle" font-size="9" fill="#f8fafc" font-weight="bold" style="fill:#f8fafc">22</text>
+  <text x="310" y="234" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">Base peak = tallest bar (m/z 20)</text>
   <text x="310" y="248" text-anchor="middle" font-size="9" fill="#6b7280">Rel. intensity = height relative to base peak</text>
   <text x="310" y="263" text-anchor="middle" font-size="9" fill="#6b7280">²⁰Ne · ²¹Ne · ²²Ne are 3 stable isotopes</text>
   <line x1="416" y1="150" x2="436" y2="150" stroke="#374151" stroke-width="2.5" marker-end="url(#arr-h)"/>
   <rect x="440" y="8" width="172" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
   <rect x="440" y="8" width="172" height="28" rx="8" fill="#065f46" fill-opacity="0.5"/>
   <rect x="440" y="26" width="172" height="10" fill="#065f46" fill-opacity="0.5"/>
-  <text x="526" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Aᵣ Calculation</text>
+  <text x="526" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Aᵣ Calculation</text>
   <rect x="450" y="42" width="152" height="40" rx="5" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
-  <text x="526" y="56" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">Aᵣ = Σ(mass × abundance)</text>
-  <text x="526" y="70" text-anchor="middle" font-size="10" fill="#065f46">            Σ(abundances)</text>
-  <text x="450" y="98" font-size="10" font-weight="bold" fill="#374151">Worked: Neon</text>
+  <text x="526" y="56" text-anchor="middle" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Aᵣ = Σ(mass × abundance)</text>
+  <text x="526" y="70" text-anchor="middle" font-size="10" fill="#f8fafc" style="fill:#f8fafc">            Σ(abundances)</text>
+  <text x="450" y="98" font-size="10" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Worked: Neon</text>
   <line x1="450" y1="103" x2="602" y2="103" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="450" y="118" font-size="9" fill="#374151">= (20×90.5) + (21×0.3) + (22×9.2)</text>
-  <text x="450" y="132" font-size="9" fill="#374151">        90.5 + 0.3 + 9.2</text>
+  <text x="450" y="118" font-size="9" fill="#f8fafc" style="fill:#f8fafc">= (20×90.5) + (21×0.3) + (22×9.2)</text>
+  <text x="450" y="132" font-size="9" fill="#f8fafc" style="fill:#f8fafc">        90.5 + 0.3 + 9.2</text>
   <line x1="450" y1="138" x2="602" y2="138" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="450" y="153" font-size="9" fill="#374151">= 1810 + 6.3 + 202.4</text>
-  <text x="450" y="167" font-size="9" fill="#374151">         100</text>
+  <text x="450" y="153" font-size="9" fill="#f8fafc" style="fill:#f8fafc">= 1810 + 6.3 + 202.4</text>
+  <text x="450" y="167" font-size="9" fill="#f8fafc" style="fill:#f8fafc">         100</text>
   <line x1="450" y1="173" x2="602" y2="173" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="450" y="178" width="152" height="24" rx="4" fill="#0a2e1a"/>
-  <text x="526" y="194" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">Aᵣ(Ne) = 20.2</text>
+  <text x="526" y="194" text-anchor="middle" font-size="12" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Aᵣ(Ne) = 20.2</text>
   <rect x="450" y="210" width="152" height="36" rx="5" fill="#44370a"/>
-  <text x="526" y="223" text-anchor="middle" font-size="9" font-weight="bold" fill="#713f12">Check: Aᵣ must lie between</text>
-  <text x="526" y="235" text-anchor="middle" font-size="9" fill="#713f12">lightest (20) and heaviest (22)</text>
-  <text x="526" y="247" text-anchor="middle" font-size="9" fill="#065f46">✓ 20.2 is within range</text>
+  <text x="526" y="223" text-anchor="middle" font-size="9" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Check: Aᵣ must lie between</text>
+  <text x="526" y="235" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">lightest (20) and heaviest (22)</text>
+  <text x="526" y="247" text-anchor="middle" font-size="9" fill="#f8fafc" style="fill:#f8fafc">✓ 20.2 is within range</text>
   <text x="526" y="270" text-anchor="middle" font-size="9" fill="#6b7280">If %s given: divide by 100 first</text>
   <text x="526" y="283" text-anchor="middle" font-size="9" fill="#6b7280">OR use % directly if ÷100 cancels</text>
 </svg>`

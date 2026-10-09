@@ -12,6 +12,21 @@ export const note_chemistry_1_3_0 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "What ionic bonding actually means",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Electron transfer explains <strong>how ions form</strong>; the ionic bond itself is the strong electrostatic attraction between oppositely charged ions. Each ion attracts several neighbours throughout a giant lattice. There are no individual NaCl molecules. Na loses one electron to form Na⁺ and Cl gains one to form Cl⁻; their proton numbers do not change.<br/><br/>In an ionic dot-and-cross diagram, draw the outer-shell electrons, enclose each ion in square brackets and write its charge outside the bracket. Dots and crosses label the origins of electrons; they are not two different types of electron. Check both a complete outer shell where appropriate and zero total charge. Conductivity when molten or dissolved shows mobile charged particles; movement of coloured ions during electrolysis supplies further evidence for ions."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'Ion Formation & Electron Transfer', level: 2 },
@@ -196,14 +211,14 @@ export const note_chemistry_1_3_0 = {
         caption: 'Five experimental evidences confirming ionic compounds contain discrete charged ions',
         svg: `<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- 5 panels -->
-  <rect x="5"   y="8" width="128" height="204" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="5" y="8" width="128" height="204" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
   <rect x="140" y="8" width="128" height="204" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
   <rect x="275" y="8" width="128" height="204" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
   <rect x="410" y="8" width="128" height="204" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
   <rect x="545" y="8" width="148" height="204" rx="8" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1.5"/>
 
   <!-- Headers -->
-  <text x="69"  y="28" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">⚡ Electrolysis</text>
+  <text x="69" y="28" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">⚡ Electrolysis</text>
   <text x="204" y="28" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="12">🔋 Conductivity</text>
   <text x="339" y="28" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="12">💔 Brittleness</text>
   <text x="474" y="28" text-anchor="middle" fill="#9d174d" font-weight="bold" font-size="12">🌡 High M.P.</text>
@@ -213,7 +228,7 @@ export const note_chemistry_1_3_0 = {
   <text x="69" y="50" text-anchor="middle" fill="#374151" font-size="10">Cu²⁺ (blue) + CrO₄²⁻ (yellow)</text>
   <text x="69" y="63" text-anchor="middle" fill="#374151" font-size="10">= green solution</text>
   <text x="69" y="82" text-anchor="middle" fill="#1d4ed8" font-size="10">Blue → cathode (−)</text>
-  <text x="69" y="96" text-anchor="middle" fill="#ca8a04" font-size="10">Yellow → anode (+)</text>
+  <text x="69" y="96" text-anchor="middle" fill="#0f172a" font-size="10" style="fill:#0f172a">Yellow → anode (+)</text>
   <line x1="20" y1="108" x2="118" y2="108" stroke="#93c5fd" stroke-width="1"/>
   <text x="69" y="122" text-anchor="middle" fill="#374151" font-size="9.5">Opposite-charge ions</text>
   <text x="69" y="135" text-anchor="middle" fill="#374151" font-size="9.5">migrate independently</text>
@@ -223,8 +238,8 @@ export const note_chemistry_1_3_0 = {
   <!-- Conductivity -->
   <text x="204" y="50" text-anchor="middle" fill="#374151" font-size="10">State → Conducts?</text>
   <text x="175" y="67" fill="#374151" font-size="10">Solid</text>  <text x="232" y="67" fill="#dc2626" font-size="11">✗</text>
-  <text x="175" y="83" fill="#374151" font-size="10">Molten</text> <text x="232" y="83" fill="#16a34a" font-size="11">✓</text>
-  <text x="175" y="99" fill="#374151" font-size="10">Aqueous</text><text x="232" y="99" fill="#16a34a" font-size="11">✓</text>
+  <text x="175" y="83" fill="#374151" font-size="10">Molten</text> <text x="232" y="83" fill="#0f172a" font-size="11" style="fill:#0f172a">✓</text>
+  <text x="175" y="99" fill="#374151" font-size="10">Aqueous</text><text x="232" y="99" fill="#0f172a" font-size="11" style="fill:#0f172a">✓</text>
   <line x1="155" y1="110" x2="253" y2="110" stroke="#6ee7b7" stroke-width="1"/>
   <text x="204" y="124" text-anchor="middle" fill="#374151" font-size="9.5">Solid: ions fixed. Cannot move.</text>
   <text x="204" y="138" text-anchor="middle" fill="#374151" font-size="9.5">Molten/aq: ions free to move.</text>
@@ -246,8 +261,8 @@ export const note_chemistry_1_3_0 = {
   <!-- High M.P. -->
   <text x="474" y="50" text-anchor="middle" fill="#374151" font-size="10">Melting points:</text>
   <text x="440" y="68" fill="#374151" font-size="10">NaCl (1+/1−)</text><text x="525" y="68" text-anchor="end" fill="#dc2626" font-size="10">801°C</text>
-  <text x="440" y="84" fill="#374151" font-size="10">MgCl₂ (2+/1−)</text><text x="525" y="84" text-anchor="end" fill="#dc2626" font-size="10">714°C</text>
-  <text x="440" y="100" fill="#374151" font-size="10">MgO (2+/2−)</text><text x="525" y="100" text-anchor="end" fill="#dc2626" font-size="10">2852°C</text>
+  <text x="440" y="84" fill="#374151" font-size="8">MgCl₂ (2+/1−)</text><text x="525" y="84" text-anchor="end" fill="#dc2626" font-size="8">714°C</text>
+  <text x="440" y="100" fill="#374151" font-size="8">MgO (2+/2−)</text><text x="525" y="100" text-anchor="end" fill="#dc2626" font-size="8">2852°C</text>
   <line x1="425" y1="110" x2="523" y2="110" stroke="#fbcfe8" stroke-width="1"/>
   <text x="474" y="124" text-anchor="middle" fill="#374151" font-size="9.5">Higher charge → stronger</text>
   <text x="474" y="137" text-anchor="middle" fill="#374151" font-size="9.5">electrostatic attraction →</text>
@@ -281,20 +296,90 @@ export const note_chemistry_1_3_0 = {
       },
       terms: []
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For magnesium chloride: Mg → Mg²⁺ + 2e⁻ and 2Cl + 2e⁻ → 2Cl⁻. Draw one [Mg]²⁺ and two [Cl]⁻ ions. Each chloride outer shell contains seven original electrons and one transferred electron. The ion ratio is 1:2, so the formula is <strong>MgCl₂</strong>. The bond is the attraction between Mg²⁺ and Cl⁻, not the arrows used to show transfer."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "“Ionic bonding is electron transfer” is incomplete. State electrostatic attraction between oppositely charged ions. An electron transfer diagram does not show the three-dimensional lattice."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define an ionic bond.",
+        "checked": false
+      },
+      {
+        "text": "Why does magnesium chloride have formula MgCl₂?",
+        "checked": false
+      },
+      {
+        "text": "What must an ionic dot-and-cross diagram show?",
+        "checked": false
+      },
+      {
+        "text": "What does conductivity of molten sodium chloride show?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Electron transfer explains how ions form; the ionic bond itself is the strong electrostatic attraction between oppositely charged ions. Each ion attracts several neighbours throughout a giant lattice. There are no individual NaCl molecules. Na loses one electron to form Na⁺ and Cl gains one to form Cl⁻; their proton numbers do not change."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Ionic bond = electrostatic attraction between oppositely charged ions in a giant lattice. Metal loses e⁻ → cation; non-metal gains e⁻ → anion. Evidence: electrolysis (Cu²⁺/CrO₄²⁻ separate at electrodes), conductivity only when molten/aqueous, brittleness (layer shift → like charges repel), high m.p. (NaCl 801°C, MgO 2852°C), X-ray (6:6 lattice, spherical ions).',
-    cues: [
-      { id: 'c1', blockId: 'svg-transfer', prompt: 'Describe the electron transfer when Na reacts with Cl. What configurations do Na⁺ and Cl⁻ achieve?' },
-      { id: 'c2', blockId: 'key-def', prompt: 'Give the precise definition of ionic bonding. What does "non-directional" mean in this context?' },
-      { id: 'c3', blockId: 'svg-dotcross', prompt: 'State four rules for drawing dot-and-cross diagrams for ionic compounds. How does MgCl₂ differ from NaCl?' },
-      { id: 'c4', blockId: 'svg-evidence', prompt: 'State five pieces of evidence for ionic species and explain what each proves.' },
-      { id: 'c5', blockId: 'warn-noble', prompt: 'Why do transition-metal ions NOT achieve noble-gas configurations? Which factor actually determines ion charge?' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define an ionic bond.",
+      "answer": "A strong electrostatic attraction between oppositely charged ions."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why does magnesium chloride have formula MgCl₂?",
+      "answer": "Mg forms Mg²⁺ and chlorine forms Cl⁻. Two chloride ions balance the +2 charge of one magnesium ion."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What must an ionic dot-and-cross diagram show?",
+      "answer": "Correct outer electrons, the right number of each ion, square brackets and explicit ion charges; total charge must be zero for the compound."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What does conductivity of molten sodium chloride show?",
+      "answer": "The liquid contains mobile charged ions able to carry current. It does not require free electrons moving through the melt."
+    }
+  ],
+  "summaryText": "Electron transfer explains how ions form; the ionic bond itself is the strong electrostatic attraction between oppositely charged ions. Each ion attracts several neighbours throughout a giant lattice. There are no individual NaCl molecules. Na loses one electron to form Na⁺ and Cl gains one to form Cl⁻; their proton numbers do not change.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

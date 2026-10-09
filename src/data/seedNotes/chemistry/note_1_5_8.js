@@ -155,13 +155,13 @@ export const note_chemistry_1_5_8 = {
 
   <!-- ═══ HEATING MANTLE ═══ -->
   <polygon points="70,393 207,393 197,365 80,365" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="139" y="384" text-anchor="middle" fill="#92400e" font-size="10" font-weight="bold">Heating mantle</text>
+  <text x="139" y="384" text-anchor="middle" fill="#f8fafc" font-size="10" font-weight="bold" style="fill:#f8fafc">Heating mantle</text>
 
   <!-- ═══ ROUND-BOTTOM FLASK ═══ -->
   <ellipse cx="139" cy="295" rx="67" ry="63" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
-  <text x="139" y="285" text-anchor="middle" fill="#1e40af" font-size="10">Cyclohexanol</text>
-  <text x="139" y="299" text-anchor="middle" fill="#1e40af" font-size="10">+ conc. H₃PO₄</text>
-  <text x="139" y="313" text-anchor="middle" fill="#6b7280" font-size="9">(anti-bumping granules)</text>
+  <text x="139" y="285" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Cyclohexanol</text>
+  <text x="139" y="299" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">+ conc. H₃PO₄</text>
+  <text x="139" y="313" text-anchor="middle" fill="#f8fafc" font-size="9" style="fill:#f8fafc">(anti-bumping granules)</text>
 
   <!-- ═══ FLASK NECK ═══ -->
   <!-- Flask top: y = 295 - 63 = 232; neck goes from y=200 up to y=232. height=32 -->
@@ -197,8 +197,8 @@ export const note_chemistry_1_5_8 = {
   <!-- ═══ COLLECTION FLASK ═══ -->
   <!-- Top of collection flask: y = 334+2 = 336; cy = 336+40 = 376 -->
   <ellipse cx="440" cy="377" rx="44" ry="41" fill="#0a2e1a" stroke="#059669" stroke-width="2"/>
-  <text x="440" y="372" text-anchor="middle" fill="#065f46" font-size="10">Cyclohexene</text>
-  <text x="440" y="386" text-anchor="middle" fill="#065f46" font-size="10">(+ water layer)</text>
+  <text x="440" y="372" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Cyclohexene</text>
+  <text x="440" y="386" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">(+ water layer)</text>
 
   <!-- ═══ VAPOUR ARROW (inside inner tube, near-end, showing vapour entering) ═══ -->
   <line x1="200" y1="197" x2="230" y2="207" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#alk8arrb)"/>

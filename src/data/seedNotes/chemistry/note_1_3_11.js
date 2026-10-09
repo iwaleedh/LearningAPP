@@ -8,10 +8,25 @@ export const note_chemistry_1_3_11 = {
     {
       id: 'obj',
       type: 'objective',
-      data: { text: 'Describe the method for Core Practical 2 (calorimetry). Calculate enthalpy change using q = mcΔT and ΔH = −q/n. Identify sources of error and suggest improvements. Apply sign conventions for exothermic and endothermic reactions.' },
+      data: { text: 'Describe calorimetry as preparation for Unit 2 Core Practical 2 (Hess’s law). Calculate enthalpy change using q = mcΔT and ΔH = −q/n. Identify sources of error and suggest improvements. Apply sign conventions for exothermic and endothermic reactions.' },
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Calorimetry: sign, amount and experimental error",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Calorimetry measures heat transferred to a solution or calorimeter. For a dilute aqueous mixture, q(solution) = mcΔT, using the total mass of solution and its measured temperature change. The reaction heat is opposite in sign: q(reaction) ≈ −q(solution). Divide by the amount reacting on the basis of the balanced equation, then convert J to kJ.<br/><br/>This is a useful calorimetry foundation. The Pearson IAL <strong>Core Practical 2 uses calorimetry together with Hess’s law</strong>; it is covered in the Unit 2 Hess’s law note. Neutralisation alone should not be labelled as the complete core practical. If the cup’s heat capacity is included, heat absorbed by the cup must be <em>added</em> to the heat absorbed by the solution before calculating reaction heat."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'Calorimetry Apparatus & Method', level: 2 },
@@ -115,24 +130,94 @@ export const note_chemistry_1_3_11 = {
       data: {
         style: 'warning',
         title: 'Sources of Error & Improvements',
-        text: '<strong>Error 1: Heat loss to surroundings</strong><br/>→ Improvement: Use a lid; use polystyrene (low heat capacity) rather than glass beaker; plot temperature-time graph and extrapolate back to mixing time.<br/><br/><strong>Error 2: Heat capacity of calorimeter ignored</strong><br/>→ Improvement: Calibrate the calorimeter; subtract heat absorbed by the cup.<br/><br/><strong>Error 3: Assuming density = 1.00 g cm⁻³ and c = 4.18 J g⁻¹ K⁻¹</strong><br/>→ These are valid assumptions for dilute aqueous solutions; state them explicitly in the write-up.<br/><br/><strong>Error 4: Temperature not read at the exact mixing time</strong><br/>→ Improvement: Record temperature every 30 s for 2 min before mixing, then continue; extrapolate the cooling curve back to t = 0 (mixing time) to get ΔT_max.'
+        text: '<strong>Error 1: Heat loss to surroundings</strong><br/>→ Improvement: Use a lid; use polystyrene (low heat capacity) rather than glass beaker; plot temperature-time graph and extrapolate back to mixing time.<br/><br/><strong>Error 2: Heat capacity of calorimeter ignored</strong><br/>→ Improvement: Calibrate the calorimeter; include heat absorbed by the cup in the total heat transferred.<br/><br/><strong>Error 3: Assuming density = 1.00 g cm⁻³ and c = 4.18 J g⁻¹ K⁻¹</strong><br/>→ These are valid assumptions for dilute aqueous solutions; state them explicitly in the write-up.<br/><br/><strong>Error 4: Temperature not read at the exact mixing time</strong><br/>→ Improvement: Record temperature every 30 s for 2 min before mixing, then continue; extrapolate the cooling curve back to t = 0 (mixing time) to get ΔT_max.'
       },
       terms: ['Systematic error', 'Extrapolation']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Mix 25.0 cm³ of 1.00 mol dm⁻³ acid with 25.0 cm³ of 1.00 mol dm⁻³ alkali. Assuming density 1.00 g cm⁻³ gives m = 50.0 g. A 6.9 K rise gives q(solution) = 50.0 × 4.18 × 6.9 = 1442 J. For 0.0250 mol of water formed, ΔH = −1.442/0.0250 = <strong>−57.7 kJ mol⁻¹</strong>. If the apparatus also absorbs heat, the measured solution-only value is usually less negative than the true exothermic value."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Use the combined solution mass, not just one portion. For an exothermic reaction, heat loss gives a smaller temperature rise and an enthalpy magnitude that is too small. Extrapolating a cooling curve corrects heat exchange approximately, not every experimental error."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Why is ΔH negative when the solution temperature rises?",
+        "checked": false
+      },
+      {
+        "text": "Which mass is used in q = mcΔT for two mixed solutions?",
+        "checked": false
+      },
+      {
+        "text": "How should heat absorbed by the cup be included?",
+        "checked": false
+      },
+      {
+        "text": "What extra principle is central to IAL Core Practical 2?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Calorimetry measures heat transferred to a solution or calorimeter. For a dilute aqueous mixture, q(solution) = mcΔT, using the total mass of solution and its measured temperature change. The reaction heat is opposite in sign: q(reaction) ≈ −q(solution). Divide by the amount reacting on the basis of the balanced equation, then convert J to kJ."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Calorimetry: q = mcΔT (c = 4.18 J g⁻¹ K⁻¹ for dilute soln). ΔH = −q/n. Sign: T rises → exothermic (ΔH negative). T falls → endothermic (ΔH positive). Errors: heat loss, ignoring cup heat capacity, density/c assumptions. Improvements: lid, extrapolation from T-time graph, polystyrene cup.',
-    cues: [
-      { id: 'c1', blockId: 'svg-apparatus', prompt: 'Describe the apparatus for Core Practical 2. Why is a polystyrene cup used instead of a glass beaker?' },
-      { id: 'c2', blockId: 'svg-apparatus', prompt: 'Write down the formula q = mcΔT and define each symbol. What value of c is used for dilute aqueous solutions?' },
-      { id: 'c3', blockId: 'worked-calc', prompt: 'In a neutralisation experiment, 50 cm³ of solution rises from 20.0°C to 27.5°C. Calculate q in kJ.' },
-      { id: 'c4', blockId: 'worked-calc', prompt: 'What is ΔH = −q/n and why is there a negative sign? If q = +1.44 kJ and n = 0.025 mol, what is ΔH?' },
-      { id: 'c5', blockId: 'key-errors', prompt: 'Give three sources of error in the calorimetry experiment and one improvement for each.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Why is ΔH negative when the solution temperature rises?",
+      "answer": "The reaction releases energy; the solution gains that energy, so reaction heat is the negative of solution heat."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Which mass is used in q = mcΔT for two mixed solutions?",
+      "answer": "The total mass of the mixed solution, estimated from total volume and density when appropriate."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How should heat absorbed by the cup be included?",
+      "answer": "Add cup heat to solution heat to estimate total heat released by the reaction, then change sign and divide by the reacting amount."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What extra principle is central to IAL Core Practical 2?",
+      "answer": "Hess’s law: combine enthalpy changes for alternative routes with the same initial and final states."
+    }
+  ],
+  "summaryText": "Calorimetry measures heat transferred to a solution or calorimeter. For a dilute aqueous mixture, q(solution) = mcΔT, using the total mass of solution and its measured temperature change. The reaction heat is opposite in sign: q(reaction) ≈ −q(solution). Divide by the amount reacting on the basis of the balanced equation, then convert J to kJ.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

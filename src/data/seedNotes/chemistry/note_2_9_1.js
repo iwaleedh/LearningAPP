@@ -12,6 +12,21 @@ export const note_chemistry_2_9_1 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Explain a rate change using successful collisions",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A successful collision requires enough energy to overcome activation energy and a suitable orientation. Activation energy is the minimum energy barrier for the reaction pathway. More collisions do not automatically mean all collisions react. Increasing concentration raises collision frequency per unit volume; increasing temperature changes both collision frequency and, more significantly, the fraction exceeding Eₐ.<br/><br/>Increasing a solid’s surface area exposes more reacting particles, so more collisions can occur at the solid–solution interface. A catalyst gives another pathway with a lower activation energy. These changes affect rate, but do not necessarily change the final amount of product when the same limiting-reagent amount reacts completely."
+  }
+},
+{
             id: 'h-collision',
             type: 'heading',
             data: { text: 'Collision Theory', level: 2 },
@@ -65,20 +80,20 @@ export const note_chemistry_2_9_1 = {
   <line x1="40" y1="260" x2="40" y2="20" stroke="#333" stroke-width="2" />
   <text x="20" y="150" font-family="Arial" font-size="14" transform="rotate(-90 20,150)" fill="#777">Energy</text>
   <text x="180" y="280" font-family="Arial" font-size="14" fill="#777">Progress of Reaction</text>
-  
+
   <line x1="60" y1="180" x2="140" y2="180" stroke="var(--color-primary)" stroke-width="3" />
   <text x="70" y="170" font-family="Arial" font-size="14" fill="var(--color-text)">Reactants</text>
-  
+
   <line x1="260" y1="220" x2="340" y2="220" stroke="var(--color-primary)" stroke-width="3" />
   <text x="275" y="240" font-family="Arial" font-size="14" fill="var(--color-text)">Products</text>
-  
+
   <path d="M 140 180 Q 200 40 260 220" stroke="var(--color-text)" stroke-width="2" fill="none" />
-  
+
   <line x1="140" y1="180" x2="200" y2="180" stroke="#999" stroke-dasharray="4" />
   <line x1="200" y1="220" x2="200" y2="85" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-ae)" marker-start="url(#arrow-start-ae)" />
-  
+
   <text x="210" y="140" font-family="Arial" font-size="14" fill="var(--color-text)">Activation Energy (Ea)</text>
-  
+
   <defs>
     <marker id="arrow-ae" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="var(--color-text)" />
@@ -139,7 +154,7 @@ export const note_chemistry_2_9_1 = {
     <line x1="0" y1="0" x2="0" y2="30" stroke="var(--color-text)" stroke-width="3" />
     <circle cx="0" cy="0" r="12" fill="#88b564" />
     <circle cx="0" cy="30" r="8" fill="#aaa" />
-    <text x="20" y="20" font-family="Arial" font-size="14" fill="#88b564" font-weight="bold">Correct orientation</text>
+    <text x="20" y="20" font-family="Arial" font-size="14" fill="#0f172a" font-weight="bold" style="fill:#0f172a">Correct orientation</text>
     <path d="M 0 45 L 0 65" stroke="#88b564" stroke-width="2" marker-end="url(#arrow-correct)" />
   </g>
 
@@ -151,7 +166,7 @@ export const note_chemistry_2_9_1 = {
     <text x="-40" y="-20" font-family="Arial" font-size="14" fill="#d9534f" font-weight="bold">Incorrect orientation</text>
     <path d="M -45 0 L -65 0" stroke="#d9534f" stroke-width="2" marker-end="url(#arrow-incorrect)" />
   </g>
-  
+
   <defs>
     <marker id="arrow-correct" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#88b564" />
@@ -170,17 +185,89 @@ export const note_chemistry_2_9_1 = {
             data: { text: 'Similarly, bulky groups (like large alkyl groups) around the reactive site can physically block the incoming particle. This blocking effect is called <strong>steric hindrance</strong>.' },
             terms: ['Steric hindrance', 'Collision geometry']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Powdered CaCO₃ reacts with excess acid faster than an equal mass of large chips. More exposed surface sites give more collisions per second. Both samples can produce the same final CO₂ volume because the number of moles of CaCO₃ is unchanged. Raising temperature instead increases the proportion of collisions with sufficient energy."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not say temperature lowers activation energy; a catalyst changes the pathway. Do not say concentration increases the energy of each collision at a fixed temperature."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What two requirements make a collision successful?",
+        "checked": false
+      },
+      {
+        "text": "Why does a powder react faster than large pieces?",
+        "checked": false
+      },
+      {
+        "text": "Does increasing concentration lower Eₐ?",
+        "checked": false
+      },
+      {
+        "text": "Why can rate increase while final yield stays the same?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A successful collision requires enough energy to overcome activation energy and a suitable orientation. Activation energy is the minimum energy barrier for the reaction pathway. More collisions do not automatically mean all collisions react. Increasing concentration raises collision frequency per unit volume; increasing temperature changes both collision frequency and, more significantly, the fraction exceeding Eₐ."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-collision', prompt: 'State the two conditions required for a collision between reactant particles to result in a chemical reaction.' },
-            { id: 'c2', blockId: 'list-activation', prompt: 'Define the term "activation energy" and explain its role in bond breaking and making.' },
-            { id: 'c3', blockId: 'p-steric-hindrance', prompt: 'What is "steric hindrance" and how does it relate to collision theory?' }
-        ],
-        summaryText: 'Collision theory states reactions only happen when particles collide successfully. Conditions must be met: (1) Collision energy ≥ Activation energy (min energy to break initial bonds), and (2) Correct collision geometry (e.g. hydrogen end of HCl must hit ethene double bond). Particles also constantly exchange energy through random collisions. Steric hindrance occurs when bulky molecular groups block the reactive site, increasing the proportion of unsuccessful collisions.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What two requirements make a collision successful?",
+      "answer": "Sufficient energy to overcome Eₐ and a suitable orientation."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why does a powder react faster than large pieces?",
+      "answer": "Its larger exposed surface allows more reactant collisions per second."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Does increasing concentration lower Eₐ?",
+      "answer": "No. It raises collision frequency per unit volume at the same temperature."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why can rate increase while final yield stays the same?",
+      "answer": "The same limiting-reagent amount can react completely, but it is consumed in a shorter time."
+    }
+  ],
+  "summaryText": "A successful collision requires enough energy to overcome activation energy and a suitable orientation. Activation energy is the minimum energy barrier for the reaction pathway. More collisions do not automatically mean all collisions react. Increasing concentration raises collision frequency per unit volume; increasing temperature changes both collision frequency and, more significantly, the fraction exceeding Eₐ.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_9_1;

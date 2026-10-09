@@ -21,7 +21,7 @@ export const note_olevel_physics_3_2_2 = {
       type: 'svg',
       data: {
         caption: 'Three cases at a glass–air boundary: (a) below critical angle — partial refraction; (b) at critical angle; (c) above critical angle — total internal reflection',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 0 501 309" width="480" height="300">
   <defs>
     <marker id="ah22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>

@@ -12,6 +12,21 @@ export const note_chemistry_2_10_10 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Use IR to support a structure, not guess one from a single peak",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Infrared absorption occurs when a bond vibration changes a molecule’s dipole moment. Use characteristic absorption ranges to identify possible functional groups, and combine them with molecular formula and other evidence. A carbonyl absorption near 1700 cm⁻¹ supports a C=O group but does not distinguish an aldehyde, ketone, carboxylic acid, ester or amide by itself.<br/><br/>An alcohol O–H band is often broad in the region 3200–3600 cm⁻¹. A carboxylic acid O–H band is very broad, commonly about 2500–3300 cm⁻¹, and appears with a carbonyl band. Exact positions vary with the compound and conditions; use the question’s data booklet. The fingerprint region is useful for comparison with a known spectrum, rather than requiring every band to be assigned."
+  }
+},
+{
             id: 'h-functional',
             type: 'heading',
             data: { text: 'Identifying Functional Groups', level: 2 },
@@ -79,31 +94,90 @@ export const note_chemistry_2_10_10 = {
         "title": "Wavenumber Ranges",
         "text": "Always quote the exact wavenumber ranges from your data booklet when identifying bonds from an IR spectrum (e.g., O-H stretch at 3200-3600 cm^-1 for alcohols)."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "tip",
-        "title": "Wavenumber Ranges",
-        "text": "Always quote the exact wavenumber ranges from your data booklet when identifying bonds from an IR spectrum (e.g., O-H stretch at 3200-3600 cm^-1 for alcohols)."
-      }
     }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "A compound of formula C₃H₆O shows a strong C=O band and no broad O–H band. It could be propanal or propanone; IR alone does not settle that choice. A positive Tollens’ test supports propanal, whereas NMR could distinguish the environments directly. State which alternatives remain when the evidence is incomplete."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Absence of O–H is not proof of an alkane. Peak position and shape must be considered together. Do not read percent transmittance as percent concentration of a functional group."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What does a strong band near 1700 cm⁻¹ suggest?",
+        "checked": false
+      },
+      {
+        "text": "How does a carboxylic acid O–H absorption differ from an alcohol’s?",
+        "checked": false
+      },
+      {
+        "text": "Can IR alone distinguish propanal and propanone reliably here?",
+        "checked": false
+      },
+      {
+        "text": "What is the fingerprint region used for?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Infrared absorption occurs when a bond vibration changes a molecule’s dipole moment. Use characteristic absorption ranges to identify possible functional groups, and combine them with molecular formula and other evidence. A carbonyl absorption near 1700 cm⁻¹ supports a C=O group but does not distinguish an aldehyde, ketone, carboxylic acid, ester or amide by itself."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'list-functional-bonds', prompt: 'Describe the visual difference between an O-H absorption peak in an alcohol versus in a carboxylic acid.' },
-            { id: 'c2', blockId: 'list-functional-bonds', prompt: 'What very distinct feature on an IR spectrum proves the presence of a carbonyl (C=O) group, such as in a ketone or ester?' },
-            { id: 'c3', blockId: 'list-functional-bonds', prompt: 'Why is it difficult to confidently identify a C-O single bond on an IR spectrum?' },
-            { id: 'c4', blockId: 'list-functional-bonds', prompt: 'What does the IR absorption peak for a primary amine (N-H bond) typically look like?' },
-            { id: 'c5', blockId: 'p-fingerprint', prompt: 'What is the "fingerprint region" on an IR spectrum, and what wavenumber range does it occupy?' },
-            { id: 'c6', blockId: 'callout-fingerprint', prompt: 'How is the fingerprint region used practically by chemists to identify an unknown compound?' },
-            { id: 'c7', blockId: 'p-greenhouse', prompt: 'Explain the link between infrared absorption and greenhouse gases.' }
-        ],
-        summaryText: 'Above 1500 cm⁻¹ on an IR spectrum, we look for key functional groups. C=O is a very sharp, deep spike near 1700 cm⁻¹. Alcohols have a broad, smooth O-H peak (~3300 cm⁻¹). Carboxylic acids have a massively broad, messy O-H peak that covers the typical C-H region under 3000 cm⁻¹. Primary amines (-NH₂) show a double trough at 3100-3500 cm⁻¹. C-O bonds fall within the messy fingerprint region below 1500 cm⁻¹, making them hard to pinpoint. Comparing this fingerprint region to known databases allows the exact identification of a molecule. Infrared absorption by bonds is the exact mechanism of the Greenhouse Effect.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What does a strong band near 1700 cm⁻¹ suggest?",
+      "answer": "A carbonyl group; further evidence is needed to identify the specific carbonyl compound."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How does a carboxylic acid O–H absorption differ from an alcohol’s?",
+      "answer": "It is typically much broader and extends to lower wavenumber, commonly around 2500–3300 cm⁻¹."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Can IR alone distinguish propanal and propanone reliably here?",
+      "answer": "Not from a carbonyl band alone; other evidence such as Tollens’ test or NMR is needed."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What is the fingerprint region used for?",
+      "answer": "Matching a compound’s spectrum with a known reference spectrum."
+    }
+  ],
+  "summaryText": "Infrared absorption occurs when a bond vibration changes a molecule’s dipole moment. Use characteristic absorption ranges to identify possible functional groups, and combine them with molecular formula and other evidence. A carbonyl absorption near 1700 cm⁻¹ supports a C=O group but does not distinguish an aldehyde, ketone, carboxylic acid, ester or amide by itself.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_10_10;

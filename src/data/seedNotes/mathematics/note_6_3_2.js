@@ -1,4 +1,4 @@
-export const note_mathematics_6_2_3 = {
+export const note_mathematics_6_3_2 = {
   blocks: [
     {
       id: 'obj-probability-formulae',

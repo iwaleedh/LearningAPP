@@ -12,6 +12,21 @@ export const note_chemistry_2_9_3 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Read areas on a Maxwell–Boltzmann distribution",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "The horizontal axis is molecular energy and the vertical axis represents the number or fraction of molecules in an energy interval. The total area represents the total number or fraction of molecules, so it is unchanged when comparing the same sample at different temperatures. The curve begins at the origin and approaches, but does not cross, the energy axis at high energies.<br/><br/>At higher temperature, the peak becomes lower and shifts towards higher energy; the distribution spreads out. The area beyond the fixed activation energy becomes larger, so a greater fraction of collisions can react. A catalyst leaves the distribution unchanged at a given temperature and moves the activation-energy threshold to a lower value."
+  }
+},
+{
             id: 'h-maxwell',
             type: 'heading',
             data: { text: 'The Maxwell-Boltzmann Distribution', level: 2 },
@@ -53,17 +68,17 @@ export const note_chemistry_2_9_3 = {
             type: 'svg',
             data: {
                 caption: 'Maxwell-Boltzmann Distribution with Activation Energy',
-                svg: `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                svg: `<svg viewBox="0 0 413 300" xmlns="http://www.w3.org/2000/svg">
   <line x1="40" y1="260" x2="380" y2="260" stroke="#333" stroke-width="2" />
   <line x1="40" y1="260" x2="40" y2="20" stroke="#333" stroke-width="2" />
   <text x="15" y="150" font-family="Arial" font-size="14" transform="rotate(-90 15,150)" fill="#777">Number of particles</text>
   <text x="210" y="280" font-family="Arial" font-size="14" fill="#777">Energy</text>
-  
+
   <path d="M 40 260 Q 80 50 140 150 T 360 255" stroke="var(--color-primary)" stroke-width="3" fill="none" />
-  
+
   <line x1="260" y1="260" x2="260" y2="100" stroke="var(--color-text)" stroke-width="2" stroke-dasharray="4" />
   <text x="265" y="90" font-family="Arial" font-size="14" fill="var(--color-text)">Activation Energy (Ea)</text>
-  
+
   <path d="M 260 215 Q 310 240 360 255 L 360 260 L 260 260 Z" fill="rgba(8, 145, 178, 0.4)" />
   <text x="270" y="240" font-family="Arial" font-size="12" fill="var(--color-text)">Particles with</text>
   <text x="270" y="255" font-family="Arial" font-size="12" fill="var(--color-text)">enough energy</text>
@@ -103,7 +118,7 @@ export const note_chemistry_2_9_3 = {
   <!-- Axes -->
   <line x1="60" y1="300" x2="550" y2="300" stroke="#333" stroke-width="2" />
   <line x1="60" y1="300" x2="60" y2="40" stroke="#333" stroke-width="2" />
-  
+
   <text x="-220" y="30" font-family="-apple-system, sans-serif" font-size="14" transform="rotate(-90)" fill="#64748b">Number of particles</text>
   <text x="290" y="340" font-family="-apple-system, sans-serif" font-size="14" fill="#64748b">Energy</text>
 
@@ -128,8 +143,8 @@ export const note_chemistry_2_9_3 = {
 
   <!-- Labels for shaded areas -->
   <rect x="390" y="120" width="180" height="40" fill="#1e293b" fill-opacity="0.9" rx="4"/>
-  <text x="400" y="135" font-family="-apple-system, sans-serif" font-size="12" fill="#ef4444">Yellow area represents the</text>
-  <text x="400" y="150" font-family="-apple-system, sans-serif" font-size="12" fill="#ef4444">proportional increase in</text>
+  <text x="400" y="135" font-family="-apple-system, sans-serif" font-size="12" fill="#f8fafc" style="fill:#f8fafc">Yellow area represents the</text>
+  <text x="400" y="150" font-family="-apple-system, sans-serif" font-size="12" fill="#f8fafc" style="fill:#f8fafc">proportional increase in</text>
   <text x="400" y="165" font-family="-apple-system, sans-serif" font-size="12" fill="#ef4444">capable particles at higher T</text>
   <path d="M 430 170 L 415 200" stroke="#ef4444" stroke-width="1.5" />
   <polygon points="410,195 415,200 420,195" fill="#ef4444" />
@@ -146,28 +161,90 @@ export const note_chemistry_2_9_3 = {
         "title": "Drawing Maxwell-Boltzmann",
         "text": "Your Maxwell-Boltzmann curve must start exactly at the origin (0,0) - because no particles have zero energy. It should never touch the x-axis again at higher energies as there is no maximum energy limit."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Drawing Maxwell-Boltzmann",
-        "text": "Your Maxwell-Boltzmann curve must start exactly at the origin (0,0) - because no particles have zero energy. It should never touch the x-axis again at higher energies as there is no maximum energy limit."
-      }
     }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "On two equal-area curves, draw the same Eₐ line for a temperature comparison. Shade the area to its right. The hotter curve has the larger shaded fraction. For a catalyst comparison, keep one distribution and draw a second Eₐ line to the left; more molecules now exceed the lower barrier."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "The curve’s peak is not the activation energy. A catalyst does not “give molecules more energy”, and temperature does not make the total area grow for a fixed number of molecules."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What does the total area under the curve represent?",
+        "checked": false
+      },
+      {
+        "text": "What changes when temperature rises?",
+        "checked": false
+      },
+      {
+        "text": "What changes when a catalyst is added at fixed temperature?",
+        "checked": false
+      },
+      {
+        "text": "Why is the area beyond Eₐ important?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "The horizontal axis is molecular energy and the vertical axis represents the number or fraction of molecules in an energy interval. The total area represents the total number or fraction of molecules, so it is unchanged when comparing the same sample at different temperatures. The curve begins at the origin and approaches, but does not cross, the energy axis at high energies."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'list-features', prompt: 'State two key features of a Maxwell-Boltzmann curve regarding its start and end points.' },
-            { id: 'c2', blockId: 'callout-activation', prompt: 'What does the area under a Maxwell-Boltzmann curve entirely to the right of the Activation Energy (E_a) line represent?' },
-            { id: 'c3', blockId: 'list-temperature-effect', prompt: 'Describe how the shape of the Maxwell-Boltzmann curve changes when the temperature is increased.' },
-            { id: 'c4', blockId: 'list-temperature-effect', prompt: 'Using the Maxwell-Boltzmann distribution, explain why a small increase in temperature leads to a large increase in the rate of reaction.' }
-        ],
-        summaryText: 'Maxwell-Boltzmann curves plot the number of molecules against kinetic energy. They start at (0,0), have a peak (most probable energy), and tail off infinitely. The area to the right of E_a shows particles capable of reacting. Increasing T broadens and flattens the curve to the right. This significantly increases the proportion of molecules with E ≥ E_a, leading to a much higher frequency of successful collisions.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What does the total area under the curve represent?",
+      "answer": "The total number of molecules, or total fraction when normalised."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What changes when temperature rises?",
+      "answer": "The peak becomes lower and shifts right; the high-energy tail and fraction above Eₐ increase."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What changes when a catalyst is added at fixed temperature?",
+      "answer": "The energy distribution stays the same, but the alternative pathway has a lower Eₐ threshold."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why is the area beyond Eₐ important?",
+      "answer": "It represents molecules with sufficient energy for successful collisions on that pathway."
+    }
+  ],
+  "summaryText": "The horizontal axis is molecular energy and the vertical axis represents the number or fraction of molecules in an energy interval. The total area represents the total number or fraction of molecules, so it is unchanged when comparing the same sample at different temperatures. The curve begins at the origin and approaches, but does not cross, the energy axis at high energies.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_9_3;

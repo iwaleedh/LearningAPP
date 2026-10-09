@@ -301,7 +301,7 @@ export const note_chemistry_4_14_0 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'p-brønsted',
+        blockId: 'list-brønsted-def',
         prompt: 'Define an acid and a base according to the Brønsted-Lowry model.'
       },
       {

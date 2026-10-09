@@ -49,7 +49,7 @@ export const note_olevel_biology_21_21_2 = {
   <!-- Arrow -->
   <line x1="140" y1="62" x2="165" y2="62" stroke="#374151" stroke-width="2" marker-end="url(#gm1)"/>
   <text x="148" y="55" font-size="9" fill="#374151">Restriction</text>
-  <text x="148" y="65" font-size="9" fill="#374151">enzyme cuts</text>
+  <text x="148" y="47" font-size="9" fill="#374151">enzyme cuts</text>
   <!-- Isolated gene -->
   <rect x="168" y="47" width="90" height="30" rx="5" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="213" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b">Insulin gene</text>

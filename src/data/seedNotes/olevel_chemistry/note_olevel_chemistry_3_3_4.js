@@ -17,7 +17,7 @@ export const note_olevel_chemistry_3_3_4 = {
       data: {
         style: 'key',
         title: 'Definition of the Mole',
-        text: 'A <strong>mole (mol)</strong> is the amount of substance that contains the same number of particles as there are atoms in exactly 12 g of carbon-12.<br/><br/><strong>Avogadro\'s constant (Nₐ) = 6.02 × 10²³ mol⁻¹</strong><br/><br/>This means:<br/>• 1 mole of any substance contains 6.02 × 10²³ particles<br/>• Particles can be atoms, molecules, ions, electrons, etc.<br/><br/>Examples:<br/>• 1 mol H₂O = 6.02 × 10²³ water molecules<br/>• 1 mol Na⁺ = 6.02 × 10²³ sodium ions'
+        text: 'A <strong>mole (mol)</strong> is the amount of substance that contains exactly 6.02214076 × 10²³ specified particles.<br/><br/><strong>Avogadro\'s constant (Nₐ) ≈ 6.02 × 10²³ mol⁻¹</strong><br/><br/>This means:<br/>• 1 mole of any substance contains 6.02 × 10²³ particles<br/>• Particles can be atoms, molecules, ions, electrons, etc.<br/><br/>Examples:<br/>• 1 mol H₂O = 6.02 × 10²³ water molecules<br/>• 1 mol Na⁺ = 6.02 × 10²³ sodium ions'
       }
     },
     {
@@ -88,7 +88,7 @@ export const note_olevel_chemistry_3_3_4 = {
       data: {
         style: 'worked',
         title: 'Worked Example: Moles from particles',
-        text: 'How many moles are in 3.01 × 10²³ atoms of iron?<br/><br/>n = 3.01 × 10²³ ÷ 6.02 × 10²³<br/> = <strong>0.5 mol</strong>'
+        text: 'How many moles are in 3.01 × 10²³ atoms of iron?<br/><br/>n = (3.01 × 10²³) ÷ (6.02 × 10²³)<br/> = <strong>0.5 mol</strong>'
       }
     },
     {

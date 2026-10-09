@@ -40,8 +40,8 @@ export const note_olevel_biology_7_7_4 = {
       type: 'svg',
       data: {
         caption: 'Cross-section of a human molar tooth',
-        svg: `<svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="400" height="420" fill="#0f172a" rx="10"/>
+        svg: `<svg viewBox="0 0 418 420" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <rect width="418" height="420" fill="#0f172a" rx="10"/>
   <text x="200" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Cross-Section of a Tooth</text>
 
   <!-- Gum line -->

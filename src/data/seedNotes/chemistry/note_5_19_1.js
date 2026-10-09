@@ -127,7 +127,7 @@ export const note_chemistry_5_19_1 = {
   <polygon points="123,100 143,70 177,70 197,100 177,130 143,130" fill="none" stroke="#4a6da7" stroke-width="1" stroke-dasharray="4 4"/>
   <!-- N atom -->
   <circle cx="230" cy="100" r="14" fill="#0a2e1a" stroke="#2e7d32" stroke-width="2"/>
-  <text x="230" y="104" text-anchor="middle" font-weight="bold" fill="#2e7d32">N</text>
+  <text x="230" y="104" text-anchor="middle" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">N</text>
   <!-- N-H bonds -->
   <line x1="244" y1="92" x2="265" y2="78" stroke="#2e7d32" stroke-width="2"/>
   <text x="272" y="76" fill="#555">H</text>
@@ -412,7 +412,7 @@ export const note_chemistry_5_19_1 = {
       id: 'svg-phenylamine-deloc-bromine',
       type: 'svg',
       data: {
-        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine: N lone pair delocalises</text><text x="10" y="40" font-size="14" fill="#333">→ Ring activation for Br₂</text></svg>',
+        svg: `<svg width="220" height="80" viewBox="0 -2 248 82" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#f8fafc" style="fill:#f8fafc">Phenylamine: N lone pair delocalises</text><text x="10" y="40" font-size="14" fill="#f8fafc" style="fill:#f8fafc">→ Ring activation for Br₂</text></svg>`,
         caption: 'Delocalisation of N lone pair into benzene ring activates ring for bromine substitution.'
       }
     },

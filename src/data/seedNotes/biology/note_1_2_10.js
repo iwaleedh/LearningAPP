@@ -51,15 +51,6 @@ export const note_biology_1_2_10 = {
         "title": "Inhibition Types",
         "text": "Competitive inhibitors bind to the active site (can be overcome by increasing substrate concentration). Non-competitive inhibitors bind to an allosteric site, permanently altering the active site's specific 3D shape."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "key",
-        "title": "Inhibition Types",
-        "text": "Competitive inhibitors bind to the active site (can be overcome by increasing substrate concentration). Non-competitive inhibitors bind to an allosteric site, permanently altering the active site's specific 3D shape."
-      }
     }
   ],
   "recall": {

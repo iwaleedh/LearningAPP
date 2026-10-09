@@ -1,5 +1,5 @@
 export const cpeSyllabus = {
-    qualification: 'CPE (C2 Proficiency)',
+    qualification: 'Cambridge English C2 Proficiency',
     source: 'Cambridge English C2 Proficiency Handbook (2024)',
     units: [
         {

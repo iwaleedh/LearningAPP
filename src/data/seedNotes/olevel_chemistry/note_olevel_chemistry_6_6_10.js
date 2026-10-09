@@ -39,8 +39,8 @@ export const note_olevel_chemistry_6_6_10 = {
       type: 'svg',
       data: {
         caption: 'Electron transfer in a redox reaction: Magnesium is oxidised (loses electrons) and Chlorine is reduced (gains electrons).',
-        svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="var(--color-surface)" />
+        svg: `<svg viewBox="0 -30 500 230" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)"/>
 
   <!-- OIL RIG Mnemonic -->
   <rect x="20" y="20" width="140" height="70" rx="8" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
@@ -54,7 +54,7 @@ export const note_olevel_chemistry_6_6_10 = {
   <text x="90" y="165" font-family="var(--font-sans)" font-size="10" fill="#22c55e" text-anchor="middle">of electrons</text>
 
   <!-- Electron Transfer Diagram -->
-  <text x="330" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Mg + Cl₂ → MgCl₂</text>
+  <text x="330" y="-10" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Mg + Cl₂ → MgCl₂</text>
   
   <!-- Left Side: Reactants -->
   <circle cx="230" cy="80" r="20" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
@@ -67,11 +67,11 @@ export const note_olevel_chemistry_6_6_10 = {
   <text x="430" y="120" font-family="var(--font-sans)" font-size="10" fill="#ef4444" text-anchor="middle">Oxidised</text>
 
   <!-- Arrow -->
-  <path d="M 260 80 L 400 80" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <path d="M 260 80 L 400 80" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)"/>
   
   <!-- Electron path -->
-  <path d="M 240 55 Q 330 0 420 55" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow-red)" />
-  <circle cx="330" cy="28" r="6" fill="#ef4444" />
+  <path d="M 240 55 Q 330 0 420 55" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow-red)"/>
+  <circle cx="330" cy="28" r="6" fill="#ef4444"/>
   <text x="330" y="31" font-family="var(--font-sans)" font-size="10" fill="#1e293b" text-anchor="middle">2e⁻</text>
   <text x="330" y="15" font-family="var(--font-sans)" font-size="10" fill="#ef4444" text-anchor="middle">Electrons transferred</text>
 
@@ -88,7 +88,7 @@ export const note_olevel_chemistry_6_6_10 = {
   <text x="450" y="164" font-family="var(--font-sans)" font-size="10" fill="#15803d" text-anchor="middle">Cl⁻</text>
   <text x="430" y="195" font-family="var(--font-sans)" font-size="10" fill="#22c55e" text-anchor="middle">Reduced</text>
 
-  <path d="M 280 160 L 380 160" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <path d="M 280 160 L 380 160" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)"/>
 
   <!-- Markers -->
   <defs>

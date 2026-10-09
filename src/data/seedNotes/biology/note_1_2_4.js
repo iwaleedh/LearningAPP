@@ -62,15 +62,6 @@ export const note_biology_1_2_4 = {
         "title": "Molecule Types",
         "text": "Always state that polar, charged, or large molecules use channel/carrier proteins (facilitated diffusion), while small non-polar molecules like oxygen diffuse directly through the phospholipid bilayer."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "tip",
-        "title": "Molecule Types",
-        "text": "Always state that polar, charged, or large molecules use channel/carrier proteins (facilitated diffusion), while small non-polar molecules like oxygen diffuse directly through the phospholipid bilayer."
-      }
     }
   ],
   "recall": {

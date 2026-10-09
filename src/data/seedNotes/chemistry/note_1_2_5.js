@@ -127,11 +127,11 @@ export const note_chemistry_1_2_5 = {
         caption: "Rutherford's gold foil experiment — the three types of α-particle paths observed",
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 310" font-family="sans-serif" font-size="12">
   <rect width="500" height="310" fill="#0f172a" rx="8"/>
-  <text x="250" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Rutherford α-Particle Scattering Experiment</text>
+  <text x="250" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Rutherford α-Particle Scattering Experiment</text>
   <!-- Detector screen arc (semicircle right of foil) -->
   <path d="M 300 150 m -120 0 a 120 120 0 1 1 240 0" fill="none" stroke="#888" stroke-width="2.5" stroke-dasharray="6,3"/>
-  <text x="436" y="88" text-anchor="middle" fill="#555" font-size="11">Detector</text>
-  <text x="436" y="101" text-anchor="middle" fill="#555" font-size="11">screen (ZnS)</text>
+  <text x="436" y="88" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Detector</text>
+  <text x="436" y="101" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">screen (ZnS)</text>
   <!-- Gold foil -->
   <line x1="300" y1="62" x2="300" y2="238" stroke="#c8a000" stroke-width="5"/>
   <text x="300" y="54" text-anchor="middle" fill="#9a7800" font-size="11" font-weight="bold">Gold foil</text>
@@ -140,7 +140,7 @@ export const note_chemistry_1_2_5 = {
   <text x="314" y="147" fill="#e63946" font-size="10" font-weight="bold">nucleus</text>
   <!-- Alpha source box -->
   <rect x="50" y="136" width="62" height="28" rx="4" fill="#264653"/>
-  <text x="81" y="154" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">α source</text>
+  <text x="81" y="154" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="bold" style="fill:#f8fafc">α source</text>
   <!-- Path 1: straight through (blue) -->
   <line x1="112" y1="150" x2="422" y2="150" stroke="#2196F3" stroke-width="2"/>
   <polygon points="422,150 412,145 412,155" fill="#2196F3"/>
@@ -156,11 +156,11 @@ export const note_chemistry_1_2_5 = {
   <!-- Legend -->
   <rect x="25" y="265" width="450" height="40" rx="4" fill="#1e293b" stroke="#ddd"/>
   <line x1="37" y1="279" x2="60" y2="279" stroke="#2196F3" stroke-width="2"/>
-  <text x="65" y="283" fill="#333" font-size="10">① Straight through (majority — empty space)</text>
+  <text x="65" y="283" fill="#f8fafc" font-size="10" style="fill:#f8fafc">① Straight through (majority — empty space)</text>
   <line x1="37" y1="294" x2="60" y2="294" stroke="#4CAF50" stroke-width="2"/>
-  <text x="65" y="298" fill="#333" font-size="10">② Small deflection</text>
+  <text x="65" y="298" fill="#f8fafc" font-size="10" style="fill:#f8fafc">② Small deflection</text>
   <line x1="230" y1="294" x2="253" y2="294" stroke="#FF5722" stroke-width="2"/>
-  <text x="258" y="298" fill="#333" font-size="10">③ Large deflection / bounced back (~1 in 8000)</text>
+  <text x="258" y="298" fill="#f8fafc" font-size="10" style="fill:#f8fafc">③ Large deflection / bounced back (~1 in 8000)</text>
 </svg>`
       },
       terms: []

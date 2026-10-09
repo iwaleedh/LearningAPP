@@ -88,8 +88,8 @@ export const note_chemistry_5_17_2 = {
   <rect x="180" y="30" width="100" height="60" rx="4" fill="#4169E1" opacity="0.8" />
   <rect x="310" y="30" width="100" height="60" rx="4" fill="#2E8B57" opacity="0.8" />
   <rect x="440" y="30" width="100" height="60" rx="4" fill="#8A2BE2" opacity="0.8" />
-  <text x="100" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">+5</text>
-  <text x="100" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">VO₂⁺</text>
+  <text x="100" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+5</text>
+  <text x="100" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">VO₂⁺</text>
   <text x="100" y="110" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">Yellow</text>
   <text x="230" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">+4</text>
   <text x="230" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b">VO²⁺</text>
@@ -168,21 +168,6 @@ export const note_chemistry_5_17_2 = {
         text: '<strong>Stability and other reducing agents:</strong><br/>' +
         '• <strong>V²⁺ instability:</strong> The +2 state is very unstable. If exposed to air, it is rapidly re-oxidised back to green V³⁺. It is also slowly oxidised by H⁺ ions in the acid (V²⁺ + H⁺ → V³⁺ + ½H₂).<br/>' +
         '• <strong>Using Tin (Sn):</strong> While Zn can reduce vanadium all the way down to +2, Sn is a weaker reducing agent (its E° is less negative). Sn can only reduce V⁵⁺ to V⁴⁺, and V⁴⁺ to V³⁺. It cannot overcome the negative E° required to reduce V³⁺ to V²⁺.'
-      }
-    },
-    {
-      type: 'heading',
-      id: 'h-copper-oxidation',
-      data: { text: 'Copper: +1 and +2 Oxidation States', level: 2 }
-    },
-    {
-      type: 'paragraph',
-      id: 'p-copper-states',
-      data: {
-        text: 'Copper exhibits two oxidation states:<br/>' +
-        '• <strong>Cu⁺</strong> ([Ar] 3d¹⁰): Colourless in solution (due to the stable d¹⁰ configuration with no unpaired d-electrons). Cu₂O (red) is a common example. Cu⁺ is actually more thermodynamically stable than Cu²⁺, but undergoes disproportionation in aqueous solution.' +
-        '<br/>• <strong>Cu²⁺</strong> ([Ar] 3d⁹): Blue in aqueous solution (due to d-orbital splitting and absorption in the visible region). Forms compounds such as CuSO₄·5H₂O (blue crystals) and CuCl₂.<br/>' +
-        'In solution, Cu⁺ → Cu + Cu²⁺ (disproportionation) due to hydration enthalpy favouring Cu²⁺.'
       }
     },
     {

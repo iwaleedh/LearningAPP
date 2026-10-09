@@ -39,7 +39,7 @@ export const note_olevel_chemistry_9_9_5 = {
       type: 'svg',
       data: {
         caption: 'The three-tube experiment to investigate the conditions for rusting.',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-17 -9 617 259">
     <defs>
         <style>
             .glass { fill: rgba(99, 102, 241, 0.05); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }

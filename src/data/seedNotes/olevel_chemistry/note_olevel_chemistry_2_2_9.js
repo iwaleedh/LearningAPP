@@ -46,7 +46,7 @@ export const note_olevel_chemistry_2_2_9 = {
       type: 'svg',
       data: {
         caption: 'Boiling water breaks weak intermolecular forces, separating H₂O molecules from each other. Strong covalent bonds within the molecules do NOT break.',
-        svg: `<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="0 0 634 250" xmlns="http://www.w3.org/2000/svg">
   <!-- Liquid state (left) -->
   <g transform="translate(100, 120)">
     <text x="0" y="-80" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">Liquid (Close together)</text>
@@ -112,7 +112,7 @@ export const note_olevel_chemistry_2_2_9 = {
     
     <!-- Label holding atom -->
     <path d="M -50 -70 L -40 -50" stroke="var(--color-text-tertiary)" stroke-width="1.5" fill="none"/>
-    <text x="-50" y="-80" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Covalent bonds remain!</text>
+    <text x="-50" y="-56" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Covalent bonds remain!</text>
   </g>
 </svg>`
       }

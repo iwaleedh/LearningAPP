@@ -83,7 +83,7 @@ export const note_olevel_physics_4_2_5 = {
   <text x="120" y="125" text-anchor="middle" fill="#374151" font-size="11">V₁</text>
   <text x="230" y="125" text-anchor="middle" fill="#374151" font-size="11">V₂</text>
   <text x="305" y="125" text-anchor="middle" fill="#374151" font-size="11">V₃</text>
-  <text x="190" y="148" text-anchor="middle" fill="#64748b" font-size="11">V_total = V₁ + V₂ + V₃ &nbsp;|&nbsp; same I throughout</text>
+  <text x="190" y="148" text-anchor="middle" fill="#64748b" font-size="11">V_total = V₁ + V₂ + V₃ &#160;|&#160; same I throughout</text>
 </svg>`,
       },
     },

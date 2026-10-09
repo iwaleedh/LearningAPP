@@ -126,9 +126,9 @@ export const note_chemistry_4_11_8 = {
   <text x='160' y='20' font-size='13' font-weight='bold' fill='#1e3a5f'>CP9a: Sampling &amp; Quenching Workflow</text>
   <!-- Box 1 -->
   <rect x='10' y='35' width='105' height='44' rx='6' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='1.5'/>
-  <text x='62' y='54' font-size='9' text-anchor='middle' fill='#1e3a5f' font-weight='bold'>Large reaction beaker</text>
-  <text x='62' y='66' font-size='8' text-anchor='middle' fill='#374151'>propanone + I₂ + H₂SO₄</text>
-  <text x='62' y='77' font-size='8' text-anchor='middle' fill='#374151'>Start stopwatch</text>
+  <text x='62' y='54' font-size='9' text-anchor='middle' fill="#f8fafc" font-weight='bold' style="fill:#f8fafc">Large reaction beaker</text>
+  <text x='62' y='66' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">propanone + I₂ + H₂SO₄</text>
+  <text x='62' y='77' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">Start stopwatch</text>
   <!-- Arrow 1→2 -->
   <line x1='115' y1='57' x2='137' y2='57' stroke='#374151' stroke-width='1.5'/>
   <polygon points='130,53 138,57 130,61' fill='#374151'/>
@@ -136,25 +136,25 @@ export const note_chemistry_4_11_8 = {
   <text x='118' y='62' font-size='8' fill='#374151'>5 min</text>
   <!-- Box 2 -->
   <rect x='138' y='35' width='105' height='44' rx='6' fill='#44370a' stroke='#ca8a04' stroke-width='1.5'/>
-  <text x='190' y='51' font-size='9' text-anchor='middle' fill='#78350f' font-weight='bold'>Withdraw 10 cm³</text>
-  <text x='190' y='63' font-size='8' text-anchor='middle' fill='#374151'>with pipette</text>
-  <text x='190' y='75' font-size='8' text-anchor='middle' fill='#374151'>record time at 5 cm³ mark</text>
+  <text x='190' y='51' font-size='9' text-anchor='middle' fill="#f8fafc" font-weight='bold' style="fill:#f8fafc">Withdraw 10 cm³</text>
+  <text x='190' y='63' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">with pipette</text>
+  <text x='190' y='75' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">record time at 5 cm³ mark</text>
   <!-- Arrow 2→3 -->
   <line x1='243' y1='57' x2='265' y2='57' stroke='#374151' stroke-width='1.5'/>
   <polygon points='258,53 266,57 258,61' fill='#374151'/>
   <!-- Box 3 -->
   <rect x='266' y='35' width='113' height='44' rx='6' fill='#0a2e1a' stroke='#16a34a' stroke-width='1.5'/>
-  <text x='322' y='51' font-size='9' text-anchor='middle' fill='#14532d' font-weight='bold'>Add to NaHCO₃(aq)</text>
-  <text x='322' y='63' font-size='8' text-anchor='middle' fill='#374151'>QUENCH — neutralises</text>
-  <text x='322' y='75' font-size='8' text-anchor='middle' fill='#374151'>H₂SO₄ catalyst → stops rxn</text>
+  <text x='322' y='51' font-size='9' text-anchor='middle' fill="#f8fafc" font-weight='bold' style="fill:#f8fafc">Add to NaHCO₃(aq)</text>
+  <text x='322' y='63' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">QUENCH — neutralises</text>
+  <text x='322' y='75' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">H₂SO₄ catalyst → stops rxn</text>
   <!-- Arrow 3→4 -->
   <line x1='379' y1='57' x2='401' y2='57' stroke='#374151' stroke-width='1.5'/>
   <polygon points='394,53 402,57 394,61' fill='#374151'/>
   <!-- Box 4 -->
   <rect x='402' y='35' width='128' height='44' rx='6' fill='#2d1b69' stroke='#1d4ed8' stroke-width='1.5'/>
-  <text x='466' y='51' font-size='9' text-anchor='middle' fill='#4c1d95' font-weight='bold'>Titrate with Na₂S₂O₃</text>
-  <text x='466' y='63' font-size='8' text-anchor='middle' fill='#374151'>add starch at pale yellow</text>
-  <text x='466' y='75' font-size='8' text-anchor='middle' fill='#374151'>endpoint: blue-black → colourless</text>
+  <text x='466' y='51' font-size='9' text-anchor='middle' fill="#f8fafc" font-weight='bold' style="fill:#f8fafc">Titrate with Na₂S₂O₃</text>
+  <text x='466' y='63' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">add starch at pale yellow</text>
+  <text x='466' y='75' font-size='8' text-anchor='middle' fill="#f8fafc" style="fill:#f8fafc">endpoint: blue-black → colourless</text>
   <!-- Collection phase -->
   <text x='10' y='110' font-size='10' font-weight='bold' fill='#1e3a5f'>After ≥6 data points → Plot [I₂] vs time:</text>
   <!-- Mini graph area -->
@@ -317,55 +317,55 @@ export const note_chemistry_4_11_8 = {
       id: 'svg-cp9b-graphs',
       type: 'svg',
       data: {
-        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 230' style='font-family:Arial,sans-serif;background:#fafafa;border-radius:8px'>
-  <text x='130' y='16' font-size='13' font-weight='bold' fill='#1e3a5f' text-anchor='middle'>Graph Shapes: 1/t vs [Reactant]</text>
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230" style="font-family:Arial,sans-serif;background:#fafafa;border-radius:8px">
+  <text x="130" y="16" font-size="13" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Graph Shapes: 1/t vs [Reactant]</text>
   <!-- ZERO ORDER panel -->
-  <g transform='translate(10,25)'>
-    <rect x='0' y='0' width='150' height='150' rx='6' fill='#0a2e1a' stroke='#16a34a' stroke-width='1.2'/>
-    <text x='75' y="28" font-size='10' font-weight='bold' fill='#14532d' text-anchor='middle'>Zero Order</text>
+  <g transform="translate(10,25)">
+    <rect x="0" y="0" width="150" height="150" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.2"/>
+    <text x="75" y="28" font-size="10" font-weight="bold" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">Zero Order</text>
     <!-- axes -->
-    <line x1='18' y1='125' x2='18' y2='25' stroke='#374151' stroke-width='1.2'/>
-    <line x1='18' y1='125' x2='138' y2='125' stroke='#374151' stroke-width='1.2'/>
-    <text x='8' y='80' font-size='8' fill='#374151' text-anchor='middle' transform='rotate(-90,8,80)'>1/t (rate)</text>
-    <text x='78' y='141' font-size='8' fill='#374151' text-anchor='middle'>[reactant]</text>
+    <line x1="18" y1="125" x2="18" y2="25" stroke="#374151" stroke-width="1.2"/>
+    <line x1="18" y1="125" x2="138" y2="125" stroke="#374151" stroke-width="1.2"/>
+    <text x="8" y="80" font-size="8" fill="#374151" text-anchor="middle" transform="rotate(-90,8,80)">1/t (rate)</text>
+    <text x="78" y="141" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">[reactant]</text>
     <!-- flat horizontal line -->
-    <line x1='22' y1='75' x2='134' y2='75' stroke='#16a34a' stroke-width='2'/>
-    <text x='75' y="104" font-size='8' fill='#16a34a' text-anchor='middle'>flat line</text>
-    <text x='75' y='100' font-size='8' fill='#374151' text-anchor='middle'>rate unaffected</text>
-    <text x='75' y="124" font-size='8' fill='#374151' text-anchor='middle'>by concentration</text>
+    <line x1="22" y1="75" x2="134" y2="75" stroke="#16a34a" stroke-width="2"/>
+    <text x="75" y="104" font-size="8" fill="#16a34a" text-anchor="middle">flat line</text>
+    <text x="75" y="100" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">rate unaffected</text>
+    <text x="75" y="124" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">by concentration</text>
   </g>
   <!-- FIRST ORDER panel -->
-  <g transform='translate(185,25)'>
-    <rect x='0' y='0' width='150' height='150' rx='6' fill='#1c3a64' stroke='#2563eb' stroke-width='1.2'/>
-    <text x='75' y="28" font-size='10' font-weight='bold' fill='#1e3a8a' text-anchor='middle'>First Order</text>
+  <g transform="translate(185,25)">
+    <rect x="0" y="0" width="150" height="150" rx="6" fill="#1c3a64" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="75" y="28" font-size="10" font-weight="bold" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">First Order</text>
     <!-- axes -->
-    <line x1='18' y1='125' x2='18' y2='25' stroke='#374151' stroke-width='1.2'/>
-    <line x1='18' y1='125' x2='138' y2='125' stroke='#374151' stroke-width='1.2'/>
-    <text x='8' y='80' font-size='8' fill='#374151' text-anchor='middle' transform='rotate(-90,8,80)'>1/t (rate)</text>
-    <text x='78' y='141' font-size='8' fill='#374151' text-anchor='middle'>[reactant]</text>
+    <line x1="18" y1="125" x2="18" y2="25" stroke="#374151" stroke-width="1.2"/>
+    <line x1="18" y1="125" x2="138" y2="125" stroke="#374151" stroke-width="1.2"/>
+    <text x="8" y="80" font-size="8" fill="#374151" text-anchor="middle" transform="rotate(-90,8,80)">1/t (rate)</text>
+    <text x="78" y="141" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">[reactant]</text>
     <!-- straight line through origin -->
-    <line x1='22' y1='120' x2='134' y2='30' stroke='#2563eb' stroke-width='2'/>
-    <text x='75' y='90' font-size='8' fill='#2563eb' text-anchor='middle'>straight line</text>
-    <text x='75' y="114" font-size='8' fill='#374151' text-anchor='middle'>through origin</text>
-    <text x='75' y='110' font-size='8' fill='#374151' text-anchor='middle'>doubling [c] → double rate</text>
+    <line x1="22" y1="120" x2="134" y2="30" stroke="#2563eb" stroke-width="2"/>
+    <text x="75" y="90" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">straight line</text>
+    <text x="75" y="114" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">through origin</text>
+    <text x="75" y="133" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">doubling [c] → double rate</text>
   </g>
   <!-- SECOND ORDER panel -->
-  <g transform='translate(360,25)'>
-    <rect x='0' y='0' width='150' height='150' rx='6' fill='#532407' stroke='#ea580c' stroke-width='1.2'/>
-    <text x='75' y='14' font-size='10' font-weight='bold' fill='#9a3412' text-anchor='middle'>Second Order</text>
+  <g transform="translate(360,25)">
+    <rect x="0" y="0" width="150" height="150" rx="6" fill="#532407" stroke="#ea580c" stroke-width="1.2"/>
+    <text x="75" y="14" font-size="10" font-weight="bold" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">Second Order</text>
     <!-- axes -->
-    <line x1='18' y1='125' x2='18' y2='25' stroke='#374151' stroke-width='1.2'/>
-    <line x1='18' y1='125' x2='138' y2='125' stroke='#374151' stroke-width='1.2'/>
-    <text x='8' y='80' font-size='8' fill='#374151' text-anchor='middle' transform='rotate(-90,8,80)'>1/t (rate)</text>
-    <text x='78' y='141' font-size='8' fill='#374151' text-anchor='middle'>[reactant]</text>
+    <line x1="18" y1="125" x2="18" y2="25" stroke="#374151" stroke-width="1.2"/>
+    <line x1="18" y1="125" x2="138" y2="125" stroke="#374151" stroke-width="1.2"/>
+    <text x="8" y="80" font-size="8" fill="#374151" text-anchor="middle" transform="rotate(-90,8,80)">1/t (rate)</text>
+    <text x="78" y="141" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">[reactant]</text>
     <!-- curve -->
-    <path d='M 22 122 Q 60 105 90 70 Q 115 42 134 28' stroke='#ea580c' stroke-width='2' fill='none'/>
-    <text x='75' y='95' font-size='8' fill='#ea580c' text-anchor='middle'>curve (quadratic)</text>
-    <text x='75' y='105' font-size='8' fill='#374151' text-anchor='middle'>re-plot 1/t vs [c]²</text>
-    <text x='75' y='115' font-size='8' fill='#374151' text-anchor='middle'>→ straight line</text>
+    <path d="M 22 122 Q 60 105 90 70 Q 115 42 134 28" stroke="#ea580c" stroke-width="2" fill="none"/>
+    <text x="75" y="95" font-size="8" fill="#ea580c" text-anchor="middle">curve (quadratic)</text>
+    <text x="75" y="105" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">re-plot 1/t vs [c]²</text>
+    <text x="75" y="115" font-size="8" fill="#f8fafc" text-anchor="middle" style="fill:#f8fafc">→ straight line</text>
   </g>
   <!-- label at bottom -->
-  <text x='260' y='198' font-size='9' fill='#374151' text-anchor='middle'>Keep: Na₂S₂O₃ constant | total volume constant (25 cm³) | only 1 variable changes per series</text>
+  <text x="260" y="198" font-size="9" fill="#374151" text-anchor="middle">Keep: Na₂S₂O₃ constant | total volume constant (25 cm³) | only 1 variable changes per series</text>
 </svg>`,
         caption: '1/t vs [reactant] graph shapes: flat = zero order; straight line through origin = first order; curve = second order (re-plot vs [c]² to linearise).'
       }
@@ -573,7 +573,7 @@ export const note_chemistry_4_11_8 = {
       id: 'svg-kinetics-master',
       type: 'svg',
       data: {
-        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" font-family="system-ui,sans-serif"><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">KINETICS MASTER MAP</text><!-- LEFT: Rate Orders --><rect x="10" y="32" width="330" height="408" rx="10" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1.5"/><text x="175" y="52" text-anchor="middle" font-size="11" fill="#34d399" font-weight="700">RATE ORDERS — IDENTIFICATION</text><text x="175" y="66" text-anchor="middle" font-size="9" fill="#065f46">rate = k[A]^m[B]^n   overall order = m+n</text><!-- 0th order row --><rect x="22" y="74" width="306" height="84" rx="8" fill="rgba(96,165,250,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="175" y="92" text-anchor="middle" font-size="10" fill="#60a5fa" font-weight="700">0th ORDER</text><text x="30" y="109" font-size="8.5" fill="#1e3a8a">Rate independent of [A]: rate = k</text><text x="30" y="123" font-size="8.5" fill="#1e3a8a">Conc–time graph: STRAIGHT LINE (negative slope)</text><text x="30" y="137" font-size="8.5" fill="#1e3a8a">Rate–conc graph: horizontal line</text><text x="30" y="149" font-size="8.5" fill="#1250a0">Units of k: mol dm⁻³ s⁻¹</text><!-- 1st order row --><rect x="22" y="164" width="306" height="98" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1"/><text x="175" y="182" text-anchor="middle" font-size="10" fill="#fb923c" font-weight="700">1st ORDER  (most common)</text><text x="30" y="199" font-size="8.5" fill="#532407">Rate proportional to [A]: rate = k[A]</text><text x="30" y="213" font-size="8.5" fill="#532407">Conc–time graph: EXPONENTIAL DECAY</text><text x="30" y="227" font-size="8.5" fill="#532407">Half-life CONSTANT (t₁₂ = ln2/k)</text><text x="30" y="241" font-size="8.5" fill="#532407">Rate–conc graph: straight line through origin</text><text x="30" y="253" font-size="8.5" fill="#78350f">Units of k: s⁻¹</text><!-- 2nd order row --><rect x="22" y="268" width="306" height="98" rx="8" fill="rgba(244,114,182,0.15)" stroke="#f472b6" stroke-width="1"/><text x="175" y="286" text-anchor="middle" font-size="10" fill="#f472b6" font-weight="700">2nd ORDER</text><text x="30" y="303" font-size="8.5" fill="#4a1040">Rate ∝ [A]²: rate = k[A]²</text><text x="30" y="317" font-size="8.5" fill="#4a1040">Conc–time graph: curve that decays slower than exp</text><text x="30" y="331" font-size="8.5" fill="#4a1040">Half-life INCREASES as reaction proceeds</text><text x="30" y="345" font-size="8.5" fill="#4a1040">1/[A] vs time gives straight line — diagnostic!</text><text x="30" y="357" font-size="8.5" fill="#f472b6">Units of k: dm³ mol⁻¹ s⁻¹</text><!-- Key tip: deducing order --><rect x="22" y="374" width="306" height="56" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="175" y="392" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">DEDUCING ORDER FROM DATA</text><text x="30" y="407" font-size="8.5" fill="#2d2d72">Double [A], rate doubles → 1st order in A</text><text x="30" y="421" font-size="8.5" fill="#2d2d72">Double [A], rate quadruples → 2nd order in A</text><!-- RIGHT: Arrhenius --><rect x="360" y="32" width="330" height="408" rx="10" fill="rgba(239,68,68,0.08)" stroke="#ef4444" stroke-width="1.5"/><text x="525" y="52" text-anchor="middle" font-size="11" fill="#ef4444" font-weight="700">ARRHENIUS &amp; ACTIVATION ENERGY</text><rect x="374" y="62" width="302" height="50" rx="8" fill="rgba(239,68,68,0.2)" stroke="#ef4444" stroke-width="1.5"/><text x="525" y="80" text-anchor="middle" font-size="12" font-weight="900" fill="#1e293b">k = A × e^(−Ea/RT)</text><text x="525" y="100" text-anchor="middle" font-size="8.5" fill="#7f1d1d">k = rate const | A = pre-exponential factor | Ea = activation energy | R = 8.31 | T in Kelvin</text><!-- Log form --><rect x="374" y="118" width="302" height="40" rx="8" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-width="1"/><text x="525" y="134" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="700">Linearised: ln k = ln A − Ea/RT</text><text x="525" y="150" text-anchor="middle" font-size="8.5" fill="#7f1d1d">Plot ln k vs 1/T → slope = −Ea/R → Ea = −slope × R</text><!-- What affects rate? --><rect x="374" y="166" width="302" height="120" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1"/><text x="525" y="184" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="700">FACTORS AFFECTING RATE</text><text x="380" y="202" font-size="9" fill="#1e293b">↑ Temperature → more molecules exceed Ea → k↑</text><text x="380" y="218" font-size="9" fill="#7f1d1d">Even 10°C rise roughly doubles rate</text><text x="380" y="234" font-size="9" fill="#1e293b">Catalyst → lower Ea → more molecules exceed Ea</text><text x="380" y="250" font-size="9" fill="#7f1d1d">Catalyst does NOT change ΔH or K</text><text x="380" y="266" font-size="9" fill="#1e293b">↑ Concentration → more collisions → rate↑</text><text x="380" y="282" font-size="9" fill="#7f1d1d">Surface area, pressure (gases) also increase collision freq</text><!-- Mechanism and rate --><rect x="374" y="294" width="302" height="100" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1"/><text x="525" y="312" text-anchor="middle" font-size="10" fill="#fb923c" font-weight="700">RATE EQUATION AND MECHANISM</text><text x="380" y="330" font-size="8.5" fill="#532407">Rate equation only includes species in the</text><text x="380" y="345" font-size="8.5" fill="#532407">RATE-DETERMINING STEP (RDS)</text><text x="380" y="360" font-size="8.5" fill="#532407">SN1: rate = k[RX] → unimolecular RDS</text><text x="380" y="375" font-size="8.5" fill="#532407">SN2: rate = k[RX][Nu] → bimolecular RDS</text><text x="380" y="386" font-size="8.5" fill="#78350f">Intermediates from earlier steps can appear in rate eq.</text><!-- Units of k --><rect x="374" y="404" width="302" height="28" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="525" y="418" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">UNITS OF k: always work out from rate = k×[A]^n×[B]^m</text><text x="525" y="432" text-anchor="middle" font-size="8.5" fill="#2d2d72">1st: s⁻¹ | 2nd: dm³ mol⁻¹ s⁻¹ | 0th: mol dm⁻³ s⁻¹</text></svg>',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" font-family="system-ui,sans-serif"><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">KINETICS MASTER MAP</text><!-- LEFT: Rate Orders --><rect x="10" y="32" width="330" height="408" rx="10" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1.5"/><text x="175" y="52" text-anchor="middle" font-size="11" fill="#0f172a" font-weight="700" style="fill:#0f172a">RATE ORDERS — IDENTIFICATION</text><text x="175" y="66" text-anchor="middle" font-size="9" fill="#065f46">rate = k[A]^m[B]^n   overall order = m+n</text><!-- 0th order row --><rect x="22" y="74" width="306" height="84" rx="8" fill="rgba(96,165,250,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="175" y="92" text-anchor="middle" font-size="10" fill="#0f172a" font-weight="700" style="fill:#0f172a">0th ORDER</text><text x="30" y="109" font-size="8.5" fill="#1e3a8a">Rate independent of [A]: rate = k</text><text x="30" y="123" font-size="8.5" fill="#1e3a8a">Conc–time graph: STRAIGHT LINE (negative slope)</text><text x="30" y="137" font-size="8.5" fill="#1e3a8a">Rate–conc graph: horizontal line</text><text x="30" y="149" font-size="8.5" fill="#1250a0">Units of k: mol dm⁻³ s⁻¹</text><!-- 1st order row --><rect x="22" y="164" width="306" height="98" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1"/><text x="175" y="182" text-anchor="middle" font-size="10" fill="#0f172a" font-weight="700" style="fill:#0f172a">1st ORDER  (most common)</text><text x="30" y="199" font-size="8.5" fill="#532407">Rate proportional to [A]: rate = k[A]</text><text x="30" y="213" font-size="8.5" fill="#532407">Conc–time graph: EXPONENTIAL DECAY</text><text x="30" y="227" font-size="8.5" fill="#532407">Half-life CONSTANT (t₁₂ = ln2/k)</text><text x="30" y="241" font-size="8.5" fill="#532407">Rate–conc graph: straight line through origin</text><text x="30" y="253" font-size="8.5" fill="#78350f">Units of k: s⁻¹</text><!-- 2nd order row --><rect x="22" y="268" width="306" height="98" rx="8" fill="rgba(244,114,182,0.15)" stroke="#f472b6" stroke-width="1"/><text x="175" y="286" text-anchor="middle" font-size="10" fill="#0f172a" font-weight="700" style="fill:#0f172a">2nd ORDER</text><text x="30" y="303" font-size="8.5" fill="#4a1040">Rate ∝ [A]²: rate = k[A]²</text><text x="30" y="317" font-size="8.5" fill="#4a1040">Conc–time graph: curve that decays slower than exp</text><text x="30" y="331" font-size="8.5" fill="#4a1040">Half-life INCREASES as reaction proceeds</text><text x="30" y="345" font-size="8.5" fill="#4a1040">1/[A] vs time gives straight line — diagnostic!</text><text x="30" y="357" font-size="8.5" fill="#0f172a" style="fill:#0f172a">Units of k: dm³ mol⁻¹ s⁻¹</text><!-- Key tip: deducing order --><rect x="22" y="374" width="306" height="56" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="175" y="392" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">DEDUCING ORDER FROM DATA</text><text x="30" y="407" font-size="8.5" fill="#2d2d72">Double [A], rate doubles → 1st order in A</text><text x="30" y="421" font-size="8.5" fill="#2d2d72">Double [A], rate quadruples → 2nd order in A</text><!-- RIGHT: Arrhenius --><rect x="360" y="32" width="330" height="408" rx="10" fill="rgba(239,68,68,0.08)" stroke="#ef4444" stroke-width="1.5"/><text x="525" y="52" text-anchor="middle" font-size="11" fill="#ef4444" font-weight="700">ARRHENIUS &amp; ACTIVATION ENERGY</text><rect x="374" y="62" width="302" height="50" rx="8" fill="rgba(239,68,68,0.2)" stroke="#ef4444" stroke-width="1.5"/><text x="525" y="80" text-anchor="middle" font-size="12" font-weight="900" fill="#1e293b">k = A × e^(−Ea/RT)</text><text x="525" y="100" text-anchor="middle" font-size="8.5" fill="#7f1d1d">k = rate const | A = pre-exponential factor | Ea = activation energy | R = 8.31 | T in Kelvin</text><!-- Log form --><rect x="374" y="118" width="302" height="40" rx="8" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-width="1"/><text x="525" y="134" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="700">Linearised: ln k = ln A − Ea/RT</text><text x="525" y="150" text-anchor="middle" font-size="8.5" fill="#7f1d1d">Plot ln k vs 1/T → slope = −Ea/R → Ea = −slope × R</text><!-- What affects rate? --><rect x="374" y="166" width="302" height="120" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1"/><text x="525" y="184" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="700">FACTORS AFFECTING RATE</text><text x="380" y="202" font-size="9" fill="#1e293b">↑ Temperature → more molecules exceed Ea → k↑</text><text x="380" y="218" font-size="9" fill="#7f1d1d">Even 10°C rise roughly doubles rate</text><text x="380" y="234" font-size="9" fill="#1e293b">Catalyst → lower Ea → more molecules exceed Ea</text><text x="380" y="250" font-size="9" fill="#7f1d1d">Catalyst does NOT change ΔH or K</text><text x="380" y="266" font-size="9" fill="#1e293b">↑ Concentration → more collisions → rate↑</text><text x="380" y="282" font-size="9" fill="#7f1d1d">Surface area, pressure (gases) also increase collision freq</text><!-- Mechanism and rate --><rect x="374" y="294" width="302" height="100" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1"/><text x="525" y="312" text-anchor="middle" font-size="10" fill="#0f172a" font-weight="700" style="fill:#0f172a">RATE EQUATION AND MECHANISM</text><text x="380" y="330" font-size="8.5" fill="#532407">Rate equation only includes species in the</text><text x="380" y="345" font-size="8.5" fill="#532407">RATE-DETERMINING STEP (RDS)</text><text x="380" y="360" font-size="8.5" fill="#532407">SN1: rate = k[RX] → unimolecular RDS</text><text x="380" y="375" font-size="8.5" fill="#532407">SN2: rate = k[RX][Nu] → bimolecular RDS</text><text x="380" y="386" font-size="8.5" fill="#78350f">Intermediates from earlier steps can appear in rate eq.</text><!-- Units of k --><rect x="374" y="404" width="302" height="28" rx="8" fill="rgba(99,102,241,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="525" y="418" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">UNITS OF k: always work out from rate = k×[A]^n×[B]^m</text><text x="525" y="432" text-anchor="middle" font-size="8.5" fill="#2d2d72">1st: s⁻¹ | 2nd: dm³ mol⁻¹ s⁻¹ | 0th: mol dm⁻³ s⁻¹</text></svg>`,
         caption: 'Kinetics Master Map — left: 0th/1st/2nd order characteristics from graph shape, half-life, and rate-concentration relationship. Right: Arrhenius equation links rate constant to temperature and activation energy; mechanism determines which species appear in the rate equation.'
       },
       terms: []

@@ -59,15 +59,6 @@ export const note_biology_1_2_2 = {
         "title": "Cystic Fibrosis Mechanism",
         "text": "State clearly that thick, sticky mucus physically blocks the airways, which reduces the effective surface area for gas exchange and increases the diffusion pathway."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Cystic Fibrosis Mechanism",
-        "text": "State clearly that thick, sticky mucus physically blocks the airways, which reduces the effective surface area for gas exchange and increases the diffusion pathway."
-      }
     }
   ],
   "recall": {

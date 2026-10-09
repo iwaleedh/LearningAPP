@@ -8,6 +8,21 @@ export const note_chemistry_5_17_3 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Count donor atoms, not just ligand molecules",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "A ligand donates a lone pair to a metal ion to form a coordinate bond. Coordination number is the number of donor atoms attached directly to the metal, not always the number of ligand molecules. Monodentate ligands such as H₂O or NH₃ normally donate through one atom; a bidentate ligand supplies two donor atoms. Ligand charge determines complex charge together with the metal oxidation state.<br/><br/>For six-coordinate complexes, an octahedral arrangement is common. Four-coordinate complexes may be tetrahedral or square planar, depending on the species. Ligand substitution changes which donors are attached and can alter colour and geometry. A coordinate bond supplies both electrons from the ligand at formation."
+  }
+},
+{
       type: 'heading',
       id: 'h-ligand-definition',
       data: { text: 'Ligands and Coordinate Bonding', level: 2 }
@@ -264,13 +279,6 @@ export const note_chemistry_5_17_3 = {
       terms: []
     },
     {
-      type: 'summary',
-      id: 'summary-ligands',
-      data: {
-        text: 'Ligands are electron pair donors forming coordinate bonds with metal ions. Monodentate ligands (H₂O, NH₃, Cl⁻, CN⁻, SCN⁻) form one bond; bidentate ligands (en, C₂O₄²⁻) form two bonds creating chelate rings; polydentate ligands like EDTA⁴⁻ form multiple bonds. The chelate effect explains why polydentate ligands form significantly more stable complexes than equivalent monodentate ligands—entropy and ring stability favour polydentate coordination.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -279,39 +287,89 @@ export const note_chemistry_5_17_3 = {
         text: "Ligands are Lewis bases (electron pair donors) bonded to metal center via coordinate covalent bonds (both electrons from ligand). Common ligands: oh\u207b, nh\u2083, h\u2082o, cn\u207b, cl\u207b. Ligands approach from direction of orbital lobes; negative ligands coordinate better than neutral to positively charged centers."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "In [Cu(NH₃)₄(H₂O)₂]²⁺, both NH₃ and H₂O are neutral, so copper is +2 and coordination number is 6. In [CuCl₄]²⁻, four Cl⁻ ligands total −4; copper must be +2 to give complex charge −2, and coordination number is 4. Three bidentate ligands can give coordination number 6."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not equate complex charge with the metal oxidation state. Do not call a complex with three bidentate ligands “three-coordinate”."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Define a ligand.",
+        "checked": false
+      },
+      {
+        "text": "What is coordination number?",
+        "checked": false
+      },
+      {
+        "text": "Find Cu’s oxidation state in [CuCl₄]²⁻.",
+        "checked": false
+      },
+      {
+        "text": "What coordination number can three bidentate ligands give?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "A ligand donates a lone pair to a metal ion to form a coordinate bond. Coordination number is the number of donor atoms attached directly to the metal, not always the number of ligand molecules. Monodentate ligands such as H₂O or NH₃ normally donate through one atom; a bidentate ligand supplies two donor atoms. Ligand charge determines complex charge together with the metal oxidation state."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'h-ligand-definition',
-        prompt: 'Define a ligand and explain what a coordinate bond is.'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-monodentate-def',
-        prompt: 'List five common monodentate ligands.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-bidentate-def',
-        prompt: 'Name two bidentate ligands and explain what a chelate ring is.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'h-chelate-effect',
-        prompt: 'What is the chelate effect and why do polydentate ligands form more stable complexes?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-edta-strength',
-        prompt: 'Describe EDTA⁴⁻ as a ligand and explain its medical applications.'
-      }
-    ],
-    summaryText: 'Ligands donate electron pairs to metal ions via coordinate bonds. Monodentate: H₂O, NH₃, Cl⁻, CN⁻, SCN⁻. Bidentate: en, C₂O₄²⁻ (form chelate rings). EDTA⁴⁻: hexadentate. Chelate effect: polydentate ligands form much more stable complexes due to entropy and ring strain prevention.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Define a ligand.",
+      "answer": "An electron-pair donor that forms a coordinate bond to a central metal species."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is coordination number?",
+      "answer": "The number of donor atoms bonded directly to the central metal."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Find Cu’s oxidation state in [CuCl₄]²⁻.",
+      "answer": "+2, because x + 4(−1) = −2."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What coordination number can three bidentate ligands give?",
+      "answer": "Six, if each ligand binds through both donor atoms."
+    }
+  ],
+  "summaryText": "A ligand donates a lone pair to a metal ion to form a coordinate bond. Coordination number is the number of donor atoms attached directly to the metal, not always the number of ligand molecules. Monodentate ligands such as H₂O or NH₃ normally donate through one atom; a bidentate ligand supplies two donor atoms. Ligand charge determines complex charge together with the metal oxidation state.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -321,5 +379,5 @@ export const note_chemistry_5_17_3 = {
       source: 'A-Level Chemistry Coordination Chemistry',
       tags: ['ligands', 'chelate', 'complex-stability']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

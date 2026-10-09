@@ -9,14 +9,14 @@ export const note_business_3_12_4 = {
       {text: 'Benefits: Rapidly increases market share, reduces competition, achieves huge economies of scale.'},
       {text: 'Drawbacks: Can attract scrutiny from the Competition and Markets Authority (CMA) regarding monopolies.'}
     ] } },
-    { id: 'h-2', type: 'heading', data: { text: '2. Vertical Integration', level: 3 } },
+    { id: 'h-2-2', type: 'heading', data: { text: '2. Vertical Integration', level: 3 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'Integration with a firm in the SAME industry but at a DIFFERENT stage of production.' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
       {text: 'Forward Vertical: Moving closer to the consumer (e.g., a coffee manufacturer buying a chain of coffee shops).'},
       {text: 'Backward Vertical: Moving closer to raw materials (e.g., a car manufacturer buying a steel mill).'}
     ] } },
     { id: 'call-1', type: 'callout', data: { style: 'key', title: 'Why vertically integrate?', text: 'It controls the supply chain (backward) ensuring quality and reliability, or guarantees a retail outlet for products (forward) whilst absorbing the profit margin of the middleman.' } },
-    { id: 'h-2', type: 'heading', data: { text: '3. Conglomerate Integration', level: 3 } },
+    { id: 'h-2-3', type: 'heading', data: { text: '3. Conglomerate Integration', level: 3 } },
     { id: 'p-4', type: 'paragraph', data: { text: 'Integration with a firm in a completely DIFFERENT and unrelated industry.' } },
     { id: 'call-2', type: 'callout', data: { style: 'tip', title: 'Advantages of Conglomerates', text: 'Conglomerates thrive on risk-spreading. If one industry faces a downturn, profits from the unrelated industry can sustain the parent company.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Horizontal builds market share, vertical controls the supply chain, and conglomerate integration diversifies and spreads overarching corporate risk.' } },

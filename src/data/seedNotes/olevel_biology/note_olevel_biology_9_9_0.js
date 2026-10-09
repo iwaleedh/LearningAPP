@@ -73,8 +73,8 @@ export const note_olevel_biology_9_9_0 = {
       type: 'svg',
       data: {
         caption: 'Double circulation in mammals — pulmonary and systemic circuits',
-        svg: `<svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="480" height="340" fill="#532407" rx="12"/>
+        svg: `<svg viewBox="0 0 480 353" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="480" height="353" fill="#532407" rx="12"/>
   <text x="240" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">Double Circulation in Mammals</text>
   <!-- LUNGS box -->
   <rect x="160" y="40" width="160" height="55" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>

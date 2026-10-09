@@ -62,15 +62,6 @@ export const note_biology_1_2_9 = {
         "title": "Enzymes",
         "text": "Never say an enzyme 'dies' when heated; say it denatures. For mechanism, state that it lowers the activation energy by providing an alternative reaction pathway upon forming an enzyme-substrate complex."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Enzymes",
-        "text": "Never say an enzyme 'dies' when heated; say it denatures. For mechanism, state that it lowers the activation energy by providing an alternative reaction pathway upon forming an enzyme-substrate complex."
-      }
     }
   ],
   "recall": {

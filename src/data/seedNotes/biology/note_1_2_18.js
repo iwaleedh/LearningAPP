@@ -57,7 +57,7 @@ export const note_biology_1_2_18 = {
         "id": "svg-diag-1-2-18-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='130' x2='280' y2='130' stroke='#333' stroke-width='2'/><line x1='40' y1='130' x2='40' y2='20' stroke='#333' stroke-width='2'/><path d='M40,130 C100,90 150,40 250,40' fill='none' stroke='#38a169' stroke-width='3'/><text x='10' y='90' font-size='10' transform='rotate(270 10,90)'>Rate of Reaction</text><text x='110' y='145' font-size='10'>Substrate Concentration</text><text x='260' y='45' font-size='10' fill='#2f855a'>Vmax (Enzyme Limited)</text></svg>",
+            "svg": `<svg viewBox="0 0 375 156" xmlns='http://www.w3.org/2000/svg'><line x1='40' y1='130' x2='280' y2='130' stroke='#333' stroke-width='2'/><line x1='40' y1='130' x2='40' y2='20' stroke='#333' stroke-width='2'/><path d='M40,130 C100,90 150,40 250,40' fill='none' stroke='#38a169' stroke-width='3'/><text x='10' y='90' font-size='10' transform='rotate(270 10,90)'>Rate of Reaction</text><text x='110' y='145' font-size='10'>Substrate Concentration</text><text x='260' y='45' font-size='10' fill='#2f855a'>Vmax (Enzyme Limited)</text></svg>`,
             "caption": "Substrate Concentration Effect"
         }
     }

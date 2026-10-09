@@ -39,7 +39,7 @@ export const note_biology_2_3_1 = {
           "Circular DNA: The main genetic material is a single circular loop of double-stranded DNA, free-floating in the cytoplasm.",
           "Plasmids: Small, extra rings of DNA carrying non-essential genes (e.g., antibiotic resistance).",
           "70S Ribosomes: Smaller than eukaryotic 80S ribosomes; site of protein synthesis.",
-          "Cell Wall: Made of peptidoglycan (murein), preventing lysis and giving shape.",
+          "Bacterial Cell Wall: Most bacteria have a peptidoglycan (murein) wall, preventing lysis and giving shape. Archaea are also prokaryotes but do not have peptidoglycan walls.",
           "Capsule (Slime Layer): Optional protective layer of polysaccharides outside the cell wall. Helps prevent dehydration and phagocytosis.",
           "Pili: Hair-like extensions helping cells attach to surfaces or each other.",
           "Flagella: Long, whip-like structures for motility (movement)."
@@ -52,7 +52,7 @@ export const note_biology_2_3_1 = {
       "data": {
         "style": "key",
         "title": "Prokaryotes vs Eukaryotes",
-        "text": "Prokaryotes have 70S ribosomes, circular DNA not bound by histone proteins, and lack membrane-bound organelles like mitochondria or Golgi, whereas eukaryotes have 80S ribosomes, linear DNA wrapped around histones in a nucleus, and compartmentalised organelles."
+        "text": "The bacterial model has 70S ribosomes, usually circular DNA without eukaryotic histone packaging, and no nucleus, mitochondria or Golgi apparatus. Eukaryotic cells have nuclear DNA packaged with histones and 80S cytoplasmic ribosomes. Prokaryotes also include archaea, many of which have histone proteins; do not extend every bacterial feature to all prokaryotes."
       }
     }
   ,
@@ -68,13 +68,13 @@ export const note_biology_2_3_1 = {
         "id": "svg-diag-2-3-1-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='75' r='60' fill='#1c3a64' stroke='#3182ce' stroke-width='2'/><circle cx='100' cy='75' r='15' fill='#9f7aea'/><text x='65' y='20' font-size='12' font-weight='bold'>Eukaryote (~10-100µm)</text><text x='70' y='155' font-size='10'>80S Ribosomes</text><rect x='250' y='65' width='40' height='20' rx='10' fill='#7f1d1d' stroke='#e53e3e' stroke-width='2'/><text x='220' y='20' font-size='12' font-weight='bold'>Prokaryote (~1-5µm)</text><text x='230' y='110' font-size='10'>70S Ribosomes</text><line x1='15' y1='140' x2='185' y2='140' stroke='#333' marker-end='url(#arrow)' marker-start='url(#arrow)'/><line x1='230' y1='95' x2='290' y2='95' stroke='#333' marker-end='url(#arrow)' marker-start='url(#arrow)'/></svg>",
+            "svg": `<svg viewBox="0 0 350 166" xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='75' r='60' fill='#1c3a64' stroke='#3182ce' stroke-width='2'/><circle cx='100' cy='75' r='15' fill='#9f7aea'/><text x='65' y='20' font-size='12' font-weight='bold'>Eukaryote (~10-100µm)</text><text x='70' y='155' font-size='10'>80S Ribosomes</text><rect x='250' y='65' width='40' height='20' rx='10' fill='#7f1d1d' stroke='#e53e3e' stroke-width='2'/><text x='220' y='20' font-size='12' font-weight='bold'>Prokaryote (~1-5µm)</text><text x='230' y='110' font-size='10'>70S Ribosomes</text><line x1='15' y1='140' x2='185' y2='140' stroke='#333' marker-end='url(#arrow)' marker-start='url(#arrow)'/><line x1='230' y1='95' x2='290' y2='95' stroke='#333' marker-end='url(#arrow)' marker-start='url(#arrow)'/></svg>`,
             "caption": "Eukaryote vs Prokaryote Size/Ribosomes"
         }
     }
   ,
 { 'id': 'callout-examiner-6b28d544', 'type': 'callout', 'data': { 'style': 'warning', 'title': '70S vs 80S Ribosomes', 'text': 'Do NOT confuse prokaryotic 70S ribosomes with eukaryotic 80S ribosomes. This is heavily tested. Prokaryotes = 70S (smaller, simpler). Use this fact to distinguish between cell types if given an electron micrograph.' } },
-{ 'id': 'callout-examiner-a476c627', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Peptidoglycan Wall vs Cellulose', 'text': 'Both prokaryotes and plants have cell walls, but they are DIFFERENT compounds. Prokaryotes use peptidoglycan (murein); plant cells use cellulose. Examiners test this distinction frequently.' } }
+{ 'id': 'callout-examiner-a476c627', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Peptidoglycan Wall vs Cellulose', 'text': 'Most bacteria have peptidoglycan (murein) cell walls; plant cells have cellulose walls. Archaea are prokaryotes too, but their walls do not contain peptidoglycan. Examiners test this distinction frequently.' } }
   ],
   "recall": {
     "enabled": true,
@@ -82,7 +82,7 @@ export const note_biology_2_3_1 = {
       {
         "id": "cue-1",
         "blockId": "list-features",
-        "prompt": "What is the prokaryotic cell wall made of?"
+        "prompt": "What is the cell wall of a typical bacterium made of?"
       },
       {
         "id": "cue-2",
@@ -90,7 +90,7 @@ export const note_biology_2_3_1 = {
         "prompt": "Name three differences between prokaryotic and eukaryotic cells."
       }
     ],
-    "summaryText": "Prokaryotic cells have 70S ribosomes, circular DNA, peptidoglycan walls, and no membrane-bound organelles. Eukaryotes have 80S ribosomes, linear DNA in a nucleus, and membrane-bound organelles.",
+    "summaryText": "Typical bacterial cells have 70S ribosomes, usually circular DNA, peptidoglycan walls and no nucleus or membrane-bound organelles. Archaea are prokaryotes but lack peptidoglycan walls. Eukaryotes have 80S ribosomes, linear DNA in a nucleus, and membrane-bound organelles.",
     "ready": true
   },
   "evidence": []

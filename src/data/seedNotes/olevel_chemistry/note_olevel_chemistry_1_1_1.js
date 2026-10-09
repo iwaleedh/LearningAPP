@@ -134,7 +134,7 @@ export const note_olevel_chemistry_1_1_1 = {
       type: 'svg',
       data: {
         caption: 'Ideal heating curve of a pure substance showing constant temperature during state changes',
-        svg: `<svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+        svg: `<svg viewBox="-38 0 638 352" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="axis-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M 0,0 L 10,5 L 0,10 z" fill="var(--color-text)" />

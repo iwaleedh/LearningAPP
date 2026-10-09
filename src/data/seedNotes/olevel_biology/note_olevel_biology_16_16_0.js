@@ -74,31 +74,7 @@ export const note_olevel_biology_16_16_0 = {
       type: 'svg',
       data: {
         caption: 'Examples of asexual reproduction in plants: runners (strawberry) and tubers (potato)',
-        svg: '<svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">' +
-          '<rect width="500" height="220" fill="#0a2e1a" rx="8"/>' +
-          '<text x="250" y="18" text-anchor="middle" font-weight="bold" font-size="13" fill="#2d6a4f">Asexual Reproduction in Plants</text>' +
-          '<line x1="10" y1="100" x2="240" y2="100" stroke="#8B4513" stroke-width="3"/>' +
-          '<circle cx="30" cy="100" r="18" fill="#228B22" stroke="#155724" stroke-width="2"/>' +
-          '<text x="30" y="104" text-anchor="middle" fill="#1e293b" font-size="10">Parent</text>' +
-          '<circle cx="130" cy="100" r="14" fill="#52b788" stroke="#155724" stroke-width="2"/>' +
-          '<line x1="130" y1="114" x2="130" y2="130" stroke="#8B4513" stroke-width="2"/>' +
-          '<text x="130" y="145" text-anchor="middle" fill="#333">New plant</text>' +
-          '<circle cx="230" cy="100" r="14" fill="#52b788" stroke="#155724" stroke-width="2"/>' +
-          '<line x1="230" y1="114" x2="230" y2="130" stroke="#8B4513" stroke-width="2"/>' +
-          '<text x="130" y="165" text-anchor="middle" fill="#333">Runners (Strawberry)</text>' +
-          '<line x1="10" y1="190" x2="10" y2="210" stroke="#8B4513" stroke-width="1" stroke-dasharray="3"/>' +
-          '<text x="10" y="210" text-anchor="start" fill="#666" font-size="10">soil level</text>' +
-          '<rect x="290" y="140" width="30" height="40" rx="8" fill="#d4a017" stroke="#8B4513" stroke-width="2"/>' +
-          '<circle cx="305" cy="135" r="5" fill="#52b788"/>' +
-          '<circle cx="320" cy="143" r="5" fill="#52b788"/>' +
-          '<rect x="350" y="148" width="24" height="32" rx="6" fill="#d4a017" stroke="#8B4513" stroke-width="2"/>' +
-          '<circle cx="362" cy="144" r="5" fill="#52b788"/>' +
-          '<rect x="410" y="152" width="20" height="28" rx="5" fill="#d4a017" stroke="#8B4513" stroke-width="2"/>' +
-          '<circle cx="420" cy="148" r="5" fill="#52b788"/>' +
-          '<text x="385" y="200" text-anchor="middle" fill="#333">Tubers (Potato) — each bud grows a new plant</text>' +
-          '<line x1="260" y1="185" x2="490" y2="185" stroke="#8B4513" stroke-width="1" stroke-dasharray="4"/>' +
-          '<text x="260" y="215" text-anchor="start" fill="#666" font-size="10">soil surface</text>' +
-          '</svg>'
+        svg: `<svg viewBox="0 -3 519 229" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12"><rect width="519" height="229" fill="#0a2e1a" rx="8"/><text x="250" y="18" text-anchor="middle" font-weight="bold" font-size="13" fill="#2d6a4f">Asexual Reproduction in Plants</text><line x1="10" y1="100" x2="240" y2="100" stroke="#8B4513" stroke-width="3"/><circle cx="30" cy="100" r="18" fill="#228B22" stroke="#155724" stroke-width="2"/><text x="30" y="104" text-anchor="middle" fill="#1e293b" font-size="10">Parent</text><circle cx="130" cy="100" r="14" fill="#52b788" stroke="#155724" stroke-width="2"/><line x1="130" y1="114" x2="130" y2="130" stroke="#8B4513" stroke-width="2"/><text x="130" y="145" text-anchor="middle" fill="#333">New plant</text><circle cx="230" cy="100" r="14" fill="#52b788" stroke="#155724" stroke-width="2"/><line x1="230" y1="114" x2="230" y2="130" stroke="#8B4513" stroke-width="2"/><text x="130" y="165" text-anchor="middle" fill="#333">Runners (Strawberry)</text><line x1="10" y1="190" x2="10" y2="210" stroke="#8B4513" stroke-width="1" stroke-dasharray="3"/><text x="10" y="210" text-anchor="start" fill="#666" font-size="10">soil level</text><rect x="290" y="140" width="30" height="40" rx="8" fill="#d4a017" stroke="#8B4513" stroke-width="2"/><circle cx="305" cy="135" r="5" fill="#52b788"/><circle cx="320" cy="143" r="5" fill="#52b788"/><rect x="350" y="148" width="24" height="32" rx="6" fill="#d4a017" stroke="#8B4513" stroke-width="2"/><circle cx="362" cy="144" r="5" fill="#52b788"/><rect x="410" y="152" width="20" height="28" rx="5" fill="#d4a017" stroke="#8B4513" stroke-width="2"/><circle cx="420" cy="148" r="5" fill="#52b788"/><text x="385" y="200" text-anchor="middle" fill="#333">Tubers (Potato) — each bud grows a new plant</text><line x1="260" y1="185" x2="490" y2="185" stroke="#8B4513" stroke-width="1" stroke-dasharray="4"/><text x="260" y="215" text-anchor="start" fill="#666" font-size="10">soil surface</text></svg>`
       }
     },
     {

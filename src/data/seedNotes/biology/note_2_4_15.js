@@ -36,7 +36,7 @@ export const note_biology_2_4_15 = {
           'Measure extension: as mass increases, the fibre stretches. Record the total extension (Δx) at each load',
           'Record breaking point: continue adding mass until the fibre breaks. Record the breaking mass (total mass applied when fibre breaks)',
           'Calculate tensile strength: stress = breaking force / cross-sectional area. Breaking force (N) = breaking mass (kg) × 9.81 (g). Cross-sectional area = π × (diameter/2)². Tensile strength (MPa) = stress / 10⁶',
-          'Calculate Young\'s modulus: E = stress / strain = (breaking force / area) / (extension / original length). Use data before breaking (in elastic region, typically first 50–70% of extension)',
+          'Calculate Young\'s modulus from the gradient of the initial straight-line stress-strain region, or E = (F/A)/(ΔL/L) for a point in that region. Use the force and extension at that elastic point, not the breaking force. There is no fixed percentage of breaking extension that identifies the linear region.',
         ],
       },
     },
@@ -59,7 +59,7 @@ export const note_biology_2_4_15 = {
       data: {
         style: 'worked',
         title: 'Tensile Test Calculation',
-        text: 'Flax fibre: diameter 20 μm = 0.00002 m; original length 100 mm = 0.1 m. At breaking load (1 kg = 9.81 N): extension 5 mm = 0.005 m. Cross-sectional area = π × (0.00001)² = 3.14 × 10⁻¹⁰ m². Stress = 9.81 / (3.14 × 10⁻¹⁰) = 3.1 × 10¹⁰ Pa = 31,000 MPa. Strain = 0.005 / 0.1 = 0.05. Young\'s modulus = 31,000 / 0.05 = 620,000 MPa = 620 GPa. (Flax typical: 50–70 GPa, so this calculation is approximate; actual value depends on fibre quality.)',
+        text: "Illustrative fibre data: diameter = 20 μm; original length = 0.100 m. In the linear elastic region, a 0.0100 kg load produces an extension of 0.500 mm = 0.000500 m.\nForce = 0.0100 × 9.81 = 0.0981 N.\nArea = π × (10 × 10⁻⁶)² = 3.14 × 10⁻¹⁰ m².\nStress = F/A ≈ 3.12 × 10⁸ Pa.\nStrain = 0.000500/0.100 = 0.00500.\nYoung’s modulus = stress/strain ≈ 6.25 × 10¹⁰ Pa = 62.5 GPa (using unrounded values).\nFor tensile strength, use the breaking force divided by area. Do not use breaking-point data to calculate Young’s modulus unless it is still in the linear region.",
       },
     },
     {

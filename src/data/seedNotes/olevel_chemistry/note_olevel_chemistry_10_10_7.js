@@ -35,7 +35,7 @@ export const note_olevel_chemistry_10_10_7 = {
   <!-- Plants Box -->
   <rect x="50" y="160" width="140" height="50" rx="8" fill="#0a2e1a" stroke="#22c55e" stroke-width="2"/>
   <text x="120" y="185" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Carbon in Plants</text>
-  <text x="120" y="200" font-family="var(--font-sans)" font-size="10" fill="#166534" text-anchor="middle">(Glucose & tissues)</text>
+  <text x="120" y="200" font-family="var(--font-sans)" font-size="10" fill="#166534" text-anchor="middle">(Glucose &amp; tissues)</text>
 
   <!-- Animals Box -->
   <rect x="250" y="160" width="140" height="50" rx="8" fill="#532407" stroke="#f97316" stroke-width="2"/>
@@ -48,7 +48,7 @@ export const note_olevel_chemistry_10_10_7 = {
 
   <!-- Dead Matter Box -->
   <rect x="150" y="260" width="140" height="50" rx="8" fill="#0f172a" stroke="#9ca3af" stroke-width="2"/>
-  <text x="220" y="290" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#4b5563" text-anchor="middle">Dead Matter & Waste</text>
+  <text x="220" y="290" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#4b5563" text-anchor="middle">Dead Matter &amp; Waste</text>
 
   <!-- ARROWS -->
   <!-- Photosynthesis (Removes CO2) -->

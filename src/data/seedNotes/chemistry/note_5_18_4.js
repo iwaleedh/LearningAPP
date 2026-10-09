@@ -82,27 +82,27 @@ export const note_chemistry_5_18_4 = {
   <rect x="8" y="178" width="484" height="165" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
 
   <!-- Stage 1 header -->
-  <text x="20" y="30" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow &#x2014; RDS): X&#x207a; attacks the &#x3c0; electrons</text>
+  <text x="20" y="30" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 1 (slow &#x2014; RDS): X&#x207a; attacks the &#x3c0; electrons</text>
 
   <!-- Benzene ring (Stage 1): pointy-top, center=(93,97), r=35 -->
   <!-- Vertices: top(93,62), UR(123,80), LR(123,114), bot(93,132), LL(63,114), UL(63,80) -->
   <polygon points="93 62, 123 80, 123 114, 93 132, 63 114, 63 80" class="hxg"/>
   <circle cx="93" cy="97" r="18" class="hxg"/>
-  <text x="93" y="50" class="dim" text-anchor="middle">&#x3b4;&#x2212; &#x3c0; electrons</text>
+  <text x="93" y="50" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">&#x3b4;&#x2212; &#x3c0; electrons</text>
 
   <!-- "+" operator -->
-  <text x="145" y="101" class="atm" text-anchor="middle">+</text>
+  <text x="145" y="101" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
   <!-- X⁺ electrophile -->
-  <text x="163" y="102" class="atm" text-anchor="middle">X</text>
-  <text x="172" y="89" class="chg" text-anchor="start">+</text>
+  <text x="163" y="102" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">X</text>
+  <text x="172" y="89" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- Curly arrow: from upper-right hex vertex (123,80) → X⁺ approach (~161,93) -->
   <path d="M 122 82 Q 139 58 161 93" class="cur" marker-end="url(#ca-gen-eas)"/>
 
   <!-- Reaction arrow → -->
   <line x1="192" y1="95" x2="227" y2="95" class="rxn" marker-end="url(#ah-gen-eas)"/>
-  <text x="209" y="113" class="dim" text-anchor="middle">ring</text>
-  <text x="209" y="124" class="dim" text-anchor="middle">disrupted</text>
+  <text x="209" y="113" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">ring</text>
+  <text x="209" y="124" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">disrupted</text>
 
   <!-- Arenium ion (Stage 1): center=(313,95), r=35 -->
   <polygon points="313 60, 343 78, 343 112, 313 130, 283 112, 283 78" class="hxg"/>
@@ -110,22 +110,22 @@ export const note_chemistry_5_18_4 = {
   <path d="M 329 86 A 18 18 0 1 1 297 86" class="hxg" fill="none"/>
   <!-- X at top carbon (313,60) going up -->
   <line x1="313" y1="60" x2="313" y2="42" stroke="#111827" stroke-width="1.8"/>
-  <text x="313" y="34" class="atm" text-anchor="middle">X</text>
+  <text x="313" y="34" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">X</text>
   <!-- H remaining at top carbon -->
-  <text x="325" y="61" class="lbl" text-anchor="start">H</text>
+  <text x="325" y="61" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
-  <text x="313" y="100" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="313" y="148" class="dim" text-anchor="middle">arenium ion</text>
-  <text x="313" y="160" class="dim" text-anchor="middle">(&#x3c3;-complex)</text>
+  <text x="313" y="100" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="313" y="148" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion</text>
+  <text x="313" y="160" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">(&#x3c3;-complex)</text>
 
   <!-- Y⁻ counter-ion -->
-  <text x="385" y="97" class="atm" text-anchor="middle">Y</text>
-  <text x="394" y="84" class="chg" text-anchor="start">&#x2212;</text>
-  <text x="385" y="115" class="dim" text-anchor="middle">(counter-ion</text>
-  <text x="385" y="127" class="dim" text-anchor="middle">from X&#x207a;)</text>
+  <text x="385" y="97" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Y</text>
+  <text x="394" y="84" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">&#x2212;</text>
+  <text x="385" y="115" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">(counter-ion</text>
+  <text x="385" y="127" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">from X&#x207a;)</text>
 
   <!-- Stage 2 header -->
-  <text x="20" y="196" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): Y&#x207b; removes H&#x207a;, restoring the delocalised ring</text>
+  <text x="20" y="196" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 2 (fast): Y&#x207b; removes H&#x207a;, restoring the delocalised ring</text>
 
   <!-- Arenium ion (Stage 2): center=(93,268), r=35 -->
   <polygon points="93 233, 123 251, 123 285, 93 303, 63 285, 63 251" class="hxg"/>
@@ -133,14 +133,14 @@ export const note_chemistry_5_18_4 = {
   <path d="M 109 259 A 18 18 0 1 1 77 259" class="hxg" fill="none"/>
   <!-- X at top carbon -->
   <line x1="93" y1="233" x2="93" y2="215" stroke="#111827" stroke-width="1.8"/>
-  <text x="93" y="207" class="atm" text-anchor="middle">X</text>
+  <text x="93" y="207" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">X</text>
   <!-- H at top carbon -->
-  <text x="106" y="234" class="lbl" text-anchor="start">H</text>
+  <text x="106" y="234" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + in ring -->
   <text x="93" y="272" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- Y⁻ approaching from upper-right -->
-  <text x="158" y="218" class="atm" text-anchor="middle">Y</text>
+  <text x="158" y="218" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Y</text>
   <text x="168" y="205" class="chg" text-anchor="start">&#x2212;</text>
 
   <!-- Curly arrow 1: Y⁻ lone pair → H (forms H-Y bond) -->
@@ -159,13 +159,13 @@ export const note_chemistry_5_18_4 = {
   <circle cx="320" cy="268" r="18" class="hxg"/>
   <!-- X group at top -->
   <line x1="320" y1="233" x2="320" y2="215" stroke="#111827" stroke-width="1.8"/>
-  <text x="320" y="207" class="atm" text-anchor="middle">X</text>
+  <text x="320" y="207" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">X</text>
   <text x="320" y="318" class="dim" text-anchor="middle">full ring restored</text>
 
   <!-- "+" operator -->
-  <text x="368" y="271" class="atm" text-anchor="middle">+</text>
+  <text x="368" y="271" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
   <!-- HY product -->
-  <text x="400" y="271" class="atm" text-anchor="middle">HY</text>
+  <text x="400" y="271" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">HY</text>
   <text x="437" y="262" class="dim" text-anchor="start">(= H</text>
   <text x="455" y="254" class="chg">+</text>
   <text x="437" y="276" class="dim" text-anchor="start">+ Y&#x207b;)</text>
@@ -242,7 +242,7 @@ export const note_chemistry_5_18_4 = {
       type: 'svg',
       data: {
         caption: 'Nitration of benzene: Stage 1 — NO₂⁺ attacks the π electrons → arenium ion; Stage 2 — HSO₄⁻ (not bare H⁺) removes the proton → nitrobenzene + H₂SO₄ (catalyst regenerated).',
-        svg: `<svg viewBox="0 0 540 370" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
+        svg: `<svg viewBox="0 0 540 392" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
   <defs>
     <style>
       .atm { fill:#111827; font-size:14px; font-weight:700; }
@@ -264,26 +264,26 @@ export const note_chemistry_5_18_4 = {
 
   <!-- Stage 1 background (light blue) -->
   <rect x="8" y="8" width="524" height="182" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
-  <text x="20" y="27" class="hd" fill="#1d4ed8">Stage 1 (slow — RDS): NO₂⁺ attacks the π electrons</text>
+  <text x="20" y="27" class="hd" fill="#f8fafc" style="fill:#f8fafc">Stage 1 (slow — RDS): NO₂⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(85,105), r=35, pointy-top hexagon -->
   <!-- Vertices: top(85,70), UR(115,88), LR(115,122), bot(85,140), LL(55,122), UL(55,88) -->
   <polygon points="85 70, 115 88, 115 122, 85 140, 55 122, 55 88" class="hxg"/>
   <circle cx="85" cy="105" r="18" class="hxg"/>
-  <text x="85" y="59" class="dim" text-anchor="middle">δ⁻ π electrons</text>
+  <text x="85" y="59" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ⁻ π electrons</text>
 
   <!-- "+" operator and NO₂⁺ electrophile -->
-  <text x="141" y="109" class="atm" text-anchor="middle">+</text>
-  <text x="172" y="109" class="atm" text-anchor="middle">NO₂</text>
-  <text x="190" y="96" class="chg" text-anchor="start">+</text>
+  <text x="141" y="109" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="172" y="109" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">NO₂</text>
+  <text x="190" y="96" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- Curly arrow: from π ring (upper-right vertex ~115,88) curving toward NO₂⁺ (~163,101) -->
   <path d="M 114 90 Q 133 66 163 101" class="cur" marker-end="url(#ca-nitr)"/>
 
   <!-- Reaction arrow -->
   <line x1="215" y1="103" x2="252" y2="103" class="rxn" marker-end="url(#ah-nitr)"/>
-  <text x="233" y="121" class="dim" text-anchor="middle">ring</text>
-  <text x="233" y="132" class="dim" text-anchor="middle">disrupted</text>
+  <text x="233" y="121" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">ring</text>
+  <text x="233" y="132" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">disrupted</text>
 
   <!-- Arenium ion: center=(362,105), r=35 -->
   <!-- Vertices: top(362,70), UR(392,88), LR(392,122), bot(362,140), LL(332,122), UL(332,88) -->
@@ -292,16 +292,16 @@ export const note_chemistry_5_18_4 = {
   <path d="M 375 92 A 18 18 0 1 1 349 92" class="hxg" fill="none"/>
   <!-- NO₂ bonded at top carbon (362,70), going up -->
   <line x1="362" y1="70" x2="362" y2="50" stroke="#111827" stroke-width="1.8"/>
-  <text x="362" y="44" class="atm" text-anchor="middle">NO₂</text>
+  <text x="362" y="44" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">NO₂</text>
   <!-- H beside top carbon -->
-  <text x="377" y="71" class="lbl" text-anchor="start">H</text>
+  <text x="377" y="71" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
-  <text x="362" y="109" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="362" y="157" class="dim" text-anchor="middle">arenium ion</text>
+  <text x="362" y="109" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="362" y="157" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion</text>
 
   <!-- Stage 2 background (light green) -->
-  <rect x="8" y="195" width="524" height="170" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
-  <text x="20" y="214" class="hd" fill="#15803d">Stage 2 (fast): HSO₄⁻ removes H⁺ → ring restored, H₂SO₄ regenerated</text>
+  <rect x="8" y="195" width="524" height="192" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
+  <text x="20" y="214" class="hd" fill="#f8fafc" style="fill:#f8fafc">Stage 2 (fast): HSO₄⁻ removes H⁺ → ring restored, H₂SO₄ regenerated</text><g transform="translate(0 22)">
 
   <!-- Arenium ion (Stage 2): center=(85,280), r=35 -->
   <!-- Vertices: top(85,245), UR(115,263), LR(115,297), bot(85,315), LL(55,297), UL(55,263) -->
@@ -310,15 +310,15 @@ export const note_chemistry_5_18_4 = {
   <path d="M 98 267 A 18 18 0 1 1 72 267" class="hxg" fill="none"/>
   <!-- NO₂ line up from top carbon -->
   <line x1="85" y1="245" x2="85" y2="225" stroke="#111827" stroke-width="1.8"/>
-  <text x="85" y="219" class="atm" text-anchor="middle">NO₂</text>
+  <text x="85" y="219" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">NO₂</text>
   <!-- H beside top carbon -->
-  <text x="100" y="246" class="lbl" text-anchor="start">H</text>
+  <text x="100" y="246" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
   <text x="85" y="284" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- HSO₄⁻ approaching (upper-right of arenium ion) with lone pair dots -->
-  <text x="163" y="248" class="atm" text-anchor="middle">HSO₄</text>
-  <text x="183" y="235" class="chg" text-anchor="start">&#x2212;</text>
+  <text x="163" y="248" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">HSO₄</text>
+  <text x="183" y="235" class="chg" text-anchor="start">−</text>
   <!-- Lone pair dots on the O end (left side of label, facing toward ring H) -->
   <circle cx="141" cy="244" r="1.8" fill="#2563eb"/>
   <circle cx="141" cy="252" r="1.8" fill="#2563eb"/>
@@ -340,16 +340,16 @@ export const note_chemistry_5_18_4 = {
   <circle cx="360" cy="280" r="18" class="hxg"/>
   <!-- NO₂ going up from top carbon -->
   <line x1="360" y1="245" x2="360" y2="225" stroke="#111827" stroke-width="1.8"/>
-  <text x="360" y="219" class="atm" text-anchor="middle">NO₂</text>
+  <text x="360" y="219" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">NO₂</text>
   <text x="360" y="331" class="dim" text-anchor="middle">nitrobenzene</text>
 
   <!-- "+" operator -->
-  <text x="408" y="283" class="atm" text-anchor="middle">+</text>
+  <text x="408" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
   <!-- H₂SO₄ product (catalyst regenerated) -->
-  <text x="450" y="276" class="atm" text-anchor="middle">H₂SO₄</text>
+  <text x="450" y="276" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">H₂SO₄</text>
   <text x="450" y="294" class="dim" text-anchor="middle">(catalyst</text>
   <text x="450" y="305" class="dim" text-anchor="middle">regenerated ✓)</text>
-</svg>`
+</g></svg>`
       }
     },
     {
@@ -415,7 +415,7 @@ export const note_chemistry_5_18_4 = {
       type: 'svg',
       data: {
         caption: 'Halogenation mechanism (chlorobenzene synthesis). Stage 1 (slow, RDS): AlCl₃ polarises Cl₂ so the δ+ Cl attacks π electrons → arenium ion + AlCl₄⁻. Stage 2 (fast): AlCl₄⁻ removes H⁺ → chlorobenzene + HCl + AlCl₃ (catalyst regenerated).',
-        svg: `<svg viewBox="0 0 540 370" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
+        svg: `<svg viewBox="0 0 540 392" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
   <defs>
     <style>
       .atm { fill:#111827; font-size:14px; font-weight:700; }
@@ -437,34 +437,34 @@ export const note_chemistry_5_18_4 = {
 
   <!-- Stage 1 background -->
   <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
-  <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): Cl₂ (activated by AlCl₃) attacks π electrons</text>
+  <text x="20" y="27" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 1 (slow — RDS): Cl₂ (activated by AlCl₃) attacks π electrons</text>
 
   <!-- Benzene ring: center=(75,100), pointy-top hex, r=35 -->
   <polygon points="75 65, 105 83, 105 117, 75 135, 45 117, 45 83" class="hxg"/>
   <circle cx="75" cy="100" r="18" class="hxg"/>
-  <text x="75" y="54" class="dim" text-anchor="middle">δ⁻ π electrons</text>
+  <text x="75" y="54" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ⁻ π electrons</text>
 
   <!-- "+" operator -->
-  <text x="120" y="104" class="atm" text-anchor="middle">+</text>
+  <text x="120" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- Cl₂ molecule: δ+ Cl at x=150, δ− Cl at x=178 -->
-  <text x="150" y="88" class="chg" text-anchor="middle">δ+</text>
-  <text x="150" y="104" class="atm" text-anchor="middle">Cl</text>
+  <text x="150" y="88" class="chg" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ+</text>
+  <text x="150" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl</text>
   <line x1="160" y1="100" x2="171" y2="100" stroke="#111827" stroke-width="1.8"/>
-  <text x="178" y="104" class="atm" text-anchor="middle">Cl</text>
-  <text x="178" y="88" class="dim" text-anchor="middle">δ−</text>
+  <text x="178" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl</text>
+  <text x="178" y="88" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ−</text>
 
   <!-- AlCl₃ label below Cl₂ -->
-  <text x="163" y="120" class="lbl" text-anchor="middle">/ AlCl₃</text>
-  <text x="163" y="131" class="dim" text-anchor="middle">(Lewis acid)</text>
+  <text x="163" y="120" class="lbl" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">/ AlCl₃</text>
+  <text x="163" y="131" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">(Lewis acid)</text>
 
   <!-- Curly arrow: from upper-right vertex (105,83) → δ+ Cl (150,96) -->
   <path d="M 104 85 Q 120 63 149 96" class="cur" marker-end="url(#ca-halog)"/>
 
   <!-- Reaction arrow → -->
   <line x1="203" y1="98" x2="246" y2="98" class="rxn" marker-end="url(#ah-halog)"/>
-  <text x="224" y="116" class="dim" text-anchor="middle">Cl⁻ →</text>
-  <text x="224" y="127" class="dim" text-anchor="middle">AlCl₄⁻</text>
+  <text x="224" y="116" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl⁻ →</text>
+  <text x="224" y="127" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₄⁻</text>
 
   <!-- Arenium ion: center=(325,100), r=35 -->
   <polygon points="325 65, 355 83, 355 117, 325 135, 295 117, 295 83" class="hxg"/>
@@ -472,20 +472,20 @@ export const note_chemistry_5_18_4 = {
   <path d="M 338 87 A 18 18 0 1 1 312 87" class="hxg" fill="none"/>
   <!-- Cl bonded at top -->
   <line x1="325" y1="65" x2="325" y2="46" stroke="#111827" stroke-width="1.8"/>
-  <text x="325" y="40" class="atm" text-anchor="middle">Cl</text>
+  <text x="325" y="40" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl</text>
   <!-- H beside top carbon -->
-  <text x="340" y="66" class="lbl" text-anchor="start">H</text>
+  <text x="340" y="66" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
-  <text x="325" y="104" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="325" y="152" class="dim" text-anchor="middle">arenium ion</text>
+  <text x="325" y="104" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="325" y="152" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion</text>
 
   <!-- AlCl₄⁻ produced -->
-  <text x="378" y="96" class="atm" text-anchor="middle">AlCl₄</text>
-  <text x="403" y="83" class="chg" text-anchor="start">−</text>
+  <text x="378" y="96" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₄</text>
+  <text x="403" y="83" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">−</text>
 
   <!-- Stage 2 background -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
-  <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
+  <rect x="8" y="190" width="524" height="196" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
+  <text x="20" y="209" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text><g transform="translate(0 22)">
 
   <!-- Arenium ion (Stage 2): center=(75,280), r=35 -->
   <polygon points="75 245, 105 263, 105 297, 75 315, 45 297, 45 263" class="hxg"/>
@@ -493,14 +493,14 @@ export const note_chemistry_5_18_4 = {
   <path d="M 88 267 A 18 18 0 1 1 62 267" class="hxg" fill="none"/>
   <!-- Cl going up -->
   <line x1="75" y1="245" x2="75" y2="226" stroke="#111827" stroke-width="1.8"/>
-  <text x="75" y="220" class="atm" text-anchor="middle">Cl</text>
+  <text x="75" y="220" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl</text>
   <!-- H beside top carbon -->
-  <text x="90" y="246" class="lbl" text-anchor="start">H</text>
+  <text x="90" y="246" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
   <text x="75" y="284" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- AlCl₄⁻ approaching -->
-  <text x="153" y="250" class="atm" text-anchor="middle">AlCl₄</text>
+  <text x="153" y="250" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₄</text>
   <text x="174" y="237" class="chg" text-anchor="start">−</text>
 
   <!-- Curly arrow 1: Al-Cl bond → H on ring -->
@@ -519,16 +519,16 @@ export const note_chemistry_5_18_4 = {
   <circle cx="315" cy="280" r="18" class="hxg"/>
   <!-- Cl going up -->
   <line x1="315" y1="245" x2="315" y2="226" stroke="#111827" stroke-width="1.8"/>
-  <text x="315" y="220" class="atm" text-anchor="middle">Cl</text>
+  <text x="315" y="220" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">Cl</text>
   <text x="315" y="331" class="dim" text-anchor="middle">chlorobenzene</text>
 
   <!-- "+ HCl + AlCl₃" products -->
-  <text x="359" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="385" y="276" class="atm" text-anchor="middle">HCl</text>
-  <text x="415" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="455" y="272" class="atm" text-anchor="middle">AlCl₃</text>
+  <text x="359" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="385" y="276" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">HCl</text>
+  <text x="415" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="455" y="272" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₃</text>
   <text x="455" y="288" class="dim" text-anchor="middle">(cat. regen. ✓)</text>
-</svg>`
+</g></svg>`
       }
     },
     {
@@ -605,70 +605,70 @@ export const note_chemistry_5_18_4 = {
 
   <!-- Stage 1 -->
   <rect x="8" y="8" width="524" height="205" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
-  <text x="20" y="26" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): δ+S of SO₃ attacks π electrons</text>
+  <text x="20" y="26" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 1 (slow — RDS): δ+S of SO₃ attacks π electrons</text>
 
   <!-- Benzene ring: center=(72,140), r=35 -->
   <polygon points="72 105, 102 123, 102 157, 72 175, 42 157, 42 123" class="hxg"/>
   <circle cx="72" cy="140" r="18" class="hxg"/>
-  <text x="72" y="93" class="dim" text-anchor="middle">δ⁻ π electrons</text>
+  <text x="72" y="93" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ⁻ π electrons</text>
 
-  <text x="122" y="143" class="atm" text-anchor="middle">+</text>
+  <text x="122" y="143" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- SO₃: S at (163,133) -->
-  <text x="163" y="133" class="atm" text-anchor="middle">S</text>
-  <text x="163" y="121" class="chg" text-anchor="middle">δ+</text>
+  <text x="163" y="133" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">S</text>
+  <text x="163" y="121" class="chg" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ+</text>
   <line x1="163" y1="133" x2="163" y2="113" stroke="#111827" stroke-width="1.5"/>
   <line x1="163" y1="133" x2="147" y2="148" stroke="#111827" stroke-width="1.5"/>
   <line x1="163" y1="133" x2="179" y2="148" stroke="#111827" stroke-width="1.5"/>
-  <text x="163" y="110" class="atm" text-anchor="middle">O</text>
-  <text x="143" y="155" class="atm" text-anchor="middle">O</text>
-  <text x="183" y="155" class="atm" text-anchor="middle">O</text>
+  <text x="163" y="110" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
+  <text x="143" y="155" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
+  <text x="183" y="155" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
 
   <!-- Curly arrow: ring upper-right (102,123) → S -->
   <path d="M 101 125 Q 122 100 158 131" class="cur" marker-end="url(#ca-sulph)"/>
 
   <line x1="207" y1="138" x2="247" y2="138" class="rxn" marker-end="url(#ah-sulph)"/>
-  <text x="227" y="155" class="dim" text-anchor="middle">RDS</text>
+  <text x="227" y="155" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">RDS</text>
 
   <!-- Arenium (Stage 1): center=(322,145), r=35 -->
   <polygon points="322 110, 352 128, 352 162, 322 180, 292 162, 292 128" class="hxg"/>
   <path d="M 335 128 A 18 18 0 1 1 309 128" class="hxg" fill="none"/>
   <line x1="322" y1="110" x2="322" y2="93" stroke="#111827" stroke-width="1.8"/>
-  <text x="322" y="93" class="atm" text-anchor="middle">S</text>
+  <text x="322" y="93" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">S</text>
   <!-- S-O⁻ straight up -->
   <line x1="322" y1="93" x2="322" y2="64" stroke="#111827" stroke-width="1.5"/>
-  <text x="322" y="61" class="atm" text-anchor="middle">O</text>
-  <text x="333" y="50" class="chg" text-anchor="start">−</text>
+  <text x="322" y="61" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
+  <text x="333" y="50" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">−</text>
   <!-- S=O left -->
   <line x1="322" y1="93" x2="302" y2="74" stroke="#111827" stroke-width="1.5"/>
-  <text x="298" y="72" class="atm" text-anchor="middle">O</text>
+  <text x="298" y="72" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
   <!-- S=O right -->
   <line x1="322" y1="93" x2="342" y2="74" stroke="#111827" stroke-width="1.5"/>
-  <text x="346" y="72" class="atm" text-anchor="middle">O</text>
-  <text x="337" y="110" class="lbl" text-anchor="start">H</text>
-  <text x="322" y="149" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="322" y="197" class="dim" text-anchor="middle">arenium ion (σ-complex)</text>
+  <text x="346" y="72" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
+  <text x="337" y="110" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
+  <text x="322" y="149" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="322" y="197" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion (σ-complex)</text>
 
   <!-- Stage 2 -->
   <rect x="8" y="213" width="524" height="199" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
-  <text x="20" y="231" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): O⁻ removes H⁺ internally — no separate ion!</text>
+  <text x="20" y="231" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 2 (fast): O⁻ removes H⁺ internally — no separate ion!</text>
 
   <!-- Arenium (Stage 2): center=(72,335), r=35 -->
   <polygon points="72 300, 102 318, 102 352, 72 370, 42 352, 42 318" class="hxg"/>
   <path d="M 85 318 A 18 18 0 1 1 59 318" class="hxg" fill="none"/>
   <line x1="72" y1="300" x2="72" y2="281" stroke="#111827" stroke-width="1.8"/>
-  <text x="72" y="281" class="atm" text-anchor="middle">S</text>
+  <text x="72" y="281" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">S</text>
   <!-- S=O neutral left -->
   <line x1="72" y1="281" x2="52" y2="261" stroke="#111827" stroke-width="1.5"/>
-  <text x="48" y="259" class="atm" text-anchor="middle">O</text>
+  <text x="48" y="259" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
   <!-- S-O⁻ upper-right, toward H -->
   <line x1="72" y1="281" x2="95" y2="261" stroke="#111827" stroke-width="1.5"/>
-  <text x="101" y="259" class="atm" text-anchor="middle">O</text>
+  <text x="101" y="259" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">O</text>
   <text x="112" y="249" class="chg" text-anchor="start">−</text>
   <circle cx="107" cy="256" r="1.5" fill="#dc2626"/>
   <circle cx="113" cy="256" r="1.5" fill="#dc2626"/>
   <!-- H beside top carbon -->
-  <text x="87" y="301" class="lbl" text-anchor="start">H</text>
+  <text x="87" y="301" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <text x="72" y="339" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- Curly arrow 1: O⁻ → H -->
@@ -684,11 +684,11 @@ export const note_chemistry_5_18_4 = {
   <polygon points="265 300, 295 318, 295 352, 265 370, 235 352, 235 318" class="hxg"/>
   <circle cx="265" cy="335" r="18" class="hxg"/>
   <line x1="265" y1="300" x2="265" y2="284" stroke="#111827" stroke-width="1.8"/>
-  <text x="265" y="281" class="atm" text-anchor="middle">SO₃H</text>
+  <text x="265" y="281" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">SO₃H</text>
   <text x="265" y="390" class="dim" text-anchor="middle">benzenesulphonic acid</text>
 
   <!-- Annotation -->
-  <text x="338" y="268" class="lbl" fill="#15803d" font-weight="700" text-anchor="start">⚠ Unique to sulphonation:</text>
+  <text x="338" y="268" class="lbl" fill="#f8fafc" font-weight="700" text-anchor="start" style="fill:#f8fafc">⚠ Unique to sulphonation:</text>
   <text x="338" y="282" class="dim" text-anchor="start">No external ion removes H⁺.</text>
   <text x="338" y="296" class="dim" text-anchor="start">The O⁻ on the intermediate</text>
   <text x="338" y="310" class="dim" text-anchor="start">takes the H⁺ directly.</text>
@@ -778,7 +778,7 @@ export const note_chemistry_5_18_4 = {
       type: 'svg',
       data: {
         caption: 'Friedel-Crafts acylation mechanism. Stage 1 (slow, RDS): acylium ion CH₃CO⁺ attacks the π electrons → arenium ion with COCH₃ group attached. Stage 2 (fast): AlCl₄⁻ removes H⁺ via an Al−Cl bond → phenylethanone + HCl + AlCl₃ (catalyst regenerated).',
-        svg: `<svg viewBox="0 0 540 370" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
+        svg: `<svg viewBox="0 0 540 392" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
   <defs>
     <style>
       .atm { fill:#111827; font-size:14px; font-weight:700; }
@@ -800,25 +800,25 @@ export const note_chemistry_5_18_4 = {
 
   <!-- Stage 1 background (light blue) -->
   <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
-  <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): CH₃CO⁺ attacks the π electrons</text>
+  <text x="20" y="27" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 1 (slow — RDS): CH₃CO⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(80,100), pointy-top hexagon, r=35 -->
   <polygon points="80 65, 110 83, 110 117, 80 135, 50 117, 50 83" class="hxg"/>
   <circle cx="80" cy="100" r="18" class="hxg"/>
-  <text x="80" y="54" class="dim" text-anchor="middle">δ⁻ π electrons</text>
+  <text x="80" y="54" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ⁻ π electrons</text>
 
   <!-- "+" operator and CH₃CO⁺ electrophile -->
-  <text x="133" y="104" class="atm" text-anchor="middle">+</text>
-  <text x="165" y="104" class="atm" text-anchor="middle">CH₃CO</text>
-  <text x="191" y="91" class="chg" text-anchor="start">+</text>
+  <text x="133" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="165" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₃CO</text>
+  <text x="191" y="91" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- Curly arrow: from upper-right vertex (110,83) → CH₃CO⁺ carbon (~168,97) -->
   <path d="M 109 85 Q 130 62 168 97" class="cur" marker-end="url(#ca-fca)"/>
 
   <!-- Reaction arrow → -->
   <line x1="213" y1="98" x2="252" y2="98" class="rxn" marker-end="url(#ah-fca)"/>
-  <text x="232" y="116" class="dim" text-anchor="middle">ring</text>
-  <text x="232" y="127" class="dim" text-anchor="middle">disrupted</text>
+  <text x="232" y="116" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">ring</text>
+  <text x="232" y="127" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">disrupted</text>
 
   <!-- Arenium ion: center=(340,100), r=35 -->
   <polygon points="340 65, 370 83, 370 117, 340 135, 310 117, 310 83" class="hxg"/>
@@ -826,16 +826,16 @@ export const note_chemistry_5_18_4 = {
   <path d="M 353 87 A 18 18 0 1 1 327 87" class="hxg" fill="none"/>
   <!-- COCH₃ bonded at top carbon (340,65), going up -->
   <line x1="340" y1="65" x2="340" y2="46" stroke="#111827" stroke-width="1.8"/>
-  <text x="340" y="39" class="atm" text-anchor="middle">COCH₃</text>
+  <text x="340" y="39" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">COCH₃</text>
   <!-- H beside top carbon -->
-  <text x="355" y="66" class="lbl" text-anchor="start">H</text>
+  <text x="355" y="66" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
-  <text x="340" y="104" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="340" y="152" class="dim" text-anchor="middle">arenium ion</text>
+  <text x="340" y="104" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="340" y="152" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion</text>
 
   <!-- Stage 2 background (light green) -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
-  <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
+  <rect x="8" y="190" width="524" height="196" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
+  <text x="20" y="209" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text><g transform="translate(0 22)">
 
   <!-- Arenium ion (Stage 2): center=(80,280), r=35 -->
   <polygon points="80 245, 110 263, 110 297, 80 315, 50 297, 50 263" class="hxg"/>
@@ -843,14 +843,14 @@ export const note_chemistry_5_18_4 = {
   <path d="M 93 267 A 18 18 0 1 1 67 267" class="hxg" fill="none"/>
   <!-- COCH₃ going up -->
   <line x1="80" y1="245" x2="80" y2="222" stroke="#111827" stroke-width="1.8"/>
-  <text x="80" y="216" class="atm" text-anchor="middle">COCH₃</text>
+  <text x="80" y="216" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">COCH₃</text>
   <!-- H beside top carbon -->
-  <text x="95" y="246" class="lbl" text-anchor="start">H</text>
+  <text x="95" y="246" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
   <text x="80" y="284" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- AlCl₄⁻ approaching from upper-right of arenium ion -->
-  <text x="158" y="250" class="atm" text-anchor="middle">AlCl₄</text>
+  <text x="158" y="250" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₄</text>
   <text x="179" y="237" class="chg" text-anchor="start">−</text>
 
   <!-- Curly arrow 1: Al-Cl bond electrons → H on ring (Cl removes H) -->
@@ -869,16 +869,16 @@ export const note_chemistry_5_18_4 = {
   <circle cx="322" cy="280" r="18" class="hxg"/>
   <!-- COCH₃ going up -->
   <line x1="322" y1="245" x2="322" y2="222" stroke="#111827" stroke-width="1.8"/>
-  <text x="322" y="216" class="atm" text-anchor="middle">COCH₃</text>
+  <text x="322" y="216" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">COCH₃</text>
   <text x="322" y="331" class="dim" text-anchor="middle">phenylethanone</text>
 
   <!-- "+ HCl + AlCl₃" products -->
-  <text x="366" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="394" y="276" class="atm" text-anchor="middle">HCl</text>
-  <text x="424" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="463" y="272" class="atm" text-anchor="middle">AlCl₃</text>
+  <text x="366" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="394" y="276" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">HCl</text>
+  <text x="424" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="463" y="272" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₃</text>
   <text x="463" y="288" class="dim" text-anchor="middle">(cat. regen. ✓)</text>
-</svg>`
+</g></svg>`
       }
     },
     {
@@ -943,7 +943,7 @@ export const note_chemistry_5_18_4 = {
       type: 'svg',
       data: {
         caption: 'Friedel-Crafts alkylation mechanism. Stage 1 (slow, RDS): CH₃⁺ attacks π electrons → arenium ion with CH₃ attached. Stage 2 (fast): AlCl₄⁻ removes H⁺ → methylbenzene + HCl + AlCl₃ (catalyst regenerated).',
-        svg: `<svg viewBox="0 0 540 370" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
+        svg: `<svg viewBox="0 0 540 392" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
   <defs>
     <style>
       .atm { fill:#111827; font-size:14px; font-weight:700; }
@@ -965,25 +965,25 @@ export const note_chemistry_5_18_4 = {
 
   <!-- Stage 1 background (light blue) -->
   <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
-  <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): CH₃⁺ attacks the π electrons</text>
+  <text x="20" y="27" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 1 (slow — RDS): CH₃⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(80,100), pointy-top hexagon, r=35 -->
   <polygon points="80 65, 110 83, 110 117, 80 135, 50 117, 50 83" class="hxg"/>
   <circle cx="80" cy="100" r="18" class="hxg"/>
-  <text x="80" y="54" class="dim" text-anchor="middle">δ⁻ π electrons</text>
+  <text x="80" y="54" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ⁻ π electrons</text>
 
   <!-- "+" operator and CH₃⁺ electrophile -->
-  <text x="133" y="104" class="atm" text-anchor="middle">+</text>
-  <text x="165" y="104" class="atm" text-anchor="middle">CH₃</text>
-  <text x="180" y="91" class="chg" text-anchor="start">+</text>
+  <text x="133" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="165" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₃</text>
+  <text x="180" y="91" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- Curly arrow: from upper-right vertex (110,83) → CH₃⁺ (~163,97) -->
   <path d="M 109 85 Q 128 62 163 97" class="cur" marker-end="url(#ca-fcalk)"/>
 
   <!-- Reaction arrow → -->
   <line x1="205" y1="98" x2="248" y2="98" class="rxn" marker-end="url(#ah-fcalk)"/>
-  <text x="226" y="116" class="dim" text-anchor="middle">ring</text>
-  <text x="226" y="127" class="dim" text-anchor="middle">disrupted</text>
+  <text x="226" y="116" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">ring</text>
+  <text x="226" y="127" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">disrupted</text>
 
   <!-- Arenium ion: center=(335,100), r=35 -->
   <polygon points="335 65, 365 83, 365 117, 335 135, 305 117, 305 83" class="hxg"/>
@@ -991,16 +991,16 @@ export const note_chemistry_5_18_4 = {
   <path d="M 348 87 A 18 18 0 1 1 322 87" class="hxg" fill="none"/>
   <!-- CH₃ bonded at top carbon (335,65), going up -->
   <line x1="335" y1="65" x2="335" y2="46" stroke="#111827" stroke-width="1.8"/>
-  <text x="335" y="40" class="atm" text-anchor="middle">CH₃</text>
+  <text x="335" y="40" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₃</text>
   <!-- H beside top carbon -->
-  <text x="350" y="66" class="lbl" text-anchor="start">H</text>
+  <text x="350" y="66" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
-  <text x="335" y="104" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="335" y="152" class="dim" text-anchor="middle">arenium ion</text>
+  <text x="335" y="104" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="335" y="152" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion</text>
 
   <!-- Stage 2 background (light green) -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
-  <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
+  <rect x="8" y="190" width="524" height="196" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
+  <text x="20" y="209" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text><g transform="translate(0 22)">
 
   <!-- Arenium ion (Stage 2): center=(80,280), r=35 -->
   <polygon points="80 245, 110 263, 110 297, 80 315, 50 297, 50 263" class="hxg"/>
@@ -1008,14 +1008,14 @@ export const note_chemistry_5_18_4 = {
   <path d="M 93 267 A 18 18 0 1 1 67 267" class="hxg" fill="none"/>
   <!-- CH₃ going up -->
   <line x1="80" y1="245" x2="80" y2="226" stroke="#111827" stroke-width="1.8"/>
-  <text x="80" y="220" class="atm" text-anchor="middle">CH₃</text>
+  <text x="80" y="220" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₃</text>
   <!-- H beside top carbon -->
-  <text x="95" y="246" class="lbl" text-anchor="start">H</text>
+  <text x="95" y="246" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
   <text x="80" y="284" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- AlCl₄⁻ approaching from upper-right -->
-  <text x="158" y="250" class="atm" text-anchor="middle">AlCl₄</text>
+  <text x="158" y="250" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₄</text>
   <text x="179" y="237" class="chg" text-anchor="start">−</text>
 
   <!-- Curly arrow 1: Al-Cl bond → H on ring -->
@@ -1034,16 +1034,16 @@ export const note_chemistry_5_18_4 = {
   <circle cx="320" cy="280" r="18" class="hxg"/>
   <!-- CH₃ going up -->
   <line x1="320" y1="245" x2="320" y2="226" stroke="#111827" stroke-width="1.8"/>
-  <text x="320" y="220" class="atm" text-anchor="middle">CH₃</text>
+  <text x="320" y="220" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₃</text>
   <text x="320" y="331" class="dim" text-anchor="middle">methylbenzene</text>
 
   <!-- "+ HCl + AlCl₃" products -->
-  <text x="364" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="390" y="276" class="atm" text-anchor="middle">HCl</text>
-  <text x="420" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="460" y="272" class="atm" text-anchor="middle">AlCl₃</text>
+  <text x="364" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="390" y="276" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">HCl</text>
+  <text x="420" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="460" y="272" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₃</text>
   <text x="460" y="288" class="dim" text-anchor="middle">(cat. regen. ✓)</text>
-</svg>`
+</g></svg>`
       }
     },
     {
@@ -1091,7 +1091,7 @@ export const note_chemistry_5_18_4 = {
       type: 'svg',
       data: {
         caption: 'Industrial alkylation mechanism (ethylbenzene synthesis). Stage 1 (slow, RDS): CH₃CH₂⁺ attacks π electrons → arenium ion with CH₂CH₃ attached. Stage 2 (fast): AlCl₄⁻ removes H⁺ → ethylbenzene + HCl + AlCl₃ (catalyst regenerated).',
-        svg: `<svg viewBox="0 0 540 370" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
+        svg: `<svg viewBox="0 0 540 392" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13">
   <defs>
     <style>
       .atm { fill:#111827; font-size:14px; font-weight:700; }
@@ -1113,25 +1113,25 @@ export const note_chemistry_5_18_4 = {
 
   <!-- Stage 1 background -->
   <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
-  <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): CH₃CH₂⁺ attacks the π electrons</text>
+  <text x="20" y="27" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 1 (slow — RDS): CH₃CH₂⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(80,100), pointy-top hex, r=35 -->
   <polygon points="80 65, 110 83, 110 117, 80 135, 50 117, 50 83" class="hxg"/>
   <circle cx="80" cy="100" r="18" class="hxg"/>
-  <text x="80" y="54" class="dim" text-anchor="middle">δ⁻ π electrons</text>
+  <text x="80" y="54" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">δ⁻ π electrons</text>
 
   <!-- "+" operator and CH₃CH₂⁺ electrophile -->
-  <text x="133" y="104" class="atm" text-anchor="middle">+</text>
-  <text x="173" y="104" class="atm" text-anchor="middle">CH₃CH₂</text>
-  <text x="200" y="91" class="chg" text-anchor="start">+</text>
+  <text x="133" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="173" y="104" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₃CH₂</text>
+  <text x="200" y="91" class="chg" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">+</text>
 
   <!-- Curly arrow: from upper-right vertex (110,83) → C of electrophile -->
   <path d="M 109 85 Q 130 60 163 97" class="cur" marker-end="url(#ca-indalk)"/>
 
   <!-- Reaction arrow → -->
   <line x1="218" y1="98" x2="255" y2="98" class="rxn" marker-end="url(#ah-indalk)"/>
-  <text x="236" y="116" class="dim" text-anchor="middle">ring</text>
-  <text x="236" y="127" class="dim" text-anchor="middle">disrupted</text>
+  <text x="236" y="116" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">ring</text>
+  <text x="236" y="127" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">disrupted</text>
 
   <!-- Arenium ion: center=(340,100), r=35 -->
   <polygon points="340 65, 370 83, 370 117, 340 135, 310 117, 310 83" class="hxg"/>
@@ -1139,16 +1139,16 @@ export const note_chemistry_5_18_4 = {
   <path d="M 353 87 A 18 18 0 1 1 327 87" class="hxg" fill="none"/>
   <!-- CH₂CH₃ bonded at top carbon, going up -->
   <line x1="340" y1="65" x2="340" y2="46" stroke="#111827" stroke-width="1.8"/>
-  <text x="340" y="40" class="atm" text-anchor="middle">CH₂CH₃</text>
+  <text x="340" y="40" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₂CH₃</text>
   <!-- H beside top carbon -->
-  <text x="355" y="66" class="lbl" text-anchor="start">H</text>
+  <text x="355" y="66" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
-  <text x="340" y="104" class="chg" text-anchor="middle" font-size="14">+</text>
-  <text x="340" y="152" class="dim" text-anchor="middle">arenium ion (σ-complex)</text>
+  <text x="340" y="104" class="chg" text-anchor="middle" font-size="14" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="340" y="152" class="dim" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">arenium ion (σ-complex)</text>
 
   <!-- Stage 2 background -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
-  <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
+  <rect x="8" y="190" width="524" height="196" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
+  <text x="20" y="209" class="hd" fill="#f8fafc" text-anchor="start" style="fill:#f8fafc">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text><g transform="translate(0 22)">
 
   <!-- Arenium ion (Stage 2): center=(80,280), r=35 -->
   <polygon points="80 245, 110 263, 110 297, 80 315, 50 297, 50 263" class="hxg"/>
@@ -1156,14 +1156,14 @@ export const note_chemistry_5_18_4 = {
   <path d="M 93 267 A 18 18 0 1 1 67 267" class="hxg" fill="none"/>
   <!-- CH₂CH₃ going up -->
   <line x1="80" y1="245" x2="80" y2="226" stroke="#111827" stroke-width="1.8"/>
-  <text x="80" y="220" class="atm" text-anchor="middle">CH₂CH₃</text>
+  <text x="80" y="220" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₂CH₃</text>
   <!-- H beside top carbon -->
-  <text x="95" y="246" class="lbl" text-anchor="start">H</text>
+  <text x="95" y="246" class="lbl" text-anchor="start" fill="#f8fafc" style="fill:#f8fafc">H</text>
   <!-- + charge in ring -->
   <text x="80" y="284" class="chg" text-anchor="middle" font-size="14">+</text>
 
   <!-- AlCl₄⁻ approaching from right -->
-  <text x="162" y="250" class="atm" text-anchor="middle">AlCl₄</text>
+  <text x="162" y="250" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₄</text>
   <text x="183" y="237" class="chg" text-anchor="start">−</text>
 
   <!-- Curly arrow 1: Al-Cl bond electrons → H -->
@@ -1182,16 +1182,16 @@ export const note_chemistry_5_18_4 = {
   <circle cx="320" cy="280" r="18" class="hxg"/>
   <!-- CH₂CH₃ going up -->
   <line x1="320" y1="245" x2="320" y2="226" stroke="#111827" stroke-width="1.8"/>
-  <text x="320" y="220" class="atm" text-anchor="middle">CH₂CH₃</text>
+  <text x="320" y="220" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">CH₂CH₃</text>
   <text x="320" y="331" class="dim" text-anchor="middle">ethylbenzene</text>
 
   <!-- "+ HCl + AlCl₃" products -->
-  <text x="364" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="390" y="276" class="atm" text-anchor="middle">HCl</text>
-  <text x="420" y="283" class="atm" text-anchor="middle">+</text>
-  <text x="460" y="272" class="atm" text-anchor="middle">AlCl₃</text>
+  <text x="364" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="390" y="276" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">HCl</text>
+  <text x="420" y="283" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">+</text>
+  <text x="460" y="272" class="atm" text-anchor="middle" fill="#f8fafc" style="fill:#f8fafc">AlCl₃</text>
   <text x="460" y="288" class="dim" text-anchor="middle">(cat. regen. ✓)</text>
-</svg>`
+</g></svg>`
       }
     },
     {

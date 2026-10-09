@@ -90,8 +90,8 @@ export const note_olevel_business_4_4_6 = {
       id: 'svg-1',
       type: 'svg',
       data: {
-        svg: `<svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
-  <rect width="520" height="340" fill="#0f172a" rx="8"/>
+        svg: `<svg viewBox="0 0 543 340" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+  <rect width="543" height="340" fill="#0f172a" rx="8"/>
   <!-- Axes -->
   <line x1="70" y1="290" x2="480" y2="290" stroke="#334155" stroke-width="2"/>
   <line x1="70" y1="290" x2="70" y2="30" stroke="#334155" stroke-width="2"/>
@@ -127,7 +127,7 @@ export const note_olevel_business_4_4_6 = {
   <text x="322" y="183" font-size="10" fill="#ef4444" font-weight="600">BEP</text>
   <!-- Vertical dashed line to x-axis from BEP -->
   <line x1="316" y1="186" x2="316" y2="290" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,2"/>
-  <text x="316" y="303" text-anchor="middle" font-size="10" fill="#ef4444">600</text>
+
   <!-- Loss region label -->
   <text x="193" y="260" text-anchor="middle" font-size="11" fill="#ef4444">Loss</text>
   <!-- Profit region label -->

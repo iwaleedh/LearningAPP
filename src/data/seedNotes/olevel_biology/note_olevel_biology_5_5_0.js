@@ -65,7 +65,7 @@ export const note_olevel_biology_5_5_0 = {
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#4c1d95">Lock-and-Key Model of Enzyme Action</text>
 
   <!-- Step 1: Enzyme + Substrate approaching -->
-  <text x="90" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 1: Approach</text>
+  <text x="90" y="27" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 1: Approach</text>
   <!-- Enzyme (lock) -->
   <path d="M 30,65 Q 30,55 40,55 L 140,55 Q 150,55 150,65 L 150,155 Q 150,165 140,165 L 40,165 Q 30,165 30,155 Z" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
   <path d="M 65,110 Q 65,90 90,90 Q 115,90 115,110 Q 115,130 90,130 Q 65,130 65,110 Z" fill="#0a2e1a" stroke="#1d4ed8" stroke-width="1.5"/>

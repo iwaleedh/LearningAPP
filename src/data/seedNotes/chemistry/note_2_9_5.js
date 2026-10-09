@@ -12,6 +12,21 @@ export const note_chemistry_2_9_5 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Dynamic equilibrium needs a closed system",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "At dynamic equilibrium, forward and reverse reactions continue at equal rates. Concentrations remain constant, but reactant and product concentrations are not necessarily equal. A closed system prevents reactants or products escaping; equilibrium depends on retaining the reacting system under the stated conditions.<br/><br/>A concentration–time graph levels off when concentrations become constant. A rate–time graph shows forward and reverse rates approaching the same value. These are different graphs: equal final rates do not require equal final concentrations. Equilibrium position describes the relative amounts at equilibrium, while rate describes how rapidly the system approaches that state."
+  }
+},
+{
             id: 'callout-reversible',
             type: 'callout',
             data: {
@@ -67,19 +82,89 @@ export const note_chemistry_2_9_5 = {
             data: { text: 'The <strong>position of equilibrium</strong> describes the relative proportions of reactants and products in the equilibrium mixture.<br/><br/>• If the position of equilibrium "lies to the right", the mixture contains a higher proportion of products than reactants.<br/>• If it "lies to the left", the mixture contains a higher proportion of reactants.<br/><br/>Even though concentrations are constant at equilibrium, they are rarely equal. The conditions of the reaction (such as temperature or pressure) can be changed to shift the position of equilibrium in a desired direction.' },
             terms: ['Position of equilibrium']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For N₂O₄(g) ⇌ 2NO₂(g), both species remain present at equilibrium and molecules continue interconverting. If an open container allows gases to escape, the closed-system equilibrium model no longer applies. A catalyst allows equilibrium to be reached sooner but does not alter its position at the same temperature."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not say the reaction “stops”. Do not confuse constant concentrations with equal concentrations, or equilibrium yield with how quickly equilibrium is reached."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is equal at dynamic equilibrium?",
+        "checked": false
+      },
+      {
+        "text": "Must reactant and product concentrations be equal?",
+        "checked": false
+      },
+      {
+        "text": "Why is a closed system needed?",
+        "checked": false
+      },
+      {
+        "text": "How does a catalyst affect equilibrium?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "At dynamic equilibrium, forward and reverse reactions continue at equal rates. Concentrations remain constant, but reactant and product concentrations are not necessarily equal. A closed system prevents reactants or products escaping; equilibrium depends on retaining the reacting system under the stated conditions."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'callout-reversible', prompt: 'What symbol is used to denote a reversible reaction in a chemical equation?' },
-            { id: 'c2', blockId: 'callout-dynamic', prompt: 'State the two main conditions that must be true for a reaction to be described as being in a state of dynamic equilibrium.' },
-            { id: 'c3', blockId: 'callout-dynamic', prompt: 'In a dynamic equilibrium, do the concentrations of the reactants and products have to be equal? Explain.' },
-            { id: 'c4', blockId: 'p-iron-steam', prompt: 'Why must a reaction vessel be closed for a dynamic equilibrium to be established?' },
-            { id: 'c5', blockId: 'p-position', prompt: 'What does it mean if the "position of equilibrium lies to the right"?' }
-        ],
-        summaryText: 'Reversible reactions (⇌) can go both forwards and backwards. In a closed system (where no substances can enter or leave), they reach dynamic equilibrium. Key features: the rate of the forward reaction exactly equals the rate of the backward reaction, meaning the macroscopic concentrations of all species remain perfectly constant. The system is "dynamic" because both reactions are still continuously happening at a microscopic level. The *position of equilibrium* describes the relative proportions of products to reactants: if it lies to the right, products dominate.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is equal at dynamic equilibrium?",
+      "answer": "The rates of the forward and reverse reactions."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Must reactant and product concentrations be equal?",
+      "answer": "No. They remain constant with time but can have different values."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is a closed system needed?",
+      "answer": "Reactants and products must remain in the system rather than escaping."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "How does a catalyst affect equilibrium?",
+      "answer": "It speeds both directions and the approach to equilibrium, without changing the equilibrium position at fixed temperature."
+    }
+  ],
+  "summaryText": "At dynamic equilibrium, forward and reverse reactions continue at equal rates. Concentrations remain constant, but reactant and product concentrations are not necessarily equal. A closed system prevents reactants or products escaping; equilibrium depends on retaining the reacting system under the stated conditions.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_9_5;

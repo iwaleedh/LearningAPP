@@ -8,6 +8,21 @@ export const note_chemistry_5_20_0 = {
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Recover an empirical formula from combustion data",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Complete combustion converts carbon to CO₂ and hydrogen to H₂O. One mole of CO₂ gives one mole of carbon atoms, while one mole of H₂O gives two moles of hydrogen atoms. If a sample is known to contain only C, H and O, find oxygen mass by subtracting the masses of carbon and hydrogen from the sample mass. Then convert all element masses to moles and obtain the simplest whole-number ratio.<br/><br/>This gives an empirical formula. A molecular formula also needs Mᵣ or another molecular-mass measurement. Do not infer oxygen by difference if the sample may contain other elements or combustion is incomplete. Keep unrounded intermediate values when finding a ratio."
+  }
+},
+{
       id: 'h-combustion-overview',
       type: 'heading',
       data: { text: 'Combustion Analysis Overview', level: 2 }
@@ -206,13 +221,6 @@ export const note_chemistry_5_20_0 = {
       terms: []
     },
     {
-      id: 'summary-formula',
-      type: 'summary',
-      data: {
-        text: 'Combustion analysis + molar mass → molecular formula. Calculate degree of unsaturation (DoU) to count the number of C=C/C≡C/rings present. DoU = (2C + 2 + N − H − X) / 2. Empirical formula × multiplier (n) = molecular formula.'
-      }
-    },
-    {
       id: 'callout-tip-1',
       type: 'callout',
       data: {
@@ -221,39 +229,89 @@ export const note_chemistry_5_20_0 = {
         text: "0.620 g organic (C, H, O) burned \u2192 1.232 g CO\u2082, 0.504 g H\u2082O. Moles C = 1.232\u00f744 = 0.0280 mol; moles H = (0.504\u00f718) \u00d7 2 = 0.0560 mol; mass O by difference = 0.620 \u2212 0.336 \u2212 0.0560 = 0.228 g \u2192 0.01425 mol. Ratio 0.0280:0.0560:0.01425 = 2:4:1 \u2192 empirical C\u2082H\u2084O."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "A 0.300 g C/H/O sample gives 0.440 g CO₂ and 0.180 g H₂O. n(C) = 0.440/44.0 = 0.0100 mol, mass C = 0.120 g. n(H) = 2 × 0.180/18.0 = 0.0200 mol, mass H = 0.0200 g. Oxygen mass = 0.300 − 0.120 − 0.0200 = 0.160 g; n(O) = 0.0100 mol. Ratio C:H:O = 1:2:1, so empirical formula is <strong>CH₂O</strong>. If Mᵣ = 60.0, the molecular formula is C₂H₄O₂."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "The hydrogen mole amount is twice the water mole amount. Do not treat CO₂ mass as carbon mass or assume the empirical formula must be the molecular formula."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "How are moles of carbon found from CO₂?",
+        "checked": false
+      },
+      {
+        "text": "How are moles of hydrogen atoms found from H₂O?",
+        "checked": false
+      },
+      {
+        "text": "When can oxygen mass be calculated by difference?",
+        "checked": false
+      },
+      {
+        "text": "How is a molecular formula obtained from an empirical formula?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Complete combustion converts carbon to CO₂ and hydrogen to H₂O. One mole of CO₂ gives one mole of carbon atoms, while one mole of H₂O gives two moles of hydrogen atoms. If a sample is known to contain only C, H and O, find oxygen mass by subtracting the masses of carbon and hydrogen from the sample mass. Then convert all element masses to moles and obtain the simplest whole-number ratio."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-combustion-intro',
-        prompt: 'What are the three main products of combustion analysis and how are they absorbed?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'eq-dou-formula',
-        prompt: 'Write the degree of unsaturation formula and explain what each variable represents.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'eq-molecular-formula',
-        prompt: 'How do you calculate the multiplier n to convert empirical formula to molecular formula?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'callout-molecular-worked',
-        prompt: 'If empirical formula is CH₂O (Mr=30) and molar mass is 60, what is the molecular formula and its DoU?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'list-dou-interpretation',
-        prompt: 'What does DoU = 1 mean, and what does DoU = 4 usually indicate?'
-      }
-    ],
-    summaryText: 'Combustion analysis gives empirical formula from elemental composition. Mass spectrometry provides molar mass (M⁺). Molecular formula = empirical formula × n, where n = M / Mr. Degree of unsaturation = (2C + 2 + N − H − X) / 2.',
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "How are moles of carbon found from CO₂?",
+      "answer": "n(C) = n(CO₂) = mass(CO₂)/44.0 for the stated molar mass."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "How are moles of hydrogen atoms found from H₂O?",
+      "answer": "n(H) = 2n(H₂O)."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "When can oxygen mass be calculated by difference?",
+      "answer": "When the sample is known to contain only C, H and O and the combustion measurements are suitable."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "How is a molecular formula obtained from an empirical formula?",
+      "answer": "Divide Mᵣ by the empirical formula mass to find the multiplier for all subscripts."
+    }
+  ],
+  "summaryText": "Complete combustion converts carbon to CO₂ and hydrogen to H₂O. One mole of CO₂ gives one mole of carbon atoms, while one mole of H₂O gives two moles of hydrogen atoms. If a sample is known to contain only C, H and O, find oxygen mass by subtracting the masses of carbon and hydrogen from the sample mass. Then convert all element masses to moles and obtain the simplest whole-number ratio.",
+  "ready": true
+},
   evidence: [
     {
       id: 'ev-1',
@@ -263,5 +321,5 @@ export const note_chemistry_5_20_0 = {
       source: 'A-Level Chemistry Specification (WCH15)',
       tags: ['combustion', 'empirical', 'analysis']
     }
-  ]
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };

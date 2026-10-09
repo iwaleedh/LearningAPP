@@ -12,6 +12,21 @@ export const note_chemistry_2_8_5 = {
             terms: []
         },
         {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Keep the observation separate from the inference",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Write the visible observation before naming the inferred ion. In flame tests, use clean apparatus and avoid sodium contamination, which can give a strong yellow colour and mask others. Typical colours include Li⁺ crimson red, Na⁺ yellow, K⁺ lilac, Ca²⁺ orange-red and Ba²⁺ apple green. Refer to the specified ions and conditions rather than treating a colour as universally unique.<br/><br/>For hydroxide precipitation tests, add aqueous NaOH dropwise and then in excess, recording both stages. Cu²⁺ gives a blue precipitate, Fe²⁺ a green precipitate and Fe³⁺ a red-brown precipitate. NH₄⁺ is tested by warming with NaOH and detecting ammonia with damp red litmus paper. Ammonia should not be identified by direct smelling."
+  }
+},
+{
             id: 'h-procedure',
             type: 'heading',
             data: { text: 'Flame Test Procedure', level: 2 },
@@ -87,20 +102,89 @@ export const note_chemistry_2_8_5 = {
             },
             terms: ['Ammonium ion', 'Litmus paper']
         }
-    ],
+    ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Adding NaOH(aq) to a copper(II) solution gives a blue precipitate: <strong>Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)</strong>. The observation is “a blue precipitate forms”; the inference is “Cu²⁺ may be present”. Additional results may be needed to identify an unknown mixture confidently."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "“Copper is blue” is not an observation of the test. Describe the physical change and reagent. Distinguish a precipitate from a solution changing colour, and record what happens in excess reagent."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What is the sodium flame colour?",
+        "checked": false
+      },
+      {
+        "text": "Write the ionic equation for the copper(II) hydroxide test.",
+        "checked": false
+      },
+      {
+        "text": "How is ammonium tested?",
+        "checked": false
+      },
+      {
+        "text": "Why record results both dropwise and in excess?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Write the visible observation before naming the inferred ion. In flame tests, use clean apparatus and avoid sodium contamination, which can give a strong yellow colour and mask others. Typical colours include Li⁺ crimson red, Na⁺ yellow, K⁺ lilac, Ca²⁺ orange-red and Ba²⁺ apple green. Refer to the specified ions and conditions rather than treating a colour as universally unique."
+  }
+}
+  ],
     recall: {
-        enabled: true,
-        cues: [
-            { id: 'c1', blockId: 'list-procedure', prompt: 'Why is the nichrome wire dipped in concentrated HCl before picking up the sample in a flame test?' },
-            { id: 'c2', blockId: 'callout-cause', prompt: 'Explain, in terms of electrons, why heating a metal compound produces a flame colour.' },
-            { id: 'c3', blockId: 'callout-drawbacks', prompt: 'Give two reasons or drawbacks as to why flame tests can be an unreliable method of ion identification.' },
-            { id: 'c4', blockId: 'table-colours', prompt: 'State the flame test colours for: Lithium, Sodium, Potassium, Calcium, and Barium.' },
-            { id: 'c5', blockId: 'table-colours', prompt: 'Why does magnesium not produce a visible flame colour?' },
-            { id: 'c6', blockId: 'callout-ammonium', prompt: 'Describe the chemical test for ammonium ions (NH₄⁺) and state the expected observation.' }
-        ],
-        summaryText: 'Flame tests: clean nichrome wire with conc. HCl, dip in solid, place in blue flame. Heat excites electrons to higher levels; they emit a photon as they drop back to ground state. If that photon\'s wavelength is in the visible region, we see a colour. Colours: Li (red), Na (yellow), K (lilac), Ca (brick-red), Sr (crimson), Ba (apple-green). Mg emits in the UV range (no visible colour). Test for NH₄⁺: add warm NaOH(aq), ammonia gas is evolved which turns damp red litmus blue.',
-        ready: false
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What is the sodium flame colour?",
+      "answer": "Yellow. Sodium contamination can mask another flame colour."
     },
-    evidence: []
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Write the ionic equation for the copper(II) hydroxide test.",
+      "answer": "Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "How is ammonium tested?",
+      "answer": "Warm with aqueous NaOH; evolved ammonia turns damp red litmus paper blue."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why record results both dropwise and in excess?",
+      "answer": "Some precipitates dissolve in excess reagent, providing extra identification evidence."
+    }
+  ],
+  "summaryText": "Write the visible observation before naming the inferred ion. In flame tests, use clean apparatus and avoid sodium contamination, which can give a strong yellow colour and mask others. Typical colours include Li⁺ crimson red, Na⁺ yellow, K⁺ lilac, Ca²⁺ orange-red and Ba²⁺ apple green. Refer to the specified ions and conditions rather than treating a colour as universally unique.",
+  "ready": true
+},
+    evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_2_8_5;

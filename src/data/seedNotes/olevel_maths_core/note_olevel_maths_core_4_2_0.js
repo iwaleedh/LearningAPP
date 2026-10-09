@@ -58,7 +58,7 @@ export const note_olevel_maths_core_4_2_0 = {
       id: 'svg-triangle',
       type: 'svg',
       data: {
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" width="520" height="210">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 231" width="520" height="210">
   <style>
     text { font-family: sans-serif; font-size: 12px; fill: #374151; }
     .lbl { font-weight: 700; font-size: 13px; fill: #3b82f6; }

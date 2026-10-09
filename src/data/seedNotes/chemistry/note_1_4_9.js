@@ -1,7 +1,22 @@
 export const note_chemistry_1_4_9 = {
   blocks: [
     { id: 'obj', type: 'objective', data: { text: 'Describe fractional distillation of crude oil; explain how fractions are used as fuels and relate the process to intermolecular forces.' } },
-    { id: 'h-crude', type: 'heading', data: { text: 'Crude Oil — Composition', level: 2 } },
+    {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Relate boiling ranges to the temperature gradient",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Fractional distillation sorts components by volatility. A distillation column has a temperature gradient: hotter below, cooler above. A component condenses in a region whose temperature falls below its boiling range. Long-chain hydrocarbons generally have stronger London attractions and higher boiling ranges, so they condense lower down. Shorter-chain components remain vapour farther up.<br/><br/>A refinery fraction has a range of chain lengths and boiling temperatures. As average chain length increases, viscosity generally increases and volatility decreases. Flammability in practical handling also depends on vapour formation and conditions; boiling-point data help explain why lighter fractions ignite more readily. Separation does not alter the molecular formulae; further processes such as cracking do."
+  }
+},
+{ id: 'h-crude', type: 'heading', data: { text: 'Crude Oil — Composition', level: 2 } },
     { id: 'h-fractional', type: 'heading', data: { text: 'Fractional Distillation', level: 2 } },
     { id: 'callout-key-fd', type: 'callout', data: { style: 'key', title: 'Fractional Distillation — Principle', text: 'Crude oil is separated by fractional distillation in a fractionating column. The mixture is heated to vaporise it, then vapours rise up the column and condense at different heights according to their boiling points. Shorter-chain alkanes have lower boiling points (weaker London forces) and condense near the top; longer-chain alkanes condense near the bottom.' } },
     { id: 'svg-column', type: 'svg', data: { svg: `<svg viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
@@ -31,7 +46,7 @@ export const note_chemistry_1_4_9 = {
   <rect x="120" y="350" width="80" height="15" fill="#1f2937" rx="3"/>
   <text x="160" y="377" text-anchor="middle" font-size="11" fill="#374151">Bitumen residue (C₅₀+) — road surfacing</text>
   <rect x="110" y="380" width="100" height="28" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="160" y="399" text-anchor="middle" font-size="11" fill="#991b1b">Furnace — heat crude oil</text>
+  <text x="160" y="399" text-anchor="middle" font-size="11" fill="#f8fafc" style="fill:#f8fafc">Furnace — heat crude oil</text>
 </svg>`, caption: 'Fractionating column: crude oil heated at bottom, fractions condense at different heights based on boiling point.' } },
     { id: 'h-fractions', type: 'heading', data: { text: 'Main Fractions and Their Uses', level: 2 } },
     { id: 'svg-fractions', type: 'svg', data: { svg: `<svg viewBox="0 0 580 302" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
@@ -169,21 +184,91 @@ export const note_chemistry_1_4_9 = {
         text: "Examiners often ask why fractions separate. You must explicitly state that they have <strong>different boiling points</strong> due to differing chain lengths and consequently different London force strengths."
       }
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "If fraction A condenses near the bottom while fraction B condenses near the top, A generally has the higher boiling range and larger average molecules. More electrons and greater polarisability strengthen its London attractions. It therefore needs more energy for molecular separation. This explains the position in the column without claiming different C–C bond strengths."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not treat every fraction as one pure alkane or label a column “hotter at the top”. A change in physical state is distinct from cracking or combustion."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Which end of the column is hotter?",
+        "checked": false
+      },
+      {
+        "text": "Why do heavier fractions tend to condense lower down?",
+        "checked": false
+      },
+      {
+        "text": "Why is a fraction not assigned one exact molecular formula?",
+        "checked": false
+      },
+      {
+        "text": "Does fractional distillation break C–C bonds?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Fractional distillation sorts components by volatility. A distillation column has a temperature gradient: hotter below, cooler above. A component condenses in a region whose temperature falls below its boiling range. Long-chain hydrocarbons generally have stronger London attractions and higher boiling ranges, so they condense lower down. Shorter-chain components remain vapour farther up."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    summaryText: 'Crude oil separated by FD (physical process). Short chains: low b.p., top of column. Long chains: high b.p., bottom. Cracking (chemical) converts long chains to alkenes + branched alkanes. Catalytic cracking: zeolite, 500°C, carbocations. Thermal cracking: 400–900°C, free radicals. Isomerisation: Pt/zeolite, 250°C, straight to branched. Reforming: Pt/Al₂O₃, 500°C, produces aromatics + H₂.',
-    cues: [
-      { id: 'cue-1', blockId: 'callout-key-fd', prompt: 'What is the principle behind fractional distillation of crude oil? Why do fractions condense at different heights?' },
-      { id: 'cue-2', blockId: 'svg-fractions', prompt: 'Name the 7 main fractions from crude oil distillation in order from top to bottom of the column.' },
-      { id: 'cue-3', blockId: 'svg-cracking', prompt: 'Compare thermal and catalytic cracking: conditions, catalyst, mechanism, and main products.' },
-      { id: 'cue-4', blockId: 'callout-cracking-mechanisms', prompt: 'What type of intermediate forms in catalytic cracking? What type forms in thermal cracking?' },
-      { id: 'cue-5', blockId: 'svg-iso-reform', prompt: 'State the catalyst and temperature for isomerisation and reforming. What does each process convert?' }
-    ],
-    ready: false
-  },
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Which end of the column is hotter?",
+      "answer": "The lower region."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why do heavier fractions tend to condense lower down?",
+      "answer": "Their stronger London attractions give higher boiling ranges, so they condense before reaching cooler upper regions."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why is a fraction not assigned one exact molecular formula?",
+      "answer": "It contains a mixture of hydrocarbons within a boiling range."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Does fractional distillation break C–C bonds?",
+      "answer": "No. It is physical separation based on volatility, not cracking."
+    }
+  ],
+  "summaryText": "Fractional distillation sorts components by volatility. A distillation column has a temperature gradient: hotter below, cooler above. A component condenses in a region whose temperature falls below its boiling range. Long-chain hydrocarbons generally have stronger London attractions and higher boiling ranges, so they condense lower down. Shorter-chain components remain vapour farther up.",
+  "ready": true
+},
   evidence: [
     { id: 'ev-1', title: 'Edexcel WCH11 Specification', detail: 'Fractional distillation, cracking, isomerisation and reforming are required content for Topic 4.', year: '2018', source: 'Pearson Edexcel', tags: ['fractional distillation', 'cracking', 'isomerisation'] }
-  ],
+  , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

@@ -42,7 +42,7 @@ export const note_olevel_biology_17_17_0 = {
   <text x="212" y="86" text-anchor="middle" fill="#e65100" font-weight="bold" font-size="11">Gene</text>
   <text x="212" y="100" text-anchor="middle" fill="#e65100" font-size="10">section of DNA</text>
   <text x="212" y="112" text-anchor="middle" fill="#888" font-size="10">→ codes for a protein</text>
-  <text x="212" y="140" text-anchor="middle" fill="#555" font-size="11">e.g. gene for eye colour</text>
+  <text x="212" y="166" text-anchor="middle" fill="#555" font-size="11">e.g. gene for eye colour</text>
   <!-- Arrow -->
   <line x1="253" y1="90" x2="278" y2="90" stroke="#555" stroke-width="1.5"/>
   <!-- Alleles -->

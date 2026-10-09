@@ -13,7 +13,6 @@ import { oLevelPhysicsSyllabus } from './oLevelPhysicsSyllabus.js';
 import { oLevelBusinessSyllabus } from './oLevelBusinessSyllabus.js';
 import { oLevelMathsCoreSyllabus } from './oLevelMathsCoreSyllabus.js';
 import { oLevelMathsExtendedSyllabus } from './oLevelMathsExtendedSyllabus.js';
-import { igcsePhysicsSyllabus } from './igcsePhysicsSyllabus.js';
 
 export const syllabusesBySubject = {
     accounting: accountingSyllabus,
@@ -32,7 +31,6 @@ export const syllabusesBySubject = {
     olevel_business: oLevelBusinessSyllabus,
     olevel_maths_core: oLevelMathsCoreSyllabus,
     olevel_maths_extended: oLevelMathsExtendedSyllabus,
-    'igcse-physics': igcsePhysicsSyllabus,
 };
 
 export function getSyllabusBySubject(subject) {

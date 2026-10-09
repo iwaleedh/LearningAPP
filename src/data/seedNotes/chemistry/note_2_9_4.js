@@ -151,14 +151,14 @@ export const note_chemistry_2_9_4 = {
 
     <line x1="230" y1="220" x2="230" y2="95" stroke="#10B981" stroke-width="1" stroke-dasharray="3,3" />
     <path d="M 230 220 L 230 95" fill="none" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-green)" marker-start="url(#arrow-start-green)" />
-    <text x="235" y="145" font-family="sans-serif" font-size="14" fill="#10B981">Eₐ (catalysed)</text>
+    <text x="235" y="145" font-family="sans-serif" font-size="14" fill="#0f172a" style="fill:#0f172a">Eₐ (catalysed)</text>
 
     <!-- Overall Enthalpy Change -->
     <line x1="180" y1="220" x2="285" y2="220" stroke="var(--color-text)" stroke-width="1" stroke-dasharray="2,2" />
     <path d="M 450 220 L 450 280" fill="none" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#arrow-primary)" marker-start="url(#arrow-start-primary)" />
     <text x="460" y="255" font-family="sans-serif" font-size="16" fill="var(--color-primary)">ΔH</text>
 
-    <text x="310" y="185" font-family="sans-serif" font-size="13" fill="#10B981">Intermediate</text>
+    <text x="310" y="185" font-family="sans-serif" font-size="13" fill="#0f172a" style="fill:#0f172a">Intermediate</text>
 
     <defs>
         <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">

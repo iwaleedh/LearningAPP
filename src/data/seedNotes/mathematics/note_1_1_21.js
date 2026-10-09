@@ -139,10 +139,10 @@ export const note_mathematics_1_1_21 = {
     recall: {
         enabled: true,
         cues: [
-            { id: 'cue-1', blockId: 'p-key', prompt: 'What do the intersection points of y = f(x) and y = g(x) represent algebraically?' },
+            { id: 'cue-1', blockId: 'list-key', prompt: 'What do the intersection points of y = f(x) and y = g(x) represent algebraically?' },
             { id: 'cue-2', blockId: 'worked-1', prompt: 'Solve x² = x + 2 graphically and explain the method.' },
             { id: 'cue-3', blockId: 'worked-2', prompt: 'For what value of k does y = k touch y = x² − 4x + 5 exactly once?' },
-            { id: 'cue-4', blockId: 'p-disc', prompt: 'How does the discriminant relate to the number of graphical intersections?' }
+            { id: 'cue-4', blockId: 'list-disc', prompt: 'How does the discriminant relate to the number of graphical intersections?' }
         ],
         summaryText: 'Graphical solution: intersection x-coordinates of y=f(x) and y=g(x). Number of intersections = number of solutions. Δ=0 means tangent (one solution). Δ>0: 2 solutions; Δ<0: no solutions.',
         ready: true

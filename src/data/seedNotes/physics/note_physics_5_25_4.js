@@ -13,7 +13,7 @@ export const note_physics_5_25_4 = {
       { text: "The pressure is read directly from the gauge or pressure sensor." },
       { text: "Vernier callipers or the volume scale on the syringe." },
       { text: "Oil may be used to seal the gas and provide a smooth compression." },
-      { text: "Temperature is kept constant by performing measurements quickly or by using a thermostat bath." }
+      { text: "Temperature is kept constant by compressing slowly, allowing the gas to return to the bath or room temperature before each reading, or using a thermostat bath. Rapid compression heats the gas." }
     ] } },
     { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#0f172a"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Boyle\'s Law Apparatus</text><rect x="100" y="50" width="200" height="80" rx="4" fill="none" stroke="#495057" stroke-width="2"/><rect x="100" y="50" width="80" height="80" fill="#1c3a64" stroke="#339af0" stroke-width="1"/><text x="140" y="93" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">Gas (V)</text><rect x="175" y="55" width="10" height="70" fill="#868e96" stroke="#495057" stroke-width="1"/><text x="180" y="45" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Piston</text><line x1="185" y1="90" x2="250" y2="90" stroke="#495057" stroke-width="2"/><polygon points="250,90 242,85 242,95" fill="#495057"/><text x="270" y="75" font-family="sans-serif" font-size="10" fill="#495057">Pressure</text><text x="270" y="88" font-family="sans-serif" font-size="10" fill="#495057">sensor</text><text x="270" y="102" font-family="sans-serif" font-size="10" fill="#495057">or gauge</text><text x="140" y="115" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">p &#8593; as V &#8595;</text><text x="200" y="150" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Push piston in &#8594; volume decreases &#8594; pressure increases</text><text x="200" y="165" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Temperature held constant throughout</text></svg>', caption: 'Boyle\'s Law apparatus: gas compressed by piston; pressure measured by sensor/gauge; temperature kept constant.' } },
     { id: 'para-4', type: 'list', data: { style: 'bullet', items: [
@@ -45,8 +45,8 @@ export const note_physics_5_25_4 = {
     ] } },
     { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
       { text: "Worked Example Check A gas has pressure 100 kPa and volume 200 cm³ at 20°C." },
-      { text: "Verify Boyle's Law if at the same temperature the pressure increases to 250 kPa. p₁V₁ = 100 × 10³ × 200 × 10⁻⁶ = 0.020 Pa m³" },
-      { text: "New volume: V₂ = p₁V₁ / p₂ = 0.020 / (250 × 10³) = 8.0 × 10⁻⁵ m³ = 80 cm³" },
+      { text: "Verify Boyle's Law if at the same temperature the pressure increases to 250 kPa. p₁V₁ = 100 × 10³ × 200 × 10⁻⁶ = 20.0 Pa m³" },
+      { text: "New volume: V₂ = p₁V₁ / p₂ = 20.0 / (250 × 10³) = 8.0 × 10⁻⁵ m³ = 80 cm³" },
       { text: "The volume should be 80 cm³" },
       { text: "If this is observed experimentally, Boyle's Law is confirmed." }
     ] } },

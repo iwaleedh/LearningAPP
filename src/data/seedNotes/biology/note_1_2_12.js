@@ -59,15 +59,6 @@ export const note_biology_1_2_12 = {
         "title": "Semi-Conservative Replication",
         "text": "Define this as: each replicated DNA molecule contains one original 'parent' strand and one newly synthesised strand. Examiners look for these exact terms."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Semi-Conservative Replication",
-        "text": "Define this as: each replicated DNA molecule contains one original 'parent' strand and one newly synthesised strand. Examiners look for these exact terms."
-      }
     }
   ],
   "recall": {

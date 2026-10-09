@@ -1,7 +1,22 @@
 export const note_chemistry_5_16_4 = {
   blocks: [
     { type: 'objective', id: 'obj-1', data: { text: 'Calculate E°cell from electrode potentials, identify anode and cathode, and work through multiple examples with different metal pairs.' } },
-    { type: 'heading', id: 'h-formula', data: { text: 'Cell EMF Formula', level: 2 } },
+    {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Use reduction potentials consistently",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Standard electrode potentials are tabulated as reduction potentials. The more positive half-cell undergoes reduction in the spontaneous standard cell; the less positive one is reversed and undergoes oxidation. Calculate E°cell = E°(reduction at cathode) − E°(reduction potential of anode). Electrons flow through the external circuit from the oxidation electrode to the reduction electrode.<br/><br/>Multiply half-equations to balance electrons when forming the overall equation, but do <strong>not</strong> multiply electrode potentials. Potential is an intensive quantity. The salt bridge allows ion migration to maintain electrical neutrality; it does not transport electrons through the solution. A positive standard emf predicts thermodynamic feasibility under standard conditions, not a fast reaction."
+  }
+},
+{ type: 'heading', id: 'h-formula', data: { text: 'Cell EMF Formula', level: 2 } },
     { type: 'equation', id: 'eq-emf', data: { html: 'E°<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub>', caption: 'Standard cell emf' } },
     { type: 'paragraph', id: 'p-intro', data: { text: 'E°cathode is the standard potential of reduction (more positive electrode). E°anode is the standard potential of oxidation (more negative electrode). Always subtract more negative from more positive, giving positive E°cell for spontaneous reactions.' } },
     { type: 'callout', id: 'callout-key-1', data: { style: 'key', title: 'Key Rule: More Positive Minus More Negative', text: 'The electrode with higher (more positive) E° value is cathode (reduction). The electrode with lower (more negative) E° value is anode (oxidation). E°cell = E°(more positive) − E°(more negative) = always positive for spontaneous reaction.' } },
@@ -25,8 +40,88 @@ export const note_chemistry_5_16_4 = {
       },
       terms: []
     },
-    { type: 'summary', id: 'summary-1', data: { text: 'E°cell = E°cathode − E°anode. Cathode has higher (more positive) E°; anode has lower (more negative) E°. Examples: Zn/Cu +1.10 V, Fe/Ag +1.24 V, Zn/Ag +1.56 V. Always subtract more negative from more positive to get positive E°cell for spontaneous reactions. Positive E°cell indicates spontaneous galvanic cell.' } },
+
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "For Cu²⁺/Cu = +0.34 V and Zn²⁺/Zn = −0.76 V, copper is reduced and zinc oxidised. E°cell = 0.34 − (−0.76) = <strong>+1.10 V</strong>. Overall: Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s). Zinc is the negative electrode in this galvanic cell and supplies electrons to copper through the wire."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not reverse a half-equation and then subtract an already reversed potential a second time. Do not multiply volts when multiplying an equation to balance electrons."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Which half-cell is reduced in the spontaneous standard cell?",
+        "checked": false
+      },
+      {
+        "text": "Why are electrode potentials not multiplied with half-equations?",
+        "checked": false
+      },
+      {
+        "text": "What is E°cell for Cu²⁺/Cu +0.34 V and Zn²⁺/Zn −0.76 V?",
+        "checked": false
+      },
+      {
+        "text": "What passes through the salt bridge?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Standard electrode potentials are tabulated as reduction potentials. The more positive half-cell undergoes reduction in the spontaneous standard cell; the less positive one is reversed and undergoes oxidation. Calculate E°cell = E°(reduction at cathode) − E°(reduction potential of anode). Electrons flow through the external circuit from the oxidation electrode to the reduction electrode."
+  }
+}
   ],
-  recall: { enabled: true, cues: [ { id: 'cue-1', blockId: 'eq-emf', prompt: 'Write the formula for E°cell.' }, { id: 'cue-2', blockId: 'callout-key-1', prompt: 'Which electrode has the higher E° value?' }, { id: 'cue-3', blockId: 'callout-worked-1', prompt: 'Calculate E°cell for Zn/Cu.' }, { id: 'cue-4', blockId: 'list-signs', prompt: 'If both E° are negative, how do you handle the subtraction?' }, { id: 'cue-5', blockId: 'callout-tip-1', prompt: 'What does a positive E°cell tell you?' } ], summaryText: 'E°cell = E°cathode − E°anode. Cathode = more positive E°; anode = more negative E°. Examples: Zn/Cu +1.10 V, Fe/Ag +1.24 V, Zn/Ag +1.56 V. Positive E°cell = spontaneous galvanic cell.', ready: false },
-  evidence: [ { id: 'ev-1', title: 'E°cell calculations and electrode identification', detail: 'Formula, anode/cathode identification, worked examples, sign handling.', year: '2024', source: 'chemguide.co.uk', tags: ['E°cell', 'cell emf', 'anode', 'cathode'] } ],
+  recall: {
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Which half-cell is reduced in the spontaneous standard cell?",
+      "answer": "The one with the more positive standard reduction potential."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why are electrode potentials not multiplied with half-equations?",
+      "answer": "Potential is intensive and does not scale with the amount reacting."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "What is E°cell for Cu²⁺/Cu +0.34 V and Zn²⁺/Zn −0.76 V?",
+      "answer": "+1.10 V for zinc oxidation coupled to copper(II) reduction."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "What passes through the salt bridge?",
+      "answer": "Ions, which maintain electrical neutrality; electrons travel through the external circuit."
+    }
+  ],
+  "summaryText": "Standard electrode potentials are tabulated as reduction potentials. The more positive half-cell undergoes reduction in the spontaneous standard cell; the less positive one is reversed and undergoes oxidation. Calculate E°cell = E°(reduction at cathode) − E°(reduction potential of anode). Electrons flow through the external circuit from the oxidation electrode to the reduction electrode.",
+  "ready": true
+},
+  evidence: [ { id: 'ev-1', title: 'E°cell calculations and electrode identification', detail: 'Formula, anode/cathode identification, worked examples, sign handling.', year: '2024', source: 'chemguide.co.uk', tags: ['E°cell', 'cell emf', 'anode', 'cathode'] } , {"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
 };

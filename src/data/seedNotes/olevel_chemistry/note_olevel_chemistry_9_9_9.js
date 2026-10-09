@@ -39,7 +39,7 @@ export const note_olevel_chemistry_9_9_9 = {
       type: 'svg',
       data: {
         caption: 'Electrolysis of molten aluminium oxide dissolved in cryolite.',
-        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-29 0 653 350">
     <defs>
         <style>
             .steel { fill: rgba(149, 165, 166, 0.4); stroke: var(--color-text); stroke-width: 2; }

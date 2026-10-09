@@ -8,8 +8,8 @@ export const note_olevel_physics_6_2_4 = {
     { id: 'call-def', type: 'callout', data: { style: 'key', title: 'Dark Energy', text: 'Dark energy is a hypothetical form of energy pervading all of space that is responsible for the observed accelerating expansion of the universe. It acts against gravity, driving galaxies apart faster and faster over time. Its nature is completely unknown.' } },
     { id: 'h-composition', type: 'heading', data: { text: 'Composition of the Universe', level: 2 } },
     { id: 'para-comp', type: 'paragraph', data: { text: "Based on all current observations (CMB anisotropy, galaxy surveys, supernova data), the universe's total energy–mass content is divided as follows:" } },
-    { id: 'svg-pie', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260" width="380" height="260">
-  <rect width="380" height="260" fill="#0f172a" rx="8"/>
+    { id: 'svg-pie', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 293" width="380" height="260">
+  <rect width="380" height="293" fill="#0f172a" rx="8"/>
   <text x="190" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Composition of the Universe</text>
   <!-- Pie chart: Dark energy 68%, Dark matter 27%, Ordinary matter 5% -->
   <!-- Dark energy slice: 68% = 244.8 degrees from 270° to 154.8° (going clockwise from top) -->
@@ -35,7 +35,7 @@ export const note_olevel_physics_6_2_4 = {
   <line x1="138" y1="235" x2="210" y2="250" stroke="#fbbf24" stroke-width="1.5"/>
   <text x="213" y="247" font-size="12" fill="#78350f" font-weight="bold">Ordinary Matter</text>
   <text x="265" y="260" font-size="11" fill="#44370a">5%</text>
-  <text x="213" y="260" font-size="9" fill="#94a3b8">(all atoms, stars, gas)</text>
+  <text x="213" y="282" font-size="9" fill="#94a3b8">(all atoms, stars, gas)</text>
 </svg>`, caption: 'The universe is composed of ~68% dark energy, ~27% dark matter, and only ~5% ordinary (baryonic) matter.' } },
     { id: 'tbl-comp', type: 'comparisonTable', data: { caption: 'Components of the universe', headers: ['Component', 'Fraction', 'Description'], rows: [
       ['Dark energy', '~68%', 'Unknown form of energy; causes accelerating expansion; uniformly distributed in space'],

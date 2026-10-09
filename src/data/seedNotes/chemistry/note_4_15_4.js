@@ -90,42 +90,42 @@ export const note_chemistry_4_15_4 = {
   </defs>
   <text x="325" y="17" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Reduction of Ethanal by NaBH&#8324; &#8212; Simplified 2-Step Mechanism (A-level)</text>
   <rect x="8" y="26" width="634" height="130" rx="5" fill="#1c3a64" stroke="#bfdbfe" stroke-width="1.2"/>
-  <text x="18" y="43" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 1: H&#8315; (hydride ion, from BH&#8324;&#8315;) attacks the &#948;&#8314; carbon of the C=O bond</text>
+  <text x="18" y="43" text-anchor="start" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Step 1: H&#8315; (hydride ion, from BH&#8324;&#8315;) attacks the &#948;&#8314; carbon of the C=O bond</text>
   <circle cx="25" cy="91" r="2.5" fill="#111827"/>
   <circle cx="25" cy="98" r="2.5" fill="#111827"/>
-  <text x="54" y="97" text-anchor="middle" fill="#111827" font-size="16">:H&#8315;</text>
-  <text x="54" y="113" text-anchor="middle" fill="#6b7280" font-size="11">nucleophile</text>
-  <text x="94" y="97" text-anchor="middle" fill="#374151" font-size="18">+</text>
-  <text x="145" y="97" text-anchor="start" fill="#111827" font-size="16">CH&#8323;</text>
-  <text x="173" y="97" text-anchor="start" fill="#111827" font-size="16">&#8211;CH</text>
-  <text x="180" y="80" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8314;</text>
-  <text x="204" y="97" text-anchor="start" fill="#111827" font-size="16">=O</text>
-  <text x="218" y="80" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8315;</text>
-  <text x="190" y="114" text-anchor="middle" fill="#6b7280" font-size="11">ethanal</text>
+  <text x="54" y="97" text-anchor="middle" fill="#f8fafc" font-size="16" style="fill:#f8fafc">:H&#8315;</text>
+  <text x="54" y="113" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">nucleophile</text>
+  <text x="94" y="97" text-anchor="middle" fill="#f8fafc" font-size="18" style="fill:#f8fafc">+</text>
+  <text x="145" y="97" text-anchor="start" fill="#f8fafc" font-size="16" style="fill:#f8fafc">CH&#8323;</text>
+  <text x="173" y="97" text-anchor="start" fill="#f8fafc" font-size="16" style="fill:#f8fafc">&#8211;CH</text>
+  <text x="180" y="80" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">&#948;&#8314;</text>
+  <text x="204" y="97" text-anchor="start" fill="#f8fafc" font-size="16" style="fill:#f8fafc">=O</text>
+  <text x="218" y="80" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">&#948;&#8315;</text>
+  <text x="190" y="114" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">ethanal</text>
   <path d="M 38 91 Q 98 68 152 90" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-bh4)"/>
-  <text x="258" y="80" text-anchor="middle" fill="#6b7280" font-size="11">Step 1</text>
+  <text x="258" y="80" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Step 1</text>
   <path d="M 244 93 L 290 93" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
-  <text x="396" y="92" text-anchor="middle" fill="#111827" font-size="15">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
+  <text x="396" y="92" text-anchor="middle" fill="#f8fafc" font-size="15" style="fill:#f8fafc">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
   <rect x="306" y="72" width="176" height="36" rx="4" fill="none" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="1.2"/>
   <text x="484" y="71" text-anchor="start" fill="#ef4444" font-weight="bold" font-size="12">[&#8722;]</text>
-  <text x="394" y="122" text-anchor="middle" fill="#6b7280" font-size="11">negatively charged tetrahedral intermediate</text>
+  <text x="394" y="122" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">negatively charged tetrahedral intermediate</text>
   <rect x="8" y="165" width="634" height="148" rx="5" fill="#0a2e1a" stroke="#bbf7d0" stroke-width="1.2"/>
-  <text x="18" y="182" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 2a (add acid): O&#8315; picks up H&#8314; from H&#8314;(aq) &#8212; OR &#8212; Step 2b (add water): O&#8315; takes H&#8314; from H&#8322;O</text>
+  <text x="18" y="182" text-anchor="start" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Step 2a (add acid): O&#8315; picks up H&#8314; from H&#8314;(aq) &#8212; OR &#8212; Step 2b (add water): O&#8315; takes H&#8314; from H&#8322;O</text>
   <rect x="14" y="192" width="300" height="112" rx="4" fill="#1e293b" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="164" y="209" text-anchor="middle" fill="#065f46" font-weight="600" font-size="12">Step 2a &#8212; acid workup</text>
-  <text x="100" y="244" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
-  <text x="190" y="244" text-anchor="middle" fill="#374151" font-size="16">+</text>
-  <text x="232" y="244" text-anchor="middle" fill="#111827" font-size="14">H&#8314;(aq)</text>
+  <text x="164" y="209" text-anchor="middle" fill="#f8fafc" font-weight="600" font-size="12" style="fill:#f8fafc">Step 2a &#8212; acid workup</text>
+  <text x="100" y="244" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
+  <text x="190" y="244" text-anchor="middle" fill="#f8fafc" font-size="16" style="fill:#f8fafc">+</text>
+  <text x="232" y="244" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">H&#8314;(aq)</text>
   <path d="M 246 240 L 286 260" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
-  <text x="164" y="273" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;CH&#8322;OH</text>
+  <text x="164" y="273" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CH&#8323;CH&#8322;OH</text>
   <text x="164" y="291" text-anchor="middle" fill="#6b7280" font-size="11">ethanol (primary alcohol)</text>
   <rect x="330" y="192" width="306" height="112" rx="4" fill="#1e293b" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="483" y="209" text-anchor="middle" fill="#065f46" font-weight="600" font-size="12">Step 2b &#8212; water workup</text>
-  <text x="405" y="244" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
-  <text x="497" y="244" text-anchor="middle" fill="#374151" font-size="16">+</text>
-  <text x="540" y="244" text-anchor="middle" fill="#111827" font-size="14">H&#8322;O</text>
+  <text x="483" y="209" text-anchor="middle" fill="#f8fafc" font-weight="600" font-size="12" style="fill:#f8fafc">Step 2b &#8212; water workup</text>
+  <text x="405" y="244" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
+  <text x="497" y="244" text-anchor="middle" fill="#f8fafc" font-size="16" style="fill:#f8fafc">+</text>
+  <text x="540" y="244" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">H&#8322;O</text>
   <path d="M 551 240 L 591 260" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
-  <text x="483" y="273" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;CH&#8322;OH + OH&#8315;</text>
+  <text x="483" y="273" text-anchor="middle" fill="#f8fafc" font-size="14" style="fill:#f8fafc">CH&#8323;CH&#8322;OH + OH&#8315;</text>
   <text x="483" y="291" text-anchor="middle" fill="#6b7280" font-size="11">ethanol + hydroxide ion</text>
 </svg>`,
         caption: 'Simplified A-level mechanism (H⁻ represents BH4⁻). Step 1: hydride ion lone pair attacks δ⁺ carbon → π electrons shift to O → negatively charged tetrahedral intermediate. Step 2: O⁻ picks up H⁺ from the acidic workup solution (H⁺(aq)) or from water. Both routes give the same primary alcohol product. The same mechanism applies to ketones (→ secondary alcohol).'
@@ -189,38 +189,38 @@ export const note_chemistry_4_15_4 = {
   </defs>
   <text x="325" y="17" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Nucleophilic Addition of HCN to Propanone &#8212; 2-Step Mechanism</text>
   <rect x="8" y="25" width="634" height="130" rx="5" fill="#1c3a64" stroke="#bfdbfe" stroke-width="1.2"/>
-  <text x="18" y="42" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 1: CN&#8315; (nucleophile) attacks the &#948;&#8314; carbon of the C=O bond</text>
+  <text x="18" y="42" text-anchor="start" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Step 1: CN&#8315; (nucleophile) attacks the &#948;&#8314; carbon of the C=O bond</text>
   <circle cx="24" cy="87" r="2.5" fill="#111827"/>
   <circle cx="24" cy="94" r="2.5" fill="#111827"/>
-  <text x="64" y="96" text-anchor="middle" fill="#111827" font-size="16">:CN&#8315;</text>
-  <text x="64" y="112" text-anchor="middle" fill="#6b7280" font-size="11">nucleophile</text>
-  <text x="108" y="96" text-anchor="middle" fill="#374151" font-size="18">+</text>
-  <text x="150" y="96" text-anchor="start" fill="#111827" font-size="16">(CH&#8323;)&#8322;C</text>
-  <text x="196" y="79" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8314;</text>
-  <text x="210" y="96" text-anchor="start" fill="#111827" font-size="16">=O</text>
-  <text x="224" y="79" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8315;</text>
-  <text x="190" y="113" text-anchor="middle" fill="#6b7280" font-size="11">propanone</text>
+  <text x="64" y="96" text-anchor="middle" fill="#f8fafc" font-size="16" style="fill:#f8fafc">:CN&#8315;</text>
+  <text x="64" y="112" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">nucleophile</text>
+  <text x="108" y="96" text-anchor="middle" fill="#f8fafc" font-size="18" style="fill:#f8fafc">+</text>
+  <text x="150" y="96" text-anchor="start" fill="#f8fafc" font-size="16" style="fill:#f8fafc">(CH&#8323;)&#8322;C</text>
+  <text x="196" y="79" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">&#948;&#8314;</text>
+  <text x="210" y="96" text-anchor="start" fill="#f8fafc" font-size="16" style="fill:#f8fafc">=O</text>
+  <text x="224" y="79" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" style="fill:#f8fafc">&#948;&#8315;</text>
+  <text x="190" y="113" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">propanone</text>
   <path d="M 38 87 Q 108 64 145 88" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-hcn)"/>
-  <text x="258" y="79" text-anchor="middle" fill="#6b7280" font-size="11">Step 1</text>
+  <text x="258" y="79" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">Step 1</text>
   <path d="M 244 92 L 290 92" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-hcn)"/>
-  <text x="396" y="91" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
+  <text x="396" y="91" text-anchor="middle" fill="#f8fafc" font-size="15" style="fill:#f8fafc">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
   <rect x="304" y="71" width="174" height="36" rx="4" fill="none" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="1.2"/>
   <text x="480" y="70" text-anchor="start" fill="#ef4444" font-weight="bold" font-size="12">[&#8722;]</text>
-  <text x="390" y="121" text-anchor="middle" fill="#6b7280" font-size="11">negatively charged tetrahedral intermediate</text>
+  <text x="390" y="121" text-anchor="middle" fill="#f8fafc" font-size="11" style="fill:#f8fafc">negatively charged tetrahedral intermediate</text>
   <rect x="8" y="165" width="634" height="140" rx="5" fill="#0a2e1a" stroke="#bbf7d0" stroke-width="1.2"/>
-  <text x="18" y="182" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 2: O&#8315; picks up H&#8314; from HCN (H&#8322;O or H&#8323;O&#8314; also work &#8212; one equation is enough)</text>
-  <text x="100" y="228" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
-  <text x="196" y="228" text-anchor="middle" fill="#374151" font-size="18">+</text>
-  <text x="242" y="228" text-anchor="middle" fill="#111827" font-size="15">H&#8211;CN</text>
+  <text x="18" y="182" text-anchor="start" fill="#f8fafc" font-weight="bold" font-size="12" style="fill:#f8fafc">Step 2: O&#8315; picks up H&#8314; from HCN (H&#8322;O or H&#8323;O&#8314; also work &#8212; one equation is enough)</text>
+  <text x="100" y="228" text-anchor="middle" fill="#f8fafc" font-size="15" style="fill:#f8fafc">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
+  <text x="196" y="228" text-anchor="middle" fill="#f8fafc" font-size="18" style="fill:#f8fafc">+</text>
+  <text x="242" y="228" text-anchor="middle" fill="#f8fafc" font-size="15" style="fill:#f8fafc">H&#8211;CN</text>
   <text x="100" y="245" text-anchor="middle" fill="#6b7280" font-size="11">intermediate</text>
   <text x="242" y="245" text-anchor="middle" fill="#6b7280" font-size="11">proton donor</text>
   <path d="M 174 225 Q 202 209 222 225" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-hcn)"/>
   <text x="278" y="217" text-anchor="middle" fill="#6b7280" font-size="11">Step 2</text>
   <path d="M 264 228 L 308 228" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-hcn)"/>
-  <text x="432" y="216" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;OH</text>
+  <text x="432" y="216" text-anchor="middle" fill="#f8fafc" font-size="15" style="fill:#f8fafc">(CH&#8323;)&#8322;C(CN)&#8211;OH</text>
   <text x="432" y="232" text-anchor="middle" fill="#6b7280" font-size="11">2-hydroxy-2-methylpropanenitrile</text>
-  <text x="432" y="252" text-anchor="middle" fill="#374151" font-size="18">+</text>
-  <text x="432" y="272" text-anchor="middle" fill="#111827" font-size="15">CN&#8315;</text>
+  <text x="432" y="252" text-anchor="middle" fill="#f8fafc" font-size="18" style="fill:#f8fafc">+</text>
+  <text x="432" y="272" text-anchor="middle" fill="#f8fafc" font-size="15" style="fill:#f8fafc">CN&#8315;</text>
   <text x="432" y="288" text-anchor="middle" fill="#6b7280" font-size="11">CN&#8315; regenerated &#8212; acts as catalyst</text>
   <text x="432" y="303" text-anchor="middle" fill="#6b7280" font-size="11">(cycles back to Step 1)</text>
 </svg>`,
@@ -307,6 +307,31 @@ export const note_chemistry_4_15_4 = {
         style: 'tip',
         title: 'Exam Tip: Choosing Tests',
         text: 'If asked to distinguish an aldehyde from a ketone, use Tollens\' or Fehling\'s — aldehydes give a positive result (silver mirror or red ppt), ketones do not. If you need to detect any carbonyl (aldehyde or ketone), use 2,4-DNP (yellow/orange precipitate with both). NaBH₄ reduces both aldehydes and ketones, so it is not a distinguishing test. HCN adds to both, also not distinguishing.'
+      }
+    },
+    {
+      id: 'list-identifying-carbonyls',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          { text: 'Add 2,4-DNPH (Brady\'s reagent) to the unknown carbonyl — a yellow/orange precipitate (a 2,4-dinitrophenylhydrazone) confirms C=O is present.' },
+          { text: 'Filter off the precipitate and <strong>recrystallise</strong> it from a minimum volume of hot solvent to purify it.' },
+          { text: 'Dry the crystals and measure their <strong>melting point</strong>.' },
+          { text: 'Compare the melting point with data-book values for 2,4-DNPH derivatives — each aldehyde or ketone gives a derivative with a characteristic melting point, identifying the specific compound.' }
+        ]
+      }
+    },
+    {
+      id: 'h-oxidation-equations',
+      type: 'heading',
+      data: { text: 'Oxidation Equations for Aldehydes', level: 3 }
+    },
+    {
+      id: 'p-oxidation-equations',
+      type: 'paragraph',
+      data: {
+        text: 'Use [O] to represent the oxidising agent: <strong>RCHO + [O] → RCOOH</strong>.<br/>• <strong>Tollens\' reagent</strong>: Ag⁺ + e⁻ → Ag (silver mirror); in alkaline Tollens\' the acid forms as its salt, RCOO⁻.<br/>• <strong>Fehling\'s / Benedict\'s solution</strong>: Cu²⁺ is reduced to Cu⁺, giving a brick-red precipitate of Cu₂O; again the acid forms as RCOO⁻ in the alkaline solution.<br/>• <strong>Acidified potassium dichromate(VI)</strong>: Cr₂O₇²⁻ (orange) → Cr³⁺ (green); RCHO + [O] → RCOOH. Ketones are not oxidised, so they give no colour change.'
       }
     },
     {

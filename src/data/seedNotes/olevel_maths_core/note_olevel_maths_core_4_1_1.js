@@ -99,7 +99,7 @@ export const note_olevel_maths_core_4_1_1 = {
     <text x="-32" y="-4" class="lbl" fill="#3b82f6">a</text>
     <text x="-32" y="16" class="lbl" fill="#ef4444">b</text>
     <text x="22" y="-8" class="lbl" fill="#ef4444">b</text>
-    <text x="-28" y="55">a = a, &nbsp; b = b (equal)</text>
+    <text x="-28" y="55">a = a, &#160; b = b (equal)</text>
   </g>
 </svg>`,
         caption: 'Three angle rules: supplementary (180°), around a point (360°), and vertically opposite (equal)'

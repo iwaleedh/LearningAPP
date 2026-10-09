@@ -10,7 +10,7 @@ export const note_business_3_13_8 = {
     { id: 'p3', type: 'paragraph', data: { text: 'Total float is the amount of time a non-critical activity can be delayed without delaying the whole project. Activities on the critical path have a float of exactly zero.' } },
     { id: 'eq', type: 'equation', data: { html: '<p>Total Float = LFT (of next node) - EST (of current node) - Duration</p>', caption: 'Calculating Total Float' } },
     { id: 'call2', type: 'callout', data: { style: 'worked', title: 'Worked Example: Float', text: 'Task C connects Node 2 to Node 4.\nNode 2 EST = 10 days.\nTask C duration = 6 days.\nNode 4 LFT = 22 days.\nTotal Float = 22 - 10 - 6 = 6 days.\nTask C can be delayed by 6 days without harming the overall timeline.' } },
-    { id: 'h3', type: 'heading', data: { text: 'Evaluation of CPA', level: 3 } },
+    { id: 'h3-2', type: 'heading', data: { text: 'Evaluation of CPA', level: 3 } },
     { id: 'table', type: 'comparisonTable', data: {
       caption: 'Strengths and Weaknesses of CPA',
       headers: ['Strengths', 'Weaknesses'],

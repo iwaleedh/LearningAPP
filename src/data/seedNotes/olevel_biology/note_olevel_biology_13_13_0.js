@@ -114,7 +114,7 @@ export const note_olevel_biology_13_13_0 = {
 
   <!-- Erector pili muscle -->
   <line x1="110" y1="80" x2="122" y2="140" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="60" y="115" fill="#b45309" font-size="10">Erector pili</text>
+  <text x="60" y="137" fill="#b45309" font-size="10">Erector pili</text>
 </svg>`
       }
     },

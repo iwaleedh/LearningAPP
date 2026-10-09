@@ -136,12 +136,12 @@ export const note_olevel_biology_4_4_1 = {
   <!-- Base pairing summary -->
   <rect x="295" y="255" width="170" height="60" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="380" y="271" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">Base Pairing Rules</text>
-  <text x="380" y="288" text-anchor="middle" font-size="12" fill="#1e40af">A</text>
-  <text x="380" y="288" text-anchor="start" dx="10" font-size="10" fill="#374151"> pairs with </text>
-  <text x="430" y="288" font-size="12" font-weight="bold" fill="#92400e">T</text>
-  <text x="380" y="305" text-anchor="middle" font-size="12" fill="#9d174d">C</text>
-  <text x="380" y="305" text-anchor="start" dx="10" font-size="10" fill="#374151"> pairs with </text>
-  <text x="430" y="305" font-size="12" font-weight="bold" fill="#4c1d95">G</text>
+  <text x="380" y="288" text-anchor="middle" font-size="12" fill="#1e40af">A pairs with T</text>
+
+
+  <text x="380" y="305" text-anchor="middle" font-size="12" fill="#9d174d">C pairs with G</text>
+
+
 </svg>`
       }
     },

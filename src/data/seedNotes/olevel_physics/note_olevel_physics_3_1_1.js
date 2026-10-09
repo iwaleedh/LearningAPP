@@ -67,7 +67,7 @@ export const note_olevel_physics_3_1_1 = {
   <line x1="40" y1="80" x2="455" y2="80" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#ahT)"/>
   <text x="460" y="83" fill="#3b82f6" font-size="10">Energy</text>
   <path d="M40,80 C60,80 70,45 100,45 C130,45 140,80 160,80 C180,80 190,115 220,115 C250,115 260,80 280,80 C300,80 310,45 340,45 C370,45 380,80 400,80 C420,80 430,115 455,115" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
-  <text x="100" y="39" text-anchor="middle" fill="#3b82f6" font-size="10">crest</text>
+  <text x="100" y="57" text-anchor="middle" fill="#3b82f6" font-size="10">crest</text>
   <text x="220" y="130" text-anchor="middle" fill="#3b82f6" font-size="10">trough</text>
   <line x1="38" y1="132" x2="38" y2="55" stroke="#94a3b8" stroke-width="1.5"/>
   <text x="5" y="95" fill="#94a3b8" font-size="9">↕ oscillation</text>

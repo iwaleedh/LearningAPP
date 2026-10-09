@@ -1,9 +1,12 @@
+import { chemistryFoundations } from '../../guidedLessons/chemistryFoundations.js';
+
 /**
  * Seed note: Chemistry · Unit 1 · Topic 1 · Subtopic 8
  * "Core Practical 1: gas molar volume"
  * Source: Pearson Edexcel IAL Chemistry — Core Practical 1 reference in Section 1C
  */
 export const note_chemistry_1_1_8 = {
+  guidedLesson: chemistryFoundations['chemistry:1:1:8'],
   blocks: [
     {
       id: 'objective',

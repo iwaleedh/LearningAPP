@@ -1,7 +1,7 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 5 · Subtopic 7
- * "Core Practical 4: Preparation of 1-bromobutane from butan-1-ol"
- * Source: Pearson Edexcel International A Level Chemistry — WCH11 Core Practical 4
+ * "Further Practical: Preparation of 1-bromobutane from butan-1-ol"
+ * Source: Pearson Edexcel International A Level Chemistry — WCH12 further suggested practical
  */
 export const note_chemistry_1_5_7 = {
   blocks: [
@@ -9,10 +9,25 @@ export const note_chemistry_1_5_7 = {
       id: 'objective',
       type: 'objective',
       data: {
-        text: 'Describe Core Practical 4 for Edexcel IAL Chemistry: prepare 1-bromobutane from butan-1-ol by nucleophilic substitution using NaBr and concentrated H₂SO₄. Describe the reflux setup, each purification step and its purpose, purity tests, sources of error, and safety considerations.'
+        text: 'Explain this further suggested organic practical for Edexcel IAL Chemistry: prepare 1-bromobutane from butan-1-ol by nucleophilic substitution using NaBr and concentrated H₂SO₄. Describe the reflux setup, each purification step and its purpose, purity tests, sources of error, and safety considerations.'
       }
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Place this preparation in the correct syllabus context",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Preparing 1-bromobutane from butan-1-ol is a useful halogenoalkane preparation and purification example. It is a <strong>further suggested practical in Unit 2</strong> of the Pearson IAL specification, not Core Practical 4. Core Practical 4 is a standard-solution and titration investigation.<br/><br/>Hydrobromic acid generated in the reaction mixture replaces the alcohol’s OH group after protonation makes water a better leaving group. Purification then separates the desired organic liquid from aqueous reagents, removes residual acid where appropriate, dries the organic layer and collects a suitable boiling fraction. Explain the purpose of each technique; exact apparatus, quantities and order follow the laboratory’s provided procedure."
+  }
+},
+{
       id: 'h-background',
       type: 'heading',
       data: { text: 'Background', level: 2 }
@@ -59,7 +74,7 @@ export const note_chemistry_1_5_7 = {
           ['Anti-bumping granules', 'Prevent sudden violent boiling (bumping) during heating', 'Safe'],
           ['Anhydrous MgSO₄', 'Drying agent — absorbs water from organic layer', 'Safe; becomes sticky/cake-like when wet']
         ],
-        caption: 'Reagents used in CP4, their roles, and associated hazards'
+        caption: 'Reagents used in this preparation, their roles, and associated hazards'
       }
     },
     {
@@ -88,11 +103,11 @@ export const note_chemistry_1_5_7 = {
   <rect x="4" y="4" width="492" height="502" rx="10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
 
   <!-- Title -->
-  <text x="250" y="26" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e3a8a">Reflux Apparatus — Core Practical 4</text>
+  <text x="250" y="26" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e3a8a">Reflux Apparatus — Further Practical</text>
 
   <!-- ═══ HEATING MANTLE (trapezoid under flask) ═══ -->
   <polygon points="128,453 140,478 218,478 230,453" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="179" y="470" text-anchor="middle" fill="#92400e" font-size="10" font-weight="bold">Heating mantle</text>
+  <text x="179" y="470" text-anchor="middle" fill="#f8fafc" font-size="10" font-weight="bold" style="fill:#f8fafc">Heating mantle</text>
 
   <!-- ═══ ROUND-BOTTOM FLASK ═══ -->
   <ellipse cx="179" cy="391" rx="63" ry="56" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
@@ -101,8 +116,8 @@ export const note_chemistry_1_5_7 = {
   <rect x="165" y="298" width="28" height="46" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
 
   <!-- Reaction mixture text inside flask -->
-  <text x="179" y="384" text-anchor="middle" fill="#1e40af" font-size="10">Butan-1-ol</text>
-  <text x="179" y="398" text-anchor="middle" fill="#1e40af" font-size="10">NaBr + H₂SO₄</text>
+  <text x="179" y="384" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">Butan-1-ol</text>
+  <text x="179" y="398" text-anchor="middle" fill="#f8fafc" font-size="10" style="fill:#f8fafc">NaBr + H₂SO₄</text>
 
   <!-- Anti-bumping granules (circles at flask bottom) -->
   <circle cx="161" cy="432" r="4" fill="#9ca3af"/>
@@ -158,7 +173,7 @@ export const note_chemistry_1_5_7 = {
   <text x="265" y="451" fill="#374151" font-size="10">Anti-bumping granules</text>
   <text x="265" y="463" fill="#374151" font-size="10">(prevent bumping/violent boiling)</text>
 </svg>`,
-        caption: 'Reflux apparatus for CP4. Cold water enters the Liebig condenser at the base and exits at the top (countercurrent). Vapour rises through the inner tube, condenses on the cooled walls, and drips back into the flask.'
+        caption: 'Reflux apparatus for this preparation. Cold water enters the Liebig condenser at the base and exits at the top (countercurrent). Vapour rises through the inner tube, condenses on the cooled walls, and drips back into the flask.'
       }
     },
     {
@@ -214,7 +229,7 @@ export const note_chemistry_1_5_7 = {
           ['Water', 'NaHCO₃ and dissolved salts', 'No distinctive observation'],
           ['Anhydrous MgSO₄', 'Water (absorbed by drying agent)', 'Free-flowing granules = dry; clumped = still wet']
         ],
-        caption: 'Summary of each purification wash in CP4: impurity removed and key observation'
+        caption: 'Summary of each purification wash in this preparation: impurity removed and key observation'
       }
     },
     {
@@ -278,7 +293,7 @@ export const note_chemistry_1_5_7 = {
       id: 'table-errors',
       type: 'comparisonTable',
       data: {
-        caption: 'Sources of error and improvements in CP4',
+        caption: 'Sources of error and improvements in this preparation',
         headers: ['Error / Issue', 'Effect on result', 'Improvement'],
         rows: [
           ['H₂SO₄ added too quickly (not dropwise)', 'Violently exothermic; HBr gas lost before reaction; low yield', 'Add H₂SO₄ dropwise in small portions, cooling in ice bath between additions'],
@@ -297,7 +312,7 @@ export const note_chemistry_1_5_7 = {
       data: {
         style: 'warning',
         title: 'Common Mistakes',
-        text: '• Discarding the <strong>lower layer</strong> — 1-bromobutane is ALWAYS in the lower (denser) layer; never discard it.<br/>• Confusing the purpose of each wash — H<sub>2</sub>SO<sub>4</sub> removes alcohol; NaHCO<sub>3</sub> removes acid; water removes salts.<br/>• Forgetting to <strong>vent</strong> the separating funnel during the NaHCO<sub>3</sub> wash — CO<sub>2</sub> pressure can blow the stopper off.<br/>• Using anhydrous CaCl<sub>2</sub> as a drying agent — it can form complexes with some organic molecules; anhydrous MgSO<sub>4</sub> is preferred for halogenoalkanes.<br/>• Stating the role of reflux as only "to heat" — it also <em>prevents loss of volatile substances</em>.'
+        text: '• Discarding the <strong>lower layer</strong> — 1-bromobutane is denser than pure water, but identify layers using the actual solvent composition and density.<br/>• Confusing the purpose of each wash — H<sub>2</sub>SO<sub>4</sub> removes alcohol; NaHCO<sub>3</sub> removes acid; water removes salts.<br/>• Forgetting to <strong>vent</strong> the separating funnel during the NaHCO<sub>3</sub> wash — CO<sub>2</sub> pressure can blow the stopper off.<br/>• Using anhydrous CaCl<sub>2</sub> as a drying agent — it can form complexes with some organic molecules; anhydrous MgSO<sub>4</sub> is preferred for halogenoalkanes.<br/>• Stating the role of reflux as only "to heat" — it also <em>prevents loss of volatile substances</em>.'
       }
     },
     {
@@ -306,7 +321,7 @@ export const note_chemistry_1_5_7 = {
       data: {
         style: 'tip',
         title: 'Exam Tips',
-        text: '• Always state <strong>two</strong> reasons for using reflux: (1) keep volatile reactants in the flask; (2) increase rate of reaction.<br/>• When identifying which layer is the product, compare densities — state the numerical density (≈ 1.27 g cm<sup>−3</sup>) as evidence that 1-bromobutane is denser than water.<br/>• For the NaHCO<sub>3</sub> wash, state that <strong>venting</strong> releases CO<sub>2</sub> produced by NaHCO<sub>3</sub> + H<sub>2</sub>SO<sub>4</sub>.<br/>• The anhydrous MgSO<sub>4</sub> drying test: <em>free-flowing</em> granules = dry; <em>clumped</em> granules = still wet.<br/>• Describe purity confirmation as a <em>sharp, constant</em> boiling point at 101.6 °C (not a range).'
+        text: '• Always state <strong>two</strong> reasons for using reflux: (1) keep volatile reactants in the flask; (2) increase rate of reaction.<br/>• When identifying which layer is the product, compare densities — state the numerical density (≈ 1.27 g cm<sup>−3</sup>) as evidence that 1-bromobutane is denser than water.<br/>• For the NaHCO<sub>3</sub> wash, state that <strong>venting</strong> releases CO<sub>2</sub> produced by NaHCO<sub>3</sub> + H<sub>2</sub>SO<sub>4</sub>.<br/>• The anhydrous MgSO<sub>4</sub> drying test: <em>free-flowing</em> granules = dry; <em>clumped</em> granules = still wet.<br/>• A narrow boiling range close to the expected value supports purity; it does not prove identity or purity by itself. Use the stated pressure and reference data.'
       }
     },
     {
@@ -315,7 +330,7 @@ export const note_chemistry_1_5_7 = {
       data: {
         items: [
           { text: 'Write the equations for in situ HBr generation (NaBr + H₂SO₄) and the overall reaction.', checked: false },
-          { text: 'State two reasons why reflux is used in CP4.', checked: false },
+          { text: 'State two reasons why reflux is used in this preparation.', checked: false },
           { text: 'Describe the correct water flow direction through the Liebig condenser (in at bottom, out at top).', checked: false },
           { text: 'Explain why 1-bromobutane is always the lower layer in the separating funnel (density ~1.27 g cm⁻³ > water).', checked: false },
           { text: 'State what impurity each wash removes: H₂SO₄ (alcohol), NaHCO₃ (acid — vent CO₂), water (salts).', checked: false },
@@ -323,50 +338,92 @@ export const note_chemistry_1_5_7 = {
           { text: 'Describe when the MgSO₄ drying is complete (free-flowing granules).', checked: false },
           { text: 'Describe the test for water: anhydrous CuSO₄ white → blue.', checked: false },
           { text: 'Describe the halide test: dissolve in ethanol, acidify with HNO₃, add AgNO₃ → cream ppt (AgBr).', checked: false },
-          { text: 'Confirm purity by distillation: constant boiling point at 101.6 °C.', checked: false }
+          { text: 'Assess purity from a narrow boiling range close to the expected value at the stated pressure.', checked: false }
         ]
       }
     },
-    {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'CP4 — Preparation of 1-bromobutane: butan-1-ol + HBr (in situ from NaBr + conc. H₂SO₄) → 1-bromobutane + H₂O (SN2). Reflux 30–45 min (retains volatiles; increases rate). Purify: separating funnel — 1-bromobutane = lower layer (density ~1.27 g cm⁻³). Wash with H₂SO₄(aq) [removes alcohol], sat. NaHCO₃ [removes acid — vent CO₂], water [removes salts]. Dry with anhydrous MgSO₄ (free-flowing = dry). Distil: collect 98–104 °C fraction (pure bp 101.6 °C). Tests: anhydrous CuSO₄ (white → blue = water present); AgNO₃/HNO₃/ethanol (cream ppt AgBr = bromide confirmed).'
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "The organic transformation is <strong>CH₃CH₂CH₂CH₂OH + HBr → CH₃CH₂CH₂CH₂Br + H₂O</strong>. There are still four carbon atoms: this is substitution, not chain extension. If the isolated product mass is 4.11 g and the theoretical amount is 0.0400 mol, using M = 137.0 g mol⁻¹ gives theoretical mass 5.48 g and yield = 4.11/5.48 × 100 = <strong>75.0%</strong>."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not identify the organic layer solely by assuming it floats, or use wet product mass for percentage yield. Drying agents remove water; they do not neutralise all acid impurities or establish chemical purity."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Is 1-bromobutane preparation IAL Core Practical 4?",
+        "checked": false
+      },
+      {
+        "text": "What reaction type converts butan-1-ol to 1-bromobutane?",
+        "checked": false
+      },
+      {
+        "text": "Why dry the organic layer?",
+        "checked": false
+      },
+      {
+        "text": "Calculate yield for 4.11 g collected from a theoretical 5.48 g.",
+        "checked": false
       }
-    }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Preparing 1-bromobutane from butan-1-ol is a useful halogenoalkane preparation and purification example. It is a further suggested practical in Unit 2 of the Pearson IAL specification, not Core Practical 4. Core Practical 4 is a standard-solution and titration investigation."
+  }
+}
   ],
   recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'c1',
-        blockId: 'callout-equations',
-        prompt: 'Write (a) the equation for in situ generation of HBr and (b) the overall equation for preparation of 1-bromobutane in CP4.'
-      },
-      {
-        id: 'c2',
-        blockId: 'list-method',
-        prompt: 'Explain why concentrated H₂SO₄ must be added dropwise with cooling, and state two reasons why reflux is used in CP4.'
-      },
-      {
-        id: 'c3',
-        blockId: 'callout-layers',
-        prompt: 'State which layer is 1-bromobutane in the separating funnel and explain why. State what precaution must be taken during the NaHCO₃ wash.'
-      },
-      {
-        id: 'c4',
-        blockId: 'table-purification',
-        prompt: 'For each washing step in CP4 (H₂SO₄, NaHCO₃, water), state which impurity is removed and any key observation.'
-      },
-      {
-        id: 'c5',
-        blockId: 'list-tests-halide',
-        prompt: 'Describe the test for (a) water purity and (b) halide identity in the final 1-bromobutane product. State the expected results.'
-      }
-    ],
-    summaryText: 'CP4: butan-1-ol + HBr (NaBr + conc. H₂SO₄) → 1-bromobutane + H₂O. Reflux 30–45 min. Purify: sep. funnel (lower layer = product); wash H₂SO₄ (removes alcohol), NaHCO₃ (removes acid — vent CO₂), water (removes salts); dry with MgSO₄; distil at 101.6 °C. Purity tests: CuSO₄ (white → blue = water); AgNO₃/HNO₃ in ethanol (cream ppt = AgBr).',
-    ready: true
-  },
-  evidence: []
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Is 1-bromobutane preparation IAL Core Practical 4?",
+      "answer": "No. It is a further suggested Unit 2 practical; Core Practical 4 concerns a standard solution and titration."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What reaction type converts butan-1-ol to 1-bromobutane?",
+      "answer": "Nucleophilic substitution, replacing the OH group after protonation."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why dry the organic layer?",
+      "answer": "To remove residual water before final collection and purity measurements."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Calculate yield for 4.11 g collected from a theoretical 5.48 g.",
+      "answer": "4.11/5.48 × 100 = 75.0%."
+    }
+  ],
+  "summaryText": "Preparing 1-bromobutane from butan-1-ol is a useful halogenoalkane preparation and purification example. It is a further suggested practical in Unit 2 of the Pearson IAL specification, not Core Practical 4. Core Practical 4 is a standard-solution and titration investigation.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}]
 };
 export default note_chemistry_1_5_7;

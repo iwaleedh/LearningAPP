@@ -1,5 +1,5 @@
 export const businessSyllabus = {
-    qualification: 'AL Business',
+    qualification: 'Pearson Edexcel International A Level Business',
     source: 'International-A-Level-Business-Spec.pdf (Issue 1, September 2017)',
     units: [
         {

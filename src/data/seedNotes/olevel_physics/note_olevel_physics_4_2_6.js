@@ -100,7 +100,7 @@ export const note_olevel_physics_4_2_6 = {
   <text x="155" y="148" fill="#374151" font-size="10">I₂ →</text>
 
   <!-- Same voltage label -->
-  <text x="190" y="185" text-anchor="middle" fill="#64748b" font-size="10">V same across both branches &nbsp;|&nbsp; I_total = I₁ + I₂</text>
+  <text x="190" y="185" text-anchor="middle" fill="#64748b" font-size="10">V same across both branches &#160;|&#160; I_total = I₁ + I₂</text>
 </svg>`,
       },
     },

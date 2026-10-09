@@ -16,7 +16,7 @@ export const note_physics_4_20_1 = {
       id: 'svg-force-formula-wire',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 350 150" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="150" fill="#0f172a" rx="10"/><text x="175" y="50" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#1E40AF">F = B I l sin(&theta;)</text><text x="175" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">B = Magnetic flux density (Tesla)</text><text x="175" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">I = Current (Amps), l = Length (m)</text><text x="175" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">&theta; = Angle between wire and field</text></svg>',
+        svg: `<svg viewBox="0 0 350 150" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="150" fill="#0f172a" rx="10"/><text x="175" y="50" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#1E40AF">F = B I l sin(&#952;)</text><text x="175" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">B = Magnetic flux density (Tesla)</text><text x="175" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">I = Current (Amps), l = Length (m)</text><text x="175" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">&#952; = Angle between wire and field</text></svg>`,
         caption: 'Magnetic Force on a Wire'
       }
     },

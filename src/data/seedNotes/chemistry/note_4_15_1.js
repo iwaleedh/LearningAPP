@@ -186,7 +186,7 @@ export const note_chemistry_4_15_1 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'p-racemate-intro',
+        blockId: 'callout-racemate-key',
         prompt: 'What is a racemate and why is it optically inactive?'
       },
       {

@@ -140,7 +140,7 @@ export const note_olevel_chemistry_11_11_5 = {
       data: {
         style: 'key',
         title: 'Substitution with Chlorine (Photochemical)',
-        text: 'Alkanes react with chlorine in the presence of UV light (sunlight) — a <strong>free radical substitution</strong>:<br/><br/>CH₄ + Cl₂ → CH₃Cl + HCl (UV light)<br/>(methane + chlorine → chloromethane + hydrogen chloride)<br/><br/>Further substitution continues:<br/>CH₃Cl + Cl₂ → CH₂Cl₂ + HCl → CHCl₃ + HCl → CCl₄ + HCl<br/><br/>• Reaction does NOT occur in the dark<br/>• UV light provides energy to break Cl–Cl bond (initiation step)'
+        text: 'Alkanes react with chlorine in the presence of UV light (sunlight) — a <strong>free radical substitution</strong>:<br/><br/>CH₄ + Cl₂ → CH₃Cl + HCl (UV light)<br/>(methane + chlorine → chloromethane + hydrogen chloride)<br/><br/>Further substitution continues:<br/>CH₃Cl + Cl₂ → CH₂Cl₂ + HCl<br/>CH₂Cl₂ + Cl₂ → CHCl₃ + HCl<br/>CHCl₃ + Cl₂ → CCl₄ + HCl<br/><br/>• Reaction does NOT occur in the dark<br/>• UV light provides energy to break Cl–Cl bond (initiation step)'
       }
     },
     {

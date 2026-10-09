@@ -12,6 +12,21 @@ export const note_chemistry_1_3_10 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Choose the correct intermolecular explanation",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "London forces arise when fluctuations in an electron cloud create an instantaneous dipole that induces a dipole in a neighbour. They occur between all atoms and molecules. More electrons and a more polarisable cloud generally strengthen them; elongated molecules can also make more contact than compact branched isomers.<br/><br/>Permanent dipole–dipole attractions act between polar molecules. Hydrogen bonding is a specific attraction between a hydrogen bonded to O, N or F and a lone pair on O, N or F in another suitable molecule. An O atom alone is not enough for a pure liquid to hydrogen-bond to itself: it also needs an appropriate hydrogen donor. Hydrogen bonding is an intermolecular attraction, not the covalent O–H bond."
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'London (Dispersion) Forces', level: 2 },
@@ -22,7 +37,7 @@ export const note_chemistry_1_3_10 = {
       type: 'svg',
       data: {
         caption: 'London forces arise from instantaneous and induced dipoles. Even non-polar molecules/noble gas atoms have a temporary uneven electron distribution → momentary δ+/δ− → induces a dipole in a neighbouring atom. These weak attractive forces exist in ALL substances.',
-        svg: `<svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="0 -17 703 217" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Step 1: Non-polar atom -->
   <rect x="5" y="10" width="200" height="178" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
   <text x="105" y="28" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="12">Step 1: Neutral atom</text>
@@ -113,7 +128,7 @@ export const note_chemistry_1_3_10 = {
   <circle cx="122" cy="130" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="122" y="134" text-anchor="middle" fill="#1e40af" font-size="10">H</text>
   <text x="120" y="108" fill="#1e40af" font-size="9">δ+</text>
-  <text x="68" y="80" fill="#dc2626" font-size="9">δ−</text>
+  <text x="68" y="80" fill="#0f172a" font-size="9" style="fill:#0f172a">δ−</text>
 
   <!-- H-bond (dashed) between H of mol1 and O of mol2 -->
   <line x1="122" y1="118" x2="185" y2="100" stroke="#f97316" stroke-width="2.5" stroke-dasharray="6,4"/>
@@ -131,7 +146,7 @@ export const note_chemistry_1_3_10 = {
   <line x1="228" y1="90" x2="246" y2="112" stroke="#475569" stroke-width="2.5"/>
   <circle cx="252" cy="120" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="252" y="124" text-anchor="middle" fill="#1e40af" font-size="10">H</text>
-  <text x="208" y="66" fill="#dc2626" font-size="9">δ−</text>
+  <text x="208" y="66" fill="#0f172a" font-size="9" style="fill:#0f172a">δ−</text>
 
   <!-- Lone pair labels -->
   <text x="60" y="185" fill="#374151" font-size="10">Lone pair on O acts as</text>
@@ -167,20 +182,90 @@ export const note_chemistry_1_3_10 = {
       },
       terms: ['Hydrogen bond', 'Anomalous boiling point', 'Ice density']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Compare ethanol, CH₃CH₂OH, with methoxymethane, CH₃OCH₃. They have the same molecular formula and similar electron counts, so their London forces are comparable. Ethanol can hydrogen-bond to itself because it has O–H groups and oxygen lone pairs. Methoxymethane has an oxygen lone pair but no O–H donor, so it cannot hydrogen-bond to itself. Ethanol therefore has the higher boiling point. Methoxymethane can still accept hydrogen bonds from water."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "Do not claim hydrogen-bonding molecules lack London forces. Do not assume a fixed force ranking overrides large differences in size and polarisability."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "Which force acts between all molecules?",
+        "checked": false
+      },
+      {
+        "text": "What is required for hydrogen bonding?",
+        "checked": false
+      },
+      {
+        "text": "Why does ethanol boil above its ether isomer?",
+        "checked": false
+      },
+      {
+        "text": "Why does branching often lower an alkane’s boiling point?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "London forces arise when fluctuations in an electron cloud create an instantaneous dipole that induces a dipole in a neighbour. They occur between all atoms and molecules. More electrons and a more polarisable cloud generally strengthen them; elongated molecules can also make more contact than compact branched isomers."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Three IMF types: (1) London forces — instantaneous/induced dipoles, present in ALL substances, increase with electron count; (2) Permanent dipole-dipole — between polar molecules; (3) Hydrogen bonds — requires H directly on N/O/F, lone pair on N/O/F, strongest IMF (~10-40 kJ/mol). H-bonding explains water&#x2019;s high b.p. and ice density anomaly.',
-    cues: [
-      { id: 'c1', blockId: 'svg-london', prompt: 'Explain the origin of London dispersion forces. Why do larger molecules (e.g. I₂ vs F₂) have stronger London forces?' },
-      { id: 'c2', blockId: 'key-london', prompt: 'List the boiling points trend F₂ < Cl₂ < Br₂ < I₂ and explain it using London force strength.' },
-      { id: 'c3', blockId: 'svg-hbond', prompt: 'State the two conditions that must be met for a hydrogen bond to form. Identify donor and acceptor in an H₂O dimer.' },
-      { id: 'c4', blockId: 'tip-hbond-anomalies', prompt: 'Why is the boiling point of H₂O much higher than H₂S? Why is ice less dense than liquid water?' },
-      { id: 'c5', blockId: 'svg-hbond', prompt: 'Rank these interactions from weakest to strongest: covalent bonds, London forces, hydrogen bonds, ionic bonds. Give typical energy ranges.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "Which force acts between all molecules?",
+      "answer": "London dispersion forces caused by temporary dipoles and induced dipoles."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "What is required for hydrogen bonding?",
+      "answer": "A hydrogen bonded to O, N or F and a suitable lone pair on O, N or F on another molecule."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why does ethanol boil above its ether isomer?",
+      "answer": "Ethanol forms hydrogen bonds between its molecules; the ether has no O–H donor and cannot hydrogen-bond to itself."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Why does branching often lower an alkane’s boiling point?",
+      "answer": "A more compact shape reduces intermolecular contact, weakening the overall London attractions between molecules."
+    }
+  ],
+  "summaryText": "London forces arise when fluctuations in an electron cloud create an instantaneous dipole that induces a dipole in a neighbour. They occur between all atoms and molecules. More electrons and a more polarisable cloud generally strengthen them; elongated molecules can also make more contact than compact branched isomers.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

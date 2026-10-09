@@ -12,6 +12,60 @@ export const note_chemistry_1_3_9 = {
       terms: []
     },
     {
+  "id": "study-heading",
+  "type": "heading",
+  "data": {
+    "text": "Identify structure from evidence, not a fixed ranking",
+    "level": 2
+  }
+},
+{
+  "id": "study-explanation",
+  "type": "paragraph",
+  "data": {
+    "text": "Classify a substance by its particles, the attractions between them and whether charged particles can move. Ionic, metallic and giant covalent substances have extended structures. Simple molecular substances have discrete molecules. An ionic formula such as NaCl gives a ratio of ions; calling it a “formula unit” does not imply an individual molecule exists.<br/><br/>There is no universal melting-point order for the four structure types. Many ionic and giant covalent substances have high melting temperatures, many molecular substances have low ones, and metals cover a wide range. Combine melting behaviour with electrical conductivity, brittleness, malleability and solubility. Graphite is an important conducting giant covalent example."
+  }
+},
+{
+  "id": "study-comparison",
+  "type": "comparisonTable",
+  "data": {
+    "caption": "Identify structure from evidence, not a fixed ranking",
+    "headers": [
+      "Structure",
+      "Particles",
+      "Charge carriers",
+      "Typical properties"
+    ],
+    "rows": [
+      [
+        "Ionic",
+        "Positive and negative ions",
+        "Ions mobile in melt or solution",
+        "Usually high melting point; brittle"
+      ],
+      [
+        "Metallic",
+        "Metal ions and delocalised electrons",
+        "Electrons mobile in solid and liquid",
+        "Malleable; melting points vary"
+      ],
+      [
+        "Giant covalent",
+        "Covalently bonded atomic network",
+        "Usually none; graphite has mobile electrons",
+        "Usually very high melting point"
+      ],
+      [
+        "Simple molecular",
+        "Discrete molecules",
+        "Usually none in the pure substance",
+        "Often low melting and boiling points"
+      ]
+    ]
+  }
+},
+{
       id: 'h1',
       type: 'heading',
       data: { text: 'The Four Structure Types', level: 2 },
@@ -22,7 +76,7 @@ export const note_chemistry_1_3_9 = {
       type: 'svg',
       data: {
         caption: 'Four-panel infographic comparing structure types. Use the bonding type and structure to explain all physical properties. Melting/boiling points all depend on how many and how strong the bonds/interactions that must be broken.',
-        svg: `<svg viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="0 -17 680 397" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Panel 1: Ionic -->
   <rect x="5"   y="5"   width="158" height="368" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
   <rect x="5"   y="5"   width="158" height="36" rx="8" fill="#f97316"/>
@@ -47,7 +101,7 @@ export const note_chemistry_1_3_9 = {
   <rect x="10" y="191" width="148" height="22" rx="4" fill="#fde68a"/>
   <text x="84" y="206" text-anchor="middle" fill="#92400e" font-size="9.5">⚡ Molten/solution: yes</text>
   <rect x="10" y="219" width="148" height="22" rx="4" fill="#fde68a"/>
-  <text x="84" y="234" text-anchor="middle" fill="#92400e" font-size="9.5">💧 Polar solvents: soluble</text>
+  <text x="84" y="234" text-anchor="middle" fill="#92400e" font-size="9.5">💧 Water solubility varies</text>
   <rect x="10" y="247" width="148" height="22" rx="4" fill="#fde68a"/>
   <text x="84" y="262" text-anchor="middle" fill="#92400e" font-size="9.5">⚠ Brittle (ions shift)</text>
   <text x="84" y="295" text-anchor="middle" fill="#1d4ed8" font-size="9">Bonding:</text>
@@ -82,7 +136,7 @@ export const note_chemistry_1_3_9 = {
   <rect x="180" y="148" width="148" height="22" rx="4" fill="#dcfce7"/>
   <text x="254" y="163" text-anchor="middle" fill="#166534" font-size="9.5">🌡 High m.p. (usually)</text>
   <rect x="180" y="176" width="148" height="22" rx="4" fill="#dcfce7"/>
-  <text x="254" y="191" text-anchor="middle" fill="#166534" font-size="9.5">⚡ Always conducts</text>
+  <text x="254" y="191" text-anchor="middle" fill="#166534" font-size="9.5">⚡ Conducts solid / liquid</text>
   <rect x="180" y="204" width="148" height="22" rx="4" fill="#dcfce7"/>
   <text x="254" y="219" text-anchor="middle" fill="#166534" font-size="9.5">🔨 Malleable &amp; ductile</text>
   <rect x="180" y="232" width="148" height="22" rx="4" fill="#dcfce7"/>
@@ -140,8 +194,8 @@ export const note_chemistry_1_3_9 = {
   <!-- weak IMF -->
   <line x1="602" y1="82" x2="590" y2="110" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3"/>
   <line x1="568" y1="82" x2="562" y2="110" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3"/>
-  <text x="633" y="99" fill="#94a3b8" font-size="9">weak</text>
-  <text x="633" y="112" fill="#94a3b8" font-size="9">IMF</text>
+  <text x="633" y="99" fill="#0f172a" font-size="9" style="fill:#0f172a">weak</text>
+  <text x="633" y="112" fill="#0f172a" font-size="9" style="fill:#0f172a">IMF</text>
   <!-- properties -->
   <rect x="520" y="145" width="150" height="22" rx="4" fill="#fce7f3"/>
   <text x="595" y="160" text-anchor="middle" fill="#9d174d" font-size="9.5">🌡 Low m.p./b.p.</text>
@@ -166,24 +220,94 @@ export const note_chemistry_1_3_9 = {
       data: {
         style: 'key',
         title: 'Giant vs Simple: Key Distinction',
-        text: '<strong>Giant structures</strong> (ionic, metallic, giant covalent) have no discrete formula units — the formula (NaCl, Fe, SiO₂) is an <em>empirical/ratio formula</em> describing the repeating pattern throughout the entire lattice.<br/><br/><strong>Simple molecular structures</strong> have discrete molecules. The formula (CO₂, H₂O) represents one actual molecule with a fixed number of atoms.<br/><br/>A quick test: if the substance has a very high melting point AND doesn&#x2019;t conduct when liquid &#x2014; it&#x2019;s likely giant covalent (e.g. SiO&#x2082;, diamond).'
+        text: '<strong>Giant structures</strong> (ionic, metallic, giant covalent) do not contain discrete molecules — the formula (NaCl, Fe, SiO₂) is an <em>empirical/ratio formula</em> describing the repeating pattern throughout the entire lattice.<br/><br/><strong>Simple molecular structures</strong> have discrete molecules. The formula (CO₂, H₂O) represents one actual molecule with a fixed number of atoms.<br/><br/>A quick test: if the substance has a very high melting point AND doesn&#x2019;t conduct when liquid &#x2014; it&#x2019;s likely giant covalent (e.g. SiO&#x2082;, diamond).'
       },
       terms: ['Giant structure', 'Simple molecular structure', 'Empirical formula']
     }
+  ,
+
+{
+  "id": "study-worked",
+  "type": "callout",
+  "data": {
+    "style": "worked",
+    "title": "Worked example: apply the method",
+    "text": "Solid A does not conduct, but its melt does: mobile ions in the melt support an ionic structure. Solid B conducts and is malleable: a metallic lattice with mobile electrons fits. Solid C has a low melting point and neither solid nor liquid conducts: a simple molecular structure is likely. These are evidence-based deductions, not proofs from a single measurement."
+  }
+},
+{
+  "id": "study-warning",
+  "type": "callout",
+  "data": {
+    "style": "warning",
+    "title": "Common mistakes and limits",
+    "text": "“Always conducts”, “all ionic compounds dissolve” and a fixed highest-to-lowest melting-point ranking are misleading absolutes. Use “typically” where appropriate and identify exceptions."
+  }
+},
+{
+  "id": "study-checklist",
+  "type": "checklist",
+  "data": {
+    "items": [
+      {
+        "text": "What conductivity change most strongly suggests ionic structure?",
+        "checked": false
+      },
+      {
+        "text": "Why do both solid and liquid metals conduct?",
+        "checked": false
+      },
+      {
+        "text": "Why can a giant structure still be described using a formula unit?",
+        "checked": false
+      },
+      {
+        "text": "Can all four structure types be ranked universally by melting point?",
+        "checked": false
+      }
+    ]
+  }
+},
+{
+  "id": "study-summary",
+  "type": "summary",
+  "data": {
+    "text": "Classify a substance by its particles, the attractions between them and whether charged particles can move. Ionic, metallic and giant covalent substances have extended structures. Simple molecular substances have discrete molecules. An ionic formula such as NaCl gives a ratio of ions; calling it a “formula unit” does not imply an individual molecule exists."
+  }
+}
   ],
 
   recall: {
-    enabled: true,
-    summaryText: 'Four structure types: Ionic (high m.p., conducts molten, brittle, polar-soluble); Metallic (variable m.p., always conducts, malleable); Giant Covalent (very high m.p., non-conductor except graphite, insoluble); Simple Molecular (low m.p., non-conductor, like-dissolves-like). Giant structures: empirical formulas. Simple molecular: discrete molecules.',
-    cues: [
-      { id: 'c1', blockId: 'svg-comparison', prompt: 'Compare ionic and giant covalent structures: melting points, electrical conductivity, and solubility.' },
-      { id: 'c2', blockId: 'svg-comparison', prompt: 'Why does a metal always conduct electricity in both solid and liquid state, whereas an ionic compound only conducts when molten or dissolved?' },
-      { id: 'c3', blockId: 'key-giant', prompt: 'Distinguish giant structures from simple molecular structures. Give an example of each and explain how to decide which type a substance is from its properties.' },
-      { id: 'c4', blockId: 'svg-comparison', prompt: 'A solid X has a very high melting point, does not conduct electricity in any state, and is insoluble in water. Identify the likely structure type and give an example.' },
-      { id: 'c5', blockId: 'svg-comparison', prompt: 'List the four structure types from highest to lowest melting point (typical). Justify the ordering.' }
-    ],
-    ready: true
-  },
-  evidence: [],
+  "enabled": true,
+  "cues": [
+    {
+      "id": "study-cue-1",
+      "blockId": "study-explanation",
+      "prompt": "What conductivity change most strongly suggests ionic structure?",
+      "answer": "No conduction in the solid, but conduction when molten, because melting makes the ions mobile."
+    },
+    {
+      "id": "study-cue-2",
+      "blockId": "study-worked",
+      "prompt": "Why do both solid and liquid metals conduct?",
+      "answer": "Delocalised electrons remain mobile in both states."
+    },
+    {
+      "id": "study-cue-3",
+      "blockId": "study-explanation",
+      "prompt": "Why can a giant structure still be described using a formula unit?",
+      "answer": "A formula unit expresses the stoichiometric ratio in the lattice; it is not a discrete molecule."
+    },
+    {
+      "id": "study-cue-4",
+      "blockId": "study-warning",
+      "prompt": "Can all four structure types be ranked universally by melting point?",
+      "answer": "No. Their ranges overlap, especially for metals. Use particle type and bonding to explain a specific comparison."
+    }
+  ],
+  "summaryText": "Classify a substance by its particles, the attractions between them and whether charged particles can move. Ionic, metallic and giant covalent substances have extended structures. Simple molecular substances have discrete molecules. An ionic formula such as NaCl gives a ratio of ions; calling it a “formula unit” does not imply an individual molecule exists.",
+  "ready": true
+},
+  evidence: [{"id":"study-syllabus-source","title":"Pearson Edexcel IAL Chemistry (2018) specification","detail":"Curriculum reference. Newly added explanations and illustrative calculations were authored for this app.","source":"https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf","tags":["syllabus","chemistry"]}],
   mentions: []
 };

@@ -18,10 +18,10 @@ export const note_olevel_chemistry_6_6_4 = {
         caption: 'Methods for measuring reaction rate',
         headers: ['Method', 'What is measured', 'Example reaction', 'Equipment'],
         rows: [
-          ['Gas syringe / inverted measuring cylinder over water', 'Volume of gas produced vs time', 'Mg + HCl → MgCl₂ + H₂; CaCO₃ + HCl → CaCl₂ + H₂O + CO₂', 'Gas syringe or trough + measuring cylinder, stopwatch'],
-          ['Loss of mass', 'Decrease in mass as gas escapes vs time', 'CaCO₃ + HCl → ... + CO₂ (gas escapes)', 'Balance, cotton wool plug, stopwatch'],
+          ['Gas syringe / inverted measuring cylinder over water', 'Volume of gas produced vs time', 'Mg + 2HCl → MgCl₂ + H₂; CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂', 'Gas syringe or trough + measuring cylinder, stopwatch'],
+          ['Loss of mass', 'Decrease in mass as gas escapes vs time', 'CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂ (gas escapes)', 'Balance, cotton wool plug, stopwatch'],
           ['Colour change / colorimetry', 'Colour intensity vs time', 'Iodine being used up in thiosulfate reactions', 'Colorimeter or visual observation'],
-          ['Colour cross / turbidity', 'Time for precipitate to obscure a cross', 'Na₂S₂O₃ + HCl → S precipitate', 'Conical flask over cross, stopwatch; rate ∝ 1/t']
+          ['Colour cross / turbidity', 'Time for precipitate to obscure a cross', 'Na₂S₂O₃ + 2HCl → 2NaCl + S + SO₂ + H₂O', 'Conical flask over cross, stopwatch; rate ∝ 1/t']
         ]
       }
     },
@@ -31,7 +31,7 @@ export const note_olevel_chemistry_6_6_4 = {
       data: {
         style: 'worked',
         title: 'Gas Volume Method (Marble Chips + HCl)',
-        text: 'CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)<br/><br/>Setup: Conical flask on balance, cotton wool to allow gas out but catch acid spray; gas syringe attached.<br/><br/>Procedure:<br/>1. Add known mass of marble chips to conical flask.<br/>2. Add excess HCl at a known concentration.<br/>3. Record volume of CO₂ collected every 30 s.<br/><br/>Graph: Volume of CO₂ (y) vs time (x).<br/>• Steep gradient at start (fast rate).<br/>• Gradient decreases as reactants are used up (rate slows).<br/>• Flat line at end = reaction complete (one reactant exhausted).<br/>• Total CO₂ collected = same for same mass of limiting reactant, regardless of rate.'
+        text: 'CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)<br/><br/>Setup: Conical flask sealed with a bung and delivery tube connected to a freely moving gas syringe. All gas must pass into the syringe. A cotton-wool plug is used for the separate loss-of-mass method, not for gas collection.<br/><br/>Procedure:<br/>1. Add known mass of marble chips to conical flask.<br/>2. Add excess HCl at a known concentration.<br/>3. Record volume of CO₂ collected every 30 s.<br/><br/>Graph: Volume of CO₂ (y) vs time (x).<br/>• Steep gradient at start (fast rate).<br/>• Gradient decreases as reactants are used up (rate slows).<br/>• Flat line at end = reaction complete (one reactant exhausted).<br/>• Total CO₂ collected = same for same mass of limiting reactant, regardless of rate.'
       }
     },
     {

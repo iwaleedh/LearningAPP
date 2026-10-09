@@ -127,7 +127,7 @@ export const note_olevel_biology_6_6_2 = {
   <path d="M 395,248 C 408,240 415,210 425,170 C 432,148 437,120 445,95 C 450,80 455,70 460,68 C 465,68 470,75 478,110 C 486,150 498,210 515,248" stroke="#dc2626" stroke-width="2.5" fill="none"/>
   <!-- Optimum line -->
   <line x1="460" y1="68" x2="460" y2="250" stroke="#dc2626" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="460" y="260" text-anchor="middle" font-size="8" fill="#dc2626">~30°C</text>
+
   <text x="440" y="58" font-size="8" fill="#dc2626">Optimum</text>
   <!-- Denaturation label -->
   <text x="496" y="165" font-size="8" fill="#dc2626">Enzymes</text>

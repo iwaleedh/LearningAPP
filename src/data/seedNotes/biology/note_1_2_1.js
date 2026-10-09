@@ -68,15 +68,6 @@ export const note_biology_1_2_1 = {
         "title": "Linking Structure to Function",
         "text": "When explaining alveolar adaptations, always explicitly link the feature to the function (e.g., 'squamous epithelium is one cell thick, which provides a short diffusion distance')."
       }
-    }  ,
-    {
-      "id": "callout-injected-0",
-      "type": "callout",
-      "data": {
-        "style": "tip",
-        "title": "Linking Structure to Function",
-        "text": "When explaining alveolar adaptations, always explicitly link the feature to the function (e.g., 'squamous epithelium is one cell thick, which provides a short diffusion distance')."
-      }
     }
   ],
   "recall": {

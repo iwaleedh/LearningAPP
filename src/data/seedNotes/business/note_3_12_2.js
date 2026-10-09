@@ -5,7 +5,7 @@ export const note_business_3_12_2 = {
     { id: 'p-1', type: 'paragraph', data: { text: 'A firm can grow organically using various strategies based on the Ansoff Matrix: market penetration, product development, and market development.' } },
     { id: 'h-2', type: 'heading', data: { text: '1. New Product Development', level: 3 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'Firms can invest heavily in Research & Development (R&D) to create new or improved products. This keeps the product portfolio competitive and extends the product life cycle.' } },
-    { id: 'h-2', type: 'heading', data: { text: '2. Opening New Locations', level: 3 } },
+    { id: 'h-2-2', type: 'heading', data: { text: '2. Opening New Locations', level: 3 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'A traditional method for retail and service businesses. Expanding geographically, whether domestically or internationally, opens up access to new customer bases.' } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{text: 'Franchising is a form of organic growth where third parties pay for the right to use the brand.'}, {text: 'E-commerce serves as a low-cost geographic expansion tool.'}] } },
     { id: 'call-1', type: 'callout', data: { style: 'key', title: 'Advantage: Cultural Consistency', text: 'Organic growth guarantees that the corporate culture and management styles remain consistent throughout the firm as it scales.' } },

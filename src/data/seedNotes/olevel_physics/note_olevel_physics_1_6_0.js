@@ -46,8 +46,8 @@ export const note_olevel_physics_1_6_0 = {
       id: 'svg-collision',
       type: 'svg',
       data: {
-        svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="200" fill="#44370a" rx="10"/>
+        svg: `<svg viewBox="0 -2 460 202" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="460" height="202" fill="#44370a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Conservation of Momentum — Collision</text>
   <!-- Before -->
   <text x="100" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">BEFORE</text>

@@ -6,8 +6,8 @@ export const note_olevel_physics_5_1_0 = {
     { id: 'para-plum', type: 'paragraph', data: { text: "Before Rutherford, the accepted model was J.J. Thomson's <strong>plum-pudding model</strong> (1904). It proposed a diffuse ball of positive charge with electrons (the 'plums') embedded throughout — like plums in a pudding. This model predicted that alpha particles would pass through with only very small deflections." } },
     { id: 'h-experiment', type: 'heading', data: { text: 'The Rutherford–Geiger–Marsden Experiment (1909)', level: 2 } },
     { id: 'para-setup', type: 'paragraph', data: { text: 'Hans Geiger and Ernest Marsden, directed by Rutherford, fired a beam of <strong>alpha particles</strong> from a radioactive source at a very thin sheet of gold foil (only a few atoms thick). A zinc-sulphide detector screen surrounding the foil flashed when struck by an alpha particle, recording where each particle landed.' } },
-    { id: 'svg-rutherford', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300">
-  <rect width="520" height="300" fill="#0f172a" rx="8"/>
+    { id: 'svg-rutherford', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537 300" width="520" height="300">
+  <rect width="537" height="300" fill="#0f172a" rx="8"/>
   <text x="260" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Rutherford Alpha-Scattering Experiment</text>
   <!-- Source box -->
   <rect x="20" y="130" width="55" height="40" rx="6" fill="#1d4ed8" stroke="#5b21b6" stroke-width="2"/>

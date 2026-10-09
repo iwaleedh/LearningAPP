@@ -15,15 +15,15 @@ export const note_chemistry_5_16_3 = {
         svg: `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <rect width="480" height="220" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <!-- Title -->
-  <text x="240" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Electrochemical Cell Shorthand Notation</text>
+  <text x="240" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#f8fafc" style="fill:#f8fafc">Electrochemical Cell Shorthand Notation</text>
   <!-- Notation row -->
-  <text x="30" y="75" font-size="14" font-weight="bold" fill="#1e40af">Zn(s)</text>
-  <text x="88" y="75" font-size="16" fill="#475569">|</text>
+  <text x="30" y="75" font-size="14" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Zn(s)</text>
+  <text x="88" y="75" font-size="16" fill="#f8fafc" style="fill:#f8fafc">|</text>
   <text x="100" y="75" font-size="14" fill="#64748b">Zn²⁺(aq)</text>
-  <text x="178" y="75" font-size="16" fill="#475569">‖</text>
+  <text x="178" y="75" font-size="16" fill="#f8fafc" style="fill:#f8fafc">‖</text>
   <text x="196" y="75" font-size="14" fill="#64748b">Cu²⁺(aq)</text>
-  <text x="276" y="75" font-size="16" fill="#475569">|</text>
-  <text x="288" y="75" font-size="14" font-weight="bold" fill="#1e40af">Cu(s)</text>
+  <text x="276" y="75" font-size="16" fill="#f8fafc" style="fill:#f8fafc">|</text>
+  <text x="288" y="75" font-size="14" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">Cu(s)</text>
   <!-- E° labels -->
   <text x="30" y="96" font-size="11" fill="#dc2626">E° = −0.76 V</text>
   <text x="230" y="96" font-size="11" fill="#16a34a">E° = +0.34 V</text>
@@ -38,7 +38,7 @@ export const note_chemistry_5_16_3 = {
   <line x1="60" y1="65" x2="280" y2="65" stroke="#f59e0b" stroke-width="2" marker-end="url(#earr)"/>
   <text x="140" y="55" text-anchor="middle" font-size="11" fill="#b45309" font-weight="bold">e⁻ flow (external circuit)</text>
   <!-- E°cell -->
-  <text x="240" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">E°cell = E°(right) − E°(left) = +0.34 − (−0.76) = +1.10 V</text>
+  <text x="240" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#f8fafc" style="fill:#f8fafc">E°cell = E°(right) − E°(left) = +0.34 − (−0.76) = +1.10 V</text>
   <!-- Legend -->
   <text x="150" y="200" text-anchor="middle" font-size="10" fill="#64748b">| = phase boundary (change in state)     ‖ = salt bridge</text>
   <!-- Arrow defs -->
